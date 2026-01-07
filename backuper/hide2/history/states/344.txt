@@ -1,0 +1,41 @@
+
+state={
+	id=344
+	name="STATE_344"
+	manpower = 4265335
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 9727 9}
+		victory_points = { 9731 1}
+		victory_points = { 9732 4}
+		
+		owner = MKA
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			9732 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MKA
+	}
+
+	provinces={
+		9724 9725 9726 9727 9728 9729 9730 9731 9732 9733 9734 9735 9736 9737 9738 9739 9740 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,26 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Todeste Fleet"			
+		naval_base = 16417
+		task_force = {
+			name = "Todeste Fleet"
+			location = 16417
+			
+			
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

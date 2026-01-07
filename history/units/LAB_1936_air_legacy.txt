@@ -1,0 +1,17 @@
+air_wings = {
+		236 = { 								
+		fighter_equipment_0 = { owner = "LAB" amount = 45 version_name = "Colo Mk 1" }
+
+	}
+	181 = { 								
+		nav_bomber_equipment_0 = { owner = "LAB" amount = 38 version_name = "Sogge Mk 2" }
+tac_bomber_equipment_0 = { owner = "LAB" amount = 36 version_name = "Labazila Mk 2" }
+
+	}
+	171 = { 								
+		CAS_equipment_0 = { owner = "LAB" amount = 44 version_name = "Carierco Mk 0" }
+
+	}
+
+
+}

@@ -1,0 +1,14 @@
+state={
+	id=272
+	name="STATE_272"
+	resources={
+		steel=3
+	}
+	provinces={
+		12710 12834 
+	}
+	manpower=1638000
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=1
+}

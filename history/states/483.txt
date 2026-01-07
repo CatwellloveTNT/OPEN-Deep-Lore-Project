@@ -1,0 +1,36 @@
+
+state={
+	id=483
+	name="STATE_483"
+	manpower = 3697333
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 13182 9}
+		
+		owner = NYA
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = NYA
+	}
+
+	provinces={
+		13174 13175 13176 13177 13178 13179 13180 13181 13182 13183 13184 13185 13186 13187 13188 13189 13190 13191 13192 13193 13194 13195 
+	}
+	local_supplies=0.0 
+}

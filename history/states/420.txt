@@ -1,0 +1,39 @@
+
+state={
+	id=420
+	name="STATE_420"
+	manpower = 1890254
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11539 5}
+		
+		owner = LAN
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			11535 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAN
+	}
+
+	provinces={
+		11535 11536 11537 11538 11539 11540 11541 
+	}
+	local_supplies=0.0 
+}

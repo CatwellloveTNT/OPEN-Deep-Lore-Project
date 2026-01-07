@@ -1,0 +1,15 @@
+state={
+	id=101
+	name="STATE_101"
+	resources={
+		aluminium=10
+		coal=1
+	}
+	provinces={
+		12512 13058 13066 
+	}
+	manpower=18000
+	buildings_max_level_factor=1
+	state_category=wasteland
+	local_supplies=0
+}

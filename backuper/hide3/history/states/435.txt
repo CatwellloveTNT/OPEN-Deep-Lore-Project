@@ -1,0 +1,38 @@
+
+state={
+	id=435
+	name="STATE_435"
+	manpower = 7241093
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11906 13}
+		victory_points = { 11907 3}
+		victory_points = { 11933 5}
+		
+		owner = LAN
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = LAN
+	}
+
+	provinces={
+		11901 11902 11903 11904 11905 11906 11907 11908 11909 11910 11911 11912 11913 11914 11915 11916 11917 11918 11919 11920 11921 11922 11923 11924 11925 11926 11927 11928 11929 11930 11931 11932 11933 11934 11935 11936 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,14 @@
+state={
+	id=478
+	name="STATE_478"
+	resources={
+		tungsten=8
+	}
+	provinces={
+		12746 12873 13089 
+	}
+	manpower=2470875
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

@@ -1,0 +1,16 @@
+state={
+	id=592
+	name="STATE_592"
+	resources={
+		tungsten=8
+		steel=15
+		chromium=3
+	}
+	provinces={
+		12077 
+	}
+	manpower=17835200
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=1
+}

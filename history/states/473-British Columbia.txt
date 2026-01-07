@@ -1,0 +1,15 @@
+state={
+	id=473
+	name="STATE_473"
+	resources={
+		oil=1
+		coal=4
+	}
+	provinces={
+		12231 12578 
+	}
+	manpower=638165
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=4
+}

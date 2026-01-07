@@ -1,0 +1,39 @@
+
+state={
+	id=453
+	name="STATE_453"
+	manpower = 10779
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 12496 1}
+		
+		owner = PIG
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			12496 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = PIG
+	}
+
+	provinces={
+		12496 
+	}
+	local_supplies=0.0 
+}

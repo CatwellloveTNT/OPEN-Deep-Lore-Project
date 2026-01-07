@@ -1,0 +1,11 @@
+state={
+	id=199
+	name="STATE_199"
+	provinces={
+		3446 3457 3461 3466 3468 3481 3482 3507 3509 
+	}
+	manpower=1424022
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=4
+}

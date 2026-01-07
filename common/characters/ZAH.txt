@@ -1,0 +1,880 @@
+characters = {
+	ZAH_Giaco_Masi={
+		name="Giaco Masi"
+
+		
+		country_leader={
+			ideology=centrism
+			traits = { socialite_connections  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ZAH_Bruno_Hijr={
+		name="Bruno Hijr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Bruno_Hijr
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	ZAH_Adnan_Sordian={
+		name="Adnan Sordian"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Adnan_Sordian
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	ZAH_Rami_Colo={
+		name="Rami Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Rami_Colo
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	ZAH_Thien_Oasjiddatua={
+		name="Thien Oasjiddatua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Thien_Oasjiddatua
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	ZAH_Karlo_Turhaqa={
+		name="Karlo Turhaqa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Karlo_Turhaqa
+				traits = {	humble 	}
+		}
+
+	}
+	ZAH_Steon_Colo={
+		name="Steon Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Steon_Colo
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	ZAH_Alberry_Hijr={
+		name="Alberry Hijr"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Alberry_Hijr
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	ZAH_Fran_Sordian={
+		name="Fran Sordian"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Fran_Sordian
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	ZAH_Ahmad_Turhaqa={
+		name="Ahmad Turhaqa"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Ahmad_Turhaqa
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	ZAH_Luisal_Rico={
+		name="Luisal Rico"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Luisal_Rico
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	ZAH_Paolahya_Oasjiddatua={
+		name="Paolahya Oasjiddatua"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Paolahya_Oasjiddatua
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	ZAH_Victor_Colo={
+		name="Victor Colo"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Victor_Colo
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	ZAH_Paolose_Oasjiddatua={
+		name="Paolose Oasjiddatua"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Paolose_Oasjiddatua
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	ZAH_Albertor_Alla={
+		name="Albertor Alla"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Albertor_Alla
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	ZAH_Robertor_Masi={
+		name="Robertor Masi"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Robertor_Masi
+				traits = {	army_radio_intelligence_2 	}
+		}
+
+	}
+	ZAH_Robertor_Sordian={
+		name="Robertor Sordian"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Robertor_Sordian
+				traits = {	army_artillery_1 	}
+		}
+
+	}
+	ZAH_Khamo_Hija={
+		name="Khamo Hija"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Khamo_Hija
+				traits = {	navy_fleet_logistics_1 	}
+		}
+
+	}
+	ZAH_Hamir_Hijr={
+		name="Hamir Hijr"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Hamir_Hijr
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	ZAH_Tarid_Turhaqa={
+		name="Tarid Turhaqa"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Tarid_Turhaqa
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	ZAH_Jami_Masi={
+		name="Jami Masi"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Jami_Masi
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	ZAH_Frahmo_Hija={
+		name="Frahmo Hija"
+
+		
+		country_leader={
+			ideology=rexism
+			traits = { warmonger  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ZAH_Pedre_Turhaqa={
+		name="Pedre Turhaqa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Pedre_Turhaqa
+				traits = {	generallissimo 	}
+		}
+
+	}
+	ZAH_Luis_Turhaqa={
+		name="Luis Turhaqa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Luis_Turhaqa
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	ZAH_Sami_Rico={
+		name="Sami Rico"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Sami_Rico
+				traits = {	warmonger 	}
+		}
+
+	}
+	ZAH_Alberry_Hija={
+		name="Alberry Hija"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Alberry_Hija
+				traits = {	warmonger 	}
+		}
+
+	}
+	ZAH_Robertor_Rico={
+		name="Robertor Rico"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Robertor_Rico
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	ZAH_Faisal_Suwanyone={
+		name="Faisal Suwanyone"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Faisal_Suwanyone
+				traits = {	warmonger 	}
+		}
+
+	}
+	ZAH_Giacolassal_Alla={
+		name="Giacolassal Alla"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Giacolassal_Alla
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	ZAH_Farim_Masi={
+		name="Farim Masi"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Farim_Masi
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	ZAH_Jami_Turhaqa={
+		name="Jami Turhaqa"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Jami_Turhaqa
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	ZAH_Ricto_Hijr={
+		name="Ricto Hijr"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Ricto_Hijr
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	ZAH_Albertor_Suwanyone={
+		name="Albertor Suwanyone"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Albertor_Suwanyone
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	ZAH_Felien_Hija={
+		name="Felien Hija"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Felien_Hija
+				traits = {	navy_chief_naval_aviation_2 	}
+		}
+
+	}
+	ZAH_Mohamad_Rico={
+		name="Mohamad Rico"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Mohamad_Rico
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	ZAH_Luisal_Hijr={
+		name="Luisal Hijr"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Luisal_Hijr
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	ZAH_Ricto_Masi={
+		name="Ricto Masi"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Ricto_Masi
+				traits = {	army_logistics_2 	}
+		}
+
+	}
+	ZAH_Pabil_Alla={
+		name="Pabil Alla"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Pabil_Alla
+				traits = {	army_cavalry_1 	}
+		}
+
+	}
+	ZAH_Zais_Turhaqa={
+		name="Zais Turhaqa"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Zais_Turhaqa
+				traits = {	navy_anti_submarine_1 	}
+		}
+
+	}
+	ZAH_Albertor_Sordian={
+		name="Albertor Sordian"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Albertor_Sordian
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	ZAH_Omardo_Oasjiddatua={
+		name="Omardo Oasjiddatua"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Omardo_Oasjiddatua
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	ZAH_Majid_Oasjiddatua={
+		name="Majid Oasjiddatua"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Majid_Oasjiddatua
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	ZAH_Robertor_Suwanyone={
+		name="Robertor Suwanyone"
+
+		
+		country_leader={
+			ideology=stalinism
+			traits = { polemarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ZAH_Fran_Suwanyone={
+		name="Fran Suwanyone"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Fran_Suwanyone
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	ZAH_Antor_Rico={
+		name="Antor Rico"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Antor_Rico
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	ZAH_Hamir_Masi={
+		name="Hamir Masi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Hamir_Masi
+				traits = {	political_dancer 	}
+		}
+
+	}
+	ZAH_Marlo_Suwanyone={
+		name="Marlo Suwanyone"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Marlo_Suwanyone
+				traits = {	political_dancer 	}
+		}
+
+	}
+	ZAH_Marlo_Masi={
+		name="Marlo Masi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Marlo_Masi
+				traits = {	infirm 	}
+		}
+
+	}
+	ZAH_Jami_Colo={
+		name="Jami Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Jami_Colo
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	ZAH_Sami_Turhaqa={
+		name="Sami Turhaqa"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Sami_Turhaqa
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	ZAH_Ahmarim_Oasjiddatua={
+		name="Ahmarim Oasjiddatua"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Ahmarim_Oasjiddatua
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	ZAH_Majid_Turhaqa={
+		name="Majid Turhaqa"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Majid_Turhaqa
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	ZAH_Sami_Oasjiddatua={
+		name="Sami Oasjiddatua"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Sami_Oasjiddatua
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	ZAH_Marlo_Hija={
+		name="Marlo Hija"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Marlo_Hija
+				traits = {	navy_chief_naval_aviation_2 	}
+		}
+
+	}
+	ZAH_Thiertor_Colo={
+		name="Thiertor Colo"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Thiertor_Colo
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	ZAH_Hamir_Turhaqa={
+		name="Hamir Turhaqa"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Hamir_Turhaqa
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	ZAH_Jose_Colo={
+		name="Jose Colo"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Jose_Colo
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	ZAH_Victo_Oasjiddatua={
+		name="Victo Oasjiddatua"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Victo_Oasjiddatua
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	ZAH_Alid_Colo={
+		name="Alid Colo"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Alid_Colo
+				traits = {	navy_capital_ship_2 	}
+		}
+
+	}
+	ZAH_Andre_Turhaqa={
+		name="Andre Turhaqa"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Andre_Turhaqa
+				traits = {	army_entrenchment_2 	}
+		}
+
+	}
+	ZAH_Pabilal_Suwanyone={
+		name="Pabilal Suwanyone"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Pabilal_Suwanyone
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	ZAH_Giacolassal_Oasjiddatua={
+		name="Giacolassal Oasjiddatua"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Giacolassal_Oasjiddatua
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	ZAH_Felien_Hijr={
+		name="Felien Hijr"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Felien_Hijr
+				traits = {	army_armored_1 	}
+		}
+
+	}
+	ZAH_Victor_Hija={
+		name="Victor Hija"
+
+		
+		country_leader={
+			ideology=liberalism
+			traits = { british_bulldog  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ZAH_Antor_Sordian={
+		name="Antor Sordian"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Antor_Sordian
+				traits = {	the_banker 	}
+		}
+
+	}
+	ZAH_Giacolassal_Hijr={
+		name="Giacolassal Hijr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Giacolassal_Hijr
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	ZAH_Vicomon_Rico={
+		name="Vicomon Rico"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Vicomon_Rico
+				traits = {	infirm 	}
+		}
+
+	}
+	ZAH_Bilassancesc_Colo={
+		name="Bilassancesc Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Bilassancesc_Colo
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	ZAH_Rammedre_Oasjiddatua={
+		name="Rammedre Oasjiddatua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Rammedre_Oasjiddatua
+				traits = {	famous_aviator 	}
+		}
+
+	}
+	ZAH_Ahmarim_Hijr={
+		name="Ahmarim Hijr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ZAH_Ahmarim_Hijr
+				traits = {	the_banker 	}
+		}
+
+	}
+	ZAH_Omardo_Sordian={
+		name="Omardo Sordian"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Omardo_Sordian
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	ZAH_Paolahya_Colo={
+		name="Paolahya Colo"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Paolahya_Colo
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	ZAH_Mattefano_Hijr={
+		name="Mattefano Hijr"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Mattefano_Hijr
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	ZAH_Luis_Alla={
+		name="Luis Alla"
+
+		advisor={
+			slot = army_chief
+			idea_token = ZAH_Luis_Alla
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	ZAH_Abdulipe_Hija={
+		name="Abdulipe Hija"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Abdulipe_Hija
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	ZAH_Nabilahim_Hijr={
+		name="Nabilahim Hijr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ZAH_Nabilahim_Hijr
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	ZAH_Hami_Rico={
+		name="Hami Rico"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Hami_Rico
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	ZAH_Leonio_Hija={
+		name="Leonio Hija"
+
+		advisor={
+			slot = air_chief
+			idea_token = ZAH_Leonio_Hija
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	ZAH_Frahmo_Turhaqa={
+		name="Frahmo Turhaqa"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Frahmo_Turhaqa
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	ZAH_Saad_Oasjiddatua={
+		name="Saad Oasjiddatua"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Saad_Oasjiddatua
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	ZAH_Hassan_Turhaqa={
+		name="Hassan Turhaqa"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Hassan_Turhaqa
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	ZAH_Thiertor_Rico={
+		name="Thiertor Rico"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Thiertor_Rico
+				traits = {	army_regrouping_1 	}
+		}
+
+	}
+	ZAH_Alexan_Rico={
+		name="Alexan Rico"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Alexan_Rico
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	ZAH_Karlo_Hija={
+		name="Karlo Hija"
+
+		advisor={
+			slot = high_command
+			idea_token = ZAH_Karlo_Hija
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	ZAH_Victo_Hija={
+		name="Victo Hija"
+
+		advisor={
+			slot = theorist
+			idea_token = ZAH_Victo_Hija
+				traits = {	military_theorist 	}
+		}
+
+	}
+	ZAH_Rami_Oasjiddatua={
+		name="Rami Oasjiddatua"
+
+		advisor={
+			slot = theorist
+			idea_token = ZAH_Rami_Oasjiddatua
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	ZAH_Thim_Colo={
+		name="Thim Colo"
+
+		advisor={
+			slot = theorist
+			idea_token = ZAH_Thim_Colo
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

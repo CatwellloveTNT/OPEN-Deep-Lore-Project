@@ -1,0 +1,30 @@
+air_wings = {
+		544 = { 								
+		small_plane_cas_airframe_0 = { owner = "MES" amount = 50 version_name = "Tero Mk 2" }
+
+	}
+	503 = { 								
+		large_plane_airframe_0 = { owner = "MES" amount = 50 version_name = "Tero Mk 2" }
+
+	}
+	495 = { 								
+		small_plane_airframe_0 = { owner = "MES" amount = 50 version_name = "Mapikiq Mk 1" }
+
+	}
+	512 = { 								
+		medium_plane_airframe_0 = { owner = "MES" amount = 50 version_name = "Viata Mk 2" }
+medium_plane_airframe_0 = { owner = "MES" amount = 50 version_name = "Viata Mk 2" }
+
+	}
+	519 = { 								
+		small_plane_airframe_0 = { owner = "MES" amount = 50 version_name = "Mapikiq Mk 1" }
+large_plane_airframe_0 = { owner = "MES" amount = 50 version_name = "Tero Mk 2" }
+
+	}
+	526 = { 								
+		small_plane_cas_airframe_0 = { owner = "MES" amount = 50 version_name = "Tero Mk 2" }
+
+	}
+
+
+}

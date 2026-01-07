@@ -1,0 +1,11 @@
+state={
+	id=359
+	name="STATE_359"
+	provinces={
+		6882 
+	}
+	manpower=4041332
+	buildings_max_level_factor=1
+	state_category=large_city
+	local_supplies=15
+}

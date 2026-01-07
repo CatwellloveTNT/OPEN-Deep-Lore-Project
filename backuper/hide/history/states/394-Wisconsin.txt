@@ -1,0 +1,14 @@
+state={
+	id=394
+	name="STATE_394"
+	resources={
+		steel=53
+	}
+	provinces={
+		12357 12456 
+	}
+	manpower=2939004
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

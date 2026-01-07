@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Zahritorte Fleet"			
+		naval_base = 7800
+		task_force = {
+			name = "Zahritorte Fleet"
+			location = 7800
+			
+						ship = { name = "Hijr" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ZAH version_name = "Oasjiddatua Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

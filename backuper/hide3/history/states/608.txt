@@ -1,0 +1,41 @@
+
+state={
+	id=608
+	name="STATE_608"
+	manpower = 2216826
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 15829 4}
+		victory_points = { 15834 2}
+		victory_points = { 15835 2}
+		
+		owner = ASI
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			15834 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = ASI
+	}
+
+	provinces={
+		15829 15830 15831 15832 15833 15834 15835 
+	}
+	local_supplies=0.0 
+}

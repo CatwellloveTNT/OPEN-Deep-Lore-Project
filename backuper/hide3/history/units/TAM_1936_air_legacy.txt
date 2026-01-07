@@ -1,0 +1,63 @@
+air_wings = {
+		3 = { 								
+		CAS_equipment_0 = { owner = "TAM" amount = 50 version_name = "Prad Mk 0" }
+
+	}
+	6 = { 								
+		fighter_equipment_0 = { owner = "TAM" amount = 50 version_name = "Ribuk Mk 2" }
+
+	}
+	15 = { 								
+		CAS_equipment_0 = { owner = "TAM" amount = 50 version_name = "Ribuk Mk 2" }
+
+	}
+	47 = { 								
+		fighter_equipment_0 = { owner = "TAM" amount = 50 version_name = "Naku Mk 1" }
+strat_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Naku Mk 0" }
+
+	}
+	88 = { 								
+		strat_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Naku Mk 0" }
+
+	}
+	110 = { 								
+		strat_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Armlj Mk 2" }
+strat_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Armlj Mk 2" }
+
+	}
+	95 = { 								
+		tac_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Ghiagno Mk 1" }
+
+	}
+	114 = { 								
+		strat_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Armlj Mk 2" }
+fighter_equipment_0 = { owner = "TAM" amount = 50 version_name = "Naku Mk 1" }
+
+	}
+	121 = { 								
+		CAS_equipment_0 = { owner = "TAM" amount = 50 version_name = "Prad Mk 0" }
+
+	}
+	135 = { 								
+		fighter_equipment_0 = { owner = "TAM" amount = 50 version_name = "Ribuk Mk 2" }
+
+	}
+	158 = { 								
+		CAS_equipment_0 = { owner = "TAM" amount = 50 version_name = "Ribuk Mk 2" }
+
+	}
+	132 = { 								
+		tac_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Ghiagno Mk 1" }
+
+	}
+	149 = { 								
+		CAS_equipment_0 = { owner = "TAM" amount = 50 version_name = "Prad Mk 0" }
+
+	}
+	154 = { 								
+		strat_bomber_equipment_0 = { owner = "TAM" amount = 50 version_name = "Naku Mk 0" }
+
+	}
+
+
+}

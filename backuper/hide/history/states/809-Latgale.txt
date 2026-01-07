@@ -1,0 +1,11 @@
+state={
+	id=809
+	name="STATE_809"
+	provinces={
+		6222 6342 
+	}
+	manpower=215500
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

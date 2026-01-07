@@ -1,0 +1,39 @@
+
+state={
+	id=247
+	name="STATE_247"
+	manpower = 2958850
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 7006 5}
+		
+		owner = KNC
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 0
+			
+			7012 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KNC
+	}
+
+	provinces={
+		7005 7006 7007 7008 7009 7010 7011 7012 7013 7014 7015 7016 7017 7018 
+	}
+	local_supplies=0.0 
+}

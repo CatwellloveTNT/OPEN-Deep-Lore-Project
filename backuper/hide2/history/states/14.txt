@@ -1,0 +1,37 @@
+
+state={
+	id=14
+	name="STATE_14"
+	manpower = 7463258
+	
+	state_category = city
+	resources={
+		aluminium=2
+		chromium=0
+		oil=3
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 450 2}
+		victory_points = { 484 20}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 
+	}
+	local_supplies=0.0 
+}

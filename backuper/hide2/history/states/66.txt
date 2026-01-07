@@ -1,0 +1,38 @@
+
+state={
+	id=66
+	name="STATE_66"
+	manpower = 4184069
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 1998 9}
+		victory_points = { 2006 1}
+		victory_points = { 2008 2}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 
+	}
+	local_supplies=0.0 
+}

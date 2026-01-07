@@ -1,0 +1,14 @@
+state={
+	id=548
+	name="STATE_548"
+	resources={
+		rubber=3
+	}
+	provinces={
+		12929 12989 13177 
+	}
+	manpower=3515625
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

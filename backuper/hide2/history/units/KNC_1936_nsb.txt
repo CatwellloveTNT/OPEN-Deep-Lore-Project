@@ -1,0 +1,184 @@
+division_template = {
+	name = "Militia Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			infantry = {  x = 1 y = 2 }
+			infantry = {  x = 2 y = 0 }
+			infantry = {  x = 2 y = 1 }
+			infantry = {  x = 2 y = 2 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Artillery Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			artillery_brigade = {  x = 2 y = 0 }
+			artillery_brigade = {  x = 2 y = 1 }
+			artillery_brigade = {  x = 2 y = 2 }
+
+	}
+	
+	support = {
+			artillery = {  x = 0 y = 0 }
+
+	}
+}
+division_template = {
+	name = "Cavalry Division"
+
+	regiments = {
+			cavalry = {  x = 0 y = 0 }
+			cavalry = {  x = 0 y = 1 }
+			cavalry = {  x = 0 y = 2 }
+			cavalry = {  x = 1 y = 0 }
+			cavalry = {  x = 1 y = 1 }
+			cavalry = {  x = 2 y = 0 }
+			cavalry = {  x = 2 y = 1 }
+
+	}
+	
+	support = {
+
+	}
+}
+
+
+units = {
+	division= {
+		name = "1nd 'Tamat' Militia Division"
+		location = 15359
+		division_template = "Militia Division"
+		start_experience_factor = 0.783039
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "2rd 'Luchr' Militia Division"
+		location = 4808
+		division_template = "Militia Division"
+		start_experience_factor = 0.433391
+		start_equipment_factor = 0.946494
+	}
+	division= {
+		name = "3th 'Vecnostina' Militia Division"
+		location = 15230
+		division_template = "Militia Division"
+		start_experience_factor = 0.400045
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "4th 'Lempuahastrv' Militia Division"
+		location = 15178
+		division_template = "Militia Division"
+		start_experience_factor = 0.766974
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "5th 'Alan' Militia Division"
+		location = 15260
+		division_template = "Militia Division"
+		start_experience_factor = 0.353641
+		start_equipment_factor = 0.885764
+	}
+	division= {
+		name = "6th 'Legio' Militia Division"
+		location = 7007
+		division_template = "Militia Division"
+		start_experience_factor = 0.431788
+		start_equipment_factor = 0.912994
+	}
+	division= {
+		name = "7th 'Sverahlian' Militia Division"
+		location = 15342
+		division_template = "Militia Division"
+		start_experience_factor = 0.529390
+		start_equipment_factor = 0.917088
+	}
+	division= {
+		name = "1nd 'Tamat' Infantry Division"
+		location = 15344
+		division_template = "Infantry Division"
+		start_experience_factor = 0.871653
+		start_equipment_factor = 0.986294
+	}
+	division= {
+		name = "2rd 'Tuhasao' Infantry Division"
+		location = 15339
+		division_template = "Infantry Division"
+		start_experience_factor = 0.187277
+		start_equipment_factor = 0.942529
+	}
+	division= {
+		name = "3th 'Ribatan' Infantry Division"
+		location = 15358
+		division_template = "Infantry Division"
+		start_experience_factor = 0.771423
+		start_equipment_factor = 0.887720
+	}
+	division= {
+		name = "1nd 'Sverahlian' Cavalry Division"
+		location = 15325
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.492711
+		start_equipment_factor = 0.924849
+	}
+	division= {
+		name = "2rd 'Nyap' Cavalry Division"
+		location = 15153
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.747405
+		start_equipment_factor = 0.921247
+	}
+	division= {
+		name = "3th 'Senjevittero' Cavalry Division"
+		location = 15277
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.800032
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "4th 'Perom' Cavalry Division"
+		location = 15373
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.788597
+		start_equipment_factor = 0.996677
+	}
+	division= {
+		name = "5th 'Tuhasao' Cavalry Division"
+		location = 15363
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.813933
+		start_equipment_factor = 0.864514
+	}
+
+}

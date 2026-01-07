@@ -1,0 +1,14 @@
+state={
+	id=322
+	name="STATE_322"
+	resources={
+		tungsten=2
+	}
+	provinces={
+		4994 5011 7926 8068 
+	}
+	manpower=1722000
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=2
+}

@@ -1,0 +1,14 @@
+state={
+	id=601
+	name="STATE_601"
+	resources={
+		oil=2
+	}
+	provinces={
+		5018 5080 5102 8041 8059 
+	}
+	manpower=368200
+	buildings_max_level_factor=1
+	state_category=wasteland
+	local_supplies=1
+}

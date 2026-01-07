@@ -1,0 +1,37 @@
+
+state={
+	id=410
+	name="STATE_410"
+	manpower = 2899786
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11348 3}
+		victory_points = { 11351 5}
+		
+		owner = CAS
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = CAS
+	}
+
+	provinces={
+		11345 11346 11347 11348 11349 11350 11351 11352 11353 11354 11355 11356 11357 
+	}
+	local_supplies=0.0 
+}

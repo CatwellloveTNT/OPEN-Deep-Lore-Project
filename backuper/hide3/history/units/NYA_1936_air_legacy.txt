@@ -1,0 +1,20 @@
+air_wings = {
+		445 = { 								
+		nav_bomber_equipment_0 = { owner = "NYA" amount = 40 version_name = "Lurra Mk 0" }
+
+	}
+	466 = { 								
+		fighter_equipment_0 = { owner = "NYA" amount = 40 version_name = "Bara Mk 1" }
+
+	}
+	475 = { 								
+		tac_bomber_equipment_0 = { owner = "NYA" amount = 39 version_name = "Rohor Mk 2" }
+
+	}
+	478 = { 								
+		CAS_equipment_0 = { owner = "NYA" amount = 42 version_name = "Arnis Mk 1" }
+
+	}
+
+
+}

@@ -1,0 +1,880 @@
+characters = {
+	UUA_Mossanti_Sabz={
+		name="Mossanti Sabz"
+
+		
+		country_leader={
+			ideology=centrism
+			traits = { inexperienced_monarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	UUA_Harhad_Antzal={
+		name="Harhad Antzal"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Harhad_Antzal
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	UUA_Nimanti_Zorehr={
+		name="Nimanti Zorehr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Nimanti_Zorehr
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	UUA_Ebrahimal_Errimeh={
+		name="Ebrahimal Errimeh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Ebrahimal_Errimeh
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	UUA_Reza_Usaaskua={
+		name="Reza Usaaskua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Reza_Usaaskua
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	UUA_Eneko_Arrikh={
+		name="Eneko Arrikh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Eneko_Arrikh
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	UUA_Farhad_Itzagunar={
+		name="Farhad Itzagunar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Farhad_Itzagunar
+				traits = {	humble 	}
+		}
+
+	}
+	UUA_Ekai_Kantza={
+		name="Ekai Kantza"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Ekai_Kantza
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	UUA_Ebrahimal_Kantza={
+		name="Ebrahimal Kantza"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Ebrahimal_Kantza
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	UUA_Ikel_Kantza={
+		name="Ikel Kantza"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Ikel_Kantza
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	UUA_Ander_Itzagunar={
+		name="Ander Itzagunar"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Ander_Itzagunar
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	UUA_Mostafa_Zorehr={
+		name="Mostafa Zorehr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Mostafa_Zorehr
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	UUA_Rezad_Itzagunar={
+		name="Rezad Itzagunar"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Rezad_Itzagunar
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	UUA_Ibaizka_Zorehr={
+		name="Ibaizka Zorehr"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Ibaizka_Zorehr
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	UUA_Eneko_Sabz={
+		name="Eneko Sabz"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Eneko_Sabz
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	UUA_Ibaizka_Sabz={
+		name="Ibaizka Sabz"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Ibaizka_Sabz
+				traits = {	army_entrenchment_1 	}
+		}
+
+	}
+	UUA_Xanti_Antzal={
+		name="Xanti Antzal"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Xanti_Antzal
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	UUA_Ahman_Itzagunar={
+		name="Ahman Itzagunar"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Ahman_Itzagunar
+				traits = {	army_radio_intelligence_2 	}
+		}
+
+	}
+	UUA_Xabai_Errimeh={
+		name="Xabai Errimeh"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Xabai_Errimeh
+				traits = {	navy_naval_air_defense_1 	}
+		}
+
+	}
+	UUA_Aitz_Arrikh={
+		name="Aitz Arrikh"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Aitz_Arrikh
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	UUA_Harka_Oihata={
+		name="Harka Oihata"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Harka_Oihata
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	UUA_Armal_Arrikh={
+		name="Armal Arrikh"
+
+		
+		country_leader={
+			ideology=nazism
+			traits = { infirm  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	UUA_Amin_Sabz={
+		name="Amin Sabz"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Amin_Sabz
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	UUA_Ibaizka_Aziah={
+		name="Ibaizka Aziah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Ibaizka_Aziah
+				traits = {	warmonger 	}
+		}
+
+	}
+	UUA_Behzad_Arrikh={
+		name="Behzad Arrikh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Behzad_Arrikh
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	UUA_Navehdi_Itzagunar={
+		name="Navehdi Itzagunar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Navehdi_Itzagunar
+				traits = {	basileus 	}
+		}
+
+	}
+	UUA_Omid_Arrikh={
+		name="Omid Arrikh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Omid_Arrikh
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	UUA_Ebrahim_Usaaskua={
+		name="Ebrahim Usaaskua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Ebrahim_Usaaskua
+				traits = {	autokrator 	}
+		}
+
+	}
+	UUA_Ander_Usaaskua={
+		name="Ander Usaaskua"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Ander_Usaaskua
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	UUA_Harhahrahrah_Oihata={
+		name="Harhahrahrah Oihata"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Harhahrahrah_Oihata
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	UUA_Navehdi_Aziah={
+		name="Navehdi Aziah"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Navehdi_Aziah
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	UUA_Iban_Oihata={
+		name="Iban Oihata"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Iban_Oihata
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	UUA_Behzad_Errimeh={
+		name="Behzad Errimeh"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Behzad_Errimeh
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	UUA_Unai_Arrikh={
+		name="Unai Arrikh"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Unai_Arrikh
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	UUA_Shad_Oihata={
+		name="Shad Oihata"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Shad_Oihata
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	UUA_Xabai_Arrikh={
+		name="Xabai Arrikh"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Xabai_Arrikh
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	UUA_Amin_Antzal={
+		name="Amin Antzal"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Amin_Antzal
+				traits = {	air_bomber_interception_1 	}
+		}
+
+	}
+	UUA_Parkaiur_Aziah={
+		name="Parkaiur Aziah"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Parkaiur_Aziah
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	UUA_Harhad_Zorehr={
+		name="Harhad Zorehr"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Harhad_Zorehr
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	UUA_Xabai_Usaaskua={
+		name="Xabai Usaaskua"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Xabai_Usaaskua
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	UUA_Amid_Oihata={
+		name="Amid Oihata"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Amid_Oihata
+				traits = {	army_regrouping_1 	}
+		}
+
+	}
+	UUA_Mostafa_Errimeh={
+		name="Mostafa Errimeh"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Mostafa_Errimeh
+				traits = {	army_cavalry_1 	}
+		}
+
+	}
+	UUA_Parhahimal_Oihata={
+		name="Parhahimal Oihata"
+
+		
+		country_leader={
+			ideology=leninism
+			traits = { indomitable_perseverance  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	UUA_Armad_Itzagunar={
+		name="Armad Itzagunar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Armad_Itzagunar
+				traits = {	polemarch 	}
+		}
+
+	}
+	UUA_Babier_Kantza={
+		name="Babier Kantza"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Babier_Kantza
+				traits = {	infirm 	}
+		}
+
+	}
+	UUA_Parhad_Itzagunar={
+		name="Parhad Itzagunar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Parhad_Itzagunar
+				traits = {	infirm 	}
+		}
+
+	}
+	UUA_Hossein_Antzal={
+		name="Hossein Antzal"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Hossein_Antzal
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	UUA_Niman_Oihata={
+		name="Niman Oihata"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Niman_Oihata
+				traits = {	infirm 	}
+		}
+
+	}
+	UUA_Mossanti_Arrikh={
+		name="Mossanti Arrikh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Mossanti_Arrikh
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	UUA_Farhad_Oihata={
+		name="Farhad Oihata"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Farhad_Oihata
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	UUA_Mikel_Errimeh={
+		name="Mikel Errimeh"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Mikel_Errimeh
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	UUA_Mostafa_Usaaskua={
+		name="Mostafa Usaaskua"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Mostafa_Usaaskua
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	UUA_Gorka_Sabz={
+		name="Gorka Sabz"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Gorka_Sabz
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	UUA_Mossanti_Oihata={
+		name="Mossanti Oihata"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Mossanti_Oihata
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	UUA_Harhad_Oihata={
+		name="Harhad Oihata"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Harhad_Oihata
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	UUA_Amad_Itzagunar={
+		name="Amad Itzagunar"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Amad_Itzagunar
+				traits = {	air_chief_night_operations_2 	}
+		}
+
+	}
+	UUA_Shahram_Zorehr={
+		name="Shahram Zorehr"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Shahram_Zorehr
+				traits = {	air_chief_night_operations_2 	}
+		}
+
+	}
+	UUA_Harhad_Sabz={
+		name="Harhad Sabz"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Harhad_Sabz
+				traits = {	air_pilot_training_1 	}
+		}
+
+	}
+	UUA_Ander_Antzal={
+		name="Ander Antzal"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Ander_Antzal
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	UUA_Niman_Sabz={
+		name="Niman Sabz"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Niman_Sabz
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	UUA_Ibaizkaizkai_Kantza={
+		name="Ibaizkaizkai Kantza"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Ibaizkaizkai_Kantza
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	UUA_Eneko_Itzagunar={
+		name="Eneko Itzagunar"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Eneko_Itzagunar
+				traits = {	air_airborne_1 	}
+		}
+
+	}
+	UUA_Koldo_Oihata={
+		name="Koldo Oihata"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Koldo_Oihata
+				traits = {	army_concealment_2 	}
+		}
+
+	}
+	UUA_Mikel_Oihata={
+		name="Mikel Oihata"
+
+		
+		country_leader={
+			ideology=liberalism
+			traits = { the_banker  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	UUA_Parhamir_Antzal={
+		name="Parhamir Antzal"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Parhamir_Antzal
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	UUA_Kavid_Kantza={
+		name="Kavid Kantza"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Kavid_Kantza
+				traits = {	infirm 	}
+		}
+
+	}
+	UUA_Ebramal_Itzagunar={
+		name="Ebramal Itzagunar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Ebramal_Itzagunar
+				traits = {	famous_aviator 	}
+		}
+
+	}
+	UUA_Parkaiur_Usaaskua={
+		name="Parkaiur Usaaskua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Parkaiur_Usaaskua
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	UUA_Mossan_Aziah={
+		name="Mossan Aziah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Mossan_Aziah
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	UUA_Shad_Usaaskua={
+		name="Shad Usaaskua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = UUA_Shad_Usaaskua
+				traits = {	rearmer 	}
+		}
+
+	}
+	UUA_Unai_Aziah={
+		name="Unai Aziah"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Unai_Aziah
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	UUA_Majid_Arrikh={
+		name="Majid Arrikh"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Majid_Arrikh
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	UUA_Xanti_Arrikh={
+		name="Xanti Arrikh"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Xanti_Arrikh
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	UUA_Mossein_Oihata={
+		name="Mossein Oihata"
+
+		advisor={
+			slot = army_chief
+			idea_token = UUA_Mossein_Oihata
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	UUA_Reza_Oihata={
+		name="Reza Oihata"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Reza_Oihata
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	UUA_Reza_Zorehr={
+		name="Reza Zorehr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = UUA_Reza_Zorehr
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	UUA_Mossein_Sabz={
+		name="Mossein Sabz"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Mossein_Sabz
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	UUA_Miker_Sabz={
+		name="Miker Sabz"
+
+		advisor={
+			slot = air_chief
+			idea_token = UUA_Miker_Sabz
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	UUA_Armaiur_Arrikh={
+		name="Armaiur Arrikh"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Armaiur_Arrikh
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	UUA_Xabai_Itzagunar={
+		name="Xabai Itzagunar"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Xabai_Itzagunar
+				traits = {	air_naval_strike_2 	}
+		}
+
+	}
+	UUA_Mossein_Kantza={
+		name="Mossein Kantza"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Mossein_Kantza
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	UUA_Koldo_Zorehr={
+		name="Koldo Zorehr"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Koldo_Zorehr
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	UUA_Kavid_Usaaskua={
+		name="Kavid Usaaskua"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Kavid_Usaaskua
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	UUA_Mossanti_Zorehr={
+		name="Mossanti Zorehr"
+
+		advisor={
+			slot = high_command
+			idea_token = UUA_Mossanti_Zorehr
+				traits = {	army_regrouping_1 	}
+		}
+
+	}
+	UUA_Koldo_Antzal={
+		name="Koldo Antzal"
+
+		advisor={
+			slot = theorist
+			idea_token = UUA_Koldo_Antzal
+				traits = {	military_theorist 	}
+		}
+
+	}
+	UUA_Ibaiur_Usaaskua={
+		name="Ibaiur Usaaskua"
+
+		advisor={
+			slot = theorist
+			idea_token = UUA_Ibaiur_Usaaskua
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	UUA_Amid_Aziah={
+		name="Amid Aziah"
+
+		advisor={
+			slot = theorist
+			idea_token = UUA_Amid_Aziah
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

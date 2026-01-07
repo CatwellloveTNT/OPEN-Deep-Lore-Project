@@ -1,0 +1,14 @@
+state={
+	id=413
+	name="STATE_413"
+	resources={
+		oil=28
+	}
+	provinces={
+		5005 5089 7953 
+	}
+	manpower=797356
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

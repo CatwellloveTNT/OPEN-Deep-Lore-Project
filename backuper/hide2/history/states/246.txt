@@ -1,0 +1,36 @@
+
+state={
+	id=246
+	name="STATE_246"
+	manpower = 4026166
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6987 9}
+		
+		owner = ZAH
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = ZAH
+	}
+
+	provinces={
+		6985 6986 6987 6988 6989 6990 6991 6992 6993 6994 6995 6996 6997 6998 6999 7000 7001 7002 7003 7004 
+	}
+	local_supplies=0.0 
+}

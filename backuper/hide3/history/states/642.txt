@@ -1,0 +1,40 @@
+
+state={
+	id=642
+	name="STATE_642"
+	manpower = 6307582
+	
+	state_category = large_city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 16235 7}
+		victory_points = { 16241 16}
+		
+		owner = BAW
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			16238 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = BAW
+	}
+
+	provinces={
+		16235 16236 16237 16238 16239 16240 16241 16242 16243 16244 16245 16246 16247 16248 16249 16250 16251 16252 16253 16254 16255 16256 16257 16258 
+	}
+	local_supplies=0.0 
+}

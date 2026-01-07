@@ -1,0 +1,40 @@
+
+state={
+	id=152
+	name="STATE_152"
+	manpower = 2299855
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 4361 1}
+		victory_points = { 4362 5}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			arms_factory = 0
+			industrial_complex = 1
+			
+			4366 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		4360 4361 4362 4363 4364 4365 4366 4367 4368 
+	}
+	local_supplies=0.0 
+}

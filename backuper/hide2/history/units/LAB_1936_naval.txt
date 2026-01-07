@@ -1,0 +1,29 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Labazila Fleet"			
+		naval_base = 16416
+		task_force = {
+			name = "Labazila Fleet"
+			location = 16416
+			
+						ship = { name = "Allifl" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = LAB version_name = "Trub Class" } }	}
+			ship = { name = "Allifl 2" definition = battle_cruiser equipment = { battle_cruiser_2 = { amount = 1 owner = LAB version_name = "Scortaab Class" } }	}
+			ship = { name = "Scriq" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = LAB version_name = "Sogge Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

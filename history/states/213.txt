@@ -1,0 +1,37 @@
+
+state={
+	id=213
+	name="STATE_213"
+	manpower = 2706888
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 6095 5}
+		victory_points = { 6101 1}
+		
+		owner = TOD
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = TOD
+	}
+
+	provinces={
+		6094 6095 6096 6097 6098 6099 6100 6101 6102 6103 6104 6105 6106 
+	}
+	local_supplies=0.0 
+}

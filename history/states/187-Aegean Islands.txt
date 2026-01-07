@@ -1,0 +1,14 @@
+state={
+	id=187
+	name="STATE_187"
+	resources={
+		chromium=7
+	}
+	provinces={
+		6550 
+	}
+	manpower=322600
+	buildings_max_level_factor=1
+	state_category=small_island
+	local_supplies=9
+}

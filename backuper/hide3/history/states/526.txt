@@ -1,0 +1,38 @@
+
+state={
+	id=526
+	name="STATE_526"
+	manpower = 6234487
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=1
+		oil=1
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 14108 3}
+		victory_points = { 14111 12}
+		victory_points = { 14117 9}
+		
+		owner = MES
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 4
+			
+			
+		}
+		add_core_of = MES
+	}
+
+	provinces={
+		14105 14106 14107 14108 14109 14110 14111 14112 14113 14114 14115 14116 14117 14118 14119 14120 14121 14122 14123 14124 14125 14126 14127 14128 
+	}
+	local_supplies=0.0 
+}

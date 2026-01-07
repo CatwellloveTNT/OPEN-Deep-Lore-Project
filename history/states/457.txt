@@ -1,0 +1,36 @@
+
+state={
+	id=457
+	name="STATE_457"
+	manpower = 2645816
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 12592 5}
+		
+		owner = NYA
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = NYA
+	}
+
+	provinces={
+		12591 12592 12593 12594 12595 12596 12597 12598 12599 12600 12601 12602 12603 
+	}
+	local_supplies=0.0 
+}

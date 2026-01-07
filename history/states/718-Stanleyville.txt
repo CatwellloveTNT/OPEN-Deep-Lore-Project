@@ -1,0 +1,14 @@
+state={
+	id=718
+	name="STATE_718"
+	resources={
+		rubber=3
+	}
+	provinces={
+		12808 12847 
+	}
+	manpower=1656749
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=2
+}

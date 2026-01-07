@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Ponti Fleet"			
+		naval_base = 12876
+		task_force = {
+			name = "Ponti Fleet"
+			location = 12876
+			
+						ship = { name = "Baketas" definition = battle_cruiser equipment = { battle_cruiser_2 = { amount = 1 owner = PON version_name = "Baketas Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

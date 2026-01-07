@@ -1,0 +1,41 @@
+
+state={
+	id=402
+	name="STATE_402"
+	manpower = 2145675
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11185 2}
+		victory_points = { 11186 2}
+		victory_points = { 11188 4}
+		
+		owner = LAN
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			11185 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAN
+	}
+
+	provinces={
+		11184 11185 11186 11187 11188 11189 
+	}
+	local_supplies=0.0 
+}

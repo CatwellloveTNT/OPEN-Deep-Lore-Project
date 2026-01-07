@@ -1,0 +1,15 @@
+state={
+	id=155
+	name="STATE_155"
+	resources={
+		aluminium=40
+		coal=1
+	}
+	provinces={
+		13125 
+	}
+	manpower=1465070
+	buildings_max_level_factor=1
+	state_category=large_town
+	local_supplies=0
+}

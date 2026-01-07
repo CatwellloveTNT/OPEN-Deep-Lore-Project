@@ -1,0 +1,36 @@
+
+state={
+	id=91
+	name="STATE_91"
+	manpower = 3349466
+	
+	state_category = town
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 2715 10}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		2707 2708 2709 2710 2711 2712 2713 2714 2715 2716 2717 2718 2719 2720 2721 
+	}
+	local_supplies=0.0 
+}

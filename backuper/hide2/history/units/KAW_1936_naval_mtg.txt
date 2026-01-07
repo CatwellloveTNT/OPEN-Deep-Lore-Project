@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Kawi Fleet"			
+		naval_base = 16406
+		task_force = {
+			name = "Kawi Fleet"
+			location = 16406
+			
+						ship = { name = "Mapik" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KAW version_name = "Notingelleb Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

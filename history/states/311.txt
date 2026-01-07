@@ -1,0 +1,37 @@
+
+state={
+	id=311
+	name="STATE_311"
+	manpower = 4405580
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=2
+		oil=3
+		rubber=0
+		steel=5
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8714 12}
+		victory_points = { 8728 2}
+		
+		owner = BAW
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = BAW
+	}
+
+	provinces={
+		8709 8710 8711 8712 8713 8714 8715 8716 8717 8718 8719 8720 8721 8722 8723 8724 8725 8726 8727 8728 8729 8730 8731 8732 8733 8734 8735 8736 8737 8738 8739 8740 8741 
+	}
+	local_supplies=0.0 
+}

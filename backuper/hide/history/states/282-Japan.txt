@@ -1,0 +1,14 @@
+state={
+	id=282
+	name="STATE_282"
+	resources={
+		aluminium=1
+	}
+	provinces={
+		7016 
+	}
+	manpower=15773000
+	buildings_max_level_factor=1
+	state_category=megalopolis
+	local_supplies=0
+}

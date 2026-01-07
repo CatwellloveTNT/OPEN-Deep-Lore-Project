@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+
+		immigration_bonus_PON_0 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 770
+			}
+		}
+
+		immigration_bonus_PON_1 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 491
+			}
+		}
+
+		immigration_bonus_PON_2 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 597
+			}
+		}
+
+}
+}

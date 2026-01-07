@@ -1,0 +1,42 @@
+
+state={
+	id=361
+	name="STATE_361"
+	manpower = 5494171
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10152 1}
+		victory_points = { 10156 5}
+		victory_points = { 10157 3}
+		victory_points = { 10175 10}
+		
+		owner = MKA
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 2
+			10152 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MKA
+	}
+
+	provinces={
+		10152 10153 10154 10155 10156 10157 10158 10159 10160 10161 10162 10163 10164 10165 10166 10167 10168 10169 10170 10171 10172 10173 10174 10175 10176 
+	}
+	local_supplies=0.0 
+}

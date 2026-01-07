@@ -1,0 +1,25 @@
+air_wings = {
+		566 = { 								
+		fighter_equipment_0 = { owner = "KNC" amount = 25 version_name = "Perom Mk 1" }
+fighter_equipment_0 = { owner = "KNC" amount = 25 version_name = "Vecnostina Mk 1" }
+
+	}
+	568 = { 								
+		CAS_equipment_0 = { owner = "KNC" amount = 31 version_name = "Sumbang Mk 2" }
+
+	}
+	567 = { 								
+		nav_bomber_equipment_0 = { owner = "KNC" amount = 22 version_name = "Ljubangga Mk 2" }
+
+	}
+	685 = { 								
+		CAS_equipment_0 = { owner = "KNC" amount = 30 version_name = "Tuhasao Mk 0" }
+
+	}
+	195 = { 								
+		nav_bomber_equipment_0 = { owner = "KNC" amount = 22 version_name = "Sverahlian Mk 2" }
+
+	}
+
+
+}

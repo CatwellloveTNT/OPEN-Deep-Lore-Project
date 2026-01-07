@@ -1,0 +1,39 @@
+
+state={
+	id=196
+	name="STATE_196"
+	manpower = 14644
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 5644 1}
+		
+		owner = LAB
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 0
+			
+			5644 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAB
+	}
+
+	provinces={
+		5644 
+	}
+	local_supplies=0.0 
+}

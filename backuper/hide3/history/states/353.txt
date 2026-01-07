@@ -1,0 +1,40 @@
+
+state={
+	id=353
+	name="STATE_353"
+	manpower = 3221419
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 9941 8}
+		victory_points = { 9942 2}
+		
+		owner = KFA
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			arms_factory = 0
+			industrial_complex = 1
+			
+			9944 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KFA
+	}
+
+	provinces={
+		9939 9940 9941 9942 9943 9944 9945 9946 9947 9948 9949 9950 
+	}
+	local_supplies=0.0 
+}

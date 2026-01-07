@@ -1,0 +1,11 @@
+state={
+	id=973
+	name="STATE_973"
+	provinces={
+		6670 6700 
+	}
+	manpower=580000
+	buildings_max_level_factor=1
+	state_category=large_town
+	local_supplies=12
+}

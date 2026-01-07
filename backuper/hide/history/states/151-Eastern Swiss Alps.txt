@@ -1,0 +1,14 @@
+state={
+	id=151
+	name="STATE_151"
+	resources={
+		aluminium=15
+	}
+	provinces={
+		11601 
+	}
+	manpower=598920
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

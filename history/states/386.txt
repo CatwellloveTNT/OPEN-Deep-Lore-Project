@@ -1,0 +1,37 @@
+
+state={
+	id=386
+	name="STATE_386"
+	manpower = 6487793
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 10723 3}
+		victory_points = { 10748 16}
+		
+		owner = LAN
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = LAN
+	}
+
+	provinces={
+		10719 10720 10721 10722 10723 10724 10725 10726 10727 10728 10729 10730 10731 10732 10733 10734 10735 10736 10737 10738 10739 10740 10741 10742 10743 10744 10745 10746 10747 10748 10749 10750 10751 
+	}
+	local_supplies=0.0 
+}

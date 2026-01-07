@@ -1,0 +1,39 @@
+
+state={
+	id=558
+	name="STATE_558"
+	manpower = 1175848
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=9
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 14903 1}
+		
+		owner = MKA
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			14911 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MKA
+	}
+
+	provinces={
+		14903 14904 14905 14906 14907 14908 14909 14910 14911 14912 14913 14914 14915 14916 14917 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,30 @@
+air_wings = {
+		606 = { 								
+		fighter_equipment_0 = { owner = "MAT" amount = 50 version_name = "Cone Mk 2" }
+
+	}
+	278 = { 								
+		nav_bomber_equipment_0 = { owner = "MAT" amount = 50 version_name = "Allo Mk 0" }
+
+	}
+	289 = { 								
+		CAS_equipment_0 = { owner = "MAT" amount = 50 version_name = "Chia Mk 2" }
+fighter_equipment_0 = { owner = "MAT" amount = 50 version_name = "Cone Mk 2" }
+
+	}
+	168 = { 								
+		CAS_equipment_0 = { owner = "MAT" amount = 50 version_name = "Chia Mk 2" }
+
+	}
+	178 = { 								
+		tac_bomber_equipment_0 = { owner = "MAT" amount = 50 version_name = "Muftim Mk 1" }
+
+	}
+	174 = { 								
+		nav_bomber_equipment_0 = { owner = "MAT" amount = 50 version_name = "Allo Mk 0" }
+tac_bomber_equipment_0 = { owner = "MAT" amount = 50 version_name = "Muftim Mk 1" }
+
+	}
+
+
+}

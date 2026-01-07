@@ -1,0 +1,40 @@
+
+state={
+	id=236
+	name="STATE_236"
+	manpower = 945079
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 6739 1}
+		victory_points = { 6740 1}
+		
+		owner = LAB
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			6739 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAB
+	}
+
+	provinces={
+		6739 6740 
+	}
+	local_supplies=0.0 
+}

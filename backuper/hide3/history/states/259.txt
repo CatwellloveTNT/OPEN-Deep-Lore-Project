@@ -1,0 +1,37 @@
+
+state={
+	id=259
+	name="STATE_259"
+	manpower = 3498131
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7286 6}
+		victory_points = { 7297 1}
+		
+		owner = UAG
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = UAG
+	}
+
+	provinces={
+		7283 7284 7285 7286 7287 7288 7289 7290 7291 7292 7293 7294 7295 7296 7297 7298 7299 7300 7301 7302 7303 
+	}
+	local_supplies=0.0 
+}

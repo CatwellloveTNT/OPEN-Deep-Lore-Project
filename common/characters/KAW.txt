@@ -1,0 +1,880 @@
+characters = {
+	KAW_Bruno_Bene={
+		name="Bruno Bene"
+
+		
+		country_leader={
+			ideology=oligarchism
+			traits = { inexperienced_monarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KAW_Matej_Vita={
+		name="Matej Vita"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Matej_Vita
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	KAW_Pablo_Ikigluk={
+		name="Pablo Ikigluk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Pablo_Ikigluk
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	KAW_Pancesco_Vocene={
+		name="Pancesco Vocene"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Pancesco_Vocene
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	KAW_Ivan_Citak={
+		name="Ivan Citak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Ivan_Citak
+				traits = {	exiled 	}
+		}
+
+	}
+	KAW_Rado_Vita={
+		name="Rado Vita"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Rado_Vita
+				traits = {	humble 	}
+		}
+
+	}
+	KAW_Luca_Stroda={
+		name="Luca Stroda"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Luca_Stroda
+				traits = {	exiled 	}
+		}
+
+	}
+	KAW_Maraj_Knjavaqtulo={
+		name="Maraj Knjavaqtulo"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Maraj_Knjavaqtulo
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	KAW_Bran_Notingelleb={
+		name="Bran Notingelleb"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Bran_Notingelleb
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	KAW_Kanov_Notingelleb={
+		name="Kanov Notingelleb"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Kanov_Notingelleb
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	KAW_Vlavelik_Vocene={
+		name="Vlavelik Vocene"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Vlavelik_Vocene
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	KAW_Iluk_Knjavaqtulo={
+		name="Iluk Knjavaqtulo"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Iluk_Knjavaqtulo
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	KAW_Siladimir_Bene={
+		name="Siladimir Bene"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Siladimir_Bene
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	KAW_Nuta_Vocene={
+		name="Nuta Vocene"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Nuta_Vocene
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	KAW_Kunov_Notingelleb={
+		name="Kunov Notingelleb"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Kunov_Notingelleb
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	KAW_Jean_Vocene={
+		name="Jean Vocene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Jean_Vocene
+				traits = {	air_air_combat_training_2 	}
+		}
+
+	}
+	KAW_Enzo_Notingelleb={
+		name="Enzo Notingelleb"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Enzo_Notingelleb
+				traits = {	army_logistics_1 	}
+		}
+
+	}
+	KAW_Matefan_Bene={
+		name="Matefan Bene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Matefan_Bene
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	KAW_Mattefanik_Ikigluk={
+		name="Mattefanik Ikigluk"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Mattefanik_Ikigluk
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	KAW_Velipe_Ikigluk={
+		name="Velipe Ikigluk"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Velipe_Ikigluk
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	KAW_Jean_Knjavaqtulo={
+		name="Jean Knjavaqtulo"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Jean_Knjavaqtulo
+				traits = {	navy_screen_1 	}
+		}
+
+	}
+	KAW_Ivan_Vita={
+		name="Ivan Vita"
+
+		
+		country_leader={
+			ideology=falangism
+			traits = { generallissimo  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KAW_Petardo_Citak={
+		name="Petardo Citak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Petardo_Citak
+				traits = {	warmonger 	}
+		}
+
+	}
+	KAW_Radimir_Bene={
+		name="Radimir Bene"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Radimir_Bene
+				traits = {	infirm 	}
+		}
+
+	}
+	KAW_Tomon_Mapik={
+		name="Tomon Mapik"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Tomon_Mapik
+				traits = {	warmonger 	}
+		}
+
+	}
+	KAW_Juranaq_Nalaq={
+		name="Juranaq Nalaq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Juranaq_Nalaq
+				traits = {	polemarch 	}
+		}
+
+	}
+	KAW_Serry_Mapik={
+		name="Serry Mapik"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Serry_Mapik
+				traits = {	collaborator_king 	}
+		}
+
+	}
+	KAW_Kuno_Bene={
+		name="Kuno Bene"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Kuno_Bene
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	KAW_Andrej_Vita={
+		name="Andrej Vita"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Andrej_Vita
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	KAW_Rado_Ikigluk={
+		name="Rado Ikigluk"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Rado_Ikigluk
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	KAW_Vlavelik_Stroda={
+		name="Vlavelik Stroda"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Vlavelik_Stroda
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	KAW_Roberry_Nalaq={
+		name="Roberry Nalaq"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Roberry_Nalaq
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	KAW_Juranuq_Stroda={
+		name="Juranuq Stroda"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Juranuq_Stroda
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	KAW_Ukpikitarlo_Vocene={
+		name="Ukpikitarlo Vocene"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Ukpikitarlo_Vocene
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	KAW_Mattefanik_Vocene={
+		name="Mattefanik Vocene"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Mattefanik_Vocene
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	KAW_Mattefan_Vita={
+		name="Mattefan Vita"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Mattefan_Vita
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	KAW_Petardo_Vocene={
+		name="Petardo Vocene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Petardo_Vocene
+				traits = {	army_concealment_2 	}
+		}
+
+	}
+	KAW_Kanov_Mapik={
+		name="Kanov Mapik"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Kanov_Mapik
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	KAW_Jean_Notingelleb={
+		name="Jean Notingelleb"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Jean_Notingelleb
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	KAW_Olexanislan_Vita={
+		name="Olexanislan Vita"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Olexanislan_Vita
+				traits = {	navy_anti_submarine_1 	}
+		}
+
+	}
+	KAW_Ivandrose_Vita={
+		name="Ivandrose Vita"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Ivandrose_Vita
+				traits = {	air_air_superiority_1 	}
+		}
+
+	}
+	KAW_Brunis_Ikigluk={
+		name="Brunis Ikigluk"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Brunis_Ikigluk
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	KAW_Nica_Ikigluk={
+		name="Nica Ikigluk"
+
+		
+		country_leader={
+			ideology=leninism
+			traits = { indomitable_perseverance  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KAW_Jardovanuq_Stroda={
+		name="Jardovanuq Stroda"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Jardovanuq_Stroda
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	KAW_Rado_Notingelleb={
+		name="Rado Notingelleb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Rado_Notingelleb
+				traits = {	polemarch 	}
+		}
+
+	}
+	KAW_Nutardov_Nalaq={
+		name="Nutardov Nalaq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Nutardov_Nalaq
+				traits = {	infirm 	}
+		}
+
+	}
+	KAW_Julipe_Knjavaqtulo={
+		name="Julipe Knjavaqtulo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Julipe_Knjavaqtulo
+				traits = {	polemarch 	}
+		}
+
+	}
+	KAW_Andros_Knjavaqtulo={
+		name="Andros Knjavaqtulo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Andros_Knjavaqtulo
+				traits = {	polemarch 	}
+		}
+
+	}
+	KAW_Serry_Bene={
+		name="Serry Bene"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Serry_Bene
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	KAW_Julipe_Mapik={
+		name="Julipe Mapik"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Julipe_Mapik
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	KAW_Kancesco_Stroda={
+		name="Kancesco Stroda"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Kancesco_Stroda
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	KAW_Andrej_Knjavaqtulo={
+		name="Andrej Knjavaqtulo"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Andrej_Knjavaqtulo
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	KAW_Felikigaq_Knjavaqtulo={
+		name="Felikigaq Knjavaqtulo"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Felikigaq_Knjavaqtulo
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	KAW_Pablo_Knjavaqtulo={
+		name="Pablo Knjavaqtulo"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Pablo_Knjavaqtulo
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	KAW_Serry_Vita={
+		name="Serry Vita"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Serry_Vita
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	KAW_Bran_Vita={
+		name="Bran Vita"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Bran_Vita
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	KAW_Roberry_Vita={
+		name="Roberry Vita"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Roberry_Vita
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	KAW_Ivandrose_Bene={
+		name="Ivandrose Bene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Ivandrose_Bene
+				traits = {	navy_capital_ship_2 	}
+		}
+
+	}
+	KAW_Luca_Bene={
+		name="Luca Bene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Luca_Bene
+				traits = {	navy_anti_submarine_2 	}
+		}
+
+	}
+	KAW_Qajaq_Stroda={
+		name="Qajaq Stroda"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Qajaq_Stroda
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	KAW_Bragomir_Vocene={
+		name="Bragomir Vocene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Bragomir_Vocene
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	KAW_Rico_Vita={
+		name="Rico Vita"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Rico_Vita
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	KAW_Dmir_Nalaq={
+		name="Dmir Nalaq"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Dmir_Nalaq
+				traits = {	army_logistics_2 	}
+		}
+
+	}
+	KAW_Peta_Ikigluk={
+		name="Peta Ikigluk"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { first_lady  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KAW_Maraj_Notingelleb={
+		name="Maraj Notingelleb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Maraj_Notingelleb
+				traits = {	the_banker 	}
+		}
+
+	}
+	KAW_Paolav_Mapik={
+		name="Paolav Mapik"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Paolav_Mapik
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	KAW_Kancesco_Bene={
+		name="Kancesco Bene"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Kancesco_Bene
+				traits = {	first_lady 	}
+		}
+
+	}
+	KAW_Juranikigaq_Nalaq={
+		name="Juranikigaq Nalaq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Juranikigaq_Nalaq
+				traits = {	rearmer 	}
+		}
+
+	}
+	KAW_Radek_Citak={
+		name="Radek Citak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Radek_Citak
+				traits = {	the_banker 	}
+		}
+
+	}
+	KAW_Tomon_Stroda={
+		name="Tomon Stroda"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KAW_Tomon_Stroda
+				traits = {	the_banker 	}
+		}
+
+	}
+	KAW_Stario_Ikigluk={
+		name="Stario Ikigluk"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Stario_Ikigluk
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	KAW_Brunis_Mapik={
+		name="Brunis Mapik"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Brunis_Mapik
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	KAW_Slav_Mapik={
+		name="Slav Mapik"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Slav_Mapik
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	KAW_Radimir_Ikigluk={
+		name="Radimir Ikigluk"
+
+		advisor={
+			slot = army_chief
+			idea_token = KAW_Radimir_Ikigluk
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	KAW_Ivandrose_Notingelleb={
+		name="Ivandrose Notingelleb"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Ivandrose_Notingelleb
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	KAW_Juranaq_Notingelleb={
+		name="Juranaq Notingelleb"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KAW_Juranaq_Notingelleb
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	KAW_Jardovan_Ikigluk={
+		name="Jardovan Ikigluk"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Jardovan_Ikigluk
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	KAW_Ukpik_Stroda={
+		name="Ukpik Stroda"
+
+		advisor={
+			slot = air_chief
+			idea_token = KAW_Ukpik_Stroda
+				traits = {	air_chief_night_operations_2 	}
+		}
+
+	}
+	KAW_Bruno_Vocene={
+		name="Bruno Vocene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Bruno_Vocene
+				traits = {	army_cavalry_1 	}
+		}
+
+	}
+	KAW_Nutar_Notingelleb={
+		name="Nutar Notingelleb"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Nutar_Notingelleb
+				traits = {	air_pilot_training_1 	}
+		}
+
+	}
+	KAW_Tomon_Citak={
+		name="Tomon Citak"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Tomon_Citak
+				traits = {	army_artillery_1 	}
+		}
+
+	}
+	KAW_Nutarco_Vita={
+		name="Nutarco Vita"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Nutarco_Vita
+				traits = {	air_naval_strike_1 	}
+		}
+
+	}
+	KAW_Marco_Bene={
+		name="Marco Bene"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Marco_Bene
+				traits = {	army_concealment_2 	}
+		}
+
+	}
+	KAW_Atka_Citak={
+		name="Atka Citak"
+
+		advisor={
+			slot = high_command
+			idea_token = KAW_Atka_Citak
+				traits = {	navy_fleet_logistics_2 	}
+		}
+
+	}
+	KAW_Nutarco_Notingelleb={
+		name="Nutarco Notingelleb"
+
+		advisor={
+			slot = theorist
+			idea_token = KAW_Nutarco_Notingelleb
+				traits = {	military_theorist 	}
+		}
+
+	}
+	KAW_Andrej_Nalaq={
+		name="Andrej Nalaq"
+
+		advisor={
+			slot = theorist
+			idea_token = KAW_Andrej_Nalaq
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	KAW_Qajaq_Vocene={
+		name="Qajaq Vocene"
+
+		advisor={
+			slot = theorist
+			idea_token = KAW_Qajaq_Vocene
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

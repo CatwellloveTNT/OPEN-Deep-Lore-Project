@@ -1,0 +1,40 @@
+
+state={
+	id=161
+	name="STATE_161"
+	manpower = 4562247
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 4527 13}
+		victory_points = { 4531 2}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			4521 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		4513 4514 4515 4516 4517 4518 4519 4520 4521 4522 4523 4524 4525 4526 4527 4528 4529 4530 4531 4532 4533 
+	}
+	local_supplies=0.0 
+}

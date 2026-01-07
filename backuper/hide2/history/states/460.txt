@@ -1,0 +1,42 @@
+
+state={
+	id=460
+	name="STATE_460"
+	manpower = 5963844
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=2
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 12674 13}
+		victory_points = { 12677 1}
+		victory_points = { 12686 1}
+		victory_points = { 12705 1}
+		
+		owner = NAZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			12686 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NAZ
+	}
+
+	provinces={
+		12674 12675 12676 12677 12678 12679 12680 12681 12682 12683 12684 12685 12686 12687 12688 12689 12690 12691 12692 12693 12694 12695 12696 12697 12698 12699 12700 12701 12702 12703 12704 12705 
+	}
+	local_supplies=0.0 
+}

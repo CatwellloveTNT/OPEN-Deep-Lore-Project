@@ -1,0 +1,20 @@
+air_wings = {
+		249 = { 								
+		small_plane_naval_bomber_airframe_0 = { owner = "UAG" amount = 22 version_name = "Tempula Mk 2" }
+
+	}
+	245 = { 								
+		medium_plane_airframe_0 = { owner = "UAG" amount = 27 version_name = "Tempula Mk 0" }
+
+	}
+	284 = { 								
+		small_plane_cas_airframe_0 = { owner = "UAG" amount = 27 version_name = "Medictoroimb Mk 2" }
+
+	}
+	180 = { 								
+		small_plane_airframe_0 = { owner = "UAG" amount = 35 version_name = "Medictoroimb Mk 1" }
+
+	}
+
+
+}

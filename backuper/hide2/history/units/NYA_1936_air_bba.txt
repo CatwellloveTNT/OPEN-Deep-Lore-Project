@@ -1,0 +1,20 @@
+air_wings = {
+		445 = { 								
+		small_plane_naval_bomber_airframe_0 = { owner = "NYA" amount = 40 version_name = "Lurra Mk 0" }
+
+	}
+	466 = { 								
+		small_plane_airframe_0 = { owner = "NYA" amount = 40 version_name = "Bara Mk 1" }
+
+	}
+	475 = { 								
+		medium_plane_airframe_0 = { owner = "NYA" amount = 39 version_name = "Rohor Mk 2" }
+
+	}
+	478 = { 								
+		small_plane_cas_airframe_0 = { owner = "NYA" amount = 42 version_name = "Arnis Mk 1" }
+
+	}
+
+
+}

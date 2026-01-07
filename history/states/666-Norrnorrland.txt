@@ -1,0 +1,16 @@
+state={
+	id=666
+	name="STATE_666"
+	resources={
+		tungsten=44
+		steel=50
+		chromium=25
+	}
+	provinces={
+		13119 
+	}
+	manpower=100222
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

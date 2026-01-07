@@ -1,0 +1,11 @@
+state={
+	id=965
+	name="STATE_965"
+	provinces={
+		5232 
+	}
+	manpower=21987
+	buildings_max_level_factor=1
+	state_category=wasteland
+	local_supplies=0
+}

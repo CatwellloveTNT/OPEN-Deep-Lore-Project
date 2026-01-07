@@ -1,0 +1,38 @@
+
+state={
+	id=103
+	name="STATE_103"
+	manpower = 4833249
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3064 3}
+		victory_points = { 3070 10}
+		victory_points = { 3072 1}
+		
+		owner = LEA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = LEA
+	}
+
+	provinces={
+		3062 3063 3064 3065 3066 3067 3068 3069 3070 3071 3072 3073 3074 3075 3076 3077 3078 3079 3080 3081 3082 3083 3084 3085 
+	}
+	local_supplies=0.0 
+}

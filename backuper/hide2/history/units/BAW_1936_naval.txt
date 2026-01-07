@@ -1,0 +1,30 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Hawi Fleet"			
+		naval_base = 16401
+		task_force = {
+			name = "Hawi Fleet"
+			location = 16401
+			
+						ship = { name = "Imamaikufu" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAW version_name = "Dams Class" } }	}
+			ship = { name = "Sahraq" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAW version_name = "Sautaa Class" } }	}
+			ship = { name = "Dams" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAW version_name = "Bahja Class" } }	}
+			ship = { name = "Sahraq 2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAW version_name = "Sautaa Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

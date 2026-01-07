@@ -1,0 +1,14 @@
+state={
+	id=229
+	name="STATE_229"
+	resources={
+		oil=70
+	}
+	provinces={
+		12434 
+	}
+	manpower=2881049
+	buildings_max_level_factor=1
+	state_category=large_town
+	local_supplies=7
+}

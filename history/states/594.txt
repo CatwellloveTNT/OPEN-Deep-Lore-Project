@@ -1,0 +1,40 @@
+
+state={
+	id=594
+	name="STATE_594"
+	manpower = 1809633
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 15668 6}
+		victory_points = { 15671 2}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			15671 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		15668 15669 15670 15671 
+	}
+	local_supplies=0.0 
+}

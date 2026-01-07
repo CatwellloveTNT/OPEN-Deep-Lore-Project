@@ -1,0 +1,37 @@
+
+state={
+	id=89
+	name="STATE_89"
+	manpower = 1226568
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2687 1}
+		victory_points = { 2688 1}
+		
+		owner = LEA
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = LEA
+	}
+
+	provinces={
+		2680 2681 2682 2683 2684 2685 2686 2687 2688 
+	}
+	local_supplies=0.0 
+}

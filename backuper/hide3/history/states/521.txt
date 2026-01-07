@@ -1,0 +1,40 @@
+
+state={
+	id=521
+	name="STATE_521"
+	manpower = 12641030
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 13967 1}
+		victory_points = { 13982 53}
+		
+		owner = MES
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 5
+			dockyard = 2
+			13980 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MES
+	}
+
+	provinces={
+		13965 13966 13967 13968 13969 13970 13971 13972 13973 13974 13975 13976 13977 13978 13979 13980 13981 13982 13983 13984 13985 13986 13987 13988 13989 13990 13991 13992 13993 13994 13995 13996 13997 13998 13999 14000 14001 14002 14003 14004 14005 14006 14007 14008 14009 14010 14011 14012 14013 
+	}
+	local_supplies=0.0 
+}

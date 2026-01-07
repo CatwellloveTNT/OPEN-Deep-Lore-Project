@@ -1,0 +1,40 @@
+
+state={
+	id=637
+	name="STATE_637"
+	manpower = 1235718
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 16170 1}
+		victory_points = { 16171 3}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			16171 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		16170 16171 
+	}
+	local_supplies=0.0 
+}

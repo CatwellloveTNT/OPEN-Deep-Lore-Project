@@ -1,0 +1,40 @@
+
+state={
+	id=466
+	name="STATE_466"
+	manpower = 4477712
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=3
+		oil=0
+		rubber=5
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 12810 2}
+		victory_points = { 12814 10}
+		
+		owner = NYA
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			arms_factory = 1
+			industrial_complex = 0
+			
+			12797 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NYA
+	}
+
+	provinces={
+		12795 12796 12797 12798 12799 12800 12801 12802 12803 12804 12805 12806 12807 12808 12809 12810 12811 12812 12813 12814 12815 
+	}
+	local_supplies=0.0 
+}

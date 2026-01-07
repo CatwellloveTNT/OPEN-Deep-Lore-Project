@@ -1,0 +1,880 @@
+characters = {
+	PIG_Farent_Tifas={
+		name="Farent Tifas"
+
+		
+		country_leader={
+			ideology=oligarchism
+			traits = { inexperienced_monarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	PIG_Savassa_Thari={
+		name="Savassa Thari"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Savassa_Thari
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	PIG_Orharulen_Tighrar={
+		name="Orharulen Tighrar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Orharulen_Tighrar
+				traits = {	headstrong 	}
+		}
+
+	}
+	PIG_Amaz_Azou={
+		name="Amaz Azou"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Amaz_Azou
+				traits = {	exiled 	}
+		}
+
+	}
+	PIG_Tafax_Tazzurt={
+		name="Tafax Tazzurt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Tafax_Tazzurt
+				traits = {	humble 	}
+		}
+
+	}
+	PIG_Yusuf_Imiz={
+		name="Yusuf Imiz"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Yusuf_Imiz
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	PIG_Amokra_Thari={
+		name="Amokra Thari"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Amokra_Thari
+				traits = {	exiled 	}
+		}
+
+	}
+	PIG_Farimoun_Imiz={
+		name="Farimoun Imiz"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Farimoun_Imiz
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	PIG_Ilkenderkan_Azou={
+		name="Ilkenderkan Azou"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Ilkenderkan_Azou
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	PIG_Suatugrul_Tazzurt={
+		name="Suatugrul Tazzurt"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Suatugrul_Tazzurt
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	PIG_Mura_Thari={
+		name="Mura Thari"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Mura_Thari
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	PIG_Ramad_Tifas={
+		name="Ramad Tifas"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Ramad_Tifas
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	PIG_Emin_Thari={
+		name="Emin Thari"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Emin_Thari
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	PIG_Yalcin_Azou={
+		name="Yalcin Azou"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Yalcin_Azou
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	PIG_Farim_Imiz={
+		name="Farim Imiz"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Farim_Imiz
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	PIG_Tafax_Imiz={
+		name="Tafax Imiz"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Tafax_Imiz
+				traits = {	army_concealment_2 	}
+		}
+
+	}
+	PIG_Batugruk_Tazrar={
+		name="Batugruk Tazrar"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Batugruk_Tazrar
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	PIG_Emir_Tighrar={
+		name="Emir Tighrar"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Emir_Tighrar
+				traits = {	navy_naval_air_defense_1 	}
+		}
+
+	}
+	PIG_Kadir_Azou={
+		name="Kadir Azou"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Kadir_Azou
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	PIG_Mokrat_Haylas={
+		name="Mokrat Haylas"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Mokrat_Haylas
+				traits = {	army_entrenchment_2 	}
+		}
+
+	}
+	PIG_Farim_Thari={
+		name="Farim Thari"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Farim_Thari
+				traits = {	navy_fleet_logistics_1 	}
+		}
+
+	}
+	PIG_Cemazan_Ulken={
+		name="Cemazan Ulken"
+
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits = { generallissimo  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	PIG_Enesut_Imiz={
+		name="Enesut Imiz"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Enesut_Imiz
+				traits = {	autocratic_imperialist 	}
+		}
+
+	}
+	PIG_Bora_Azou={
+		name="Bora Azou"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Bora_Azou
+				traits = {	basileus 	}
+		}
+
+	}
+	PIG_Emir_Tazrar={
+		name="Emir Tazrar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Emir_Tazrar
+				traits = {	polemarch 	}
+		}
+
+	}
+	PIG_Farent_Imiz={
+		name="Farent Imiz"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Farent_Imiz
+				traits = {	autocratic_imperialist 	}
+		}
+
+	}
+	PIG_Iskent_Ulken={
+		name="Iskent Ulken"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Iskent_Ulken
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	PIG_Ilkender_Tazzurt={
+		name="Ilkender Tazzurt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Ilkender_Tazzurt
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	PIG_Ilkenderkan_Haylas={
+		name="Ilkenderkan Haylas"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Ilkenderkan_Haylas
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	PIG_Yustafsul_Thari={
+		name="Yustafsul Thari"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Yustafsul_Thari
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	PIG_Emir_Ulken={
+		name="Emir Ulken"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Emir_Ulken
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	PIG_Adem_Tifas={
+		name="Adem Tifas"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Adem_Tifas
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	PIG_Savassa_Ulken={
+		name="Savassa Ulken"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Savassa_Ulken
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	PIG_Tunc_Thari={
+		name="Tunc Thari"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Tunc_Thari
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	PIG_Ahmet_Tifas={
+		name="Ahmet Tifas"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Ahmet_Tifas
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	PIG_Lyes_Tazrar={
+		name="Lyes Tazrar"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Lyes_Tazrar
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	PIG_Lyesul_Tina={
+		name="Lyesul Tina"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Lyesul_Tina
+				traits = {	army_logistics_2 	}
+		}
+
+	}
+	PIG_Iskane_Tighrar={
+		name="Iskane Tighrar"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Iskane_Tighrar
+				traits = {	navy_capital_ship_2 	}
+		}
+
+	}
+	PIG_Yalcin_Ulken={
+		name="Yalcin Ulken"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Yalcin_Ulken
+				traits = {	navy_carrier_2 	}
+		}
+
+	}
+	PIG_Suat_Thari={
+		name="Suat Thari"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Suat_Thari
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	PIG_Emir_Tazzurt={
+		name="Emir Tazzurt"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Emir_Tazzurt
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	PIG_Emin_Tina={
+		name="Emin Tina"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Emin_Tina
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	PIG_Yusuf_Thari={
+		name="Yusuf Thari"
+
+		
+		country_leader={
+			ideology=anti_revisionism
+			traits = { reluctant_stalinist  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	PIG_Hakan_Ulken={
+		name="Hakan Ulken"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Hakan_Ulken
+				traits = {	polemarch 	}
+		}
+
+	}
+	PIG_Farimoun_Tazzurt={
+		name="Farimoun Tazzurt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Farimoun_Tazzurt
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	PIG_Saidi_Tifas={
+		name="Saidi Tifas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Saidi_Tifas
+				traits = {	political_dancer 	}
+		}
+
+	}
+	PIG_Talim_Tazzurt={
+		name="Talim Tazzurt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Talim_Tazzurt
+				traits = {	political_dancer 	}
+		}
+
+	}
+	PIG_Yalcin_Tighrar={
+		name="Yalcin Tighrar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Yalcin_Tighrar
+				traits = {	infirm 	}
+		}
+
+	}
+	PIG_Emir_Azou={
+		name="Emir Azou"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Emir_Azou
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	PIG_Orhatuhane_Tina={
+		name="Orhatuhane Tina"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Orhatuhane_Tina
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	PIG_Ahmet_Ulken={
+		name="Ahmet Ulken"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Ahmet_Ulken
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	PIG_Farimoun_Ulken={
+		name="Farimoun Ulken"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Farimoun_Ulken
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	PIG_Mura_Tighrar={
+		name="Mura Tighrar"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Mura_Tighrar
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	PIG_Zafa_Azou={
+		name="Zafa Azou"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Zafa_Azou
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	PIG_Ilkenderkan_Tighrar={
+		name="Ilkenderkan Tighrar"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Ilkenderkan_Tighrar
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	PIG_Bora_Tighrar={
+		name="Bora Tighrar"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Bora_Tighrar
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	PIG_Mehmet_Tifas={
+		name="Mehmet Tifas"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Mehmet_Tifas
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	PIG_Adem_Azou={
+		name="Adem Azou"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Adem_Azou
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	PIG_Orharulen_Tazrar={
+		name="Orharulen Tazrar"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Orharulen_Tazrar
+				traits = {	air_naval_strike_1 	}
+		}
+
+	}
+	PIG_Ariq_Tina={
+		name="Ariq Tina"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Ariq_Tina
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	PIG_Adem_Imiz={
+		name="Adem Imiz"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Adem_Imiz
+				traits = {	navy_carrier_2 	}
+		}
+
+	}
+	PIG_Kerkannis_Tina={
+		name="Kerkannis Tina"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Kerkannis_Tina
+				traits = {	army_cavalry_1 	}
+		}
+
+	}
+	PIG_Barun_Haylas={
+		name="Barun Haylas"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Barun_Haylas
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	PIG_Yustafsul_Tifas={
+		name="Yustafsul Tifas"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { conservative_grandee  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	PIG_Saidir_Tifas={
+		name="Saidir Tifas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Saidir_Tifas
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	PIG_Taylan_Ulken={
+		name="Taylan Ulken"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Taylan_Ulken
+				traits = {	first_lady 	}
+		}
+
+	}
+	PIG_Meziannissin_Azou={
+		name="Meziannissin Azou"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Meziannissin_Azou
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	PIG_Ilkender_Tifas={
+		name="Ilkender Tifas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Ilkender_Tifas
+				traits = {	first_lady 	}
+		}
+
+	}
+	PIG_Hakan_Tifas={
+		name="Hakan Tifas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Hakan_Tifas
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	PIG_Amokra_Haylas={
+		name="Amokra Haylas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = PIG_Amokra_Haylas
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	PIG_Farim_Tazzurt={
+		name="Farim Tazzurt"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Farim_Tazzurt
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	PIG_Meziannissin_Imiz={
+		name="Meziannissin Imiz"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Meziannissin_Imiz
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	PIG_Suatuhanerfa_Tifas={
+		name="Suatuhanerfa Tifas"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Suatuhanerfa_Tifas
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	PIG_Lyes_Ulken={
+		name="Lyes Ulken"
+
+		advisor={
+			slot = army_chief
+			idea_token = PIG_Lyes_Ulken
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	PIG_Ramad_Tazzurt={
+		name="Ramad Tazzurt"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Ramad_Tazzurt
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	PIG_Lyesul_Thari={
+		name="Lyesul Thari"
+
+		advisor={
+			slot = navy_chief
+			idea_token = PIG_Lyesul_Thari
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	PIG_Bekirif_Imiz={
+		name="Bekirif Imiz"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Bekirif_Imiz
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	PIG_Yustafsul_Tina={
+		name="Yustafsul Tina"
+
+		advisor={
+			slot = air_chief
+			idea_token = PIG_Yustafsul_Tina
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	PIG_Cemazan_Tina={
+		name="Cemazan Tina"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Cemazan_Tina
+				traits = {	navy_screen_1 	}
+		}
+
+	}
+	PIG_Iskane_Tazrar={
+		name="Iskane Tazrar"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Iskane_Tazrar
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	PIG_Emirimoun_Haylas={
+		name="Emirimoun Haylas"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Emirimoun_Haylas
+				traits = {	air_strategic_bombing_2 	}
+		}
+
+	}
+	PIG_Bora_Ulken={
+		name="Bora Ulken"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Bora_Ulken
+				traits = {	army_logistics_2 	}
+		}
+
+	}
+	PIG_Iskan_Imiz={
+		name="Iskan Imiz"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Iskan_Imiz
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	PIG_Suatugruk_Tifas={
+		name="Suatugruk Tifas"
+
+		advisor={
+			slot = high_command
+			idea_token = PIG_Suatugruk_Tifas
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	PIG_Amoun_Thari={
+		name="Amoun Thari"
+
+		advisor={
+			slot = theorist
+			idea_token = PIG_Amoun_Thari
+				traits = {	military_theorist 	}
+		}
+
+	}
+	PIG_Salhat_Haylas={
+		name="Salhat Haylas"
+
+		advisor={
+			slot = theorist
+			idea_token = PIG_Salhat_Haylas
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	PIG_Meziz_Thari={
+		name="Meziz Thari"
+
+		advisor={
+			slot = theorist
+			idea_token = PIG_Meziz_Thari
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

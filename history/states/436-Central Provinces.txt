@@ -1,0 +1,15 @@
+state={
+	id=436
+	name="STATE_436"
+	resources={
+		chromium=4
+		coal=7
+	}
+	provinces={
+		12375 12480 12781 12799 12854 
+	}
+	manpower=17990937
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

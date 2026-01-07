@@ -1,0 +1,39 @@
+
+state={
+	id=331
+	name="STATE_331"
+	manpower = 5038400
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 9302 17}
+		
+		owner = MAA
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			arms_factory = 0
+			industrial_complex = 2
+			
+			9311 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAA
+	}
+
+	provinces={
+		9302 9303 9304 9305 9306 9307 9308 9309 9310 9311 9312 9313 9314 9315 9316 9317 9318 9319 9320 9321 
+	}
+	local_supplies=0.0 
+}

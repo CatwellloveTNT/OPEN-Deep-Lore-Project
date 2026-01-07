@@ -1,0 +1,39 @@
+
+state={
+	id=452
+	name="STATE_452"
+	manpower = 526282
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 12495 2}
+		
+		owner = NAZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			12495 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NAZ
+	}
+
+	provinces={
+		12495 
+	}
+	local_supplies=0.0 
+}

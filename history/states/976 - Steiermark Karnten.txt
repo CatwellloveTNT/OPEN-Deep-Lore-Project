@@ -1,0 +1,16 @@
+state={
+	id=976
+	name="STATE_976"
+	resources={
+		steel=15
+		aluminium=1
+		coal=1
+	}
+	provinces={
+		6687 
+	}
+	manpower=1500000
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

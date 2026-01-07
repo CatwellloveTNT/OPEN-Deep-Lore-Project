@@ -1,0 +1,880 @@
+characters = {
+	SHU_Majid_Calenque={
+		name="Majid Calenque"
+
+		
+		country_leader={
+			ideology=despotism
+			traits = { cabinet_crisis  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHU_Kanek_Balak={
+		name="Kanek Balak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Kanek_Balak
+				traits = {	headstrong 	}
+		}
+
+	}
+	SHU_Tecun_Oxlamaab={
+		name="Tecun Oxlamaab"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Tecun_Oxlamaab
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	SHU_Ibranek_Kana={
+		name="Ibranek Kana"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Ibranek_Kana
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	SHU_Kabilahichen_Oxlamaab={
+		name="Kabilahichen Oxlamaab"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Kabilahichen_Oxlamaab
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	SHU_Samar_Calenque={
+		name="Samar Calenque"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Samar_Calenque
+				traits = {	headstrong 	}
+		}
+
+	}
+	SHU_Kabil_Balak={
+		name="Kabil Balak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Kabil_Balak
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	SHU_Yusuf_Oxlamaab={
+		name="Yusuf Oxlamaab"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Yusuf_Oxlamaab
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	SHU_Sammed_Yemen={
+		name="Sammed Yemen"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Sammed_Yemen
+				traits = {	army_chief_maneuver_2 	}
+		}
+
+	}
+	SHU_Mohim_Yemen={
+		name="Mohim Yemen"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Mohim_Yemen
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	SHU_Rammed_Oxlamaab={
+		name="Rammed Oxlamaab"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Rammed_Oxlamaab
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	SHU_Faid_Oxlamaab={
+		name="Faid Oxlamaab"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Faid_Oxlamaab
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	SHU_Jamzam_Oxlamaab={
+		name="Jamzam Oxlamaab"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Jamzam_Oxlamaab
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	SHU_Pakanek_Chil={
+		name="Pakanek Chil"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Pakanek_Chil
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	SHU_Jamzam_Diwariq={
+		name="Jamzam Diwariq"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Jamzam_Diwariq
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	SHU_Majid_Sabalaktub={
+		name="Majid Sabalaktub"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Majid_Sabalaktub
+				traits = {	army_infantry_1 	}
+		}
+
+	}
+	SHU_Acab_Yemen={
+		name="Acab Yemen"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Acab_Yemen
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	SHU_Moctez_Yemen={
+		name="Moctez Yemen"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Moctez_Yemen
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	SHU_Kanek_Yemen={
+		name="Kanek Yemen"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Kanek_Yemen
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	SHU_Moctez_Calenque={
+		name="Moctez Calenque"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Moctez_Calenque
+				traits = {	army_radio_intelligence_2 	}
+		}
+
+	}
+	SHU_Acabilami_Chil={
+		name="Acabilami Chil"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Acabilami_Chil
+				traits = {	air_airborne_1 	}
+		}
+
+	}
+	SHU_Rammed_Diwariq={
+		name="Rammed Diwariq"
+
+		
+		country_leader={
+			ideology=nazism
+			traits = { collaborator_king  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHU_Jamza_Diwariq={
+		name="Jamza Diwariq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Jamza_Diwariq
+				traits = {	infirm 	}
+		}
+
+	}
+	SHU_Mahichen_Masr={
+		name="Mahichen Masr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Mahichen_Masr
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	SHU_Ramal_Shuati={
+		name="Ramal Shuati"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Ramal_Shuati
+				traits = {	spirit_of_genghis 	}
+		}
+
+	}
+	SHU_Anwarim_Shuati={
+		name="Anwarim Shuati"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Anwarim_Shuati
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	SHU_Zaid_Chil={
+		name="Zaid Chil"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Zaid_Chil
+				traits = {	autokrator 	}
+		}
+
+	}
+	SHU_Jamza_Yemen={
+		name="Jamza Yemen"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Jamza_Yemen
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	SHU_Yusuf_Balak={
+		name="Yusuf Balak"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Yusuf_Balak
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	SHU_Kukulkalid_Balak={
+		name="Kukulkalid Balak"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Kukulkalid_Balak
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	SHU_Khal_Chil={
+		name="Khal Chil"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Khal_Chil
+				traits = {	army_chief_maneuver_2 	}
+		}
+
+	}
+	SHU_Yaxkin_Calenque={
+		name="Yaxkin Calenque"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Yaxkin_Calenque
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	SHU_Acabilami_Sabalaktub={
+		name="Acabilami Sabalaktub"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Acabilami_Sabalaktub
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	SHU_Ramal_Masr={
+		name="Ramal Masr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Ramal_Masr
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	SHU_Khal_Balak={
+		name="Khal Balak"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Khal_Balak
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	SHU_Fariq_Shuati={
+		name="Fariq Shuati"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Fariq_Shuati
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	SHU_Oxib_Balak={
+		name="Oxib Balak"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Oxib_Balak
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	SHU_Hassal_Balak={
+		name="Hassal Balak"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Hassal_Balak
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	SHU_Karim_Calenque={
+		name="Karim Calenque"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Karim_Calenque
+				traits = {	air_bomber_interception_1 	}
+		}
+
+	}
+	SHU_Samar_Masr={
+		name="Samar Masr"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Samar_Masr
+				traits = {	navy_fleet_logistics_1 	}
+		}
+
+	}
+	SHU_Yusuf_Masr={
+		name="Yusuf Masr"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Yusuf_Masr
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	SHU_Acabilah_Yemen={
+		name="Acabilah Yemen"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Acabilah_Yemen
+				traits = {	navy_anti_submarine_2 	}
+		}
+
+	}
+	SHU_Pakanek_Masr={
+		name="Pakanek Masr"
+
+		
+		country_leader={
+			ideology=anarchist_communism
+			traits = { indomitable_perseverance  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHU_Bacom_Sabalaktub={
+		name="Bacom Sabalaktub"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Bacom_Sabalaktub
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	SHU_Ibranek_Chil={
+		name="Ibranek Chil"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Ibranek_Chil
+				traits = {	polemarch 	}
+		}
+
+	}
+	SHU_Jamza_Masr={
+		name="Jamza Masr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Jamza_Masr
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	SHU_Yaxkin_Masr={
+		name="Yaxkin Masr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Yaxkin_Masr
+				traits = {	political_dancer 	}
+		}
+
+	}
+	SHU_Omariq_Kana={
+		name="Omariq Kana"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Omariq_Kana
+				traits = {	political_dancer 	}
+		}
+
+	}
+	SHU_Sammed_Diwariq={
+		name="Sammed Diwariq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Sammed_Diwariq
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	SHU_Sammed_Balak={
+		name="Sammed Balak"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Sammed_Balak
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	SHU_Omariq_Shuati={
+		name="Omariq Shuati"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Omariq_Shuati
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	SHU_Ahmoud_Diwariq={
+		name="Ahmoud Diwariq"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Ahmoud_Diwariq
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	SHU_Chim_Shuati={
+		name="Chim Shuati"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Chim_Shuati
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	SHU_Hassan_Masr={
+		name="Hassan Masr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Hassan_Masr
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	SHU_Ibrahim_Masr={
+		name="Ibrahim Masr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Ibrahim_Masr
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	SHU_Khal_Yemen={
+		name="Khal Yemen"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Khal_Yemen
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	SHU_Acabilami_Shuati={
+		name="Acabilami Shuati"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Acabilami_Shuati
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	SHU_Fariq_Chil={
+		name="Fariq Chil"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Fariq_Chil
+				traits = {	navy_anti_submarine_2 	}
+		}
+
+	}
+	SHU_Jami_Yemen={
+		name="Jami Yemen"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Jami_Yemen
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	SHU_Acatl_Masr={
+		name="Acatl Masr"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Acatl_Masr
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	SHU_Majid_Yemen={
+		name="Majid Yemen"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Majid_Yemen
+				traits = {	army_cavalry_1 	}
+		}
+
+	}
+	SHU_Kabil_Masr={
+		name="Kabil Masr"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Kabil_Masr
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	SHU_Alid_Shuati={
+		name="Alid Shuati"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Alid_Shuati
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	SHU_Abdullal_Chil={
+		name="Abdullal Chil"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { british_bulldog  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHU_Rammed_Calenque={
+		name="Rammed Calenque"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Rammed_Calenque
+				traits = {	british_bulldog 	}
+		}
+
+	}
+	SHU_Karim_Oxlamaab={
+		name="Karim Oxlamaab"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Karim_Oxlamaab
+				traits = {	infirm 	}
+		}
+
+	}
+	SHU_Oxib_Oxlamaab={
+		name="Oxib Oxlamaab"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Oxib_Oxlamaab
+				traits = {	first_lady 	}
+		}
+
+	}
+	SHU_Farid_Shuati={
+		name="Farid Shuati"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Farid_Shuati
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	SHU_Ibrah_Oxlamaab={
+		name="Ibrah Oxlamaab"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Ibrah_Oxlamaab
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	SHU_Ramalahya_Diwariq={
+		name="Ramalahya Diwariq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHU_Ramalahya_Diwariq
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	SHU_Pakanek_Shuati={
+		name="Pakanek Shuati"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Pakanek_Shuati
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	SHU_Saad_Chil={
+		name="Saad Chil"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Saad_Chil
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	SHU_Ekchalid_Yemen={
+		name="Ekchalid Yemen"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Ekchalid_Yemen
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	SHU_Hassal_Chil={
+		name="Hassal Chil"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHU_Hassal_Chil
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	SHU_Imran_Calenque={
+		name="Imran Calenque"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Imran_Calenque
+				traits = {	navy_chief_naval_aviation_2 	}
+		}
+
+	}
+	SHU_Mahichen_Diwariq={
+		name="Mahichen Diwariq"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHU_Mahichen_Diwariq
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	SHU_Oxib_Masr={
+		name="Oxib Masr"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Oxib_Masr
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	SHU_Rammed_Yemen={
+		name="Rammed Yemen"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHU_Rammed_Yemen
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	SHU_Hassalahya_Chil={
+		name="Hassalahya Chil"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Hassalahya_Chil
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	SHU_Majid_Shuati={
+		name="Majid Shuati"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Majid_Shuati
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	SHU_Jamzam_Sabalaktub={
+		name="Jamzam Sabalaktub"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Jamzam_Sabalaktub
+				traits = {	air_air_combat_training_2 	}
+		}
+
+	}
+	SHU_Imran_Yemen={
+		name="Imran Yemen"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Imran_Yemen
+				traits = {	navy_carrier_2 	}
+		}
+
+	}
+	SHU_Acabilah_Shuati={
+		name="Acabilah Shuati"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Acabilah_Shuati
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	SHU_Acabilah_Calenque={
+		name="Acabilah Calenque"
+
+		advisor={
+			slot = high_command
+			idea_token = SHU_Acabilah_Calenque
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	SHU_Ibrah_Masr={
+		name="Ibrah Masr"
+
+		advisor={
+			slot = theorist
+			idea_token = SHU_Ibrah_Masr
+				traits = {	military_theorist 	}
+		}
+
+	}
+	SHU_Anwar_Shuati={
+		name="Anwar Shuati"
+
+		advisor={
+			slot = theorist
+			idea_token = SHU_Anwar_Shuati
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	SHU_Imran_Shuati={
+		name="Imran Shuati"
+
+		advisor={
+			slot = theorist
+			idea_token = SHU_Imran_Shuati
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

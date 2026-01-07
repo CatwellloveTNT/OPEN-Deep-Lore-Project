@@ -1,0 +1,880 @@
+characters = {
+	KIO_Harka_Nomendea={
+		name="Harka Nomendea"
+
+		
+		country_leader={
+			ideology=despotism
+			traits = { cabinet_crisis  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KIO_Jumaulus_Nomendea={
+		name="Jumaulus Nomendea"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Jumaulus_Nomendea
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	KIO_Graitus_Muujijizalun={
+		name="Graitus Muujijizalun"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Graitus_Muujijizalun
+				traits = {	humble 	}
+		}
+
+	}
+	KIO_Vibero_Hofu={
+		name="Vibero Hofu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Vibero_Hofu
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	KIO_Miker_Upenarus={
+		name="Miker Upenarus"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Miker_Upenarus
+				traits = {	headstrong 	}
+		}
+
+	}
+	KIO_Pubanlius_Chus={
+		name="Pubanlius Chus"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Pubanlius_Chus
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	KIO_Clau_Ibas={
+		name="Clau Ibas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Clau_Ibas
+				traits = {	humble 	}
+		}
+
+	}
+	KIO_Gorneliurisc_Upenarus={
+		name="Gorneliurisc Upenarus"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Gorneliurisc_Upenarus
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	KIO_Spurius_Takeano={
+		name="Spurius Takeano"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Spurius_Takeano
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	KIO_Lonius_Chus={
+		name="Lonius Chus"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Lonius_Chus
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	KIO_Caius_Arsum={
+		name="Caius Arsum"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Caius_Arsum
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	KIO_Omarro_Upenarus={
+		name="Omarro Upenarus"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Omarro_Upenarus
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	KIO_Xabius_Takeano={
+		name="Xabius Takeano"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Xabius_Takeano
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	KIO_Benatius_Ibas={
+		name="Benatius Ibas"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Benatius_Ibas
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	KIO_Baka_Chus={
+		name="Baka Chus"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Baka_Chus
+				traits = {	air_chief_night_operations_2 	}
+		}
+
+	}
+	KIO_Benatius_Arsum={
+		name="Benatius Arsum"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Benatius_Arsum
+				traits = {	air_air_combat_training_1 	}
+		}
+
+	}
+	KIO_Omaius_Chus={
+		name="Omaius Chus"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Omaius_Chus
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	KIO_Urba_Hofu={
+		name="Urba Hofu"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Urba_Hofu
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	KIO_Maximus_Chus={
+		name="Maximus Chus"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Maximus_Chus
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	KIO_Lubliustus_Hofu={
+		name="Lubliustus Hofu"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Lubliustus_Hofu
+				traits = {	air_air_combat_training_1 	}
+		}
+
+	}
+	KIO_Ekarcelius_Arsum={
+		name="Ekarcelius Arsum"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Ekarcelius_Arsum
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	KIO_Horneko_Nomendea={
+		name="Horneko Nomendea"
+
+		
+		country_leader={
+			ideology=nazism
+			traits = { archon_basileus  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KIO_Lonius_Nomendea={
+		name="Lonius Nomendea"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Lonius_Nomendea
+				traits = {	autocratic_imperialist 	}
+		}
+
+	}
+	KIO_Bakarkarceli_Anivua={
+		name="Bakarkarceli Anivua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Bakarkarceli_Anivua
+				traits = {	infirm 	}
+		}
+
+	}
+	KIO_Silvantonius_Ibas={
+		name="Silvantonius Ibas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Silvantonius_Ibas
+				traits = {	basileus 	}
+		}
+
+	}
+	KIO_Urbano_Upenarus={
+		name="Urbano Upenarus"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Urbano_Upenarus
+				traits = {	generallissimo 	}
+		}
+
+	}
+	KIO_Bakaizkarcus_Hofu={
+		name="Bakaizkarcus Hofu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Bakaizkarcus_Hofu
+				traits = {	generallissimo 	}
+		}
+
+	}
+	KIO_Sevolaulus_Hofu={
+		name="Sevolaulus Hofu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Sevolaulus_Hofu
+				traits = {	infirm 	}
+		}
+
+	}
+	KIO_Mosier_Nomendea={
+		name="Mosier Nomendea"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Mosier_Nomendea
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	KIO_Remba_Takeano={
+		name="Remba Takeano"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Remba_Takeano
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	KIO_Lubliustus_Conum={
+		name="Lubliustus Conum"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Lubliustus_Conum
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	KIO_Tiberius_Takeano={
+		name="Tiberius Takeano"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Tiberius_Takeano
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	KIO_Prius_Conum={
+		name="Prius Conum"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Prius_Conum
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	KIO_Augulianaius_Conum={
+		name="Augulianaius Conum"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Augulianaius_Conum
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	KIO_Mikellius_Upenarus={
+		name="Mikellius Upenarus"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Mikellius_Upenarus
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	KIO_Benatius_Hofu={
+		name="Benatius Hofu"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Benatius_Hofu
+				traits = {	air_chief_all_weather_1 	}
+		}
+
+	}
+	KIO_Valer_Hofu={
+		name="Valer Hofu"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Valer_Hofu
+				traits = {	army_logistics_2 	}
+		}
+
+	}
+	KIO_Maximban_Anivua={
+		name="Maximban Anivua"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Maximban_Anivua
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	KIO_Amaius_Chus={
+		name="Amaius Chus"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Amaius_Chus
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	KIO_Caius_Hofu={
+		name="Caius Hofu"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Caius_Hofu
+				traits = {	air_strategic_bombing_1 	}
+		}
+
+	}
+	KIO_Aulus_Nomendea={
+		name="Aulus Nomendea"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Aulus_Nomendea
+				traits = {	air_air_superiority_2 	}
+		}
+
+	}
+	KIO_Benat_Chus={
+		name="Benat Chus"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Benat_Chus
+				traits = {	navy_anti_submarine_1 	}
+		}
+
+	}
+	KIO_Unati_Nomendea={
+		name="Unati Nomendea"
+
+		
+		country_leader={
+			ideology=anarchist_communism
+			traits = { infirm  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KIO_Decimba_Upenarus={
+		name="Decimba Upenarus"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Decimba_Upenarus
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	KIO_Simus_Arsum={
+		name="Simus Arsum"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Simus_Arsum
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	KIO_Xabius_Nomendea={
+		name="Xabius Nomendea"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Xabius_Nomendea
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	KIO_Omaius_Anivua={
+		name="Omaius Anivua"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Omaius_Anivua
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	KIO_Scaevoldo_Upenarus={
+		name="Scaevoldo Upenarus"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Scaevoldo_Upenarus
+				traits = {	infirm 	}
+		}
+
+	}
+	KIO_Vibius_Ibas={
+		name="Vibius Ibas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Vibius_Ibas
+				traits = {	political_dancer 	}
+		}
+
+	}
+	KIO_Unaizkarcell_Takeano={
+		name="Unaizkarcell Takeano"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Unaizkarcell_Takeano
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	KIO_Augus_Arsum={
+		name="Augus Arsum"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Augus_Arsum
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	KIO_Maximus_Conum={
+		name="Maximus Conum"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Maximus_Conum
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	KIO_Nuru_Nomendea={
+		name="Nuru Nomendea"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Nuru_Nomendea
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	KIO_Benat_Arsum={
+		name="Benat Arsum"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Benat_Arsum
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	KIO_Marka_Upenarus={
+		name="Marka Upenarus"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Marka_Upenarus
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	KIO_Urbano_Nomendea={
+		name="Urbano Nomendea"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Urbano_Nomendea
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	KIO_Kwanginus_Conum={
+		name="Kwanginus Conum"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Kwanginus_Conum
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	KIO_Sevolaulus_Arsum={
+		name="Sevolaulus Arsum"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Sevolaulus_Arsum
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	KIO_Silvantonius_Hofu={
+		name="Silvantonius Hofu"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Silvantonius_Hofu
+				traits = {	air_air_superiority_1 	}
+		}
+
+	}
+	KIO_Sevolaulus_Chus={
+		name="Sevolaulus Chus"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Sevolaulus_Chus
+				traits = {	navy_capital_ship_2 	}
+		}
+
+	}
+	KIO_Maximban_Hofu={
+		name="Maximban Hofu"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Maximban_Hofu
+				traits = {	air_naval_strike_2 	}
+		}
+
+	}
+	KIO_Quinticus_Takeano={
+		name="Quinticus Takeano"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Quinticus_Takeano
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	KIO_Enelius_Arsum={
+		name="Enelius Arsum"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Enelius_Arsum
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	KIO_Sevolaulus_Muujijizalun={
+		name="Sevolaulus Muujijizalun"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { the_banker  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KIO_Urba_Ibas={
+		name="Urba Ibas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Urba_Ibas
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	KIO_Marro_Ibas={
+		name="Marro Ibas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Marro_Ibas
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	KIO_Eder_Takeano={
+		name="Eder Takeano"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Eder_Takeano
+				traits = {	infirm 	}
+		}
+
+	}
+	KIO_Simus_Ibas={
+		name="Simus Ibas"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Simus_Ibas
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	KIO_Marka_Chus={
+		name="Marka Chus"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Marka_Chus
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	KIO_Cassi_Arsum={
+		name="Cassi Arsum"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KIO_Cassi_Arsum
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	KIO_Urbano_Ibas={
+		name="Urbano Ibas"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Urbano_Ibas
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	KIO_Baka_Upenarus={
+		name="Baka Upenarus"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Baka_Upenarus
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	KIO_Xantius_Hofu={
+		name="Xantius Hofu"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Xantius_Hofu
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	KIO_Quinticus_Muujijizalun={
+		name="Quinticus Muujijizalun"
+
+		advisor={
+			slot = army_chief
+			idea_token = KIO_Quinticus_Muujijizalun
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	KIO_Xantius_Upenarus={
+		name="Xantius Upenarus"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Xantius_Upenarus
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	KIO_Anderi_Muujijizalun={
+		name="Anderi Muujijizalun"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KIO_Anderi_Muujijizalun
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	KIO_Eneko_Chus={
+		name="Eneko Chus"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Eneko_Chus
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	KIO_Cassi_Chus={
+		name="Cassi Chus"
+
+		advisor={
+			slot = air_chief
+			idea_token = KIO_Cassi_Chus
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	KIO_Bakarkarceli_Conum={
+		name="Bakarkarceli Conum"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Bakarkarceli_Conum
+				traits = {	navy_anti_submarine_2 	}
+		}
+
+	}
+	KIO_Horato_Anivua={
+		name="Horato Anivua"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Horato_Anivua
+				traits = {	air_strategic_bombing_1 	}
+		}
+
+	}
+	KIO_Urbano_Muujijizalun={
+		name="Urbano Muujijizalun"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Urbano_Muujijizalun
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	KIO_Asiuri_Anivua={
+		name="Asiuri Anivua"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Asiuri_Anivua
+				traits = {	air_pilot_training_1 	}
+		}
+
+	}
+	KIO_Valer_Arsum={
+		name="Valer Arsum"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Valer_Arsum
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	KIO_Mosier_Upenarus={
+		name="Mosier Upenarus"
+
+		advisor={
+			slot = high_command
+			idea_token = KIO_Mosier_Upenarus
+				traits = {	air_air_combat_training_2 	}
+		}
+
+	}
+	KIO_Remba_Conum={
+		name="Remba Conum"
+
+		advisor={
+			slot = theorist
+			idea_token = KIO_Remba_Conum
+				traits = {	military_theorist 	}
+		}
+
+	}
+	KIO_Jongintorati_Arsum={
+		name="Jongintorati Arsum"
+
+		advisor={
+			slot = theorist
+			idea_token = KIO_Jongintorati_Arsum
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	KIO_Vibius_Upenarus={
+		name="Vibius Upenarus"
+
+		advisor={
+			slot = theorist
+			idea_token = KIO_Vibius_Upenarus
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

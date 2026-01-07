@@ -1,0 +1,14 @@
+state={
+	id=170
+	name="STATE_170"
+	resources={
+		tungsten=4
+	}
+	provinces={
+		13230 
+	}
+	manpower=1417652
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

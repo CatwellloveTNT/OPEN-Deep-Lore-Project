@@ -1,0 +1,39 @@
+
+state={
+	id=459
+	name="STATE_459"
+	manpower = 6000821
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=17
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 12662 17}
+		
+		owner = PIG
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 2
+			industrial_complex = 0
+			
+			12673 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = PIG
+	}
+
+	provinces={
+		12645 12646 12647 12648 12649 12650 12651 12652 12653 12654 12655 12656 12657 12658 12659 12660 12661 12662 12663 12664 12665 12666 12667 12668 12669 12670 12671 12672 12673 
+	}
+	local_supplies=0.0 
+}

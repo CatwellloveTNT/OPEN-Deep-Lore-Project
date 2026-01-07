@@ -1,0 +1,880 @@
+characters = {
+	ASI_Emir_Pazem={
+		name="Emir Pazem"
+
+		
+		country_leader={
+			ideology=oligarchism
+			traits = { cabinet_crisis  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ASI_Sifax_Amella={
+		name="Sifax Amella"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Sifax_Amella
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	ASI_Ener_Ilcul={
+		name="Ener Ilcul"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Ener_Ilcul
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	ASI_Sinan_Amella={
+		name="Sinan Amella"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Sinan_Amella
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	ASI_Mokrat_Ilcul={
+		name="Mokrat Ilcul"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Mokrat_Ilcul
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	ASI_Amokrannis_Amella={
+		name="Amokrannis Amella"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Amokrannis_Amella
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	ASI_Savassinan_Ilcul={
+		name="Savassinan Ilcul"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Savassinan_Ilcul
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	ASI_Barif_Tidert={
+		name="Barif Tidert"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Barif_Tidert
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	ASI_Serkarem_Asirt={
+		name="Serkarem Asirt"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Serkarem_Asirt
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	ASI_Kadir_Tissim={
+		name="Kadir Tissim"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Kadir_Tissim
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	ASI_Suat_Ilcul={
+		name="Suat Ilcul"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Suat_Ilcul
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	ASI_Mehmet_Pazem={
+		name="Mehmet Pazem"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Mehmet_Pazem
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	ASI_Selmal_Ameknahassou={
+		name="Selmal Ameknahassou"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Selmal_Ameknahassou
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	ASI_Zafsulent_Ilcul={
+		name="Zafsulent Ilcul"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Zafsulent_Ilcul
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	ASI_Barulenderfa_Ameknahassou={
+		name="Barulenderfa Ameknahassou"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Barulenderfa_Ameknahassou
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	ASI_Haruk_Ameknahassou={
+		name="Haruk Ameknahassou"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Haruk_Ameknahassou
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	ASI_Salhat_Ameknahassou={
+		name="Salhat Ameknahassou"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Salhat_Ameknahassou
+				traits = {	air_strategic_bombing_2 	}
+		}
+
+	}
+	ASI_Emin_Asirt={
+		name="Emin Asirt"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Emin_Asirt
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	ASI_Barulenderfa_Tidert={
+		name="Barulenderfa Tidert"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Barulenderfa_Tidert
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	ASI_Zirifan_Ilcul={
+		name="Zirifan Ilcul"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Zirifan_Ilcul
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	ASI_Mokrat_Hisart={
+		name="Mokrat Hisart"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Mokrat_Hisart
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	ASI_Sinissinissi_Tissim={
+		name="Sinissinissi Tissim"
+
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits = { generallissimo  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ASI_Amokrannis_Tidert={
+		name="Amokrannis Tidert"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Amokrannis_Tidert
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	ASI_Bekir_Beremi={
+		name="Bekir Beremi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Bekir_Beremi
+				traits = {	autokrator 	}
+		}
+
+	}
+	ASI_Haruk_Hisart={
+		name="Haruk Hisart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Haruk_Hisart
+				traits = {	polemarch 	}
+		}
+
+	}
+	ASI_Ener_Amella={
+		name="Ener Amella"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Ener_Amella
+				traits = {	generallissimo 	}
+		}
+
+	}
+	ASI_Meziz_Hisart={
+		name="Meziz Hisart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Meziz_Hisart
+				traits = {	basileus 	}
+		}
+
+	}
+	ASI_Emir_Amella={
+		name="Emir Amella"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Emir_Amella
+				traits = {	polemarch 	}
+		}
+
+	}
+	ASI_Amokrannis_Pazem={
+		name="Amokrannis Pazem"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Amokrannis_Pazem
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	ASI_Barulenderfa_Ilcul={
+		name="Barulenderfa Ilcul"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Barulenderfa_Ilcul
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	ASI_Barim_Amella={
+		name="Barim Amella"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Barim_Amella
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	ASI_Yalcin_Ilcul={
+		name="Yalcin Ilcul"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Yalcin_Ilcul
+				traits = {	army_chief_maneuver_2 	}
+		}
+
+	}
+	ASI_Iskane_Asirt={
+		name="Iskane Asirt"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Iskane_Asirt
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	ASI_Barif_Ameknahassou={
+		name="Barif Ameknahassou"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Barif_Ameknahassou
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	ASI_Salhat_Tissim={
+		name="Salhat Tissim"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Salhat_Tissim
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	ASI_Barulenderfa_Pazem={
+		name="Barulenderfa Pazem"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Barulenderfa_Pazem
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	ASI_Savassinissa_Beremi={
+		name="Savassinissa Beremi"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Savassinissa_Beremi
+				traits = {	army_armored_1 	}
+		}
+
+	}
+	ASI_Sinis_Beremi={
+		name="Sinis Beremi"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Sinis_Beremi
+				traits = {	navy_naval_air_defense_1 	}
+		}
+
+	}
+	ASI_Salhat_Pazem={
+		name="Salhat Pazem"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Salhat_Pazem
+				traits = {	army_armored_1 	}
+		}
+
+	}
+	ASI_Kadir_Pazem={
+		name="Kadir Pazem"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Kadir_Pazem
+				traits = {	army_infantry_1 	}
+		}
+
+	}
+	ASI_Ertuhatuharu_Ameknahassou={
+		name="Ertuhatuharu Ameknahassou"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Ertuhatuharu_Ameknahassou
+				traits = {	navy_capital_ship_2 	}
+		}
+
+	}
+	ASI_Amaz_Amella={
+		name="Amaz Amella"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Amaz_Amella
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	ASI_Ramad_Beremi={
+		name="Ramad Beremi"
+
+		
+		country_leader={
+			ideology=anti_revisionism
+			traits = { political_dancer  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ASI_Ener_Hisart={
+		name="Ener Hisart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Ener_Hisart
+				traits = {	infirm 	}
+		}
+
+	}
+	ASI_Taharimoun_Asirt={
+		name="Taharimoun Asirt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Taharimoun_Asirt
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	ASI_Kaan_Asirt={
+		name="Kaan Asirt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Kaan_Asirt
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	ASI_Aderha_Beremi={
+		name="Aderha Beremi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Aderha_Beremi
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	ASI_Kadi_Azerwa={
+		name="Kadi Azerwa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Kadi_Azerwa
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	ASI_Taylan_Amella={
+		name="Taylan Amella"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Taylan_Amella
+				traits = {	infirm 	}
+		}
+
+	}
+	ASI_Ilkerfan_Beremi={
+		name="Ilkerfan Beremi"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Ilkerfan_Beremi
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	ASI_Mokrat_Tissim={
+		name="Mokrat Tissim"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Mokrat_Tissim
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	ASI_Tahan_Ilcul={
+		name="Tahan Ilcul"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Tahan_Ilcul
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	ASI_Kaan_Ameknahassou={
+		name="Kaan Ameknahassou"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Kaan_Ameknahassou
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	ASI_Ilker_Asirt={
+		name="Ilker Asirt"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Ilker_Asirt
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	ASI_Bulent_Amella={
+		name="Bulent Amella"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Bulent_Amella
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	ASI_Bulent_Beremi={
+		name="Bulent Beremi"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Bulent_Beremi
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	ASI_Kaane_Beremi={
+		name="Kaane Beremi"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Kaane_Beremi
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	ASI_Savassinissa_Ilcul={
+		name="Savassinissa Ilcul"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Savassinissa_Ilcul
+				traits = {	air_strategic_bombing_2 	}
+		}
+
+	}
+	ASI_Tahan_Beremi={
+		name="Tahan Beremi"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Tahan_Beremi
+				traits = {	army_entrenchment_1 	}
+		}
+
+	}
+	ASI_Bekir_Azerwa={
+		name="Bekir Azerwa"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Bekir_Azerwa
+				traits = {	navy_fleet_logistics_1 	}
+		}
+
+	}
+	ASI_Yalil_Pazem={
+		name="Yalil Pazem"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Yalil_Pazem
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	ASI_Salhat_Ilcul={
+		name="Salhat Ilcul"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Salhat_Ilcul
+				traits = {	navy_fleet_logistics_2 	}
+		}
+
+	}
+	ASI_Amazan_Hisart={
+		name="Amazan Hisart"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Amazan_Hisart
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	ASI_Amazan_Tissim={
+		name="Amazan Tissim"
+
+		
+		country_leader={
+			ideology=socialism
+			traits = { chamberlain_appeaser  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	ASI_Tafsut_Ameknahassou={
+		name="Tafsut Ameknahassou"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Tafsut_Ameknahassou
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	ASI_Saidir_Tissim={
+		name="Saidir Tissim"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Saidir_Tissim
+				traits = {	infirm 	}
+		}
+
+	}
+	ASI_Mokra_Pazem={
+		name="Mokra Pazem"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Mokra_Pazem
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	ASI_Yalhan_Tidert={
+		name="Yalhan Tidert"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Yalhan_Tidert
+				traits = {	the_banker 	}
+		}
+
+	}
+	ASI_Yusuf_Tidert={
+		name="Yusuf Tidert"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Yusuf_Tidert
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	ASI_Ilker_Ilcul={
+		name="Ilker Ilcul"
+
+		advisor={
+			slot = political_advisor
+			idea_token = ASI_Ilker_Ilcul
+				traits = {	the_banker 	}
+		}
+
+	}
+	ASI_Barim_Azerwa={
+		name="Barim Azerwa"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Barim_Azerwa
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	ASI_Yusut_Tidert={
+		name="Yusut Tidert"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Yusut_Tidert
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	ASI_Yusut_Hisart={
+		name="Yusut Hisart"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Yusut_Hisart
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	ASI_Aderha_Ameknahassou={
+		name="Aderha Ameknahassou"
+
+		advisor={
+			slot = army_chief
+			idea_token = ASI_Aderha_Ameknahassou
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	ASI_Amaz_Tissim={
+		name="Amaz Tissim"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Amaz_Tissim
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	ASI_Lyes_Tidert={
+		name="Lyes Tidert"
+
+		advisor={
+			slot = navy_chief
+			idea_token = ASI_Lyes_Tidert
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	ASI_Lyes_Amella={
+		name="Lyes Amella"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Lyes_Amella
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	ASI_Ertugruk_Beremi={
+		name="Ertugruk Beremi"
+
+		advisor={
+			slot = air_chief
+			idea_token = ASI_Ertugruk_Beremi
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	ASI_Emir_Tissim={
+		name="Emir Tissim"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Emir_Tissim
+				traits = {	navy_capital_ship_2 	}
+		}
+
+	}
+	ASI_Ilkerfan_Tissim={
+		name="Ilkerfan Tissim"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Ilkerfan_Tissim
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	ASI_Iskane_Tissim={
+		name="Iskane Tissim"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Iskane_Tissim
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	ASI_Isker_Tidert={
+		name="Isker Tidert"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Isker_Tidert
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	ASI_Muran_Hisart={
+		name="Muran Hisart"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Muran_Hisart
+				traits = {	army_entrenchment_2 	}
+		}
+
+	}
+	ASI_Saidir_Azerwa={
+		name="Saidir Azerwa"
+
+		advisor={
+			slot = high_command
+			idea_token = ASI_Saidir_Azerwa
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	ASI_Savassinan_Tidert={
+		name="Savassinan Tidert"
+
+		advisor={
+			slot = theorist
+			idea_token = ASI_Savassinan_Tidert
+				traits = {	military_theorist 	}
+		}
+
+	}
+	ASI_Serkarem_Tidert={
+		name="Serkarem Tidert"
+
+		advisor={
+			slot = theorist
+			idea_token = ASI_Serkarem_Tidert
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	ASI_Utku_Amella={
+		name="Utku Amella"
+
+		advisor={
+			slot = theorist
+			idea_token = ASI_Utku_Amella
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

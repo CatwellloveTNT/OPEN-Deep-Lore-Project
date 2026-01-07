@@ -1,0 +1,40 @@
+
+state={
+	id=326
+	name="STATE_326"
+	manpower = 2744387
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 9192 7}
+		victory_points = { 9197 2}
+		
+		owner = MAA
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			arms_factory = 1
+			industrial_complex = 0
+			
+			9198 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAA
+	}
+
+	provinces={
+		9192 9193 9194 9195 9196 9197 9198 9199 9200 9201 
+	}
+	local_supplies=0.0 
+}

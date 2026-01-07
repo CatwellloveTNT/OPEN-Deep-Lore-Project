@@ -1,0 +1,880 @@
+characters = {
+	AZE_Atka_Redourjuarut={
+		name="Atka Redourjuarut"
+
+		
+		country_leader={
+			ideology=moderatism
+			traits = { staunch_constitutionalist  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	AZE_Cialcolm_Tigh={
+		name="Cialcolm Tigh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Cialcolm_Tigh
+				traits = {	humble 	}
+		}
+
+	}
+	AZE_Mokran_Tazirt={
+		name="Mokran Tazirt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Mokran_Tazirt
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	AZE_Amokranis_Tazirt={
+		name="Amokranis Tazirt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Amokranis_Tazirt
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	AZE_Quinn_Tigh={
+		name="Quinn Tigh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Quinn_Tigh
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	AZE_Ulrich_Tamhtigakuq={
+		name="Ulrich Tamhtigakuq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Ulrich_Tamhtigakuq
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	AZE_Niarich_Tigh={
+		name="Niarich Tigh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Niarich_Tigh
+				traits = {	headstrong 	}
+		}
+
+	}
+	AZE_Miku_Ayurjuk={
+		name="Miku Ayurjuk"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Miku_Ayurjuk
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	AZE_Tafsut_Imak={
+		name="Tafsut Imak"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Tafsut_Imak
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	AZE_Hugh_Tislin={
+		name="Hugh Tislin"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Hugh_Tislin
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	AZE_Quin_Tamhtiwin={
+		name="Quin Tamhtiwin"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Quin_Tamhtiwin
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	AZE_Aselmaq_Imghal={
+		name="Aselmaq Imghal"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Aselmaq_Imghal
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	AZE_Gariq_Tislin={
+		name="Gariq Tislin"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Gariq_Tislin
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	AZE_Meziz_Tigh={
+		name="Meziz Tigh"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Meziz_Tigh
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	AZE_Nuvuk_Tazirt={
+		name="Nuvuk Tazirt"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Nuvuk_Tazirt
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	AZE_Sikigaq_Tamhtiwin={
+		name="Sikigaq Tamhtiwin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Sikigaq_Tamhtiwin
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	AZE_Saidanik_Tamhtiwin={
+		name="Saidanik Tamhtiwin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Saidanik_Tamhtiwin
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	AZE_Decla_Redourjuarut={
+		name="Decla Redourjuarut"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Decla_Redourjuarut
+				traits = {	air_naval_strike_2 	}
+		}
+
+	}
+	AZE_Amokranis_Imghal={
+		name="Amokranis Imghal"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Amokranis_Imghal
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	AZE_Ziri_Tamhtiwin={
+		name="Ziri Tamhtiwin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Ziri_Tamhtiwin
+				traits = {	army_armored_1 	}
+		}
+
+	}
+	AZE_Saigaq_Tislin={
+		name="Saigaq Tislin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Saigaq_Tislin
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	AZE_Massa_Ayurjuk={
+		name="Massa Ayurjuk"
+
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits = { celebrity_junta_leader  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	AZE_Ziri_Redourjuarut={
+		name="Ziri Redourjuarut"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Ziri_Redourjuarut
+				traits = {	spirit_of_genghis 	}
+		}
+
+	}
+	AZE_Aidan_Ayurjuk={
+		name="Aidan Ayurjuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Aidan_Ayurjuk
+				traits = {	spirit_of_genghis 	}
+		}
+
+	}
+	AZE_Saidanik_Imak={
+		name="Saidanik Imak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Saidanik_Imak
+				traits = {	generallissimo 	}
+		}
+
+	}
+	AZE_Tulokran_Redourjuarut={
+		name="Tulokran Redourjuarut"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Tulokran_Redourjuarut
+				traits = {	warmonger 	}
+		}
+
+	}
+	AZE_Bran_Tamhtigakuq={
+		name="Bran Tamhtigakuq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Bran_Tamhtigakuq
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	AZE_Tariq_Imak={
+		name="Tariq Imak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Tariq_Imak
+				traits = {	autokrator 	}
+		}
+
+	}
+	AZE_Aidan_Redourjuarut={
+		name="Aidan Redourjuarut"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Aidan_Redourjuarut
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	AZE_Nuvuk_Ayurjuk={
+		name="Nuvuk Ayurjuk"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Nuvuk_Ayurjuk
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	AZE_Seam_Tislin={
+		name="Seam Tislin"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Seam_Tislin
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	AZE_Owen_Tamhtiwin={
+		name="Owen Tamhtiwin"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Owen_Tamhtiwin
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	AZE_Saidanik_Nanuk={
+		name="Saidanik Nanuk"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Saidanik_Nanuk
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	AZE_Eoin_Tislin={
+		name="Eoin Tislin"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Eoin_Tislin
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	AZE_Sikigaq_Tigh={
+		name="Sikigaq Tigh"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Sikigaq_Tigh
+				traits = {	air_chief_all_weather_1 	}
+		}
+
+	}
+	AZE_Sifannissini_Imak={
+		name="Sifannissini Imak"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Sifannissini_Imak
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	AZE_Nall_Tamhtigakuq={
+		name="Nall Tamhtigakuq"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Nall_Tamhtigakuq
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	AZE_Ulrich_Redourjuarut={
+		name="Ulrich Redourjuarut"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Ulrich_Redourjuarut
+				traits = {	army_logistics_1 	}
+		}
+
+	}
+	AZE_Ulrimok_Tigh={
+		name="Ulrimok Tigh"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Ulrimok_Tigh
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	AZE_Amok_Tazirt={
+		name="Amok Tazirt"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Amok_Tazirt
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	AZE_Massa_Tamhtiwin={
+		name="Massa Tamhtiwin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Massa_Tamhtiwin
+				traits = {	air_air_superiority_2 	}
+		}
+
+	}
+	AZE_Nuvuk_Tamhtiwin={
+		name="Nuvuk Tamhtiwin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Nuvuk_Tamhtiwin
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	AZE_Iska_Tigh={
+		name="Iska Tigh"
+
+		
+		country_leader={
+			ideology=anarchist_communism
+			traits = { polemarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	AZE_Nall_Redourjuarut={
+		name="Nall Redourjuarut"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Nall_Redourjuarut
+				traits = {	infirm 	}
+		}
+
+	}
+	AZE_Ulri_Imghal={
+		name="Ulri Imghal"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Ulri_Imghal
+				traits = {	political_dancer 	}
+		}
+
+	}
+	AZE_Qajaq_Nanuk={
+		name="Qajaq Nanuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Qajaq_Nanuk
+				traits = {	polemarch 	}
+		}
+
+	}
+	AZE_Tulokran_Nanuk={
+		name="Tulokran Nanuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Tulokran_Nanuk
+				traits = {	political_dancer 	}
+		}
+
+	}
+	AZE_Tafsutarane_Imghal={
+		name="Tafsutarane Imghal"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Tafsutarane_Imghal
+				traits = {	infirm 	}
+		}
+
+	}
+	AZE_Niamus_Tamhtiwin={
+		name="Niamus Tamhtiwin"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Niamus_Tamhtiwin
+				traits = {	political_dancer 	}
+		}
+
+	}
+	AZE_Maluk_Ayurjuk={
+		name="Maluk Ayurjuk"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Maluk_Ayurjuk
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	AZE_Tariq_Ayurjuk={
+		name="Tariq Ayurjuk"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Tariq_Ayurjuk
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	AZE_Rhys_Imak={
+		name="Rhys Imak"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Rhys_Imak
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	AZE_Yuba_Tamhtigakuq={
+		name="Yuba Tamhtigakuq"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Yuba_Tamhtigakuq
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	AZE_Niarich_Tamhtiwin={
+		name="Niarich Tamhtiwin"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Niarich_Tamhtiwin
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	AZE_Sifannissini_Redourjuarut={
+		name="Sifannissini Redourjuarut"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Sifannissini_Redourjuarut
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	AZE_Eoin_Tigh={
+		name="Eoin Tigh"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Eoin_Tigh
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	AZE_Sikigaq_Tislin={
+		name="Sikigaq Tislin"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Sikigaq_Tislin
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	AZE_Atkar_Tislin={
+		name="Atkar Tislin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Atkar_Tislin
+				traits = {	army_armored_1 	}
+		}
+
+	}
+	AZE_Kanuq_Tamhtigakuq={
+		name="Kanuq Tamhtigakuq"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Kanuq_Tamhtigakuq
+				traits = {	army_logistics_1 	}
+		}
+
+	}
+	AZE_Saigaq_Tazirt={
+		name="Saigaq Tazirt"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Saigaq_Tazirt
+				traits = {	air_close_air_support_2 	}
+		}
+
+	}
+	AZE_Sila_Tamhtigakuq={
+		name="Sila Tamhtigakuq"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Sila_Tamhtigakuq
+				traits = {	air_bomber_interception_1 	}
+		}
+
+	}
+	AZE_Tafsutarane_Redourjuarut={
+		name="Tafsutarane Redourjuarut"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Tafsutarane_Redourjuarut
+				traits = {	air_air_superiority_1 	}
+		}
+
+	}
+	AZE_Seam_Tamhtigakuq={
+		name="Seam Tamhtigakuq"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Seam_Tamhtigakuq
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	AZE_Kanuq_Tislin={
+		name="Kanuq Tislin"
+
+		
+		country_leader={
+			ideology=liberalism
+			traits = { conservative_grandee  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	AZE_Mokraig_Tazirt={
+		name="Mokraig Tazirt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Mokraig_Tazirt
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	AZE_Atkaran_Ayurjuk={
+		name="Atkaran Ayurjuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Atkaran_Ayurjuk
+				traits = {	first_lady 	}
+		}
+
+	}
+	AZE_Decla_Tigh={
+		name="Decla Tigh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Decla_Tigh
+				traits = {	first_lady 	}
+		}
+
+	}
+	AZE_Amad_Tigh={
+		name="Amad Tigh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Amad_Tigh
+				traits = {	famous_aviator 	}
+		}
+
+	}
+	AZE_Iluk_Imak={
+		name="Iluk Imak"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Iluk_Imak
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	AZE_Tarak_Ayurjuk={
+		name="Tarak Ayurjuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = AZE_Tarak_Ayurjuk
+				traits = {	the_banker 	}
+		}
+
+	}
+	AZE_Tarak_Redourjuarut={
+		name="Tarak Redourjuarut"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Tarak_Redourjuarut
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	AZE_Taranniku_Tislin={
+		name="Taranniku Tislin"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Taranniku_Tislin
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	AZE_Tarich_Imghal={
+		name="Tarich Imghal"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Tarich_Imghal
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	AZE_Taluk_Imak={
+		name="Taluk Imak"
+
+		advisor={
+			slot = army_chief
+			idea_token = AZE_Taluk_Imak
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	AZE_Nall_Tislin={
+		name="Nall Tislin"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Nall_Tislin
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	AZE_Amaran_Tazirt={
+		name="Amaran Tazirt"
+
+		advisor={
+			slot = navy_chief
+			idea_token = AZE_Amaran_Tazirt
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	AZE_Tafsutarim_Redourjuarut={
+		name="Tafsutarim Redourjuarut"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Tafsutarim_Redourjuarut
+				traits = {	air_chief_all_weather_1 	}
+		}
+
+	}
+	AZE_Yane_Tigh={
+		name="Yane Tigh"
+
+		advisor={
+			slot = air_chief
+			idea_token = AZE_Yane_Tigh
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	AZE_Sifannissini_Ayurjuk={
+		name="Sifannissini Ayurjuk"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Sifannissini_Ayurjuk
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	AZE_Eoinikig_Ayurjuk={
+		name="Eoinikig Ayurjuk"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Eoinikig_Ayurjuk
+				traits = {	navy_carrier_2 	}
+		}
+
+	}
+	AZE_Liamus_Tazirt={
+		name="Liamus Tazirt"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Liamus_Tazirt
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	AZE_Ulrich_Tigh={
+		name="Ulrich Tigh"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Ulrich_Tigh
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	AZE_Saig_Tamhtiwin={
+		name="Saig Tamhtiwin"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Saig_Tamhtiwin
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	AZE_Iwan_Ayurjuk={
+		name="Iwan Ayurjuk"
+
+		advisor={
+			slot = high_command
+			idea_token = AZE_Iwan_Ayurjuk
+				traits = {	air_strategic_bombing_2 	}
+		}
+
+	}
+	AZE_Saigaq_Tamhtiwin={
+		name="Saigaq Tamhtiwin"
+
+		advisor={
+			slot = theorist
+			idea_token = AZE_Saigaq_Tamhtiwin
+				traits = {	military_theorist 	}
+		}
+
+	}
+	AZE_Saidanik_Tamhtigakuq={
+		name="Saidanik Tamhtigakuq"
+
+		advisor={
+			slot = theorist
+			idea_token = AZE_Saidanik_Tamhtigakuq
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	AZE_Yannissin_Tislin={
+		name="Yannissin Tislin"
+
+		advisor={
+			slot = theorist
+			idea_token = AZE_Yannissin_Tislin
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

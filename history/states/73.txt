@@ -1,0 +1,37 @@
+
+state={
+	id=73
+	name="STATE_73"
+	manpower = 1543165
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2165 1}
+		victory_points = { 2166 3}
+		
+		owner = LEA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = LEA
+	}
+
+	provinces={
+		2162 2163 2164 2165 2166 2167 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=23
+	name="STATE_23"
+	manpower = 9550847
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=2
+		oil=0
+		rubber=0
+		steel=4
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 668 27}
+		victory_points = { 677 2}
+		victory_points = { 691 2}
+		
+		owner = LEA
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 3
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = LEA
+	}
+
+	provinces={
+		666 667 668 669 670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 
+	}
+	local_supplies=0.0 
+}

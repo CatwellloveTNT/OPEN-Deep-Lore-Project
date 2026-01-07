@@ -1,0 +1,36 @@
+
+state={
+	id=60
+	name="STATE_60"
+	manpower = 4996786
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=0
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1881 15}
+		
+		owner = QIM
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = QIM
+	}
+
+	provinces={
+		1867 1868 1869 1870 1871 1872 1873 1874 1875 1876 1877 1878 1879 1880 1881 1882 1883 1884 1885 1886 1887 1888 1889 
+	}
+	local_supplies=0.0 
+}

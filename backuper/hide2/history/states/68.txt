@@ -1,0 +1,38 @@
+
+state={
+	id=68
+	name="STATE_68"
+	manpower = 2993447
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2043 5}
+		victory_points = { 2050 1}
+		victory_points = { 2053 1}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		2042 2043 2044 2045 2046 2047 2048 2049 2050 2051 2052 2053 2054 2055 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=296
+	name="STATE_296"
+	manpower = 5408108
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=3
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 8335 9}
+		victory_points = { 8341 4}
+		victory_points = { 8349 4}
+		
+		owner = MAA
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MAA
+	}
+
+	provinces={
+		8331 8332 8333 8334 8335 8336 8337 8338 8339 8340 8341 8342 8343 8344 8345 8346 8347 8348 8349 8350 8351 8352 8353 
+	}
+	local_supplies=0.0 
+}

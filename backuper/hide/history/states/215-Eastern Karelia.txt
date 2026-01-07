@@ -1,0 +1,14 @@
+state={
+	id=215
+	name="STATE_215"
+	resources={
+		steel=30
+	}
+	provinces={
+		13130 
+	}
+	manpower=214858
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

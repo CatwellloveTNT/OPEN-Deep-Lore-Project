@@ -1,0 +1,14 @@
+state={
+	id=837
+	name="STATE_837"
+	resources={
+		rubber=3
+	}
+	provinces={
+		13246 13247 
+	}
+	manpower=950000
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

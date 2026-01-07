@@ -1,0 +1,14 @@
+state={
+	id=816
+	name="STATE_816"
+	resources={
+		coal=88
+	}
+	provinces={
+		6850 6958 6971 7466 7588 7646 
+	}
+	manpower=1901974
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

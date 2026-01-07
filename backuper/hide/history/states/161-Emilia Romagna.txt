@@ -1,0 +1,14 @@
+state={
+	id=161
+	name="STATE_161"
+	resources={
+		aluminium=9
+	}
+	provinces={
+		6606 6790 6793 6985 
+	}
+	manpower=3202401
+	buildings_max_level_factor=1
+	state_category=large_city
+	local_supplies=0
+}

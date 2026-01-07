@@ -1,0 +1,11 @@
+state={
+	id=811
+	name="STATE_811"
+	provinces={
+		6201 
+	}
+	manpower=32370
+	buildings_max_level_factor=1
+	state_category=small_island
+	local_supplies=0
+}

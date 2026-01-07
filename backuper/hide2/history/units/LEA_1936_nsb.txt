@@ -1,0 +1,277 @@
+division_template = {
+	name = "Militia Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 0 y = 3 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			infantry = {  x = 1 y = 2 }
+			infantry = {  x = 1 y = 3 }
+			infantry = {  x = 2 y = 0 }
+			infantry = {  x = 2 y = 1 }
+			infantry = {  x = 2 y = 2 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Supported Infantry Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			infantry = {  x = 1 y = 2 }
+			infantry = {  x = 2 y = 0 }
+			infantry = {  x = 2 y = 1 }
+			infantry = {  x = 2 y = 2 }
+
+	}
+	
+	support = {
+			maintenance_company = {  x = 0 y = 0 }
+			engineer = {  x = 1 y = 0 }
+
+	}
+}
+division_template = {
+	name = "Artillery Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			infantry = {  x = 2 y = 0 }
+			infantry = {  x = 2 y = 1 }
+			artillery_brigade = {  x = 3 y = 0 }
+			artillery_brigade = {  x = 3 y = 1 }
+
+	}
+	
+	support = {
+			maintenance_company = {  x = 0 y = 0 }
+
+	}
+}
+division_template = {
+	name = "Cavalry Division"
+
+	regiments = {
+			cavalry = {  x = 0 y = 0 }
+			cavalry = {  x = 0 y = 1 }
+			cavalry = {  x = 0 y = 2 }
+			cavalry = {  x = 0 y = 3 }
+			cavalry = {  x = 1 y = 0 }
+			cavalry = {  x = 1 y = 1 }
+			cavalry = {  x = 1 y = 2 }
+
+	}
+	
+	support = {
+
+	}
+}
+
+
+units = {
+	division= {
+		name = "1nd 'Ceann' Militia Division"
+		location = 2613
+		division_template = "Militia Division"
+		start_experience_factor = 0.825506
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "2rd 'Leatraidhura' Militia Division"
+		location = 2379
+		division_template = "Militia Division"
+		start_experience_factor = 0.534391
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "3th 'Leart' Militia Division"
+		location = 526
+		division_template = "Militia Division"
+		start_experience_factor = 0.389968
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "4th 'Tiwini' Militia Division"
+		location = 1662
+		division_template = "Militia Division"
+		start_experience_factor = 0.189047
+		start_equipment_factor = 0.989123
+	}
+	division= {
+		name = "5th 'Kavai' Militia Division"
+		location = 1795
+		division_template = "Militia Division"
+		start_experience_factor = 0.085637
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "6th 'Tadir' Militia Division"
+		location = 1650
+		division_template = "Militia Division"
+		start_experience_factor = 0.863978
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "7th 'Brehrahna' Militia Division"
+		location = 513
+		division_template = "Militia Division"
+		start_experience_factor = 0.559535
+		start_equipment_factor = 0.936197
+	}
+	division= {
+		name = "8th 'Payesh' Militia Division"
+		location = 3090
+		division_template = "Militia Division"
+		start_experience_factor = 0.183614
+		start_equipment_factor = 0.915509
+	}
+	division= {
+		name = "9th 'Bahil' Militia Division"
+		location = 3784
+		division_template = "Militia Division"
+		start_experience_factor = 0.271142
+		start_equipment_factor = 0.956652
+	}
+	division= {
+		name = "10st 'Ameqrarab' Militia Division"
+		location = 724
+		division_template = "Militia Division"
+		start_experience_factor = 0.433998
+		start_equipment_factor = 0.896330
+	}
+	division= {
+		name = "11nd 'Pann' Militia Division"
+		location = 2646
+		division_template = "Militia Division"
+		start_experience_factor = 0.921789
+		start_equipment_factor = 0.946633
+	}
+	division= {
+		name = "12rd 'Fearcram' Militia Division"
+		location = 3101
+		division_template = "Militia Division"
+		start_experience_factor = 0.115153
+		start_equipment_factor = 0.888584
+	}
+	division= {
+		name = "13th 'Sahirakh' Militia Division"
+		location = 238
+		division_template = "Militia Division"
+		start_experience_factor = 0.707708
+		start_equipment_factor = 0.985682
+	}
+	division= {
+		name = "1nd 'Cnub' Infantry Division"
+		location = 135
+		division_template = "Infantry Division"
+		start_experience_factor = 0.047768
+		start_equipment_factor = 0.975433
+	}
+	division= {
+		name = "2rd 'Cnub' Infantry Division"
+		location = 1056
+		division_template = "Infantry Division"
+		start_experience_factor = 0.485520
+		start_equipment_factor = 0.955236
+	}
+	division= {
+		name = "3th 'Jeshi' Infantry Division"
+		location = 2190
+		division_template = "Infantry Division"
+		start_experience_factor = 0.183188
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "4th 'Suvazesu' Infantry Division"
+		location = 1783
+		division_template = "Infantry Division"
+		start_experience_factor = 0.639872
+		start_equipment_factor = 0.974336
+	}
+	division= {
+		name = "1nd 'Kuvuktuva' Artillery Division"
+		location = 16031
+		division_template = "Artillery Division"
+		start_experience_factor = 0.911086
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "1nd 'Kurash' Cavalry Division"
+		location = 1802
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.611133
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "2rd 'Leasaikht' Cavalry Division"
+		location = 2361
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.395214
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "3th 'Dort' Cavalry Division"
+		location = 3027
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.075320
+		start_equipment_factor = 0.891415
+	}
+	division= {
+		name = "4th 'Nadareh' Cavalry Division"
+		location = 2681
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.735290
+		start_equipment_factor = 0.893304
+	}
+	division= {
+		name = "5th 'Tigadi' Cavalry Division"
+		location = 910
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.807578
+		start_equipment_factor = 0.914691
+	}
+	division= {
+		name = "6th 'Leasaikht' Cavalry Division"
+		location = 2396
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.215192
+		start_equipment_factor = 0.890619
+	}
+	division= {
+		name = "7th 'Pann' Cavalry Division"
+		location = 1490
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.423553
+		start_equipment_factor = 1.000000
+	}
+
+}

@@ -1,0 +1,32 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Lano Fleet"			
+		naval_base = 16407
+		task_force = {
+			name = "Lano Fleet"
+			location = 16407
+			
+						ship = { name = "Malb" definition = battle_cruiser equipment = { battle_cruiser_2 = { amount = 1 owner = LAN version_name = "Kumba Class" } }	}
+			ship = { name = "Muujimtoria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LAN version_name = "Fajarahera Class" } }	}
+			ship = { name = "Basr" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = LAN version_name = "Fajarahera Class" } }	}
+			ship = { name = "Kumba" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = LAN version_name = "Fajarahera Class" } }	}
+			ship = { name = "Kumba 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = LAN version_name = "Basr Class" } }	}
+			ship = { name = "Malb 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = LAN version_name = "Basr Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

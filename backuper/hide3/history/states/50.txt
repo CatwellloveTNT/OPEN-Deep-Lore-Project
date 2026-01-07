@@ -1,0 +1,41 @@
+
+state={
+	id=50
+	name="STATE_50"
+	manpower = 6010062
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 1504 11}
+		victory_points = { 1512 6}
+		victory_points = { 1521 1}
+		
+		owner = LEA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			1510 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LEA
+	}
+
+	provinces={
+		1502 1503 1504 1505 1506 1507 1508 1509 1510 1511 1512 1513 1514 1515 1516 1517 1518 1519 1520 1521 1522 1523 1524 1525 1526 1527 1528 1529 
+	}
+	local_supplies=0.0 
+}

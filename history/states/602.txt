@@ -1,0 +1,39 @@
+
+state={
+	id=602
+	name="STATE_602"
+	manpower = 1529178
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 15782 3}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 0
+			
+			15775 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		15767 15768 15769 15770 15771 15772 15773 15774 15775 15776 15777 15778 15779 15780 15781 15782 15783 
+	}
+	local_supplies=0.0 
+}

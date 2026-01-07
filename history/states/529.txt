@@ -1,0 +1,36 @@
+
+state={
+	id=529
+	name="STATE_529"
+	manpower = 8732887
+	
+	state_category = megalopolis
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 14164 35}
+		
+		owner = KFA
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			arms_factory = 2
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = KFA
+	}
+
+	provinces={
+		14153 14154 14155 14156 14157 14158 14159 14160 14161 14162 14163 14164 14165 14166 14167 14168 14169 14170 14171 14172 14173 14174 14175 14176 14177 14178 14179 14180 14181 14182 14183 14184 14185 14186 14187 
+	}
+	local_supplies=0.0 
+}

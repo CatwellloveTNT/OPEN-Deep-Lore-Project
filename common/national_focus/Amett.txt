@@ -1,0 +1,4021 @@
+focus_tree = {
+	id = AME_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AME
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+####### FOCI ########
+	focus = {
+		id = AME_add_air_experience_85
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 81
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 30
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_43
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 32
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_73
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 56
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			582 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_develop_civilian_industry_0
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 106
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			590 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_90
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_85 }
+		
+		x = 0
+		y = 1
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = AME_found_faction_1_101
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 126
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			set_rule = { can_create_factions = yes }
+			create_faction = AMEfaction
+
+		}
+	}
+	focus = {
+		id = AME_add_stability_31
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 9
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.125
+
+		}
+	}
+	focus = {
+		id = AME_develop_state_civilian_industry_9
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_civilian_industry_0 }
+		
+		x = 0
+		y = 1
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					646 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				646 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			646 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_71
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_73 }
+		
+		x = 0
+		y = 1
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_60
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_71 }
+		
+		x = 0
+		y = 2
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_86
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_85 }
+		prerequisite = { focus = AME_add_air_experience_90 }
+		
+		x = 2
+		y = 2
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_68
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_71 }
+		
+		x = 2
+		y = 2
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			583 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_stability_27
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_31 }
+		
+		x = 0
+		y = 1
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_50
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_43 }
+		
+		x = 0
+		y = 1
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_54
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_43 }
+		prerequisite = { focus = AME_add_army_experience_50 }
+		
+		x = 2
+		y = 2
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_98
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_86 }
+		
+		x = 2
+		y = 3
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_70
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_73 }
+		prerequisite = { focus = AME_sponsor_navy_68 }
+		
+		x = 2
+		y = 3
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			667 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_57
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_54 }
+		
+		x = 2
+		y = 3
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_87
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_98 }
+		
+		x = 2
+		y = 4
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_develop_civilian_industry_11
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_state_civilian_industry_9 }
+		
+		x = 0
+		y = 2
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			666 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_allow_found_faction_100
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_found_faction_1_101 }
+		
+		x = 0
+		y = 1
+		relative_position_id = AME_found_faction_1_101
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_45
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_57 }
+		
+		x = 2
+		y = 4
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_war_support_37
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_27 }
+		
+		x = 0
+		y = 2
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.075
+
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_77
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_70 }
+		
+		x = 2
+		y = 4
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_89
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_86 }
+		
+		x = 4
+		y = 3
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_93
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_89 }
+		
+		x = 4
+		y = 4
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_84
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_89 }
+		prerequisite = { focus = AME_add_air_experience_93 }
+		
+		x = 6
+		y = 5
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_97
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_93 }
+		prerequisite = { focus = AME_add_air_experience_87 }
+		
+		x = 4
+		y = 5
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_64
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_68 }
+		
+		x = 2
+		y = 3
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			659 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_42
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_54 }
+		
+		x = 4
+		y = 3
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = AME_add_war_support_34
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_war_support_37 }
+		prerequisite = { focus = AME_add_stability_31 }
+		
+		x = 0
+		y = 3
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.125
+
+		}
+	}
+	focus = {
+		id = AME_develop_resource_extraction_19
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_civilian_industry_11 }
+		
+		x = 0
+		y = 3
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			587 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			587 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_stability_25
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_war_support_37 }
+		
+		x = 2
+		y = 3
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.15
+
+		}
+	}
+	focus = {
+		id = AME_add_war_support_24
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_war_support_34 }
+		
+		x = 0
+		y = 4
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.075
+
+		}
+	}
+	focus = {
+		id = AME_add_stability_26
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_27 }
+		
+		x = 2
+		y = 2
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.075
+
+		}
+	}
+	focus = {
+		id = AME_develop_state_civilian_industry_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_civilian_industry_0 }
+		prerequisite = { focus = AME_develop_civilian_industry_11 }
+		
+		x = 2
+		y = 3
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					658 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				658 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			658 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_44
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_45 }
+		
+		x = 2
+		y = 5
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = AME_attract_immigrants_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_state_civilian_industry_3 }
+		
+		x = 2
+		y = 4
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_AME_0 }
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_56
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_57 }
+		
+		x = 4
+		y = 4
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_62
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_60 }
+		
+		x = 0
+		y = 3
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = AME_develop_civilian_industry_8
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_resource_extraction_19 }
+		prerequisite = { focus = AME_attract_immigrants_2 }
+		
+		x = 0
+		y = 5
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			586 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_94
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_87 }
+		
+		x = 2
+		y = 5
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_63
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_60 }
+		
+		x = 4
+		y = 3
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_51
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_45 }
+		
+		x = 4
+		y = 5
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_74
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_62 }
+		
+		x = 0
+		y = 4
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_99
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_97 }
+		
+		x = 4
+		y = 6
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_75
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_70 }
+		prerequisite = { focus = AME_add_navy_experience_77 }
+		
+		x = 4
+		y = 5
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			602 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_52
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_56 }
+		
+		x = 6
+		y = 5
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = AME_develop_resource_extraction_14
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_state_civilian_industry_3 }
+		
+		x = 4
+		y = 4
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			629 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			629 = {
+				add_resource = {
+					type = chromium
+					amount = 19
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_47
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_44 }
+		
+		x = 2
+		y = 6
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_49
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_56 }
+		
+		x = 8
+		y = 5
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = AME_add_stability_20
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_25 }
+		
+		x = 2
+		y = 4
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+
+		}
+	}
+	focus = {
+		id = AME_develop_resource_extraction_6
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_civilian_industry_8 }
+		
+		x = 0
+		y = 6
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			621 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			621 = {
+				add_resource = {
+					type = chromium
+					amount = 38
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_79
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_75 }
+		
+		x = 4
+		y = 6
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_67
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_75 }
+		
+		x = 6
+		y = 6
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = AME_develop_resource_extraction_15
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_civilian_industry_11 }
+		
+		x = 2
+		y = 3
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			589 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			589 = {
+				add_resource = {
+					type = aluminium
+					amount = 32
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_59
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_50 }
+		prerequisite = { focus = AME_add_army_experience_44 }
+		
+		x = 0
+		y = 6
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_72
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_63 }
+		prerequisite = { focus = AME_add_navy_experience_67 }
+		
+		x = 6
+		y = 7
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			628 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_develop_resource_extraction_18
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_civilian_industry_8 }
+		
+		x = 2
+		y = 6
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			617 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			617 = {
+				add_resource = {
+					type = tungsten
+					amount = 16
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_political_power_32
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_20 }
+		
+		x = 2
+		y = 5
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 100
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_58
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_59 }
+		
+		x = 0
+		y = 7
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_40
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_59 }
+		prerequisite = { focus = AME_add_army_experience_52 }
+		
+		x = 2
+		y = 7
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = AME_develop_research_sector_1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_resource_extraction_6 }
+		prerequisite = { focus = AME_develop_state_civilian_industry_9 }
+		
+		x = 0
+		y = 7
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_48
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_49 }
+		prerequisite = { focus = AME_add_army_experience_42 }
+		
+		x = 8
+		y = 6
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = AME_attract_immigrants_10
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_resource_extraction_14 }
+		prerequisite = { focus = AME_develop_resource_extraction_19 }
+		
+		x = 4
+		y = 5
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_AME_1 }
+
+		}
+	}
+	focus = {
+		id = AME_add_political_power_38
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_25 }
+		
+		x = 4
+		y = 4
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_46
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_52 }
+		
+		x = 6
+		y = 6
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_65
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_62 }
+		
+		x = 8
+		y = 4
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_53
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_48 }
+		
+		x = 8
+		y = 7
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_76
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_74 }
+		
+		x = 0
+		y = 5
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			576 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_80
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_84 }
+		prerequisite = { focus = AME_add_air_experience_99 }
+		
+		x = 6
+		y = 7
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = AME_sponsor_navy_78
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_65 }
+		prerequisite = { focus = AME_add_navy_experience_67 }
+		
+		x = 8
+		y = 7
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			631 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_develop_state_civilian_12
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_state_civilian_industry_9 }
+		prerequisite = { focus = AME_develop_resource_extraction_6 }
+		
+		x = 2
+		y = 7
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					633 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				633 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_develop_state_civilian_industry_13
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_resource_extraction_6 }
+		
+		x = 2
+		y = 7
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					658 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				658 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			658 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_develop_state_civilian_7
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_resource_extraction_19 }
+		
+		x = 6
+		y = 4
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					666 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				666 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_develop_arms_industry_5
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_resource_extraction_15 }
+		
+		x = 8
+		y = 4
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			581 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_political_power_36
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_20 }
+		prerequisite = { focus = AME_add_war_support_24 }
+		
+		x = 4
+		y = 5
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 125
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_41
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_46 }
+		
+		x = 6
+		y = 7
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_war_support_35
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_political_power_38 }
+		prerequisite = { focus = AME_add_stability_26 }
+		
+		x = 6
+		y = 5
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.05
+
+		}
+	}
+	focus = {
+		id = AME_add_war_support_23
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_political_power_36 }
+		
+		x = 4
+		y = 6
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.1
+
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_66
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_67 }
+		
+		x = 6
+		y = 7
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = AME_develop_resource_extraction_17
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_resource_extraction_15 }
+		
+		x = 10
+		y = 4
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			584 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			584 = {
+				add_resource = {
+					type = chromium
+					amount = 14
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_stability_33
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_26 }
+		
+		x = 4
+		y = 3
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.075
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_83
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_98 }
+		
+		x = 8
+		y = 4
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = AME_add_war_support_22
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_31 }
+		prerequisite = { focus = AME_add_political_power_38 }
+		
+		x = 2
+		y = 5
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.125
+
+		}
+	}
+	focus = {
+		id = AME_add_army_experience_55
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_army_experience_41 }
+		
+		x = 6
+		y = 8
+		relative_position_id = AME_add_army_experience_43
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = AME_add_stability_30
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_stability_33 }
+		prerequisite = { focus = AME_add_political_power_32 }
+		
+		x = 6
+		y = 6
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.075
+
+		}
+	}
+	focus = {
+		id = AME_add_war_support_28
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_war_support_34 }
+		prerequisite = { focus = AME_add_stability_33 }
+		
+		x = 8
+		y = 4
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.075
+
+		}
+	}
+	focus = {
+		id = AME_develop_civilian_industry_4
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_research_sector_1 }
+		
+		x = 0
+		y = 8
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_95
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_83 }
+		prerequisite = { focus = AME_add_air_experience_99 }
+		
+		x = 8
+		y = 7
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_96
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_90 }
+		
+		x = 0
+		y = 2
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_69
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_navy_experience_77 }
+		
+		x = 2
+		y = 5
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_81
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_94 }
+		prerequisite = { focus = AME_add_air_experience_96 }
+		
+		x = 2
+		y = 6
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_war_support_39
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_political_power_32 }
+		prerequisite = { focus = AME_add_war_support_24 }
+		
+		x = 2
+		y = 6
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.075
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_88
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_95 }
+		
+		x = 8
+		y = 8
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_navy_experience_61
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_sponsor_navy_64 }
+		
+		x = 10
+		y = 4
+		relative_position_id = AME_sponsor_navy_73
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_war_support_21
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_war_support_22 }
+		
+		x = 6
+		y = 6
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.125
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_91
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_80 }
+		
+		x = 6
+		y = 8
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_82
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_88 }
+		prerequisite = { focus = AME_add_air_experience_91 }
+		
+		x = 8
+		y = 9
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_develop_naval_industry_16
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_develop_civilian_industry_4 }
+		
+		x = 0
+		y = 9
+		relative_position_id = AME_develop_civilian_industry_0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			601 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = AME_add_air_experience_92
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_air_experience_83 }
+		
+		x = 10
+		y = 5
+		relative_position_id = AME_add_air_experience_85
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AME_add_political_power_29
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AME_add_war_support_21 }
+		prerequisite = { focus = AME_add_war_support_23 }
+		
+		x = 6
+		y = 7
+		relative_position_id = AME_add_stability_31
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 75
+
+		}
+	}
+
+	
+	
+}

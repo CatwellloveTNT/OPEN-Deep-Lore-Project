@@ -1,0 +1,36 @@
+
+state={
+	id=87
+	name="STATE_87"
+	manpower = 2708128
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 2644 8}
+		
+		owner = LEA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = LEA
+	}
+
+	provinces={
+		2642 2643 2644 2645 2646 2647 2648 2649 2650 2651 2652 2653 
+	}
+	local_supplies=0.0 
+}

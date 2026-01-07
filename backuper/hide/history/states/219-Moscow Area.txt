@@ -1,0 +1,15 @@
+state={
+	id=219
+	name="STATE_219"
+	resources={
+		steel=16
+		coal=16
+	}
+	provinces={
+		6283 6290 6348 6380 6414 
+	}
+	manpower=8335992
+	buildings_max_level_factor=1
+	state_category=megalopolis
+	local_supplies=6
+}

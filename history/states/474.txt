@@ -1,0 +1,40 @@
+
+state={
+	id=474
+	name="STATE_474"
+	manpower = 9634379
+	
+	state_category = city
+	resources={
+		aluminium=2
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 12926 25}
+		victory_points = { 12957 1}
+		
+		owner = NAZ
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			12911 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NAZ
+	}
+
+	provinces={
+		12902 12903 12904 12905 12906 12907 12908 12909 12910 12911 12912 12913 12914 12915 12916 12917 12918 12919 12920 12921 12922 12923 12924 12925 12926 12927 12928 12929 12930 12931 12932 12933 12934 12935 12936 12937 12938 12939 12940 12941 12942 12943 12944 12945 12946 12947 12948 12949 12950 12951 12952 12953 12954 12955 12956 12957 
+	}
+	local_supplies=0.0 
+}

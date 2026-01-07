@@ -1,0 +1,37 @@
+
+state={
+	id=334
+	name="STATE_334"
+	manpower = 5504937
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 9490 16}
+		victory_points = { 9497 3}
+		
+		owner = MAA
+		buildings = {
+			infrastructure = 3
+			air_base = 4
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MAA
+	}
+
+	provinces={
+		9485 9486 9487 9488 9489 9490 9491 9492 9493 9494 9495 9496 9497 9498 9499 9500 9501 9502 9503 9504 9505 9506 9507 9508 
+	}
+	local_supplies=0.0 
+}

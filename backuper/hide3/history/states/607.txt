@@ -1,0 +1,41 @@
+
+state={
+	id=607
+	name="STATE_607"
+	manpower = 1215951
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 15826 2}
+		victory_points = { 15827 1}
+		victory_points = { 15828 1}
+		
+		owner = LAB
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			15827 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAB
+	}
+
+	provinces={
+		15826 15827 15828 
+	}
+	local_supplies=0.0 
+}

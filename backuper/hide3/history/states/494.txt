@@ -1,0 +1,42 @@
+
+state={
+	id=494
+	name="STATE_494"
+	manpower = 13147533
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 13442 6}
+		victory_points = { 13462 20}
+		victory_points = { 13486 20}
+		victory_points = { 13492 6}
+		
+		owner = MES
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 5
+			13462 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MES
+	}
+
+	provinces={
+		13439 13440 13441 13442 13443 13444 13445 13446 13447 13448 13449 13450 13451 13452 13453 13454 13455 13456 13457 13458 13459 13460 13461 13462 13463 13464 13465 13466 13467 13468 13469 13470 13471 13472 13473 13474 13475 13476 13477 13478 13479 13480 13481 13482 13483 13484 13485 13486 13487 13488 13489 13490 13491 13492 
+	}
+	local_supplies=0.0 
+}

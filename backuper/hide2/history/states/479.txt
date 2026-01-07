@@ -1,0 +1,39 @@
+
+state={
+	id=479
+	name="STATE_479"
+	manpower = 5705598
+	
+	state_category = large_town
+	resources={
+		aluminium=3
+		chromium=0
+		oil=2
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 13082 16}
+		
+		owner = NAZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			13099 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NAZ
+	}
+
+	provinces={
+		13077 13078 13079 13080 13081 13082 13083 13084 13085 13086 13087 13088 13089 13090 13091 13092 13093 13094 13095 13096 13097 13098 13099 13100 13101 13102 13103 13104 13105 13106 
+	}
+	local_supplies=0.0 
+}

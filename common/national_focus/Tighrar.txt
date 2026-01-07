@@ -1,0 +1,4591 @@
+focus_tree = {
+	id = PIG_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PIG
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+####### FOCI ########
+	focus = {
+		id = PIG_add_army_experience_2257
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 32
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_attract_immigrants_2205
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 97
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_PIG_0 }
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2221
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 9
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+
+		}
+	}
+	focus = {
+		id = PIG_develop_naval_industry_2215
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_attract_immigrants_2205 }
+		
+		x = 0
+		y = 1
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			485 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2277
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 54
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			486 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2284
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 75
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2292
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2284 }
+		
+		x = 0
+		y = 1
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2247
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2257 }
+		
+		x = 0
+		y = 1
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2276
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2277 }
+		
+		x = 0
+		y = 1
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_add_political_power_2230
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2221 }
+		
+		x = 0
+		y = 1
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 75
+
+		}
+	}
+	focus = {
+		id = PIG_develop_naval_industry_2219
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_attract_immigrants_2205 }
+		prerequisite = { focus = PIG_develop_naval_industry_2215 }
+		
+		x = 2
+		y = 2
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			485 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2236
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2225 }
+		prerequisite = { focus = PIG_add_political_power_2230 }
+		
+		x = 2
+		y = 2
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2225
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2221 }
+		
+		x = 2
+		y = 1
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.15
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2259
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2257 }
+		
+		x = 2
+		y = 1
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_develop_naval_industry_2210
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_naval_industry_2219 }
+		
+		x = 2
+		y = 3
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			485 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2241
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2259 }
+		
+		x = 2
+		y = 2
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2262
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2276 }
+		
+		x = 0
+		y = 2
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			482 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2249
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2247 }
+		
+		x = 0
+		y = 2
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_political_power_2224
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_political_power_2230 }
+		prerequisite = { focus = PIG_add_stability_2225 }
+		
+		x = 0
+		y = 2
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 125
+
+		}
+	}
+	focus = {
+		id = PIG_attract_immigrants_2211
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_naval_industry_2219 }
+		
+		x = 4
+		y = 3
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_PIG_1 }
+
+		}
+	}
+	focus = {
+		id = PIG_add_war_support_2235
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2236 }
+		
+		x = 2
+		y = 3
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.125
+
+		}
+	}
+	focus = {
+		id = PIG_add_war_support_2231
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_war_support_2235 }
+		
+		x = 2
+		y = 4
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.075
+
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2275
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2262 }
+		
+		x = 0
+		y = 3
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2250
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2249 }
+		prerequisite = { focus = PIG_add_army_experience_2241 }
+		
+		x = 0
+		y = 3
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_add_political_power_2222
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_political_power_2224 }
+		
+		x = 0
+		y = 3
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2229
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2236 }
+		prerequisite = { focus = PIG_add_political_power_2222 }
+		
+		x = 4
+		y = 4
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.15
+
+		}
+	}
+	focus = {
+		id = PIG_add_political_power_2227
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_war_support_2231 }
+		
+		x = 2
+		y = 5
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2270
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2275 }
+		
+		x = 0
+		y = 4
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			473 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2265
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2270 }
+		
+		x = 0
+		y = 5
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_attract_immigrants_2212
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_naval_industry_2215 }
+		
+		x = 0
+		y = 2
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_PIG_2 }
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2242
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2241 }
+		prerequisite = { focus = PIG_add_army_experience_2259 }
+		
+		x = 2
+		y = 3
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_develop_state_civilian_2202
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_attract_immigrants_2211 }
+		prerequisite = { focus = PIG_attract_immigrants_2212 }
+		
+		x = 4
+		y = 4
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					459 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				459 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_political_power_2228
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_political_power_2227 }
+		
+		x = 2
+		y = 6
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2291
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2284 }
+		
+		x = 2
+		y = 1
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2254
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2259 }
+		
+		x = 4
+		y = 2
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_develop_state_civilian_industry_2204
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_naval_industry_2210 }
+		
+		x = 2
+		y = 4
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					455 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				455 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			455 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2252
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2250 }
+		prerequisite = { focus = PIG_add_army_experience_2254 }
+		
+		x = 0
+		y = 4
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_develop_resource_extraction_2208
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_state_civilian_industry_2204 }
+		prerequisite = { focus = PIG_attract_immigrants_2211 }
+		
+		x = 2
+		y = 5
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			470 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			470 = {
+				add_resource = {
+					type = steel
+					amount = 18
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2287
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2291 }
+		
+		x = 2
+		y = 2
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2238
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_political_power_2222 }
+		
+		x = 0
+		y = 4
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.15
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2260
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2277 }
+		
+		x = 2
+		y = 1
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			486 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2223
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_political_power_2224 }
+		
+		x = 6
+		y = 3
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.125
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2297
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2292 }
+		
+		x = 0
+		y = 2
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2251
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2249 }
+		
+		x = 4
+		y = 3
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_develop_civilian_industry_2209
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_state_civilian_2202 }
+		prerequisite = { focus = PIG_attract_immigrants_2212 }
+		
+		x = 4
+		y = 5
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			455 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_develop_civilian_industry_2218
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_civilian_industry_2209 }
+		prerequisite = { focus = PIG_develop_state_civilian_industry_2204 }
+		
+		x = 4
+		y = 6
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			486 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2298
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2292 }
+		
+		x = 4
+		y = 2
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2285
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2287 }
+		prerequisite = { focus = PIG_add_air_experience_2298 }
+		
+		x = 2
+		y = 3
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2293
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2291 }
+		
+		x = 6
+		y = 2
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_attack_opposing_ideology_neighbour_adjacent_2302
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 132
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+            modifier = {
+				set_temp_variable = { my_var = 1.0 }
+                    if = {
+                        limit = {
+                            strength_ratio = { tag = UAG ratio > 2.0 }
+                        }
+                        set_temp_variable = { my_var = 2.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = UAG ratio > 1.5 }
+                        }
+                        set_temp_variable = { my_var = 1.5 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = UAG ratio > 1.25 }
+                        }
+                        set_temp_variable = { my_var = 1.25 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = UAG ratio > 1.0 }
+                        }
+                        set_temp_variable = { my_var = 1.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = UAG ratio > 0.75 }
+                        }
+                        set_temp_variable = { my_var = 0.75 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = UAG ratio > 0.5 }
+                        }
+                        set_temp_variable = { my_var = 0.5 }
+                    }
+				factor = my_var
+            }
+
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				UAG = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				ROOT = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 0.1 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 0.25 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 0.1 }
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = { date > 1943.01.01 }
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1941.01.01
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1939.06.06
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1938.06.06
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1937.06.06
+						}
+						set_temp_variable = { my_var = 0.35 }
+					}
+					else_if = {
+						limit = {
+							date > 1936.06.06
+						}
+						set_temp_variable = { my_var = 0.2 }
+					}
+				}
+				factor = my_var
+			}
+		}
+		
+		available = {
+			
+			PIG = {
+				has_government = democratic
+			}
+
+		}
+
+		bypass = {
+			OR = {
+
+			UAG = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+
+			UAG = {
+				has_government = democratic
+			}
+
+		}
+
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			create_wargoal = {
+				type = annex_everything
+				target = UAG
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_develop_state_civilian_2216
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_civilian_industry_2218 }
+		
+		x = 4
+		y = 7
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					459 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				459 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2263
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2265 }
+		
+		x = 0
+		y = 6
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			459 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2282
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2285 }
+		prerequisite = { focus = PIG_add_air_experience_2293 }
+		
+		x = 2
+		y = 4
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_develop_resource_extraction_2206
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_attract_immigrants_2211 }
+		
+		x = 6
+		y = 4
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			609 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			609 = {
+				add_resource = {
+					type = aluminium
+					amount = 18
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2273
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2270 }
+		
+		x = 2
+		y = 5
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			470 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2283
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2285 }
+		
+		x = 4
+		y = 4
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2244
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2250 }
+		
+		x = 2
+		y = 4
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2290
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2282 }
+		prerequisite = { focus = PIG_add_air_experience_2287 }
+		
+		x = 2
+		y = 5
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2271
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2262 }
+		
+		x = 2
+		y = 3
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2296
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2282 }
+		prerequisite = { focus = PIG_add_air_experience_2293 }
+		
+		x = 4
+		y = 5
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2289
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2290 }
+		
+		x = 2
+		y = 6
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_develop_naval_industry_2200
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_state_civilian_2202 }
+		
+		x = 6
+		y = 5
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			455 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_develop_arms_industry_2213
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_attract_immigrants_2212 }
+		prerequisite = { focus = PIG_develop_state_civilian_2216 }
+		
+		x = 0
+		y = 8
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			485 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2294
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2287 }
+		prerequisite = { focus = PIG_add_air_experience_2289 }
+		
+		x = 4
+		y = 7
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_attack_opposing_ideology_neighbour_2300
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_attack_opposing_ideology_neighbour_adjacent_2302 }
+		
+		x = 0
+		y = 1
+		relative_position_id = PIG_attack_opposing_ideology_neighbour_adjacent_2302
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+            modifier = {
+				set_temp_variable = { my_var = 1.0 }
+                    if = {
+                        limit = {
+                            strength_ratio = { tag = NAZ ratio > 2.0 }
+                        }
+                        set_temp_variable = { my_var = 2.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = NAZ ratio > 1.5 }
+                        }
+                        set_temp_variable = { my_var = 1.5 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = NAZ ratio > 1.25 }
+                        }
+                        set_temp_variable = { my_var = 1.25 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = NAZ ratio > 1.0 }
+                        }
+                        set_temp_variable = { my_var = 1.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = NAZ ratio > 0.75 }
+                        }
+                        set_temp_variable = { my_var = 0.75 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = NAZ ratio > 0.5 }
+                        }
+                        set_temp_variable = { my_var = 0.5 }
+                    }
+				factor = my_var
+            }
+
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				NAZ = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				ROOT = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 0.1 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 0.25 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 0.1 }
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = { date > 1943.01.01 }
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1941.01.01
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1939.06.06
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1938.06.06
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1937.06.06
+						}
+						set_temp_variable = { my_var = 0.35 }
+					}
+					else_if = {
+						limit = {
+							date > 1936.06.06
+						}
+						set_temp_variable = { my_var = 0.2 }
+					}
+				}
+				factor = my_var
+			}
+		}
+		
+		available = {
+			
+			PIG = {
+				has_government = democratic
+			}
+
+		}
+
+		bypass = {
+			OR = {
+
+			NAZ = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+
+			NAZ = {
+				has_government = democratic
+			}
+
+		}
+
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			create_wargoal = {
+				type = annex_everything
+				target = NAZ
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2299
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2296 }
+		
+		x = 4
+		y = 6
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2255
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2251 }
+		
+		x = 4
+		y = 4
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2239
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2229 }
+		prerequisite = { focus = PIG_add_political_power_2227 }
+		
+		x = 4
+		y = 6
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.125
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2264
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2273 }
+		
+		x = 2
+		y = 6
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			609 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2274
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2273 }
+		
+		x = 4
+		y = 6
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			609 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_develop_arms_industry_2217
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_naval_industry_2210 }
+		
+		x = 8
+		y = 4
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			486 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2258
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2247 }
+		
+		x = 6
+		y = 2
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_war_support_2220
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_war_support_2231 }
+		
+		x = 6
+		y = 5
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.1
+
+		}
+	}
+	focus = {
+		id = PIG_develop_arms_industry_2203
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_civilian_industry_2209 }
+		
+		x = 6
+		y = 6
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			486 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_develop_naval_industry_2207
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_arms_industry_2203 }
+		
+		x = 6
+		y = 7
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			486 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2237
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_war_support_2235 }
+		
+		x = 4
+		y = 4
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2232
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2239 }
+		
+		x = 4
+		y = 7
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.075
+
+		}
+	}
+	focus = {
+		id = PIG_add_political_power_2226
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2225 }
+		
+		x = 4
+		y = 2
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2278
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2271 }
+		
+		x = 2
+		y = 4
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			609 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2246
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2242 }
+		
+		x = 6
+		y = 4
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2295
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2296 }
+		
+		x = 6
+		y = 6
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2266
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2275 }
+		
+		x = 4
+		y = 4
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2248
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2246 }
+		prerequisite = { focus = PIG_add_army_experience_2255 }
+		
+		x = 6
+		y = 5
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2243
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2258 }
+		prerequisite = { focus = PIG_add_army_experience_2246 }
+		
+		x = 6
+		y = 5
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2279
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2264 }
+		
+		x = 2
+		y = 7
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			486 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_political_power_2233
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_stability_2237 }
+		prerequisite = { focus = PIG_add_war_support_2220 }
+		
+		x = 8
+		y = 6
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = PIG_sponsor_navy_2261
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2260 }
+		
+		x = 2
+		y = 2
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			485 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_stability_2234
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_political_power_2233 }
+		
+		x = 8
+		y = 7
+		relative_position_id = PIG_add_stability_2221
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2281
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2294 }
+		
+		x = 4
+		y = 8
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2272
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2276 }
+		
+		x = 4
+		y = 2
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2253
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2251 }
+		
+		x = 8
+		y = 4
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2286
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2299 }
+		
+		x = 4
+		y = 7
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_attack_opposing_ideology_neighbour_2301
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_attack_opposing_ideology_neighbour_adjacent_2302 }
+		prerequisite = { focus = PIG_attack_opposing_ideology_neighbour_2300 }
+		
+		x = 2
+		y = 2
+		relative_position_id = PIG_attack_opposing_ideology_neighbour_adjacent_2302
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+            modifier = {
+				set_temp_variable = { my_var = 1.0 }
+                    if = {
+                        limit = {
+                            strength_ratio = { tag = ASI ratio > 2.0 }
+                        }
+                        set_temp_variable = { my_var = 2.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = ASI ratio > 1.5 }
+                        }
+                        set_temp_variable = { my_var = 1.5 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = ASI ratio > 1.25 }
+                        }
+                        set_temp_variable = { my_var = 1.25 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = ASI ratio > 1.0 }
+                        }
+                        set_temp_variable = { my_var = 1.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = ASI ratio > 0.75 }
+                        }
+                        set_temp_variable = { my_var = 0.75 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = ASI ratio > 0.5 }
+                        }
+                        set_temp_variable = { my_var = 0.5 }
+                    }
+				factor = my_var
+            }
+
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				ASI = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				ROOT = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 0.1 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 0.25 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 0.1 }
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = { date > 1943.01.01 }
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1941.01.01
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1939.06.06
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1938.06.06
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1937.06.06
+						}
+						set_temp_variable = { my_var = 0.35 }
+					}
+					else_if = {
+						limit = {
+							date > 1936.06.06
+						}
+						set_temp_variable = { my_var = 0.2 }
+					}
+				}
+				factor = my_var
+			}
+		}
+		
+		available = {
+			
+			PIG = {
+				has_government = democratic
+			}
+
+		}
+
+		bypass = {
+			OR = {
+
+			ASI = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+
+			ASI = {
+				has_government = democratic
+			}
+
+		}
+
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			create_wargoal = {
+				type = annex_everything
+				target = ASI
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_allow_found_faction_2303
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 116
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2269
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_sponsor_navy_2261 }
+		prerequisite = { focus = PIG_add_navy_experience_2266 }
+		
+		x = 4
+		y = 5
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2288
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2298 }
+		
+		x = 6
+		y = 3
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_develop_arms_industry_2214
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_arms_industry_2203 }
+		prerequisite = { focus = PIG_develop_naval_industry_2207 }
+		
+		x = 8
+		y = 8
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			453 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2240
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2255 }
+		prerequisite = { focus = PIG_add_army_experience_2244 }
+		
+		x = 4
+		y = 5
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = PIG_attract_immigrants_2201
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_develop_arms_industry_2214 }
+		prerequisite = { focus = PIG_develop_state_civilian_2216 }
+		
+		x = 8
+		y = 9
+		relative_position_id = PIG_attract_immigrants_2205
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_PIG_3 }
+
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2245
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2243 }
+		
+		x = 6
+		y = 6
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_add_army_experience_2256
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_army_experience_2240 }
+		prerequisite = { focus = PIG_add_army_experience_2254 }
+		
+		x = 4
+		y = 6
+		relative_position_id = PIG_add_army_experience_2257
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2267
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2269 }
+		
+		x = 6
+		y = 6
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = PIG_add_navy_experience_2268
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_navy_experience_2271 }
+		
+		x = 6
+		y = 4
+		relative_position_id = PIG_sponsor_navy_2277
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = PIG_add_air_experience_2280
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PIG_add_air_experience_2299 }
+		prerequisite = { focus = PIG_add_air_experience_2289 }
+		
+		x = 6
+		y = 7
+		relative_position_id = PIG_add_air_experience_2284
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+
+	
+	
+}

@@ -1,0 +1,14 @@
+state={
+	id=742
+	name="STATE_742"
+	resources={
+		steel=3
+	}
+	provinces={
+		12218 12250 12430 12805 
+	}
+	manpower=230000
+	buildings_max_level_factor=1
+	state_category=wasteland
+	local_supplies=0
+}

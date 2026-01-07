@@ -1,0 +1,17 @@
+state={
+	id=564
+	name="STATE_564"
+	resources={
+		steel=10
+		chromium=12
+		tungsten=10
+		aluminium=4
+	}
+	provinces={
+		12506 12575 12644 13152 
+	}
+	manpower=370893
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

@@ -1,0 +1,880 @@
+characters = {
+	MAT_Bilassandro_Dincamahr={
+		name="Bilassandro Dincamahr"
+
+		
+		country_leader={
+			ideology=moderatism
+			traits = { humble  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	MAT_Jami_Cone={
+		name="Jami Cone"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Jami_Cone
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	MAT_Paolassances_Ghara={
+		name="Paolassances Ghara"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Paolassances_Ghara
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	MAT_Aliertonio_Sahrah={
+		name="Aliertonio Sahrah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Aliertonio_Sahrah
+				traits = {	exiled 	}
+		}
+
+	}
+	MAT_Abdulid_Sahrah={
+		name="Abdulid Sahrah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Abdulid_Sahrah
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	MAT_Marcolahmad_Cone={
+		name="Marcolahmad Cone"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Marcolahmad_Cone
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	MAT_Faid_Allo={
+		name="Faid Allo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Faid_Allo
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	MAT_Aliertonio_Regia={
+		name="Aliertonio Regia"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Aliertonio_Regia
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	MAT_Omarid_Dincamahr={
+		name="Omarid Dincamahr"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Omarid_Dincamahr
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	MAT_Imran_Tifl={
+		name="Imran Tifl"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Imran_Tifl
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	MAT_Ricto_Ghara={
+		name="Ricto Ghara"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Ricto_Ghara
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	MAT_Paolo_Dincamahr={
+		name="Paolo Dincamahr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Paolo_Dincamahr
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	MAT_Albertonan_Sahrah={
+		name="Albertonan Sahrah"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Albertonan_Sahrah
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	MAT_Mahierto_Kito={
+		name="Mahierto Kito"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Mahierto_Kito
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	MAT_Feli_Tifl={
+		name="Feli Tifl"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Feli_Tifl
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	MAT_Ricardo_Chia={
+		name="Ricardo Chia"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Ricardo_Chia
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	MAT_Mohal_Muftim={
+		name="Mohal Muftim"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Mohal_Muftim
+				traits = {	army_entrenchment_2 	}
+		}
+
+	}
+	MAT_Samal_Sahrah={
+		name="Samal Sahrah"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Samal_Sahrah
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	MAT_Andro_Muftim={
+		name="Andro Muftim"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Andro_Muftim
+				traits = {	air_close_air_support_2 	}
+		}
+
+	}
+	MAT_Alberto_Dincamahr={
+		name="Alberto Dincamahr"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Alberto_Dincamahr
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	MAT_Sammedre_Allo={
+		name="Sammedre Allo"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Sammedre_Allo
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	MAT_Saad_Cone={
+		name="Saad Cone"
+
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits = { the_young_magnate  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	MAT_Faid_Muftim={
+		name="Faid Muftim"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Faid_Muftim
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	MAT_Faid_Dincamahr={
+		name="Faid Dincamahr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Faid_Dincamahr
+				traits = {	autokrator 	}
+		}
+
+	}
+	MAT_Jose_Chia={
+		name="Jose Chia"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Jose_Chia
+				traits = {	autokrator 	}
+		}
+
+	}
+	MAT_Zaid_Dincamahr={
+		name="Zaid Dincamahr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Zaid_Dincamahr
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	MAT_Pedre_Dincamahr={
+		name="Pedre Dincamahr"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Pedre_Dincamahr
+				traits = {	collaborator_king 	}
+		}
+
+	}
+	MAT_Enzo_Kito={
+		name="Enzo Kito"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Enzo_Kito
+				traits = {	spirit_of_genghis 	}
+		}
+
+	}
+	MAT_Stefan_Ghara={
+		name="Stefan Ghara"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Stefan_Ghara
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	MAT_Nicario_Regia={
+		name="Nicario Regia"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Nicario_Regia
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	MAT_Nica_Tifl={
+		name="Nica Tifl"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Nica_Tifl
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	MAT_Omar_Chia={
+		name="Omar Chia"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Omar_Chia
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	MAT_Luca_Sahrah={
+		name="Luca Sahrah"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Luca_Sahrah
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	MAT_Tarid_Dincamahr={
+		name="Tarid Dincamahr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Tarid_Dincamahr
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	MAT_Rammedre_Ghara={
+		name="Rammedre Ghara"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Rammedre_Ghara
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	MAT_Ramo_Chia={
+		name="Ramo Chia"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Ramo_Chia
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	MAT_Roberto_Allo={
+		name="Roberto Allo"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Roberto_Allo
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	MAT_Rami_Regia={
+		name="Rami Regia"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Rami_Regia
+				traits = {	navy_fleet_logistics_1 	}
+		}
+
+	}
+	MAT_Khal_Kito={
+		name="Khal Kito"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Khal_Kito
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	MAT_Yusuf_Cone={
+		name="Yusuf Cone"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Yusuf_Cone
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	MAT_Stefano_Kito={
+		name="Stefano Kito"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Stefano_Kito
+				traits = {	navy_screen_1 	}
+		}
+
+	}
+	MAT_Thim_Sahrah={
+		name="Thim Sahrah"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Thim_Sahrah
+				traits = {	army_cavalry_1 	}
+		}
+
+	}
+	MAT_Albertonan_Allo={
+		name="Albertonan Allo"
+
+		
+		country_leader={
+			ideology=stalinism
+			traits = { indomitable_perseverance  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	MAT_Juli_Muftim={
+		name="Juli Muftim"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Juli_Muftim
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	MAT_Ricardo_Allo={
+		name="Ricardo Allo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Ricardo_Allo
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	MAT_Marcolahmad_Sahrah={
+		name="Marcolahmad Sahrah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Marcolahmad_Sahrah
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	MAT_Hamal_Kito={
+		name="Hamal Kito"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Hamal_Kito
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	MAT_Andre_Muftim={
+		name="Andre Muftim"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Andre_Muftim
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	MAT_Ahmoud_Regia={
+		name="Ahmoud Regia"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Ahmoud_Regia
+				traits = {	polemarch 	}
+		}
+
+	}
+	MAT_Ricardo_Dincamahr={
+		name="Ricardo Dincamahr"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Ricardo_Dincamahr
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	MAT_Tarid_Regia={
+		name="Tarid Regia"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Tarid_Regia
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	MAT_Roberto_Kito={
+		name="Roberto Kito"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Roberto_Kito
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	MAT_Frahmo_Muftim={
+		name="Frahmo Muftim"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Frahmo_Muftim
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	MAT_Yusuf_Allo={
+		name="Yusuf Allo"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Yusuf_Allo
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	MAT_Omar_Dincamahr={
+		name="Omar Dincamahr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Omar_Dincamahr
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	MAT_Robertor_Dincamahr={
+		name="Robertor Dincamahr"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Robertor_Dincamahr
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	MAT_Andre_Chia={
+		name="Andre Chia"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Andre_Chia
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	MAT_Omar_Muftim={
+		name="Omar Muftim"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Omar_Muftim
+				traits = {	army_infantry_1 	}
+		}
+
+	}
+	MAT_Alberton_Chia={
+		name="Alberton Chia"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Alberton_Chia
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	MAT_Zais_Sahrah={
+		name="Zais Sahrah"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Zais_Sahrah
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	MAT_Mario_Allo={
+		name="Mario Allo"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Mario_Allo
+				traits = {	army_artillery_1 	}
+		}
+
+	}
+	MAT_Nica_Allo={
+		name="Nica Allo"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Nica_Allo
+				traits = {	navy_anti_submarine_1 	}
+		}
+
+	}
+	MAT_Imrahmo_Ghara={
+		name="Imrahmo Ghara"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Imrahmo_Ghara
+				traits = {	air_pilot_training_1 	}
+		}
+
+	}
+	MAT_Stefan_Allo={
+		name="Stefan Allo"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { conservative_grandee  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	MAT_Omarid_Kito={
+		name="Omarid Kito"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Omarid_Kito
+				traits = {	famous_aviator 	}
+		}
+
+	}
+	MAT_Andro_Cone={
+		name="Andro Cone"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Andro_Cone
+				traits = {	famous_aviator 	}
+		}
+
+	}
+	MAT_Omarid_Sahrah={
+		name="Omarid Sahrah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Omarid_Sahrah
+				traits = {	british_bulldog 	}
+		}
+
+	}
+	MAT_Pedre_Allo={
+		name="Pedre Allo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Pedre_Allo
+				traits = {	infirm 	}
+		}
+
+	}
+	MAT_Anwarim_Chia={
+		name="Anwarim Chia"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Anwarim_Chia
+				traits = {	infirm 	}
+		}
+
+	}
+	MAT_Paolassances_Sahrah={
+		name="Paolassances Sahrah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = MAT_Paolassances_Sahrah
+				traits = {	famous_aviator 	}
+		}
+
+	}
+	MAT_Mohamir_Regia={
+		name="Mohamir Regia"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Mohamir_Regia
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	MAT_Saad_Ghara={
+		name="Saad Ghara"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Saad_Ghara
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	MAT_Jullahya_Ghara={
+		name="Jullahya Ghara"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Jullahya_Ghara
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	MAT_Alberto_Cone={
+		name="Alberto Cone"
+
+		advisor={
+			slot = army_chief
+			idea_token = MAT_Alberto_Cone
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	MAT_Nicario_Ghara={
+		name="Nicario Ghara"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Nicario_Ghara
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	MAT_Jullal_Dincamahr={
+		name="Jullal Dincamahr"
+
+		advisor={
+			slot = navy_chief
+			idea_token = MAT_Jullal_Dincamahr
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	MAT_Tariq_Tifl={
+		name="Tariq Tifl"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Tariq_Tifl
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	MAT_Albertonan_Chia={
+		name="Albertonan Chia"
+
+		advisor={
+			slot = air_chief
+			idea_token = MAT_Albertonan_Chia
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	MAT_Yahya_Allo={
+		name="Yahya Allo"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Yahya_Allo
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	MAT_Marcolahmad_Allo={
+		name="Marcolahmad Allo"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Marcolahmad_Allo
+				traits = {	air_pilot_training_1 	}
+		}
+
+	}
+	MAT_Julien_Kito={
+		name="Julien Kito"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Julien_Kito
+				traits = {	army_logistics_1 	}
+		}
+
+	}
+	MAT_Paolo_Kito={
+		name="Paolo Kito"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Paolo_Kito
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	MAT_Samza_Dincamahr={
+		name="Samza Dincamahr"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Samza_Dincamahr
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	MAT_Feli_Regia={
+		name="Feli Regia"
+
+		advisor={
+			slot = high_command
+			idea_token = MAT_Feli_Regia
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	MAT_Ramo_Allo={
+		name="Ramo Allo"
+
+		advisor={
+			slot = theorist
+			idea_token = MAT_Ramo_Allo
+				traits = {	military_theorist 	}
+		}
+
+	}
+	MAT_Mahierto_Ghara={
+		name="Mahierto Ghara"
+
+		advisor={
+			slot = theorist
+			idea_token = MAT_Mahierto_Ghara
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	MAT_Paolahmardo_Chia={
+		name="Paolahmardo Chia"
+
+		advisor={
+			slot = theorist
+			idea_token = MAT_Paolahmardo_Chia
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

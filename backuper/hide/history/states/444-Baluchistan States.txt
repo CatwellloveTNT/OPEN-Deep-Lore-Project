@@ -1,0 +1,14 @@
+state={
+	id=444
+	name="STATE_444"
+	resources={
+		oil=3
+	}
+	provinces={
+		12761 12774 
+	}
+	manpower=364000
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

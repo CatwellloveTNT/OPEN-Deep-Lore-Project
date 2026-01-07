@@ -1,0 +1,37 @@
+
+state={
+	id=129
+	name="STATE_129"
+	manpower = 9317055
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=4
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3834 17}
+		victory_points = { 3842 11}
+		
+		owner = KAW
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = KAW
+	}
+
+	provinces={
+		3831 3832 3833 3834 3835 3836 3837 3838 3839 3840 3841 3842 3843 3844 3845 3846 3847 3848 3849 3850 3851 3852 3853 3854 3855 3856 3857 3858 3859 3860 3861 3862 3863 3864 3865 3866 3867 3868 3869 3870 3871 3872 3873 3874 3875 3876 3877 3878 3879 3880 3881 
+	}
+	local_supplies=0.0 
+}

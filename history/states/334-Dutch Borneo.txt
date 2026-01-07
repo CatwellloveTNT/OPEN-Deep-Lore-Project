@@ -1,0 +1,16 @@
+state={
+	id=334
+	name="STATE_334"
+	resources={
+		rubber=75
+		oil=5
+		coal=2
+	}
+	provinces={
+		12110 12129 12196 12225 12243 12252 12280 12955 
+	}
+	manpower=2160400
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

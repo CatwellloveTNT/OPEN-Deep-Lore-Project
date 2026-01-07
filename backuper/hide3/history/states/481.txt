@@ -1,0 +1,40 @@
+
+state={
+	id=481
+	name="STATE_481"
+	manpower = 2566200
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 13121 1}
+		victory_points = { 13133 4}
+		
+		owner = NAZ
+		buildings = {
+			infrastructure = 1
+			air_base = 4
+			arms_factory = 1
+			industrial_complex = 0
+			
+			13128 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NAZ
+	}
+
+	provinces={
+		13118 13119 13120 13121 13122 13123 13124 13125 13126 13127 13128 13129 13130 13131 13132 13133 
+	}
+	local_supplies=0.0 
+}

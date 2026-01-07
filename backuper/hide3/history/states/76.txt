@@ -1,0 +1,38 @@
+
+state={
+	id=76
+	name="STATE_76"
+	manpower = 7112478
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=2
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 2290 7}
+		victory_points = { 2303 8}
+		victory_points = { 2310 8}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		2281 2282 2283 2284 2285 2286 2287 2288 2289 2290 2291 2292 2293 2294 2295 2296 2297 2298 2299 2300 2301 2302 2303 2304 2305 2306 2307 2308 2309 2310 2311 2312 2313 2314 
+	}
+	local_supplies=0.0 
+}

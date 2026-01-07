@@ -1,0 +1,31 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Shuati Fleet"			
+		naval_base = 14677
+		task_force = {
+			name = "Shuati Fleet"
+			location = 14677
+			
+						ship = { name = "Shuati" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SHU version_name = "Yemen Class" } }	}
+			ship = { name = "Yemen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SHU version_name = "Shuati Class" } }	}
+			ship = { name = "Chil" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = SHU version_name = "Calenque Class" } }	}
+			ship = { name = "Calenque" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SHU version_name = "Shuati Class" } }	}
+			ship = { name = "Yemen 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SHU version_name = "Shuati Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

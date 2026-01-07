@@ -1,0 +1,14 @@
+state={
+	id=616
+	name="STATE_616"
+	resources={
+		coal=2
+	}
+	provinces={
+		12750 
+	}
+	manpower=1077600
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=0
+}

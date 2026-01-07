@@ -1,0 +1,38 @@
+
+state={
+	id=277
+	name="STATE_277"
+	manpower = 6306803
+	
+	state_category = town
+	resources={
+		aluminium=2
+		chromium=13
+		oil=3
+		rubber=0
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 7729 9}
+		victory_points = { 7758 5}
+		victory_points = { 7760 1}
+		
+		owner = DAW
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = DAW
+	}
+
+	provinces={
+		7718 7719 7720 7721 7722 7723 7724 7725 7726 7727 7728 7729 7730 7731 7732 7733 7734 7735 7736 7737 7738 7739 7740 7741 7742 7743 7744 7745 7746 7747 7748 7749 7750 7751 7752 7753 7754 7755 7756 7757 7758 7759 7760 7761 7762 
+	}
+	local_supplies=0.0 
+}

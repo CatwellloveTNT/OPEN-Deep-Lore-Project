@@ -1,0 +1,40 @@
+
+state={
+	id=167
+	name="STATE_167"
+	manpower = 1549649
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 4769 2}
+		victory_points = { 4776 2}
+		
+		owner = SHO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			4759 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = SHO
+	}
+
+	provinces={
+		4754 4755 4756 4757 4758 4759 4760 4761 4762 4763 4764 4765 4766 4767 4768 4769 4770 4771 4772 4773 4774 4775 4776 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,14 @@
+state={
+	id=647
+	name="STATE_647"
+	resources={
+		aluminium=5
+	}
+	provinces={
+		12103 
+	}
+	manpower=12100
+	buildings_max_level_factor=1
+	state_category=small_island
+	local_supplies=0
+}

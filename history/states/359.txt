@@ -1,0 +1,37 @@
+
+state={
+	id=359
+	name="STATE_359"
+	manpower = 5874975
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10104 14}
+		victory_points = { 10108 5}
+		
+		owner = MKA
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = MKA
+	}
+
+	provinces={
+		10102 10103 10104 10105 10106 10107 10108 10109 10110 10111 10112 10113 10114 10115 10116 10117 10118 10119 10120 10121 10122 10123 10124 10125 10126 10127 
+	}
+	local_supplies=0.0 
+}

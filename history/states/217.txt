@@ -1,0 +1,40 @@
+
+state={
+	id=217
+	name="STATE_217"
+	manpower = 4328923
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6185 1}
+		victory_points = { 6188 10}
+		
+		owner = TOD
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			6187 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TOD
+	}
+
+	provinces={
+		6177 6178 6179 6180 6181 6182 6183 6184 6185 6186 6187 6188 6189 6190 6191 6192 6193 6194 6195 6196 6197 6198 
+	}
+	local_supplies=0.0 
+}

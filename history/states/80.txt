@@ -1,0 +1,39 @@
+
+state={
+	id=80
+	name="STATE_80"
+	manpower = 3698755
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=2
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2413 8}
+		
+		owner = LEA
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			2417 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LEA
+	}
+
+	provinces={
+		2401 2402 2403 2404 2405 2406 2407 2408 2409 2410 2411 2412 2413 2414 2415 2416 2417 2418 2419 2420 2421 2422 2423 2424 2425 2426 2427 2428 2429 2430 2431 2432 2433 2434 
+	}
+	local_supplies=0.0 
+}

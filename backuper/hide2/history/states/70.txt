@@ -1,0 +1,40 @@
+
+state={
+	id=70
+	name="STATE_70"
+	manpower = 4564618
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 2081 1}
+		victory_points = { 2083 12}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 2
+			
+			2086 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		2076 2077 2078 2079 2080 2081 2082 2083 2084 2085 2086 2087 2088 2089 2090 2091 2092 2093 2094 2095 2096 
+	}
+	local_supplies=0.0 
+}

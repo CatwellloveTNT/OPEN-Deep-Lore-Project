@@ -1,0 +1,41 @@
+
+state={
+	id=609
+	name="STATE_609"
+	manpower = 3033105
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 15836 5}
+		victory_points = { 15837 2}
+		victory_points = { 15845 2}
+		
+		owner = PIG
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			arms_factory = 1
+			industrial_complex = 0
+			
+			15837 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = PIG
+	}
+
+	provinces={
+		15836 15837 15838 15839 15840 15841 15842 15843 15844 15845 
+	}
+	local_supplies=0.0 
+}

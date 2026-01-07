@@ -1,0 +1,15 @@
+state={
+	id=970
+	name="STATE_970"
+	resources={
+		chromium=20
+		aluminium=6
+	}
+	provinces={
+		11856 
+	}
+	manpower=343550
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=0
+}

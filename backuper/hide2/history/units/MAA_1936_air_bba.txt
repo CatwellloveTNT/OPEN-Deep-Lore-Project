@@ -1,0 +1,29 @@
+air_wings = {
+		299 = { 								
+		small_plane_cas_airframe_0 = { owner = "MAA" amount = 50 version_name = "Haria Mk 0" }
+
+	}
+	310 = { 								
+		medium_plane_airframe_1 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 0" }
+small_plane_airframe_0 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 2" }
+medium_plane_airframe_0 = { owner = "MAA" amount = 50 version_name = "Amria Mk 0" }
+
+	}
+	326 = { 								
+		medium_plane_airframe_1 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 0" }
+small_plane_naval_bomber_airframe_0 = { owner = "MAA" amount = 50 version_name = "Khar Mk 1" }
+medium_plane_airframe_0 = { owner = "MAA" amount = 50 version_name = "Amria Mk 0" }
+
+	}
+	343 = { 								
+		small_plane_airframe_0 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 2" }
+
+	}
+	349 = { 								
+		small_plane_cas_airframe_0 = { owner = "MAA" amount = 50 version_name = "Haria Mk 0" }
+small_plane_naval_bomber_airframe_0 = { owner = "MAA" amount = 50 version_name = "Khar Mk 1" }
+
+	}
+
+
+}

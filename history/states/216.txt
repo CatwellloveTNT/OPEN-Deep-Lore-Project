@@ -1,0 +1,37 @@
+
+state={
+	id=216
+	name="STATE_216"
+	manpower = 3623601
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 6163 7}
+		victory_points = { 6169 1}
+		
+		owner = MAT
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MAT
+	}
+
+	provinces={
+		6159 6160 6161 6162 6163 6164 6165 6166 6167 6168 6169 6170 6171 6172 6173 6174 6175 6176 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=114
+	name="STATE_114"
+	manpower = 4019270
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 3385 2}
+		victory_points = { 3386 8}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		3380 3381 3382 3383 3384 3385 3386 3387 3388 3389 3390 3391 3392 3393 3394 3395 3396 3397 3398 3399 3400 3401 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Dawatilm Fleet"			
+		naval_base = 16411
+		task_force = {
+			name = "Dawatilm Fleet"
+			location = 16411
+			
+						ship = { name = "Ghurhaykh" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DAW version_name = "Dawatilm Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

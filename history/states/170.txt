@@ -1,0 +1,40 @@
+
+state={
+	id=170
+	name="STATE_170"
+	manpower = 5339122
+	
+	state_category = town
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 4824 2}
+		victory_points = { 4826 11}
+		
+		owner = LAB
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			4819 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAB
+	}
+
+	provinces={
+		4817 4818 4819 4820 4821 4822 4823 4824 4825 4826 4827 4828 4829 4830 4831 4832 4833 4834 4835 4836 4837 4838 4839 4840 4841 4842 
+	}
+	local_supplies=0.0 
+}

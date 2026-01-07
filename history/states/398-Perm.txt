@@ -1,0 +1,14 @@
+state={
+	id=398
+	name="STATE_398"
+	resources={
+		aluminium=6
+	}
+	provinces={
+		12175 12187 12216 12527 12587 12626 12659 
+	}
+	manpower=2135879
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=62
+	name="STATE_62"
+	manpower = 347827
+	
+	state_category = small_island
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		
+		owner = SHO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			1910 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = SHO
+	}
+
+	provinces={
+		1907 1908 1909 1910 
+	}
+	local_supplies=0.0 
+}

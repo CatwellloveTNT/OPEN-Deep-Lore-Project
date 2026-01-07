@@ -1,0 +1,40 @@
+
+state={
+	id=81
+	name="STATE_81"
+	manpower = 2433766
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2435 2}
+		victory_points = { 2436 8}
+		
+		owner = KAW
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 0
+			
+			2435 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KAW
+	}
+
+	provinces={
+		2435 2436 2437 2438 2439 2440 2441 
+	}
+	local_supplies=0.0 
+}

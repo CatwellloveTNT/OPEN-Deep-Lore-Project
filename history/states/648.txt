@@ -1,0 +1,41 @@
+
+state={
+	id=648
+	name="STATE_648"
+	manpower = 1984738
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 16279 1}
+		victory_points = { 16280 3}
+		victory_points = { 16281 1}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			16279 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		16277 16278 16279 16280 16281 16282 16283 
+	}
+	local_supplies=0.0 
+}

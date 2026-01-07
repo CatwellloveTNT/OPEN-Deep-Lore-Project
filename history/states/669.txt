@@ -1,0 +1,39 @@
+
+state={
+	id=669
+	name="STATE_669"
+	manpower = 483704
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 16389 2}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			16389 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		16389 
+	}
+	local_supplies=0.0 
+}

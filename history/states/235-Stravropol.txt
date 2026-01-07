@@ -1,0 +1,14 @@
+state={
+	id=235
+	name="STATE_235"
+	resources={
+		chromium=14
+	}
+	provinces={
+		6702 6718 6733 6750 6753 
+	}
+	manpower=1316516
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

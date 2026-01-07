@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Khajli Fleet"			
+		naval_base = 13592
+		task_force = {
+			name = "Khajli Fleet"
+			location = 13592
+			
+						ship = { name = "Warahawani" definition = battle_cruiser equipment = { battle_cruiser_2 = { amount = 1 owner = KFA version_name = "Sarb Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

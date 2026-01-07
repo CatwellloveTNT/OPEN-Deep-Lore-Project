@@ -1,0 +1,39 @@
+
+state={
+	id=471
+	name="STATE_471"
+	manpower = 173114
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 12875 1}
+		
+		owner = NAZ
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 0
+			
+			12875 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NAZ
+	}
+
+	provinces={
+		12875 
+	}
+	local_supplies=0.0 
+}

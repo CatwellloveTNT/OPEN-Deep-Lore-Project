@@ -1,0 +1,14 @@
+state={
+	id=400
+	name="STATE_400"
+	resources={
+		aluminium=14
+	}
+	provinces={
+		6089 6124 6133 6162 6171 6191 6213 6224 6274 6288 6297 6383 
+	}
+	manpower=2115475
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

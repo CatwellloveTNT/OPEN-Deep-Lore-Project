@@ -1,0 +1,36 @@
+air_wings = {
+		582 = { 								
+		CAS_equipment_0 = { owner = "AME" amount = 46 version_name = "Tigh Mk 0" }
+
+	}
+	576 = { 								
+		fighter_equipment_0 = { owner = "AME" amount = 50 version_name = "Ayurjuk Mk 1" }
+
+	}
+	590 = { 								
+		tac_bomber_equipment_0 = { owner = "AME" amount = 50 version_name = "Tigh Mk 2" }
+
+	}
+	602 = { 								
+		CAS_equipment_0 = { owner = "AME" amount = 46 version_name = "Redourjuarut Mk 1" }
+
+	}
+	601 = { 								
+		fighter_equipment_0 = { owner = "AME" amount = 50 version_name = "Nanuk Mk 1" }
+
+	}
+	629 = { 								
+		tac_bomber_equipment_0 = { owner = "AME" amount = 50 version_name = "Tigh Mk 2" }
+
+	}
+	646 = { 								
+		fighter_equipment_0 = { owner = "AME" amount = 50 version_name = "Ayurjuk Mk 1" }
+
+	}
+	658 = { 								
+		fighter_equipment_0 = { owner = "AME" amount = 50 version_name = "Nanuk Mk 1" }
+
+	}
+
+
+}

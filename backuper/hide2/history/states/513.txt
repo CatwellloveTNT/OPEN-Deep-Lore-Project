@@ -1,0 +1,37 @@
+
+state={
+	id=513
+	name="STATE_513"
+	manpower = 4009534
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 13797 1}
+		victory_points = { 13805 15}
+		
+		owner = UUA
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = UUA
+	}
+
+	provinces={
+		13796 13797 13798 13799 13800 13801 13802 13803 13804 13805 13806 13807 13808 13809 13810 
+	}
+	local_supplies=0.0 
+}

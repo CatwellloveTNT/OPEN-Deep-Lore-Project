@@ -1,0 +1,14 @@
+state={
+	id=577
+	name="STATE_577"
+	resources={
+		oil=13
+	}
+	provinces={
+		12514 12542 12574 12639 12672 
+	}
+	manpower=29299
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=0
+}

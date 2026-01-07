@@ -1,0 +1,36 @@
+
+state={
+	id=350
+	name="STATE_350"
+	manpower = 3383396
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 9856 11}
+		
+		owner = BAW
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = BAW
+	}
+
+	provinces={
+		9851 9852 9853 9854 9855 9856 9857 9858 9859 9860 9861 9862 9863 
+	}
+	local_supplies=0.0 
+}

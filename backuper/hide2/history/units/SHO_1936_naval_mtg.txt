@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Shoppu Fleet"			
+		naval_base = 16422
+		task_force = {
+			name = "Shoppu Fleet"
+			location = 16422
+			
+						ship = { name = "Baiyar" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = SHO version_name = "Baiyar Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

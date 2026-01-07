@@ -1,0 +1,11 @@
+state={
+	id=529
+	name="STATE_529"
+	provinces={
+		11985 
+	}
+	manpower=4431000
+	buildings_max_level_factor=1
+	state_category=large_city
+	local_supplies=0
+}

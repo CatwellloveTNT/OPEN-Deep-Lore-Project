@@ -1,0 +1,15 @@
+state={
+	id=521
+	name="STATE_521"
+	resources={
+		tungsten=24
+		coal=4
+	}
+	provinces={
+		12308 12382 12411 12424 12451 
+	}
+	manpower=816800
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

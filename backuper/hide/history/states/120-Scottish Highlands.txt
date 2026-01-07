@@ -1,0 +1,16 @@
+state={
+	id=120
+	name="STATE_120"
+	resources={
+		chromium=1
+		tungsten=16
+		aluminium=9
+	}
+	provinces={
+		13269 13270 
+	}
+	manpower=247873
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

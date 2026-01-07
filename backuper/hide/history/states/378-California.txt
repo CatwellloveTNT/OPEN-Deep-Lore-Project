@@ -1,0 +1,15 @@
+state={
+	id=378
+	name="STATE_378"
+	resources={
+		oil=180
+		aluminium=8
+	}
+	provinces={
+		12303 12374 
+	}
+	manpower=5677248
+	buildings_max_level_factor=1
+	state_category=metropolis
+	local_supplies=0
+}

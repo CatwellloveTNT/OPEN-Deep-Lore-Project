@@ -1,0 +1,37 @@
+
+state={
+	id=230
+	name="STATE_230"
+	manpower = 3027740
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6576 1}
+		victory_points = { 6577 5}
+		
+		owner = LAB
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = LAB
+	}
+
+	provinces={
+		6576 6577 6578 6579 6580 6581 6582 6583 6584 6585 6586 6587 6588 6589 6590 6591 6592 
+	}
+	local_supplies=0.0 
+}

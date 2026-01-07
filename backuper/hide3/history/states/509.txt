@@ -1,0 +1,37 @@
+
+state={
+	id=509
+	name="STATE_509"
+	manpower = 9703548
+	
+	state_category = megalopolis
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 13739 13}
+		victory_points = { 13753 25}
+		
+		owner = UUA
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			arms_factory = 2
+			industrial_complex = 4
+			
+			
+		}
+		add_core_of = UUA
+	}
+
+	provinces={
+		13720 13721 13722 13723 13724 13725 13726 13727 13728 13729 13730 13731 13732 13733 13734 13735 13736 13737 13738 13739 13740 13741 13742 13743 13744 13745 13746 13747 13748 13749 13750 13751 13752 13753 13754 13755 13756 13757 13758 
+	}
+	local_supplies=0.0 
+}

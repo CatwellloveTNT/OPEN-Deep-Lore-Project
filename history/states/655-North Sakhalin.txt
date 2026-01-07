@@ -1,0 +1,16 @@
+state={
+	id=655
+	name="STATE_655"
+	resources={
+		oil=4
+		coal=4
+		chromium=1
+	}
+	provinces={
+		855 1755 
+	}
+	manpower=94759
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=0
+}

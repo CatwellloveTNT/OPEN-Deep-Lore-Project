@@ -1,0 +1,14 @@
+state={
+	id=572
+	name="STATE_572"
+	resources={
+		coal=8
+	}
+	provinces={
+		12106 12157 12287 12584 
+	}
+	manpower=2074932
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

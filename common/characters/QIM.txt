@@ -1,0 +1,880 @@
+characters = {
+	QIM_Amidan_Leart={
+		name="Amidan Leart"
+
+		
+		country_leader={
+			ideology=centrism
+			traits = { exiled  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	QIM_Armarich_Dearanala={
+		name="Armarich Dearanala"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Armarich_Dearanala
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	QIM_Prem_Leatraidhura={
+		name="Prem Leatraidhura"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Prem_Leatraidhura
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	QIM_Mohavi_Leasaikht={
+		name="Mohavi Leasaikht"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Mohavi_Leasaikht
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	QIM_Ramin_Dearanala={
+		name="Ramin Dearanala"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Ramin_Dearanala
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	QIM_Sureshna_Ceim={
+		name="Sureshna Ceim"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Sureshna_Ceim
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	QIM_Tarem_Scatti={
+		name="Tarem Scatti"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Tarem_Scatti
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	QIM_Ajay_Thakkart={
+		name="Ajay Thakkart"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Ajay_Thakkart
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	QIM_Raminod_Buar={
+		name="Raminod Buar"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Raminod_Buar
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	QIM_Mostafa_Leatraidhura={
+		name="Mostafa Leatraidhura"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Mostafa_Leatraidhura
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	QIM_Ulri_Hamizhi={
+		name="Ulri Hamizhi"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Ulri_Hamizhi
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	QIM_Parun_Scatti={
+		name="Parun Scatti"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Parun_Scatti
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	QIM_Behdi_Leasaikht={
+		name="Behdi Leasaikht"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Behdi_Leasaikht
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	QIM_Mehdi_Hamizhi={
+		name="Mehdi Hamizhi"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Mehdi_Hamizhi
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	QIM_Hash_Hamizhi={
+		name="Hash Hamizhi"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Hash_Hamizhi
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	QIM_Liarthik_Leasaikht={
+		name="Liarthik Leasaikht"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Liarthik_Leasaikht
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	QIM_Rhys_Buar={
+		name="Rhys Buar"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Rhys_Buar
+				traits = {	army_entrenchment_2 	}
+		}
+
+	}
+	QIM_Babakash_Ceim={
+		name="Babakash Ceim"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Babakash_Ceim
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	QIM_Satish_Leart={
+		name="Satish Leart"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Satish_Leart
+				traits = {	navy_fleet_logistics_2 	}
+		}
+
+	}
+	QIM_Raminod_Scatti={
+		name="Raminod Scatti"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Raminod_Scatti
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	QIM_Karun_Scatti={
+		name="Karun Scatti"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Karun_Scatti
+				traits = {	navy_screen_1 	}
+		}
+
+	}
+	QIM_Liarem_Buar={
+		name="Liarem Buar"
+
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits = { polemarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	QIM_Pran_Leasaikht={
+		name="Pran Leasaikht"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Pran_Leasaikht
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	QIM_Rhys_Leasaikht={
+		name="Rhys Leasaikht"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Rhys_Leasaikht
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	QIM_Sureshna_Dearanala={
+		name="Sureshna Dearanala"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Sureshna_Dearanala
+				traits = {	basileus 	}
+		}
+
+	}
+	QIM_Karahrahila_Scatti={
+		name="Karahrahila Scatti"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Karahrahila_Scatti
+				traits = {	autokrator 	}
+		}
+
+	}
+	QIM_Owen_Leart={
+		name="Owen Leart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Owen_Leart
+				traits = {	infirm 	}
+		}
+
+	}
+	QIM_Balcolm_Dearanala={
+		name="Balcolm Dearanala"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Balcolm_Dearanala
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	QIM_Karun_Leasaikht={
+		name="Karun Leasaikht"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Karun_Leasaikht
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	QIM_Preth_Dearanala={
+		name="Preth Dearanala"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Preth_Dearanala
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	QIM_Rhys_Brehrahna={
+		name="Rhys Brehrahna"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Rhys_Brehrahna
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	QIM_Omid_Dearanala={
+		name="Omid Dearanala"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Omid_Dearanala
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	QIM_Ramin_Scatti={
+		name="Ramin Scatti"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Ramin_Scatti
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	QIM_Deed_Leatraidhura={
+		name="Deed Leatraidhura"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Deed_Leatraidhura
+				traits = {	navy_chief_naval_aviation_2 	}
+		}
+
+	}
+	QIM_Behdi_Buar={
+		name="Behdi Buar"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Behdi_Buar
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	QIM_Rhys_Dearanala={
+		name="Rhys Dearanala"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Rhys_Dearanala
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	QIM_Tarthil_Buar={
+		name="Tarthil Buar"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Tarthil_Buar
+				traits = {	air_bomber_interception_1 	}
+		}
+
+	}
+	QIM_Peymadran_Leart={
+		name="Peymadran Leart"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Peymadran_Leart
+				traits = {	air_air_superiority_1 	}
+		}
+
+	}
+	QIM_Karesh_Buar={
+		name="Karesh Buar"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Karesh_Buar
+				traits = {	navy_anti_submarine_1 	}
+		}
+
+	}
+	QIM_Ulri_Leasaikht={
+		name="Ulri Leasaikht"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Ulri_Leasaikht
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	QIM_Sham_Leatraidhura={
+		name="Sham Leatraidhura"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Sham_Leatraidhura
+				traits = {	air_strategic_bombing_2 	}
+		}
+
+	}
+	QIM_Farth_Buar={
+		name="Farth Buar"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Farth_Buar
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	QIM_Rajiv_Scatti={
+		name="Rajiv Scatti"
+
+		
+		country_leader={
+			ideology=stalinism
+			traits = { reluctant_stalinist  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	QIM_Krish_Buar={
+		name="Krish Buar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Krish_Buar
+				traits = {	political_dancer 	}
+		}
+
+	}
+	QIM_Ulri_Ceim={
+		name="Ulri Ceim"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Ulri_Ceim
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	QIM_Kaveh_Thakkart={
+		name="Kaveh Thakkart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Kaveh_Thakkart
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	QIM_Tarahrahik_Hamizhi={
+		name="Tarahrahik Hamizhi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Tarahrahik_Hamizhi
+				traits = {	polemarch 	}
+		}
+
+	}
+	QIM_Rajesh_Hamizhi={
+		name="Rajesh Hamizhi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Rajesh_Hamizhi
+				traits = {	polemarch 	}
+		}
+
+	}
+	QIM_Niamus_Thakkart={
+		name="Niamus Thakkart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Niamus_Thakkart
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	QIM_Karesh_Dearanala={
+		name="Karesh Dearanala"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Karesh_Dearanala
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	QIM_Behdi_Leatraidhura={
+		name="Behdi Leatraidhura"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Behdi_Leatraidhura
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	QIM_Quin_Dearanala={
+		name="Quin Dearanala"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Quin_Dearanala
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	QIM_Niall_Buar={
+		name="Niall Buar"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Niall_Buar
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	QIM_Raveed_Scatti={
+		name="Raveed Scatti"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Raveed_Scatti
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	QIM_Kaveepak_Scatti={
+		name="Kaveepak Scatti"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Kaveepak_Scatti
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	QIM_Niamus_Scatti={
+		name="Niamus Scatti"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Niamus_Scatti
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	QIM_Suresh_Leart={
+		name="Suresh Leart"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Suresh_Leart
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	QIM_Babak_Scatti={
+		name="Babak Scatti"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Babak_Scatti
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	QIM_Kein_Leasaikht={
+		name="Kein Leasaikht"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Kein_Leasaikht
+				traits = {	air_strategic_bombing_1 	}
+		}
+
+	}
+	QIM_Seama_Hamizhi={
+		name="Seama Hamizhi"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Seama_Hamizhi
+				traits = {	army_regrouping_1 	}
+		}
+
+	}
+	QIM_Rajesh_Leart={
+		name="Rajesh Leart"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Rajesh_Leart
+				traits = {	navy_anti_submarine_2 	}
+		}
+
+	}
+	QIM_Fergus_Leatraidhura={
+		name="Fergus Leatraidhura"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Fergus_Leatraidhura
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	QIM_Parun_Leasaikht={
+		name="Parun Leasaikht"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Parun_Leasaikht
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	QIM_Karahrahila_Buar={
+		name="Karahrahila Buar"
+
+		
+		country_leader={
+			ideology=socialism
+			traits = { conservative_grandee  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	QIM_Omid_Leatraidhura={
+		name="Omid Leatraidhura"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Omid_Leatraidhura
+				traits = {	first_lady 	}
+		}
+
+	}
+	QIM_Mostafa_Thakkart={
+		name="Mostafa Thakkart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Mostafa_Thakkart
+				traits = {	rearmer 	}
+		}
+
+	}
+	QIM_Ulri_Brehrahna={
+		name="Ulri Brehrahna"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Ulri_Brehrahna
+				traits = {	infirm 	}
+		}
+
+	}
+	QIM_Babakash_Scatti={
+		name="Babakash Scatti"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Babakash_Scatti
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	QIM_Bala_Leart={
+		name="Bala Leart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Bala_Leart
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	QIM_Shandran_Buar={
+		name="Shandran Buar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = QIM_Shandran_Buar
+				traits = {	infirm 	}
+		}
+
+	}
+	QIM_Kuman_Leatraidhura={
+		name="Kuman Leatraidhura"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Kuman_Leatraidhura
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	QIM_Behza_Hamizhi={
+		name="Behza Hamizhi"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Behza_Hamizhi
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	QIM_Kumaran_Ceim={
+		name="Kumaran Ceim"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Kumaran_Ceim
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	QIM_Karahrahila_Hamizhi={
+		name="Karahrahila Hamizhi"
+
+		advisor={
+			slot = army_chief
+			idea_token = QIM_Karahrahila_Hamizhi
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	QIM_Mehdi_Brehrahna={
+		name="Mehdi Brehrahna"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Mehdi_Brehrahna
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	QIM_Mehdi_Scatti={
+		name="Mehdi Scatti"
+
+		advisor={
+			slot = navy_chief
+			idea_token = QIM_Mehdi_Scatti
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	QIM_Behdi_Scatti={
+		name="Behdi Scatti"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Behdi_Scatti
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	QIM_Owen_Scatti={
+		name="Owen Scatti"
+
+		advisor={
+			slot = air_chief
+			idea_token = QIM_Owen_Scatti
+				traits = {	air_chief_all_weather_1 	}
+		}
+
+	}
+	QIM_Raghad_Brehrahna={
+		name="Raghad Brehrahna"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Raghad_Brehrahna
+				traits = {	navy_anti_submarine_2 	}
+		}
+
+	}
+	QIM_Peyman_Brehrahna={
+		name="Peyman Brehrahna"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Peyman_Brehrahna
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	QIM_Raminn_Thakkart={
+		name="Raminn Thakkart"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Raminn_Thakkart
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	QIM_Mostafa_Scatti={
+		name="Mostafa Scatti"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Mostafa_Scatti
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	QIM_Dinod_Thakkart={
+		name="Dinod Thakkart"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Dinod_Thakkart
+				traits = {	air_naval_strike_1 	}
+		}
+
+	}
+	QIM_Fergus_Leasaikht={
+		name="Fergus Leasaikht"
+
+		advisor={
+			slot = high_command
+			idea_token = QIM_Fergus_Leasaikht
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	QIM_Raminod_Hamizhi={
+		name="Raminod Hamizhi"
+
+		advisor={
+			slot = theorist
+			idea_token = QIM_Raminod_Hamizhi
+				traits = {	military_theorist 	}
+		}
+
+	}
+	QIM_Liarem_Ceim={
+		name="Liarem Ceim"
+
+		advisor={
+			slot = theorist
+			idea_token = QIM_Liarem_Ceim
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	QIM_Peyman_Buar={
+		name="Peyman Buar"
+
+		advisor={
+			slot = theorist
+			idea_token = QIM_Peyman_Buar
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

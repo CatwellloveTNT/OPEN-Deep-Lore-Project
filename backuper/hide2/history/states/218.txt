@@ -1,0 +1,38 @@
+
+state={
+	id=218
+	name="STATE_218"
+	manpower = 8282545
+	
+	state_category = large_town
+	resources={
+		aluminium=3
+		chromium=8
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 6213 6}
+		victory_points = { 6237 11}
+		victory_points = { 6239 2}
+		
+		owner = LAB
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = LAB
+	}
+
+	provinces={
+		6199 6200 6201 6202 6203 6204 6205 6206 6207 6208 6209 6210 6211 6212 6213 6214 6215 6216 6217 6218 6219 6220 6221 6222 6223 6224 6225 6226 6227 6228 6229 6230 6231 6232 6233 6234 6235 6236 6237 6238 6239 6240 6241 6242 6243 6244 6245 6246 6247 
+	}
+	local_supplies=0.0 
+}

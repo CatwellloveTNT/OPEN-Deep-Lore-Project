@@ -1,0 +1,36 @@
+
+state={
+	id=250
+	name="STATE_250"
+	manpower = 1827524
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7076 3}
+		
+		owner = MAT
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = MAT
+	}
+
+	provinces={
+		7066 7067 7068 7069 7070 7071 7072 7073 7074 7075 7076 7077 7078 7079 7080 7081 7082 7083 
+	}
+	local_supplies=0.0 
+}

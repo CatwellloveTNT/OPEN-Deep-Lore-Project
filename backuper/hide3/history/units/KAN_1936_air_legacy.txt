@@ -1,0 +1,22 @@
+air_wings = {
+		580 = { 								
+		strat_bomber_equipment_0 = { owner = "KAN" amount = 17 version_name = "Amdingut Mk 0" }
+tac_bomber_equipment_0 = { owner = "KAN" amount = 16 version_name = "Takert Mk 2" }
+
+	}
+	653 = { 								
+		strat_bomber_equipment_0 = { owner = "KAN" amount = 10 version_name = "Kant Mk 0" }
+
+	}
+	655 = { 								
+		CAS_equipment_0 = { owner = "KAN" amount = 18 version_name = "Nuna Mk 0" }
+nav_bomber_equipment_0 = { owner = "KAN" amount = 19 version_name = "Tist Mk 2" }
+
+	}
+	656 = { 								
+		fighter_equipment_0 = { owner = "KAN" amount = 13 version_name = "Tist Mk 0" }
+
+	}
+
+
+}

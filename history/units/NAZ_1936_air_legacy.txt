@@ -1,0 +1,23 @@
+air_wings = {
+		440 = { 								
+		CAS_equipment_0 = { owner = "NAZ" amount = 11 version_name = "Bakia Mk 2" }
+strat_bomber_equipment_0 = { owner = "NAZ" amount = 12 version_name = "Ahalmeno Mk 0" }
+
+	}
+	476 = { 								
+		tac_bomber_equipment_0 = { owner = "NAZ" amount = 13 version_name = "Bara Mk 0" }
+
+	}
+	471 = { 								
+		fighter_equipment_0 = { owner = "NAZ" amount = 10 version_name = "Bakia Mk 1" }
+
+	}
+	481 = { 								
+		CAS_equipment_0 = { owner = "NAZ" amount = 10 version_name = "Ahalmeno Mk 0" }
+strat_bomber_equipment_0 = { owner = "NAZ" amount = 8 version_name = "Mili Mk 1" }
+fighter_equipment_0 = { owner = "NAZ" amount = 10 version_name = "Mili Mk 1" }
+
+	}
+
+
+}

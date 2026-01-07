@@ -1,0 +1,14 @@
+state={
+	id=531
+	name="STATE_531"
+	resources={
+		aluminium=3
+	}
+	provinces={
+		12031 
+	}
+	manpower=12015000
+	buildings_max_level_factor=1
+	state_category=metropolis
+	local_supplies=9
+}

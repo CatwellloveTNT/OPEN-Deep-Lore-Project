@@ -1,0 +1,39 @@
+
+state={
+	id=486
+	name="STATE_486"
+	manpower = 4776713
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=2
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 13272 14}
+		
+		owner = PIG
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			13277 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = PIG
+	}
+
+	provinces={
+		13270 13271 13272 13273 13274 13275 13276 13277 13278 13279 13280 13281 13282 13283 13284 13285 13286 13287 13288 13289 13290 13291 
+	}
+	local_supplies=0.0 
+}

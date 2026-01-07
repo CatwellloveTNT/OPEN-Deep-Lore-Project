@@ -1,0 +1,8 @@
+air_wings = {
+		317 = { 								
+		fighter_equipment_0 = { owner = "SHU" amount = 22 version_name = "Shuati Mk 0" }
+
+	}
+
+
+}

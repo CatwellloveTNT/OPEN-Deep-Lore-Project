@@ -1,0 +1,41 @@
+
+state={
+	id=612
+	name="STATE_612"
+	manpower = 2658836
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 15874 4}
+		victory_points = { 15877 2}
+		victory_points = { 15880 2}
+		
+		owner = KIO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			15877 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KIO
+	}
+
+	provinces={
+		15872 15873 15874 15875 15876 15877 15878 15879 15880 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,40 @@
+
+state={
+	id=63
+	name="STATE_63"
+	manpower = 4322730
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1911 10}
+		victory_points = { 1913 4}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 1
+			
+			1922 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 
+	}
+	local_supplies=0.0 
+}

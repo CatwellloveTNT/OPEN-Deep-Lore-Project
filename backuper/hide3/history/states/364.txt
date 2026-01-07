@@ -1,0 +1,41 @@
+
+state={
+	id=364
+	name="STATE_364"
+	manpower = 3391712
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 10205 4}
+		victory_points = { 10207 4}
+		victory_points = { 10209 8}
+		
+		owner = SHU
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			10209 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = SHU
+	}
+
+	provinces={
+		10201 10202 10203 10204 10205 10206 10207 10208 10209 10210 
+	}
+	local_supplies=0.0 
+}

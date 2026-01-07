@@ -1,0 +1,720 @@
+capital = 569
+
+oob = "KNC_1936"
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "KNC_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "KNC_1936_nsb"
+}
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+starting_truck_buffer = 0.8
+
+# Starting tech
+set_technology = {
+	basic_train = 1
+	infantry_weapons= 1
+	tech_support= 1
+	gw_artillery= 1
+	infantry_weapons1= 1
+	tech_military_police= 1
+	fuel_silos= 1
+	fuel_refining= 1
+	
+}
+
+### ARMOR ###
+### Vanilla Techs ###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+		basic_heavy_tank = 1
+		
+	}
+}
+### NSB Techs ###
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+		armor_tech_1 = 1
+		
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+		create_equipment_variant = {
+		name = "Sumbang Mk 1"
+		type = heavy_tank_chassis_0
+		parent_version = 1
+		show_position = no
+		modules = {
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			main_armament_slot = tank_heavy_cannon
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = smoke_launchers
+			special_type_slot_3 = wet_ammo_storage
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_heavy_two_man_tank_turret
+
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "Tuhasao Mk 0"
+		type = heavy_tank_chassis_1
+		parent_version = 1
+		show_position = no
+		modules = {
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_petrol_electric_engine
+			main_armament_slot = tank_heavy_cannon
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = extra_ammo_storage
+			special_type_slot_3 = expanded_fuel_tank
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_heavy_three_man_tank_turret
+
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "Mimpunyarec Mk 1"
+		type = light_tank_chassis_0
+		parent_version = 1
+		show_position = no
+		modules = {
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_small_cannon
+			special_type_slot_1 = extra_ammo_storage
+			special_type_slot_2 = expanded_fuel_tank
+			special_type_slot_3 = wet_ammo_storage
+			suspension_type_slot = tank_christie_suspension
+			turret_type_slot = tank_light_three_man_tank_turret
+
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "Ribatan Mk 1"
+		type = light_tank_chassis_1
+		parent_version = 1
+		show_position = no
+		modules = {
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_petrol_electric_engine
+			main_armament_slot = tank_small_cannon
+			special_type_slot_1 = expanded_fuel_tank
+			special_type_slot_2 = wet_ammo_storage
+			special_type_slot_3 = smoke_launchers
+			suspension_type_slot = tank_christie_suspension
+			turret_type_slot = tank_light_two_man_tank_turret
+
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "Tamat Mk 0"
+		type = medium_tank_chassis_0
+		parent_version = 1
+		show_position = no
+		modules = {
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_gasoline_engine
+			main_armament_slot = tank_medium_cannon
+			special_type_slot_1 = extra_ammo_storage
+			special_type_slot_2 = smoke_launchers
+			special_type_slot_3 = wet_ammo_storage
+			suspension_type_slot = tank_torsion_bar_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+
+}
+
+
+### AIRFORCE ###
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "KNC_1936_air_bba"
+		set_technology = {
+			bba_early_transport_plane = 1
+			iw_small_airframe = 1
+			early_bombs = 1
+			photo_reconnaisance = 1
+			air_torpedoe_1 = 1
+			aa_lmg = 1
+			aircraft_construction = 1
+			armor_piercing_bombs = 1
+			armor_piercing_bombs = 1
+			basic_small_airframe = 1
+			
+		}
+		create_equipment_variant = {
+			name = "Sumbang Mk 2"
+			type = small_plane_cas_airframe_1
+			modules = {
+							engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = bomb_locks
+			special_type_slot_1 = empty
+
+			}
+		}
+		create_equipment_variant = {
+			name = "Perom Mk 1"
+			type = small_plane_airframe_1
+			modules = {
+							engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = light_mg_2x
+			special_type_slot_1 = empty
+
+			}
+		}
+		create_equipment_variant = {
+			name = "Ljubangga Mk 2"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+							engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = torpedo_mounting
+			special_type_slot_1 = empty
+
+			}
+		}
+		create_equipment_variant = {
+			name = "Tuhasao Mk 0"
+			type = small_plane_cas_airframe_0
+			modules = {
+							engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = bomb_locks
+			special_type_slot_1 = empty
+
+			}
+		}
+		create_equipment_variant = {
+			name = "Vecnostina Mk 1"
+			type = small_plane_airframe_0
+			modules = {
+							engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = light_mg_2x
+			special_type_slot_1 = empty
+
+			}
+		}
+		create_equipment_variant = {
+			name = "Sverahlian Mk 2"
+			type = small_plane_naval_bomber_airframe_0
+			modules = {
+							engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = torpedo_mounting
+			special_type_slot_1 = empty
+
+			}
+		}
+
+	else = {
+		set_air_oob = "KNC_1936_air_legacy"
+		set_technology = {
+			early_transport_plane = 1
+			early_fighter = 1
+			CAS1 = 1
+			scout_plane1 = 1
+			naval_bomber1 = 1
+			
+		}
+	}
+}
+
+
+### NAVY ###
+######### Vanilla #########
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+	basic_destroyer = 1
+	basic_heavy_cruiser = 1
+	basic_light_cruiser = 1
+	early_battlecruiser = 1
+	early_battleship = 1
+	early_carrier = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+	
+	}
+	set_naval_oob = "KNC_1936_naval"
+}
+
+### Ship Variants ###
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+			create_equipment_variant = {
+			name = "Ribatan Class"
+			type = destroyer_1
+			upgrades = {
+				ship_anti_air_upgrade = 1
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 1
+				ship_ASW_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Vecnostina Class"
+			type = destroyer_2
+			upgrades = {
+				ship_anti_air_upgrade = 1
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 1
+				ship_ASW_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Vecnostina Class"
+			type = light_cruiser_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_anti_air_upgrade = 1
+				ship_gun_upgrade = 1
+				ship_engine_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Ribatan Class"
+			type = light_cruiser_2
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_anti_air_upgrade = 1
+				ship_gun_upgrade = 1
+				ship_engine_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Ribatan Class"
+			type = heavy_cruiser_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 1
+				ship_engine_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Tuhasao Class"
+			type = heavy_cruiser_2
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 1
+				ship_engine_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Ljubangga Class"
+			type = battle_cruiser_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 1
+				ship_engine_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Ribatan Class"
+			type = battleship_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 1
+				ship_engine_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Ljubangga Class"
+			type = carrier_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_engine_upgrade = 1
+				ship_deckspace_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Mimpunyarec Class"
+			type = submarine_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				sub_torpedo_upgrade = 1
+				sub_engine_upgrade = 1
+				sub_stealth_upgrade = 1
+			}
+		}
+
+}
+
+
+######### MTG #########
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+	basic_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_depth_charges = 1
+	basic_heavy_armor_scheme = 1
+	basic_heavy_battery = 1
+	basic_heavy_shell = 1
+	basic_medium_battery = 1
+	basic_naval_mines = 1
+	basic_ship_hull_cruiser = 1
+	basic_ship_hull_light = 1
+	basic_torpedo = 1
+	early_ship_hull_carrier = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	improved_ship_torpedo_launcher = 1
+	improved_sonar = 1
+	magnetic_detonator = 1
+	mtg_transport = 1
+	smoke_generator = 1
+	sonar = 1
+	
+	}
+	set_naval_oob = "KNC_1936_naval_mtg"
+}
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		create_equipment_variant = {
+			name = "Ribatan Class"
+			type = ship_hull_light_1
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = ship_torpedo_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Vecnostina Class"
+			type = ship_hull_light_2
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_torpedo_slot = ship_torpedo_2
+				mid_1_custom_slot = ship_depth_charge_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Vecnostina Class"
+			type = ship_hull_cruiser_1
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_fire_control_system_slot = ship_sonar_1
+				fixed_ship_radar_slot = empty
+				mid_1_custom_slot = ship_medium_battery_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Ribatan Class"
+			type = ship_hull_cruiser_2
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_fire_control_system_slot = ship_sonar_1
+				fixed_ship_radar_slot = empty
+				mid_1_custom_slot = ship_mine_layer_1
+				mid_2_custom_slot = ship_secondaries_2
+				rear_1_custom_slot = ship_light_medium_battery_2
+			}
+		}
+		create_equipment_variant = {
+			name = "Ribatan Class"
+			type = ship_hull_cruiser_1
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_fire_control_system_slot = ship_sonar_1
+				fixed_ship_radar_slot = empty
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_medium_battery_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Tuhasao Class"
+			type = ship_hull_cruiser_2
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_fire_control_system_slot = ship_sonar_1
+				fixed_ship_radar_slot = empty
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Ljubangga Class"
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_armor_slot = ship_armor_bc_1
+				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				front_1_custom_slot = ship_heavy_battery_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = ship_heavy_battery_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Ribatan Class"
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_armor_slot = ship_armor_bb_1
+				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				front_1_custom_slot = ship_heavy_battery_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Ljubangga Class"
+			type = ship_hull_carrier_1
+			parent_version = 0
+			modules = {
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Mimpunyarec Class"
+			type = ship_hull_submarine_1
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = sub_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				rear_1_custom_slot = empty
+			}
+		}
+
+	}
+
+
+recruit_character = KNC_Oleg_Perom
+recruit_character = KNC_Rado_Vecnostina
+recruit_character = KNC_Luboslav_Ribatan
+recruit_character = KNC_Andi_Tuhasao
+recruit_character = KNC_Dusan_Sumbang
+recruit_character = KNC_Agus_Vecnostina
+recruit_character = KNC_Oleg_Sverahlian
+recruit_character = KNC_Gori_Sumbang
+recruit_character = KNC_Budimeon_Sumbang
+recruit_character = KNC_Suran_Tuhasao
+recruit_character = KNC_Boragomir_Perom
+recruit_character = KNC_Sergei_Tuhasao
+recruit_character = KNC_Boranovan_Tuhasao
+recruit_character = KNC_Dusz_Sumbang
+recruit_character = KNC_Matefan_Sumbang
+recruit_character = KNC_Goraj_Perom
+recruit_character = KNC_Nikitran_Perom
+recruit_character = KNC_Vlan_Vecnostina
+recruit_character = KNC_Zoran_Visija
+recruit_character = KNC_Bohdanis_Tamat
+recruit_character = KNC_Aleg_Tamat
+recruit_character = KNC_Mario_Tuhasao
+recruit_character = KNC_Bohdan_Mimpunyarec
+recruit_character = KNC_Harosladek_Sumbang
+recruit_character = KNC_Agusan_Sverahlian
+recruit_character = KNC_Slavel_Ribatan
+recruit_character = KNC_Dusz_Vecnostina
+recruit_character = KNC_Vlan_Sverahlian
+recruit_character = KNC_Bohdang_Mimpunyarec
+recruit_character = KNC_Bohdanis_Ribatan
+recruit_character = KNC_Vikitran_Vecnostina
+recruit_character = KNC_Slavel_Visija
+recruit_character = KNC_Miloslavel_Tuhasao
+recruit_character = KNC_Ivang_Perom
+recruit_character = KNC_Waya_Mimpunyarec
+recruit_character = KNC_Radov_Tamat
+recruit_character = KNC_Niktora_Ljubangga
+recruit_character = KNC_Matefan_Ljubangga
+recruit_character = KNC_Braj_Sumbang
+recruit_character = KNC_Aleg_Ljubangga
+recruit_character = KNC_Maris_Visija
+recruit_character = KNC_Stej_Sumbang
+recruit_character = KNC_Ivang_Tamat
+recruit_character = KNC_Zoran_Vecnostina
+recruit_character = KNC_Boranovan_Mimpunyarec
+recruit_character = KNC_Harilosla_Vecnostina
+recruit_character = KNC_Nikti_Vecnostina
+recruit_character = KNC_Jurio_Visija
+recruit_character = KNC_Nikita_Mimpunyarec
+recruit_character = KNC_Goraj_Sverahlian
+recruit_character = KNC_Miloslavko_Perom
+recruit_character = KNC_Stej_Mimpunyarec
+recruit_character = KNC_Goraj_Tuhasao
+recruit_character = KNC_Andrej_Tuhasao
+recruit_character = KNC_Waya_Sverahlian
+recruit_character = KNC_Agus_Perom
+recruit_character = KNC_Miloslavel_Sumbang
+recruit_character = KNC_Matefan_Ribatan
+recruit_character = KNC_Bohdang_Tamat
+recruit_character = KNC_Slavel_Ljubangga
+recruit_character = KNC_Simir_Mimpunyarec
+recruit_character = KNC_Boragomir_Ribatan
+recruit_character = KNC_Oleg_Ribatan
+recruit_character = KNC_Boranovan_Visija
+recruit_character = KNC_Sakti_Ljubangga
+recruit_character = KNC_Boragomir_Sumbang
+recruit_character = KNC_Matefan_Perom
+recruit_character = KNC_Gori_Mimpunyarec
+recruit_character = KNC_Bohdanis_Mimpunyarec
+recruit_character = KNC_Rizal_Tuhasao
+recruit_character = KNC_Vlan_Perom
+recruit_character = KNC_Maris_Perom
+recruit_character = KNC_Matej_Tuhasao
+recruit_character = KNC_Slav_Sumbang
+recruit_character = KNC_Sergei_Sumbang
+recruit_character = KNC_Harosladek_Vecnostina
+recruit_character = KNC_Maris_Sumbang
+recruit_character = KNC_Vikitran_Tuhasao
+recruit_character = KNC_Olexei_Sverahlian
+recruit_character = KNC_Niktora_Mimpunyarec
+recruit_character = KNC_Sergei_Visija
+recruit_character = KNC_Ilya_Visija
+recruit_character = KNC_Andi_Ribatan
+recruit_character = KNC_Harilosla_Perom
+recruit_character = KNC_Jurio_Tuhasao
+recruit_character = KNC_Dewa_Sverahlian
+recruit_character = KNC_Olek_Perom
+
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+set_research_slots = 4
+set_convoys = 30
+set_stability = 66
+set_war_support = 79
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1904.6.27"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 4
+	fascism = 25
+	communism = 34
+	neutrality = 37
+}
+
+
+#create_faction = templateFactionName
+#add_to_faction = KNC
+

@@ -1,0 +1,36 @@
+
+state={
+	id=371
+	name="STATE_371"
+	manpower = 1968719
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10368 5}
+		
+		owner = BAW
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = BAW
+	}
+
+	provinces={
+		10366 10367 10368 10369 10370 10371 10372 10373 10374 10375 10376 10377 
+	}
+	local_supplies=0.0 
+}

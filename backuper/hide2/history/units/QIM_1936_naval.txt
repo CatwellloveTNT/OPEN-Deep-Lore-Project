@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Qimuktuarjuk Fleet"			
+		naval_base = 16399
+		task_force = {
+			name = "Qimuktuarjuk Fleet"
+			location = 16399
+			
+						ship = { name = "Dearanala" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = QIM version_name = "Buar Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

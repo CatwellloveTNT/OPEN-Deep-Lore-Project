@@ -1,0 +1,15 @@
+state={
+	id=536
+	name="STATE_536"
+	resources={
+		steel=18
+		coal=10
+	}
+	provinces={
+		12352 12421 12493 
+	}
+	manpower=3012000
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

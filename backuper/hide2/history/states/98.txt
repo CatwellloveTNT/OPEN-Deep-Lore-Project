@@ -1,0 +1,42 @@
+
+state={
+	id=98
+	name="STATE_98"
+	manpower = 7012333
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=2
+		oil=2
+		rubber=0
+		steel=4
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 2938 2}
+		victory_points = { 2944 4}
+		victory_points = { 2951 8}
+		victory_points = { 2952 2}
+		
+		owner = KAW
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			2938 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KAW
+	}
+
+	provinces={
+		2925 2926 2927 2928 2929 2930 2931 2932 2933 2934 2935 2936 2937 2938 2939 2940 2941 2942 2943 2944 2945 2946 2947 2948 2949 2950 2951 2952 2953 2954 2955 2956 2957 2958 2959 2960 2961 2962 2963 2964 2965 2966 2967 2968 2969 2970 2971 2972 2973 2974 2975 2976 2977 
+	}
+	local_supplies=0.0 
+}

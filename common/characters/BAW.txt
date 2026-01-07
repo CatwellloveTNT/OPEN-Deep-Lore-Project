@@ -1,0 +1,880 @@
+characters = {
+	BAW_Anwari_Dams={
+		name="Anwari Dams"
+
+		
+		country_leader={
+			ideology=centrism
+			traits = { cabinet_crisis  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	BAW_Yahim_Imamaikufu={
+		name="Yahim Imamaikufu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Yahim_Imamaikufu
+				traits = {	exiled 	}
+		}
+
+	}
+	BAW_Yusuf_Sahraq={
+		name="Yusuf Sahraq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Yusuf_Sahraq
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	BAW_Omarim_Sautaa={
+		name="Omarim Sautaa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Omarim_Sautaa
+				traits = {	humble 	}
+		}
+
+	}
+	BAW_Ibrahimba_Kijid={
+		name="Ibrahimba Kijid"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Ibrahimba_Kijid
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	BAW_Bari_Sahraq={
+		name="Bari Sahraq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Bari_Sahraq
+				traits = {	exiled 	}
+		}
+
+	}
+	BAW_Bakarim_Kijid={
+		name="Bakarim Kijid"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Bakarim_Kijid
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	BAW_Faisal_Haka={
+		name="Faisal Haka"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Faisal_Haka
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	BAW_Faisa_Amria={
+		name="Faisa Amria"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Faisa_Amria
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	BAW_Ramme_Sautaa={
+		name="Ramme Sautaa"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Ramme_Sautaa
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	BAW_Tajid_Haka={
+		name="Tajid Haka"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Tajid_Haka
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	BAW_Omari_Bahja={
+		name="Omari Bahja"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Omari_Bahja
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	BAW_Ahma_Sautaa={
+		name="Ahma Sautaa"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Ahma_Sautaa
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	BAW_Adna_Kangome={
+		name="Adna Kangome"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Adna_Kangome
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	BAW_Zaid_Sahraq={
+		name="Zaid Sahraq"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Zaid_Sahraq
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	BAW_Kato_Sautaa={
+		name="Kato Sautaa"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Kato_Sautaa
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	BAW_Hassa_Sautaa={
+		name="Hassa Sautaa"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Hassa_Sautaa
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	BAW_Khal_Sautaa={
+		name="Khal Sautaa"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Khal_Sautaa
+				traits = {	air_naval_strike_2 	}
+		}
+
+	}
+	BAW_Abdullahmoud_Imamaikufu={
+		name="Abdullahmoud Imamaikufu"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Abdullahmoud_Imamaikufu
+				traits = {	navy_fleet_logistics_2 	}
+		}
+
+	}
+	BAW_Musano_Haka={
+		name="Musano Haka"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Musano_Haka
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	BAW_Jumau_Bahja={
+		name="Jumau Bahja"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Jumau_Bahja
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	BAW_Nabilah_Shareb={
+		name="Nabilah Shareb"
+
+		
+		country_leader={
+			ideology=nazism
+			traits = { warmonger  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	BAW_Luba_Shareb={
+		name="Luba Shareb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Luba_Shareb
+				traits = {	autocratic_imperialist 	}
+		}
+
+	}
+	BAW_Abdullahmoud_Haka={
+		name="Abdullahmoud Haka"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Abdullahmoud_Haka
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	BAW_Tari_Kangome={
+		name="Tari Kangome"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Tari_Kangome
+				traits = {	collaborator_king 	}
+		}
+
+	}
+	BAW_Majid_Shareb={
+		name="Majid Shareb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Majid_Shareb
+				traits = {	autocratic_imperialist 	}
+		}
+
+	}
+	BAW_Faidi_Shareb={
+		name="Faidi Shareb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Faidi_Shareb
+				traits = {	autokrator 	}
+		}
+
+	}
+	BAW_Taji_Kangome={
+		name="Taji Kangome"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Taji_Kangome
+				traits = {	autokrator 	}
+		}
+
+	}
+	BAW_Mohamed_Shareb={
+		name="Mohamed Shareb"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Mohamed_Shareb
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	BAW_Fariq_Kijid={
+		name="Fariq Kijid"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Fariq_Kijid
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	BAW_Nabilah_Imamaikufu={
+		name="Nabilah Imamaikufu"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Nabilah_Imamaikufu
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	BAW_Ibrana_Dams={
+		name="Ibrana Dams"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Ibrana_Dams
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	BAW_Juma_Imamaikufu={
+		name="Juma Imamaikufu"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Juma_Imamaikufu
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	BAW_Yahim_Bahja={
+		name="Yahim Bahja"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Yahim_Bahja
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	BAW_Musano_Shareb={
+		name="Musano Shareb"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Musano_Shareb
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	BAW_Fariq_Haka={
+		name="Fariq Haka"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Fariq_Haka
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	BAW_Zaid_Shareb={
+		name="Zaid Shareb"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Zaid_Shareb
+				traits = {	army_entrenchment_2 	}
+		}
+
+	}
+	BAW_Khal_Amria={
+		name="Khal Amria"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Khal_Amria
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	BAW_Jami_Bahja={
+		name="Jami Bahja"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Jami_Bahja
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	BAW_Hassa_Amria={
+		name="Hassa Amria"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Hassa_Amria
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	BAW_Faidi_Imamaikufu={
+		name="Faidi Imamaikufu"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Faidi_Imamaikufu
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	BAW_Khami_Haka={
+		name="Khami Haka"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Khami_Haka
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	BAW_Nabilah_Kangome={
+		name="Nabilah Kangome"
+
+		
+		country_leader={
+			ideology=stalinism
+			traits = { mastermind_code_cracker  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	BAW_Tanga_Haka={
+		name="Tanga Haka"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Tanga_Haka
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	BAW_Mahim_Shareb={
+		name="Mahim Shareb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Mahim_Shareb
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	BAW_Omar_Sahraq={
+		name="Omar Sahraq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Omar_Sahraq
+				traits = {	polemarch 	}
+		}
+
+	}
+	BAW_Faisa_Bahja={
+		name="Faisa Bahja"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Faisa_Bahja
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	BAW_Musuf_Sautaa={
+		name="Musuf Sautaa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Musuf_Sautaa
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	BAW_Adna_Sahraq={
+		name="Adna Sahraq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Adna_Sahraq
+				traits = {	polemarch 	}
+		}
+
+	}
+	BAW_Mbwan_Dams={
+		name="Mbwan Dams"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Mbwan_Dams
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	BAW_Yahim_Kijid={
+		name="Yahim Kijid"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Yahim_Kijid
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	BAW_Imraka_Bahja={
+		name="Imraka Bahja"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Imraka_Bahja
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	BAW_Ahmoud_Bahja={
+		name="Ahmoud Bahja"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Ahmoud_Bahja
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	BAW_Alid_Haka={
+		name="Alid Haka"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Alid_Haka
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	BAW_Faisal_Bahja={
+		name="Faisal Bahja"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Faisal_Bahja
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	BAW_Anwari_Haka={
+		name="Anwari Haka"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Anwari_Haka
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	BAW_Ibrahimba_Haka={
+		name="Ibrahimba Haka"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Ibrahimba_Haka
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	BAW_Imran_Amria={
+		name="Imran Amria"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Imran_Amria
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	BAW_Faisa_Shareb={
+		name="Faisa Shareb"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Faisa_Shareb
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	BAW_Ibrano_Sahraq={
+		name="Ibrano Sahraq"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Ibrano_Sahraq
+				traits = {	army_radio_intelligence_2 	}
+		}
+
+	}
+	BAW_Zaid_Bahja={
+		name="Zaid Bahja"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Zaid_Bahja
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	BAW_Sami_Haka={
+		name="Sami Haka"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Sami_Haka
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	BAW_Mbwamir_Haka={
+		name="Mbwamir Haka"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Mbwamir_Haka
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	BAW_Shakar_Sautaa={
+		name="Shakar Sautaa"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { liberal_democratic_paragon  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	BAW_Anwarano_Sautaa={
+		name="Anwarano Sautaa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Anwarano_Sautaa
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	BAW_Omarim_Bahja={
+		name="Omarim Bahja"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Omarim_Bahja
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	BAW_Alid_Amria={
+		name="Alid Amria"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Alid_Amria
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	BAW_Khalid_Sautaa={
+		name="Khalid Sautaa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Khalid_Sautaa
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	BAW_Nabil_Kangome={
+		name="Nabil Kangome"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Nabil_Kangome
+				traits = {	british_bulldog 	}
+		}
+
+	}
+	BAW_Luba_Dams={
+		name="Luba Dams"
+
+		advisor={
+			slot = political_advisor
+			idea_token = BAW_Luba_Dams
+				traits = {	british_bulldog 	}
+		}
+
+	}
+	BAW_Tajid_Sautaa={
+		name="Tajid Sautaa"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Tajid_Sautaa
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	BAW_Imran_Shareb={
+		name="Imran Shareb"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Imran_Shareb
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	BAW_Nabilah_Haka={
+		name="Nabilah Haka"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Nabilah_Haka
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	BAW_Omad_Sautaa={
+		name="Omad Sautaa"
+
+		advisor={
+			slot = army_chief
+			idea_token = BAW_Omad_Sautaa
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	BAW_Ibrana_Sautaa={
+		name="Ibrana Sautaa"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Ibrana_Sautaa
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	BAW_Bilahya_Dams={
+		name="Bilahya Dams"
+
+		advisor={
+			slot = navy_chief
+			idea_token = BAW_Bilahya_Dams
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	BAW_Bilal_Kangome={
+		name="Bilal Kangome"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Bilal_Kangome
+				traits = {	air_chief_all_weather_1 	}
+		}
+
+	}
+	BAW_Anwari_Kangome={
+		name="Anwari Kangome"
+
+		advisor={
+			slot = air_chief
+			idea_token = BAW_Anwari_Kangome
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	BAW_Chid_Sahraq={
+		name="Chid Sahraq"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Chid_Sahraq
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	BAW_Mosi_Bahja={
+		name="Mosi Bahja"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Mosi_Bahja
+				traits = {	army_infantry_1 	}
+		}
+
+	}
+	BAW_Kato_Bahja={
+		name="Kato Bahja"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Kato_Bahja
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	BAW_Omarim_Kijid={
+		name="Omarim Kijid"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Omarim_Kijid
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	BAW_Ahmoud_Imamaikufu={
+		name="Ahmoud Imamaikufu"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Ahmoud_Imamaikufu
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	BAW_Imraka_Shareb={
+		name="Imraka Shareb"
+
+		advisor={
+			slot = high_command
+			idea_token = BAW_Imraka_Shareb
+				traits = {	navy_naval_air_defense_1 	}
+		}
+
+	}
+	BAW_Sefu_Imamaikufu={
+		name="Sefu Imamaikufu"
+
+		advisor={
+			slot = theorist
+			idea_token = BAW_Sefu_Imamaikufu
+				traits = {	military_theorist 	}
+		}
+
+	}
+	BAW_Omar_Shareb={
+		name="Omar Shareb"
+
+		advisor={
+			slot = theorist
+			idea_token = BAW_Omar_Shareb
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	BAW_Anwamza_Sautaa={
+		name="Anwamza Sautaa"
+
+		advisor={
+			slot = theorist
+			idea_token = BAW_Anwamza_Sautaa
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

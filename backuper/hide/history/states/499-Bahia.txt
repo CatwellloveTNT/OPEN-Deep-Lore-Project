@@ -1,0 +1,14 @@
+state={
+	id=499
+	name="STATE_499"
+	resources={
+		chromium=3
+	}
+	provinces={
+		12422 
+	}
+	manpower=4233900
+	buildings_max_level_factor=1
+	state_category=large_town
+	local_supplies=0
+}

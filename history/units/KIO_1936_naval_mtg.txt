@@ -1,0 +1,30 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Kionor Fleet"			
+		naval_base = 12465
+		task_force = {
+			name = "Kionor Fleet"
+			location = 12465
+			
+						ship = { name = "Muujijizalun" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KIO version_name = "Ibas Class" } }	}
+			ship = { name = "Takeano" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KIO version_name = "Upenarus Class" } }	}
+			ship = { name = "Nomendea" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KIO version_name = "Upenarus Class" } }	}
+			ship = { name = "Nomendea 2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KIO version_name = "Upenarus Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

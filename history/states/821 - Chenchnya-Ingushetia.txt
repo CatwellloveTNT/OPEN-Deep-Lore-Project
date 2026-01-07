@@ -1,0 +1,14 @@
+state={
+	id=821
+	name="STATE_821"
+	resources={
+		oil=9
+	}
+	provinces={
+		6689 
+	}
+	manpower=731985
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

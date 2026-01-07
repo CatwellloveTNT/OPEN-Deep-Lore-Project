@@ -1,0 +1,39 @@
+
+state={
+	id=406
+	name="STATE_406"
+	manpower = 802589
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11244 3}
+		
+		owner = CAS
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11244 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CAS
+	}
+
+	provinces={
+		11244 
+	}
+	local_supplies=0.0 
+}

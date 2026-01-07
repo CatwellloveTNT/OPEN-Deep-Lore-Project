@@ -1,0 +1,16 @@
+state={
+	id=671
+	name="STATE_671"
+	resources={
+		chromium=2
+		tungsten=20
+		coal=3
+	}
+	provinces={
+		12008 12048 12065 12075 12319 
+	}
+	manpower=8528000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

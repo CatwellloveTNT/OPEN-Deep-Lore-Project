@@ -1,0 +1,11 @@
+state={
+	id=443
+	name="STATE_443"
+	provinces={
+		7084 
+	}
+	manpower=4524236
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=7
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=502
+	name="STATE_502"
+	manpower = 7235490
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 13610 30}
+		
+		owner = UUA
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+			arms_factory = 0
+			industrial_complex = 3
+			dockyard = 1
+			13612 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = UUA
+	}
+
+	provinces={
+		13600 13601 13602 13603 13604 13605 13606 13607 13608 13609 13610 13611 13612 13613 13614 13615 13616 13617 13618 13619 13620 13621 13622 13623 13624 13625 13626 13627 
+	}
+	local_supplies=0.0 
+}

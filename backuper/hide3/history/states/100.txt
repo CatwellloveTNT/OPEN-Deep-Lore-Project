@@ -1,0 +1,36 @@
+
+state={
+	id=100
+	name="STATE_100"
+	manpower = 6907549
+	
+	state_category = city
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3003 22}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		2990 2991 2992 2993 2994 2995 2996 2997 2998 2999 3000 3001 3002 3003 3004 3005 3006 3007 3008 3009 3010 3011 3012 3013 3014 3015 3016 3017 3018 3019 3020 3021 3022 3023 
+	}
+	local_supplies=0.0 
+}

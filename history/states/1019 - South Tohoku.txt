@@ -1,0 +1,15 @@
+state={
+	id=1019
+	name="STATE_1019"
+	resources={
+		steel=5
+		coal=1
+	}
+	provinces={
+		7169 
+	}
+	manpower=6575000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=9
+}

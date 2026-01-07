@@ -1,0 +1,37 @@
+
+state={
+	id=576
+	name="STATE_576"
+	manpower = 7334736
+	
+	state_category = large_city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 15397 22}
+		victory_points = { 15415 3}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			arms_factory = 2
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		15392 15393 15394 15395 15396 15397 15398 15399 15400 15401 15402 15403 15404 15405 15406 15407 15408 15409 15410 15411 15412 15413 15414 15415 15416 15417 15418 15419 15420 15421 15422 15423 
+	}
+	local_supplies=0.0 
+}

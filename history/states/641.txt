@@ -1,0 +1,41 @@
+
+state={
+	id=641
+	name="STATE_641"
+	manpower = 2160156
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 16230 5}
+		victory_points = { 16233 2}
+		victory_points = { 16234 2}
+		
+		owner = KAN
+		buildings = {
+			infrastructure = 3
+			air_base = 4
+			arms_factory = 0
+			industrial_complex = 1
+			
+			16233 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KAN
+	}
+
+	provinces={
+		16229 16230 16231 16232 16233 16234 
+	}
+	local_supplies=0.0 
+}

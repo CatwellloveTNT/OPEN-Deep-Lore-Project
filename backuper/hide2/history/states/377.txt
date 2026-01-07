@@ -1,0 +1,41 @@
+
+state={
+	id=377
+	name="STATE_377"
+	manpower = 4932549
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 10527 4}
+		victory_points = { 10543 8}
+		victory_points = { 10545 2}
+		
+		owner = LAN
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			10537 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAN
+	}
+
+	provinces={
+		10525 10526 10527 10528 10529 10530 10531 10532 10533 10534 10535 10536 10537 10538 10539 10540 10541 10542 10543 10544 10545 10546 10547 
+	}
+	local_supplies=0.0 
+}

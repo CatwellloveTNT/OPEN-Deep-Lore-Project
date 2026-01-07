@@ -1,0 +1,14 @@
+state={
+	id=307
+	name="STATE_307"
+	resources={
+		oil=41
+	}
+	provinces={
+		4892 4942 5000 5056 7968 8024 
+	}
+	manpower=1335010
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

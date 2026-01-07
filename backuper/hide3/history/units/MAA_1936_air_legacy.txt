@@ -1,0 +1,29 @@
+air_wings = {
+		299 = { 								
+		CAS_equipment_0 = { owner = "MAA" amount = 50 version_name = "Haria Mk 0" }
+
+	}
+	310 = { 								
+		tac_bomber_equipment_0 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 0" }
+fighter_equipment_0 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 2" }
+tac_bomber_equipment_0 = { owner = "MAA" amount = 50 version_name = "Amria Mk 0" }
+
+	}
+	326 = { 								
+		tac_bomber_equipment_0 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 0" }
+nav_bomber_equipment_0 = { owner = "MAA" amount = 50 version_name = "Khar Mk 1" }
+tac_bomber_equipment_0 = { owner = "MAA" amount = 50 version_name = "Amria Mk 0" }
+
+	}
+	343 = { 								
+		fighter_equipment_0 = { owner = "MAA" amount = 50 version_name = "Ghamt Mk 2" }
+
+	}
+	349 = { 								
+		CAS_equipment_0 = { owner = "MAA" amount = 50 version_name = "Haria Mk 0" }
+nav_bomber_equipment_0 = { owner = "MAA" amount = 50 version_name = "Khar Mk 1" }
+
+	}
+
+
+}

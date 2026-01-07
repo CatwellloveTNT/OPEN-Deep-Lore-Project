@@ -1,0 +1,880 @@
+characters = {
+	KFA_Hame_Khajli={
+		name="Hame Khajli"
+
+		
+		country_leader={
+			ideology=moderatism
+			traits = { celebrity_junta_leader  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KFA_Musanga_Lano={
+		name="Musanga Lano"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Musanga_Lano
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	KFA_Amad_Turu={
+		name="Amad Turu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Amad_Turu
+				traits = {	headstrong 	}
+		}
+
+	}
+	KFA_Kamza_Warahawani={
+		name="Kamza Warahawani"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Kamza_Warahawani
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	KFA_Imranan_Sarb={
+		name="Imranan Sarb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Imranan_Sarb
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	KFA_Khami_Turu={
+		name="Khami Turu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Khami_Turu
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	KFA_Temba_Khajli={
+		name="Temba Khajli"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Temba_Khajli
+				traits = {	cabinet_crisis 	}
+		}
+
+	}
+	KFA_Baka_Wasi={
+		name="Baka Wasi"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Baka_Wasi
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	KFA_Baka_Sarb={
+		name="Baka Sarb"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Baka_Sarb
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	KFA_Kari_Wasi={
+		name="Kari Wasi"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Kari_Wasi
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	KFA_Ahmoud_Msiwangozi={
+		name="Ahmoud Msiwangozi"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Ahmoud_Msiwangozi
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	KFA_Kamza_Sarb={
+		name="Kamza Sarb"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Kamza_Sarb
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	KFA_Yusuf_Nizamt={
+		name="Yusuf Nizamt"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Yusuf_Nizamt
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	KFA_Mbwarim_Sarb={
+		name="Mbwarim Sarb"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Mbwarim_Sarb
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	KFA_Khaka_Warahawani={
+		name="Khaka Warahawani"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Khaka_Warahawani
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	KFA_Ibrahya_Turu={
+		name="Ibrahya Turu"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Ibrahya_Turu
+				traits = {	air_tactical_bombing_2 	}
+		}
+
+	}
+	KFA_Bilalidi_Nizamt={
+		name="Bilalidi Nizamt"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Bilalidi_Nizamt
+				traits = {	navy_fleet_logistics_1 	}
+		}
+
+	}
+	KFA_Tari_Kishfa={
+		name="Tari Kishfa"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Tari_Kishfa
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	KFA_Kamza_Wasi={
+		name="Kamza Wasi"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Kamza_Wasi
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	KFA_Ibraka_Turu={
+		name="Ibraka Turu"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Ibraka_Turu
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	KFA_Imrah_Turu={
+		name="Imrah Turu"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Imrah_Turu
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	KFA_Barid_Turu={
+		name="Barid Turu"
+
+		
+		country_leader={
+			ideology=nazism
+			traits = { polemarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KFA_Amad_Kishfa={
+		name="Amad Kishfa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Amad_Kishfa
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	KFA_Kamza_Turu={
+		name="Kamza Turu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Kamza_Turu
+				traits = {	autokrator 	}
+		}
+
+	}
+	KFA_Mohami_Nizamt={
+		name="Mohami Nizamt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Mohami_Nizamt
+				traits = {	generallissimo 	}
+		}
+
+	}
+	KFA_Imrakarahya_Warahawani={
+		name="Imrakarahya Warahawani"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Imrakarahya_Warahawani
+				traits = {	spirit_of_genghis 	}
+		}
+
+	}
+	KFA_Taji_Kishfa={
+		name="Taji Kishfa"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Taji_Kishfa
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	KFA_Mbwarim_Warahawani={
+		name="Mbwarim Warahawani"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Mbwarim_Warahawani
+				traits = {	polemarch 	}
+		}
+
+	}
+	KFA_Temban_Nizamt={
+		name="Temban Nizamt"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Temban_Nizamt
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	KFA_Adna_Nizamt={
+		name="Adna Nizamt"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Adna_Nizamt
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	KFA_Faisa_Turu={
+		name="Faisa Turu"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Faisa_Turu
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	KFA_Mbwar_Turu={
+		name="Mbwar Turu"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Mbwar_Turu
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	KFA_Samaranan_Nizamt={
+		name="Samaranan Nizamt"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Samaranan_Nizamt
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	KFA_Hame_Kishfa={
+		name="Hame Kishfa"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Hame_Kishfa
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	KFA_Bilal_Khajli={
+		name="Bilal Khajli"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Bilal_Khajli
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	KFA_Sami_Sarb={
+		name="Sami Sarb"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Sami_Sarb
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	KFA_Adnan_Kishfa={
+		name="Adnan Kishfa"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Adnan_Kishfa
+				traits = {	army_CombinedArms_1 	}
+		}
+
+	}
+	KFA_Mosi_Nizamt={
+		name="Mosi Nizamt"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Mosi_Nizamt
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	KFA_Samaranan_Warahawani={
+		name="Samaranan Warahawani"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Samaranan_Warahawani
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	KFA_Chid_Kishfa={
+		name="Chid Kishfa"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Chid_Kishfa
+				traits = {	navy_submarine_2 	}
+		}
+
+	}
+	KFA_Yahmoud_Jina={
+		name="Yahmoud Jina"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Yahmoud_Jina
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	KFA_Mbwamad_Warahawani={
+		name="Mbwamad Warahawani"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Mbwamad_Warahawani
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	KFA_Mbwar_Wasi={
+		name="Mbwar Wasi"
+
+		
+		country_leader={
+			ideology=anti_revisionism
+			traits = { indomitable_perseverance  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KFA_Adna_Jina={
+		name="Adna Jina"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Adna_Jina
+				traits = {	polemarch 	}
+		}
+
+	}
+	KFA_Mohamza_Jina={
+		name="Mohamza Jina"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Mohamza_Jina
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	KFA_Tarano_Wasi={
+		name="Tarano Wasi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Tarano_Wasi
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	KFA_Omal_Nizamt={
+		name="Omal Nizamt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Omal_Nizamt
+				traits = {	polemarch 	}
+		}
+
+	}
+	KFA_Zaisan_Nizamt={
+		name="Zaisan Nizamt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Zaisan_Nizamt
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	KFA_Musuf_Turu={
+		name="Musuf Turu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Musuf_Turu
+				traits = {	political_dancer 	}
+		}
+
+	}
+	KFA_Adnana_Kishfa={
+		name="Adnana Kishfa"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Adnana_Kishfa
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	KFA_Zaidi_Warahawani={
+		name="Zaidi Warahawani"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Zaidi_Warahawani
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	KFA_Kwariq_Sarb={
+		name="Kwariq Sarb"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Kwariq_Sarb
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	KFA_Amaranan_Warahawani={
+		name="Amaranan Warahawani"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Amaranan_Warahawani
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	KFA_Zaidi_Nizamt={
+		name="Zaidi Nizamt"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Zaidi_Nizamt
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	KFA_Adnan_Msiwangozi={
+		name="Adnan Msiwangozi"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Adnan_Msiwangozi
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	KFA_Kato_Jina={
+		name="Kato Jina"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Kato_Jina
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	KFA_Mbwar_Msiwangozi={
+		name="Mbwar Msiwangozi"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Mbwar_Msiwangozi
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	KFA_Adnana_Lano={
+		name="Adnana Lano"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Adnana_Lano
+				traits = {	air_air_superiority_2 	}
+		}
+
+	}
+	KFA_Sefu_Lano={
+		name="Sefu Lano"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Sefu_Lano
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	KFA_Adnana_Warahawani={
+		name="Adnana Warahawani"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Adnana_Warahawani
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	KFA_Yahid_Turu={
+		name="Yahid Turu"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Yahid_Turu
+				traits = {	navy_naval_air_defense_1 	}
+		}
+
+	}
+	KFA_Imran_Msiwangozi={
+		name="Imran Msiwangozi"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Imran_Msiwangozi
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	KFA_Abdullalid_Jina={
+		name="Abdullalid Jina"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Abdullalid_Jina
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	KFA_Musanga_Jina={
+		name="Musanga Jina"
+
+		
+		country_leader={
+			ideology=liberalism
+			traits = { the_young_magnate  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	KFA_Temban_Lano={
+		name="Temban Lano"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Temban_Lano
+				traits = {	british_bulldog 	}
+		}
+
+	}
+	KFA_Amari_Sarb={
+		name="Amari Sarb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Amari_Sarb
+				traits = {	british_bulldog 	}
+		}
+
+	}
+	KFA_Kwamal_Msiwangozi={
+		name="Kwamal Msiwangozi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Kwamal_Msiwangozi
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	KFA_Adnana_Sarb={
+		name="Adnana Sarb"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Adnana_Sarb
+				traits = {	rearmer 	}
+		}
+
+	}
+	KFA_Karid_Msiwangozi={
+		name="Karid Msiwangozi"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Karid_Msiwangozi
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	KFA_Amad_Warahawani={
+		name="Amad Warahawani"
+
+		advisor={
+			slot = political_advisor
+			idea_token = KFA_Amad_Warahawani
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	KFA_Samza_Wasi={
+		name="Samza Wasi"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Samza_Wasi
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	KFA_Omau_Turu={
+		name="Omau Turu"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Omau_Turu
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	KFA_Adnan_Khajli={
+		name="Adnan Khajli"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Adnan_Khajli
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	KFA_Mohami_Sarb={
+		name="Mohami Sarb"
+
+		advisor={
+			slot = army_chief
+			idea_token = KFA_Mohami_Sarb
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	KFA_Juma_Warahawani={
+		name="Juma Warahawani"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Juma_Warahawani
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	KFA_Baka_Jina={
+		name="Baka Jina"
+
+		advisor={
+			slot = navy_chief
+			idea_token = KFA_Baka_Jina
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	KFA_Mbwamad_Sarb={
+		name="Mbwamad Sarb"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Mbwamad_Sarb
+				traits = {	air_chief_reform_1 	}
+		}
+
+	}
+	KFA_Karid_Wasi={
+		name="Karid Wasi"
+
+		advisor={
+			slot = air_chief
+			idea_token = KFA_Karid_Wasi
+				traits = {	air_chief_all_weather_1 	}
+		}
+
+	}
+	KFA_Saad_Msiwangozi={
+		name="Saad Msiwangozi"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Saad_Msiwangozi
+				traits = {	navy_carrier_2 	}
+		}
+
+	}
+	KFA_Sami_Wasi={
+		name="Sami Wasi"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Sami_Wasi
+				traits = {	army_radio_intelligence_2 	}
+		}
+
+	}
+	KFA_Bari_Lano={
+		name="Bari Lano"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Bari_Lano
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	KFA_Kari_Khajli={
+		name="Kari Khajli"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Kari_Khajli
+				traits = {	army_entrenchment_1 	}
+		}
+
+	}
+	KFA_Amad_Khajli={
+		name="Amad Khajli"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Amad_Khajli
+				traits = {	air_strategic_bombing_2 	}
+		}
+
+	}
+	KFA_Adnana_Nizamt={
+		name="Adnana Nizamt"
+
+		advisor={
+			slot = high_command
+			idea_token = KFA_Adnana_Nizamt
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	KFA_Omau_Wasi={
+		name="Omau Wasi"
+
+		advisor={
+			slot = theorist
+			idea_token = KFA_Omau_Wasi
+				traits = {	military_theorist 	}
+		}
+
+	}
+	KFA_Jami_Lano={
+		name="Jami Lano"
+
+		advisor={
+			slot = theorist
+			idea_token = KFA_Jami_Lano
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	KFA_Taji_Sarb={
+		name="Taji Sarb"
+
+		advisor={
+			slot = theorist
+			idea_token = KFA_Taji_Sarb
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

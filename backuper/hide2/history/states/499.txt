@@ -1,0 +1,36 @@
+
+state={
+	id=499
+	name="STATE_499"
+	manpower = 4084717
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 13579 15}
+		
+		owner = KFA
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			arms_factory = 0
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = KFA
+	}
+
+	provinces={
+		13576 13577 13578 13579 13580 13581 13582 13583 13584 13585 13586 13587 13588 13589 13590 
+	}
+	local_supplies=0.0 
+}

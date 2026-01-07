@@ -1,0 +1,11 @@
+state={
+	id=911
+	name="STATE_911"
+	provinces={
+		13260 
+	}
+	manpower=497073
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

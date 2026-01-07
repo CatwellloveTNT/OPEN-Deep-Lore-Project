@@ -1,0 +1,39 @@
+
+state={
+	id=279
+	name="STATE_279"
+	manpower = 3458118
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 7804 8}
+		
+		owner = ZAH
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			7800 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = ZAH
+	}
+
+	provinces={
+		7799 7800 7801 7802 7803 7804 7805 7806 7807 7808 7809 7810 7811 7812 7813 7814 7815 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=256
+	name="STATE_256"
+	manpower = 5341041
+	
+	state_category = town
+	resources={
+		aluminium=2
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7197 6}
+		victory_points = { 7208 7}
+		
+		owner = MAT
+		buildings = {
+			infrastructure = 1
+			air_base = 2
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MAT
+	}
+
+	provinces={
+		7180 7181 7182 7183 7184 7185 7186 7187 7188 7189 7190 7191 7192 7193 7194 7195 7196 7197 7198 7199 7200 7201 7202 7203 7204 7205 7206 7207 7208 7209 7210 
+	}
+	local_supplies=0.0 
+}

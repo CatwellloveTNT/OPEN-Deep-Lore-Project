@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+
+		immigration_bonus_KAW_0 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 705
+			}
+		}
+
+		immigration_bonus_KAW_1 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 690
+			}
+		}
+
+		immigration_bonus_KAW_2 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 780
+			}
+		}
+
+		immigration_bonus_KAW_3 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 911
+			}
+		}
+
+}
+}

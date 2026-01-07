@@ -1,0 +1,85 @@
+ideas = {
+	country = {
+
+		immigration_bonus_KNC_0 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 234
+			}
+		}
+
+		immigration_bonus_KNC_1 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 478
+			}
+		}
+
+		immigration_bonus_KNC_2 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 421
+			}
+		}
+
+		immigration_bonus_KNC_3 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 781
+			}
+		}
+
+		immigration_bonus_KNC_4 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 430
+			}
+		}
+
+}
+}

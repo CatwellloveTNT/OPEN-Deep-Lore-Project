@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+
+		immigration_bonus_PIG_0 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 125
+			}
+		}
+
+		immigration_bonus_PIG_1 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 876
+			}
+		}
+
+		immigration_bonus_PIG_2 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 390
+			}
+		}
+
+		immigration_bonus_PIG_3 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 616
+			}
+		}
+
+}
+}

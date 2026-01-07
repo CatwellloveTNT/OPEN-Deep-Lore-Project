@@ -1,0 +1,15 @@
+state={
+	id=174
+	name="STATE_174"
+	resources={
+		tungsten=10
+		coal=3
+	}
+	provinces={
+		13219 13232 
+	}
+	manpower=749041
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=12
+}

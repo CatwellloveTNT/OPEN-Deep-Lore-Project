@@ -1,0 +1,40 @@
+air_wings = {
+		540 = { 								
+		medium_plane_airframe_0 = { owner = "UUA" amount = 50 version_name = "Antzal Mk 1" }
+
+	}
+	496 = { 								
+		small_plane_cas_airframe_0 = { owner = "UUA" amount = 50 version_name = "Itzagunar Mk 2" }
+
+	}
+	509 = { 								
+		small_plane_naval_bomber_airframe_0 = { owner = "UUA" amount = 50 version_name = "Zorehr Mk 1" }
+
+	}
+	502 = { 								
+		large_plane_airframe_1 = { owner = "UUA" amount = 50 version_name = "Zorehr Mk 2" }
+
+	}
+	504 = { 								
+		small_plane_airframe_0 = { owner = "UUA" amount = 50 version_name = "Usaaskua Mk 1" }
+
+	}
+	491 = { 								
+		medium_plane_airframe_0 = { owner = "UUA" amount = 50 version_name = "Antzal Mk 1" }
+
+	}
+	523 = { 								
+		large_plane_airframe_1 = { owner = "UUA" amount = 50 version_name = "Zorehr Mk 2" }
+small_plane_cas_airframe_0 = { owner = "UUA" amount = 50 version_name = "Itzagunar Mk 2" }
+small_plane_airframe_0 = { owner = "UUA" amount = 50 version_name = "Usaaskua Mk 1" }
+small_plane_naval_bomber_airframe_0 = { owner = "UUA" amount = 50 version_name = "Zorehr Mk 1" }
+
+	}
+	527 = { 								
+		large_plane_airframe_0 = { owner = "UUA" amount = 50 version_name = "Errimeh Mk 0" }
+large_plane_airframe_0 = { owner = "UUA" amount = 50 version_name = "Errimeh Mk 0" }
+
+	}
+
+
+}

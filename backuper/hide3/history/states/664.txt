@@ -1,0 +1,40 @@
+
+state={
+	id=664
+	name="STATE_664"
+	manpower = 1463721
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 16374 1}
+		victory_points = { 16376 2}
+		
+		owner = LAN
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			16374 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = LAN
+	}
+
+	provinces={
+		16374 16375 16376 16377 16378 16379 
+	}
+	local_supplies=0.0 
+}

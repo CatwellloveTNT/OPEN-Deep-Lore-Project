@@ -1,0 +1,11 @@
+state={
+	id=195
+	name="STATE_195"
+	provinces={
+		6174 
+	}
+	manpower=3750158
+	buildings_max_level_factor=1
+	state_category=metropolis
+	local_supplies=11
+}

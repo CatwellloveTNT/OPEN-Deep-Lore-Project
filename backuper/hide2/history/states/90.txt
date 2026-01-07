@@ -1,0 +1,36 @@
+
+state={
+	id=90
+	name="STATE_90"
+	manpower = 3936011
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2701 12}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		2689 2690 2691 2692 2693 2694 2695 2696 2697 2698 2699 2700 2701 2702 2703 2704 2705 2706 
+	}
+	local_supplies=0.0 
+}

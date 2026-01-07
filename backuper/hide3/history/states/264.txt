@@ -1,0 +1,36 @@
+
+state={
+	id=264
+	name="STATE_264"
+	manpower = 3423952
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7379 7}
+		
+		owner = MAT
+		buildings = {
+			infrastructure = 1
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = MAT
+	}
+
+	provinces={
+		7376 7377 7378 7379 7380 7381 7382 7383 7384 7385 7386 7387 7388 7389 7390 7391 7392 7393 7394 7395 
+	}
+	local_supplies=0.0 
+}

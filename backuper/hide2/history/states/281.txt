@@ -1,0 +1,41 @@
+
+state={
+	id=281
+	name="STATE_281"
+	manpower = 9873170
+	
+	state_category = city
+	resources={
+		aluminium=2
+		chromium=10
+		oil=0
+		rubber=0
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 7843 12}
+		victory_points = { 7845 3}
+		victory_points = { 7853 12}
+		
+		owner = ASI
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			7825 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = ASI
+	}
+
+	provinces={
+		7817 7818 7819 7820 7821 7822 7823 7824 7825 7826 7827 7828 7829 7830 7831 7832 7833 7834 7835 7836 7837 7838 7839 7840 7841 7842 7843 7844 7845 7846 7847 7848 7849 7850 7851 7852 7853 7854 7855 7856 7857 7858 7859 7860 7861 7862 7863 7864 7865 7866 7867 
+	}
+	local_supplies=0.0 
+}

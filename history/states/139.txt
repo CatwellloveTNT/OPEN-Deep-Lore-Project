@@ -1,0 +1,39 @@
+
+state={
+	id=139
+	name="STATE_139"
+	manpower = 325823
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 4093 1}
+		
+		owner = SHO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			4093 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = SHO
+	}
+
+	provinces={
+		4093 
+	}
+	local_supplies=0.0 
+}

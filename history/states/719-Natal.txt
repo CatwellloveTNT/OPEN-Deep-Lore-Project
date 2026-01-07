@@ -1,0 +1,15 @@
+state={
+	id=719
+	name="STATE_719"
+	resources={
+		chromium=60
+		coal=4
+	}
+	provinces={
+		7576 7900 
+	}
+	manpower=3962157
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

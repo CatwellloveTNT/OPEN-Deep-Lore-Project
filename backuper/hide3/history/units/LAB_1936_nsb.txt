@@ -1,0 +1,129 @@
+division_template = {
+	name = "Militia Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			infantry = {  x = 2 y = 0 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Artillery Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			infantry = {  x = 1 y = 2 }
+			artillery_brigade = {  x = 2 y = 0 }
+
+	}
+	
+	support = {
+			artillery = {  x = 0 y = 0 }
+
+	}
+}
+division_template = {
+	name = "Cavalry Division"
+
+	regiments = {
+			cavalry = {  x = 0 y = 0 }
+			cavalry = {  x = 0 y = 1 }
+			cavalry = {  x = 1 y = 0 }
+			cavalry = {  x = 1 y = 1 }
+			cavalry = {  x = 2 y = 0 }
+			cavalry = {  x = 2 y = 1 }
+
+	}
+	
+	support = {
+
+	}
+}
+
+
+units = {
+	division= {
+		name = "1nd 'Chia' Militia Division"
+		location = 6232
+		division_template = "Militia Division"
+		start_experience_factor = 0.645189
+		start_equipment_factor = 0.902741
+	}
+	division= {
+		name = "2rd 'Hazavit' Militia Division"
+		location = 5311
+		division_template = "Militia Division"
+		start_experience_factor = 0.831609
+		start_equipment_factor = 0.938820
+	}
+	division= {
+		name = "1nd 'Tifl' Infantry Division"
+		location = 6224
+		division_template = "Infantry Division"
+		start_experience_factor = 0.684574
+		start_equipment_factor = 0.936550
+	}
+	division= {
+		name = "2rd 'Hafhabich' Infantry Division"
+		location = 5277
+		division_template = "Infantry Division"
+		start_experience_factor = 0.896650
+		start_equipment_factor = 0.926571
+	}
+	division= {
+		name = "1nd 'Allo' Artillery Division"
+		location = 6050
+		division_template = "Artillery Division"
+		start_experience_factor = 0.458286
+		start_equipment_factor = 0.997518
+	}
+	division= {
+		name = "2rd 'Tifl' Artillery Division"
+		location = 6218
+		division_template = "Artillery Division"
+		start_experience_factor = 0.481522
+		start_equipment_factor = 0.957726
+	}
+	division= {
+		name = "3th 'Sreb' Artillery Division"
+		location = 6772
+		division_template = "Artillery Division"
+		start_experience_factor = 0.863819
+		start_equipment_factor = 0.981758
+	}
+	division= {
+		name = "1nd 'Tifl' Cavalry Division"
+		location = 6858
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.440460
+		start_equipment_factor = 0.843363
+	}
+
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=17
+	name="STATE_17"
+	manpower = 1160826
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 551 2}
+		
+		owner = SHO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			545 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = SHO
+	}
+
+	provinces={
+		538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 
+	}
+	local_supplies=0.0 
+}

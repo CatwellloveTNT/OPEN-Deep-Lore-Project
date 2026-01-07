@@ -1,0 +1,880 @@
+characters = {
+	TAM_Dran_Igluk={
+		name="Dran Igluk"
+
+		
+		country_leader={
+			ideology=oligarchism
+			traits = { inexperienced_monarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	TAM_Paolo_Naku={
+		name="Paolo Naku"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Paolo_Naku
+				traits = {	exiled 	}
+		}
+
+	}
+	TAM_Radek_Ribuk={
+		name="Radek Ribuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Radek_Ribuk
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	TAM_Stefana_Armlj={
+		name="Stefana Armlj"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Stefana_Armlj
+				traits = {	headstrong 	}
+		}
+
+	}
+	TAM_Dusz_Ciesija={
+		name="Dusz Ciesija"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Dusz_Ciesija
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	TAM_Leona_Ciesija={
+		name="Leona Ciesija"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Leona_Ciesija
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	TAM_Panarcoladim_Ciesija={
+		name="Panarcoladim Ciesija"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Panarcoladim_Ciesija
+				traits = {	exiled 	}
+		}
+
+	}
+	TAM_Pablo_Alapakt={
+		name="Pablo Alapakt"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Pablo_Alapakt
+				traits = {	army_chief_maneuver_2 	}
+		}
+
+	}
+	TAM_Bohdan_Ghiagno={
+		name="Bohdan Ghiagno"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Bohdan_Ghiagno
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	TAM_Bori_Kuga={
+		name="Bori Kuga"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Bori_Kuga
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	TAM_Julo_Ghiagno={
+		name="Julo Ghiagno"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Julo_Ghiagno
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	TAM_Alexan_Ribuk={
+		name="Alexan Ribuk"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Alexan_Ribuk
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	TAM_Giacolosla_Kuga={
+		name="Giacolosla Kuga"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Giacolosla_Kuga
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	TAM_Leona_Alapakt={
+		name="Leona Alapakt"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Leona_Alapakt
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	TAM_Niktor_Igluk={
+		name="Niktor Igluk"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Niktor_Igluk
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	TAM_Vlav_Ribuk={
+		name="Vlav Ribuk"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Vlav_Ribuk
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	TAM_Dranko_Ribuk={
+		name="Dranko Ribuk"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Dranko_Ribuk
+				traits = {	air_air_superiority_2 	}
+		}
+
+	}
+	TAM_Drak_Prad={
+		name="Drak Prad"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Drak_Prad
+				traits = {	army_entrenchment_2 	}
+		}
+
+	}
+	TAM_Milavkolo_Ghiagno={
+		name="Milavkolo Ghiagno"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Milavkolo_Ghiagno
+				traits = {	navy_screen_1 	}
+		}
+
+	}
+	TAM_Alexan_Prad={
+		name="Alexan Prad"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Alexan_Prad
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	TAM_Stefan_Igluk={
+		name="Stefan Igluk"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Stefan_Igluk
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	TAM_Vlan_Ribuk={
+		name="Vlan Ribuk"
+
+		
+		country_leader={
+			ideology=nazism
+			traits = { basileus  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	TAM_Sergei_Ribuk={
+		name="Sergei Ribuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Sergei_Ribuk
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	TAM_Qajaq_Prad={
+		name="Qajaq Prad"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Qajaq_Prad
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	TAM_Olipe_Alapakt={
+		name="Olipe Alapakt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Olipe_Alapakt
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	TAM_Maro_Ghiagno={
+		name="Maro Ghiagno"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Maro_Ghiagno
+				traits = {	spirit_of_genghis 	}
+		}
+
+	}
+	TAM_Bragomon_Truq={
+		name="Bragomon Truq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Bragomon_Truq
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	TAM_Janiko_Ciesija={
+		name="Janiko Ciesija"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Janiko_Ciesija
+				traits = {	collaborator_king 	}
+		}
+
+	}
+	TAM_Jean_Prad={
+		name="Jean Prad"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Jean_Prad
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	TAM_Radosh_Ciesija={
+		name="Radosh Ciesija"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Radosh_Ciesija
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	TAM_Bohdankolas_Ghiagno={
+		name="Bohdankolas Ghiagno"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Bohdankolas_Ghiagno
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	TAM_Robergei_Igluk={
+		name="Robergei Igluk"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Robergei_Igluk
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	TAM_Victorandre_Igluk={
+		name="Victorandre Igluk"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Victorandre_Igluk
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	TAM_Jean_Ribuk={
+		name="Jean Ribuk"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Jean_Ribuk
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	TAM_Stefana_Naku={
+		name="Stefana Naku"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Stefana_Naku
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	TAM_Stefana_Kuga={
+		name="Stefana Kuga"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Stefana_Kuga
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	TAM_Pablo_Ciesija={
+		name="Pablo Ciesija"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Pablo_Ciesija
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	TAM_Silo_Ribuk={
+		name="Silo Ribuk"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Silo_Ribuk
+				traits = {	navy_screen_1 	}
+		}
+
+	}
+	TAM_Julo_Ribuk={
+		name="Julo Ribuk"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Julo_Ribuk
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	TAM_Olexan_Ciesija={
+		name="Olexan Ciesija"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Olexan_Ciesija
+				traits = {	army_entrenchment_1 	}
+		}
+
+	}
+	TAM_Ilya_Truq={
+		name="Ilya Truq"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Ilya_Truq
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	TAM_Milados_Alapakt={
+		name="Milados Alapakt"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Milados_Alapakt
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	TAM_Vlan_Ciesija={
+		name="Vlan Ciesija"
+
+		
+		country_leader={
+			ideology=marxism
+			traits = { infirm  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	TAM_Marlok_Kuga={
+		name="Marlok Kuga"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Marlok_Kuga
+				traits = {	infirm 	}
+		}
+
+	}
+	TAM_Giacolosla_Naku={
+		name="Giacolosla Naku"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Giacolosla_Naku
+				traits = {	political_dancer 	}
+		}
+
+	}
+	TAM_Vlav_Igluk={
+		name="Vlav Igluk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Vlav_Igluk
+				traits = {	polemarch 	}
+		}
+
+	}
+	TAM_Victorandre_Ciesija={
+		name="Victorandre Ciesija"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Victorandre_Ciesija
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	TAM_Miladenek_Ribuk={
+		name="Miladenek Ribuk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Miladenek_Ribuk
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	TAM_Victonardo_Ciesija={
+		name="Victonardo Ciesija"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Victonardo_Ciesija
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	TAM_Panaq_Naku={
+		name="Panaq Naku"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Panaq_Naku
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	TAM_Vicolavko_Igluk={
+		name="Vicolavko Igluk"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Vicolavko_Igluk
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	TAM_Dran_Prad={
+		name="Dran Prad"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Dran_Prad
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	TAM_Jeano_Naku={
+		name="Jeano Naku"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Jeano_Naku
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	TAM_Giacolosla_Ciesija={
+		name="Giacolosla Ciesija"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Giacolosla_Ciesija
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	TAM_Dran_Ribuk={
+		name="Dran Ribuk"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Dran_Ribuk
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	TAM_Niktor_Naku={
+		name="Niktor Naku"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Niktor_Naku
+				traits = {	air_chief_night_operations_2 	}
+		}
+
+	}
+	TAM_Pablo_Prad={
+		name="Pablo Prad"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Pablo_Prad
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	TAM_Albertorio_Igluk={
+		name="Albertorio Igluk"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Albertorio_Igluk
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	TAM_Silosh_Ciesija={
+		name="Silosh Ciesija"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Silosh_Ciesija
+				traits = {	air_air_combat_training_1 	}
+		}
+
+	}
+	TAM_Nuta_Prad={
+		name="Nuta Prad"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Nuta_Prad
+				traits = {	air_tactical_bombing_2 	}
+		}
+
+	}
+	TAM_Roberry_Truq={
+		name="Roberry Truq"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Roberry_Truq
+				traits = {	navy_capital_ship_1 	}
+		}
+
+	}
+	TAM_Vikitar_Alapakt={
+		name="Vikitar Alapakt"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Vikitar_Alapakt
+				traits = {	army_concealment_1 	}
+		}
+
+	}
+	TAM_Bragomon_Armlj={
+		name="Bragomon Armlj"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Bragomon_Armlj
+				traits = {	army_concealment_2 	}
+		}
+
+	}
+	TAM_Dmitril_Kuga={
+		name="Dmitril Kuga"
+
+		
+		country_leader={
+			ideology=liberalism
+			traits = { british_bulldog  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	TAM_Aleg_Igluk={
+		name="Aleg Igluk"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Aleg_Igluk
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	TAM_Ilya_Armlj={
+		name="Ilya Armlj"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Ilya_Armlj
+				traits = {	british_bulldog 	}
+		}
+
+	}
+	TAM_Vicolavko_Truq={
+		name="Vicolavko Truq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Vicolavko_Truq
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	TAM_Bori_Alapakt={
+		name="Bori Alapakt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Bori_Alapakt
+				traits = {	famous_aviator 	}
+		}
+
+	}
+	TAM_Kancescomitr_Truq={
+		name="Kancescomitr Truq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Kancescomitr_Truq
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	TAM_Kunislav_Kuga={
+		name="Kunislav Kuga"
+
+		advisor={
+			slot = political_advisor
+			idea_token = TAM_Kunislav_Kuga
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	TAM_Radek_Alapakt={
+		name="Radek Alapakt"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Radek_Alapakt
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	TAM_Qajaq_Ghiagno={
+		name="Qajaq Ghiagno"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Qajaq_Ghiagno
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	TAM_Julo_Naku={
+		name="Julo Naku"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Julo_Naku
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	TAM_Dusz_Truq={
+		name="Dusz Truq"
+
+		advisor={
+			slot = army_chief
+			idea_token = TAM_Dusz_Truq
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	TAM_Mateona_Ciesija={
+		name="Mateona Ciesija"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Mateona_Ciesija
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	TAM_Androsh_Armlj={
+		name="Androsh Armlj"
+
+		advisor={
+			slot = navy_chief
+			idea_token = TAM_Androsh_Armlj
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	TAM_Iluk_Ghiagno={
+		name="Iluk Ghiagno"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Iluk_Ghiagno
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	TAM_Robergei_Naku={
+		name="Robergei Naku"
+
+		advisor={
+			slot = air_chief
+			idea_token = TAM_Robergei_Naku
+				traits = {	air_chief_night_operations_2 	}
+		}
+
+	}
+	TAM_Kunislav_Alapakt={
+		name="Kunislav Alapakt"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Kunislav_Alapakt
+				traits = {	air_air_superiority_2 	}
+		}
+
+	}
+	TAM_Radosh_Alapakt={
+		name="Radosh Alapakt"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Radosh_Alapakt
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	TAM_Stefan_Truq={
+		name="Stefan Truq"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Stefan_Truq
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	TAM_Nutan_Ghiagno={
+		name="Nutan Ghiagno"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Nutan_Ghiagno
+				traits = {	air_air_superiority_1 	}
+		}
+
+	}
+	TAM_Tomaq_Truq={
+		name="Tomaq Truq"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Tomaq_Truq
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	TAM_Bragomon_Kuga={
+		name="Bragomon Kuga"
+
+		advisor={
+			slot = high_command
+			idea_token = TAM_Bragomon_Kuga
+				traits = {	navy_submarine_2 	}
+		}
+
+	}
+	TAM_Miros_Ciesija={
+		name="Miros Ciesija"
+
+		advisor={
+			slot = theorist
+			idea_token = TAM_Miros_Ciesija
+				traits = {	military_theorist 	}
+		}
+
+	}
+	TAM_Nutan_Truq={
+		name="Nutan Truq"
+
+		advisor={
+			slot = theorist
+			idea_token = TAM_Nutan_Truq
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	TAM_Maro_Prad={
+		name="Maro Prad"
+
+		advisor={
+			slot = theorist
+			idea_token = TAM_Maro_Prad
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

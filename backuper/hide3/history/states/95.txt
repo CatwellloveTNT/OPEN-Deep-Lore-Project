@@ -1,0 +1,37 @@
+
+state={
+	id=95
+	name="STATE_95"
+	manpower = 7881542
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 2853 16}
+		victory_points = { 2854 6}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			arms_factory = 0
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		2836 2837 2838 2839 2840 2841 2842 2843 2844 2845 2846 2847 2848 2849 2850 2851 2852 2853 2854 2855 2856 2857 2858 2859 2860 2861 2862 2863 2864 2865 2866 2867 2868 2869 2870 2871 2872 2873 2874 2875 2876 2877 2878 2879 2880 
+	}
+	local_supplies=0.0 
+}

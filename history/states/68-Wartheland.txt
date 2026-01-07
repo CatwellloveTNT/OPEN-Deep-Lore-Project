@@ -1,0 +1,14 @@
+state={
+	id=68
+	name="STATE_68"
+	resources={
+		aluminium=15
+	}
+	provinces={
+		6236 
+	}
+	manpower=1250840
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

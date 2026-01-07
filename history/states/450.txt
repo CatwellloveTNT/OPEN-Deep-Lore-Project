@@ -1,0 +1,41 @@
+
+state={
+	id=450
+	name="STATE_450"
+	manpower = 6134840
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 12437 7}
+		victory_points = { 12446 7}
+		victory_points = { 12465 1}
+		
+		owner = KIO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			12465 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KIO
+	}
+
+	provinces={
+		12436 12437 12438 12439 12440 12441 12442 12443 12444 12445 12446 12447 12448 12449 12450 12451 12452 12453 12454 12455 12456 12457 12458 12459 12460 12461 12462 12463 12464 12465 12466 12467 12468 12469 12470 12471 12472 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,4645 @@
+focus_tree = {
+	id = SHO_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SHO
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+####### FOCI ########
+	focus = {
+		id = SHO_add_air_experience_2598
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 78
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2607
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2598 }
+		
+		x = 0
+		y = 1
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2600
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2598 }
+		
+		x = 2
+		y = 1
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_stability_2549
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 9
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.15
+
+		}
+	}
+	focus = {
+		id = SHO_add_stability_2537
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_stability_2549 }
+		
+		x = 0
+		y = 1
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2609
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2600 }
+		
+		x = 2
+		y = 2
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2596
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2600 }
+		
+		x = 4
+		y = 2
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2548
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_stability_2549 }
+		
+		x = 2
+		y = 1
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2588
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 55
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			93 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2541
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_political_power_2548 }
+		
+		x = 2
+		y = 2
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 100
+
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2542
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_political_power_2548 }
+		
+		x = 4
+		y = 2
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 100
+
+		}
+	}
+	focus = {
+		id = SHO_develop_civilian_industry_2521
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 100
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			17 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2562
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 32
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_develop_civilian_industry_2525
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_civilian_industry_2521 }
+		
+		x = 0
+		y = 1
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			29 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_war_support_2536
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_political_power_2542 }
+		prerequisite = { focus = SHO_add_political_power_2541 }
+		
+		x = 4
+		y = 3
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.05
+
+		}
+	}
+	focus = {
+		id = SHO_develop_civilian_industry_2518
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_civilian_industry_2521 }
+		
+		x = 2
+		y = 1
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			165 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2572
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2588 }
+		
+		x = 0
+		y = 1
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2571
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2572 }
+		prerequisite = { focus = SHO_sponsor_navy_2588 }
+		
+		x = 0
+		y = 2
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 30
+		}
+	}
+	focus = {
+		id = SHO_attract_immigrants_2529
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_civilian_industry_2518 }
+		prerequisite = { focus = SHO_develop_civilian_industry_2525 }
+		
+		x = 2
+		y = 2
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_SHO_0 }
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2602
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2609 }
+		prerequisite = { focus = SHO_add_air_experience_2607 }
+		
+		x = 2
+		y = 3
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2580
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2588 }
+		prerequisite = { focus = SHO_add_navy_experience_2572 }
+		
+		x = 2
+		y = 2
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			133 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2566
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2562 }
+		
+		x = 0
+		y = 1
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2546
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2536 }
+		prerequisite = { focus = SHO_add_political_power_2541 }
+		
+		x = 4
+		y = 4
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = SHO_develop_civilian_industry_2516
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_civilian_industry_2525 }
+		
+		x = 0
+		y = 2
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			692 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2561
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2566 }
+		
+		x = 0
+		y = 2
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2559
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2566 }
+		
+		x = 2
+		y = 2
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2554
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2559 }
+		prerequisite = { focus = SHO_add_army_experience_2561 }
+		
+		x = 2
+		y = 3
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2605
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2607 }
+		prerequisite = { focus = SHO_add_air_experience_2609 }
+		
+		x = 0
+		y = 3
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2560
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2561 }
+		prerequisite = { focus = SHO_add_army_experience_2559 }
+		
+		x = 0
+		y = 3
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2579
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2580 }
+		
+		x = 2
+		y = 3
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			699 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2540
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_political_power_2546 }
+		prerequisite = { focus = SHO_add_political_power_2542 }
+		
+		x = 4
+		y = 5
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 75
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2591
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2609 }
+		
+		x = 4
+		y = 3
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 30
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2593
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2605 }
+		
+		x = 0
+		y = 4
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2575
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2572 }
+		prerequisite = { focus = SHO_sponsor_navy_2579 }
+		
+		x = 2
+		y = 4
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			44 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2604
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2591 }
+		
+		x = 4
+		y = 4
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_allow_found_faction_2613
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 118
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2589
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2571 }
+		
+		x = 0
+		y = 3
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_develop_state_civilian_2528
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_civilian_industry_2518 }
+		
+		x = 4
+		y = 2
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					17 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				17 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_develop_state_civilian_2514
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_civilian_industry_2516 }
+		
+		x = 0
+		y = 3
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					29 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				29 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2603
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2604 }
+		
+		x = 4
+		y = 5
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2567
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2559 }
+		
+		x = 4
+		y = 3
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2539
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_political_power_2546 }
+		
+		x = 6
+		y = 5
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = SHO_develop_state_civilian_2513
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_2514 }
+		prerequisite = { focus = SHO_develop_state_civilian_2528 }
+		
+		x = 0
+		y = 4
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					691 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				691 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2594
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2603 }
+		
+		x = 4
+		y = 6
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2586
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2579 }
+		
+		x = 2
+		y = 4
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2583
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2571 }
+		prerequisite = { focus = SHO_add_navy_experience_2586 }
+		
+		x = 4
+		y = 5
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			691 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2597
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2605 }
+		
+		x = 2
+		y = 4
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2551
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2560 }
+		
+		x = 0
+		y = 4
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_develop_resource_extraction_2520
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_2513 }
+		prerequisite = { focus = SHO_develop_civilian_industry_2516 }
+		
+		x = 0
+		y = 5
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			160 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			160 = {
+				add_resource = {
+					type = steel
+					amount = 37
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2564
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2560 }
+		
+		x = 2
+		y = 4
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2534
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2536 }
+		
+		x = 6
+		y = 4
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = SHO_add_war_support_2530
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_stability_2537 }
+		
+		x = 0
+		y = 2
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.1
+
+		}
+	}
+	focus = {
+		id = SHO_develop_resource_extraction_2527
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_2528 }
+		prerequisite = { focus = SHO_develop_state_civilian_2514 }
+		
+		x = 4
+		y = 4
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			133 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			133 = {
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_develop_state_civilian_industry_2523
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_resource_extraction_2527 }
+		
+		x = 4
+		y = 5
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					697 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				697 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			697 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2582
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2589 }
+		
+		x = 0
+		y = 4
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2570
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2575 }
+		
+		x = 2
+		y = 5
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			696 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_develop_state_civilian_industry_2524
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_civilian_industry_2516 }
+		prerequisite = { focus = SHO_develop_state_civilian_industry_2523 }
+		
+		x = 2
+		y = 6
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					17 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				17 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			17 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_war_support_2533
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_political_power_2534 }
+		prerequisite = { focus = SHO_add_political_power_2539 }
+		
+		x = 8
+		y = 6
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.1
+
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2584
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2580 }
+		prerequisite = { focus = SHO_sponsor_navy_2570 }
+		
+		x = 6
+		y = 6
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			138 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2565
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2564 }
+		
+		x = 2
+		y = 5
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_develop_research_sector_2510
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_resource_extraction_2520 }
+		
+		x = 0
+		y = 6
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = SHO_develop_naval_industry_2515
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_2513 }
+		
+		x = 2
+		y = 5
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			93 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2553
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2551 }
+		
+		x = 0
+		y = 5
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2592
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2591 }
+		
+		x = 6
+		y = 4
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2599
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2602 }
+		
+		x = 8
+		y = 4
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_attack_opposing_ideology_neighbour_2611
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		x = 133
+		y = 0
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+            modifier = {
+				set_temp_variable = { my_var = 1.0 }
+                    if = {
+                        limit = {
+                            strength_ratio = { tag = LEA ratio > 2.0 }
+                        }
+                        set_temp_variable = { my_var = 2.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = LEA ratio > 1.5 }
+                        }
+                        set_temp_variable = { my_var = 1.5 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = LEA ratio > 1.25 }
+                        }
+                        set_temp_variable = { my_var = 1.25 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = LEA ratio > 1.0 }
+                        }
+                        set_temp_variable = { my_var = 1.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = LEA ratio > 0.75 }
+                        }
+                        set_temp_variable = { my_var = 0.75 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = LEA ratio > 0.5 }
+                        }
+                        set_temp_variable = { my_var = 0.5 }
+                    }
+				factor = my_var
+            }
+
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				LEA = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				ROOT = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 0.1 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 0.25 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 0.1 }
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = { date > 1943.01.01 }
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1941.01.01
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1939.06.06
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1938.06.06
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1937.06.06
+						}
+						set_temp_variable = { my_var = 0.35 }
+					}
+					else_if = {
+						limit = {
+							date > 1936.06.06
+						}
+						set_temp_variable = { my_var = 0.2 }
+					}
+				}
+				factor = my_var
+			}
+		}
+		
+		available = {
+			
+			SHO = {
+				has_government = neutrality
+			}
+
+		}
+
+		bypass = {
+			OR = {
+
+			LEA = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+
+			LEA = {
+				has_government = neutrality
+			}
+
+		}
+
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			create_wargoal = {
+				type = annex_everything
+				target = LEA
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2576
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2589 }
+		
+		x = 4
+		y = 4
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			697 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2569
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2565 }
+		
+		x = 2
+		y = 6
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_add_war_support_2538
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_stability_2537 }
+		
+		x = 6
+		y = 2
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.075
+
+		}
+	}
+	focus = {
+		id = SHO_add_political_power_2543
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2538 }
+		prerequisite = { focus = SHO_add_political_power_2534 }
+		
+		x = 6
+		y = 5
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_political_power = 75
+
+		}
+	}
+	focus = {
+		id = SHO_attack_opposing_ideology_neighbour_2610
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_attack_opposing_ideology_neighbour_2611 }
+		
+		x = 0
+		y = 1
+		relative_position_id = SHO_attack_opposing_ideology_neighbour_2611
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+            modifier = {
+				set_temp_variable = { my_var = 1.0 }
+                    if = {
+                        limit = {
+                            strength_ratio = { tag = QIM ratio > 2.0 }
+                        }
+                        set_temp_variable = { my_var = 2.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = QIM ratio > 1.5 }
+                        }
+                        set_temp_variable = { my_var = 1.5 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = QIM ratio > 1.25 }
+                        }
+                        set_temp_variable = { my_var = 1.25 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = QIM ratio > 1.0 }
+                        }
+                        set_temp_variable = { my_var = 1.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = QIM ratio > 0.75 }
+                        }
+                        set_temp_variable = { my_var = 0.75 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = QIM ratio > 0.5 }
+                        }
+                        set_temp_variable = { my_var = 0.5 }
+                    }
+				factor = my_var
+            }
+
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				QIM = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				ROOT = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 0.1 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 0.25 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 0.1 }
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = { date > 1943.01.01 }
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1941.01.01
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1939.06.06
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1938.06.06
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1937.06.06
+						}
+						set_temp_variable = { my_var = 0.35 }
+					}
+					else_if = {
+						limit = {
+							date > 1936.06.06
+						}
+						set_temp_variable = { my_var = 0.2 }
+					}
+				}
+				factor = my_var
+			}
+		}
+		
+		available = {
+			
+			SHO = {
+				has_government = neutrality
+			}
+
+		}
+
+		bypass = {
+			OR = {
+
+			QIM = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+
+			QIM = {
+				has_government = neutrality
+			}
+
+		}
+
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			create_wargoal = {
+				type = annex_everything
+				target = QIM
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2555
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2554 }
+		
+		x = 4
+		y = 4
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2577
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2582 }
+		
+		x = 0
+		y = 5
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			697 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2585
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_navy_experience_2586 }
+		
+		x = 4
+		y = 5
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			138 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_attack_opposing_ideology_neighbour_adjacent_2612
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_attack_opposing_ideology_neighbour_2610 }
+		
+		x = 0
+		y = 2
+		relative_position_id = SHO_attack_opposing_ideology_neighbour_2611
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+            modifier = {
+				set_temp_variable = { my_var = 1.0 }
+                    if = {
+                        limit = {
+                            strength_ratio = { tag = KAW ratio > 2.0 }
+                        }
+                        set_temp_variable = { my_var = 2.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = KAW ratio > 1.5 }
+                        }
+                        set_temp_variable = { my_var = 1.5 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = KAW ratio > 1.25 }
+                        }
+                        set_temp_variable = { my_var = 1.25 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = KAW ratio > 1.0 }
+                        }
+                        set_temp_variable = { my_var = 1.0 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = KAW ratio > 0.75 }
+                        }
+                        set_temp_variable = { my_var = 0.75 }
+                    }
+                    else_if = {
+                        limit = {
+                            strength_ratio = { tag = KAW ratio > 0.5 }
+                        }
+                        set_temp_variable = { my_var = 0.5 }
+                    }
+				factor = my_var
+            }
+
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				KAW = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 1.0 }
+				ROOT = {
+					if = {
+						limit = {
+							enemies_strength_ratio > 2.0
+						}
+						set_temp_variable = { my_var = 0.1 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.5
+						}
+						set_temp_variable = { my_var = 0.25 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 1.0
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.75
+						}
+						set_temp_variable = { my_var = 0.75 }
+					}
+					else_if = {
+						limit = {
+							enemies_strength_ratio > 0.5
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+				}
+				factor = my_var
+			}
+			modifier = {
+				set_temp_variable = { my_var = 0.1 }
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = { date > 1943.01.01 }
+						}
+						set_temp_variable = { my_var = 2.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1941.01.01
+						}
+						set_temp_variable = { my_var = 1.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1939.06.06
+						}
+						set_temp_variable = { my_var = 1.0 }
+					}
+					else_if = {
+						limit = {
+							date > 1938.06.06
+						}
+						set_temp_variable = { my_var = 0.5 }
+					}
+					else_if = {
+						limit = {
+							date > 1937.06.06
+						}
+						set_temp_variable = { my_var = 0.35 }
+					}
+					else_if = {
+						limit = {
+							date > 1936.06.06
+						}
+						set_temp_variable = { my_var = 0.2 }
+					}
+				}
+				factor = my_var
+			}
+		}
+		
+		available = {
+			
+			SHO = {
+				has_government = neutrality
+			}
+
+		}
+
+		bypass = {
+			OR = {
+
+			KAW = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+
+			KAW = {
+				has_government = neutrality
+			}
+
+		}
+
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			create_wargoal = {
+				type = annex_everything
+				target = KAW
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2574
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2585 }
+		prerequisite = { focus = SHO_sponsor_navy_2577 }
+		
+		x = 4
+		y = 6
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_develop_state_civilian_2512
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_industry_2523 }
+		prerequisite = { focus = SHO_develop_research_sector_2510 }
+		
+		x = 4
+		y = 7
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					133 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				133 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_develop_arms_industry_2526
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_research_sector_2510 }
+		
+		x = 0
+		y = 7
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			133 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_stability_2544
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2530 }
+		
+		x = 0
+		y = 3
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.15
+
+		}
+	}
+	focus = {
+		id = SHO_add_war_support_2547
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_stability_2544 }
+		prerequisite = { focus = SHO_add_war_support_2535 }
+		
+		x = 0
+		y = 4
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.15
+
+		}
+	}
+	focus = {
+		id = SHO_add_war_support_2535
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2530 }
+		
+		x = 2
+		y = 3
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.15
+
+		}
+	}
+	focus = {
+		id = SHO_develop_state_civilian_2519
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_2512 }
+		
+		x = 4
+		y = 8
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					44 = {
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				44 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2590
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2593 }
+		prerequisite = { focus = SHO_add_air_experience_2596 }
+		
+		x = 0
+		y = 5
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_add_stability_2531
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2547 }
+		
+		x = 0
+		y = 5
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.1
+
+		}
+	}
+	focus = {
+		id = SHO_attract_immigrants_2511
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_2514 }
+		prerequisite = { focus = SHO_develop_naval_industry_2515 }
+		
+		x = 2
+		y = 6
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_ideas = { immigration_bonus_SHO_1 }
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2568
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2553 }
+		
+		x = 0
+		y = 6
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2581
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2585 }
+		prerequisite = { focus = SHO_sponsor_navy_2570 }
+		
+		x = 6
+		y = 6
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2563
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2565 }
+		
+		x = 4
+		y = 6
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2595
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2599 }
+		prerequisite = { focus = SHO_add_air_experience_2592 }
+		
+		x = 8
+		y = 5
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_develop_naval_industry_2522
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_2512 }
+		
+		x = 6
+		y = 8
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			699 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_develop_resource_extraction_2517
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_develop_state_civilian_industry_2524 }
+		prerequisite = { focus = SHO_develop_arms_industry_2526 }
+		
+		x = 2
+		y = 8
+		relative_position_id = SHO_develop_civilian_industry_2521
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+			692 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			692 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2587
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2583 }
+		
+		x = 8
+		y = 6
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			691 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_navy_experience_2578
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2576 }
+		
+		x = 6
+		y = 5
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2608
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2593 }
+		prerequisite = { focus = SHO_add_air_experience_2597 }
+		
+		x = 2
+		y = 5
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2557
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2564 }
+		
+		x = 4
+		y = 5
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2550
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2551 }
+		
+		x = 6
+		y = 5
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2601
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2603 }
+		
+		x = 6
+		y = 6
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 30
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2552
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2557 }
+		
+		x = 6
+		y = 6
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = SHO_sponsor_navy_2573
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_sponsor_navy_2570 }
+		
+		x = 2
+		y = 6
+		relative_position_id = SHO_sponsor_navy_2588
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			138 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2558
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2567 }
+		
+		x = 6
+		y = 4
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 35
+		}
+	}
+	focus = {
+		id = SHO_add_air_experience_2606
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_air_experience_2590 }
+		prerequisite = { focus = SHO_add_air_experience_2594 }
+		
+		x = 0
+		y = 7
+		relative_position_id = SHO_add_air_experience_2598
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			air_experience = 30
+		}
+	}
+	focus = {
+		id = SHO_add_stability_2545
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2538 }
+		
+		x = 8
+		y = 3
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_stability = 0.1
+
+		}
+	}
+	focus = {
+		id = SHO_add_army_experience_2556
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_army_experience_2553 }
+		
+		x = 8
+		y = 6
+		relative_position_id = SHO_add_army_experience_2562
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = SHO_add_war_support_2532
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHO_add_war_support_2535 }
+		
+		x = 2
+		y = 4
+		relative_position_id = SHO_add_stability_2549
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+		
+		ai_will_do = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+			add_war_support = 0.05
+
+		}
+	}
+
+	
+	
+}

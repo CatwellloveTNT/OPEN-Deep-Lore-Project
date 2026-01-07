@@ -1,0 +1,880 @@
+characters = {
+	DAW_Nablose_Ghurhaykh={
+		name="Nablose Ghurhaykh"
+
+		
+		country_leader={
+			ideology=despotism
+			traits = { celebrity_junta_leader  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	DAW_Nablo_Guerra={
+		name="Nablo Guerra"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Nablo_Guerra
+				traits = {	humble 	}
+		}
+
+	}
+	DAW_Jean_Ghurhaykh={
+		name="Jean Ghurhaykh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Jean_Ghurhaykh
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	DAW_Jeano_Dawatilm={
+		name="Jeano Dawatilm"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Jeano_Dawatilm
+				traits = {	humble 	}
+		}
+
+	}
+	DAW_Ibrandre_Dawatilm={
+		name="Ibrandre Dawatilm"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Ibrandre_Dawatilm
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	DAW_Mohamal_Porito={
+		name="Mohamal Porito"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Mohamal_Porito
+				traits = {	humble 	}
+		}
+
+	}
+	DAW_Fais_Lucel={
+		name="Fais Lucel"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Fais_Lucel
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	DAW_Rami_Erolda={
+		name="Rami Erolda"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Rami_Erolda
+				traits = {	army_chief_maneuver_2 	}
+		}
+
+	}
+	DAW_Farco_Erolda={
+		name="Farco Erolda"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Farco_Erolda
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	DAW_Majid_Fuoceltancip={
+		name="Majid Fuoceltancip"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Majid_Fuoceltancip
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	DAW_Rami_Dawatilm={
+		name="Rami Dawatilm"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Rami_Dawatilm
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	DAW_Ibrahim_Lucel={
+		name="Ibrahim Lucel"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Ibrahim_Lucel
+				traits = {	navy_chief_old_guard_1 	}
+		}
+
+	}
+	DAW_Giacomoud_Porito={
+		name="Giacomoud Porito"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Giacomoud_Porito
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	DAW_Mohami_Fuoceltancip={
+		name="Mohami Fuoceltancip"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Mohami_Fuoceltancip
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	DAW_Hassal_Fuoceltancip={
+		name="Hassal Fuoceltancip"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Hassal_Fuoceltancip
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	DAW_Ricto_Najara={
+		name="Ricto Najara"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Ricto_Najara
+				traits = {	air_air_combat_training_2 	}
+		}
+
+	}
+	DAW_Rictonandro_Porito={
+		name="Rictonandro Porito"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Rictonandro_Porito
+				traits = {	air_air_superiority_2 	}
+		}
+
+	}
+	DAW_Giacomoud_Najara={
+		name="Giacomoud Najara"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Giacomoud_Najara
+				traits = {	army_logistics_2 	}
+		}
+
+	}
+	DAW_Nablo_Fuoceltancip={
+		name="Nablo Fuoceltancip"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Nablo_Fuoceltancip
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	DAW_Ibrahim_Dawatilm={
+		name="Ibrahim Dawatilm"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Ibrahim_Dawatilm
+				traits = {	army_regrouping_1 	}
+		}
+
+	}
+	DAW_Ibrah_Ghurhaykh={
+		name="Ibrah Ghurhaykh"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Ibrah_Ghurhaykh
+				traits = {	navy_submarine_2 	}
+		}
+
+	}
+	DAW_Samo_Impirahre={
+		name="Samo Impirahre"
+
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits = { polemarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	DAW_Khal_Najarte={
+		name="Khal Najarte"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Khal_Najarte
+				traits = {	inexperienced_imperialist 	}
+		}
+
+	}
+	DAW_Alberto_Najara={
+		name="Alberto Najara"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Alberto_Najara
+				traits = {	generallissimo 	}
+		}
+
+	}
+	DAW_Mohamoud_Dawatilm={
+		name="Mohamoud Dawatilm"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Mohamoud_Dawatilm
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	DAW_Felid_Ghurhaykh={
+		name="Felid Ghurhaykh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Felid_Ghurhaykh
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	DAW_Imrano_Erolda={
+		name="Imrano Erolda"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Imrano_Erolda
+				traits = {	autocratic_imperialist 	}
+		}
+
+	}
+	DAW_Alberto_Fuoceltancip={
+		name="Alberto Fuoceltancip"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Alberto_Fuoceltancip
+				traits = {	collaborator_king 	}
+		}
+
+	}
+	DAW_Marid_Porito={
+		name="Marid Porito"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Marid_Porito
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	DAW_Rammed_Impirahre={
+		name="Rammed Impirahre"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Rammed_Impirahre
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	DAW_Abdulid_Najara={
+		name="Abdulid Najara"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Abdulid_Najara
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	DAW_Mohamal_Guerra={
+		name="Mohamal Guerra"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Mohamal_Guerra
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	DAW_Pedre_Ghurhaykh={
+		name="Pedre Ghurhaykh"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Pedre_Ghurhaykh
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	DAW_Samo_Erolda={
+		name="Samo Erolda"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Samo_Erolda
+				traits = {	navy_chief_old_guard_2 	}
+		}
+
+	}
+	DAW_Ramir_Fuoceltancip={
+		name="Ramir Fuoceltancip"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Ramir_Fuoceltancip
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	DAW_Nicardo_Ghurhaykh={
+		name="Nicardo Ghurhaykh"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Nicardo_Ghurhaykh
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	DAW_Nablose_Erolda={
+		name="Nablose Erolda"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Nablose_Erolda
+				traits = {	navy_screen_1 	}
+		}
+
+	}
+	DAW_Majid_Porito={
+		name="Majid Porito"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Majid_Porito
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	DAW_Ramza_Impirahre={
+		name="Ramza Impirahre"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Ramza_Impirahre
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	DAW_Jean_Guerra={
+		name="Jean Guerra"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Jean_Guerra
+				traits = {	air_air_combat_training_2 	}
+		}
+
+	}
+	DAW_Bruno_Fuoceltancip={
+		name="Bruno Fuoceltancip"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Bruno_Fuoceltancip
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	DAW_Matteo_Lucel={
+		name="Matteo Lucel"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Matteo_Lucel
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	DAW_Nablose_Najarte={
+		name="Nablose Najarte"
+
+		
+		country_leader={
+			ideology=leninism
+			traits = { political_dancer  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	DAW_Enzo_Fuoceltancip={
+		name="Enzo Fuoceltancip"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Enzo_Fuoceltancip
+				traits = {	infirm 	}
+		}
+
+	}
+	DAW_Jullassandre_Impirahre={
+		name="Jullassandre Impirahre"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Jullassandre_Impirahre
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	DAW_Khammedro_Dawatilm={
+		name="Khammedro Dawatilm"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Khammedro_Dawatilm
+				traits = {	indomitable_perseverance 	}
+		}
+
+	}
+	DAW_Samad_Porito={
+		name="Samad Porito"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Samad_Porito
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	DAW_Tarlo_Dawatilm={
+		name="Tarlo Dawatilm"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Tarlo_Dawatilm
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	DAW_Ibrah_Porito={
+		name="Ibrah Porito"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Ibrah_Porito
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	DAW_Ibran_Lucel={
+		name="Ibran Lucel"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Ibran_Lucel
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	DAW_Zaisali_Ghurhaykh={
+		name="Zaisali Ghurhaykh"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Zaisali_Ghurhaykh
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	DAW_Zaisali_Erolda={
+		name="Zaisali Erolda"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Zaisali_Erolda
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	DAW_Alipe_Najarte={
+		name="Alipe Najarte"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Alipe_Najarte
+				traits = {	army_chief_planning_1 	}
+		}
+
+	}
+	DAW_Nicomo_Dawatilm={
+		name="Nicomo Dawatilm"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Nicomo_Dawatilm
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	DAW_Mohamal_Erolda={
+		name="Mohamal Erolda"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Mohamal_Erolda
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	DAW_Hassal_Lucel={
+		name="Hassal Lucel"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Hassal_Lucel
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	DAW_Nablo_Porito={
+		name="Nablo Porito"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Nablo_Porito
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	DAW_Ibrahim_Ghurhaykh={
+		name="Ibrahim Ghurhaykh"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Ibrahim_Ghurhaykh
+				traits = {	navy_naval_air_defense_1 	}
+		}
+
+	}
+	DAW_Jullassandre_Porito={
+		name="Jullassandre Porito"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Jullassandre_Porito
+				traits = {	air_tactical_bombing_2 	}
+		}
+
+	}
+	DAW_Thim_Lucel={
+		name="Thim Lucel"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Thim_Lucel
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	DAW_Mohalien_Ghurhaykh={
+		name="Mohalien Ghurhaykh"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Mohalien_Ghurhaykh
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	DAW_Thim_Dawatilm={
+		name="Thim Dawatilm"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Thim_Dawatilm
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	DAW_Nicardo_Dawatilm={
+		name="Nicardo Dawatilm"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Nicardo_Dawatilm
+				traits = {	army_artillery_1 	}
+		}
+
+	}
+	DAW_Nicomo_Impirahre={
+		name="Nicomo Impirahre"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { the_banker  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	DAW_Marco_Erolda={
+		name="Marco Erolda"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Marco_Erolda
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	DAW_Adnardo_Impirahre={
+		name="Adnardo Impirahre"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Adnardo_Impirahre
+				traits = {	rearmer 	}
+		}
+
+	}
+	DAW_Giacomoud_Guerra={
+		name="Giacomoud Guerra"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Giacomoud_Guerra
+				traits = {	the_banker 	}
+		}
+
+	}
+	DAW_Alberto_Ghurhaykh={
+		name="Alberto Ghurhaykh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Alberto_Ghurhaykh
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	DAW_Mahim_Lucel={
+		name="Mahim Lucel"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Mahim_Lucel
+				traits = {	liberal_democratic_paragon 	}
+		}
+
+	}
+	DAW_Andre_Impirahre={
+		name="Andre Impirahre"
+
+		advisor={
+			slot = political_advisor
+			idea_token = DAW_Andre_Impirahre
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	DAW_Ramza_Fuoceltancip={
+		name="Ramza Fuoceltancip"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Ramza_Fuoceltancip
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	DAW_Ibrandre_Guerra={
+		name="Ibrandre Guerra"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Ibrandre_Guerra
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	DAW_Anwar_Dawatilm={
+		name="Anwar Dawatilm"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Anwar_Dawatilm
+				traits = {	army_chief_reform_1 	}
+		}
+
+	}
+	DAW_Khal_Lucel={
+		name="Khal Lucel"
+
+		advisor={
+			slot = army_chief
+			idea_token = DAW_Khal_Lucel
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	DAW_Ibran_Najarte={
+		name="Ibran Najarte"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Ibran_Najarte
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	DAW_Ramir_Erolda={
+		name="Ramir Erolda"
+
+		advisor={
+			slot = navy_chief
+			idea_token = DAW_Ramir_Erolda
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	DAW_Ramir_Lucel={
+		name="Ramir Lucel"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Ramir_Lucel
+				traits = {	air_chief_ground_support_2 	}
+		}
+
+	}
+	DAW_Frahya_Ghurhaykh={
+		name="Frahya Ghurhaykh"
+
+		advisor={
+			slot = air_chief
+			idea_token = DAW_Frahya_Ghurhaykh
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	DAW_Abdulid_Najarte={
+		name="Abdulid Najarte"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Abdulid_Najarte
+				traits = {	navy_amphibious_assault_1 	}
+		}
+
+	}
+	DAW_Anwar_Lucel={
+		name="Anwar Lucel"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Anwar_Lucel
+				traits = {	air_naval_strike_1 	}
+		}
+
+	}
+	DAW_Abdulid_Dawatilm={
+		name="Abdulid Dawatilm"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Abdulid_Dawatilm
+				traits = {	army_artillery_1 	}
+		}
+
+	}
+	DAW_Pablo_Porito={
+		name="Pablo Porito"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Pablo_Porito
+				traits = {	air_airborne_1 	}
+		}
+
+	}
+	DAW_Fran_Guerra={
+		name="Fran Guerra"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Fran_Guerra
+				traits = {	navy_anti_submarine_1 	}
+		}
+
+	}
+	DAW_Ahmon_Erolda={
+		name="Ahmon Erolda"
+
+		advisor={
+			slot = high_command
+			idea_token = DAW_Ahmon_Erolda
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	DAW_Albertonio_Lucel={
+		name="Albertonio Lucel"
+
+		advisor={
+			slot = theorist
+			idea_token = DAW_Albertonio_Lucel
+				traits = {	military_theorist 	}
+		}
+
+	}
+	DAW_Adnardo_Najara={
+		name="Adnardo Najara"
+
+		advisor={
+			slot = theorist
+			idea_token = DAW_Adnardo_Najara
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	DAW_Nica_Najarte={
+		name="Nica Najarte"
+
+		advisor={
+			slot = theorist
+			idea_token = DAW_Nica_Najarte
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

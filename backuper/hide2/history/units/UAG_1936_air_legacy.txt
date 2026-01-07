@@ -1,0 +1,20 @@
+air_wings = {
+		249 = { 								
+		nav_bomber_equipment_0 = { owner = "UAG" amount = 22 version_name = "Tempula Mk 2" }
+
+	}
+	245 = { 								
+		tac_bomber_equipment_0 = { owner = "UAG" amount = 27 version_name = "Tempula Mk 0" }
+
+	}
+	284 = { 								
+		CAS_equipment_0 = { owner = "UAG" amount = 27 version_name = "Medictoroimb Mk 2" }
+
+	}
+	180 = { 								
+		fighter_equipment_0 = { owner = "UAG" amount = 35 version_name = "Medictoroimb Mk 1" }
+
+	}
+
+
+}

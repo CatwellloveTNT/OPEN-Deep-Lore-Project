@@ -1,0 +1,27 @@
+units= {
+	##### NAVAL UNITS #####
+	
+		fleet = {
+		name = "Azegza Fleet"			
+		naval_base = 15076
+		task_force = {
+			name = "Azegza Fleet"
+			location = 15076
+			
+						ship = { name = "Tislin" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = AZE version_name = "Tislin Class" } }	}
+
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+}
+
+#####################

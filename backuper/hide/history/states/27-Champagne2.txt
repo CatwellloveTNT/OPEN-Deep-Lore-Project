@@ -1,0 +1,14 @@
+state={
+	id=27
+	name="STATE_27"
+	resources={
+		aluminium=11
+	}
+	provinces={
+		3444 3451 3462 3470 3478 3480 3506 
+	}
+	manpower=1370800
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

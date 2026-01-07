@@ -1,0 +1,14 @@
+state={
+	id=257
+	name="STATE_257"
+	resources={
+		chromium=7
+	}
+	provinces={
+		9245 9312 9367 9422 
+	}
+	manpower=1779583
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

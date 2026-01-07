@@ -1,0 +1,38 @@
+
+state={
+	id=12
+	name="STATE_12"
+	manpower = 12072541
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 373 28}
+		victory_points = { 399 11}
+		victory_points = { 400 1}
+		
+		owner = QIM
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			arms_factory = 3
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = QIM
+	}
+
+	provinces={
+		364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 
+	}
+	local_supplies=0.0 
+}

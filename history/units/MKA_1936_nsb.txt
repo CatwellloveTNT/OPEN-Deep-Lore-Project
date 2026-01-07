@@ -1,0 +1,232 @@
+division_template = {
+	name = "Militia Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 0 y = 2 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 1 y = 1 }
+			infantry = {  x = 1 y = 2 }
+			infantry = {  x = 2 y = 0 }
+			infantry = {  x = 2 y = 1 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Artillery Division"
+
+	regiments = {
+			infantry = {  x = 0 y = 0 }
+			infantry = {  x = 0 y = 1 }
+			infantry = {  x = 1 y = 0 }
+			infantry = {  x = 2 y = 0 }
+			artillery_brigade = {  x = 3 y = 0 }
+			artillery_brigade = {  x = 3 y = 1 }
+			artillery_brigade = {  x = 3 y = 2 }
+
+	}
+	
+	support = {
+			anti_air = {  x = 0 y = 0 }
+
+	}
+}
+division_template = {
+	name = "Cavalry Division"
+
+	regiments = {
+			cavalry = {  x = 0 y = 0 }
+			cavalry = {  x = 0 y = 1 }
+			cavalry = {  x = 0 y = 2 }
+			cavalry = {  x = 1 y = 0 }
+			cavalry = {  x = 1 y = 1 }
+			cavalry = {  x = 1 y = 2 }
+			cavalry = {  x = 2 y = 0 }
+			cavalry = {  x = 2 y = 1 }
+			cavalry = {  x = 2 y = 2 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Motorized Division"
+
+	regiments = {
+			motorized = {  x = 0 y = 0 }
+			motorized = {  x = 0 y = 1 }
+			motorized = {  x = 0 y = 2 }
+			motorized = {  x = 1 y = 0 }
+			motorized = {  x = 1 y = 1 }
+			motorized = {  x = 1 y = 2 }
+
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Supported Motorized Division"
+
+	regiments = {
+			motorized = {  x = 0 y = 0 }
+			motorized = {  x = 0 y = 1 }
+			motorized = {  x = 1 y = 0 }
+			motorized = {  x = 1 y = 1 }
+			motorized = {  x = 2 y = 0 }
+			motorized = {  x = 2 y = 1 }
+
+	}
+	
+	support = {
+			artillery = {  x = 0 y = 0 }
+
+	}
+}
+division_template = {
+	name = "Motorized Artillery Division"
+
+	regiments = {
+			motorized = {  x = 0 y = 0 }
+			motorized = {  x = 0 y = 1 }
+			motorized = {  x = 0 y = 2 }
+			motorized = {  x = 0 y = 3 }
+			motorized = {  x = 1 y = 0 }
+			motorized = {  x = 1 y = 1 }
+			motorized = {  x = 1 y = 2 }
+			mot_artillery_brigade = {  x = 2 y = 0 }
+
+	}
+	
+	support = {
+			anti_air = {  x = 0 y = 0 }
+
+	}
+}
+
+
+units = {
+	division= {
+		name = "1nd 'Nouruq' Militia Division"
+		location = 14908
+		division_template = "Militia Division"
+		start_experience_factor = 0.589798
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "2rd 'Nasra' Militia Division"
+		location = 8258
+		division_template = "Militia Division"
+		start_experience_factor = 0.134686
+		start_equipment_factor = 0.976021
+	}
+	division= {
+		name = "3th 'Khaqq' Militia Division"
+		location = 8275
+		division_template = "Militia Division"
+		start_experience_factor = 0.743818
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "4th 'Tikman' Militia Division"
+		location = 9925
+		division_template = "Militia Division"
+		start_experience_factor = 0.778559
+		start_equipment_factor = 0.944537
+	}
+	division= {
+		name = "5th 'Tikman' Militia Division"
+		location = 10138
+		division_template = "Militia Division"
+		start_experience_factor = 0.164339
+		start_equipment_factor = 0.984010
+	}
+	division= {
+		name = "1nd 'Tzamna' Infantry Division"
+		location = 8293
+		division_template = "Infantry Division"
+		start_experience_factor = 0.277384
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "2rd 'Manzil' Infantry Division"
+		location = 8162
+		division_template = "Infantry Division"
+		start_experience_factor = 0.284626
+		start_equipment_factor = 0.969860
+	}
+	division= {
+		name = "3th 'Madini' Infantry Division"
+		location = 8967
+		division_template = "Infantry Division"
+		start_experience_factor = 0.474864
+		start_equipment_factor = 0.971467
+	}
+	division= {
+		name = "1nd 'Chabr' Artillery Division"
+		location = 10286
+		division_template = "Artillery Division"
+		start_experience_factor = 0.482594
+		start_equipment_factor = 0.956922
+	}
+	division= {
+		name = "2rd 'Rabil' Artillery Division"
+		location = 8274
+		division_template = "Artillery Division"
+		start_experience_factor = 0.706230
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "1nd 'Mancue' Cavalry Division"
+		location = 8183
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.229727
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "2rd 'Tzamna' Cavalry Division"
+		location = 8144
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.684496
+		start_equipment_factor = 0.979494
+	}
+	division= {
+		name = "3th 'Amria' Cavalry Division"
+		location = 9724
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.258746
+		start_equipment_factor = 1.000000
+	}
+	division= {
+		name = "1nd 'Chabr' Motorized Division"
+		location = 8453
+		division_template = "Motorized Division"
+		start_experience_factor = 0.986263
+		start_equipment_factor = 1.000000
+	}
+
+}

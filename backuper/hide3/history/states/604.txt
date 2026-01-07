@@ -1,0 +1,41 @@
+
+state={
+	id=604
+	name="STATE_604"
+	manpower = 4279541
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 15803 7}
+		victory_points = { 15813 3}
+		victory_points = { 15817 3}
+		
+		owner = KIO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			15813 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KIO
+	}
+
+	provinces={
+		15803 15804 15805 15806 15807 15808 15809 15810 15811 15812 15813 15814 15815 15816 15817 
+	}
+	local_supplies=0.0 
+}

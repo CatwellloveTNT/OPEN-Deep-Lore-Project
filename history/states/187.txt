@@ -1,0 +1,38 @@
+
+state={
+	id=187
+	name="STATE_187"
+	manpower = 4650847
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 5356 2}
+		victory_points = { 5360 6}
+		victory_points = { 5361 2}
+		
+		owner = UAG
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = UAG
+	}
+
+	provinces={
+		5349 5350 5351 5352 5353 5354 5355 5356 5357 5358 5359 5360 5361 5362 5363 5364 5365 5366 5367 5368 5369 5370 5371 5372 
+	}
+	local_supplies=0.0 
+}

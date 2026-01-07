@@ -1,0 +1,16 @@
+state={
+	id=275
+	name="STATE_275"
+	resources={
+		steel=11
+		chromium=53
+		coal=14
+	}
+	provinces={
+		12064 12648 
+	}
+	manpower=3680363
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

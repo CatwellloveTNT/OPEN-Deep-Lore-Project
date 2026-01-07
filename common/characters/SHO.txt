@@ -1,0 +1,880 @@
+characters = {
+	SHO_Saeesh_Asmaig={
+		name="Saeesh Asmaig"
+
+		
+		country_leader={
+			ideology=centrism
+			traits = { staunch_constitutionalist  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHO_Rhys_Glean={
+		name="Rhys Glean"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Rhys_Glean
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	SHO_Deesh_Danippu={
+		name="Deesh Danippu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Deesh_Danippu
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	SHO_Omir_Tuailt={
+		name="Omir Tuailt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Omir_Tuailt
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	SHO_Majiv_Glean={
+		name="Majiv Glean"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Majiv_Glean
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	SHO_Milan_Asmaig={
+		name="Milan Asmaig"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Milan_Asmaig
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	SHO_Ramus_Thilal={
+		name="Ramus Thilal"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Ramus_Thilal
+				traits = {	socialite_connections 	}
+		}
+
+	}
+	SHO_Harun_Sepah={
+		name="Harun Sepah"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Harun_Sepah
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	SHO_Harun_Asmaig={
+		name="Harun Asmaig"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Harun_Asmaig
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	SHO_Hossein_Baiyar={
+		name="Hossein Baiyar"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Hossein_Baiyar
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	SHO_Raman_Glean={
+		name="Raman Glean"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Raman_Glean
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	SHO_Armarak_Shaddonam={
+		name="Armarak Shaddonam"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Armarak_Shaddonam
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	SHO_Eoinn_Asmaig={
+		name="Eoinn Asmaig"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Eoinn_Asmaig
+				traits = {	navy_chief_maneuver_1 	}
+		}
+
+	}
+	SHO_Eoin_Tuailt={
+		name="Eoin Tuailt"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Eoin_Tuailt
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	SHO_Rhys_Tuailt={
+		name="Rhys Tuailt"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Rhys_Tuailt
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	SHO_Reza_Domayeh={
+		name="Reza Domayeh"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Reza_Domayeh
+				traits = {	air_close_air_support_1 	}
+		}
+
+	}
+	SHO_Rezad_Glean={
+		name="Rezad Glean"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Rezad_Glean
+				traits = {	army_commando_2 	}
+		}
+
+	}
+	SHO_Eoin_Asmaig={
+		name="Eoin Asmaig"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Eoin_Asmaig
+				traits = {	army_entrenchment_1 	}
+		}
+
+	}
+	SHO_Owen_Sepah={
+		name="Owen Sepah"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Owen_Sepah
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	SHO_Krish_Shaddonam={
+		name="Krish Shaddonam"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Krish_Shaddonam
+				traits = {	navy_fleet_logistics_2 	}
+		}
+
+	}
+	SHO_Eoinn_Sepah={
+		name="Eoinn Sepah"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Eoinn_Sepah
+				traits = {	air_close_air_support_2 	}
+		}
+
+	}
+	SHO_Karan_Baiyar={
+		name="Karan Baiyar"
+
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits = { celebrity_junta_leader  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHO_Raghanoj_Sepah={
+		name="Raghanoj Sepah"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Raghanoj_Sepah
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	SHO_Hostafa_Domayeh={
+		name="Hostafa Domayeh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Hostafa_Domayeh
+				traits = {	infirm 	}
+		}
+
+	}
+	SHO_Kiran_Iradart={
+		name="Kiran Iradart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Kiran_Iradart
+				traits = {	autokrator 	}
+		}
+
+	}
+	SHO_Hostafa_Thilal={
+		name="Hostafa Thilal"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Hostafa_Thilal
+				traits = {	polemarch 	}
+		}
+
+	}
+	SHO_Kavehdi_Shaddonam={
+		name="Kavehdi Shaddonam"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Kavehdi_Shaddonam
+				traits = {	autocratic_imperialist 	}
+		}
+
+	}
+	SHO_Hostafa_Iradart={
+		name="Hostafa Iradart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Hostafa_Iradart
+				traits = {	warmonger 	}
+		}
+
+	}
+	SHO_Karharhamus_Baiyar={
+		name="Karharhamus Baiyar"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Karharhamus_Baiyar
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	SHO_Saeenthilad_Tuailt={
+		name="Saeenthilad Tuailt"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Saeenthilad_Tuailt
+				traits = {	army_chief_defensive_2 	}
+		}
+
+	}
+	SHO_Hossein_Asmaig={
+		name="Hossein Asmaig"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Hossein_Asmaig
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	SHO_Seam_Iradart={
+		name="Seam Iradart"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Seam_Iradart
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	SHO_Manod_Iradart={
+		name="Manod Iradart"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Manod_Iradart
+				traits = {	navy_chief_maneuver_2 	}
+		}
+
+	}
+	SHO_Majiv_Baiyar={
+		name="Majiv Baiyar"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Majiv_Baiyar
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	SHO_Bran_Tuailt={
+		name="Bran Tuailt"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Bran_Tuailt
+				traits = {	air_chief_night_operations_2 	}
+		}
+
+	}
+	SHO_Anil_Baiyar={
+		name="Anil Baiyar"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Anil_Baiyar
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	SHO_Rezadeesh_Thilal={
+		name="Rezadeesh Thilal"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Rezadeesh_Thilal
+				traits = {	navy_amphibious_assault_2 	}
+		}
+
+	}
+	SHO_Ajay_Danippu={
+		name="Ajay Danippu"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Ajay_Danippu
+				traits = {	army_infantry_2 	}
+		}
+
+	}
+	SHO_Navehzad_Sepah={
+		name="Navehzad Sepah"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Navehzad_Sepah
+				traits = {	army_artillery_2 	}
+		}
+
+	}
+	SHO_Padeesh_Domayeh={
+		name="Padeesh Domayeh"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Padeesh_Domayeh
+				traits = {	army_regrouping_1 	}
+		}
+
+	}
+	SHO_Milan_Glean={
+		name="Milan Glean"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Milan_Glean
+				traits = {	air_pilot_training_2 	}
+		}
+
+	}
+	SHO_Seam_Domayeh={
+		name="Seam Domayeh"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Seam_Domayeh
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	SHO_Ragharhar_Tuailt={
+		name="Ragharhar Tuailt"
+
+		
+		country_leader={
+			ideology=leninism
+			traits = { mastermind_code_cracker  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHO_Fergus_Iradart={
+		name="Fergus Iradart"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Fergus_Iradart
+				traits = {	political_dancer 	}
+		}
+
+	}
+	SHO_Ahmaladeen_Tuailt={
+		name="Ahmaladeen Tuailt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Ahmaladeen_Tuailt
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	SHO_Hossan_Baiyar={
+		name="Hossan Baiyar"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Hossan_Baiyar
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	SHO_Karharish_Danippu={
+		name="Karharish Danippu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Karharish_Danippu
+				traits = {	political_dancer 	}
+		}
+
+	}
+	SHO_Niaranoj_Glean={
+		name="Niaranoj Glean"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Niaranoj_Glean
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	SHO_Reza_Asmaig={
+		name="Reza Asmaig"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Reza_Asmaig
+				traits = {	infirm 	}
+		}
+
+	}
+	SHO_Owen_Baiyar={
+		name="Owen Baiyar"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Owen_Baiyar
+				traits = {	army_chief_entrenchment_2 	}
+		}
+
+	}
+	SHO_Raghanoj_Domayeh={
+		name="Raghanoj Domayeh"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Raghanoj_Domayeh
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	SHO_Hossan_Sepah={
+		name="Hossan Sepah"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Hossan_Sepah
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	SHO_Vijay_Iradart={
+		name="Vijay Iradart"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Vijay_Iradart
+				traits = {	army_chief_morale_1 	}
+		}
+
+	}
+	SHO_Varhan_Shaddonam={
+		name="Varhan Shaddonam"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Varhan_Shaddonam
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	SHO_Rezadeesh_Domayeh={
+		name="Rezadeesh Domayeh"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Rezadeesh_Domayeh
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	SHO_Eoin_Shaddonam={
+		name="Eoin Shaddonam"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Eoin_Shaddonam
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	SHO_Niaranoj_Danippu={
+		name="Niaranoj Danippu"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Niaranoj_Danippu
+				traits = {	air_chief_safety_2 	}
+		}
+
+	}
+	SHO_Shavi_Asmaig={
+		name="Shavi Asmaig"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Shavi_Asmaig
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	SHO_Pran_Sepah={
+		name="Pran Sepah"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Pran_Sepah
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	SHO_Ciamid_Iradart={
+		name="Ciamid Iradart"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Ciamid_Iradart
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	SHO_Shavi_Baiyar={
+		name="Shavi Baiyar"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Shavi_Baiyar
+				traits = {	air_airborne_1 	}
+		}
+
+	}
+	SHO_Kavehdi_Glean={
+		name="Kavehdi Glean"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Kavehdi_Glean
+				traits = {	air_airborne_2 	}
+		}
+
+	}
+	SHO_Ajay_Asmaig={
+		name="Ajay Asmaig"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Ajay_Asmaig
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	SHO_Varthil_Shaddonam={
+		name="Varthil Shaddonam"
+
+		
+		country_leader={
+			ideology=conservatism
+			traits = { chamberlain_appeaser  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	SHO_Kiran_Asmaig={
+		name="Kiran Asmaig"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Kiran_Asmaig
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	SHO_Vijay_Domayeh={
+		name="Vijay Domayeh"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Vijay_Domayeh
+				traits = {	conservative_grandee 	}
+		}
+
+	}
+	SHO_Kavehdi_Tuailt={
+		name="Kavehdi Tuailt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Kavehdi_Tuailt
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	SHO_Niaranoj_Asmaig={
+		name="Niaranoj Asmaig"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Niaranoj_Asmaig
+				traits = {	staunch_constitutionalist 	}
+		}
+
+	}
+	SHO_Keir_Tuailt={
+		name="Keir Tuailt"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Keir_Tuailt
+				traits = {	first_lady 	}
+		}
+
+	}
+	SHO_Vinn_Danippu={
+		name="Vinn Danippu"
+
+		advisor={
+			slot = political_advisor
+			idea_token = SHO_Vinn_Danippu
+				traits = {	the_banker 	}
+		}
+
+	}
+	SHO_Paran_Sepah={
+		name="Paran Sepah"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Paran_Sepah
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	SHO_Rezadeesh_Iradart={
+		name="Rezadeesh Iradart"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Rezadeesh_Iradart
+				traits = {	army_chief_reform_2 	}
+		}
+
+	}
+	SHO_Hossan_Iradart={
+		name="Hossan Iradart"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Hossan_Iradart
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	SHO_Armarak_Danippu={
+		name="Armarak Danippu"
+
+		advisor={
+			slot = army_chief
+			idea_token = SHO_Armarak_Danippu
+				traits = {	army_chief_drill_2 	}
+		}
+
+	}
+	SHO_Krishna_Baiyar={
+		name="Krishna Baiyar"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Krishna_Baiyar
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	SHO_Seam_Danippu={
+		name="Seam Danippu"
+
+		advisor={
+			slot = navy_chief
+			idea_token = SHO_Seam_Danippu
+				traits = {	navy_chief_naval_aviation_1 	}
+		}
+
+	}
+	SHO_Ciar_Shaddonam={
+		name="Ciar Shaddonam"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Ciar_Shaddonam
+				traits = {	air_chief_reform_2 	}
+		}
+
+	}
+	SHO_Omir_Asmaig={
+		name="Omir Asmaig"
+
+		advisor={
+			slot = air_chief
+			idea_token = SHO_Omir_Asmaig
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	SHO_Harun_Danippu={
+		name="Harun Danippu"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Harun_Danippu
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	SHO_Karan_Danippu={
+		name="Karan Danippu"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Karan_Danippu
+				traits = {	navy_submarine_1 	}
+		}
+
+	}
+	SHO_Sureth_Domayeh={
+		name="Sureth Domayeh"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Sureth_Domayeh
+				traits = {	navy_carrier_2 	}
+		}
+
+	}
+	SHO_Deesh_Asmaig={
+		name="Deesh Asmaig"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Deesh_Asmaig
+				traits = {	air_bomber_interception_2 	}
+		}
+
+	}
+	SHO_Garem_Iradart={
+		name="Garem Iradart"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Garem_Iradart
+				traits = {	air_close_air_support_2 	}
+		}
+
+	}
+	SHO_Rajiv_Domayeh={
+		name="Rajiv Domayeh"
+
+		advisor={
+			slot = high_command
+			idea_token = SHO_Rajiv_Domayeh
+				traits = {	army_armored_1 	}
+		}
+
+	}
+	SHO_Reza_Sepah={
+		name="Reza Sepah"
+
+		advisor={
+			slot = theorist
+			idea_token = SHO_Reza_Sepah
+				traits = {	military_theorist 	}
+		}
+
+	}
+	SHO_Ahmaladeen_Asmaig={
+		name="Ahmaladeen Asmaig"
+
+		advisor={
+			slot = theorist
+			idea_token = SHO_Ahmaladeen_Asmaig
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	SHO_Saeesh_Iradart={
+		name="Saeesh Iradart"
+
+		advisor={
+			slot = theorist
+			idea_token = SHO_Saeesh_Iradart
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

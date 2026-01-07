@@ -1,0 +1,40 @@
+
+state={
+	id=298
+	name="STATE_298"
+	manpower = 1596710
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=3
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8383 1}
+		victory_points = { 8388 2}
+		
+		owner = BAW
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			8382 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = BAW
+	}
+
+	provinces={
+		8374 8375 8376 8377 8378 8379 8380 8381 8382 8383 8384 8385 8386 8387 8388 
+	}
+	local_supplies=0.0 
+}

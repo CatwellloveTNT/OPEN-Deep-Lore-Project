@@ -1,0 +1,40 @@
+
+state={
+	id=295
+	name="STATE_295"
+	manpower = 1924455
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8325 2}
+		victory_points = { 8328 3}
+		
+		owner = MKA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			8328 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MKA
+	}
+
+	provinces={
+		8325 8326 8327 8328 8329 8330 
+	}
+	local_supplies=0.0 
+}

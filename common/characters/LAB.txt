@@ -1,0 +1,880 @@
+characters = {
+	LAB_Samza_Labazila={
+		name="Samza Labazila"
+
+		
+		country_leader={
+			ideology=despotism
+			traits = { socialite_connections  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	LAB_Anwarlo_Labazila={
+		name="Anwarlo Labazila"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Anwarlo_Labazila
+				traits = {	headstrong 	}
+		}
+
+	}
+	LAB_Jamza_Carierco={
+		name="Jamza Carierco"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Jamza_Carierco
+				traits = {	humble 	}
+		}
+
+	}
+	LAB_Anwar_Carierco={
+		name="Anwar Carierco"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Anwar_Carierco
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	LAB_Paolal_Allifl={
+		name="Paolal Allifl"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Paolal_Allifl
+				traits = {	humble 	}
+		}
+
+	}
+	LAB_Sami_Scriq={
+		name="Sami Scriq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Sami_Scriq
+				traits = {	humble 	}
+		}
+
+	}
+	LAB_Mardo_Sogge={
+		name="Mardo Sogge"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Mardo_Sogge
+				traits = {	inexperienced_monarch 	}
+		}
+
+	}
+	LAB_Alberry_Trub={
+		name="Alberry Trub"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Alberry_Trub
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	LAB_Imrahim_Labazila={
+		name="Imrahim Labazila"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Imrahim_Labazila
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	LAB_Alexan_Visn={
+		name="Alexan Visn"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Alexan_Visn
+				traits = {	army_chief_maneuver_2 	}
+		}
+
+	}
+	LAB_Rica_Colo={
+		name="Rica Colo"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Rica_Colo
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	LAB_Anto_Carierco={
+		name="Anto Carierco"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Anto_Carierco
+				traits = {	navy_chief_commerce_raiding_2 	}
+		}
+
+	}
+	LAB_Pabilahmoud_Allifl={
+		name="Pabilahmoud Allifl"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Pabilahmoud_Allifl
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	LAB_Nico_Colo={
+		name="Nico Colo"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Nico_Colo
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	LAB_Steo_Colo={
+		name="Steo Colo"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Steo_Colo
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	LAB_Karcolal_Ramla={
+		name="Karcolal Ramla"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Karcolal_Ramla
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	LAB_Jamza_Scriq={
+		name="Jamza Scriq"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Jamza_Scriq
+				traits = {	army_cavalry_2 	}
+		}
+
+	}
+	LAB_Sami_Sogge={
+		name="Sami Sogge"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Sami_Sogge
+				traits = {	air_strategic_bombing_1 	}
+		}
+
+	}
+	LAB_Khami_Labazila={
+		name="Khami Labazila"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Khami_Labazila
+				traits = {	navy_capital_ship_2 	}
+		}
+
+	}
+	LAB_Yahya_Colo={
+		name="Yahya Colo"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Yahya_Colo
+				traits = {	air_air_superiority_1 	}
+		}
+
+	}
+	LAB_Saad_Colo={
+		name="Saad Colo"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Saad_Colo
+				traits = {	navy_carrier_1 	}
+		}
+
+	}
+	LAB_Thien_Carierco={
+		name="Thien Carierco"
+
+		
+		country_leader={
+			ideology=rexism
+			traits = { polemarch  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	LAB_Tarim_Colo={
+		name="Tarim Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Tarim_Colo
+				traits = {	autokrator 	}
+		}
+
+	}
+	LAB_Imran_Scortaab={
+		name="Imran Scortaab"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Imran_Scortaab
+				traits = {	basileus 	}
+		}
+
+	}
+	LAB_Yahmo_Scortaab={
+		name="Yahmo Scortaab"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Yahmo_Scortaab
+				traits = {	archon_basileus 	}
+		}
+
+	}
+	LAB_Nicar_Labazila={
+		name="Nicar Labazila"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Nicar_Labazila
+				traits = {	collaborator_king 	}
+		}
+
+	}
+	LAB_Adnariq_Labazila={
+		name="Adnariq Labazila"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Adnariq_Labazila
+				traits = {	infirm 	}
+		}
+
+	}
+	LAB_Khali_Allifl={
+		name="Khali Allifl"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Khali_Allifl
+				traits = {	celebrity_junta_leader 	}
+		}
+
+	}
+	LAB_Jamza_Labazila={
+		name="Jamza Labazila"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Jamza_Labazila
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	LAB_Abdulid_Trub={
+		name="Abdulid Trub"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Abdulid_Trub
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	LAB_Imrahmal_Labazila={
+		name="Imrahmal Labazila"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Imrahmal_Labazila
+				traits = {	army_chief_drill_1 	}
+		}
+
+	}
+	LAB_Mardo_Colo={
+		name="Mardo Colo"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Mardo_Colo
+				traits = {	army_chief_offensive_1 	}
+		}
+
+	}
+	LAB_Mohammed_Scortaab={
+		name="Mohammed Scortaab"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Mohammed_Scortaab
+				traits = {	navy_chief_commerce_raiding_1 	}
+		}
+
+	}
+	LAB_Bruno_Labazila={
+		name="Bruno Labazila"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Bruno_Labazila
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	LAB_Karco_Scortaab={
+		name="Karco Scortaab"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Karco_Scortaab
+				traits = {	air_chief_night_operations_1 	}
+		}
+
+	}
+	LAB_Rammed_Trub={
+		name="Rammed Trub"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Rammed_Trub
+				traits = {	air_chief_old_guard_1 	}
+		}
+
+	}
+	LAB_Steo_Visn={
+		name="Steo Visn"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Steo_Visn
+				traits = {	air_tactical_bombing_1 	}
+		}
+
+	}
+	LAB_Giaco_Allifl={
+		name="Giaco Allifl"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Giaco_Allifl
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	LAB_Roberry_Colo={
+		name="Roberry Colo"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Roberry_Colo
+				traits = {	army_artillery_1 	}
+		}
+
+	}
+	LAB_Mardo_Ramla={
+		name="Mardo Ramla"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Mardo_Ramla
+				traits = {	army_commando_1 	}
+		}
+
+	}
+	LAB_Anto_Ramla={
+		name="Anto Ramla"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Anto_Ramla
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	LAB_Pabilahmoud_Visn={
+		name="Pabilahmoud Visn"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Pabilahmoud_Visn
+				traits = {	army_armored_2 	}
+		}
+
+	}
+	LAB_Rammed_Ramla={
+		name="Rammed Ramla"
+
+		
+		country_leader={
+			ideology=anarchist_communism
+			traits = { mastermind_code_cracker  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	LAB_Robertor_Trub={
+		name="Robertor Trub"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Robertor_Trub
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	LAB_Pedre_Carierco={
+		name="Pedre Carierco"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Pedre_Carierco
+				traits = {	infirm 	}
+		}
+
+	}
+	LAB_Omad_Colo={
+		name="Omad Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Omad_Colo
+				traits = {	mastermind_code_cracker 	}
+		}
+
+	}
+	LAB_Omad_Ramla={
+		name="Omad Ramla"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Omad_Ramla
+				traits = {	political_dancer 	}
+		}
+
+	}
+	LAB_Faid_Colo={
+		name="Faid Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Faid_Colo
+				traits = {	reluctant_stalinist 	}
+		}
+
+	}
+	LAB_Nicar_Sogge={
+		name="Nicar Sogge"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Nicar_Sogge
+				traits = {	infirm 	}
+		}
+
+	}
+	LAB_Samza_Visn={
+		name="Samza Visn"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Samza_Visn
+				traits = {	army_chief_defensive_1 	}
+		}
+
+	}
+	LAB_Faid_Carierco={
+		name="Faid Carierco"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Faid_Carierco
+				traits = {	army_chief_maneuver_1 	}
+		}
+
+	}
+	LAB_Omad_Carierco={
+		name="Omad Carierco"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Omad_Carierco
+				traits = {	army_chief_offensive_2 	}
+		}
+
+	}
+	LAB_Jamal_Sogge={
+		name="Jamal Sogge"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Jamal_Sogge
+				traits = {	army_chief_organizational_2 	}
+		}
+
+	}
+	LAB_Mahim_Labazila={
+		name="Mahim Labazila"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Mahim_Labazila
+				traits = {	navy_chief_reform_2 	}
+		}
+
+	}
+	LAB_Alexan_Ramla={
+		name="Alexan Ramla"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Alexan_Ramla
+				traits = {	navy_chief_reform_1 	}
+		}
+
+	}
+	LAB_Jullassal_Allifl={
+		name="Jullassal Allifl"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Jullassal_Allifl
+				traits = {	air_chief_old_guard_2 	}
+		}
+
+	}
+	LAB_Alberry_Ramla={
+		name="Alberry Ramla"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Alberry_Ramla
+				traits = {	air_chief_ground_support_1 	}
+		}
+
+	}
+	LAB_Alexan_Allifl={
+		name="Alexan Allifl"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Alexan_Allifl
+				traits = {	navy_screen_2 	}
+		}
+
+	}
+	LAB_Abdulid_Allifl={
+		name="Abdulid Allifl"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Abdulid_Allifl
+				traits = {	navy_submarine_2 	}
+		}
+
+	}
+	LAB_Zaisal_Sogge={
+		name="Zaisal Sogge"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Zaisal_Sogge
+				traits = {	army_regrouping_2 	}
+		}
+
+	}
+	LAB_Frah_Trub={
+		name="Frah Trub"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Frah_Trub
+				traits = {	navy_submarine_2 	}
+		}
+
+	}
+	LAB_Yahierton_Scortaab={
+		name="Yahierton Scortaab"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Yahierton_Scortaab
+				traits = {	navy_submarine_2 	}
+		}
+
+	}
+	LAB_Vico_Allifl={
+		name="Vico Allifl"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Vico_Allifl
+				traits = {	navy_naval_air_defense_2 	}
+		}
+
+	}
+	LAB_Omal_Carierco={
+		name="Omal Carierco"
+
+		
+		country_leader={
+			ideology=socialism
+			traits = { the_banker  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+	LAB_Ibrahya_Colo={
+		name="Ibrahya Colo"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Ibrahya_Colo
+				traits = {	first_lady 	}
+		}
+
+	}
+	LAB_Omarid_Visn={
+		name="Omarid Visn"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Omarid_Visn
+				traits = {	rearmer 	}
+		}
+
+	}
+	LAB_Giaco_Labazila={
+		name="Giaco Labazila"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Giaco_Labazila
+				traits = {	rearmer 	}
+		}
+
+	}
+	LAB_Mohal_Trub={
+		name="Mohal Trub"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Mohal_Trub
+				traits = {	the_young_magnate 	}
+		}
+
+	}
+	LAB_Thien_Trub={
+		name="Thien Trub"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Thien_Trub
+				traits = {	chamberlain_appeaser 	}
+		}
+
+	}
+	LAB_Faid_Scriq={
+		name="Faid Scriq"
+
+		advisor={
+			slot = political_advisor
+			idea_token = LAB_Faid_Scriq
+				traits = {	infirm 	}
+		}
+
+	}
+	LAB_Anwardo_Sogge={
+		name="Anwardo Sogge"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Anwardo_Sogge
+				traits = {	army_chief_entrenchment_1 	}
+		}
+
+	}
+	LAB_Andre_Labazila={
+		name="Andre Labazila"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Andre_Labazila
+				traits = {	army_chief_morale_2 	}
+		}
+
+	}
+	LAB_Imran_Sogge={
+		name="Imran Sogge"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Imran_Sogge
+				traits = {	army_chief_planning_2 	}
+		}
+
+	}
+	LAB_Jamza_Ramla={
+		name="Jamza Ramla"
+
+		advisor={
+			slot = army_chief
+			idea_token = LAB_Jamza_Ramla
+				traits = {	army_chief_organizational_1 	}
+		}
+
+	}
+	LAB_Zaisal_Colo={
+		name="Zaisal Colo"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Zaisal_Colo
+				traits = {	navy_chief_decisive_battle_1 	}
+		}
+
+	}
+	LAB_Frah_Scortaab={
+		name="Frah Scortaab"
+
+		advisor={
+			slot = navy_chief
+			idea_token = LAB_Frah_Scortaab
+				traits = {	navy_chief_decisive_battle_2 	}
+		}
+
+	}
+	LAB_Matteo_Ramla={
+		name="Matteo Ramla"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Matteo_Ramla
+				traits = {	air_chief_safety_1 	}
+		}
+
+	}
+	LAB_Ramza_Allifl={
+		name="Ramza Allifl"
+
+		advisor={
+			slot = air_chief
+			idea_token = LAB_Ramza_Allifl
+				traits = {	air_chief_all_weather_2 	}
+		}
+
+	}
+	LAB_Yahmoud_Carierco={
+		name="Yahmoud Carierco"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Yahmoud_Carierco
+				traits = {	army_CombinedArms_2 	}
+		}
+
+	}
+	LAB_Karcolal_Scortaab={
+		name="Karcolal Scortaab"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Karcolal_Scortaab
+				traits = {	air_air_superiority_2 	}
+		}
+
+	}
+	LAB_Bruno_Carierco={
+		name="Bruno Carierco"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Bruno_Carierco
+				traits = {	navy_submarine_2 	}
+		}
+
+	}
+	LAB_Pedre_Visn={
+		name="Pedre Visn"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Pedre_Visn
+				traits = {	air_pilot_training_1 	}
+		}
+
+	}
+	LAB_Yahmoud_Colo={
+		name="Yahmoud Colo"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Yahmoud_Colo
+				traits = {	army_entrenchment_1 	}
+		}
+
+	}
+	LAB_Mahim_Ramla={
+		name="Mahim Ramla"
+
+		advisor={
+			slot = high_command
+			idea_token = LAB_Mahim_Ramla
+				traits = {	navy_anti_submarine_1 	}
+		}
+
+	}
+	LAB_Adnariq_Carierco={
+		name="Adnariq Carierco"
+
+		advisor={
+			slot = theorist
+			idea_token = LAB_Adnariq_Carierco
+				traits = {	military_theorist 	}
+		}
+
+	}
+	LAB_Ahmad_Carierco={
+		name="Ahmad Carierco"
+
+		advisor={
+			slot = theorist
+			idea_token = LAB_Ahmad_Carierco
+				traits = {	naval_theorist 	}
+		}
+
+	}
+	LAB_Ahmad_Allifl={
+		name="Ahmad Allifl"
+
+		advisor={
+			slot = theorist
+			idea_token = LAB_Ahmad_Allifl
+				traits = {	air_warfare_theorist 	}
+		}
+
+	}
+}

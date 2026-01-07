@@ -1,0 +1,30 @@
+air_wings = {
+		606 = { 								
+		small_plane_airframe_0 = { owner = "MAT" amount = 50 version_name = "Cone Mk 2" }
+
+	}
+	278 = { 								
+		small_plane_naval_bomber_airframe_0 = { owner = "MAT" amount = 50 version_name = "Allo Mk 0" }
+
+	}
+	289 = { 								
+		small_plane_cas_airframe_0 = { owner = "MAT" amount = 50 version_name = "Chia Mk 2" }
+small_plane_airframe_0 = { owner = "MAT" amount = 50 version_name = "Cone Mk 2" }
+
+	}
+	168 = { 								
+		small_plane_cas_airframe_0 = { owner = "MAT" amount = 50 version_name = "Chia Mk 2" }
+
+	}
+	178 = { 								
+		medium_plane_airframe_0 = { owner = "MAT" amount = 50 version_name = "Muftim Mk 1" }
+
+	}
+	174 = { 								
+		small_plane_naval_bomber_airframe_0 = { owner = "MAT" amount = 50 version_name = "Allo Mk 0" }
+medium_plane_airframe_0 = { owner = "MAT" amount = 50 version_name = "Muftim Mk 1" }
+
+	}
+
+
+}

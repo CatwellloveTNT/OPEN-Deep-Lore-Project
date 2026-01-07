@@ -1,0 +1,39 @@
+
+state={
+	id=141
+	name="STATE_141"
+	manpower = 1945347
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 4106 4}
+		
+		owner = TAM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 0
+			industrial_complex = 1
+			
+			4108 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TAM
+	}
+
+	provinces={
+		4105 4106 4107 4108 4109 4110 4111 4112 
+	}
+	local_supplies=0.0 
+}

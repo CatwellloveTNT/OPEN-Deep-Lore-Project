@@ -1,0 +1,40 @@
+
+state={
+	id=165
+	name="STATE_165"
+	manpower = 4060966
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=5
+		oil=3
+		rubber=0
+		steel=9
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 4625 4}
+		victory_points = { 4685 4}
+		
+		owner = SHO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			4650 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = SHO
+	}
+
+	provinces={
+		4618 4619 4620 4621 4622 4623 4624 4625 4626 4627 4628 4629 4630 4631 4632 4633 4634 4635 4636 4637 4638 4639 4640 4641 4642 4643 4644 4645 4646 4647 4648 4649 4650 4651 4652 4653 4654 4655 4656 4657 4658 4659 4660 4661 4662 4663 4664 4665 4666 4667 4668 4669 4670 4671 4672 4673 4674 4675 4676 4677 4678 4679 4680 4681 4682 4683 4684 4685 
+	}
+	local_supplies=0.0 
+}

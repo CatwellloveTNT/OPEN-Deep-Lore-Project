@@ -1,0 +1,14 @@
+state={
+	id=424
+	name="STATE_424"
+	resources={
+		coal=3
+	}
+	provinces={
+		12180 12779 
+	}
+	manpower=15791700
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

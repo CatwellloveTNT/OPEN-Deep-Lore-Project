@@ -1,0 +1,36 @@
+
+state={
+	id=403
+	name="STATE_403"
+	manpower = 4724923
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 11202 12}
+		
+		owner = CAS
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = CAS
+	}
+
+	provinces={
+		11190 11191 11192 11193 11194 11195 11196 11197 11198 11199 11200 11201 11202 11203 11204 11205 11206 11207 11208 11209 11210 11211 11212 11213 
+	}
+	local_supplies=0.0 
+}

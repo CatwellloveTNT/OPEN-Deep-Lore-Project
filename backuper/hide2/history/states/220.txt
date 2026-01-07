@@ -1,0 +1,36 @@
+
+state={
+	id=220
+	name="STATE_220"
+	manpower = 2158404
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=3
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 6280 4}
+		
+		owner = MAT
+		buildings = {
+			infrastructure = 1
+			air_base = 2
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MAT
+	}
+
+	provinces={
+		6275 6276 6277 6278 6279 6280 6281 6282 6283 6284 6285 
+	}
+	local_supplies=0.0 
+}
