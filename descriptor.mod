@@ -1,4 +1,4 @@
-version="0.1"
+version="1"
 tags={
 	"Alternative History"
 	"Events"
@@ -8,8 +8,9 @@ tags={
 	"Technologies"
 	"Military"
 }
-name="OPEN"
-supported_version="1.16.10"
+
+name="again"
+supported_version="1.17.3.0"
 picture="tn.png"
 
 replace_path="common/ai_peace"
