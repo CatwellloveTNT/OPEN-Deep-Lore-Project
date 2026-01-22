@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_COL_test
+		texturefile = 'gfx/leaders/COL/portrait_COL_test.dds'
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	COL_IDK = {
+		name = COL_IDK
+		portraits = {
+			civilian = {
+				large = GFX_portrait_COL_test
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				conservative_grandee
+			}
+			expire = "1938.1.1.1"
+		}
+	}
+}
