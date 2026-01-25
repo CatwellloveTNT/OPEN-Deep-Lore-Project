@@ -1,10 +1,11 @@
 continents = {
-	Baleta
-	Natsaentza
-	Lano
-	Anga
-	Allo
-	Brehrahna
+	Ponyland
+	The_Cradle
+	Avianica
+	Arctic
+	Naebbirac
+	Homosapianis
+	
 	
 	
 	#Vanilla continents kept in for compatibility. Removing them breaks a lot of references to them
