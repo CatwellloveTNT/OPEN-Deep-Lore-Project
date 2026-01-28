@@ -1,0 +1,10 @@
+state={
+	id=487
+	name="STATE_487"
+	provinces={
+		15949 15950 15951 15952 15953 15954 15955 15956 15958 15959 15960 15961 15963 15964 15965 15966 15968 15986 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}
