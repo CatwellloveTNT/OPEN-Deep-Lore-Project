@@ -1,0 +1,10 @@
+state={
+	id=290
+	name="STATE_290"
+	provinces={
+		1611 1615 1790 1794 1796 1801 1804 1809 1816 1824 1827 20565 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

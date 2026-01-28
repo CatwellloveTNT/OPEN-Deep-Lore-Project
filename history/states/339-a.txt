@@ -1,0 +1,10 @@
+state={
+	id=339
+	name="STATE_339"
+	provinces={
+		928 953 2221 2222 2225 2234 2237 2240 2244 2245 2247 2249 2253 2262 2265 2269 2274 2277 20627 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

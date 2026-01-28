@@ -1,0 +1,10 @@
+state={
+	id=200
+	name="STATE_200"
+	provinces={
+		1230 1234 1238 1239 1240 1243 1253 1256 1258 1260 1270 1275 2145 2157 2822 2824 2829 3068 3074 3085 3087 3089 3096 3102 3105 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

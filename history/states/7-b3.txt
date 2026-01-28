@@ -1,0 +1,10 @@
+state={
+	id=7
+	name="STATE_7"
+	provinces={
+		3444 3447 3457 3462 3468 3470 3482 3486 3493 3507 3509 20181 20185 20192 20193 20199 20203 20205 20208 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

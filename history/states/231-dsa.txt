@@ -1,0 +1,10 @@
+state={
+	id=231
+	name="STATE_231"
+	provinces={
+		1943 1944 1949 1953 1961 1965 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

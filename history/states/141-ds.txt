@@ -1,0 +1,10 @@
+state={
+	id=141
+	name="STATE_141"
+	provinces={
+		1565 1569 1574 1581 2066 3631 3633 3634 3635 3641 3642 3646 3647 3649 3651 3655 3656 3659 3660 3662 3663 3664 3665 3668 3670 3672 20194 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

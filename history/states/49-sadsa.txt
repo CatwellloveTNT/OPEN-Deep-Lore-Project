@@ -1,0 +1,10 @@
+state={
+	id=49
+	name="STATE_49"
+	provinces={
+		891 1806 1820 1832 2404 2405 2413 2415 2418 2421 2423 2429 2433 2434 20587 20588 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

@@ -1,0 +1,19 @@
+state = {
+	id = 18
+	name = "STATE_18"
+	provinces = {
+		1341
+		1342
+		1358
+		1366
+		1367
+		20249
+		20250
+		20251
+		20252
+		20253
+	}
+	manpower = 0
+	buildings_max_level_factor = 1
+	local_supplies = 0
+}

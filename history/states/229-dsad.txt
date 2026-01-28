@@ -1,0 +1,10 @@
+state={
+	id=229
+	name="STATE_229"
+	provinces={
+		443 1935 1940 1947 1948 1952 1957 3380 3383 3385 3388 3390 3394 3396 3397 3398 3422 20151 20159 20175 20178 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

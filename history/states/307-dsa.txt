@@ -1,0 +1,10 @@
+state={
+	id=307
+	name="STATE_307"
+	provinces={
+		2927 2928 2929 2936 2937 2940 2945 2947 2967 2968 2971 2974 3155 3208 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

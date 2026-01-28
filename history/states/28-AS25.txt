@@ -1,0 +1,14 @@
+state = {
+	id = 28
+	name = "STATE_28"
+	provinces = {
+		2926
+		2933
+		2951
+		2961
+		2975
+	}
+	manpower = 0
+	buildings_max_level_factor = 1
+	local_supplies = 0
+}
