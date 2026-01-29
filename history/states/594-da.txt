@@ -1,0 +1,10 @@
+state={
+	id=594
+	name="STATE_594"
+	provinces={
+		8861 8888 8948 8958 9257 9260 9261 9262 9263 9264 9267 9269 9274 9275 9283 9286 9291 9292 9294 9296 9298 9299 9300 10346 10347 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

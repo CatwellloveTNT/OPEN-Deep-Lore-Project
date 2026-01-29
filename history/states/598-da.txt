@@ -1,0 +1,10 @@
+state={
+	id=598
+	name="STATE_598"
+	provinces={
+		8444 8663 8665 8668 9528 9530 9531 9534 9535 9536 9538 9541 9546 9548 9550 9555 9560 9562 9563 9956 9964 9971 9973 9978 10206 10207 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

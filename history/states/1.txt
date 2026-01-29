@@ -1,19 +1,31 @@
-state={
-	id=1
-	name="STATE_1"
-	resources={
-		aluminium=0
-		chromium=2
-		oil=1
-		rubber=0
-		steel=1
-		tungsten=1
+state = {
+	id = 1
+	name = "STATE_1"
+	resources = {
+		aluminium = 0
+		chromium = 2
+		oil = 1
+		rubber = 0
+		steel = 1
+		tungsten = 1
 	}
-	provinces={
-		1 4 8 10 12 14 18 22 23 4218 4219 4221 4226 
+	provinces = {
+		1
+		4
+		8
+		10
+		12
+		14
+		18
+		22
+		23
+		4218
+		4219
+		4221
+		4226
 	}
-	manpower=4990901
-	buildings_max_level_factor=1
-	state_category=large_town
-	local_supplies=0
+	manpower = 4990901
+	buildings_max_level_factor = 1
+	state_category = large_town
+	local_supplies = 0
 }

@@ -1,10 +1,22 @@
-state={
-	id=72
-	name="STATE_72"
-	provinces={
-		2 5 6 9 11 15 19 20 68 
+state = {
+	id = 72
+	name = "STATE_72"
+	provinces = {
+		2
+		5
+		6
+		9
+		11
+		15
+		19
+		20
+		68
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	history = {
+		owner = COL
+		add_core_of = COL
+	}
+	manpower = 0
+	buildings_max_level_factor = 1
+	local_supplies = 0
 }
