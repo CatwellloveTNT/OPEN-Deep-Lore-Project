@@ -1,19 +1,19 @@
-state = {
-	id = 3
-	name = "STATE_3"
-	resources = {
-		aluminium = 0
-		chromium = 2
-		oil = 1
-		rubber = 0
-		steel = 1
-		tungsten = 1
+state={
+	id=3
+	name="STATE_3"
+	resources={
+		aluminium=0
+		chromium=2
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
 	}
-	provinces = {
-		19947
+	provinces={
+		19933 19940 19942 19947 19950 
 	}
-	manpower = 4990901
-	buildings_max_level_factor = 1
-	state_category = large_town
-	local_supplies = 0
+	manpower=4990901
+	buildings_max_level_factor=1
+	state_category=large_town
+	local_supplies=0
 }

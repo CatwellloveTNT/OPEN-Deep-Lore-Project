@@ -1,0 +1,10 @@
+state={
+	id=900
+	name="STATE_900"
+	provinces={
+		10505 10506 10508 10514 11881 19602 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

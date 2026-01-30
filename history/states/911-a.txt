@@ -1,0 +1,10 @@
+state={
+	id=911
+	name="STATE_911"
+	provinces={
+		11271 11276 11280 11284 11294 11295 11299 11300 11308 11313 11827 11836 11842 11854 11856 11858 11863 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

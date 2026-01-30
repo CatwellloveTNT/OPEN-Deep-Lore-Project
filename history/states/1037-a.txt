@@ -1,0 +1,10 @@
+state={
+	id=1037
+	name="STATE_1037"
+	provinces={
+		4821 4822 4823 4825 4826 4828 4830 4835 4836 4839 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}

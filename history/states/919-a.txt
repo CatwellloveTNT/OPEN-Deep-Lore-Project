@@ -1,0 +1,10 @@
+state={
+	id=919
+	name="STATE_919"
+	provinces={
+		11371 11372 11396 11401 11902 11905 11914 11916 11922 11923 11925 11930 11935 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}
