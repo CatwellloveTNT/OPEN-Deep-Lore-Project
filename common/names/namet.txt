@@ -1,4 +1,4 @@
-COL = {
+CLS = {
 	male = {
 		names = {
 			Abner

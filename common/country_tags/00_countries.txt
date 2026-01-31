@@ -1,1 +1,1 @@
-COL = "countries/Coalition States.txt"
+CLS = "countries/Coalition States.txt"

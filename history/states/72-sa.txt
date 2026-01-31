@@ -12,10 +12,6 @@ state = {
 		20
 		68
 	}
-	history = {
-		owner = COL
-		add_core_of = COL
-	}
 	manpower = 0
 	buildings_max_level_factor = 1
 	local_supplies = 0

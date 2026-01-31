@@ -1,10 +1,33 @@
-state={
-	id=900
-	name="STATE_900"
-	provinces={
-		10505 10506 10508 10514 11881 19602 
+state = {
+	id = 900
+	name = "STATE_900"
+	provinces = {
+		10505
+		10506
+		10508
+		10514
+		11881
+		19602
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 256872
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+	history = {
+		owner = CLS
+		victory_points = {
+			10508
+			5
+		}
+		buildings = {
+			infrastructure = 4			#was: 7
+			industrial_complex = 5
+			dockyard = 1
+			air_base = 0
+			10508 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = CLS
+	}
 }

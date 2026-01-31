@@ -1,10 +1,10 @@
-COL = {
-	color = {
+CLS = {
+	color = rgb {
 		22
 		70
 		158
 	}
-	color_ui = {
+	color_ui = rgb {
 		22
 		70
 		158
