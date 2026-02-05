@@ -4,7 +4,43 @@ state={
 	provinces={
 		5395 5413 6199 6210 6211 6218 6831 6840 6843 6848 6852 6864 7359 7363 7368 7370 7450 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 253021
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 10
+		coal = 7
+
+	}
+
+	history = {
+		owner = AVI
+		add_core_of = AVI
+
+		victory_points = {
+			7370
+			3
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3919 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

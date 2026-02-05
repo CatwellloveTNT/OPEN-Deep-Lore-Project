@@ -2,9 +2,50 @@ state={
 	id=898
 	name="STATE_898"
 	provinces={
-		10494 10496 10501 10503 10511 10512 10513 10517 10523 
+		10494 10496 10501 10503 10504 10511 10512 10513 10517 10523 11178 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 3983921
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = CLS
+		add_core_of = CLS
+		add_core_of = TRI
+
+		victory_points = {
+			10512
+			5
+		}
+		victory_points = {
+			10494
+			3
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

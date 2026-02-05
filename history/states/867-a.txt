@@ -4,7 +4,45 @@ state={
 	provinces={
 		10552 10557 10563 10568 11729 11733 11738 11741 11746 11750 11756 11766 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 975473
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 11
+		rubber = 0
+		tungsten = 0
+		steel = 5
+		coal = 0
+
+	}
+
+	history = {
+		owner = CLS
+		add_core_of = CLS
+		add_core_of = KRI
+
+		victory_points = {
+			11733
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			11733 = {
+				naval_base = 1
+			}
+			
+		}
+	}
 }

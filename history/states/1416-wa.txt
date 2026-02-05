@@ -1,40 +1,39 @@
 state={
-	id=916
-	name="STATE_916"
+	id=1416
+	name="STATE_1416"
 	provinces={
-		10567 11467 11477 11478 11674 11681 11684 11685 11688 11691 11695 11885 11891 11892 11897 20384 
+		20045 20046 
 	}
-	manpower = 212123
+	manpower = 1257321
 	buildings_max_level_factor = 1
 	local_supplies = 0
-	state_category = town
+	state_category = large_city
 
 
 	resources = {
-		oil = 0
+		oil = 2
 		chromium = 0
 		aluminium = 0
 		rubber = 0
-		tungsten = 0
+		tungsten = 7
 		steel = 0
 		coal = 0
 
 	}
 
 	history = {
-		owner = CLS
-		add_core_of = CLS
-		add_core_of = AMO
+		owner = ARC
+		add_core_of = ARC
 
 		victory_points = {
-
+			20046
+			20
 		}
 
-
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			industrial_complex = 2
-			arms_factory = 1
+			arms_factory = 2
 			radar_station = 0
 			dockyard = 0
 			air_base = 0

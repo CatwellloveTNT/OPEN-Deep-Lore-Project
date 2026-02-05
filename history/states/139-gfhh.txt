@@ -4,7 +4,39 @@ state={
 	provinces={
 		3496 3883 3903 3912 4578 4588 4590 4592 4597 4615 20224 20226 20228 20230 20231 20232 20233 20693 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 834212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 1
+		rubber = 0
+		tungsten = 0
+		steel = 7
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

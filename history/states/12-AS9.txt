@@ -1,19 +1,42 @@
-state = {
-	id = 12
-	name = "STATE_12"
-	provinces = {
-		3833
-		3835
-		3837
-		3854
-		3855
-		3864
-		3875
-		3880
-		20045
-		20046
+state={
+	id=12
+	name="STATE_12"
+	provinces={
+		3833 3835 3837 3854 3855 3864 3875 3880 
 	}
-	manpower = 0
+	manpower = 745621
 	buildings_max_level_factor = 1
 	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 12
+		rubber = 0
+		tungsten = 0
+		steel = 15
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

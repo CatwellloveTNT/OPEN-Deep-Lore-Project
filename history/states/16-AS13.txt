@@ -4,7 +4,51 @@ state={
 	provinces={
 		1368 1369 1372 1373 1376 1377 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 2010212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = CLS
+		add_core_of = ARC
+
+		victory_points = {
+			1368
+			3
+		}
+		victory_points = {
+			1376
+			3
+		}
+
+		start_resistance = ARC
+		set_compliance = 80
+		set_resistance = 0
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			1368 = {
+				naval_base = 1
+			}
+			
+		}
+	}
 }

@@ -4,7 +4,47 @@ state={
 	provinces={
 		4329 8305 10209 13611 13927 14730 15669 19583 19584 
 	}
-	manpower=1
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 11332329
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+		victory_points = {
+			14730
+			30
+		}
+		victory_points = {
+			10209
+			10
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 4
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

@@ -4,7 +4,38 @@ state={
 	provinces={
 		4998 5001 5008 5012 5023 5031 5038 5050 5051 5068 5072 5081 5082 5098 5099 5100 20516 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 272631
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 2
+		coal = 7
+
+	}
+
+	history = {
+		owner = AVI
+		add_core_of = AVI
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3919 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

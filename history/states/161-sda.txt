@@ -4,7 +4,43 @@ state={
 	provinces={
 		452 453 457 466 467 478 482 487 1566 1573 1580 1588 1595 1596 1834 1835 1836 1837 1838 1841 1843 1844 1845 1846 1847 1849 1850 1851 1853 1854 1855 1857 1858 1859 1860 1861 1863 1864 1865 1866 3946 3947 3950 3951 3953 3957 3958 3962 4105 4112 4418 4423 20171 20173 20183 20191 20204 20206 20211 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 104721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+		victory_points {
+			3953
+			3
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

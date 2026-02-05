@@ -4,7 +4,40 @@ state={
 	provinces={
 		10800 10801 10802 10805 10807 10809 10812 10813 10814 11227 11233 11237 11238 11242 11412 11419 11433 11436 11715 11719 11726 20381 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 21210
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 3
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = CLS
+		add_core_of = CLS
+		add_core_of = WST
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			10920 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

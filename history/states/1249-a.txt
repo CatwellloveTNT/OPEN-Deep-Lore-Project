@@ -4,7 +4,43 @@ state={
 	provinces={
 		5868 5869 5871 5879 5893 5898 5903 5909 5911 5915 5918 5922 5924 5926 5942 5947 5949 5955 5957 5959 5960 5963 5964 6107 6109 6112 6113 6120 6121 6124 6126 6128 6135 6790 6794 6796 6798 6800 7397 7398 7401 7404 7405 7407 7409 7415 7416 7417 7422 7424 7428 7431 7433 7434 7439 7440 7441 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 19232
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 11
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = AVI
+		add_core_of = AVI
+
+		victory_points = {
+			6617
+			3
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3919 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

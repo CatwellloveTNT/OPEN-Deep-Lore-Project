@@ -16,8 +16,8 @@ state={
 		aluminium = 0
 		rubber = 0
 		tungsten = 1
-		steel = 15
-		coal = 3
+		steel = 0
+		coal = 0
 
 	}
 
@@ -32,9 +32,9 @@ state={
 		buildings = {
 			infrastructure = 2	
 			industrial_complex = 1
-			arms_factory = 2
+			arms_factory = 0
 			radar_station = 0
-			dockyard = 1
+			dockyard = 0
 			air_base = 0
 			10870 = {
 				naval_base = 2

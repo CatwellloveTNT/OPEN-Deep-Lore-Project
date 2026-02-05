@@ -2,9 +2,45 @@ state={
 	id=1236
 	name="STATE_1236"
 	provinces={
-		6111 6114 6115 6117 6123 6127 6130 6131 6133 6134 6336 6787 6788 6789 6791 6793 6795 6797 6799 6802 6804 6805 6806 6807 6809 6810 
+		6111 6114 6115 6117 6123 6127 6131 6133 6134 6336 6787 6788 6791 6793 6795 6797 6804 6805 6807 6809 6810 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1023431
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = AVI
+		add_core_of = AVI
+
+		victory_points = {
+			6131
+			3
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3919 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

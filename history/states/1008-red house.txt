@@ -9,7 +9,7 @@ state = {
 		owner = CLS
 		victory_points = {
 			19730
-			40
+			100
 		}
 		buildings = {
 			infrastructure = 5
@@ -19,6 +19,7 @@ state = {
 			supply_node = 1
 		}
 		add_core_of = CLS
+		add_core_of = TRI
 	}
 	manpower = 156
 	buildings_max_level_factor = 1

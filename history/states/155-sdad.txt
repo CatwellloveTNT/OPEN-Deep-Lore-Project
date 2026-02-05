@@ -4,7 +4,39 @@ state={
 	provinces={
 		4380 4382 4389 4402 4410 4413 4536 4537 4539 4541 4545 4548 4549 4550 4553 4557 4560 4562 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1957321
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 2
+		chromium = 7
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

@@ -4,7 +4,45 @@ state={
 	provinces={
 		10403 10412 10448 10449 10450 10460 10467 11245 20415 20428 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 94373
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 3
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 22
+		coal = 0
+
+	}
+
+	history = {
+		owner = CLS
+		add_core_of = CLS
+		add_core_of = TRI
+
+		victory_points = {
+			20415
+			1
+		}
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

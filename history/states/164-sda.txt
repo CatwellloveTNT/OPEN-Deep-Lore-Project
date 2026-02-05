@@ -4,7 +4,44 @@ state={
 	provinces={
 		71 75 78 80 83 86 90 95 97 103 104 105 107 108 113 119 122 124 286 1681 1685 1686 1689 1692 1693 1698 1699 1703 1712 1717 1718 1719 1727 1729 1735 1736 1737 1738 1739 1741 1743 1750 2101 2105 2115 2117 2118 2124 2136 2623 2624 2625 2629 2630 2633 2636 2640 2925 2941 2972 4170 4171 4172 4173 4174 4175 4176 4179 4180 4181 4182 4183 4184 4186 4187 4188 4190 4191 4192 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 365021
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 7
+		tungsten = 0
+		steel = 15
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+		victory_points = {
+			2102
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			11594 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }
