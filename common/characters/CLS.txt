@@ -1,0 +1,17 @@
+characters={
+	CLS_IDK={
+		name=CLS_IDK
+		portraits={
+			civilian={
+				large=TEST.dds
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={
+				conservative_grandee
+			}
+			expire="1938.1.1.1"
+		}
+	}
+}

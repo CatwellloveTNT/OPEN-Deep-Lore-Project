@@ -476,4 +476,251 @@ CLS = {
 			o_goalpost
 		}
 	}
+ARC = {
+	male = {
+		names = {
+			Cloudy
+		}
+	}
+	female = {
+		names = {
+			Lufty
+		}
+	}
+	surnames = {
+		Skies
+	}
+	callsigns = {
+		"Goose"
+		"Iceman"
+		"Maverick"
+		"Apollo"
+		"Animal"
+		"Boom-Boom"
+		"Badger"
+		"Brick"
+		"Cajun"
+		"Challenger"
+		"Chip"
+		"Eagle"
+		"Ghost"
+		"Hawk"
+		"Jaws"
+		"Moses"
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_shadow
+		o_mountain
+		o_active
+		o_joint
+		o_allied
+		o_unified
+		o_resolute
+		o_dark
+		o_bright
+		o_stalwart
+		o_red
+		o_green
+		o_blue
+		o_bold
+		o_defiant
+		o_striking
+	}
+	second = {
+		o_storm
+		o_fox
+		o_shield
+		o_sword
+		o_wolf
+		o_panther
+		o_wind
+		o_thunder
+		o_rain
+		o_pegasus
+		o_star
+		o_phalanx
+		o_resolve
+		o_fire
+		o_force
+		o_eagle
+		o_raptor
+		o_hawk
+		o_lion
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_cartwheel
+			o_chronicle
+			o_postern
+			o_blissful
+			o_dexterity
+			o_cleanslate
+			o_cyclone
+			o_oboe
+			o_watchtower
+		}
+		97 = {
+			o_detachment
+			o_flintlock
+			o_catchpole
+			o_forager
+			o_galvanic
+			o_iceberg
+			o_stalemate
+		}
+		94 = {
+			o_detachment
+			o_flintlock
+			o_catchpole
+			o_forager
+			o_galvanic
+			o_iceberg
+			o_stalemate
+		}
+		84 = {
+			o_detachment
+			o_flintlock
+			o_catchpole
+			o_forager
+			o_galvanic
+			o_iceberg
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_downfall
+			o_olympic
+			o_coronet
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_avalanche
+			o_giant
+			o_buffalo
+			o_husky
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_overlord
+			o_cobra
+			o_roundup
+			o_sledgehammer
+		}
+		19 = {
+			o_overlord
+			o_cobra
+			o_roundup
+			o_sledgehammer
+		}
+		182 = {
+			o_torch
+			o_blackstone
+			o_brushwood
+			o_goalpost
+		}
+		126 = {
+			o_torch
+			o_blackstone
+			o_brushwood
+			o_goalpost
+		}
+	}
+
+ 
+}
+AVI = {
+	male = {
+		names = {
+			Cloudy
+		}
+	}
+	female = {
+		names = {
+			Lufty
+		}
+	}
+	surnames = {
+		Skies
+	}
+	callsigns = {
+		"Goose"
+
+	}
+	prefix = o_operation
+	first = {
+		o_shadow
+
+	}
+	second = {
+		o_storm
+
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_cartwheel
+		}
+		97 = {
+			o_detachment
+
+		}
+		94 = {
+			o_detachment
+
+		}
+		84 = {
+			o_detachment
+
+		}
+		76 = {
+			o_iceberg
+		}
+		154 = {
+			o_downfall
+		}
+		33 = {
+			o_cottage
+		}
+		23 = {
+			o_avalanche
+		}
+		20 = {
+			o_anvil
+		}
+		208 = {
+			o_overlord
+		}
+		19 = {
+			o_overlord
+		}
+		182 = {
+			o_torch
+		}
+		126 = {
+			o_torch
+		}
+	}
+
+ 
+}
 }

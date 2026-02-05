@@ -1,5 +1,11 @@
 ﻿l_english:
- COL: "Coalition States"
+ CLS: "Coalition States"
  COL_DEF: "The Coalition States"
  COL_ADJ: "Coalition"
- 
+ ARC: "Arcadia"
+ ARC_DEF: "Arcadia"
+ ARC_ADJ: "Arcadian"
+ AVI: "Aviceyn"
+ AVI_DEF: "Aviceyn"
+ AVI_ADJ: "Aviceynian"
+

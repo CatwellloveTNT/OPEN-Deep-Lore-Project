@@ -1,12 +1,12 @@
 CLS = {
-	color = rgb {
-		22
-		70
-		158
-	}
-	color_ui = rgb {
-		22
-		70
-		158
-	}
+	color = rgb { 10 62 157 }
+	color_ui = rgb { 10 62 157 }
+}
+ARC = {
+	color = rgb { 166 122 164 }
+	color_ui = rgb { 166 122 164 }
+}
+AVI = {
+	color = rgb { 132 48 60 }
+	color_ui = rgb { 132 48 60 }
 }
