@@ -1,11 +1,20 @@
 ﻿l_english:
  CLS: "Coalition States"
- COL_DEF: "The Coalition States"
- COL_ADJ: "Coalition"
+ CLS_DEF: "The Coalition States"
+ CLS_ADJ: "Coalition"
  ARC: "Arcadia"
  ARC_DEF: "Arcadia"
  ARC_ADJ: "Arcadian"
  AVI: "Aviceyn"
  AVI_DEF: "Aviceyn"
  AVI_ADJ: "Aviceynian"
+ NEW: "New Germany"
+ NEW_DEF: "New Germany"
+ NEW_ADJ: "New German"
+ TST: "Triste"
+ TST_DEF: "Tristan"
+ TST_ADJ: "Tristan"`
+ PRO: "Protea"
+ PRO_DEF: "Protean"
+ PRO_ADJ: "Protean"
 

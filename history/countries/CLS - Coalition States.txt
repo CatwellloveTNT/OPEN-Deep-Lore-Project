@@ -21,4 +21,6 @@ set_popularities = {
 	neutrality = 0
 }
 
+puppet = NEW
+
 recruit_character = COL_IDK

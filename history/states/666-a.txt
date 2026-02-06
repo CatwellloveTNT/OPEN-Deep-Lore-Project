@@ -4,7 +4,39 @@ state={
 	provinces={
 		9009 9044 9052 9055 9062 9063 9065 9068 9070 9071 9073 9076 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 726122
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 5
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 25
+
+	}
+
+	history = {
+		owner = TST
+		add_core_of = TST
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

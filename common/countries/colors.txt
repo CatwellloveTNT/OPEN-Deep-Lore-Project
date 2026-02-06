@@ -10,3 +10,15 @@ AVI = {
 	color = rgb { 132 48 60 }
 	color_ui = rgb { 132 48 60 }
 }
+NEW = {
+	color = rgb { 111 141 211 }
+	color_ui = rgb { 111 141 211 }
+}
+TST = {
+	color = rgb { 171 112 120 }
+	color_ui = rgb { 171 112 120 }
+}
+PRO = {
+	color = rgb { 240 152 165 }
+	color_ui = rgb { 240 152 165 }
+}

@@ -4,7 +4,44 @@ state={
 	provinces={
 		8402 8410 8413 9327 9328 9340 9342 9345 9356 9361 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 836723
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 13
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 2
+		steel = 7
+		coal = 0
+
+	}
+
+	history = {
+		owner = PRO
+		add_core_of = PRO
+		add_core_of = ISO
+
+		victory_points = {
+			8410
+			10
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }
