@@ -1,10 +1,20 @@
 state={
 	id=235
 	name="STATE_235"
-	provinces={
-		4622 4628 4637 4639 4644 4653 4654 4655 4665 4682 4683 4685 4704 4719 20561 20576 20583 
+	resources={
+		oil=0
+		chromium=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		coal=0
 	}
-	manpower=0
+	provinces={
+		4637 4644 4654 4655 4683 4719 20561 20576 
+	}
+	manpower=153212
 	buildings_max_level_factor=1
+	state_category=pastoral
 	local_supplies=0
 }

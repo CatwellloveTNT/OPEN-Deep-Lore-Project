@@ -4,7 +4,39 @@ state={
 	provinces={
 		2927 2928 2929 2936 2937 2940 2945 2947 2967 2968 2971 2974 3155 3208 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 433212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 2
+		rubber = 0
+		tungsten = 8
+		steel = 17
+		coal = 0
+
+	}
+
+	history = {
+		owner = NOR
+		add_core_of = NOR
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

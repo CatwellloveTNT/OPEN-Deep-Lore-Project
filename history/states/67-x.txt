@@ -4,7 +4,43 @@ state={
 	provinces={
 		4691 4694 4699 4705 4709 4711 4725 4727 4731 4739 4742 4752 4760 4764 4776 20585 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1212521
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARI
+		add_core_of = ARI
+
+		victory_points = {
+			4739
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			4739 = {
+				naval_base = 1
+			}
+			
+		}
+	}
 }

@@ -4,7 +4,43 @@ state={
 	provinces={
 		1869 1871 1878 1881 1886 3608 4272 20100 20105 20389 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1252121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 13
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 7
+		coal = 0
+
+	}
+
+	history = {
+		owner = HTF
+		add_core_of = HTF
+
+		victory_points = {
+			1871
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			1871 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

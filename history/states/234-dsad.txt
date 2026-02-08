@@ -1,10 +1,41 @@
 state={
 	id=234
 	name="STATE_234"
-	provinces={
-		4624 4629 4630 4633 4642 4648 4649 4651 4663 4669 4674 4680 4775 20607 
+	resources={
+		oil=0
+		chromium=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		coal=0
 	}
-	manpower=0
+	provinces={
+		4622 4624 4628 4629 4630 4633 4639 4642 4648 4649 4651 4653 4663 4665 4669 4674 4680 4682 4685 4704 4775 20583 20607 
+	}
+	manpower=162162
 	buildings_max_level_factor=1
+	state_category=rural
 	local_supplies=0
+
+	history = {
+		owner = ARI
+		add_core_of = ARI
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+
+
+	}
+
 }

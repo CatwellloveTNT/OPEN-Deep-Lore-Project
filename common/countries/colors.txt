@@ -22,3 +22,32 @@ PRO = {
 	color = rgb { 240 152 165 }
 	color_ui = rgb { 240 152 165 }
 }
+NOR = {
+	color = rgb { 111 71 71 }
+	color_ui = rgb { 111 71 71 }
+}
+QUI = {
+	color = rgb { 222 187 91 }
+	color_ui = rgb { 222 187 91 }
+}
+ARI = {
+	color = rgb { 249 146 127 }
+	color_ui = rgb { 249 146 127 }
+}
+COL = {
+	color = rgb { 49 56 124 }
+	color_ui = rgb { 49 56 124 }
+}
+LAV = {
+	color = rgb { 68 66 63 }
+	color_ui = rgb { 138 155 116 }
+}
+CLA = {
+	color = rgb { 104 74 72 }
+	color_ui = rgb { 104 74 72 }
+}
+HTF = {
+	color = rgb { 85 124 153 }
+	color_ui = rgb { 85 124 153 }
+}
+

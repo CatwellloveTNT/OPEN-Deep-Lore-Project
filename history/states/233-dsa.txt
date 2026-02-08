@@ -2,9 +2,45 @@ state={
 	id=233
 	name="STATE_233"
 	provinces={
-		4690 4692 4703 4708 4721 4733 4736 4740 4744 4746 4751 20545 20555 20556 20562 
+		4690 4692 4703 4708 4721 4736 4740 4744 4746 4751 20545 20555 20556 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 98271
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 11
+		rubber = 0
+		tungsten = 8
+		steel = 15
+		coal = 0
+
+	}
+
+	history = {
+		owner = COL
+		add_core_of = COL
+
+		victory_points = {
+			4721
+			5
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

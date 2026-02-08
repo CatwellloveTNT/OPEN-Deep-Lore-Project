@@ -4,7 +4,44 @@ state={
 	provinces={
 		20056 20057 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 3972121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = QUI
+		add_core_of = QUI
+		add_core_of = NOR
+
+		victory_points = {
+			20056
+			30
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 3
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

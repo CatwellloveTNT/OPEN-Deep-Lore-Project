@@ -4,7 +4,40 @@ state={
 	provinces={
 		1876 1877 1887 4270 20086 20088 20089 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 872121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 2
+		aluminium = 0
+		rubber = 0
+		tungsten = 2
+		steel = 7
+		coal = 19
+
+	}
+
+	history = {
+		owner = LAV
+		add_core_of = LAV
+
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

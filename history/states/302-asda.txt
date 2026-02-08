@@ -4,7 +4,44 @@ state={
 	provinces={
 		1122 1137 1146 3746 3748 3749 3752 3764 3769 4006 4010 4011 4012 4013 4015 4016 4019 4022 4026 4028 4030 4032 4035 4039 4042 4044 4045 14636 14676 14846 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 734623
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 2
+		rubber = 13
+		tungsten = 0
+		steel = 15
+		coal = 0
+
+	}
+
+	history = {
+
+		owner = QUI
+		add_core_of = QUI
+
+		victory_points = {
+			14676
+			15
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			19738 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }
