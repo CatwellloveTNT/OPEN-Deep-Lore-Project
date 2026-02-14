@@ -4,7 +4,45 @@ state={
 	provinces={
 		20036 20037 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 4736122
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 18
+		steel = 10
+		coal = 12
+
+	}
+
+	history = {
+		owner = CRE
+		add_core_of = CRE
+
+
+		victory_points = {
+			20037
+			50
+		}
+
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+			254 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

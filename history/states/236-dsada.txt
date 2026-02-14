@@ -4,7 +4,41 @@ state={
 	provinces={
 		2479 2509 2555 3276 4625 4631 4632 4646 4661 4672 4696 4714 4720 20535 20544 20552 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 216216
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = RURAL
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FER
+		add_core_of = FER
+
+		victory_points = {
+			20535
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+
+			
+		}
+	}
 }

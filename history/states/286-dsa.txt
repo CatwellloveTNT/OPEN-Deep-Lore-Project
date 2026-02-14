@@ -4,7 +4,47 @@ state={
 	provinces={
 		138 139 140 142 145 147 152 155 159 1778 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 765211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 1
+		aluminium = 12
+		rubber = 0
+		tungsten = 0
+		steel = 12
+		coal = 0
+
+	}
+
+	history = {
+		owner = SSS
+		add_core_of = SSS
+
+		victory_points = {
+			140
+			5
+		}
+		victory_points = {
+			1778
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			1556 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

@@ -4,7 +4,43 @@ state={
 	provinces={
 		2764 2772 2777 2785 2790 2791 2799 2801 2802 20560 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1166212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FPK
+		add_core_of = FPK
+
+		victory_points = {
+			2785
+			10
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			1556 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

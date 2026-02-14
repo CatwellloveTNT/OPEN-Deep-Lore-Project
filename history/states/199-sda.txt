@@ -4,7 +4,39 @@ state={
 	provinces={
 		1504 1505 1511 1512 1523 2812 2814 2820 2821 2828 2830 2834 2835 3095 3098 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 745212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 7
+		rubber = 0
+		tungsten = 0
+		steel = 10
+		coal = 7
+
+	}
+
+	history = {
+		owner = CRE
+		add_core_of = CRE
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			254 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

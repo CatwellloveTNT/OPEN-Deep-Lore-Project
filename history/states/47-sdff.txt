@@ -4,7 +4,43 @@ state={
 	provinces={
 		784 1635 1636 1637 1665 1678 2417 2427 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1277212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = LUM
+		add_core_of = LUM
+
+		victory_points = {
+			1635
+			30
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 2
+			air_base = 0
+			1635 = {
+				naval_base = 5
+			}
+			
+		}
+	}
 }

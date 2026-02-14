@@ -4,7 +4,44 @@ state={
 	provinces={
 		510 3598 4228 4241 4259 4318 4321 4322 20459 20466 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 187212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 5
+		chromium = 0
+		aluminium = 21
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = OSH
+		add_core_of = OSH
+
+		victory_points = {
+			3598
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 3
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

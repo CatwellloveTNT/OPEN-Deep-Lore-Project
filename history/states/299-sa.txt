@@ -4,7 +4,43 @@ state={
 	provinces={
 		310 319 329 350 352 1217 1313 2979 2980 2981 2983 2986 2987 2988 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 776212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 5
+		rubber = 0
+		tungsten = 0
+		steel = 2
+		coal = 10
+
+	}
+
+	history = {
+		owner = VCE
+		add_core_of = VCE
+
+		victory_points = {
+			319
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			1556 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

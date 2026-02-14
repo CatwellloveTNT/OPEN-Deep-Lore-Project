@@ -4,7 +4,44 @@ state={
 	provinces={
 		2358 2364 2386 2387 2390 2393 2397 2594 2598 2609 2615 4280 4290 4300 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 766212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 2
+		coal = 7
+
+	}
+
+	history = {
+		owner = ULK
+		add_core_of = ULK
+
+		victory_points = {
+			4300
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 3
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

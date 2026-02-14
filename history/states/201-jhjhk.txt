@@ -4,7 +4,47 @@ state={
 	provinces={
 		575 577 578 579 582 583 585 586 587 588 589 2142 2143 2148 2150 2154 3675 3683 3693 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1507221
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = CRE
+		add_core_of = CRE
+
+		victory_points = {
+			2148
+			5
+		}
+		victory_points = {
+			578
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+			254 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

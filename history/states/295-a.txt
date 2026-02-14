@@ -4,7 +4,44 @@ state={
 	provinces={
 		725 736 739 747 2401 2402 2411 2422 2425 2430 20568 20573 20578 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 166212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 15
+		rubber = 0
+		tungsten = 0
+		steel = 16
+		coal = 7
+
+	}
+
+	history = {
+		owner = FUR
+		add_core_of = FUR
+
+		victory_points = {
+			747
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			1556 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

@@ -4,7 +4,43 @@ state={
 	provinces={
 		1787 3347 3355 3358 3361 3366 3368 3373 3378 3674 3676 3677 3678 3682 3684 3685 3686 3687 3689 3690 3694 3695 4274 4278 4281 4282 4284 4285 4293 4294 4296 4297 4298 4303 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 543232
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FFS
+		add_core_of = FFS
+
+		victory_points = {
+			3690
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

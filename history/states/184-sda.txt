@@ -4,7 +4,43 @@ state={
 	provinces={
 		563 564 566 567 1277 1279 1455 1459 1461 1466 1467 1470 1474 2078 2079 2080 2081 2082 2083 2084 2087 2089 2091 2092 2093 2094 2096 20121 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 176122
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = HAL
+		add_core_of = HAL
+
+		victory_points = {
+			2094
+			5
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3305 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

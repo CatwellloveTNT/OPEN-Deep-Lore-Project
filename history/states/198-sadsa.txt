@@ -4,7 +4,43 @@ state={
 	provinces={
 		2699 2990 2991 2992 2993 2994 2995 2999 3005 3006 3012 3013 3018 3019 3022 3023 3427 3434 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 987212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 3
+		chromium = 0
+		aluminium = 5
+		rubber = 0
+		tungsten = 0
+		steel = 13
+		coal = 0
+
+	}
+
+	history = {
+		owner = KLD
+		add_core_of = KLD
+
+		victory_points = {
+			2993
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 3
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

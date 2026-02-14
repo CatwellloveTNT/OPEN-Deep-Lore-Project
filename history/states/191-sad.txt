@@ -4,7 +4,43 @@ state={
 	provinces={
 		3065 3070 3082 3083 3090 3091 3092 3094 3097 3101 3103 3104 3107 3109 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 652121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 3
+		rubber = 17
+		tungsten = 0
+		steel = 2
+		coal = 0
+
+	}
+
+	history = {
+		owner = CRE
+		add_core_of = CRE
+
+		victory_points = {
+			3097
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+			254 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

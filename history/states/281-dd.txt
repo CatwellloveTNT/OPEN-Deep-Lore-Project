@@ -4,7 +4,36 @@ state={
 	provinces={
 		787 792 799 803 808 819 824 835 843 846 851 20518 20521 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 999291
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 12
+		coal = 11
+
+	}
+
+	history = {
+		owner = DOC
+		add_core_of = DOC
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			
+		}
+	}
 }

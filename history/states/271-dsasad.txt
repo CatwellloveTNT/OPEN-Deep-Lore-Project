@@ -4,7 +4,43 @@ state={
 	provinces={
 		513 515 516 519 521 522 523 529 20471 20473 20475 20477 20485 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 262121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 17
+		chromium = 0
+		aluminium = 2
+		rubber = 0
+		tungsten = 0
+		steel = 18
+		coal = 0
+
+	}
+
+	history = {
+		owner = CSF
+		add_core_of = CSF
+
+		victory_points = {
+			513
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

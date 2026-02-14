@@ -4,7 +4,43 @@ state={
 	provinces={
 		3311 3316 3317 3319 3320 3327 3329 3333 3335 3630 20123 20128 20132 20136 20400 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 872612
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 13
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 5
+
+	}
+
+	history = {
+		owner = HAL
+		add_core_of = HAL
+
+		victory_points = {
+			3630
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 3
+			air_base = 2
+			3630 = {
+				naval_base = 2
+			}
+			
+		}
+	}
 }

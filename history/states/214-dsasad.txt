@@ -4,7 +4,43 @@ state={
 	provinces={
 		1475 3973 3976 3981 3982 3983 3988 3989 3991 3996 4001 20418 20419 20427 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 652121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 13
+		rubber = 0
+		tungsten = 0
+		steel = 9
+		coal = 20
+
+	}
+
+	history = {
+		owner = MAY
+		add_core_of = MAY
+
+		victory_points = {
+			3981
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3305 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

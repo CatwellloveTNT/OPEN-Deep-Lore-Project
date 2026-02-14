@@ -50,4 +50,32 @@ HTF = {
 	color = rgb { 85 124 153 }
 	color_ui = rgb { 85 124 153 }
 }
+GRU = {
+	color = rgb { 85 176 37 }
+	color_ui = rgb { 85 176 37 }
+}
+EQL = {
+	color = rgb { 213 35 109 }
+	color_ui = rgb { 213 35 109 }
+}
+HAL = {
+	color = rgb { 131 62 231 }
+	color_ui = rgb { 131 62 231 }
+}
+NRN = {
+	color = rgb { 109 103 158 }
+	color_ui = rgb { 109 103 158 }
+}
+MAY = {
+	color = rgb { 93 252 167 }
+	color_ui = rgb { 93 252 167 }
+}
+BLG = {
+	color = rgb { 220 220 220 }
+	color_ui = rgb { 220 220 220 }
+}
+CRE = {
+	color = rgb { 216 7 126 }
+	color_ui = rgb { 216 7 126 }
+}
 

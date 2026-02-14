@@ -4,7 +4,44 @@ state={
 	provinces={
 		24 1056 1070 1073 1076 1096 1107 3285 3286 3287 3288 3291 3297 3301 3302 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 916231
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 15
+		rubber = 0
+		tungsten = 0
+		steel = 4
+		coal = 0
+
+	}
+
+	history = {
+		owner = URA
+		add_core_of = URA
+
+		victory_points = {
+			3291
+			10
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3554 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

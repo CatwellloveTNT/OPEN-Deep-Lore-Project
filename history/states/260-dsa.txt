@@ -4,7 +4,46 @@ state={
 	provinces={
 		1055 1059 1060 1069 1078 1087 1091 1094 2464 2472 2485 2499 2505 2515 2524 2551 2556 2559 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 877211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 17
+		steel = 11
+		coal = 0
+
+	}
+
+	history = {
+		owner = CAE
+		add_core_of = CAE
+
+		victory_points = {
+			2464
+			5
+		}
+		victory_points = {
+			1087
+			3
+		}
+
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+
+			
+		}
+	}
 }

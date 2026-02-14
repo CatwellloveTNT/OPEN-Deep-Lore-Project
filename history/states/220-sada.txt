@@ -4,7 +4,38 @@ state={
 	provinces={
 		569 1453 1454 1458 1464 1469 1471 2076 3382 3384 3387 3393 3395 3399 3926 3933 20138 20144 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 762121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 13
+		tungsten = 2
+		steel = 2
+		coal = 10
+
+	}
+
+	history = {
+		owner = HAL
+		add_core_of = HAL
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3305 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

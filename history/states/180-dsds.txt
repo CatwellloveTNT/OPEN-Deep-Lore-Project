@@ -4,7 +4,39 @@ state={
 	provinces={
 		1415 1420 1421 2056 2058 2060 2061 2065 2067 2074 2075 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 472721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = NRN
+		add_core_of = NRN
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

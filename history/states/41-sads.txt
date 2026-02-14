@@ -4,7 +4,43 @@ state={
 	provinces={
 		2229 2248 2251 2254 2257 2278 2279 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 276212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = KUV
+		add_core_of = KUV
+
+		victory_points = {
+			2248
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			2248 = {
+				naval_base = 2
+			}
+			
+		}
+	}
 }

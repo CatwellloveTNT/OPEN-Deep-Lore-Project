@@ -4,7 +4,39 @@ state={
 	provinces={
 		1476 1480 1483 1486 1489 1970 1971 1974 1978 1979 1983 1985 1987 1991 3027 3031 20135 20140 20143 20146 20148 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 108721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 2
+		chromium = 0
+		aluminium = 0
+		rubber = 25
+		tungsten = 0
+		steel = 0
+		coal = 18
+
+	}
+
+	history = {
+		owner = MAY
+		add_core_of = MAY
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3305 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

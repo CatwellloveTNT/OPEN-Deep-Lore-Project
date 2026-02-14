@@ -4,7 +4,44 @@ state={
 	provinces={
 		983 1497 2442 2444 2445 2446 2447 2448 2451 2452 2453 2454 2455 4050 4051 4052 4053 4054 4055 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 177662
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 7
+		rubber = 25
+		tungsten = 0
+		steel = 5
+		coal = 17
+
+	}
+
+	history = {
+		owner = YAN
+		add_core_of = YAN 
+
+		victory_points = {
+			2454
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3970 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

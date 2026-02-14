@@ -4,7 +4,43 @@ state={
 	provinces={
 		821 849 1045 1046 1048 1077 1079 1089 1092 20506 20512 20519 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 887211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 8
+		rubber = 0
+		tungsten = 7
+		steel = 15
+		coal = 2
+
+	}
+
+	history = {
+		owner = SKY
+		add_core_of = SKY
+
+		victory_points = {
+			20519
+			40
+		}
+		victory_points = {
+			1079
+			10
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 6
+		}
+	}
 }

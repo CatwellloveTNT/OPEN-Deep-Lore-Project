@@ -4,7 +4,52 @@ state={
 	provinces={
 		2282 2284 2285 2286 2287 2291 2292 2294 2295 2296 2297 2298 2300 2302 2303 2304 2305 2307 2310 2311 2312 2313 2314 2694 2700 2701 2704 2706 3424 3425 3426 3428 3429 3430 3431 3432 3433 3435 3436 3437 3438 3439 4376 4378 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 196212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 23
+		tungsten = 0
+		steel = 2
+		coal = 7
+
+	}
+
+	history = {
+		owner = NRN
+		add_core_of = NRN
+
+		victory_points = {
+			3435
+			5
+		}
+		victory_points = {
+			2284
+			5
+		}
+		victory_points = {
+			2298
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

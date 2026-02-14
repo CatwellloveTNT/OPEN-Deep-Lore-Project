@@ -4,7 +4,43 @@ state={
 	provinces={
 		538 543 549 551 554 4506 20639 20642 20643 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 367212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 2
+		chromium = 7
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FEM
+		add_core_of = FEM
+
+		victory_points = {
+			20639
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			3965 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

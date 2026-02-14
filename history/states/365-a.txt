@@ -4,7 +4,41 @@ state={
 	provinces={
 		20080 20081 20082 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 4872171
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 10
+		rubber = 0
+		tungsten = 0
+		steel = 20
+		coal = 12
+
+	}
+
+	history = {
+		owner = PTA
+		add_core_of = PTA
+
+		victory_points = {
+			20082
+			40
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+
+			
+		}
+	}
 }

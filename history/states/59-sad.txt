@@ -4,7 +4,43 @@ state={
 	provinces={
 		1907 1908 1909 1910 3964 3965 20652 20656 20661 20664 20667 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 766212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 2
+		chromium = 7
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FEM
+		add_core_of = FEM
+
+		victory_points = {
+			3965
+			5
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 1
+			3965 = {
+				naval_base = 2
+			}
+			
+		}
+	}
 }

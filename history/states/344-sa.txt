@@ -4,7 +4,43 @@ state={
 	provinces={
 		16419 16421 16422 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 2771
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = small_island
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = PTA
+		add_core_of = PTA
+
+		victory_points = {
+			16419
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			16419 = {
+				naval_base = 1
+			}
+			
+		}
+	}
 }

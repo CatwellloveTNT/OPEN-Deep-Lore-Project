@@ -4,7 +4,47 @@ state={
 	provinces={
 		547 4499 4501 20619 20623 20625 20626 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1009212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 17
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 15
+		coal = 2
+
+	}
+
+	history = {
+		owner = FEM
+		add_core_of = FEM
+
+		victory_points = {
+			4499
+			5
+		}
+		victory_points = {
+			20619
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 1
+			air_base = 3
+			4499 = {
+				naval_base = 4
+			}
+			
+		}
+	}
 }

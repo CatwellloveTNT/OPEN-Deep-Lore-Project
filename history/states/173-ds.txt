@@ -4,7 +4,39 @@ state={
 	provinces={
 		1000 1002 1007 1011 1013 1017 1020 1021 1025 1035 2682 2683 2685 2688 3775 3776 3779 3780 3781 3784 3785 3791 3793 3796 3798 3800 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 377212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 15
+		rubber = 46
+		tungsten = 0
+		steel = 0
+		coal = 7
+
+	}
+
+	history = {
+		owner = FFS
+		add_core_of = FFS
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

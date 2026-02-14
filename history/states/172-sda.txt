@@ -4,7 +4,39 @@ state={
 	provinces={
 		992 995 997 998 1006 1009 1014 1019 1023 1029 1031 1032 1033 1034 1039 1040 1213 1226 2283 2308 3001 3003 3008 3011 3015 3016 3017 4113 4126 4137 4141 4144 4148 4154 4157 4160 4162 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 87721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FFS
+		add_core_of = FFS
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

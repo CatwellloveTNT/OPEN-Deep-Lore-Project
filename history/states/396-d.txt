@@ -4,7 +4,43 @@ state={
 	provinces={
 		16029 16033 16034 16036 16042 16044 16045 16049 16055 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 873723
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = GRU
+		add_core_of = GRU
+
+		victory_points = {
+			16044
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 2
+			air_base = 0
+			16044 = {
+				naval_base = 2
+			}
+			
+		}
+	}
 }

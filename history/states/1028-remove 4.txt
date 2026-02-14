@@ -22,8 +22,8 @@ state={
 	}
 
 	history = {
-	#	owner = AVI
-	#	add_core_of = AVI 
+		owner = AVI
+		add_core_of = AVI 
 
 
 		buildings = {

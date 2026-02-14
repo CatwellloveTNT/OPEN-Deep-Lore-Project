@@ -4,7 +4,36 @@ state={
 	provinces={
 		790 816 1057 1110 2481 4065 4075 20524 20531 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 108721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 2
+		steel = 21
+		coal = 0
+
+	}
+
+	history = {
+		owner = CAE
+		add_core_of = CAE
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 3
+
+			
+		}
+	}
 }

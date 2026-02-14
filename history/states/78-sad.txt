@@ -4,7 +4,43 @@ state={
 	provinces={
 		668 673 677 685 4250 4269 20169 20172 20177 20422 20424 20430 20431 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1102821
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 8
+		steel = 17
+		coal = 0
+
+	}
+
+	history = {
+		owner = EQL
+		add_core_of = EQL
+
+		victory_points = {
+			20422
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			407 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

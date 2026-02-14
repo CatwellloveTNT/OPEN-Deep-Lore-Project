@@ -4,7 +4,47 @@ state={
 	provinces={
 		1604 1612 1616 1792 1798 1805 1808 1814 1822 1825 1830 3774 3788 3790 3795 3801 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 666521
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FUR
+		add_core_of = FUR
+
+		victory_points = {
+			1604
+			5
+		}
+		victory_points = {
+			1825
+			3
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			1556 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

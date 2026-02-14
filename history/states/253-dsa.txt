@@ -4,7 +4,7 @@ state={
 	provinces={
 		4619 4620 4621 4643 4645 4657 4658 4664 4666 4675 4678 4679 4681 
 	}
-	manpower = 2621621
+	manpower = 1221621
 	buildings_max_level_factor = 1
 	local_supplies = 0
 	state_category = city
@@ -22,6 +22,9 @@ state={
 	}
 
 	history = {
+
+		add_core_of = FER
+		owner = FER
 
 
 		victory_points = {

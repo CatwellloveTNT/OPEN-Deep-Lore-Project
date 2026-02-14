@@ -1,0 +1,8 @@
+CLS_unit_production = {
+
+	allowed = {	original_tag = CLS }
+	enable = {
+		always = yes
+	}
+
+}

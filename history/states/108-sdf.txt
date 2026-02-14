@@ -4,7 +4,47 @@ state={
 	provinces={
 		1918 1924 1990 3032 3033 3803 3806 3810 3813 3817 3818 3824 3827 3828 3830 20129 20131 20134 20137 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1098212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = MAY
+		add_core_of = MAY
+
+		victory_points = {
+			3830
+			5
+		}
+		victory_points = {
+			3824
+			5
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 2
+			air_base = 0
+			3305 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

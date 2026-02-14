@@ -4,7 +4,38 @@ state={
 	provinces={
 		768 773 775 777 781 20638 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 552122
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 1
+		aluminium = 7
+		rubber = 0
+		tungsten = 0
+		steel = 21
+		coal = 0
+
+	}
+
+	history = {
+		owner = KUV
+		add_core_of = KUV
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			1556 = {
+				naval_base = 0
+			}
+			
+		}
+	}
 }

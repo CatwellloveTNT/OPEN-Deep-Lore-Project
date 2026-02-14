@@ -4,7 +4,35 @@ state={
 	provinces={
 		3273 3280 3290 3304 4217 4220 4222 4223 4224 4225 4227 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 662121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 15
+		coal = 5
+
+	}
+
+	history = {
+		owner = CAE
+		add_core_of = CAE
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 1
+			air_base = 2
+			
+		}
+	}
 }
