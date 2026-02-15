@@ -4,7 +4,46 @@ state={
 	provinces={
 		8832 8843 8845 8853 8862 8864 8870 8874 8876 8889 8904 8908 8913 8918 8922 8925 8928 8937 8938 8957 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1288217
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 2
+		rubber = 0
+		tungsten = 0
+		steel = 7
+		coal = 0
+
+	}
+
+	history = {
+		owner = KIT
+		add_core_of = KIT
+
+		victory_points = {
+			8870
+			5
+		}
+		victory_points = {
+			8957
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			
+
+			
+		}
+	}
 }

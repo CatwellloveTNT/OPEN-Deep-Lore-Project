@@ -4,7 +4,36 @@ state={
 	provinces={
 		14918 14926 14932 14936 14940 14948 14959 15009 15010 15011 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 582167
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = VER
+		add_core_of = XIL
+		add_core_of = VER
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+		}
+	}
 }

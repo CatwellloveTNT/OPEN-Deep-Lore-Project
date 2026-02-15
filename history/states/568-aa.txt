@@ -4,7 +4,44 @@ state={
 	provinces={
 		8458 8459 8460 8461 8462 8464 8465 10326 10367 10370 10372 10375 13596 13598 20688 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1890712
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FEO
+		add_core_of = FEO
+
+		victory_points = {
+			10372
+			5
+		}
+		victory_points = {
+			13598
+			5
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+			
+		}
+	}
 }

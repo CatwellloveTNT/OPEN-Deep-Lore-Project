@@ -4,7 +4,43 @@ state={
 	provinces={
 		9998 10003 10009 10012 10017 10019 10028 10032 10037 13935 13938 13939 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1098721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FEO
+		add_core_of = FEO
+
+		victory_points = {
+			10017
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			10017 = {
+				naval_base = 3
+			}
+			
+		}
+	}
 }

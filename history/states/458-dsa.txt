@@ -4,7 +4,47 @@ state={
 	provinces={
 		19880 19882 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 5746312
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 7
+		chromium = 0
+		aluminium = 7
+		rubber = 0
+		tungsten = 0
+		steel = 12
+		coal = 20
+
+	}
+
+	history = {
+		owner = MAZ
+		add_core_of = MAZ
+
+		victory_points = {
+			19882
+			50
+		}
+		victory_points = {
+			19880
+			25
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 4
+			air_base = 10
+			19882 = {
+				naval_base = 10
+			}
+			
+		}
+	}
 }

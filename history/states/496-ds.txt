@@ -4,7 +4,43 @@ state={
 	provinces={
 		14961 14963 14969 14974 14975 14977 14987 14991 14994 15000 15002 15006 15055 15076 15079 15083 15084 15087 15097 15098 15107 15125 20286 20298 20299 20305 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1087212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = VER
+		add_core_of = XIL
+		add_core_of = VER
+
+		victory_points = {
+			15087
+			15
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			15087 = {
+				naval_base = 3
+			}
+		}
+	}
 }

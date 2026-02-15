@@ -4,7 +4,44 @@ state={
 	provinces={
 		19891 19892 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 3986726
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 7
+		rubber = 0
+		tungsten = 0
+		steel = 5
+		coal = 17
+
+	}
+
+	history = {
+		owner = INS
+		add_core_of = INS
+
+		victory_points = {
+			19891
+			40
+		}
+		victory_points = {
+			19892
+			20
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+			
+		}
+	}
 }

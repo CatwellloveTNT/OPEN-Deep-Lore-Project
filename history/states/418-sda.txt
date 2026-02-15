@@ -4,7 +4,43 @@ state={
 	provinces={
 		15742 15743 15747 15753 15754 15755 15758 15760 15761 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 987712
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 2
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 17
+		coal = 9
+
+	}
+
+	history = {
+		owner = CZA
+		add_core_of = CZA
+
+		victory_points = {
+			15754
+			15
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 2
+			air_base = 0
+			15754 = {
+				naval_base = 8
+			}
+			
+		}
+	}
 }

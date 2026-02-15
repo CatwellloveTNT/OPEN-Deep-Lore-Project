@@ -4,7 +4,41 @@ state={
 	provinces={
 		16335 16337 16338 16340 16341 16345 16346 20349 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 652151
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = VAL
+		add_core_of = VAL
+
+		victory_points = {
+			16340
+			3
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+
+			
+		}
+	}
 }

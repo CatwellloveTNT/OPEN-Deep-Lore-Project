@@ -4,7 +4,45 @@ state={
 	provinces={
 		8972 9082 9089 9092 9093 9104 9107 9110 9112 9129 9130 9134 9140 9143 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1282181
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 11
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 12
+
+	}
+
+	history = {
+		owner = ZEB
+		add_core_of = ZEB
+
+		victory_points = {
+			9143
+			15
+		}
+		victory_points = {
+			9082
+			5
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+
+			
+		}
+	}
 }

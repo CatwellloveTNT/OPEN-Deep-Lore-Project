@@ -4,7 +4,42 @@ state={
 	provinces={
 		19795 19797 19798 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 5172811
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 7
+		chromium = 0
+		aluminium = 15
+		rubber = 0
+		tungsten = 0
+		steel = 15
+		coal = 2
+
+	}
+
+	history = {
+		owner = CHF
+		add_core_of = CHF
+		add_core_of = PRO
+
+		victory_points = {
+			19798
+			35
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+
+			
+		}
+	}
 }

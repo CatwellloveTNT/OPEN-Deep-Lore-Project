@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			XIL = {
+				declare_war_on = {
+					target = VER
+					type = take_core_state
+				}
+			}
+		}
+	}
+}
+

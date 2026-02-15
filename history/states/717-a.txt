@@ -4,7 +4,46 @@ state={
 	provinces={
 		19871 19872 19873 19874 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 6792191
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 2
+		chromium = 0
+		aluminium = 10
+		rubber = 0
+		tungsten = 0
+		steel = 2
+		coal = 8
+
+	}
+
+	history = {
+		owner = ALK
+		add_core_of = ALK
+
+		victory_points = {
+			19873
+			30
+		}
+		victory_points = {
+			19872
+			15
+		}
+
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+
+			
+		}
+	}
 }

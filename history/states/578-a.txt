@@ -4,7 +4,41 @@ state={
 	provinces={
 		8596 8629 8633 10304 10305 10309 10310 10311 10314 10315 10316 10318 10319 10320 10321 10322 10323 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1389081
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 7
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 17
+		coal = 7
+
+	}
+
+	history = {
+		owner = VMD
+		add_core_of = VMD
+
+		victory_points = {
+			10321
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			
+		}
+	}
 }

@@ -4,7 +4,42 @@ state={
 	provinces={
 		8709 8713 8722 8727 8739 9999 10010 10025 10374 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 882181
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 11
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 12
+
+	}
+
+	history = {
+		owner = KIR
+		add_core_of = KIR
+
+		victory_points = {
+			8713
+			15
+		}
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+
+			
+		}
+	}
 }

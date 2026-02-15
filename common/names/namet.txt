@@ -3313,4 +3313,2028 @@ TPC = {
 		}
 	}
 }
-
+NAV = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+FRE = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+VAL = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+CZA = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+RAV = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+INS = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+CHA = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+MAZ = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+KAV = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+MOT = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+VER = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+XIL = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+SUS = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+CHF = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+FLA = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+ISO = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+KIR = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+ALK = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+ZEB = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+PLA = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+CEN = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+VMD = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+FEO = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+JER = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+KIT = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+MON = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}
+JWN = {
+	male = {
+		names = {
+			Abner
+			Zach
+		}
+	}
+	female = {
+		names = {
+			Mary
+		}
+	}
+	surnames = {
+		Abbott
+		Zoidberg
+	}
+	callsigns = {
+		"Mad Dog"
+	}
+	prefix = o_operation
+	first = {
+		o_striking
+	}
+	second = {
+		o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_watchtower
+		}
+		97 = {
+			o_stalemate
+		}
+		94 = {
+			o_stalemate
+		}
+		84 = {
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_sledgehammer
+		}
+		19 = {
+			o_sledgehammer
+		}
+		182 = {
+			o_goalpost
+		}
+		126 = {
+			o_goalpost
+		}
+	}
+}

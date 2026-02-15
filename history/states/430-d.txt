@@ -4,7 +4,43 @@ state={
 	provinces={
 		15514 15515 16261 16263 16265 16266 16269 16271 20276 20284 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 542112
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = INS
+		add_core_of = INS
+
+		victory_points = {
+			16263
+			10
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			16263 = {
+				naval_base = 3
+			}
+			
+		}
+	}
 }

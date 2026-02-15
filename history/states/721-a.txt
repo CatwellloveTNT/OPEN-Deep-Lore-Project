@@ -4,7 +4,46 @@ state={
 	provinces={
 		19763 19765 19766 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 6742721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 10
+		rubber = 0
+		tungsten = 7
+		steel = 22
+		coal = 5
+
+	}
+
+	history = {
+		owner = MON
+		add_core_of = MON
+
+		victory_points = {
+			19765
+			40
+		}
+		victory_points = {
+			19763
+			20
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+			
+
+			
+		}
+	}
 }

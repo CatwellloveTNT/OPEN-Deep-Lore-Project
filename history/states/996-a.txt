@@ -4,7 +4,42 @@ state={
 	provinces={
 		16348 16349 16350 16351 16352 16353 16354 16355 16356 16357 16358 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 48082
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_island
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 7
+		coal = 0
+
+	}
+
+	history = {
+		owner = RAV
+		add_core_of = RAV
+
+		victory_points = {
+			16357
+			10
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			16357 = {
+				naval_base = 1
+			}
+		}
+	}
 }

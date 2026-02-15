@@ -4,7 +4,39 @@ state={
 	provinces={
 		16236 16240 16241 16244 16245 16246 16247 16248 16251 16254 16255 16257 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 986772
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 11
+		chromium = 0
+		aluminium = 2
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = SUS
+		add_core_of = SUS
+
+		victory_points = {
+			16241
+			5
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 2
+			air_base = 0
+		}
+	}
 }

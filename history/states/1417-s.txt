@@ -4,7 +4,42 @@ state={
 	provinces={
 		19753 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 4898211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 9
+		rubber = 0
+		tungsten = 0
+		steel = 20
+		coal = 21
+
+	}
+
+	history = {
+		owner = CEN
+		add_core_of = CEN
+
+		victory_points = {
+			19753
+			40
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+
+
+			
+		}
+	}
 }

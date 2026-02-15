@@ -4,7 +4,38 @@ state={
 	provinces={
 		9912 9918 9926 9932 9935 10142 10143 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 568371
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = JWN
+		add_core_of = JWN
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			
+
+			
+		}
+	}
 }

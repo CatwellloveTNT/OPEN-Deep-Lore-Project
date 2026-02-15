@@ -4,7 +4,44 @@ state={
 	provinces={
 		9620 9621 9624 9627 9630 9632 9634 9637 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 789782
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 5
+		rubber = 0
+		tungsten = 2
+		steel = 17
+		coal = 0
+
+	}
+
+	history = {
+		owner = PLA
+		add_core_of = PLA
+
+		victory_points = {
+			9637
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 3
+			9637 = {
+				naval_base = 3
+			}
+
+			
+		}
+	}
 }

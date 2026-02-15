@@ -4,7 +4,41 @@ state={
 	provinces={
 		9306 9312 9317 9319 9688 9690 9695 9696 9697 9699 9700 9701 9704 9705 9706 9707 9708 9710 9711 9713 9714 9715 9716 9718 9719 9721 9723 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 872112
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = CHF
+		add_core_of = CHF
+
+		victory_points = {
+			9697
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+
+			
+		}
+	}
 }

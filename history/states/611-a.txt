@@ -4,7 +4,42 @@ state={
 	provinces={
 		8574 8575 8581 8583 8588 8690 8693 8694 8696 8698 8700 8703 8705 8706 8707 9399 9485 9495 9498 9502 9503 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1028211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = JER
+		add_core_of = JER
+
+		victory_points = {
+			8581
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			
+
+			
+		}
+	}
 }

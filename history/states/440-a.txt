@@ -4,7 +4,43 @@ state={
 	provinces={
 		16386 16387 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 65521
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = small_island
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = CHA
+		add_core_of = CHA
+
+		victory_points = {
+			16386
+			10
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+			16386 = {
+				naval_base = 3
+			}
+			
+		}
+	}
 }

@@ -4,7 +4,42 @@ state={
 	provinces={
 		8468 8481 8484 8486 8492 8497 8499 8508 8515 8520 8522 8523 8526 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1029129
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 2
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 11
+		coal = 7
+
+	}
+
+	history = {
+		owner = KIT
+		add_core_of = KIT
+
+		victory_points = {
+			8468
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			
+
+			
+		}
+	}
 }

@@ -4,7 +4,41 @@ state={
 	provinces={
 		8661 8674 8802 8804 8811 8812 8813 8817 8821 8822 8825 8828 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1978821
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FLA
+		add_core_of = FLA
+
+		victory_points = {
+			8821
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 5
+
+			
+		}
+	}
 }

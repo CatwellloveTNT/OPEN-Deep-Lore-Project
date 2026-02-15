@@ -4,7 +4,44 @@ state={
 	provinces={
 		15561 15562 15563 15565 15566 15567 15569 15570 15573 15574 15575 15576 15580 15581 15583 15584 15585 15588 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 266812
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = KAV
+		add_core_of = KAV
+
+		victory_points = {
+			15574
+			5
+		}
+		victory_points = {
+			15562
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 3
+			
+		}
+	}
 }

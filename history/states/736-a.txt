@@ -4,7 +4,49 @@ state={
 	provinces={
 		19803 19804 19805 19806 19807 19808 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 6708212
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 18
+		chromium = 0
+		aluminium = 3
+		rubber = 0
+		tungsten = 0
+		steel = 21
+		coal = 11
+
+	}
+
+	history = {
+		owner = CHF
+		add_core_of = CHF
+
+		victory_points = {
+			19805
+			50
+		}
+		victory_points = {
+			19804
+			20
+		}
+		victory_points = {
+			19807
+			15
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 7
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+
+			
+		}
+	}
 }

@@ -1,19 +1,46 @@
 state={
 	id=2
 	name="STATE_2"
-	resources={
-		aluminium=0
-		chromium=2
-		oil=1
-		rubber=0
-		steel=1
-		tungsten=1
-	}
+
 	provinces={
 		9590 9607 10000 10004 10014 10024 10026 10027 10029 10034 10038 10369 10376 
 	}
-	manpower=4990901
-	buildings_max_level_factor=1
-	state_category=large_town
-	local_supplies=0
+	manpower = 1928721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = KIR
+		add_core_of = KIR
+
+		victory_points = {
+			10000
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 1
+
+			
+		}
+	}
 }

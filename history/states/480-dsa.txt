@@ -4,7 +4,44 @@ state={
 	provinces={
 		19878 19879 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 4838712
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = MOT
+		add_core_of = MOT
+
+		victory_points = {
+			19879
+			40
+		}
+		victory_points = {
+			19878
+			20
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 7
+			arms_factory = 4
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+			
+		}
+	}
 }

@@ -4,7 +4,45 @@ state={
 	provinces={
 		9643 9649 9660 9669 9742 9744 9751 9754 9757 9759 9763 9764 9771 9772 9773 9775 9776 9780 9784 10194 10197 10199 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1283721
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ALK
+		add_core_of = ALK
+
+		victory_points = {
+			9744
+			5
+		}
+		victory_points = {
+			10197
+		}
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 2
+			air_base = 0
+
+			
+		}
+	}
 }

@@ -4,7 +4,46 @@ state={
 	provinces={
 		8303 8306 8310 8311 8312 8313 8314 8318 8319 8320 8321 8323 8324 8618 8646 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1099211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = CEN
+		add_core_of = CEN
+
+		victory_points = {
+			8311
+			15
+		}
+		victory_points = {
+			8306
+			5
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 3
+
+
+			
+		}
+	}
 }

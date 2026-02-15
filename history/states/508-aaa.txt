@@ -4,7 +4,40 @@ state={
 	provinces={
 		19884 19885 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 4797211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = metropolis
+
+
+	resources = {
+		oil = 15
+		chromium = 0
+		aluminium = 8
+		rubber = 0
+		tungsten = 0
+		steel = 15
+		coal = 8
+
+	}
+
+	history = {
+		owner = VER
+		add_core_of = XIL
+		add_core_of = VER
+
+		victory_points = {
+			19885
+			40
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+		}
+	}
 }

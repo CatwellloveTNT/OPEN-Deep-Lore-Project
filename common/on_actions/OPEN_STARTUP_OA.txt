@@ -1,0 +1,53 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CLS = {
+				create_faction_from_template = {
+					template = faction_template_generic_dominance
+					name = CLS_five_fingers_alliance
+					icon = GFX_faction_logo_axis
+					color = {
+						100 100 150
+					}
+				}
+				add_to_faction = PRO
+				add_to_faction = RAV
+			}
+			AVI = {
+				create_faction_from_template = {
+					template = faction_template_generic_dominance
+					name = AVI_pax_avianica
+					icon = GFX_faction_logo_axis
+					color = {
+						100 100 150
+					}
+				}
+			}
+			CHF = {
+				create_faction_from_template = {
+					template = faction_template_generic_dominance
+					name = CHF_countermeasures_alliance
+					icon = GFX_faction_logo_axis
+					color = {
+						100 100 150
+					}
+				}
+				add_to_faction = FLA
+			}
+			OSH = {
+				create_faction_from_template = {
+					template = faction_template_generic_dominance
+					name = aviation_autism_alliance
+					icon = GFX_faction_logo_eu
+					color = {
+						100 100 150
+					}
+				}
+				add_to_faction = URA
+				add_to_faction = FFL
+				add_to_faction = CSF
+			}
+		}
+
+	}
+}
