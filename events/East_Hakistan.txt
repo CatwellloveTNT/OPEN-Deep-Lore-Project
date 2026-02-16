@@ -1,0 +1,33 @@
+﻿#####################
+# EAST HAKISTAN EVENTS
+###########################
+
+add_namespace = ehaki
+
+
+# East hakistan's HSSF (their CIA) does a terror attack on Hakistan to intimidate them into demilling the border states
+country_event = {
+	id = ehaki.1
+	title = ehaki.1.t
+	desc = ehaki.1.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # terror attack gets authorized
+		name = ehaki.1.a
+		ai_chance = {factor = 100}
+		add_political_power = 100
+		news_event = {
+			id = news.1
+			days = 1
+		}
+		add_named_threat = {
+			threat = 1
+			name = "West Hakistani Terror Attack"
+		}
+	}
+}
+
+
+

@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup = {
-		effect = {
+		effect = { 
+			# -------- SETTING UP FACTIONS AT GAME START --------
 			CLS = {
 				create_faction_from_template = {
 					template = faction_template_generic_dominance

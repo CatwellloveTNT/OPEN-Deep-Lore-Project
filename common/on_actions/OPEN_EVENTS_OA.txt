@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = { 
+			# ------------- East Hakistani EVENTS -------------
+			EHK = {
+				country_event = {
+					# East hakistan's HSSF (their CIA) does a terror attack on Hakistan to intimidate them into demilling the border states
+					id = ehaki.1
+					days = 8
+				}
+			}
+
+		}
+	}
+}
+

@@ -4,7 +4,39 @@ state={
 	provinces={
 		13422 13423 13425 13426 13428 13432 13433 13438 19930 19949 19954 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1099211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 7
+		rubber = 0
+		tungsten = 2
+		steel = 12
+		coal = 7
+
+	}
+
+	history = {
+		owner = TOM
+		add_core_of = TOM
+
+		victory_points = {
+			19949
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+		}
+	}
 }

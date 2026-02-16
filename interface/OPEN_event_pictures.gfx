@@ -1,0 +1,17 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_haki_terror_attack_event_image"
+		texturefile = "gfx/event_pictures/haki_terror_attack_report.dds"
+	}
+		spriteType = {
+		name = "GFX_news_haki_terror_attack_event_image"
+		texturefile = "gfx/event_pictures/news_haki_terror_attack.dds"
+	}
+
+	
+
+}
+
+
+

@@ -1,12 +1,22 @@
 on_actions = {
 	on_startup = {
-		effect = {
-			XIL = {
+		effect = { 
+			# ------------- SETTING UP WARS/CIVIL WARS AT GAME START -------------
+			XIL = { 
 				declare_war_on = {
 					target = VER
 					type = take_core_state
 				}
 			}
+			# ------------- EVENTS THAT TRIGGER WARS -------------
+			HAK = {
+				country_event = {
+					# Hakistan reacts to the terror attack
+					id = haki.1
+					days = 9
+				}
+			}
+
 		}
 	}
 }

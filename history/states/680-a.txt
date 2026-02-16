@@ -4,7 +4,39 @@ state={
 	provinces={
 		8175 8183 8224 8533 8552 9221 9367 9416 9431 9463 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 782167
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARN
+		add_core_of = ARN
+
+		victory_points = {
+			9463
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

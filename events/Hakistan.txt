@@ -1,0 +1,43 @@
+﻿#####################
+# HAKISTAN EVENTS
+###########################
+
+add_namespace = haki
+
+
+# Hakistani's reaction to terror attack
+country_event = {
+	id = haki.1
+	title = haki.1.t
+	desc = haki.1.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # attack east hakistan
+		name = haki.1.a
+		ai_chance = {factor = 90}
+		declare_war_on = {
+			target = EHK
+			type = annex_everything
+		}
+	}
+
+	option = { # concede to east hakistani demands
+		name = haki.1.b
+		ai_chance = {factor = 10}
+		551 = {
+			set_demilitarized_zone = yes
+		}
+		594 = {
+			set_demilitarized_zone = yes
+		}
+		732 = {
+			set_demilitarized_zone = yes
+		}
+		add_political_power = -100
+	}
+}
+
+
+

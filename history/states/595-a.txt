@@ -4,7 +4,39 @@ state={
 	provinces={
 		8427 8432 8434 8437 8438 8439 8860 8871 8907 10339 10348 10357 10358 10363 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 797217
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+	}
+
+	history = {
+		owner = HAK
+		add_core_of = HAK
+
+		victory_points = {
+			8427
+			5
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+
+		}
+	}
 }

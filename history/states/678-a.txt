@@ -4,7 +4,34 @@ state={
 	provinces={
 		8138 8147 8163 8170 8205 8212 8217 8242 8260 8271 8272 8296 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 187211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = rural
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARN
+		add_core_of = ARN
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 1
+		}
+	}
 }

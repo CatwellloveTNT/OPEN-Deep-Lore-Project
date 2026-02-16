@@ -40,9 +40,6 @@ state = {
 			radar_station = 0
 			dockyard = 1
 			air_base = 0
-			19738 = {
-				naval_base = 0
-			}
 			
 		}
 	}

@@ -4,7 +4,43 @@ state={
 	provinces={
 		9380 9402 9403 9404 9412 9418 9441 9444 9450 9458 9464 9471 9483 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 2192811
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 3
+		steel = 22
+		coal = 7
+
+	}
+
+	history = {
+		owner = EST
+		add_core_of = EST
+
+		victory_points = {
+			9418
+			5
+		}
+		victory_points = {
+			9403
+			5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

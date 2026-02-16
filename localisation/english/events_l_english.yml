@@ -1,0 +1,14 @@
+﻿l_english:
+# -------------------- ARC 1 EVENTS (2032 - 2035) --------------------
+ news.1.t: "Terror Attack on Hakistani Soil!"
+ news.1.d: "i aint writing this"
+ news.1.a: "Another war in another irrelevant country."
+# -------------------- HAKISTAN --------------------
+ haki.1.t: "Terror Attack in West Singhali!"
+ haki.1.d: "i aint writing this"
+ haki.1.a: "We do not negotiate with terrrorist!"
+ haki.1.b: "Concede to their demands"
+# -------------------- EAST HAKISTAN --------------------
+ ehaki.1.t: "The HSSF proposes terror attack in West Singhali"
+ ehaki.1.d: "The Hakistan State Security Force, or HSSF has proposed a terror attack in the West Singhali province to force the hoof of the illegitimate Hakistani government and force them into a war with us. All they need is your authorization"
+ ehaki.1.a: "Operation Bengali is a go."

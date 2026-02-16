@@ -4,7 +4,43 @@ state={
 	provinces={
 		13524 13530 13534 13536 13544 13547 13549 13554 14042 14047 14392 14394 14396 14397 14399 14403 14409 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1299218
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 13
+		tungsten = 0
+		steel = 22
+		coal = 10
+
+	}
+
+	history = {
+		owner = USH
+		add_core_of = USH
+
+		victory_points = {
+			14399
+			5
+		}
+		victory_points = {
+			14394
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = CLS_IDK
+		texturefile = 'gfx/leaders/CLS/TEST.dds'
+	}
+}

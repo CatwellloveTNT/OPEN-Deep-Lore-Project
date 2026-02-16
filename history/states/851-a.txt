@@ -4,7 +4,51 @@ state={
 	provinces={
 		19918 19919 19920 19921 19924 19925 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 11838121
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 5
+		chromium = 0
+		aluminium = 6
+		rubber = 0
+		tungsten = 0
+		steel = 10
+		coal = 2
+
+	}
+
+	history = {
+		owner = TOM
+		add_core_of = TOM
+
+		victory_points = {
+			19921
+			40
+		}
+		victory_points = {
+			19918
+			15
+		}
+		victory_points = {
+			19920
+			15
+		}
+		victory_points = {
+			19924
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+		}
+	}
 }
