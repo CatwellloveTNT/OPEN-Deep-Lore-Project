@@ -4,7 +4,45 @@ state={
 	provinces={
 		13918 13933 14081 14082 14085 14087 14091 14093 14094 14095 14096 14100 14102 14104 14433 14452 14463 14468 14473 14478 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 2378217
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = XPA
+		add_core_of = XPA
+	
+		victory_points = {
+			14463
+			5
+		}
+		victory_points = {
+			14094
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

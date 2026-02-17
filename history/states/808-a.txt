@@ -4,7 +4,37 @@ state={
 	provinces={
 		13369 13370 13375 13378 13379 13380 13382 13384 13385 13389 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1282812
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = MAD
+		add_core_of = MAD
+
+
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

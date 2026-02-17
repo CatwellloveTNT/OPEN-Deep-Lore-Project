@@ -4,7 +4,46 @@ state={
 	provinces={
 		13646 13648 13656 13659 13663 13949 14129 14133 14135 14138 14140 14143 14144 14145 14146 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 2192181
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = LEG
+		add_core_of = LEG
+
+	
+		victory_points = {
+			14135
+			5
+		}
+		victory_points = {
+			14133
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

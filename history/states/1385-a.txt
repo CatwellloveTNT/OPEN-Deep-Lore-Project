@@ -4,7 +4,47 @@ state={
 	provinces={
 		15144 15145 15151 15156 15167 15170 15190 15321 15326 15327 15329 15339 20301 20315 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 2972171
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = SSK
+		add_core_of = SSK
+		add_core_of = NSK
+
+	
+		victory_points = {
+			15170
+			15
+		}
+		victory_points = {
+			20301
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

@@ -1,10 +1,48 @@
-state={
+	state={
 	id=761
 	name="STATE_761"
 	provinces={
 		13424 13430 13434 14272 14276 14279 14286 14292 14302 14307 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 393189
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 15
+		tungsten = 0
+		steel = 10
+		coal = 5
+
+	}
+
+	history = {
+		owner = PLD
+		add_core_of = PLD
+	
+		victory_points = {
+			14307
+			5
+		}
+		victory_points = {
+			14292
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 1
+			air_base = 3
+		}
+	}
 }

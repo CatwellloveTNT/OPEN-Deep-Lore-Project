@@ -4,7 +4,47 @@ state={
 	provinces={
 		19923 19926 19927 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 5603181
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 15
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 22
+		coal = 5
+
+	}
+
+	history = {
+		owner = NSK
+		add_core_of = NSK
+		add_core_of = SSK
+
+	
+		victory_points = {
+			19923
+			15
+		}
+		victory_points = {
+			19927
+			40
+		}
+
+
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 6
+		}
+	}
 }

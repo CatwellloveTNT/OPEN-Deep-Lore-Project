@@ -4,7 +4,46 @@ state={
 	provinces={
 		13304 13305 13314 13673 13674 13676 13678 13679 13682 13685 13953 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 987211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 17
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 7
+		steel = 10
+		coal = 0
+
+	}
+
+	history = {
+		owner = RON
+		add_core_of = RON
+		add_core_of = XPA
+	
+		victory_points = {
+			13673
+			5
+		}
+		victory_points = {
+			13676
+			10
+		}
+
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

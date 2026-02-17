@@ -4,7 +4,45 @@ state={
 	provinces={
 		19977 19978 19981 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 6783182
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 32
+		coal = 10
+
+	}
+
+	history = {
+		owner = KOR
+		add_core_of = KOR
+	
+		victory_points = {
+			19978
+			50
+		}
+		victory_points = {
+			19981
+			25
+		}
+
+
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 2
+		}
+	}
 }

@@ -4,7 +4,41 @@ state={
 	provinces={
 		13461 13462 13477 13974 13978 13979 13980 13986 13987 13989 13996 14001 14008 14012 14013 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 872171
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_town
+
+
+	resources = {
+		oil = 0
+		chromium = 10
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 18
+		coal = 6
+
+	}
+
+	history = {
+		owner = SBY
+		add_core_of = SBY
+	
+		victory_points = {
+			13989
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+		}
+	}
 }

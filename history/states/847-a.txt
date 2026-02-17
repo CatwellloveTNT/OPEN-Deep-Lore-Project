@@ -4,7 +4,53 @@ state={
 	provinces={
 		19931 19934 19936 19937 19941 19943 19944 19945 19948 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 14212214
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 20
+		chromium = 0
+		aluminium = 10
+		rubber = 0
+		tungsten = 0
+		steel = 17
+		coal = 5
+
+	}
+
+	history = {
+		owner = XPA
+		add_core_of = XPA
+	
+		victory_points = {
+			19943
+			50
+		}
+		victory_points = {
+			19931
+			25
+		}
+		victory_points = {
+			19937
+			15
+		}
+		victory_points = {
+			19941
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 8
+			arms_factory = 4
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

@@ -4,7 +4,44 @@ state={
 	provinces={
 		13601 13602 13603 13608 13613 13614 13615 13618 13620 13621 13625 13626 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1921712
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 15
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 10
+		coal = 5
+
+	}
+
+	history = {
+		owner = SAV
+		add_core_of = SAV
+		add_claim_by = XPA
+	
+		victory_points = {
+			13626
+			15
+		}
+
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 2
+			13626 = {
+				naval_base = 3
+			}
+		}
+	}
 }

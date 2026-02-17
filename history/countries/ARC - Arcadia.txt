@@ -20,3 +20,5 @@ set_popularities = {
 	communism = 0
 	neutrality = 0
 }
+
+puppet = ART

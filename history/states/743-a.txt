@@ -4,7 +4,41 @@ state={
 	provinces={
 		13556 13558 13562 13569 13573 13574 13575 13857 20352 20354 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 872171
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_town
+
+
+	resources = {
+		oil = 5
+		chromium = 0
+		aluminium = 0
+		rubber = 7
+		tungsten = 0
+		steel = 0
+		coal = 10
+
+	}
+
+	history = {
+		owner = TAM
+		add_core_of = TAM
+	
+		victory_points = {
+			20352
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			
+		}
+	}
 }

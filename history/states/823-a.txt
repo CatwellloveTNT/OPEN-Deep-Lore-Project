@@ -4,7 +4,41 @@ state={
 	provinces={
 		13817 13821 13823 13830 13831 13835 13836 14285 14303 14310 14314 14317 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1082181
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = city
+
+
+	resources = {
+		oil = 15
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 10
+		coal = 5
+
+	}
+
+	history = {
+		owner = ERD
+		add_core_of = ERD
+	
+		victory_points = {
+			13823
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

@@ -4,7 +4,42 @@ state={
 	provinces={
 		13479 13705 13706 14222 14226 14231 14233 14234 14237 14238 14241 14242 14244 14245 14246 14257 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 887211
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 8
+		steel = 15
+		coal = 0
+
+	}
+
+	history = {
+		owner = OLY
+		add_core_of = OLY
+		add_core_of = XPA
+	
+		victory_points = {
+			14234
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
 }

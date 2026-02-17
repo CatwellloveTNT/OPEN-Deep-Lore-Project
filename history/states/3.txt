@@ -1,19 +1,63 @@
 state={
 	id=3
 	name="STATE_3"
-	resources={
-		aluminium=0
-		chromium=2
-		oil=1
-		rubber=0
-		steel=1
-		tungsten=1
-	}
+
 	provinces={
 		19933 19940 19942 19947 19950 
 	}
-	manpower=4990901
-	buildings_max_level_factor=1
-	state_category=large_town
-	local_supplies=0
+	manpower = 11138712
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 7
+		rubber = 0
+		tungsten = 17
+		steel = 5
+		coal = 0
+
+	}
+
+	history = {
+		owner = NSK
+		add_core_of = NSK
+		add_core_of = SSK
+
+	
+		victory_points = {
+			19950
+			50
+		}
+		victory_points = {
+			19942 
+			25
+		}
+		victory_points = {
+			19940
+			15
+		}
+		victory_points = {
+			19933
+			5
+		}
+		victory_points = {
+			19947
+			5
+		}
+
+
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 7
+			arms_factory = 4
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+		}
+	}
 }

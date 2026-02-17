@@ -4,7 +4,37 @@ state={
 	provinces={
 		14804 14817 14821 14824 14825 14837 14849 14850 14856 14894 14895 14896 14897 14898 14899 14902 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 8772
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ART
+		add_core_of = ART
+
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			
+		}
+	}
 }

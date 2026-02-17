@@ -4,7 +4,45 @@ state={
 	provinces={
 		14792 14796 14798 14806 14815 14820 14826 14829 14830 14838 14845 14853 14855 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 623611
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ART
+		add_core_of = ART
+		add_claim_by = MPA
+
+		victory_points = {
+			14830
+			15
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			14830 = {
+				naval_base = 8
+			}
+			
+		}
+	}
 }

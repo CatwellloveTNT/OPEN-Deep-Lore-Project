@@ -4,7 +4,43 @@ state={
 	provinces={
 		19913 19915 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 6402912
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = megalopolis
+
+
+	resources = {
+		oil = 7
+		chromium = 0
+		aluminium = 2
+		rubber = 0
+		tungsten = 0
+		steel = 17
+		coal = 0
+
+	}
+
+	history = {
+		owner = USH
+		add_core_of = USH
+
+		victory_points = {
+			19913
+			40
+		}
+		victory_points = {
+			19915
+			20
+		}
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 3
+			radar_station = 0
+			dockyard = 0
+			air_base = 10
+		}
+	}
 }

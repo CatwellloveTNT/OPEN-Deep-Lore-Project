@@ -4,7 +4,42 @@ state={
 	provinces={
 		13318 13320 13321 13323 13324 13325 13326 13327 13328 14015 14019 14021 14022 14031 14517 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 1802912
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_town
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = KGA
+		add_core_of = KGA
+
+		victory_points = {
+			13325
+			25
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 3
+			13325 = {
+				naval_base = 3
+			}
+		}
+	}
 }

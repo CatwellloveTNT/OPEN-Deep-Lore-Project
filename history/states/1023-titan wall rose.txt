@@ -4,7 +4,50 @@ state={
 	provinces={
 		15805 15806 15813 15829 15830 15831 15832 15833 15834 15835 15836 15837 15838 15839 15840 15841 15842 15843 15844 15845 15848 15851 15852 15853 15854 15855 15856 15858 15860 15861 15863 15864 15865 15867 15869 15871 
 	}
-	manpower=0
-	buildings_max_level_factor=1
-	local_supplies=0
+	manpower = 7267
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = pastoral
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = TTW
+		add_core_of = TTW
+
+		victory_points = {
+			15813
+			5
+		}
+		victory_points = {
+			15848
+			5
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			15813 = {
+				naval_base = 3
+			}
+			15848 = {
+				naval_base = 3
+			}
+			
+		}
+	}
 }

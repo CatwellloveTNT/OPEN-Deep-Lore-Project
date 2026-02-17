@@ -22,5 +22,7 @@ set_popularities = {
 }
 
 puppet = NEW
+puppet = CAT
+
 
 recruit_character = COL_IDK
