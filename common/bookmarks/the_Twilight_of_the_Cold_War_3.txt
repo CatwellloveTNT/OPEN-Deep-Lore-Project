@@ -1,0 +1,32 @@
+bookmarks = { # ----------------- THIS IS THE SECOND WORLD -------------------
+	bookmark = {
+		name = "The Hermit Undone"
+		desc = "SECOND_WORLD_DESC"
+		date = 2032.1.1.12
+		picture = "GFX_bookmark_art"
+		default_country = "CLS"
+		default = yes
+		
+		"CLS"={
+			history = "CLS_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				#FRA_victors_of_wwi
+			}
+			focuses = {
+				#FRA_form_the_popular_front
+			}
+		}
+
+		"---"={
+			history = "IRRELEVANTS_DESC"
+		}
+
+		#minor = yes
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

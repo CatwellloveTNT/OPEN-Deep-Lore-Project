@@ -32,3 +32,5 @@ replace_path="common/ai_navy/goals"
 replace_path="common/ai_strategy"
 replace_path="events"
 replace_path="localisation/events_l_english.yml"
+replace_path="common/bookmarks"
+

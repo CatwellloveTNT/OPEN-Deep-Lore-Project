@@ -1,0 +1,10 @@
+﻿l_english:
+ FIRST_WORLD_DESC:0 "The First World, also referred to as the Human World or the Human Aligned World, exists today as oldest remaining cultural sphere. Pioneered by the Trinidadian Empire in 1766 (now the Coalition States), This sphere is held up primarily by Human nations and the Ponies of Arcadia, however interestingly some Avians also subscribe to this cultural world. The people of this world use human vernacular, practice human traditions and laws, celebrate human culture and use human phrases (such as saying everyone instead of everypony)."
+ SECOND_WORLD_DESC:0 "The Second World, also known as the Avian Cultural Sphere, consist of nations which subscribe primarily to Aviceynian culture and traditions, or alternatively oppose those that follow the traditions of The First World. Unlike the First World, the nations which make up this sphere are loosely connected to each other. They practice different cultural traditions, speak different languages and even disagree on species dynamics. However, this sphere heavily promotes strength through diversity and conflict."
+ THIRD_WORLD_DESC:0 "The Third World, also known as The Third Bloc, consist of nations who choose not to align with neither Humanity nor Aviankind. Unlike the other two worlds, this world is distinctly disconnected, existing only as an alternative to the two other world orders. The nations of this sphere practice their own unique cultural traditions, speak their own unique languages and most importantly try to stay out of the ever thawing Cold War."
+ CLS_BOOKMARK_DESC:0 "i aint writing this either"
+ IRRELEVANTS_DESC:0 "son... :sobbing:"
+ TFW_guiname:0 "The First World" #Shoutout to the EAW files for showing me how to do this
+ TSW_guiname:0 "The Second World"
+ TTW_guiname:0 "The Third World"
+
