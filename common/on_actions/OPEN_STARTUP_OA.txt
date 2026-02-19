@@ -51,5 +51,11 @@ on_actions = {
 			}
 		}
 
+		effect = { # ----------------------------- START GAME FLAG SETUP ------------------------------
+			CLS = {
+				set_country_flag = babies_first_flag
+				set_country_flag = first_phase
+			}
+		}
 	}
 }

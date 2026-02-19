@@ -26,21 +26,16 @@ state={
 		add_core_of = CLS
 		add_core_of = AMO
 
-		victory_points = {
-
-		}
 
 
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 0
-			arms_factory = 1
+			arms_factory = 0
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			11594 = {
-				naval_base = 0
-			}
+
 			
 		}
 	}

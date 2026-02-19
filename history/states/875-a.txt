@@ -13,7 +13,7 @@ state={
 	resources = {
 		oil = 0
 		chromium = 0
-		aluminium = 2
+		aluminium = 0
 		rubber = 0
 		tungsten = 0
 		steel = 0
@@ -26,9 +26,6 @@ state={
 		add_core_of = CLS
 		add_core_of = HIT
 
-		victory_points = {
-	
-		}
 
 		buildings = {
 			infrastructure = 1
@@ -37,9 +34,6 @@ state={
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			10571 = {
-				naval_base = 0
-			}
 			
 		}
 	}

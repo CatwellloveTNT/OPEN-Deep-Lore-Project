@@ -8,6 +8,10 @@ spriteTypes = {
 		name = "GFX_news_haki_terror_attack_event_image"
 		texturefile = "gfx/event_art/news_haki_terror_attack.dds"
 	}
+		spriteType = {
+		name = "GFX_report_placeholder_art"
+		texturefile = "gfx/event_art/placeholder_art.dds"
+	}
 
 	
 

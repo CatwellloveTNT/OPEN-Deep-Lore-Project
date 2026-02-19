@@ -26,20 +26,13 @@ state={
 		add_core_of = CLS
 		add_core_of = HIT
 
-		victory_points = {
-	
-		}
-
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 0
 			arms_factory = 0
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			10571 = {
-				naval_base = 0
-			}
 			
 		}
 	}

@@ -4,7 +4,7 @@ state={
 	provinces={
 		10887 10892 10899 10902 10907 10908 11373 11382 11387 11389 11403 11404 
 	}
-	manpower = 19221
+	manpower = 119221
 	buildings_max_level_factor = 1
 	local_supplies = 0
 	state_category = rural
@@ -26,9 +26,6 @@ state={
 		add_core_of = CLS
 		add_core_of = HIT
 
-		victory_points = {
-	
-		}
 
 		buildings = {
 			infrastructure = 1
@@ -37,9 +34,6 @@ state={
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			10571 = {
-				naval_base = 0
-			}
 			
 		}
 	}

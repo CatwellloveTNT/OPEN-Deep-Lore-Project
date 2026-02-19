@@ -33,4 +33,8 @@ replace_path="common/ai_strategy"
 replace_path="events"
 replace_path="localisation/events_l_english.yml"
 replace_path="common/bookmarks"
+replace_path="common/national_focus"
+
+
+
 

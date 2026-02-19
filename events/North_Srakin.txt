@@ -1,0 +1,43 @@
+﻿#####################
+# NORTH SRAKIN
+###########################
+
+add_namespace = nsk
+
+
+# war kickoff event
+country_event = {
+	id = nsk.1
+	title = nsk.1.t
+	desc = nsk.1.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # the north-south srakin war
+		name = nsk.1.a
+		ai_chance = {factor = 100}
+		hidden_effect = {
+		}		
+
+		news_event = {
+			id = news.4
+			days = 0
+		}				
+		declare_war_on = {
+			target = SSK
+			type = annex_everything
+		}
+		hidden_effect = {
+			CLS = {
+				country_event = {
+					id = col.27
+				}
+			}
+		}
+	}
+
+}
+
+
+

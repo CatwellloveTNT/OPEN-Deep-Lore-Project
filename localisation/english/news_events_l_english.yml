@@ -3,5 +3,17 @@
  news.1.t: "Terror Attack on Hakistani Soil!"
  news.1.d: "i aint writing this"
  news.1.a: "Violence begets violence... No?"
+ news.2.t: "Exercise Celestial Eclipse Concludes!"
+ news.2.d: "i aint writing this"
+ news.2.a: "Ok"
+ news.3.t: "The Pax Chrysalia Debuts!"
+ news.3.d: "i aint writing this"
+ news.3.a: "In a way... We wouldn't be here without it."
+ news.4.t: "The Second Srakin Civil War!"
+ news.4.d: "i aint writing this"
+ news.4.a: "The World is Heating Up..."
+
+# -------------------- NEWS TOOLTIPS --------------------
+thank_you_eaw: "If it wasn't for me stumbling onto Equestria at War and MrScroup's beautiful art, I wouldn't of gotten into ponies, I wouldn't of started drawing, and I wouldn't of created the Operation Enlightenment Universe. So, from the bottom of my heart. §CThank you§." 
 
 

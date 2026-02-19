@@ -7,7 +7,7 @@ state={
 	manpower = 1322322
 	buildings_max_level_factor = 1
 	local_supplies = 0
-	state_category = town
+	state_category = city
 
 
 	resources = {
@@ -30,9 +30,6 @@ state={
 			10675
 			10
 		}
-		victory_points = {
-			
-		}
 
 		buildings = {
 			infrastructure = 2
@@ -40,10 +37,8 @@ state={
 			arms_factory = 1
 			radar_station = 0
 			dockyard = 0
-			air_base = 0
-			11594 = {
-				naval_base = 0
-			}
+			air_base = 1
+
 			
 		}
 	}

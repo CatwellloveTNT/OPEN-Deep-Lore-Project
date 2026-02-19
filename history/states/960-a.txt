@@ -4,7 +4,7 @@ state={
 	provinces={
 		11507 11587 11591 11600 11613 11625 11627 11937 11944 11949 20420 20426 20441 
 	}
-	manpower = 54512
+	manpower = 154512
 	buildings_max_level_factor = 1
 	local_supplies = 0
 	state_category = rural
@@ -26,23 +26,14 @@ state={
 		add_core_of = CLS
 		add_core_of = AMO
 
-		victory_points = {
-	
-		}
-		victory_points = {
-			
-		}
 
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			arms_factory = 1
+			arms_factory = 0
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			11594 = {
-				naval_base = 0
-			}
 			
 		}
 	}

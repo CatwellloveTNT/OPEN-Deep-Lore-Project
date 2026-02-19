@@ -16,6 +16,13 @@ on_actions = {
 					days = 9
 				}
 			}
+			NSK = {
+				country_event = {
+					# NSK attacks SSK
+					id = NSK.1
+					days = 395
+				}
+			}			
 
 		}
 	}
