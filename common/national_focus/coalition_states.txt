@@ -147,6 +147,11 @@
 			country_event = {
 				id = col.13
 			}
+			ARC = {
+				country_event = {
+					id = arc.2
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -211,6 +216,11 @@
 		completion_reward = {
 			country_event = {
 				id = col.15
+			}
+			ARC = {
+				country_event = {
+					id = arc.3
+				}
 			}
 		}
 
@@ -312,6 +322,11 @@
 			country_event = {
 				id = col.19
 			}
+			ARC = {
+				country_event = {
+					id = arc.4
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -358,7 +373,7 @@
 	}
 
 	focus = {
-		id = CLS_looking_to_the_global_stage
+		id = CLS_looking_to_the_future
 		icon = GFX_goal_generic_consumer_goods
 		x = 8
 		y = 0
@@ -414,7 +429,7 @@
 				idea = CLS_srakin_war
 				days = 285
 			}
-			}
+		}
 
 		ai_will_do = {
 		factor = 24

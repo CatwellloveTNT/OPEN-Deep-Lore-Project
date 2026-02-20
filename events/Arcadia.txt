@@ -1,33 +1,387 @@
 ﻿#####################
-# EAST HAKISTAN EVENTS
+# ARCADIA EVENTS DO NOT DEADNAME THEM
 ###########################
 
-add_namespace = ehaki
+add_namespace = arc
 
 
-# East hakistan's HSSF (their CIA) does a terror attack on Hakistan to intimidate them into demilling the border states
+# starting even that gives some lore on arcadia and plays their peace "theme"
 country_event = {
-	id = ehaki.1
-	title = ehaki.1.t
-	desc = ehaki.1.d
-	picture = GFX_haki_terror_attack_event_image
+	id = arc.1
+	title = arc.1.t
+	desc = arc.1.d
+	picture = GFX_placeholder_art
 
 	is_triggered_only = yes
 
-	option = { # terror attack gets authorized
-		name = ehaki.1.a
+	option = { # Together for Victory!
+		name = arc.1.a
 		ai_chance = {factor = 100}
-		add_political_power = 100
-		news_event = {
-			id = news.1
-			days = 1
-		}
-		add_named_threat = {
-			threat = 1
-			name = "West Hakistani Terror Attack"
+		add_political_power = 1
+		custom_effect_tooltip = dubsteptip
+				hidden_effect = {
+			ARC = {
+				scoped_play_song = "hia"
+			}
 		}
 	}
 }
+country_event = {
+	id = arc.2
+	title = arc.2.t
+	desc = arc.2.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Maybe we'll beat em this time!
+		name = arc.2.a
+		ai_chance = {factor = 100}
+		add_timed_idea = {
+			idea = ARC_family_gathering
+			days = 120
+		}
+	}
+}
+country_event = {
+	id = arc.3
+	title = arc.3.t
+	desc = arc.3.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # A-are you sure? That one from 2030 was kinda embarrassing...
+		name = arc.3.a
+		ai_chance = {factor = 100}
+		army_experience = 5
+	}
+}
+country_event = {
+	id = arc.4
+	title = arc.4.t
+	desc = arc.4.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.4.a
+		ai_chance = {factor = 100}
+		army_experience = 5
+		# MAKE THIS EVENT IMPROVE THE COLACA SPIRIT WHEN YOU MAKE IT
+	}
+}
+country_event = {
+	id = arc.5
+	title = arc.5.t
+	desc = arc.5.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.5.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.6
+	title = arc.6.t
+	desc = arc.6.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.6.a
+		ai_chance = {factor = 100}
+		ARC = {
+			country_event = {
+				id = arc.9
+				days = 4
+			}
+		}
+	}
+}
+country_event = {
+	id = arc.7
+	title = arc.7.t
+	desc = arc.7.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.7.a
+		ai_chance = {factor = 100}
+		ARC = {
+			country_event = {
+				id = arc.6
+				days = 4
+			}
+		}
+	}
+}
+country_event = {
+	id = arc.8
+	title = arc.8.t
+	desc = arc.8.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.8.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.9
+	title = arc.9.t
+	desc = arc.9.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.9.a
+		ai_chance = {factor = 100}
+		ARC = {
+			country_event = {
+				id = arc.22
+				days = 12
+			}
+		}
+	}
+}
+country_event = {
+	id = arc.10
+	title = arc.10.t
+	desc = arc.10.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.10.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.11
+	title = arc.11.t
+	desc = arc.11.d
+	picture = GFX_bell
+
+	is_triggered_only = yes
+
+	option = { # Bell, we got a job to do.
+		name = arc.11.a
+		ai_chance = {factor = 100}
+		ARC = {
+			country_event = {
+				id = arc.23
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = arc.12
+	title = arc.12.t
+	desc = arc.12.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.12.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.13
+	title = arc.13.t
+	desc = arc.13.d
+	picture = GFX_satoru
+
+	is_triggered_only = yes
+
+	option = { # Satoru is one of my best agents... its just that he-... nevermind.
+		name = arc.13.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.14
+	title = arc.14.t
+	desc = arc.14.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.14.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.15
+	title = arc.15.t
+	desc = arc.15.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.15.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.16
+	title = arc.16.t
+	desc = arc.16.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.16.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.17
+	title = arc.17.t
+	desc = arc.17.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.17.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.18
+	title = arc.18.t
+	desc = arc.18.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.18.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.19
+	title = arc.19.t
+	desc = arc.19.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.19.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = arc.20
+	title = arc.20.t
+	desc = arc.20.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I'm sure we'll win
+		name = arc.20.a
+		ai_chance = {factor = 100}
+		ARC = {
+			country_event = {
+				id = arc.21
+				days = 8
+			}
+		}
+	}
+}
+country_event = {
+	id = arc.21
+	title = arc.21.t
+	desc = arc.21.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # It was a landslide!
+		name = arc.21.a
+		ai_chance = {factor = 100}
+		clr_country_flag = starail_unelected
+	}
+}
+country_event = {
+	id = arc.22
+	title = arc.22.t
+	desc = arc.22.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # monarch i choose you
+		name = arc.22.a
+		ai_chance = {factor = 100}
+		custom_effect_tooltip = triggermad
+		custom_effect_tooltip = extra_space		
+		complete_national_focus = ARC_monarch
+	}
+	option = { # i choose trigger
+		name = arc.22.b
+		ai_chance = {factor = 0}
+		custom_effect_tooltip = monarchmad
+		custom_effect_tooltip = extra_space
+		complete_national_focus = ARC_monarch
+	}
+}
+country_event = {
+	id = arc.23
+	title = arc.23.t
+	desc = arc.23.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I just really want to see my sister
+		name = arc.23.a
+		ai_chance = {factor = 100}
+		set_country_flag = bell_and_satoru_recalled
+		custom_effect_tooltip = satorurebel1
+	}
+	option = { # I guess your right
+		name = arc.23.b
+		ai_chance = {factor = 0}
+		set_country_flag = bell_and_satoru_recalled
+	}
+}
+country_event = {
+	id = arc.24
+	title = arc.24.t
+	desc = arc.24.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I really thought we we're gonna beat them!
+		name = arc.24.a
+		ai_chance = {factor = 100}
+	}
+}
+
+
 
 
 

@@ -9,6 +9,15 @@ on_actions = {
 					days = 8
 				}
 			}
+			# ------------- Monsterbird EVENTS -------------
+			MSB = {
+				country_event = {
+					# eaw thank you event
+					id = msb.1
+					days = 47
+				}
+			}
+
 			# ------------- Coalition States EVENTS -------------
 			CLS = {
 				country_event = {
@@ -19,10 +28,14 @@ on_actions = {
 					id = col.2
 					days = 12
 				}
-			news_event = {
-				id = news.3
-				days = 47
 			}
+
+			# ------------- Arcadia EVENTS -------------
+			ARC = {
+				country_event = {
+					id = arc.1
+					days = 1
+				}
 			}
 		}
 	}

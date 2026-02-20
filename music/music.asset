@@ -165,3 +165,8 @@ music = {
 	file = "dusk_in_the_wilderness.ogg"
 	volume = 0.65
 }
+music = {
+	name = "hia"
+	file = "hia.ogg"
+	volume = 0.65
+}

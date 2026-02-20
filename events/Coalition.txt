@@ -161,7 +161,12 @@ country_event = {
 		custom_effect_tooltip = testtip
 		clr_country_flag = babies_first_flag
 		complete_national_focus = CLS_flashpoint_arcadius
+		mark_focus_tree_layout_dirty = yes
 		air_experience = 10
+		news_event = {
+			id = news.5
+			days = 1
+		}
 	}
 }
 country_event = {

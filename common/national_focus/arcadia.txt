@@ -1,0 +1,762 @@
+focus_tree = {
+	id = arcadia_focus
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = ARC
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+# -------------------------------- NARRATIVE TREE PHASE 1 ------------------------------------------
+
+
+	focus = { # Maybe create some kind of election minigame? make something to get the player invested in honaki Starrail's rise to presidentcy
+		id = ARC_maintain_the_status_quo
+		icon = GFX_goal_generic_consumer_goods
+		x = 14
+		y = 0
+		mutually_exclusive = { focus = ARC_bust_the_myth }
+		#relative_position_id = 
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_country_flag = first_phase_arc
+		}
+		completion_reward = {
+			country_event = {
+				id = arc.15
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = { 
+		id = ARC_bust_the_myth
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 0
+		
+		mutually_exclusive = { focus = ARC_maintain_the_status_quo }
+		cost = 3
+		available = {
+			NOT = { has_country_flag = nomythbusting }
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			custom_effect_tooltip = "mythbusting"
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+	focus = {
+		id = ARC_nominate_starrail
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = ARC_maintain_the_status_quo
+		prerequisite = { focus = ARC_maintain_the_status_quo }
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.16
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_win_over_arcadian_humans
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = ARC_nominate_starrail
+		prerequisite = { focus = ARC_nominate_starrail }
+		cost = 10
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.17
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+
+
+	focus = {
+		id = ARC_win_over_arcadian_ponies
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = ARC_nominate_starrail
+		prerequisite = { focus = ARC_nominate_starrail }
+		cost = 10
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.18
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+
+	focus = {
+		id = ARC_everyone_aboard_the_starrail_express
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = ARC_nominate_starrail
+		prerequisite = { focus = ARC_win_over_arcadian_humans }
+		prerequisite = { focus = ARC_win_over_arcadian_ponies }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.19
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+	focus = {
+		id = ARC_crossing_our_feathers
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = ARC_everyone_aboard_the_starrail_express
+		prerequisite = { focus = ARC_everyone_aboard_the_starrail_express }
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.20
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_the_2032_arcadian_election
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = ARC_crossing_our_feathers
+		prerequisite = { focus = ARC_crossing_our_feathers }
+		cost = 3
+		available = {
+			NOT = {has_country_flag = election_unfinished}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = 2032_election
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+	focus = {
+		id = ARC_murmurs_from_halyifa
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = ARC_everything_is_amazing_in_arcadia
+		prerequisite = { focus = ARC_everything_is_amazing_in_arcadia }
+		cost = 3
+		available = {
+			NOT = { has_country_flag = amazing_in_arcadia}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		allow_branch = {has_country_flag = halfiya_mad1}
+		completion_reward = {
+			country_event = {
+				id = arc.5
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_the_murmurs_get_louder
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = ARC_murmurs_from_halyifa
+		prerequisite = { focus = ARC_murmurs_from_halyifa }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.5
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+# -------------------------------- AESA NARRATIVE TREE PHASE 1 (im killing satoru in the most brutal way possible in the comic if i dont write this well) ------------------------------------------
+
+	focus = {
+		id = ARC_spies_and_ties
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 0
+		#relative_position_id = ARC_murmurs_from_halyifa
+		#prerequisite = { focus = ARC_murmurs_from_halyifa }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.5
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+	focus = {
+		id = ARC_request_tfi_advisors
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = ARC_spies_and_ties
+		prerequisite = { focus = ARC_spies_and_ties }
+		cost = 3
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+
+
+	focus = {
+		id = ARC_aesa_assessment
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = ARC_spies_and_ties
+		prerequisite = { focus = ARC_spies_and_ties }
+		cost = 3
+		available = {
+			NOT = { has_country_flag = starail_unelected }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.7
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+	focus = {
+		id = ARC_arcadian_internal_security_assessment
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = ARC_spies_and_ties
+		prerequisite = { focus = ARC_spies_and_ties }
+		cost = 3
+		available = {
+			NOT = { has_country_flag = starail_unelected }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.8
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_ears_open_eyes_closed_strategy
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = ARC_arcadian_internal_security_assessment
+		prerequisite = { focus = ARC_arcadian_internal_security_assessment }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.9
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_secure_the_election
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = ARC_spies_and_ties
+		prerequisite = { focus = ARC_spies_and_ties }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.10
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+
+	focus = {
+		id = ARC_monarch
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = ARC_aesa_assessment
+		prerequisite = { focus = ARC_aesa_assessment }
+		mutually_exclusive = { focus = ARC_trigger }
+		cost = 3
+		available = {
+			NOT = { has_country_flag = starail_deciding }
+			NOT = { has_country_flag = starail_unelected }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_trigger
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+
+		relative_position_id = ARC_aesa_assessment
+		prerequisite = { focus = ARC_aesa_assessment }
+		mutually_exclusive = { focus = ARC_monarch }
+		cost = 3
+		available = {
+			NOT = { has_country_flag = notrigger }
+			NOT = { has_country_flag = starail_deciding }
+			NOT = { has_country_flag = starail_unelected }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = trigger
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_happy_neighbour_policy
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+
+		relative_position_id = ARC_monarch
+		prerequisite = { focus = ARC_monarch }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.12
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	focus = {
+		id = ARC_recall_bell_and_satoru
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+
+		relative_position_id = ARC_happy_neighbour_policy
+		prerequisite = { focus = ARC_happy_neighbour_policy }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		select_effect = {
+			country_event = {
+				id = arc.13
+			}
+		}		
+
+		completion_reward = {
+			country_event = {
+				id = arc.11
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+# -------------------------------- WAR COUNCIL TREE PHASE 1 ------------------------------------------
+
+
+	focus = {
+		id = ARC_the_war_council
+		icon = GFX_goal_generic_consumer_goods
+		x = 27
+		y = 0
+		#relative_position_id = ARC_everyone_aboard_the_starrail_express
+		#prerequisite = { focus = ARC_win_over_arcadian_humans }
+		cost = 3
+		available = {
+			NOT =  { has_country_flag = nope }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = arc.14
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		modifier = {
+				factor = 0
+			}
+		}
+	}
+
+}

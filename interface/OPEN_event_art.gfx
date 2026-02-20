@@ -9,9 +9,17 @@ spriteTypes = {
 		texturefile = "gfx/event_art/news_haki_terror_attack.dds"
 	}
 		spriteType = {
-		name = "GFX_report_placeholder_art"
+		name = "GFX_placeholder_art"
 		texturefile = "gfx/event_art/placeholder_art.dds"
 	}
+		spriteType = {
+		name = "GFX_bell"
+		texturefile = "gfx/event_art/bell.dds"
+	}	
+		spriteType = {
+		name = "GFX_satoru"
+		texturefile = "gfx/event_art/satoru.dds"
+	}	
 
 	
 

@@ -281,7 +281,7 @@ music = {
 		factor = 0
 		modifier = {
 			tag = CLS
-			factor = 20
+			factor = 0.1
 		}
 	}
 }
@@ -291,6 +291,17 @@ music = {
 	chance = {
 		modifier = {
 			factor = 0.1
+		}		
+	}
+}
+
+music = {
+	song = "hia"
+	chance = {
+		modifier = {
+			tag = ARC
+			has_war = no
+			factor = 1
 		}		
 	}
 }

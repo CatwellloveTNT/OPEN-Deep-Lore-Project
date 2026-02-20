@@ -1,16 +1,34 @@
-﻿l_english:
+﻿# definitely trolled with the name but this is the global focus loc file, not the coalition's (the iron workshop has decieved me)
+
+l_english:
+# ---------------------------- COALITION STATES -------------------------------------
  CLS_flashpoint_arcadius: "Flashpoint Arcadius"
-CLS_flashpoint_arcadius_desc: "RTFC!!!!"
+ CLS_flashpoint_arcadius_desc: "RTFC!!!!"
+ CLS_assess_the_situation: "Assess Our Situation"
+ CLS_assess_the_situation_desc: "tsdasdadsa"
+# ---------------------------- ARCADIA -------------------------------------
+ ARC_celebrate_the_new_year: "Celebrate The New Year"
+ ARC_celebrate_the_new_year_desc: "new year"
+ ARC_love_is_in_the_air: "Love is in The Air"
+ ARC_love_is_in_the_air_desc: "Wrong. Chemicals in the water."
 
 
 
 
 
-
-# ---------------------------- CUSTOM TOOLTIPS --------------------------
-hawksfailed: "Hawks has failed to shoot down the crown"
-hawkssucceded: "Hawks has managed to shoot down the crown"
-babies_first_flag: "The Flashpoint Arcadius incident has already concluded"
-coalition_crisis: "The states of the Coalition declared their secession"
-celestial_eclipse_unfinished: "The Celestial Eclipse exercise has not concluded"
+# ---------------------------- COALITION CUSTOM TOOLTIPS --------------------------
+hawksfailed: " Hawks has failed to shoot down the crown"
+hawkssucceded: " Hawks has managed to shoot down the crown"
+babies_first_flag: " The Flashpoint Arcadius incident has already concluded"
+coalition_crisis: " The states of the Coalition declared their secession"
+celestial_eclipse_unfinished: " The Celestial Eclipse exercise has not concluded"
 chdi_summit: "We'll convene with our allies in the CHDI and discuss our geopolitical situations and plans for the future"
+# ---------------------------- ARCADIAN CUSTOM TOOLTIPS --------------------------
+nope: " I really don't feel like interacting with the War Council right now..."
+mythbusting: " THERE IS NO CONTENT FOR ANTI HUMAN ARCADIA JUST YET"
+trigger: " THERE IS NO TRIGGER CONTENT JUST YET"
+starail_deciding: " Starail has not yet made a painful decision..."
+starail_unelected: " Starail is not the leader of Arcadia"
+election_unfinished: " The Arcadian election has not concluded"
+2032_election: "The 2032 election will decide who will lead Arcadia for the next 5 years..."
+

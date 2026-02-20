@@ -1,0 +1,29 @@
+﻿#####################
+# MONSTERBIRD EVENTS
+###########################
+
+add_namespace = msb
+
+
+# EAW thank you news event
+country_event = {
+	id = msb.1
+	title = msb.1.t
+	desc = msb.1.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # im dumb asf
+		name = msb.1.a
+		ai_chance = {factor = 100}
+		add_political_power = 100
+		news_event = {
+			id = news.3
+			days = 1
+		}
+	}
+}
+
+
+
