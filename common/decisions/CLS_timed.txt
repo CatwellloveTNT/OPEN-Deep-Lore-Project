@@ -1,0 +1,65 @@
+CLS_solaris_minigame = {
+
+	minor_aviceyn_cyberattack = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 100
+		is_good = no
+		days_re_enable = 5
+
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		timeout_effect = {
+			subtract_from_variable = { solaris_readyness = 2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	major_aviceyn_cyberattack = {
+		priority = 400
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 200
+		is_good = no
+		days_re_enable = 5
+
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		timeout_effect = {
+			subtract_from_variable = { solaris_readyness = 4 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+
+}
+
+
+
+
+
+
+

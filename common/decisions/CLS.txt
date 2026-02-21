@@ -1,0 +1,144 @@
+
+
+CLS_solaris_minigame = {
+
+	push_security_update = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		visible = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		cost = 50
+
+		days_re_enable = 2
+
+		days_remove = 2
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		complete_effect = {
+			add_political_power = 10
+			add_to_variable = { solaris_readyness = +1}
+
+			custom_effect_tooltip = hawksdead
+		}
+
+		ai_will_do = {
+			factor = 0.2
+		}		
+
+	}
+
+	balls = { 
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		visible = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		cost = 50
+
+		days_re_enable = 2
+
+		days_remove = 2
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		complete_effect = {
+			add_political_power = 10
+			add_to_variable = { solaris_readyness = +1}
+			custom_effect_tooltip = hawksdead
+		}
+
+		ai_will_do = {
+			factor = 0.2
+		}
+
+	}
+
+	remover = { 
+		priority = 200
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		visible = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+		}
+
+		cost = 50
+
+		days_re_enable = 2
+
+		days_remove = 2
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		complete_effect = {
+			add_political_power = 10
+			subtract_from_variable = { solaris_readyness = 2}
+			custom_effect_tooltip = hawksdead
+		}
+
+		ai_will_do = {
+			factor = 0.2
+		}
+
+	}
+}
+
+
+
+
+
+
+

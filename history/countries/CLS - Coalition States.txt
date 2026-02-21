@@ -24,5 +24,8 @@ set_popularities = {
 puppet = NEW
 puppet = CAT
 
+add_ideas = {
+	solaris_maximum
+}
 
 recruit_character = COL_IDK

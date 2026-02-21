@@ -1,0 +1,8 @@
+ARC_unit_production = {
+
+	allowed = {	original_tag = ARC }
+	enable = {
+		always = yes
+	}
+
+}

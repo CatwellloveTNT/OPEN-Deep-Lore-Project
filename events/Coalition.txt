@@ -526,6 +526,20 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+country_event = { # THIS IS THE TESTING EVENT TO CHECK FOR THE SOLARIS VARIABLE GOING UP/DOWN
+	id = col.28
+	title = col.28.t
+	desc = col.28.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # We made a promise, we'll keep it!"
+		name = col.28.a
+		ai_chance = {factor = 100}
+	}
+}
 
 
 

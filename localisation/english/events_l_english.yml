@@ -94,6 +94,9 @@
  col.27.d: "todo: give a brief summary of the history behind the two srakins and the coalition's backing of the south and their promise to support them"
  col.27.a: "When the Second World rears its head... Humanity answers the call."
  col.27.b: "Humanity does not associate with Aviankind."
+ col.28.t: "variable test"
+ col.28.d: "solaris is at [?solaris_readyness]"
+ col.28.a: "[?solaris_readyness]"
 
 # -------------------- ARCADIA -------------------- DO NOT DEADNAME THEM
  arc.1.t: "Arcadia - The First World's Pony Paradise."

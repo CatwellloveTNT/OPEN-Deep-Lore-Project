@@ -1,0 +1,24 @@
+	CLS_solaris_minigame = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+		scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		visible = {
+			OR = {
+				has_global_flag = nuclear_exchange_hasnt_happened
+			}
+		}
+
+		visible_when_empty = yes
+	}
+
+
+
+
+# ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

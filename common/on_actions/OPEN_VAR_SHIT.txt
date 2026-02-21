@@ -1,0 +1,62 @@
+on_actions = {
+	on_daily_CLS = { #THIS IS FOR SOLARIS'S OPERATIONAL READYNESS. i got this shit looking like undertale
+		effect = { 
+			if = { 
+				limit = { check_variable = { var = solaris_readyness value > 10 }
+			}
+				swap_ideas = {
+					remove_idea = solaris_high
+					add_idea = solaris_maximum
+				}
+				swap_ideas = {
+					remove_idea = solaris_high
+					add_idea = solaris_maximum
+				}	
+			}
+			else_if = {
+				limit = { check_variable = { var = solaris_readyness value = 8 }
+			}
+				swap_ideas = {
+					remove_idea = solaris_maximum
+					add_idea = solaris_high
+				}
+				swap_ideas = {
+					remove_idea = solaris_moderate
+					add_idea = solaris_high
+				}					
+			}
+			else_if = {
+				limit = { check_variable = { var = solaris_readyness value = 6 }
+			}
+				swap_ideas = {
+					remove_idea = solaris_high
+					add_idea = solaris_moderate
+				}
+				swap_ideas = {
+					remove_idea = solaris_low
+					add_idea = solaris_moderate
+				}									
+			}
+			else_if = {
+				limit = { check_variable = { var = solaris_readyness value = 4 }
+			}
+				swap_ideas = {
+					remove_idea = solaris_moderate
+					add_idea = solaris_low
+				}
+				swap_ideas = {
+					remove_idea = solaris_totally_hacked
+					add_idea = solaris_low
+				}			
+			}
+			else_if = { 
+				limit = { check_variable = { var = solaris_readyness value = 2 }
+			}
+				swap_ideas = {
+					remove_idea = solaris_low
+					add_idea = solaris_totally_hacked
+				}			
+			}			
+		}
+	}
+}

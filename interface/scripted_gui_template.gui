@@ -1,0 +1,32 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "cls_solaris_ui_window"
+		position = { x = 300 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 3500 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+	#	orientation = center
+	#	origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_scripted_gui_window_background"
+		}
+
+
+		#instantTextboxType = {
+		#	name = "political_title"
+		#	position = { x = 45 y = 8 }
+		#	font = "hoi_36header"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "POLITICAL_POLITICAL"
+		#	maxWidth = 400
+		#	maxHeight = 20
+		#	fixedsize = yes
+		#}
+	}
+}

@@ -65,6 +65,17 @@ on_actions = {
 				set_country_flag = starail_deciding		
 				set_country_flag = election_unfinished				
 			}
+			set_global_flag = nuclear_exchange_hasnt_happened
+		}
+		effect = { # ----------------------------- START GAME VARIABLE SETUP ------------------------------
+			CLS = {
+				set_variable = { solaris_readyness = 8 }
+			
+			}
+			ARC = {
+				set_variable = { satoru_defecting = 0 }		
+			}
+			set_global_flag = nuclear_exchange_hasnt_happened
 		}
 	}
 }

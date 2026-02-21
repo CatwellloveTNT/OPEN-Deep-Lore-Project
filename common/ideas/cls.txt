@@ -1,0 +1,123 @@
+ideas = {
+
+	country = {
+		solaris_maximum = {
+			picture = solaris_1
+
+			allowed = {
+				tag = CLS
+			}
+
+			available = {
+				
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				stability_factor = 0.1
+			}
+		}
+		solaris_high = {
+			picture = solaris_2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				stability_factor = 0.05
+			}
+		}
+		solaris_moderate = {
+			picture = solaris_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+			}
+		}
+
+		solaris_low = {
+			picture = solaris_1
+
+			allowed = {
+				tag = CLS
+			}
+
+			available = {
+		
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				stability_factor = 0.1
+			}
+		}
+
+		solaris_totally_hacked = {
+			picture = solaris_1
+
+			allowed = {
+				tag = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				stability_factor = 0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+scripted_gui = {
+  cls_solaris_ui = {
+    context_type = decision_category
+    window_name = "cls_solaris_ui_window"
+  }
+}
