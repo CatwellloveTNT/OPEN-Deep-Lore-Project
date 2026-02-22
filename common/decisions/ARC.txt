@@ -1,0 +1,803 @@
+ARC_starail_election_minigame = {
+
+	rally_in_megacity1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 351 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+			NOT = { has_country_flag = recent_megacity_rally }
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = election_unfinished
+		}
+
+		cost = 200
+
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			set_country_flag = did_first_megacity_rally
+			custom_effect_tooltip = megacity_rally
+			ARC = {
+				set_country_flag = recent_megacity_rally
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.24
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.25
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.26
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	rally_in_megacity2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 999 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+			has_country_flag = did_first_megacity_rally
+		}
+
+		visible = {
+			has_country_flag = starail_nom
+			has_country_flag = did_first_megacity_rally
+		}
+
+		cost = 250
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = megacity_rally
+			ARC = {
+				set_country_flag = did_second_megacity_rally
+				set_country_flag = recent_megacity_rally
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.24
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.25
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.26
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	rally_in_megacity3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 381 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_second_megacity_rally
+		}
+
+		cost = 250
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = megacity_rally
+			set_country_flag = did_third_megacity_rally
+			ARC = {
+				set_country_flag = recent_megacity_rally
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.24
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.25
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.26
+						}
+					}
+				}
+			}
+		}
+
+	}
+	
+	rally_in_megacity4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 375 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_third_megacity_rally
+		}
+
+		cost = 250
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = megacity_rally
+			set_country_flag = did_forth_megacity_rally
+			ARC = {
+				set_country_flag = recent_megacity_rally
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.24
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.25
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.26
+						}
+					}
+				}
+			}
+		}
+	}
+
+	rally_in_megacity5 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 386 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_forth_megacity_rally
+		}
+
+		cost = 250
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = megacity_rally
+			set_country_flag = did_fifth_megacity_rally
+			ARC = {
+				set_country_flag = recent_megacity_rally
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.24
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.25
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.26
+						}
+					}
+				}
+			}
+		}
+	}
+
+	rally_in_megacity6 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 383 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_fifth_megacity_rally
+		}
+
+		cost = 250
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = megacity_rally
+			ARC = {
+				set_country_flag = recent_megacity_rally
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.24
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.25
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.26
+						}
+					}
+				}
+			}
+		}
+	}
+
+	rally_in_state1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 4 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = election_unfinished
+		}
+
+		cost = 100
+
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		complete_effect = {
+			set_country_flag = did_first_state_rally
+			custom_effect_tooltip = state_rally
+			ARC = {
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.27
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.28
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.29
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+
+	rally_in_state2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 14 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_first_state_rally
+		}
+
+		cost = 100
+
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		complete_effect = {
+			set_country_flag = did_second_state_rally
+			custom_effect_tooltip = state_rally
+			ARC = {
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.27
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.28
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.29
+						}
+					}
+				}
+			}
+		}
+
+	}	
+
+
+	rally_in_state3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 134 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_second_state_rally
+		}
+
+		cost = 100
+
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		complete_effect = {
+			set_country_flag = did_third_state_rally
+			custom_effect_tooltip = state_rally
+			ARC = {
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.27
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.28
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.29
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	rally_in_state4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 148 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_third_state_rally
+		}
+
+		cost = 100
+
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		complete_effect = {
+			set_country_flag = did_forth_state_rally
+			custom_effect_tooltip = state_rally
+			ARC = {
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.27
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.28
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.29
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	rally_in_state5 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 14 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_forth_state_rally
+		}
+
+		cost = 100
+
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		complete_effect = {
+			set_country_flag = did_fifth_state_rally
+			custom_effect_tooltip = state_rally
+			ARC = {
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.27
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.28
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.29
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	rally_in_state6 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		on_map_mode = map_and_decisions_view
+		highlight_states = { highlight_state_targets = { state = 14 } }
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = did_fifth_state_rally
+		}
+
+		cost = 100
+
+
+
+		days_remove = 1
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = state_rally
+			ARC = {
+				random_list = {
+					40 = {
+						country_event = {
+							id = arc.27
+						}
+					}
+					40 = {
+						country_event = {
+							id = arc.28
+						}
+					}
+					20 = {
+						country_event = {
+							id = arc.29
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	ensure_electoral_integrety = { 
+		priority = 305
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+			has_completed_focus = ARC_secure_the_election
+		}
+
+		visible = {
+			has_country_flag = starail_nom	
+			has_country_flag = election_unfinished
+		}
+
+		cost = 50
+
+
+		days_remove = 2
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		complete_effect = {
+			add_political_power = 10
+			set_country_flag = secured_the_election
+			remove_mission = aviceynian_interference
+			clr_country_flag = aviceyn_interference
+		}
+
+		ai_will_do = {
+			factor = 1
+		}		
+
+	}
+}

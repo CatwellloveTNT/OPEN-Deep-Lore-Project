@@ -1,0 +1,6 @@
+scripted_gui = {
+  arc_election_ui = {
+    context_type = decision_category
+    window_name = "arc_election_ui_window"
+  }
+}

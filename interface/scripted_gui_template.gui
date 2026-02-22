@@ -30,3 +30,89 @@ guiTypes = {
 		#}
 	}
 }
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "arc_election_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_arc_election_ui"
+		}
+
+		instantTextBoxType = {
+			name = hhh_score
+			position = {
+				x = 79 y = 380
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = hhh_name
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hop_score
+			position = {
+				x = 300 y = 380
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = hop_name
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hhh_var
+			position = {
+				x = 79 y = 475
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = hhh_score
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hop_var
+			position = {
+				x = 300 y = 475
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = hop_score
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+	}
+}

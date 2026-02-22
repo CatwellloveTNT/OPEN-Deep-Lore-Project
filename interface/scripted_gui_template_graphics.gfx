@@ -19,4 +19,9 @@ spriteTypes = {
 		name = "GFX_spongebob"
 		textureFile = "/gfx/interface/scripted_gui_graphics/spongebob.dds"
 	}
+
+	spriteType = {
+		name = "GFX_arc_election_ui"
+		textureFile = "/gfx/interface/scripted_gui_graphics/arc_election_ui.dds"
+	}
 }

@@ -1,0 +1,23 @@
+	ARC_starail_election_minigame = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+		scripted_gui = arc_election_ui
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		visible = {
+			has_country_flag = starail_nom
+			has_country_flag = election_unfinished
+		}
+
+		visible_when_empty = no
+	}
+
+
+
+
+# ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

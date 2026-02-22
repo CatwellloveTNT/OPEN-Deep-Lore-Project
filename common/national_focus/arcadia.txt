@@ -138,6 +138,11 @@ focus_tree = {
 			country_event = {
 				id = arc.17
 			}
+			add_to_variable = {
+				starail_support = 45
+			}
+			add_political_power = 150
+			custom_effect_tooltip = wonhumans
 		}
 
 		ai_will_do = {
@@ -172,6 +177,11 @@ focus_tree = {
 			country_event = {
 				id = arc.18
 			}
+			add_to_variable = {
+				starail_support = 85
+			}
+			add_political_power = 150			
+			custom_effect_tooltip = wonponies
 		}
 
 		ai_will_do = {
@@ -205,6 +215,11 @@ focus_tree = {
 			country_event = {
 				id = arc.19
 			}
+			add_to_variable = {
+				starail_support = 100
+			}
+			add_political_power = 200
+			custom_effect_tooltip = honkaistarrail
 		}
 
 		ai_will_do = {
@@ -234,9 +249,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = {
-				id = arc.20
-			}
+	
 		}
 
 		ai_will_do = {
@@ -518,6 +531,13 @@ focus_tree = {
 			country_event = {
 				id = arc.10
 			}
+			add_to_variable = {
+				starail_support = 25
+			}
+			subtract_from_variable = {
+				opposition_support = 25
+			}
+			custom_effect_tooltip = electionsecured
 		}
 
 		ai_will_do = {

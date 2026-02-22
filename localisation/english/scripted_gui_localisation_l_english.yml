@@ -1,2 +1,5 @@
 ﻿l_english:
- test_localisation:0 "fdfdfd"
+ hhh_name:0 "HHH Electors:"
+ hop_name:0 "HOP Electors:"
+ hhh_score:0 "§A[?starail_support]§A"
+ hop_score:0 "§R[?opposition_support]§R"

@@ -247,9 +247,19 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # I really thought we we're gonna beat them!
+	option = { # Let's go Starail!
 		name = arc.16.a
 		ai_chance = {factor = 100}
+		activate_mission = opposition_rallying
+		set_country_flag = starail_nom	
+		hidden_effect = {
+			ARC = {
+				country_event = {
+					id = arc.30
+					days = 40
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -286,9 +296,10 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # I really thought we we're gonna beat them!
+	option = { # maybe we'll visit belobog
 		name = arc.19.a
 		ai_chance = {factor = 100}
+		set_country_flag = election_final_stretch
 	}
 }
 country_event = {
@@ -321,7 +332,6 @@ country_event = {
 	option = { # It was a landslide!
 		name = arc.21.a
 		ai_chance = {factor = 100}
-		clr_country_flag = starail_unelected
 	}
 }
 country_event = {
@@ -375,12 +385,142 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # I really thought we we're gonna beat them!
+	option = { # very cool ms honkai!
 		name = arc.24.a
 		ai_chance = {factor = 100}
+		clr_country_flag = recent_megacity_rally
+		add_to_variable = { starail_support = 52 }
+			
+	}
+}
+country_event = {
+	id = arc.25
+	title = arc.25.t
+	desc = arc.25.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # could be worse
+		name = arc.25.a
+		ai_chance = {factor = 100}
+		clr_country_flag = recent_megacity_rally
+		add_to_variable = { starail_support = 25 }		
+	}
+}
+country_event = {
+	id = arc.26
+	title = arc.26.t
+	desc = arc.26.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # our numbers are going down in the polls!
+		name = arc.26.a
+		ai_chance = {factor = 100}
+		clr_country_flag = recent_megacity_rally
+		subtract_from_variable = { starail_support = 10 }
+		add_to_variable = { opposition_support = 5 }
+	}
+}
+country_event = {
+	id = arc.27
+	title = arc.27.t
+	desc = arc.27.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # our numbers are going down in the polls!
+		name = arc.27.a
+		ai_chance = {factor = 100}
+		add_to_variable = { starail_support = 21 }
+	}
+}
+country_event = {
+	id = arc.28
+	title = arc.28.t
+	desc = arc.28.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # our numbers are going down in the polls!
+		name = arc.28.a
+		ai_chance = {factor = 100}
+		clr_country_flag = recent_megacity_rally
+		add_to_variable = { starail_support = 10 }
+	}
+}
+country_event = {
+	id = arc.29
+	title = arc.29.t
+	desc = arc.29.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # our numbers are going down in the polls!
+		name = arc.29.a
+		ai_chance = {factor = 100}
+		clr_country_flag = recent_megacity_rally
+		subtract_from_variable = { starail_support = 5 }
+		add_to_variable = { opposition_support = 5 }	
+	}
+}
+country_event = {
+	id = arc.30
+	title = arc.30.t
+	desc = arc.30.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # maam yes maam
+		name = arc.30.a
+		ai_chance = {factor = 100}
+		clr_country_flag = recent_megacity_rally
+		set_country_flag = aviceyn_interference
+		custom_effect_tooltip = aviveyn_inter
 	}
 }
 
+country_event = {
+	id = arc.31
+	title = arc.31.t
+	desc = arc.31.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # we did it, now its time for the real work
+		name = arc.31.a
+		ai_chance = {factor = 100}
+		complete_national_focus = ARC_the_2032_arcadian_election	
+		clr_country_flag = starail_unelected
+		clr_country_flag = election_unfinished	
+		clr_country_flag = starail_nom			
+	}
+}
+
+country_event = {
+	id = arc.32
+	title = arc.32.t
+	desc = arc.32.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # we did it, now its time for the real work
+		name = arc.32.a
+		ai_chance = {factor = 100}
+		complete_national_focus = ARC_the_2032_arcadian_election	
+		clr_country_flag = starail_unelected #REMOVE THIS WHEN ALT HISTORY CONTENTT COMES IN	
+		clr_country_flag = election_unfinished
+		clr_country_flag = starail_nom	
+	}
+}
 
 
 

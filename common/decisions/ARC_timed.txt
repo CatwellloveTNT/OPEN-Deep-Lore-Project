@@ -1,0 +1,152 @@
+ARC_starail_election_minigame = {
+
+	opposition_rallying = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 35
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			has_country_flag = starail_nom		
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = starail_nom	
+		}
+
+		timeout_effect = {
+			random_list = {
+				20 = {
+					add_to_variable = {
+					opposition_support = 15
+					}
+				}
+				20 = {
+					add_to_variable = {
+					opposition_support = 30
+					}
+				}
+				20 = {
+					add_to_variable = {
+					opposition_support = 24
+					}
+				}
+				20 = {
+					add_to_variable = {
+					opposition_support = 11
+					}
+				}
+				19 = {
+					add_to_variable = {
+					opposition_support = 27
+					}
+				1 = {
+					add_to_variable = {
+					opposition_support = 100
+					}
+				}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	aviceynian_interference = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 60
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			has_country_flag = aviceyn_interference	
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = aviceyn_interference
+		}
+
+		timeout_effect = {
+				add_to_variable = {
+				opposition_support = 35
+				}
+				subtract_from_variable = {
+					starail_support = 20
+				}
+
+		}
+
+		cancel_trigger = {
+			has_country_flag = secured_the_election
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	election_day = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 40
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			has_country_flag = election_final_stretch
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = election_final_stretch
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		timeout_effect = {
+			if = { 
+				limit = { check_variable = { var = starail_support value > opposition_support } 
+			}
+			ARC = {
+				country_event = {
+					id = arc.31
+				}
+			}
+			}
+			else_if = {
+				limit = { check_variable = { var = starail_support value > opposition_support } 
+			}
+			ARC = {
+				country_event = {
+					id = arc.32
+				}
+			}
+		}
+
+	}
+	}
+}

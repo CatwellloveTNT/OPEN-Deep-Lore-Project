@@ -2,7 +2,7 @@
 
 CLS_solaris_minigame = {
 
-	push_security_update = { 
+	push_security_update_maximum = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -25,6 +25,61 @@ CLS_solaris_minigame = {
 		}
 
 		cost = 50
+
+		days_re_enable = 2
+
+		days_remove = 2
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		complete_effect = {
+			add_political_power = 10
+			add_to_variable = { solaris_readyness = +1}
+
+			custom_effect_tooltip = hawksdead
+		}
+
+		ai_will_do = {
+			factor = 0.2
+		}		
+
+	}
+
+	reference_this_code_for_nuclear_solaris_minigame = { # THIS IS A REFERENCE FOR THE ENDGAME NUCLEAR EXCHANGE MINIGAME WHERE THE COST TO PROTECT A STATE IS DIFFERENT BASED ON SOLARIS READYNESS
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			factor = 1.0
+
+		}
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+			has_idea = solaris_maximum
+			NOT = { has_idea = solaris_high}
+			NOT = { has_idea = solaris_moderate}
+			NOT = { has_idea = solaris_low}
+			NOT = { has_idea = solaris_totally_hacked}									
+		}
+
+		visible = {
+			has_global_flag = nuclear_exchange_hasnt_happened
+			has_idea = solaris_maximum
+			NOT = { has_idea = solaris_high}
+			NOT = { has_idea = solaris_moderate}
+			NOT = { has_idea = solaris_low}
+			NOT = { has_idea = solaris_totally_hacked}				
+		}
+
+		cost = 10
 
 		days_re_enable = 2
 

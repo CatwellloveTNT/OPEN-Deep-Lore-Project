@@ -69,11 +69,13 @@ on_actions = {
 		}
 		effect = { # ----------------------------- START GAME VARIABLE SETUP ------------------------------
 			CLS = {
-				set_variable = { solaris_readyness = 8 }
+				set_variable = { solaris_readyness = 10 }
 			
 			}
 			ARC = {
-				set_variable = { satoru_defecting = 0 }		
+				set_variable = { satoru_defecting = 0 }
+				set_variable = { starail_support = 52 }
+				set_variable = { opposition_support = 27 }						
 			}
 			set_global_flag = nuclear_exchange_hasnt_happened
 		}
