@@ -1,0 +1,120 @@
+characters={
+	ARC_starail={
+		name=ARC_STARAIL
+		portraits={
+			civilian={
+				large="GFX_starail_leader_art_large"
+			}
+		}
+		country_leader={
+			ideology=conservative_pony_first_worldism
+			traits={
+				ex_aesa_agent
+				aesa_habits
+			}
+		desc = ARC_STARAIL_DESC			
+			expire="2050.1.1.1"
+		}
+	}
+
+	ARC_monarch={
+		name=ARC_MONARCH
+
+		portraits={
+			civilian={
+				large="GFX_starail_leader_art_large"
+			}
+			army={
+				small="GFX_starail_leader_art_large"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = monarch
+			allowed  = {
+				original_tag  = ARC
+			}
+			can_be_fired = no
+			available  = {
+					has_completed_focus  = ARC_monarch
+					NOT  = {
+						has_completed_focus = ARC_trigger
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			
+			traits  = {
+				communist_revolutionary
+
+			}
+			do_effect  = {
+				NOT  = {
+					has_government  = communism
+				}
+			}
+			ai_will_do  = {
+				factor  = 10.000
+				modifier  = {
+					is_historical_focus_on  = yes
+					has_game_rule  = {
+						rule  = USA_ai_behavior
+						option  = default
+					}
+					factor  = 0.000
+				}
+				modifier  = {
+					is_historical_focus_on  = yes
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					factor  = 0.000
+				}
+				modifier  = {
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					has_idea_with_trait = fascist_demagogue
+					factor  = 0.000
+				}
+			}
+		}
+	}
+
+	ARC_sheridan={ # NOTE ALL ARCADIAN GENERALS THAT ARE NOT CHARACTERS OF RELEVANCE SHOULD BE NAMED AFTER AMERICAN/NATO TANKS!!!
+		name=ARC_SHERIDAN
+		portraits={
+			army={
+				small="GFX_idea_omar_bradley"
+			}
+			army={
+				large=GFX_portrait_USA_omar_bradley
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = sheridan
+			ledger = army
+			allowed = {
+				original_tag = ARC
+			}
+
+			traits = {
+				superior_firepower_expert
+			}
+		}
+
+		corps_commander={
+			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+}

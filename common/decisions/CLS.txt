@@ -2,15 +2,10 @@
 
 CLS_solaris_minigame = {
 
-	push_security_update_maximum = { 
+	push_security_update = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
-
-		ai_will_do = {
-			factor = 1.0
-
-		}
 
 		allowed = {
 			original_tag = CLS
@@ -26,9 +21,9 @@ CLS_solaris_minigame = {
 
 		cost = 50
 
-		days_re_enable = 2
+		days_re_enable = 20
 
-		days_remove = 2
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.1
@@ -42,7 +37,27 @@ CLS_solaris_minigame = {
 		}
 
 		ai_will_do = {
-			factor = 0.2
+			factor = 0.1
+			modifier = {
+				has_idea = solaris_maximum
+				factor = 0.1
+			}
+			modifier = {
+				has_idea = solaris_high
+				factor = 0.3
+			}
+			modifier = {
+				has_idea = solaris_moderate
+				factor = 0.4
+			}
+			modifier = {
+				has_idea = solaris_low
+				factor = 0.5
+			}
+			modifier = {
+				has_idea = solaris_totally_hacked
+				factor = 1
+			}
 		}		
 
 	}
@@ -53,7 +68,7 @@ CLS_solaris_minigame = {
 		icon = GFX_decision_eng_trade_unions_support
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0
 
 		}
 
@@ -95,21 +110,37 @@ CLS_solaris_minigame = {
 
 			custom_effect_tooltip = hawksdead
 		}
-
-		ai_will_do = {
-			factor = 0.2
-		}		
+	
 
 	}
 
-	balls = { 
+	conduct_a_mock_attack_exercise = { 
 		priority = 311
 
 		icon = GFX_decision_eng_trade_unions_support
 
 		ai_will_do = {
-			factor = 1.0
-
+			factor = 0.2
+			modifier = {
+				has_idea = solaris_maximum
+				factor = 0.3
+			}
+			modifier = {
+				has_idea = solaris_high
+				factor = 0.5
+			}
+			modifier = {
+				has_idea = solaris_moderate
+				factor = 0.6
+			}
+			modifier = {
+				has_idea = solaris_low
+				factor = 0.7
+			}
+			modifier = {
+				has_idea = solaris_totally_hacked
+				factor = 0.8
+			}
 		}
 
 		allowed = {
@@ -126,9 +157,9 @@ CLS_solaris_minigame = {
 
 		cost = 50
 
-		days_re_enable = 2
+		days_re_enable = 50
 
-		days_remove = 2
+		days_remove = 20
 
 		modifier = {
 			consumer_goods_factor = 0.1
@@ -140,10 +171,6 @@ CLS_solaris_minigame = {
 			custom_effect_tooltip = hawksdead
 		}
 
-		ai_will_do = {
-			factor = 0.2
-		}
-
 	}
 
 	remover = { 
@@ -152,7 +179,7 @@ CLS_solaris_minigame = {
 		icon = GFX_decision_eng_trade_unions_support
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0
 
 		}
 
@@ -182,10 +209,6 @@ CLS_solaris_minigame = {
 			add_political_power = 10
 			subtract_from_variable = { solaris_readyness = 2}
 			custom_effect_tooltip = hawksdead
-		}
-
-		ai_will_do = {
-			factor = 0.2
 		}
 
 	}

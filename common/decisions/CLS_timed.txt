@@ -3,7 +3,7 @@ CLS_solaris_minigame = {
 	minor_aviceyn_cyberattack = {
 		priority = 320
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 100
+		days_mission_timeout = 50
 		is_good = no
 		days_re_enable = 5
 
@@ -27,9 +27,9 @@ CLS_solaris_minigame = {
 		}
 	}
 	major_aviceyn_cyberattack = {
-		priority = 400
+		priority = 401
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 200
+		days_mission_timeout = 100
 		is_good = no
 		days_re_enable = 5
 

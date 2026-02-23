@@ -22,3 +22,7 @@ set_popularities = {
 }
 
 puppet = ART
+
+recruit_character = ARC_starail
+recruit_character = ARC_monarch
+recruit_character = ARC_sheridan

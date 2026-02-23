@@ -10,7 +10,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.5
 
 		}
 
@@ -74,7 +74,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.5
 
 		}
 
@@ -137,7 +137,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.5
 
 		}
 
@@ -200,7 +200,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.5
 
 		}
 
@@ -262,7 +262,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.5
 
 		}
 
@@ -324,7 +324,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.5
 
 		}
 
@@ -385,7 +385,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.6
 
 		}
 
@@ -449,7 +449,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.6
 
 		}
 
@@ -513,7 +513,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.6
 
 		}
 
@@ -576,7 +576,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 0.6
 
 		}
 
@@ -639,7 +639,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 1
 
 		}
 
@@ -702,7 +702,7 @@ ARC_starail_election_minigame = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 1.0
+			factor = 1
 
 		}
 
@@ -760,8 +760,7 @@ ARC_starail_election_minigame = {
 		icon = GFX_decision_eng_trade_unions_support
 
 		ai_will_do = {
-			factor = 1.0
-
+			factor = 1
 		}
 
 		fire_only_once = yes
@@ -784,8 +783,9 @@ ARC_starail_election_minigame = {
 
 		days_remove = 2
 
-		modifier = {
-			consumer_goods_factor = 0.1
+		modifier = { #they will stand on business 
+			has_country_flag = aviceyn_interference
+			factor = 1
 		}
 
 		complete_effect = {
@@ -794,10 +794,5 @@ ARC_starail_election_minigame = {
 			remove_mission = aviceynian_interference
 			clr_country_flag = aviceyn_interference
 		}
-
-		ai_will_do = {
-			factor = 1
-		}		
-
 	}
 }

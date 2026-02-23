@@ -348,13 +348,14 @@ country_event = {
 		custom_effect_tooltip = triggermad
 		custom_effect_tooltip = extra_space		
 		complete_national_focus = ARC_monarch
+		add_ideas = monarch
 	}
-	option = { # i choose trigger
+	option = { # i choose trigger 
 		name = arc.22.b
 		ai_chance = {factor = 0}
 		custom_effect_tooltip = monarchmad
 		custom_effect_tooltip = extra_space
-		complete_national_focus = ARC_monarch
+		complete_national_focus = ARC_monarch 
 	}
 }
 country_event = {

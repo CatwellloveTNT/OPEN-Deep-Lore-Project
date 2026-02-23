@@ -1,2 +1,8 @@
 ﻿l_english:
- CLS_IDK: "TESTING"
+ ARC_STARAIL:0 "Starail"
+ ARC_STARAIL_DESC:0 "balls"
+ ARC_MONARCH:0 "Monarch"
+ ARC_MONARCH_DESC:0 "balls"
+ ARC_SHERIDIAN:0 "Sheridian"
+ ARC_SHERIDIAN_DESC:0 "balls"
+

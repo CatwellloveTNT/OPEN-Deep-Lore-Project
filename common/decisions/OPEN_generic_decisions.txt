@@ -143,16 +143,16 @@ economy_decisions = {
 		}
 		fire_only_once = no
 
-		days_remove = 45
+		days_remove = 60
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.0
 			modifier = {
-				num_of_factories < 30
-				factor = 0
+				has_war = yes
+				factor = 0.4
 			}
 		}
-
+		cost = 250
 		modifier = {
 			production_speed_supply_node_factor = 3
 		}

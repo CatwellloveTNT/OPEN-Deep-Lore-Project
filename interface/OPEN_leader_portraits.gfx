@@ -1,6 +1,7 @@
 spriteTypes = {
-	spriteType = {
-		name = CLS_IDK
-		texturefile = 'gfx/leaders/CLS/TEST.dds'
-	}
+	spriteType = { #starail (not the first character portrait i expected to draw for this tbh)
+		name = "GFX_starail_leader_art_large"
+		textureFile = "gfx/radio_station_cover.dds"
+	}	
 }
+

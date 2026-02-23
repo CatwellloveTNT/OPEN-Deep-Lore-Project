@@ -47,7 +47,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-		factor = 24
+		factor = 100
 		}
 	}
 
@@ -110,7 +110,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-		factor = 24
+		factor = 100
 		}
 	}
 
@@ -516,7 +516,7 @@ focus_tree = {
 		prerequisite = { focus = ARC_spies_and_ties }
 		cost = 3
 		available = {
-
+			has_completed_focus = ARC_nominate_starrail
 		}
 		
 		bypass = {
@@ -542,6 +542,10 @@ focus_tree = {
 
 		ai_will_do = {
 		factor = 24
+		modifier = { #arcadia will instantly try to get rid of the birds once they begin to interfere with the election
+			has_country_flag = aviceyn_interference
+			factor = 100
+		}
 		}
 	}
 

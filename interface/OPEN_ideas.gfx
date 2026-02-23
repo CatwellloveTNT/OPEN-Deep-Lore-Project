@@ -1,6 +1,13 @@
 spriteTypes = {	
 
 
+	spriteType = { #monarch
+		name = "GFX_monarch"
+		textureFile = "gfx/radio_station_cover.dds"
+	}	
+
+
+
 
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
