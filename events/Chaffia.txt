@@ -1,0 +1,111 @@
+﻿#####################
+# CHAFFIAN EVENTS
+###########################
+
+add_namespace = chf
+
+
+# Chaffian kickoff event and plays their moodsetter music
+country_event = {
+	id = chf.1
+	title = chf.1.t
+	desc = chf.1.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # isolat will be avenged
+		name = chf.1.a
+		ai_chance = {factor = 100}
+		add_political_power = 1
+	}
+}
+country_event = {
+	id = chf.2
+	title = chf.2.t
+	desc = chf.2.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # are they planning something?
+		name = chf.2.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = chf.3
+	title = chf.3.t
+	desc = chf.3.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # We trust the CIS, how about we give half of them a break?
+		name = chf.3.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = chf.4
+	title = chf.4.t
+	desc = chf.4.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Get those guys off their break, we've been decived!
+		name = chf.4.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = chf.5
+	title = chf.5.t
+	desc = chf.5.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Send in our diplomats, we weren't ready for this!
+		name = chf.5.a
+		ai_chance = {factor = 100}
+		clr_country_flag = the_second_skirmish
+		clr_country_flag = first_phase_chf
+		set_country_flag = lost_the_second_skirmish_chf
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = chf.6
+	title = chf.6.t
+	desc = chf.6.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # and stay in your place!
+		name = chf.6.a
+		ai_chance = {factor = 100}
+		clr_country_flag = the_second_skirmish
+		clr_country_flag = first_phase_chf
+		set_country_flag = won_the_second_skirmish_chf
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = chf.7
+	title = chf.7.t
+	desc = chf.7.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # look at what we're fighting against
+		name = chf.7.a
+		ai_chance = {factor = 100}
+	}
+}
+
+
+

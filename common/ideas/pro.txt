@@ -1,0 +1,147 @@
+ideas = {
+
+	country = {
+		warmed_up = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org = 5
+				army_attack_factor = 0.05
+			}
+		}
+
+		by_my_shield_and_sword = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+
+		}
+		the_protean_system = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				non_core_manpower = -0.40
+				monthly_population = -0.05
+				improve_relations_maintain_cost_factor = 10
+				ai_badass_factor = 1
+			}
+		}
+
+		high_morale_pro = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				org_loss_at_low_org_factor = -0.2
+			}
+		}		
+
+		generals_tested = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning_factor = 0.2
+			}
+		}
+
+	}
+}

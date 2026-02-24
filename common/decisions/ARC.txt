@@ -11,6 +11,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.5
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 750
+			}
 
 		}
 
@@ -75,7 +79,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.5
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 750
+			}
 		}
 
 		allowed = {
@@ -138,7 +145,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.5
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 750
+			}
 		}
 
 		allowed = {
@@ -201,7 +211,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.5
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 750
+			}
 		}
 
 		allowed = {
@@ -263,7 +276,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.5
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 750
+			}
 		}
 
 		allowed = {
@@ -325,7 +341,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.5
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 750
+			}
 		}
 
 		allowed = {
@@ -386,7 +405,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.6
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 1000
+			}
 		}
 
 		allowed = {
@@ -450,7 +472,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.6
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 1000
+			}
 		}
 
 		allowed = {
@@ -514,7 +539,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.6
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 1000
+			}
 		}
 
 		allowed = {
@@ -577,7 +605,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 0.6
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 1000
+			}
 		}
 
 		allowed = {
@@ -640,7 +671,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 1
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 1000
+			}
 		}
 
 		allowed = {
@@ -703,7 +737,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 1
-
+			modifier = {
+				has_country_flag = starail_nom
+				factor = 1000
+			}
 		}
 
 		allowed = {
@@ -761,6 +798,10 @@ ARC_starail_election_minigame = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = { #acradia will stand on business
+				has_country_flag = aviceyn_interference
+				factor = 5000
+			}
 		}
 
 		fire_only_once = yes
@@ -783,10 +824,6 @@ ARC_starail_election_minigame = {
 
 		days_remove = 2
 
-		modifier = { #they will stand on business 
-			has_country_flag = aviceyn_interference
-			factor = 1
-		}
 
 		complete_effect = {
 			add_political_power = 10

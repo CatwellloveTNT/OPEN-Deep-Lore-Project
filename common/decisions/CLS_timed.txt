@@ -19,7 +19,7 @@ CLS_solaris_minigame = {
 		}
 
 		timeout_effect = {
-			subtract_from_variable = { solaris_readyness = 2 }
+			subtract_from_variable = { solaris_readyness = 1 }
 		}
 
 		ai_will_do = {
@@ -45,7 +45,7 @@ CLS_solaris_minigame = {
 		}
 
 		timeout_effect = {
-			subtract_from_variable = { solaris_readyness = 4 }
+			subtract_from_variable = { solaris_readyness = 2 }
 		}
 
 		ai_will_do = {

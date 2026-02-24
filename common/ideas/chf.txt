@@ -1,0 +1,93 @@
+ideas = {
+
+	country = {
+		warmed_up = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org = 5
+				army_attack_factor = 0.05
+			}
+		}
+
+		memories_of_isolat = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+
+		}
+		fooled_by_protean_deception = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = PRO
+				defense_bonus_against = -0.1
+			}
+
+			modifier = {
+
+			}
+		}
+	}
+}

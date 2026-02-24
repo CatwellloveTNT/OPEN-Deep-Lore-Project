@@ -1,0 +1,24 @@
+	PRO_the_second_protean_chaffian_skirmish = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+		scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = the_second_skirmish
+			}
+		}
+
+		visible_when_empty = yes
+	}
+
+
+
+
+# ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

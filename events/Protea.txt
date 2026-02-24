@@ -1,0 +1,139 @@
+﻿#####################
+# PROTEA EVENTS
+###########################
+
+add_namespace = pro
+
+
+# opening event 
+country_event = {
+	id = pro.1
+	title = pro.1.t
+	desc = pro.1.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #semper vigilans
+		name = pro.1.a
+		ai_chance = {factor = 100}
+		add_political_power = 1
+	}
+}
+country_event = {
+	id = pro.2
+	title = pro.2.t
+	desc = pro.2.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #we'll retake our land
+		name = pro.2.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.3
+	title = pro.3.t
+	desc = pro.3.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #let the war games end
+		name = pro.3.a
+		ai_chance = {factor = 100}
+		custom_effect_tooltip = wargames_music_reference #because theres none of it left in you, left in me.
+	}
+}
+country_event = {
+	id = pro.4
+	title = pro.4.t
+	desc = pro.4.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # we would never attack the countermeasures alliance, we're just peace loving humans!
+		name = pro.4.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.5
+	title = pro.5.t
+	desc = pro.5.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # where he going to be deployed?
+		name = pro.5.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.6
+	title = pro.6.t
+	desc = pro.6.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # the first domino falls...
+		name = pro.6.a
+		ai_chance = {factor = 100}
+		PRO = {
+			declare_war_on = {
+				target = CHF
+				type = take_core_state
+			}
+		set_country_flag = the_second_skirmish
+		}
+		add_named_threat = {
+			threat = 4
+			name = "Protean Reclaimation War for the Poland Heights"
+		}
+		hidden_effect = {
+			scoped_play_song = "non_metal"
+		}
+	}
+}
+country_event = {
+	id = pro.7
+	title = pro.7.t
+	desc = pro.7.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # that was just the begiining
+		name = pro.7.a
+		ai_chance = {factor = 100}
+		clr_country_flag = the_second_skirmish
+		clr_country_flag = first_phase_pro
+		set_country_flag = won_the_second_skirmish_pro
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = pro.8
+	title = pro.8.t
+	desc = pro.8.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # how did we lose?!
+		name = pro.8.a
+		ai_chance = {factor = 100}
+		clr_country_flag = the_second_skirmish
+		clr_country_flag = first_phase_pro
+		set_country_flag = lost_the_second_skirmish_pro
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+
+

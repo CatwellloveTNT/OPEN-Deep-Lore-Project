@@ -19,7 +19,7 @@ CLS_solaris_minigame = {
 			has_global_flag = nuclear_exchange_hasnt_happened
 		}
 
-		cost = 50
+		cost = 250
 
 		days_re_enable = 20
 
@@ -31,32 +31,37 @@ CLS_solaris_minigame = {
 
 		complete_effect = {
 			add_political_power = 10
-			add_to_variable = { solaris_readyness = +1}
+			add_to_variable = { solaris_readyness = 2}
 
 			custom_effect_tooltip = hawksdead
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 250
 			modifier = {
 				has_idea = solaris_maximum
-				factor = 0.1
+				has_country_flag = major_aviceynian_cyberattack
+				factor = 1500
 			}
 			modifier = {
 				has_idea = solaris_high
-				factor = 0.3
+				has_country_flag = major_aviceynian_cyberattack
+				factor = 2000
 			}
 			modifier = {
 				has_idea = solaris_moderate
-				factor = 0.4
+				has_country_flag = major_aviceynian_cyberattack
+				factor = 2500
 			}
 			modifier = {
 				has_idea = solaris_low
-				factor = 0.5
+				has_country_flag = major_aviceynian_cyberattack
+				factor = 3000
 			}
 			modifier = {
 				has_idea = solaris_totally_hacked
-				factor = 1
+				has_country_flag = major_aviceynian_cyberattack
+				factor = 5000
 			}
 		}		
 
@@ -106,7 +111,7 @@ CLS_solaris_minigame = {
 
 		complete_effect = {
 			add_political_power = 10
-			add_to_variable = { solaris_readyness = +1}
+			add_to_variable = { solaris_readyness = 1}
 
 			custom_effect_tooltip = hawksdead
 		}
@@ -120,26 +125,31 @@ CLS_solaris_minigame = {
 		icon = GFX_decision_eng_trade_unions_support
 
 		ai_will_do = {
-			factor = 0.2
+			factor = 200
 			modifier = {
 				has_idea = solaris_maximum
-				factor = 0.3
+				has_country_flag = minor_aviceynian_cyberattack
+				factor = 300
 			}
 			modifier = {
 				has_idea = solaris_high
-				factor = 0.5
+				has_country_flag = minor_aviceynian_cyberattack
+				factor = 400
 			}
 			modifier = {
 				has_idea = solaris_moderate
-				factor = 0.6
+				has_country_flag = minor_aviceynian_cyberattack
+				factor = 500
 			}
 			modifier = {
 				has_idea = solaris_low
-				factor = 0.7
+				has_country_flag = minor_aviceynian_cyberattack
+				factor = 600
 			}
 			modifier = {
 				has_idea = solaris_totally_hacked
-				factor = 0.8
+				has_country_flag = minor_aviceynian_cyberattack
+				factor = 700
 			}
 		}
 
@@ -155,7 +165,7 @@ CLS_solaris_minigame = {
 			has_global_flag = nuclear_exchange_hasnt_happened
 		}
 
-		cost = 50
+		cost = 150
 
 		days_re_enable = 50
 
@@ -167,7 +177,7 @@ CLS_solaris_minigame = {
 
 		complete_effect = {
 			add_political_power = 10
-			add_to_variable = { solaris_readyness = +1}
+			add_to_variable = { solaris_readyness = 1}
 			custom_effect_tooltip = hawksdead
 		}
 

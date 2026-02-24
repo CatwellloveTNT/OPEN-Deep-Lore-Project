@@ -1,5 +1,5 @@
 on_actions = {
-	on_weekly_CLS = { #THIS IS FOR SOLARIS'S OPERATIONAL READYNESS. i got this shit looking like undertale
+	on_daily_CLS = { #THIS IS FOR SOLARIS'S OPERATIONAL READYNESS. i got this shit looking like undertale
 		effect = { 
 			if = { 
 				limit = { check_variable = { var = solaris_readyness value > 10 }

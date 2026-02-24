@@ -66,6 +66,10 @@ on_actions = {
 				set_country_flag = election_unfinished				
 			}
 			set_global_flag = nuclear_exchange_hasnt_happened
+			PRO = {
+				set_country_flag = first_phase_pro
+			}
+			set_global_flag = nuclear_exchange_hasnt_happened
 		}
 		effect = { # ----------------------------- START GAME VARIABLE SETUP ------------------------------
 			CLS = {
@@ -77,7 +81,6 @@ on_actions = {
 				set_variable = { starail_support = 52 }
 				set_variable = { opposition_support = 27 }						
 			}
-			set_global_flag = nuclear_exchange_hasnt_happened
 		}
 	}
 }

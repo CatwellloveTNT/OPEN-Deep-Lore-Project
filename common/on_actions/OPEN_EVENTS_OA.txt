@@ -37,6 +37,13 @@ on_actions = {
 					days = 1
 				}
 			}
+			# ------------- PROTEA EVENTS -------------
+			PRO = {
+				country_event = {
+					id = pro.1
+					days = 1
+				}
+			}
 		}
 	}
 }

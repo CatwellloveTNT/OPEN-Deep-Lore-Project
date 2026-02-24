@@ -502,6 +502,7 @@ country_event = {
 		clr_country_flag = starail_unelected
 		clr_country_flag = election_unfinished	
 		clr_country_flag = starail_nom			
+		clr_country_flag = aviceyn_interference	
 	}
 }
 

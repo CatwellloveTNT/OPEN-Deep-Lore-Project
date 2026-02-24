@@ -1,0 +1,245 @@
+﻿focus_tree = {
+	id = protea_focus
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = PRO
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = PRO_prepare_operation_glided_throne
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+		#relative_position_id = 
+		cost = 1
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_country_flag = first_phase_pro
+		}
+		completion_reward = {
+			country_event = {
+				id = pro.2
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+
+
+	focus = {
+		id = PRO_conduct_military_exercises
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 1
+		relative_position_id = PRO_prepare_operation_glided_throne
+		prerequisite = { focus = PRO_prepare_operation_glided_throne }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			PRO = {
+			add_timed_idea = {
+				idea = warmed_up
+				days = 270
+			}
+			}
+			CHF = {
+				country_event = {
+				id = chf.2
+			}
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}
+
+	focus = {
+		id = PRO_test_our_generals
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_prepare_operation_glided_throne
+		prerequisite = { focus = PRO_prepare_operation_glided_throne }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.3
+			}
+			add_timed_idea = {
+				idea = generals_tested
+				days = 270
+			}
+			army_experience = 20
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}
+
+	focus = {
+		id = PRO_plant_the_seeds_of_doubt
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = PRO_prepare_operation_glided_throne
+		prerequisite = { focus = PRO_prepare_operation_glided_throne }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.4
+			}
+			CHF = {
+				country_event = {
+					id = chf.3
+				}
+				add_timed_idea = {
+					idea = fooled_by_protean_deception
+					days = 270
+				}
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}
+
+	focus = {
+		id = PRO_a_soldiers_feast
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_test_our_generals
+		prerequisite = { focus = PRO_test_our_generals }
+		prerequisite = { focus = PRO_conduct_military_exercises }
+		prerequisite = { focus = PRO_plant_the_seeds_of_doubt }
+		cost = 3
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.5
+			}
+			add_timed_idea = {
+				idea = high_morale_pro
+				days = 100
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}
+
+	focus = {
+		id = PRO_operation_glided_throne
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_a_soldiers_feast
+		prerequisite = { focus = PRO_a_soldiers_feast }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.6
+			}
+			CHF = {
+				country_event = {
+					id = chf.4
+				}
+			}
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = the_second_skirmish_tooltip
+		}
+
+		ai_will_do = {
+		factor = 100
+		}
+
+	}
+
+}
+
+

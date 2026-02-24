@@ -94,9 +94,11 @@ ARC_starail_election_minigame = {
 		}
 
 		cancel_trigger = {
-			has_country_flag = secured_the_election
+			OR = {
+				has_country_flag = secured_the_election
+				NOT = { has_country_flag = aviceyn_interference }
+			}
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
@@ -150,3 +152,4 @@ ARC_starail_election_minigame = {
 	}
 	}
 }
+
