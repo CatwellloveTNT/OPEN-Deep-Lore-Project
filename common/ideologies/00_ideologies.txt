@@ -50,6 +50,9 @@ ideologies = {
 			can_lower_tension = yes
 			can_only_justify_war_on_threat_country = no
 			can_guarantee_other_ideologies = no
+			can_not_declare_war = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 
 		can_host_government_in_exile = yes
@@ -110,6 +113,9 @@ ideologies = {
 			can_force_government = yes
 			can_puppet = yes
 			can_send_volunteers = yes
+			can_not_declare_war = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 
 		modifiers = {
@@ -165,6 +171,9 @@ ideologies = {
 			can_lower_tension = yes
 			can_only_justify_war_on_threat_country = no
 			can_guarantee_other_ideologies = no
+			can_not_declare_war = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 
 		can_host_government_in_exile = yes
@@ -247,6 +256,9 @@ ideologies = {
 			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
+			can_not_declare_war = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 
 		can_collaborate = yes
@@ -323,6 +335,9 @@ ideologies = {
 			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
+			can_not_declare_war = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 
 		can_collaborate = yes
@@ -390,6 +405,11 @@ ideologies = {
 			can_force_government = yes
 			can_puppet = yes
 			can_send_volunteers = no
+			can_not_declare_war = yes
+			can_join_factions = no
+			can_create_factions = no
+			can_boost_own_ideology = no
+			can_boost_other_ideologies = no
 		}
 
 		modifiers = {

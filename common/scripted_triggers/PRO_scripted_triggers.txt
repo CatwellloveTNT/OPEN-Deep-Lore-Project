@@ -1,0 +1,9 @@
+# ---------------------------------------------- THE THIRD SKIRMISH ----------------------------------------------
+
+protea_wins_the_third_skirmish = { 
+	PRO = {
+		controls_state = 737
+		controls_state = 604
+		controls_state = 534
+	}
+}

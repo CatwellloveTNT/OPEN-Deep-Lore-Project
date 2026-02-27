@@ -1,0 +1,19 @@
+state_groups = {
+    schema = {
+        any_key = yes
+        array = state
+    }
+
+    # AOT REFERENCE MY GOD
+    titan_walls = {
+        1021
+        1027
+        1024
+        1023
+
+    }
+
+}
+
+
+

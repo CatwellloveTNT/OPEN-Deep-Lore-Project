@@ -73,6 +73,37 @@ PRO_the_second_protean_chaffian_skirmish = {
 	}
 }
 
+PRO_the_third_skirmish = {
+
+	end_the_war1 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = the_third_skirmish
+		}
+
+		available = {
+			protea_wins_the_third_skirmish = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = the_third_skirmish
+		}
+
+		complete_effect = {
+			PRO_wins_the_third_skirmish_peace = yes
+		}
+
+	}
+}
+
 
 
 

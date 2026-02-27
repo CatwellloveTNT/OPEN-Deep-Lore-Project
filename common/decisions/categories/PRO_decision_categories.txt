@@ -18,6 +18,46 @@
 		visible_when_empty = yes
 	}
 
+	PRO_the_third_skirmish = {
+		priority = 300
+
+		icon = SOV_paranoia
+
+		scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = the_third_skirmish
+			}
+		}
+
+		visible_when_empty = yes
+	}
+
+	PRO_the_armed_forces_of_protea = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+	#	scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = pro_army_decisions_unlocked
+			}
+		}
+
+		visible_when_empty = yes
+	}
+
 
 
 

@@ -1,0 +1,8 @@
+# ---------------------------------------------- THE THIRD SKIRMISH ----------------------------------------------
+
+flaria_surrenders_in_the_third_skirmish = { 
+	PRO = {
+		controls_state = 599
+		controls_state = 542
+	}
+}

@@ -147,6 +147,210 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 }
 
+	PRO_the_armed_forces_of_protea = { 
+
+	idonthaveaname = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		fire_only_once = yes
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = pro_army_decisions_unlocked
+		}
+
+		cost = 50
+
+		days_re_enable = 20
+
+		days_remove = 0
+
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			add_to_variable = {  protea_armed_forces_of_protea_aaf = 0.05  }
+			custom_effect_tooltip = pro_upgrade_aaf_1
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 400
+			modifier = {
+				has_war = yes
+				factor = 1000
+			}
+
+		}		
+
+	}
+
+	idonthaveaname1 = { 
+		priority = 309
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		fire_only_once = yes
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = pro_army_decisions_unlocked
+		}
+
+		cost = 50
+
+		days_re_enable = 20
+
+		days_remove = 0
+
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			add_to_variable = {  protea_armed_forces_of_protea_adf = 0.05  }
+			custom_effect_tooltip = pro_upgrade_adf_1
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 400
+			modifier = {
+				has_war = yes
+				factor = 1000
+			}
+
+		}		
+
+	}
+
+	idonthaveaname2 = { 
+		priority = 308
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		fire_only_once = yes
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = pro_army_decisions_unlocked
+		}
+
+		cost = 50
+
+		days_re_enable = 20
+
+		days_remove = 0
+
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			add_to_variable = {  protea_armed_forces_of_protea_aof = 0.05  }
+			custom_effect_tooltip = pro_upgrade_aof_1
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 400
+			modifier = {
+				has_war = yes
+				factor = 1000
+			}
+
+		}		
+
+	}
+
+	idonthaveaname3 = { 
+		priority = 308
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		fire_only_once = yes
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = pro_army_decisions_unlocked
+		}
+
+		cost = 50
+
+		days_re_enable = 20
+
+		days_remove = 0
+
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			add_to_variable = {  protea_armed_forces_of_protea_mpf = 0.10  }
+			custom_effect_tooltip = pro_upgrade_mpf_1
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 400
+			modifier = {
+				has_war = yes
+				factor = 1000
+			}
+
+		}		
+
+	}
+
+
+
+
+
+	}
+
 
 
 

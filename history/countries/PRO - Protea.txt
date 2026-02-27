@@ -23,6 +23,42 @@ set_popularities = {
 }
 
 add_ideas = {
+	closed_economy
 	by_my_shield_and_sword
 	the_protean_system
+	constant_state_of_military_readyness
+	the_protean_economy
 }
+
+
+add_ai_strategy = {
+    type = alliance
+    id = "CLS"
+    value = 2000
+}
+
+# -------------------------------------- PROTEAN ECONOMY VARS --------------------------------------
+set_variable = { protea_first_phase_eco_dynamic_st = -0.05 }
+set_variable = { protea_first_phase_eco_dynamic_mef = -0.10 }
+set_variable = { protea_first_phase_eco_dynamic_egf = -0.05 }
+set_variable = { protea_first_phase_eco_dynamic_icf = -0.20 }
+set_variable = { protea_first_phase_eco_dynamic_cgf = 0.30 }
+set_variable = { protea_first_phase_eco_dynamic_bf = -0.20 }
+# -------------------------------------- PROTEAN MILITARY VARS --------------------------------------
+set_variable = { protea_armed_forces_of_protea_aaf = -0.15 } #army attack
+set_variable = { protea_armed_forces_of_protea_adf = -0.20 } #army defense
+set_variable = { protea_armed_forces_of_protea_asf = -0.05 } #army speed
+set_variable = { protea_armed_forces_of_protea_aof = -0.05 } #army org
+set_variable = { protea_armed_forces_of_protea_aor = -0.10 } #army org regain
+set_variable = { protea_armed_forces_of_protea_btf = 0.05 } #army breakthrough
+set_variable = { protea_armed_forces_of_protea_mpf = -0.40 } #max planning
+set_variable = { protea_armed_forces_of_protea_pns = -0.2 } #lol pns #planning speed
+set_variable = { protea_armed_forces_of_protea_spf = -0.10 } #supply consumption factor
+set_variable = { protea_armed_forces_of_protea_mtl = 0.40 } #min training time
+set_variable = { protea_armed_forces_of_protea_con = 0.00 } #recruitable pop %
+set_variable = { protea_armed_forces_of_protea_crb = -0.20 } #coordination bonus
+set_variable = { protea_armed_forces_of_protea_ahf = 0.00 } #army health
+set_variable = { protea_armed_forces_of_protea_rcf = 0.00 } #recon factor
+set_variable = { protea_armed_forces_of_protea_mdi = -5 } #max entrenchment
+set_variable = { protea_armed_forces_of_protea_mdf = 0.00 } #entrenchment speed
+

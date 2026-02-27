@@ -1,0 +1,64 @@
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+PRO_wins_the_third_skirmish_peace = {
+	PRO = {
+		set_state_owner = 737
+		set_state_owner = 604
+		set_state_owner = 534
+		white_peace = CHF
+		white_peace = FLA
+		country_event = {
+			id = pro.32
+		}
+		set_country_flag = pro_won_the_third_skirmish
+		clr_country_flag = pro_unlock_eco_and_mil_trees
+		clr_country_flag = won_the_second_skirmish_pro
+		mark_focus_tree_layout_dirty = yes
+	}
+	CHF = {
+		country_event = {
+			id = chf.8
+		}
+		add_timed_idea = {
+			idea = the_second_great_retreat
+			days = 300
+		}
+		set_country_flag = chf_lost_the_third_skirmish
+	}
+	CHF = {
+		country_event = {
+			id = fla.1
+		}
+		add_timed_idea = {
+			idea = the_second_great_retreat
+			days = 300
+		}
+		set_country_flag = fla_lost_the_third_skirmish
+	}
+}
+
+FLA_surrenders_in_the_third_skirmish = {
+	FLA = {
+		white_peace = PRO
+		country_event = {
+			id = fla.2
+		}
+		set_country_flag = fla_lost_the_third_skirmish
+	}
+}

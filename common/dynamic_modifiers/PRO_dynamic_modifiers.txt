@@ -1,0 +1,35 @@
+	PRO_first_phase_eco_dynamic = { #this swaps out the idea once protea reaches its phase 2
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		stability_factor = protea_first_phase_eco_dynamic_st
+		production_factory_max_efficiency_factor = protea_first_phase_eco_dynamic_mef
+		production_factory_efficiency_gain_factor = protea_first_phase_eco_dynamic_egf
+		industrial_capacity_factory = protea_first_phase_eco_dynamic_icf
+		consumer_goods_factor = protea_first_phase_eco_dynamic_cgf
+		production_speed_buildings_factor = protea_first_phase_eco_dynamic_bf
+	}
+
+	PRO_armed_forces_of_protea = { #this swaps out the idea once protea reaeches its phase 2
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		army_attack_factor = protea_armed_forces_of_protea_aaf
+		army_defence_factor = protea_armed_forces_of_protea_adf
+		army_speed_factor = protea_armed_forces_of_protea_asf
+		army_org_factor = protea_armed_forces_of_protea_aof
+		army_org_regain = protea_armed_forces_of_protea_aor
+		breakthrough_factor = protea_armed_forces_of_protea_btf
+		max_planning_factor = protea_armed_forces_of_protea_mpf
+		planning_speed = protea_armed_forces_of_protea_pns
+		supply_consumption_factor = protea_armed_forces_of_protea_spf
+		minimum_training_level = protea_armed_forces_of_protea_mtl
+		conscription = protea_armed_forces_of_protea_con
+		coordination_bonus = protea_armed_forces_of_protea_crb
+		army_strength_factor = protea_armed_forces_of_protea_ahf
+		recon_factor = protea_armed_forces_of_protea_rcf
+		max_dig_in = protea_armed_forces_of_protea_mdi
+		max_dig_in_factor = protea_armed_forces_of_protea_mdf
+	}

@@ -34,6 +34,9 @@ replace_path="events"
 replace_path="localisation/events_l_english.yml"
 replace_path="common/bookmarks"
 replace_path="common/national_focus"
+replace_path="common/scripted_effects"
+replace_path="common/scripted_triggers"
+replace_path="common/scripted_localisation"
 
 
 

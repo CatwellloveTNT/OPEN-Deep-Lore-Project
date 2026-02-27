@@ -224,6 +224,9 @@
  pro.8.t: "Operation Gilded Throne Fails!"
  pro.8.d: "todo: explain proteas state of mind and plan after losing the second skirmish" 
  pro.8.a: "How did we lose?!"
+# pro.18.t: "scripted loc test"
+ #pro.18.d: "todo: buisdaisad BALLS [ROOT.testloc]"
+# pro.18.a: "grind"
 
 # -------------------- CHAFFIA --------------------
  chf.1.t: "Chaffia - The Cradle's Traumatized Bulwark"
@@ -271,5 +274,5 @@
  satorurebel1: "Satoru grows evermore §Rdisillusioned§R  §Wwith AESA...§W"
  aviveyn_inter: "§RAviceynian Agents§R will attempt to support the §RHumanity Opposition Party§R through electoral sabotage"
  the_second_skirmish_tooltip: "We will declare a limited war on Chaffia, Flaria will not join. §RWE MUST SEIZE THE POLAND HEIGHTS FOR THIS OPERATION TO BE A SUCCESS§R"
-wargames_music_reference: "Because there's none of it left in you, left in me."
+ wargames_music_reference: "Because there's none of it left in you, left in me."
 

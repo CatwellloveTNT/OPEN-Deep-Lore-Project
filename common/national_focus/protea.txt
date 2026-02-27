@@ -240,6 +240,2318 @@
 
 	}
 
+	# --------------------------- SECOND PHASE NARRATIVE TREE -----------------------------------
+
+
+	focus = {
+		id = PRO_consolidate_our_gains
+		icon = GFX_goal_generic_consumer_goods
+		x = 15
+		y = 0
+		#relative_position_id = PRO_a_soldiers_feast
+		#prerequisite = { focus = PRO_a_soldiers_feast }
+		cost = 1
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = won_the_second_skirmish_pro
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.10
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_kick_out_the_four_leggers
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_consolidate_our_gains
+		prerequisite = { focus = PRO_consolidate_our_gains }
+		cost = 1
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.9
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_prepare_the_nation
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_kick_out_the_four_leggers
+		prerequisite = { focus = PRO_kick_out_the_four_leggers }
+		cost = 3
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.11
+			}
+			custom_effect_tooltip = pro_unlocking_trees
+			set_country_flag = pro_unlock_eco_and_mil_trees
+			mark_focus_tree_layout_dirty = yes
+			
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_prepare_operation_golden_palace
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 6
+		relative_position_id = PRO_kick_out_the_four_leggers
+		#prerequisite = { focus = PRO_kick_out_the_four_leggers }
+		cost = 1
+		available = {
+			has_country_flag = protea_is_economically_prepared
+			has_country_flag = protea_is_military_prepared
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.12
+			}
+		
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_request_coalition_jstars_support
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = PRO_prepare_operation_golden_palace
+		prerequisite = { focus = PRO_prepare_operation_golden_palace }
+		cost = 2
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			CLS = {
+				country_event = {
+					id = col.29
+				}
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_draw_up_the_battle_plans
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 1
+		relative_position_id = PRO_prepare_operation_golden_palace
+		prerequisite = { focus = PRO_prepare_operation_golden_palace }
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = operation_golden_palace_planning
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+
+	focus = {
+		id = PRO_drill_the_troops
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_prepare_operation_golden_palace
+		prerequisite = { focus = PRO_prepare_operation_golden_palace }
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = troops_drilled
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+		
+
+	}
+
+	focus = {
+		id = PRO_commence_operation_golden_throne
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_drill_the_troops
+		prerequisite = { focus = PRO_drill_the_troops }
+		prerequisite = { focus = PRO_draw_up_the_battle_plans }
+		prerequisite = { focus = PRO_request_coalition_jstars_support }
+
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.13
+			}
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = the_third_skirmish
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+		
+
+	}
+
+
+	focus = {
+		id = PRO_slow_and_steady
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = PRO_commence_operation_golden_throne
+		prerequisite = { focus = PRO_commence_operation_golden_throne }
+		mutually_exclusive = {
+			focus = PRO_slow_and_steady
+		}
+		cost = 5
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+		
+
+	}
+
+	focus = {
+		id = PRO_speed_and_aggression
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = PRO_commence_operation_golden_throne
+		prerequisite = { focus = PRO_commence_operation_golden_throne }
+		mutually_exclusive = {
+			focus = PRO_slow_and_steady
+		}
+		cost = 5
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	# --------------------------- ECONOMIC TR TREE -----------------------------------
+
+
+	focus = {
+		id = PRO_our_economy
+		icon = GFX_goal_generic_consumer_goods
+		x = -5
+		y = 0
+		#relative_position_id = PRO_commence_operation_golden_throne
+		#prerequisite = { focus = PRO_commence_operation_golden_throne }
+		cost = 1
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_unlock_eco_and_mil_trees
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_eco_assessing_our_conundrum
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_our_economy
+		prerequisite = { focus = PRO_our_economy }
+		cost = 2
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.15
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_the_thompson_plan
+		icon = GFX_goal_generic_consumer_goods
+		x = -6
+		y = 1
+		relative_position_id = PRO_eco_assessing_our_conundrum
+		prerequisite = { focus = PRO_eco_assessing_our_conundrum }
+		mutually_exclusive = {
+			focus = PRO_the_fleetfeather_plan
+		}
+		cost = 5
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 0 # -------------------- BRO YOU SET THIS TO 0 REMEMBER TO CHANGE THIS WHEN YOU ADD THE ALT PATH ----------------------------
+		}
+	}
+
+
+	focus = {
+		id = PRO_the_fleetfeather_plan
+		icon = GFX_goal_generic_consumer_goods
+		x = 6
+		y = 1
+		relative_position_id = PRO_eco_assessing_our_conundrum
+		prerequisite = { focus = PRO_eco_assessing_our_conundrum }
+		mutually_exclusive = {
+			focus = PRO_the_thompson_plan
+		}
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.16
+			}
+			remove_ideas = the_protean_economy
+			add_dynamic_modifier = {
+				modifier = PRO_first_phase_eco_dynamic
+				}	
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = fleetfeather_fork
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_open_up_the_nation
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = PRO_the_fleetfeather_plan
+		prerequisite = { focus = PRO_the_fleetfeather_plan }
+		cost = 5
+		available = {
+			NOT =  { has_country_flag = pro_went_for_factories_first }
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = limited_exports
+			}
+			subtract_from_variable = { protea_first_phase_eco_dynamic_cgf = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_bf = 0.05 }
+			set_country_flag = pro_went_for_consumer_goods_first
+			custom_effect_tooltip = open_up_the_nation_tt
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_hire_coalition_economic_consultants
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_open_up_the_nation
+		prerequisite = { focus = PRO_open_up_the_nation }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			add_ideas = coalition_economic_advisors
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_redefine_our_industrial_practices
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_open_up_the_nation
+		prerequisite = { focus = PRO_open_up_the_nation }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			custom_effect_tooltip = redefine_our_industrial_practices_tt
+			custom_effect_tooltip = extra_space
+			subtract_from_variable = { protea_first_phase_eco_dynamic_cgf = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_bf = 0.05 }
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.75
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_push_ourselves_into_the_modern_era
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_open_up_the_nation
+		prerequisite = { focus = PRO_redefine_our_industrial_practices }
+		prerequisite = { focus = PRO_hire_coalition_economic_consultants }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			custom_effect_tooltip = push_ourselves_into_the_modern_era_tt
+			custom_effect_tooltip = extra_space
+			subtract_from_variable = { protea_first_phase_eco_dynamic_cgf = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_bf = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = 0.05 }
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_unlocking_our_economic_potential
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = PRO_open_up_the_nation
+		prerequisite = { focus = PRO_push_ourselves_into_the_modern_era }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no			
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			custom_effect_tooltip = unlocking_our_economic_potential_tt
+			custom_effect_tooltip = extra_space
+			subtract_from_variable = { protea_first_phase_eco_dynamic_cgf = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_bf = 0.10 }
+			add_research_slot = 1
+			clr_country_flag = pro_went_for_consumer_goods_first
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_addressing_the_unspeakable_issue
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 1
+		mutually_exclusive = {
+			focus = PRO_crackdown_on_laborer_freedoms
+		}
+		relative_position_id = PRO_the_fleetfeather_plan
+		prerequisite = { focus = PRO_the_fleetfeather_plan }
+		cost = 5
+		available = {
+			NOT =  { has_country_flag = pro_went_for_consumer_goods_first }
+		}
+		
+		bypass = {
+
+		}
+
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.17
+			}
+			set_country_flag = pro_went_for_factories_first
+			add_to_variable = { protea_first_phase_eco_dynamic_mef = 0.05 }
+			#add_to_variable = { protea_first_phase_eco_dynamic_egf = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.05 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = addressing_the_unspeakable_issue
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_reduce_second_citizen_work_hours
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = PRO_crackdown_on_laborer_freedoms
+		}
+		relative_position_id = PRO_addressing_the_unspeakable_issue
+		prerequisite = { focus = PRO_addressing_the_unspeakable_issue }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { protea_first_phase_eco_dynamic_mef = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_egf = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = 0.05 }
+			#add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.05 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = reduce_second_citizen_work_hours
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = pro_easier_protean_system_reforms_eco_tt
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_crackdown_on_laborer_freedoms
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		mutually_exclusive = {
+			focus = PRO_reduce_second_citizen_work_hours
+		}
+		relative_position_id = PRO_addressing_the_unspeakable_issue
+		prerequisite = { focus = PRO_addressing_the_unspeakable_issue }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.23
+			}
+			custom_effect_tooltip = extra_space
+			#add_to_variable = { protea_first_phase_eco_dynamic_mef = -0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_egf = -0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = -0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.10 }
+			custom_effect_tooltip = crackdown
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_eyes_in_every_corner
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_crackdown_on_laborer_freedoms
+		prerequisite = { focus = PRO_crackdown_on_laborer_freedoms }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.22
+			}
+			custom_effect_tooltip = extra_space
+			add_to_variable = { protea_first_phase_eco_dynamic_mef = -0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = -0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.15 }
+			custom_effect_tooltip = eyes_in_every_corner
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_more_factories_for_laborers
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_crackdown_on_laborer_freedoms
+		prerequisite = { focus = PRO_eyes_in_every_corner }
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = more_factories
+			custom_effect_tooltip = extra_space
+			PRO = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag =pro_went_for_factories_first
+
+			add_to_variable = { protea_first_phase_eco_dynamic_st = -0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.10 }
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_back_in_business
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = PRO_addressing_the_unspeakable_issue
+		prerequisite = { focus = PRO_more_factories_for_laborers focus = PRO_the_second_citizen_labor_reform_act }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.18
+			}
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = back_in_business
+			add_to_variable = { protea_first_phase_eco_dynamic_mef = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.05 }
+			clr_country_flag = pro_went_for_factories_first
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+
+
+	focus = {
+		id = PRO_allow_unions_for_laborers
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_reduce_second_citizen_work_hours
+		prerequisite = { focus = PRO_reduce_second_citizen_work_hours }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.20
+			}
+			add_to_variable = { protea_first_phase_eco_dynamic_egf = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_mef = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = 0.10 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = allow_unions_for_laborers
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_increase_laborer_wages
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_reduce_second_citizen_work_hours
+		prerequisite = { focus = PRO_reduce_second_citizen_work_hours }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.21
+			}
+			#add_to_variable = { protea_first_phase_eco_dynamic_egf = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_mef = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.05 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = 0.10 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = increase_wages
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_the_second_citizen_labor_reform_act
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_reduce_second_citizen_work_hours
+		prerequisite = { focus = PRO_increase_laborer_wages }
+		prerequisite = { focus = PRO_allow_unions_for_laborers }
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = { 
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.21
+			}
+			add_to_variable = { protea_first_phase_eco_dynamic_mef = 0.10 }
+			add_to_variable = { protea_first_phase_eco_dynamic_st = 0.10 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = second_citizen_labor_reform_act
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_a_workforce_ready
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 7
+		relative_position_id = PRO_the_fleetfeather_plan
+		prerequisite = { focus = PRO_unlocking_our_economic_potential }
+		prerequisite = { focus = PRO_back_in_business }
+		cost = 7
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = PRO_crackdown_on_laborer_freedoms}
+			country_event = {
+				id = pro.23
+			}
+			else_if = {
+				limit = { has_completed_focus = PRO_reduce_second_citizen_work_hours }
+			country_event = {
+				id = pro.24
+			}
+			}
+
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = extra_space
+			}
+			set_country_flag = protea_is_economically_prepared
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	# --------------------------- SECOND PHASE MILITARY TREE -----------------------------------
+
+	focus = {
+		id = PRO_unclenching_our_jaws
+		icon = GFX_goal_generic_consumer_goods
+		x = 33
+		y = 0
+	#	relative_position_id = PRO_the_fleetfeather_plan
+	#	prerequisite = { focus = PRO_unlocking_our_economic_potential }
+	#	prerequisite = { focus = PRO_back_in_business }
+		cost = 1
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_unlock_eco_and_mil_trees
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = 	constant_state_of_military_readyness
+			add_dynamic_modifier = {
+				modifier = PRO_armed_forces_of_protea
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_an_assessment_of_the_afp
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_unclenching_our_jaws
+		prerequisite = { focus = PRO_unclenching_our_jaws }
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.24
+			}
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_adf = -0.20 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			set_country_flag = pro_army_decisions_unlocked
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_desegregate_the_army
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		mutually_exclusive = {
+			focus = PRO_embrace_the_two_face_system
+		}
+		relative_position_id = PRO_an_assessment_of_the_afp
+		prerequisite = { focus = PRO_an_assessment_of_the_afp }
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.34
+			}
+		custom_effect_tooltip = extra_space
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_adf = -0.20 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			add_to_variable = { protea_armed_forces_of_protea_con = 0.005 }
+			add_to_variable = { protea_armed_forces_of_protea_rcf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }	
+		custom_effect_tooltip = deseg_the_army_tt
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = pro_easier_protean_system_reforms_eco_tt
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_allow_pony_ncos
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 2
+		relative_position_id = PRO_desegregate_the_army
+		prerequisite = { focus = PRO_send_units_for_cross_species_training_in_the_coalition }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.31
+			}
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aof = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_mpf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_pns = 0.05 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			#add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_rcf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }	
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = pony_ncos
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_integrate_unicorns_into_platoons
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 2
+		relative_position_id = PRO_desegregate_the_army
+		prerequisite = { focus = PRO_normalize_cross_species_military_interactions }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = {
+				infantry_at2 = 1 #this is a placeholder research until i create unicorns
+				popup = yes
+			}
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aof = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			add_to_variable = { protea_armed_forces_of_protea_spf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			#add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_rcf = 0.20 }
+			add_to_variable = { protea_armed_forces_of_protea_ahf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_mdi = 3 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }	
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = unicorns_integrated
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_reform_the_training_system
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = PRO_desegregate_the_army
+		prerequisite = { focus = PRO_integrate_unicorns_into_platoons }
+		prerequisite = { focus = PRO_allow_pony_ncos }
+		prerequisite = { focus = PRO_develop_combined_species_tactics }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_asf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_mpf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_mtl = -0.20 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			#add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = reformed_training
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_the_first_world_pony_in_service_act
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_reform_the_training_system
+		prerequisite = { focus = PRO_reform_the_training_system }
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.32
+			}
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_asf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_aof = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			add_to_variable = { protea_armed_forces_of_protea_con = 0.005 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_rcf = 0.20 }
+			add_to_variable = { protea_armed_forces_of_protea_mdi = 2 }
+			add_to_variable = { protea_armed_forces_of_protea_mdf = 0.20 }	
+			set_country_flag = protea_is_military_prepared
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = first_world_pony_in_service_act
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_develop_combined_species_tactics
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_desegregate_the_army
+		prerequisite = { focus = PRO_normalize_cross_species_military_interactions }
+		prerequisite = { focus = PRO_send_units_for_cross_species_training_in_the_coalition }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_rcf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }	
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = combined_tactics
+	
+		}
+
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_normalize_cross_species_military_interactions
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_desegregate_the_army
+		prerequisite = { focus = PRO_desegregate_the_army }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_adf = -0.20 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = 0.15 }
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = cross_species
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_send_units_for_cross_species_training_in_the_coalition
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_desegregate_the_army
+		prerequisite = { focus = PRO_desegregate_the_army }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			CLS = {
+				country_event = {
+					id = col.30
+				}
+			}
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_adf = -0.20 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aof = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_mtl = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_rcf = 0.20 }
+			add_to_variable = { protea_armed_forces_of_protea_mdi = 5 }
+			add_to_variable = { protea_armed_forces_of_protea_mdf = 0.10 }	
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = coalition_training
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_embrace_the_two_face_system
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		mutually_exclusive = {
+			focus = PRO_desegregate_the_army
+		}
+		relative_position_id = PRO_an_assessment_of_the_afp
+		prerequisite = { focus = PRO_an_assessment_of_the_afp }
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.33
+			}
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aor = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			add_to_variable = { protea_armed_forces_of_protea_con = -0.005 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = -0.05 }
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = embracing_two_face_system
+		}
+
+
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_develop_dedicated_human_land_tactics
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_embrace_the_two_face_system
+		prerequisite = { focus = PRO_embrace_the_two_face_system }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.15 }
+			#add_to_variable = { protea_armed_forces_of_protea_adf = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_asf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_btf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = -0.05 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = dedicated_human_land_tactics
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_invest_in_artifical_shields
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_develop_dedicated_human_land_tactics
+		prerequisite = { focus = PRO_develop_dedicated_human_land_tactics }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aor = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			#add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_ahf = 0.10 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = artishields
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_supremacy_of_body
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_invest_in_artifical_shields
+		prerequisite = { focus = PRO_invest_in_artifical_shields }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.15 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_btf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			#add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_ahf = 0.10 }
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = supremacy_of_body
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_hand_and_hooves_seperated
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = PRO_embrace_the_two_face_system
+		prerequisite = { focus = PRO_supremacy_of_body }
+		prerequisite = { focus = PRO_develop_pegasus_airborne_tactics }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = -0.15 }
+			#add_to_variable = { protea_armed_forces_of_protea_ahf = 0.10 }
+			set_country_flag = protea_is_military_prepared
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = hands_and_hooves
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+	focus = {
+		id = PRO_develop_dedicated_pony_land_tactics
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_embrace_the_two_face_system
+		prerequisite = { focus = PRO_embrace_the_two_face_system }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aof = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_ahf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_rcf = 0.20 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }	
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = dedicated_pony_tactics
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_develop_unicorn_defense_tactics
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_develop_dedicated_pony_land_tactics
+		prerequisite = { focus = PRO_develop_dedicated_pony_land_tactics }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aor = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			add_to_variable = { protea_armed_forces_of_protea_crb = -0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_ahf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_rcf = 0.20 }
+			add_to_variable = { protea_armed_forces_of_protea_mdi = 3 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }	
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = dedicated_unicorn_tactics
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+	focus = {
+		id = PRO_develop_pegasus_airborne_tactics
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_develop_unicorn_defense_tactics
+		prerequisite = { focus = PRO_develop_unicorn_defense_tactics }
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#add_to_variable = { protea_armed_forces_of_protea_aaf = 0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_adf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_asf = -0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_aof = -0.05 }
+			add_to_variable = { protea_armed_forces_of_protea_aor = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_btf = 0.05 }
+			#add_to_variable = { protea_armed_forces_of_protea_mpf = -0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_pns = -0.2 } 
+			#add_to_variable = { protea_armed_forces_of_protea_spf = -0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mtl = 0.40 }
+			#add_to_variable = { protea_armed_forces_of_protea_con = 0.00 }
+			#add_to_variable = { protea_armed_forces_of_protea_crb = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_ahf = 0.10 }
+			add_to_variable = { protea_armed_forces_of_protea_rcf = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }
+			#add_to_variable = { protea_armed_forces_of_protea_mdi = 0.10 }	
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = dedicated_pegasus_tactics								
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+	}
+
+
+
+
+	# --------------------------- THIRD PHASE NARRATIVE TREE -----------------------------------
+
+	focus = {
+		id = PRO_reimplement_the_protean_system_in_tpa
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+		#relative_position_id = PRO_a_soldiers_feast
+		#prerequisite = { focus = PRO_a_soldiers_feast }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_won_the_third_skirmish
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.9
+			}
+			custom_effect_tooltip = extra_space
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_what_kind_of_pony_are_you
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_reimplement_the_protean_system_in_tpa
+		prerequisite = { focus = PRO_reimplement_the_protean_system_in_tpa }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.10
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_a_time_for_change
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = PRO_what_kind_of_pony_are_you
+		prerequisite = { focus = PRO_what_kind_of_pony_are_you }
+		mutually_exclusive = {
+			focus = PRO_doubling_down
+		}
+		cost = 5
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_protean_system
+				add_idea = the_protean_system_changing
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_doubling_down
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 1
+		relative_position_id = PRO_what_kind_of_pony_are_you
+		prerequisite = { focus = PRO_what_kind_of_pony_are_you }
+		mutually_exclusive = {
+			focus = PRO_a_time_for_change
+		}
+		cost = 5
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_protean_system
+				add_idea = the_protean_system_doubled_down
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_valkyries_new_plan
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_a_time_for_change
+		prerequisite = { focus = PRO_a_time_for_change }
+
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_protean_system
+				add_idea = the_protean_system_doubled_down
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_the_battle_has_begun
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_valkyries_new_plan
+		prerequisite = { focus = PRO_valkyries_new_plan }
+
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_protean_system
+				add_idea = the_protean_system_doubled_down
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_gather_all_the_ponies
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = PRO_the_battle_has_begun
+		prerequisite = { focus = PRO_the_battle_has_begun }
+
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_protean_system
+				add_idea = the_protean_system_doubled_down
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
 }
 
 
