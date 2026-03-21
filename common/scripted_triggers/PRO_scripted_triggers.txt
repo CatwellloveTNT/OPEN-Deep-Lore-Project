@@ -5,5 +5,22 @@ protea_wins_the_third_skirmish = {
 		controls_state = 737
 		controls_state = 604
 		controls_state = 534
+		controls_state = 599
+		controls_state = 542
 	}
 }
+
+# ---------------------------------------------- SHOWDOWN ----------------------------------------------
+
+protea_wins_showdown = { 
+	PRO = {
+		has_country_flag = pro_wins_showdown
+	}
+}
+
+protea_loses_showdown = { 
+	PRO = {
+		has_country_flag = pro_loses_showdown
+	}
+}
+

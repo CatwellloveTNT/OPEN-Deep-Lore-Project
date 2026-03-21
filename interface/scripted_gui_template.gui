@@ -116,3 +116,458 @@ guiTypes = {
 
 	}
 }
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "pro_second_skirmish_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_arc_election_ui"
+		}
+
+		instantTextBoxType = {
+			name = hhh_score
+			position = {
+				x = 79 y = 380
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = hhh_name
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hop_score
+			position = {
+				x = 300 y = 380
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = hop_name
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hhh_var
+			position = {
+				x = 79 y = 475
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = pro_aircraft
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hop_var
+			position = {
+				x = 300 y = 475
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = chf_aircraft
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+	}
+}
+
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "pro_third_skirmish_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_pro_the_third_skirmish_ui"
+		}
+
+
+	}
+}
+
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "pro_showdown_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_pro_showdown_ui"
+		}
+
+		buttonType = {
+			name = "region_1"
+			spriteType = "GFX_showdown_region_1"
+			position = {
+				x = 56 y = -279
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_2"
+			spriteType = "GFX_showdown_region_2"
+			position = {
+				x = 222 y = -139
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_3"
+			spriteType = "GFX_showdown_region_3"
+			position = {
+				x = 35 y = -53
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_4"
+			spriteType = "GFX_showdown_region_4"
+			position = {
+				x = 30 y = -180
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_5"
+			spriteType = "GFX_showdown_region_5"
+			position = {
+				x = 255 y = -27
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_6"
+			spriteType = "GFX_showdown_region_6"
+			position = {
+				x = 355 y = -48
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_7"
+			spriteType = "GFX_showdown_region_7"
+			position = {
+				x = 176 y = 72
+			}
+			orientation = CENTER
+			origo = center
+		}
+
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "chf_showdown_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_pro_showdown_ui"
+		}
+
+		buttonType = {
+			name = "region_1"
+			spriteType = "GFX_showdown_region_1"
+			position = {
+				x = 56 y = -279
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_2"
+			spriteType = "GFX_showdown_region_2"
+			position = {
+				x = 222 y = -139
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_3"
+			spriteType = "GFX_showdown_region_3"
+			position = {
+				x = 35 y = -53
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_4"
+			spriteType = "GFX_showdown_region_4"
+			position = {
+				x = 30 y = -180
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_5"
+			spriteType = "GFX_showdown_region_5"
+			position = {
+				x = 255 y = -27
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_6"
+			spriteType = "GFX_showdown_region_6"
+			position = {
+				x = 355 y = -48
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_7"
+			spriteType = "GFX_showdown_region_7"
+			position = {
+				x = 176 y = 72
+			}
+			orientation = CENTER
+			origo = center
+		}
+
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "cls_showdown_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_pro_showdown_ui"
+		}
+
+		buttonType = {
+			name = "region_1"
+			spriteType = "GFX_showdown_region_1"
+			position = {
+				x = 56 y = -279
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_2"
+			spriteType = "GFX_showdown_region_2"
+			position = {
+				x = 222 y = -139
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_3"
+			spriteType = "GFX_showdown_region_3"
+			position = {
+				x = 35 y = -53
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_4"
+			spriteType = "GFX_showdown_region_4"
+			position = {
+				x = 30 y = -180
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_5"
+			spriteType = "GFX_showdown_region_5"
+			position = {
+				x = 255 y = -27
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_6"
+			spriteType = "GFX_showdown_region_6"
+			position = {
+				x = 355 y = -48
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_7"
+			spriteType = "GFX_showdown_region_7"
+			position = {
+				x = 176 y = 72
+			}
+			orientation = CENTER
+			origo = center
+		}
+
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "avi_showdown_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_pro_showdown_ui"
+		}
+
+		buttonType = {
+			name = "region_1"
+			spriteType = "GFX_showdown_region_1"
+			position = {
+				x = 56 y = -279
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_2"
+			spriteType = "GFX_showdown_region_2"
+			position = {
+				x = 222 y = -139
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_3"
+			spriteType = "GFX_showdown_region_3"
+			position = {
+				x = 35 y = -53
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_4"
+			spriteType = "GFX_showdown_region_4"
+			position = {
+				x = 30 y = -180
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_5"
+			spriteType = "GFX_showdown_region_5"
+			position = {
+				x = 255 y = -27
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_6"
+			spriteType = "GFX_showdown_region_6"
+			position = {
+				x = 355 y = -48
+			}
+			orientation = CENTER
+		}
+
+		buttonType = {
+			name = "region_7"
+			spriteType = "GFX_showdown_region_7"
+			position = {
+				x = 176 y = 72
+			}
+			orientation = CENTER
+			origo = center
+		}
+
+	}
+}

@@ -33,3 +33,33 @@
 		max_dig_in = protea_armed_forces_of_protea_mdi
 		max_dig_in_factor = protea_armed_forces_of_protea_mdf
 	}
+
+	PRO_the_protean_air_force = { #this swaps out the idea once protea reaeches its phase 2
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		air_accidents_factor = protea_the_air_force_of_protea_acf
+		air_agility_factor = protea_the_air_force_of_protea_aagf
+		air_attack_factor = protea_the_air_force_of_protea_aatkf
+ 		air_defence_factor = protea_the_air_force_of_protea_adf
+		naval_strike_targetting_factor = protea_the_air_force_of_protea_nstf
+		air_range_factor = protea_the_air_force_of_protea_arf
+		air_superiority_efficiency = protea_the_air_force_of_protea_ase
+		ground_attack_factor = protea_the_air_force_of_protea_gtf
+		air_home_defence_factor = protea_the_air_force_of_protea_ahdf
+	}
+
+	PRO_the_protean_system = { #this swaps out the idea once protea reaeches its phase 2
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		non_core_manpower = the_protean_system_ncm
+		resistance_activity = the_protean_system_rsa
+		resistance_target = the_protean_system_rst
+		compliance_gain = the_protean_system_ceg
+		monthly_population = the_protean_system_mop
+		
+	}
+

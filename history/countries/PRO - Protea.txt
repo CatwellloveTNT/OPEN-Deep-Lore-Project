@@ -1,8 +1,29 @@
 capital = 537
-OOB = ""
+
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_air_oob = PRO_2032_AIR
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+OOB = "PRO_2032"
 set_technology = {
 	infantry_weapons = 1
-	tech_trucks = 1
+	tech_trucks = 1 
 	tech_support = 1
 	tech_recon = 1
 }
@@ -28,6 +49,7 @@ add_ideas = {
 	the_protean_system
 	constant_state_of_military_readyness
 	the_protean_economy
+	the_neglected_protean_airforce
 }
 
 
@@ -37,13 +59,60 @@ add_ai_strategy = {
     value = 2000
 }
 
+	set_technology = {
+
+		#doctrines
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		engines_1 = 1
+		aa_lmg = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+
+set_grand_doctrine = grand_battleplan
+
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+
+create_equipment_variant = {
+	name = "test"
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+		engine_type_slot = engine_1_1x
+	}
+}
+create_equipment_variant = {
+	name = "test2"
+	type = small_plane_airframe_1
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+		engine_type_slot = engine_1_1x
+	}
+}
+
+
 # -------------------------------------- PROTEAN ECONOMY VARS --------------------------------------
-set_variable = { protea_first_phase_eco_dynamic_st = -0.05 }
-set_variable = { protea_first_phase_eco_dynamic_mef = -0.10 }
-set_variable = { protea_first_phase_eco_dynamic_egf = -0.05 }
-set_variable = { protea_first_phase_eco_dynamic_icf = -0.20 }
-set_variable = { protea_first_phase_eco_dynamic_cgf = 0.30 }
-set_variable = { protea_first_phase_eco_dynamic_bf = -0.20 }
+set_variable = { protea_first_phase_eco_dynamic_st = -0.05 } #stability
+set_variable = { protea_first_phase_eco_dynamic_mef = -0.10 } #max efficency cap
+set_variable = { protea_first_phase_eco_dynamic_egf = -0.05 } #efficieny growth
+set_variable = { protea_first_phase_eco_dynamic_icf = -0.20 } #factory output
+set_variable = { protea_first_phase_eco_dynamic_cgf = 0.30 } #consumer goods factor
+set_variable = { protea_first_phase_eco_dynamic_bf = -0.20 } #constrution speed
 # -------------------------------------- PROTEAN MILITARY VARS --------------------------------------
 set_variable = { protea_armed_forces_of_protea_aaf = -0.15 } #army attack
 set_variable = { protea_armed_forces_of_protea_adf = -0.20 } #army defense
@@ -61,4 +130,27 @@ set_variable = { protea_armed_forces_of_protea_ahf = 0.00 } #army health
 set_variable = { protea_armed_forces_of_protea_rcf = 0.00 } #recon factor
 set_variable = { protea_armed_forces_of_protea_mdi = -5 } #max entrenchment
 set_variable = { protea_armed_forces_of_protea_mdf = 0.00 } #entrenchment speed
+# -------------------------------------- PROTEAN AIR FORCE VARS --------------------------------------
+set_variable = { protea_the_air_force_of_protea_acf = 0.15} #air accidents
+set_variable = { protea_the_air_force_of_protea_aagf = -0.15} # air agility
+set_variable = { protea_the_air_force_of_protea_aatkf = -0.10} #air attack
+set_variable = { protea_the_air_force_of_protea_adf = -0.10} # air defense
+set_variable = { protea_the_air_force_of_protea_nstf = 0} # naval strike factor
+set_variable = { protea_the_air_force_of_protea_arf = 0} # air range
+set_variable = { protea_the_air_force_of_protea_ase = -0.20} # air superiority
+set_variable = { protea_the_air_force_of_protea_gtf = -0.10} # ground attack factor
+set_variable = { protea_the_air_force_of_protea_ahdf = 0.00} # air home defense factor
+# -------------------------------------- PROTEAN SYSTEM VARS --------------------------------------
+set_variable = { the_protean_system_ncm = -0.80 } #non core manpower
+set_variable = { the_protean_system_rsa = 0.40 } #resistance activity
+set_variable = { the_protean_system_rst = 0.40} #resistance target
+set_variable = { the_protean_system_ceg = -0.40 } #compliance gain
+set_variable = { the_protean_system_mop = -0.10} #monthly population
+# -------------------------------------- PROTEAN SHOWDOWN VARS --------------------------------------
+
+
+
+
+
+
 

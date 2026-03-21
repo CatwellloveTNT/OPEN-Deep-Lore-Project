@@ -1,0 +1,339 @@
+AVI_showdown = {
+	conduct_a_sweep_avi = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = avi_showdown			
+		}
+
+		cost = 20
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				set_country_flag = pro_aviceynian_sweep
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+	}
+
+	deploy_shield_bubbles_to_region_1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = region_1_selected
+			has_country_flag = avi_showdown
+			has_country_flag = region_1_undestroyed
+		}
+
+		cost = 40
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				set_country_flag = chf_aviceyn_shielding_r1
+			}
+		}
+
+		ai_will_do = {
+			factor = 250
+			modifier = {
+				has_country_flag = avi_ai_request_repair_r1
+				factor = 1000
+			}
+		}		
+
+	}
+
+	deploy_shield_bubbles_to_region_2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = region_2_selected
+			has_country_flag = avi_showdown
+			has_country_flag = region_2_undestroyed
+		}
+
+		cost = 40
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				set_country_flag = chf_aviceyn_shielding_r2
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_country_flag = avi_ai_request_repair_r2
+				factor = 1000
+			}
+		}		
+
+	}
+
+	deploy_shield_bubbles_to_region_3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = region_3_selected
+			has_country_flag = avi_showdown
+			has_country_flag = region_3_undestroyed
+		}
+
+		cost = 40
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				set_country_flag = chf_aviceyn_shielding_r3
+			}
+		}
+
+		ai_will_do = {
+			factor = 250
+			modifier = {
+				has_country_flag = avi_ai_request_repair_r3
+				factor = 1000
+			}
+		}		
+
+	}
+
+	deploy_shield_bubbles_to_region_4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = region_4_selected
+			has_country_flag = avi_showdown
+			has_country_flag = region_4_undestroyed
+		}
+
+		cost = 40
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				set_country_flag = chf_aviceyn_shielding_r4
+			}
+		}
+
+		ai_will_do = {
+			factor = 250
+			modifier = {
+				has_country_flag = avi_ai_request_repair_r4
+				factor = 1000
+			}
+		}		
+
+	}
+
+	deploy_shield_bubbles_to_region_5 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = region_5_selected
+			has_country_flag = avi_showdown
+			has_country_flag = region_5_undestroyed
+		}
+
+		cost = 40
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				set_country_flag = chf_aviceyn_shielding_r5
+			}
+		}
+
+		ai_will_do = {
+			factor = 250
+			modifier = {
+				has_country_flag = avi_ai_request_repair_r5
+				factor = 1000
+			}
+		}		
+
+	}
+
+	deploy_shield_bubbles_to_region_6 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = region_6_selected
+			has_country_flag = avi_showdown
+			has_country_flag = region_6_undestroyed
+		}
+
+		cost = 40
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				set_country_flag = chf_aviceyn_shielding_r6
+			}
+		}
+
+		ai_will_do = {
+			factor = 250
+			modifier = {
+				has_country_flag = avi_ai_request_repair_r6
+				factor = 1000
+			}
+		}		
+
+	}
+
+	deploy_shield_bubbles_to_region_7 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = region_7_selected
+			has_country_flag = avi_showdown
+			has_country_flag = region_7_undestroyed
+		}
+
+		cost = 40
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				set_country_flag = chf_aviceyn_shielding_r7
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_country_flag = avi_ai_request_repair_r7
+				factor = 1000
+			}
+		}		
+
+	}
+}

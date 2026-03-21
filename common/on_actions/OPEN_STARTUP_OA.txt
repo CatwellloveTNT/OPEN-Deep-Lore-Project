@@ -79,8 +79,23 @@ on_actions = {
 			ARC = {
 				set_variable = { satoru_defecting = 0 }
 				set_variable = { starail_support = 52 }
-				set_variable = { opposition_support = 27 }						
-			}
+				set_variable = { opposition_support = 27 }		
+			}	
+			
+			set_variable = { global.num_of_strike_aircraft = 650 }
+			set_variable = { global.num_of_awacs = 2 }
+			set_variable = { global.num_of_ewa = 5 }
+			set_variable = { global.num_of_sams = 275 } #275
+			set_variable = { global.num_of_radars = 450 }
+			set_variable = { global.destruction_r1 = 0 }
+			set_variable = { global.destruction_r2 = 0 }
+			set_variable = { global.destruction_r3 = 0 }
+			set_variable = { global.destruction_r4 = 0 }
+			set_variable = { global.destruction_r5 = 0 }
+			set_variable = { global.destruction_r6 = 0 }
+			set_variable = { global.destruction_r7 = 0 }		
+			set_variable = { global.total_destroyed_regions = 0}	
+
 		}
 	}
 }

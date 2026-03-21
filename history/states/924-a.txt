@@ -4,10 +4,10 @@ state={
 	provinces={
 		11326 11335 11338 11697 11698 11700 11701 11705 11706 11708 11710 
 	}
-	manpower = 564391
+	manpower = 1564391
 	buildings_max_level_factor = 1
 	local_supplies = 0
-	state_category = town
+	state_category = large_city
 
 
 	resources = {
@@ -26,20 +26,14 @@ state={
 		add_core_of = CLS
 		add_core_of = HIT
 
-		victory_points = {
-		
-		}
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 0
 			arms_factory = 0
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			10571 = {
-				naval_base = 0
-			}
 			
 		}
 	}

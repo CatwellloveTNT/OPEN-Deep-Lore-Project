@@ -1,0 +1,81 @@
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+CHF_nuke_their_ass = {
+	goto_state = 537
+	launch_nuke = {
+		province = 19798
+	}
+	launch_nuke = {
+		province = 19785
+	}
+	launch_nuke = {
+		province = 19802
+	}
+	launch_nuke = {
+		province = 9940
+	}
+	launch_nuke = {
+		province = 8408
+	}
+	launch_nuke = {
+		province = 8410
+	}
+	PRO = {
+		country_event = {
+			id = pro.33
+		}
+		hidden_effect = {
+			scoped_play_song = "non_metal" #placeholder song			
+		}
+	}
+	CLS = {
+		country_event = {
+			id = col.33
+		}
+		hidden_effect = {
+			scoped_play_song = "non_metal" #placeholder song	
+			goto_state = 537			
+		}
+		}
+	CHF = {
+		hidden_effect = {
+			scoped_play_song = "nukes"
+		}
+		declare_war_on = {
+			target = PRO
+			type = liberate_wargoal
+		}
+		declare_war_on = {
+			target = CLS
+			type = liberate_wargoal
+		}
+	}
+	FLA = {
+		declare_war_on = {
+			target = PRO
+			type = liberate_wargoal
+		}
+		declare_war_on = {
+			target = CLS
+			type = liberate_wargoal
+		}
+	}
+	}
+
+

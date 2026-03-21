@@ -25,5 +25,120 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = msb.2
+	title = msb.2.t
+	desc = msb.2.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # coalition-protean showdown variable link test
+		name = msb.2.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = {
+	id = msb.3
+	title = msb.3.t
+	desc = msb.3.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # chaffian sweep protean showdown test
+		name = msb.3.a
+		ai_chance = {factor = 100}
+		PRO = {
+			set_country_flag = pro_chaffian_sweep
+		}
+	}
+}
+
+country_event = {
+	id = msb.4
+	title = msb.4.t
+	desc = msb.4.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # chaffian awacs intercept protean showdown test
+		name = msb.4.a
+		ai_chance = {factor = 100}
+		PRO = {
+			set_country_flag = pro_chaffian_intercept_awacs
+		}
+	}
+}
+
+country_event = {
+	id = msb.5
+	title = msb.5.t
+	desc = msb.5.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # chaffian ewa intercept protean showdown test
+		name = msb.5.a
+		ai_chance = {factor = 100}
+		PRO = {
+			set_country_flag = pro_chaffian_intercept_ewa
+		}
+	}
+}
+
+country_event = {
+	id = msb.6
+	title = msb.6.t
+	desc = msb.6.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # coaltiion radar strike protean showdown test
+		name = msb.6.a
+		ai_chance = {factor = 100}
+		PRO = {
+			set_country_flag = pro_coalition_radar_strike
+		}
+	}
+}
+
+country_event = {
+	id = msb.7
+	title = msb.7.t
+	desc = msb.7.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # coaltiion sam strike protean showdown test
+		name = msb.7.a
+		ai_chance = {factor = 100}
+		PRO = {
+			set_country_flag = pro_coalition_strike_sams
+		}
+	}
+}
+country_event = {
+	id = msb.8
+	title = msb.8.t
+	desc = msb.8.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # coaltiion sam strike protean showdown test
+		name = msb.8.a
+		ai_chance = {factor = 100}
+		PRO = {
+			set_country_flag = pro_aviceyn_in_showdown
+		}
+	}
+}
+
 
 

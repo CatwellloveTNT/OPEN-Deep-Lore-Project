@@ -138,7 +138,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 			factor = 0.1
 			modifier = {
 				has_war = yes
-				factor = 1
+				factor = 500
 			}
 
 		}		
@@ -149,7 +149,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 	PRO_the_armed_forces_of_protea = { 
 
-	idonthaveaname = { 
+	more_attack = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -198,7 +198,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 	}
 
-	idonthaveaname1 = { 
+	more_def = { 
 		priority = 309
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -247,7 +247,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 	}
 
-	idonthaveaname2 = { 
+	more_org = { 
 		priority = 308
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -296,7 +296,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 	}
 
-	idonthaveaname3 = { 
+	more_planning = { 
 		priority = 308
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -345,13 +345,4325 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 	}
 
+	}
+
+PRO_the_third_skirmish = {
+
+	steady_advance = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_speed_and_aggression}
+		}
+
+		visible = {
+			has_country_flag = the_third_skirmish
+		}
+
+		cost = 25
+
+		#days_re_enable = 20
+
+		days_remove = 1
+
+		fire_only_once = yes 
 
 
 
+		modifier = {
+		}
+
+		complete_effect = {
+			complete_national_focus = PRO_slow_and_steady
+			set_country_flag = steady_decisions			
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 1
+			}
+
+		}		
+
+	}
+
+	thunder_and_flash = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_slow_and_steady}
+		}
+
+		visible = {
+			has_country_flag = the_third_skirmish
+		}
+
+		cost = 25
+
+		#days_re_enable = 20
+
+		days_remove = 1
+
+		fire_only_once = yes
+
+
+
+	#	modifier = {
+	#		army_attack_factor = 0.10
+	#		army_org_factor = 0.10 
+	#	}
+
+		complete_effect = {
+			complete_national_focus = PRO_speed_and_aggression
+			set_country_flag = speed_decisions
+		}
+
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				has_war = yes
+				factor = 1500
+			}
+
+		}		
+
+	}
+#-------------------------------- speed and aggression decsions ----------------------------------------
+
+	shock_tactics = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_slow_and_steady}
+		}
+
+		visible = { 
+			has_country_flag = speed_decisions
+		}
+
+		cost = 25
+
+		days_re_enable = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+			army_attack_factor = 0.05
+			army_speed_factor = 0.10
+			army_org_factor = -0.10
+		}
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 1
+			}
+
+		}		
+
+	}
+
+	strike_enemy_c6isr = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_slow_and_steady}
+		}
+
+		visible = { 
+			has_country_flag = speed_decisions
+		}
+
+		cost = 50
+
+	#	days_re_enable = 50
+
+		days_remove = 1
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CHF = {
+				add_timed_idea = {
+					idea = c6isr_disrupted
+					days = 80
+				}
+			}
+			add_days_mission_timeout = {
+				mission = end_the_war1
+				days = -25
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 5000
+			}
+
+		}		
+
+	}
+
+	 abandon_roe = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_slow_and_steady}
+		}
+
+		visible = { 
+			has_country_flag = speed_decisions
+		}
+
+		cost = 25
+
+		#days_re_enable = 20
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+#			army_attack_factor = 0.10
+#			army_org_factor = 0.10
+		}
+
+		complete_effect = {
+			add_ideas = roe_abandoned
+			add_days_mission_timeout = {
+				mission = end_the_war1
+				days = -50
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 5001
+			}
+
+		}		
+
+	}
+
+#-------------------------------- slow and steady ----------------------------------------
+
+	jstars_in_every_sector = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_speed_and_aggression}
+		}
+
+		visible = { 
+			has_country_flag = steady_decisions
+		}
+
+		cost = 25
+
+#		days_re_enable = 20
+
+		days_remove = 1
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			add_ideas = jstars_support
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 5000
+			}
+
+		}		
+
+	}
+
+	round_the_clock_on_call_cas = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_speed_and_aggression}
+		}
+
+		visible = { 
+			has_country_flag = steady_decisions
+		}
+
+		cost = 25
+
+		days_re_enable = 80
+
+		days_remove = 60
+
+#		fire_only_once = yes
+
+
+
+		modifier = {
+			ground_attack_factor = 0.20
+			army_defence_factor = 0.05
+		}
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 1
+			}
+
+		}		
+
+	}
+
+	authorize_shelling_on_civilian_infrastructure = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_completed_focus = PRO_speed_and_aggression}
+		}
+
+		visible = { 
+			has_country_flag = steady_decisions
+		}
+
+		cost = 25
+
+#		days_re_enable = 20
+
+		days_remove = 1
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			add_ideas = indiscriminate_shelling
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 5001
+			}
+
+		}		
+
+		
+	}
+}
+
+PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	# showdown, or operation "midnight fury" as its called in game is the first "complex" minigame i ever made, which means ALOT of the shit
+	# going on in there is very, VERY messy. if you are either me from the future, looking to do a revamp of the minigame or just someone peeking at the files, remember:
+	# 1. Protea is the main character of the minigame, all of the timed missions should happen to them/be seen by them, additionally, any decision that alters the minigame variables 
+	# should be done ONLY in the protea decsions/timed decisions files
+	# 2. The minigame DOES NOT use global flags, i forgot about them at the time, check the decisions files of CHF and CLS and AVI to see the correct flags to use
+	# 3. The focus that initiates showdown is the one that gives all of the flags required to operate the minigame, not the event that comes along with it
+	# 4. Monsterbird's (MSB) decisions are responsible for progressing the minigame. DEAD phase success, region destruction calculation AND minigame fail/completion effects are tied to them. The
+	# MSB decisions file is where thats located
+	# 5. Within MSB's decision files are country flags that affect all parties involved in showdown (so, chaffia, flaria, protea, coalition states and aviceyn for clarity)
+	# some of these flags are needed for the minigame to function properly
+	# 6. There is some redundant code in there that i left literally because i dont know, felt like it lol. an example of that are the aviceyn SWEEP attacks in the CHF decisions file
+	# (granted, i initially didnt intend for aviceyn to get a decisions tab at all for this, but i decided to get them involved because the aviceyn's fantasy is LITERALLY to
+	# intervene in every First World conflict)
+
+
+	request_the_coalition_focus_on_radar_emitters = { #this is meant to change the behaviour of the ai if the coalition is not a player to do whatever player protea wants, ai protea will always have the coalition eliminate SAMS
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_requested_radar }
+		}
+
+		visible = { 
+			AND = {
+				has_country_flag = pro_showdown
+				has_country_flag = pro_dead_phase
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 1
+
+		days_remove = 1
+
+		fire_only_once = no
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			set_country_flag = pro_requested_radar
+			clr_country_flag = pro_requested_sams
+			CLS = {
+				set_country_flag = ai_showdown_target_radars
+				clr_country_flag = ai_showdown_target_sams
+			}
+			country_event = {
+				id = col.100
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+
+		}		
+
+		
+	}
+
+	request_the_coalition_focus_on_sam_launchers = { #this is meant to change the behaviour of the ai if the coalition is not a player to do whatever player protea wants, ai protea will always have the coalition eliminate SAMS
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_requested_sams }
+		}
+
+		visible = { 
+			AND = {
+				has_country_flag = pro_showdown
+				has_country_flag = pro_dead_phase
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 1
+
+		days_remove = 1
+
+		fire_only_once = no
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			set_country_flag = pro_requested_sams
+			clr_country_flag = pro_requested_radar
+			CLS = {
+				set_country_flag = ai_showdown_target_sams
+				clr_country_flag = ai_showdown_target_radars
+			}
+			country_event = {
+				id = col.101
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				has_war = yes
+				factor = 1000
+			}
+
+		}		
+
+		
+	}
+
+	harms_on_every_pylon = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = all_harms }
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = pro_showdown
+				has_country_flag = pro_dead_phase
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 10
+
+		days_remove = 1
+
+  
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = harms
+			set_country_flag = all_harms
+			clr_country_flag = sidewinders
+			CHF = {
+				set_country_flag = chf_pro_using_harms
+				clr_country_flag = chf_pro_using_sidewinders
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	deploy_ew_assets = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			AND = {
+			NOT = { has_country_flag = ews_active }
+			NOT = { has_country_flag = ew_dead }
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = pro_showdown
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 10
+
+		days_remove = 30
+
+  
+
+		modifier = {
+		}
+
+		complete_effect = {
+			set_country_flag = ews_active
+			clr_country_flag = ew_inactive
+			CHF = {
+			set_country_flag = chf_ews_active
+			clr_country_flag = chf_ew_inactive				
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	enforce_infrared_weapons_in_loadouts = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = sidewinders }
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = pro_showdown
+				has_country_flag = pro_dead_phase
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 10
+
+		days_remove = 1
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = winders
+			set_country_flag = sidewinders
+			clr_country_flag = all_harms
+			CHF = {
+				set_country_flag = chf_pro_using_sidewinders
+				clr_country_flag = chf_pro_using_harms
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+
+	}
+
+	HAVCAP = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = pro_showdown
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 5
+
+		days_remove = 1
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			set_country_flag = pro_havcap
+			clr_country_flag = pro_chaffian_intercept_awacs
+			clr_country_flag = pro_chaffian_intercept_ewa
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = {
+					has_country_flag = pro_chaffian_intercept_awacs
+					has_country_flag = pro_chaffian_intercept_ewa
+				}
+				add = 5002
+			}
+		}		
 
 	}
 
 
+	conduct_a_wild_weasel_mission_regular = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = sidewinders
+			has_country_flag = ew_inactive		
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = weazeling_it
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 7
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 3
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 15
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 7
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 15
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 10
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 2
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	conduct_a_wild_weasel_mission_regular_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = sidewinders	
+			has_country_flag = ews_active			
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = weazeling_it
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 7
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 3
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 15
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 7
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 9
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 10
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 2
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	conduct_a_wild_weasel_mission_all_harms = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = all_harms
+			has_country_flag = ew_inactive	
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = weazeling_it
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 10
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 5
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 19
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 12
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 15
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 13
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 5
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	conduct_a_wild_weasel_mission_all_harms_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = all_harms
+			has_country_flag = ews_active
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = weazeling_it
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 10
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 5
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 19
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 12
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 15
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 13
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 5
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	coordinate_with_jtac_teams_to_find_emitters_regular = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = sidewinders	
+			has_country_flag = ew_inactive	
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 5
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = emitters
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 2
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 7
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 7
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 12
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 8
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 7
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	coordinate_with_jtac_teams_to_find_emitters_regular_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = sidewinders
+			has_country_flag = ews_active		
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 5
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = emitters
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 2
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 7
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 7
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 12
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 8
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 7
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	coordinate_with_jtac_teams_to_find_emitters_harms = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = all_harms
+			has_country_flag = ew_inactive			
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 5
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = emitters
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 4
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 9
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 11
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 21
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 10
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 11
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 14
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	coordinate_with_jtac_teams_to_find_emitters_harms_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = pro_dead_phase	
+			has_country_flag = all_harms
+			has_country_flag = ews_active
+		}
+
+		}
+
+		cost = 15
+
+		days_re_enable = 5
+
+		days_remove = 10
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = emitters
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 4
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 9
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 11
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 21
+					}
+
+				}
+				20 = {
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 10
+					}
+					subtract_from_variable = {
+						global.num_of_sams = 11
+					}
+					subtract_from_variable = {
+						global.num_of_radars = 14
+					}
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+
+#----------------------------------------- REGION 1 -----------------------------------------
+
+	authorize_strike_mission_in_region1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_1_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_1_selected
+			has_country_flag = region_1_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_1_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_1_selected
+			has_country_flag = region_1_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_1_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_1_selected
+			has_country_flag = region_1_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 17
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+
+
+	TARCAP_r1 = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = pro_region_1_barcap
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = region_1_selected
+				has_country_flag = region_1_undestroyed	
+				has_country_flag = pro_showdown
+				has_country_flag = pro_showdown_phase_1_won	
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+			clr_country_flag = pro_region_1_barcap
+			}
+			CLS = {
+			clr_country_flag = cls_region_1_barcap
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+	
+	authorize_strike_mission_in_region1_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_1_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_1_selected
+			has_country_flag = region_1_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region1_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_1_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_1_selected
+			has_country_flag = region_1_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region1_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_1_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_1_selected
+			has_country_flag = region_1_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r1 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+#----------------------------------------- REGION 2 -----------------------------------------
+
+	authorize_strike_mission_in_region2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_2_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_2_selected
+			has_country_flag = region_2_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_2_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_2_selected
+			has_country_flag = region_2_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_2_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_2_selected
+			has_country_flag = region_2_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 17
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+
+
+	TARCAP_r2 = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = pro_region_2_barcap
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = region_2_selected
+				has_country_flag = region_2_undestroyed	
+				has_country_flag = pro_showdown
+				has_country_flag = pro_showdown_phase_1_won	
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+			clr_country_flag = pro_region_2_barcap
+			}
+			CLS = {
+			clr_country_flag = cls_region_2_barcap
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+	
+	authorize_strike_mission_in_region2_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_2_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_2_selected
+			has_country_flag = region_2_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region2_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_2_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_2_selected
+			has_country_flag = region_2_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region2_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_2_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_2_selected
+			has_country_flag = region_2_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r2 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+#----------------------------------------- REGION 3 -----------------------------------------
+
+	authorize_strike_mission_in_region3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_3_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_3_selected
+			has_country_flag = region_3_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_3_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_3_selected
+			has_country_flag = region_3_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_3_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_3_selected
+			has_country_flag = region_3_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 17
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+
+
+	TARCAP_r3 = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = pro_region_3_barcap
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = region_3_selected
+				has_country_flag = region_3_undestroyed	
+				has_country_flag = pro_showdown
+				has_country_flag = pro_showdown_phase_1_won	
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+			clr_country_flag = pro_region_3_barcap
+			}
+			CLS = {
+			clr_country_flag = cls_region_3_barcap
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+	
+	authorize_strike_mission_in_region3_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_3_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_3_selected
+			has_country_flag = region_3_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region3_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_3_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_3_selected
+			has_country_flag = region_3_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region3_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_3_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_3_selected
+			has_country_flag = region_3_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+#----------------------------------------- REGION 4 -----------------------------------------
+
+	authorize_strike_mission_in_region4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_4_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_4_selected
+			has_country_flag = region_4_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_4_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_4_selected
+			has_country_flag = region_4_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_4_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_4_selected
+			has_country_flag = region_4_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 17
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+
+
+	TARCAP_r4 = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = pro_region_4_barcap
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = region_4_selected
+				has_country_flag = region_4_undestroyed	
+				has_country_flag = pro_showdown
+				has_country_flag = pro_showdown_phase_1_won	
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+			clr_country_flag = pro_region_4_barcap
+			}
+			CLS = {
+			clr_country_flag = cls_region_4_barcap
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+	
+	authorize_strike_mission_in_region4_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_4_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_4_selected
+			has_country_flag = region_4_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region4_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_4_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_4_selected
+			has_country_flag = region_4_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r3 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region4_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_4_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_4_selected
+			has_country_flag = region_4_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r4 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+#----------------------------------------- REGION 5 -----------------------------------------
+
+	authorize_strike_mission_in_region5 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_5_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_5_selected
+			has_country_flag = region_5_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region5 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_5_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_5_selected
+			has_country_flag = region_5_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}	
+
+	}
+
+	authorize_deep_strike_mission_in_region5 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_5_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_5_selected
+			has_country_flag = region_5_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 17
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+
+
+	TARCAP_r5 = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = pro_region_5_barcap
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = region_5_selected
+				has_country_flag = region_5_undestroyed	
+				has_country_flag = pro_showdown
+				has_country_flag = pro_showdown_phase_1_won	
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+			clr_country_flag = pro_region_5_barcap
+			}
+			CLS = {
+			clr_country_flag = cls_region_5_barcap
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+	
+	authorize_strike_mission_in_region5_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_5_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_5_selected
+			has_country_flag = region_5_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region5_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_5_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_5_selected
+			has_country_flag = region_5_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region5_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_5_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_5_selected
+			has_country_flag = region_5_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r5 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+#----------------------------------------- REGION 6 -----------------------------------------
+
+	authorize_strike_mission_in_region6 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_6_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_6_selected
+			has_country_flag = region_6_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region6 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_6_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_6_selected
+			has_country_flag = region_6_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region6 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_6_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_6_selected
+			has_country_flag = region_6_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 17
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+
+
+	TARCAP_r6 = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = pro_region_6_barcap
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = region_6_selected
+				has_country_flag = region_6_undestroyed	
+				has_country_flag = pro_showdown
+				has_country_flag = pro_showdown_phase_1_won	
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+			clr_country_flag = pro_region_6_barcap
+			}
+			CLS = {
+			clr_country_flag = cls_region_6_barcap
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+	
+	authorize_strike_mission_in_region6_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_6_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_6_selected
+			has_country_flag = region_6_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region6_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_6_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_6_selected
+			has_country_flag = region_6_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region6_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_6_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_6_selected
+			has_country_flag = region_6_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r6 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 750
+		}		
+
+	}
+
+#----------------------------------------- REGION 7 -----------------------------------------
+
+	authorize_strike_mission_in_region7 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_7_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_7_selected
+			has_country_flag = region_7_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 7
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region7 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_7_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_7_selected
+			has_country_flag = region_7_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region7 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_7_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_7_selected
+			has_country_flag = region_7_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ew_inactive	
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 17
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+
+
+	TARCAP_r7 = { 
+		priority = 350
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = pro_region_7_barcap
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = region_7_selected
+				has_country_flag = region_7_undestroyed	
+				has_country_flag = pro_showdown
+				has_country_flag = pro_showdown_phase_1_won	
+			}
+		}
+
+		cost = 0
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+			clr_country_flag = pro_region_7_barcap
+			}
+			CLS = {
+			clr_country_flag = cls_region_7_barcap
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+	
+	authorize_strike_mission_in_region7_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_7_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_7_selected
+			has_country_flag = region_7_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 2
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 5
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 4
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 3
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_oca_strike_mission_in_region7_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_7_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_7_selected
+			has_country_flag = region_7_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 7
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 6
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 9
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 8
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+	authorize_deep_strike_mission_in_region7_ew = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			NOT = { has_country_flag = pro_region_7_barcap }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = region_7_selected
+			has_country_flag = region_7_undestroyed	
+			has_country_flag = pro_showdown_phase_1_won	
+			has_country_flag = ews_active
+		}	
+		}
+
+		cost = 20
+
+		days_re_enable = 10
+
+		days_remove = 3
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 10
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 11
+					}
+				}
+				50 = {
+					add_to_variable = {
+						global.destruction_r7 = 15
+					}
+					subtract_from_variable = {
+						global.num_of_strike_aircraft = 14
+					}
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 0.1
+		}		
+
+	}
+
+}
 
 
 

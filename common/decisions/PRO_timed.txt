@@ -103,6 +103,774 @@ PRO_the_third_skirmish = {
 
 	}
 }
+PRO_showdown = {
+
+	air_war_ends = {
+		priority = 500
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = PRO_showdown
+		}
+
+		available = {
+			OR = {
+				protea_wins_showdown = yes		
+				protea_loses_showdown = yes			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = PRO_showdown
+		}
+
+		timeout_effect = {
+			custom_override_tooltip = {
+				tooltip = air_war_loss
+			}
+			PRO = {
+				country_event = {
+					id = pro.53
+				}
+			clr_country_flag = pro_showdown
+			clr_country_flag = PRO_showdown
+			set_country_flag = pro_loses_showdown
+			}
+			CHF = {
+				set_country_flag = chf_wins_showdown
+				clr_country_flag = chf_showdown
+				clr_country_flag = chf_showdown_phase_2	
+				country_event = {
+					id = chf.15
+				}			
+			}			
+		}
+
+	}
+
+	chaffian_sweep_regular = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			has_country_flag = sidewinders
+			has_country_flag = ew_inactive
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_strike_aircraft = 5
+			}
+			PRO = {
+				clr_country_flag = pro_chaffian_sweep
+			}
+		}
+
+	}
+
+	aviceynian_sweep = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 40
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_aviceynian_sweep
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_aviceynian_sweep
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_strike_aircraft = 18
+			}
+			PRO = {
+				clr_country_flag = pro_aviceynian_sweep
+			}
+		}
+
+	}
+
+	chaffian_sweep_ew = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			has_country_flag = sidewinders
+			has_country_flag = ews_active
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			has_country_flag = ews_active
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_strike_aircraft = 2
+			}
+			PRO = {
+				clr_country_flag = pro_chaffian_sweep
+			}
+		}
+
+	}
+
+	chaffian_sweep_harms = { #if protea has all harms on its aircraft, this is what will fire instead of the regular
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+		cancel_trigger = {
+			has_country_flag = pro_aviceyn_in_showdown
+		}
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			has_country_flag = all_harms
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			has_country_flag = all_harms
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_strike_aircraft = 11
+			}
+			PRO = {
+				clr_country_flag = pro_chaffian_sweep
+			}
+		}
+
+	}
+
+	chaffian_sweep_aviceyn = { # i literally just came up with the idea that instead of this, aviceyn themselves join the conflict. ignore this decision
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			has_country_flag = pro_aviceyn_in_showdown
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_sweep
+			has_country_flag = pro_aviceyn_in_showdown
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_strike_aircraft = 18
+			}
+			PRO = {
+				clr_country_flag = pro_chaffian_sweep
+			}
+		}
+
+	}
+
+	chaffian_intercept_awacs = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 50
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_intercept_awacs
+			}
+		}
+
+		available = {
+			has_country_flag = pro_havcap
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_intercept_awacs
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_awacs = 1
+			}
+			PRO = {
+				clr_country_flag = pro_chaffian_intercept_awacs
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_havcap
+			}
+		}
+
+	}
+
+	chaffian_intercept_ewa = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 35
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_intercept_ewa
+			}
+		}
+
+		available = {
+			has_country_flag = pro_havcap
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_chaffian_intercept_ewa
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_ewa = 1
+			}
+			PRO = {
+				clr_country_flag = pro_chaffian_intercept_ewa
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_havcap
+			}
+		}
+
+	}
+
+	coalition_dead_strike_radars = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 15
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_radar_strike
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_radar_strike
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_radars = 12
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_radar_strike
+			}
+		}
+
+	}
+
+	coalition_dead_strike_sams = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 15
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_strike_sams
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_strike_sams
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.num_of_sams = 13
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_strike_sams
+			}
+		}
+
+	}
+
+	coalition_oca_strike_r1 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 10
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_oca_strike_r1
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = pro_showdown_phase_1_won
+			has_country_flag = pro_coalition_oca_strike_r1
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				global.destruction_r1 = 8
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_oca_strike_r1
+			}
+		}
+
+	}
+
+	coalition_oca_strike_r2 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 10
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_oca_strike_r2
+			
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = pro_showdown_phase_1_won
+			has_country_flag = pro_coalition_oca_strike_r2
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				global.destruction_r2 = 8
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_oca_strike_r2
+			}
+		}
+
+	}
+
+	coalition_oca_strike_r3 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 10
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_oca_strike_r3
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = pro_showdown_phase_1_won
+			has_country_flag = pro_coalition_oca_strike_r3
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				global.destruction_r3 = 8
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_oca_strike_r3
+			}
+		}
+
+	}
+
+	coalition_oca_strike_r4 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 10
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_oca_strike_r4
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = pro_showdown_phase_1_won
+			has_country_flag = pro_coalition_oca_strike_r4
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				global.destruction_r4 = 8
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_oca_strike_r4
+			}
+		}
+
+	}
+
+	coalition_oca_strike_r5 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 10
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_oca_strike_r5
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = pro_showdown_phase_1_won
+			has_country_flag = pro_coalition_oca_strike_r5
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				global.destruction_r5 = 8
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_oca_strike_r5
+			}
+		}
+
+	}
+
+	coalition_oca_strike_r6 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 10
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_oca_strike_r6
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = pro_showdown_phase_1_won
+			has_country_flag = pro_coalition_oca_strike_r6
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				global.destruction_r6 = 8
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_oca_strike_r6
+			}
+		}
+
+	}
+
+	coalition_oca_strike_r7 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 10
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = pro_coalition_oca_strike_r7
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = pro_showdown_phase_1_won
+			has_country_flag = pro_coalition_oca_strike_r7
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				global.destruction_r7 = 8
+			}
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_oca_strike_r7
+			}
+		}
+
+	}
+
+	ew_assets_active = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 10
+		is_good = yes
+		days_re_enable = 15
+
+
+		activation = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = ews_active
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = PRO_showdown
+			has_country_flag = ews_active
+			}
+		}
+
+		timeout_effect = {
+			clr_country_flag = ews_active
+			set_country_flag = ew_inactive
+		}
+
+		complete_effect = {
+			PRO = {
+				clr_country_flag = pro_coalition_strike_sams
+			}
+		}
+
+	}
+}
 
 
 

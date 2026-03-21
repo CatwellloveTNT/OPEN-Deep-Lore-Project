@@ -1,0 +1,15 @@
+	FLA_third_skirmish = {
+		priority = 500
+
+		icon = SOV_paranoia
+
+		allowed = {
+			original_tag = FLA
+		}
+
+		visible = {
+			always = yes
+		}
+
+		visible_when_empty = no
+	}

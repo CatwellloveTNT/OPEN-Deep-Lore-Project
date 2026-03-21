@@ -21,10 +21,12 @@ PRO_wins_the_third_skirmish_peace = {
 		set_state_owner = 737
 		set_state_owner = 604
 		set_state_owner = 534
+		set_state_owner = 599
+		set_state_owner = 542
 		white_peace = CHF
 		white_peace = FLA
 		country_event = {
-			id = pro.32
+			id = pro.40
 		}
 		set_country_flag = pro_won_the_third_skirmish
 		clr_country_flag = pro_unlock_eco_and_mil_trees
@@ -33,23 +35,21 @@ PRO_wins_the_third_skirmish_peace = {
 	}
 	CHF = {
 		country_event = {
-			id = chf.8
-		}
-		add_timed_idea = {
-			idea = the_second_great_retreat
-			days = 300
+			id = chf.10
 		}
 		set_country_flag = chf_lost_the_third_skirmish
+		clr_country_flag = the_third_skirmish
 	}
-	CHF = {
+	FLA = {
 		country_event = {
 			id = fla.1
 		}
 		add_timed_idea = {
 			idea = the_second_great_retreat
-			days = 300
+			days = 365
 		}
 		set_country_flag = fla_lost_the_third_skirmish
+		clr_country_flag = the_third_skirmish
 	}
 }
 
@@ -61,4 +61,77 @@ FLA_surrenders_in_the_third_skirmish = {
 		}
 		set_country_flag = fla_lost_the_third_skirmish
 	}
+	PRO = {
+		set_state_owner = 599
+		set_state_owner = 542
+	}
 }
+
+showdown_ongoing_effects = {
+	PRO = {
+		declare_war_on = {
+			target = CHF
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = FLA
+			type = annex_everything
+		}
+		add_ideas = air_war_ongoing_pro
+		hidden_effect = {
+			scoped_play_song = "showdown"
+		}
+	}
+	CHF = {
+		add_ideas = air_war_ongoing_chf
+	}
+	FLA = {
+		add_ideas = air_war_ongoing_chf
+	}
+	CLS = {
+		set_country_flag = cls_showdown_ongoing
+		hidden_effect = {
+			scoped_play_song = "awacs"
+		}
+	}
+}
+
+showdown_over_effects_pro_victory = {
+	PRO = {
+		white_peace = CHF
+		white_peace = FLA
+		remove_ideas = air_war_ongoing_pro
+		country_event = {
+			id = pro.51
+		}
+	}
+	CHF = {
+		remove_ideas = air_war_ongoing_chf		
+		country_event = {
+			id = chf.10
+		}
+	}
+	CLS = {
+		country_event = {
+			id = col.2
+		}
+	}
+	FLA = {
+		remove_ideas = air_war_ongoing_chf
+	}
+}
+
+showdown_over_effects_pro_loss = {
+	PRO = {
+		white_peace = CHF
+		white_peace = FLA
+		remove_ideas = air_war_ongoing_pro
+	}
+	CHF = {
+		remove_ideas = air_war_ongoing_chf		
+	}
+	FLA = {
+		remove_ideas = air_war_ongoing_chf
+	}
+}
+

@@ -142,6 +142,9 @@ country_event = {
 	option = { # Soon, all those 4-leggers will be out of here.
 		name = pro.9.a
 		ai_chance = {factor = 100}
+		533 = {
+			add_manpower = -255621
+		}
 		CHF = {
 			country_event = {
 				id = chf.8
@@ -160,6 +163,7 @@ country_event = {
 	option = { # Our position is secured, for now.
 		name = pro.10.a
 		ai_chance = {factor = 100}
+		add_stability = 0.1
 	}
 }
 country_event = {
@@ -216,6 +220,12 @@ country_event = {
 		}
 		hidden_effect = {
 			scoped_play_song = "non_metal"
+		}
+		CHF = {
+			set_country_flag = the_third_skirmish
+		}
+		FLA = {
+			set_country_flag = the_third_skirmish
 		}
 	}
 }
@@ -288,6 +298,811 @@ country_event = {
 
 	option = { # test event for scripted loc
 		name = pro.18.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.19
+	title = pro.19.t
+	desc = pro.19.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # test event for scripted loc
+		name = pro.19.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.20
+	title = pro.20.t
+	desc = pro.20.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # open up the nation focus
+		name = pro.20.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.21
+	title = pro.21.t
+	desc = pro.21.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # push ourselves to the modern era focus
+		name = pro.21.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.22
+	title = pro.22.t
+	desc = pro.22.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # crackdown on labor freedoms
+		name = pro.22.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.23
+	title = pro.23.t
+	desc = pro.23.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # eyes in every corner focus
+		name = pro.23.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.24
+	title = pro.24.t
+	desc = pro.24.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # unions for laberors focus
+		name = pro.24.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.25
+	title = pro.25.t
+	desc = pro.25.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # second citizen labor reform focus
+		name = pro.25.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.26
+	title = pro.26.t
+	desc = pro.26.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # workforce ready fork a
+		name = pro.26.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.27
+	title = pro.27.t
+	desc = pro.27.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # workforce ready fork b
+		name = pro.27.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.28
+	title = pro.28.t
+	desc = pro.28.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # uncleching our jaws
+		name = pro.28.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.29
+	title = pro.29.t
+	desc = pro.29.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # afp sessessment
+		name = pro.29.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.30
+	title = pro.30.t
+	desc = pro.30.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # deseg the army focus
+		name = pro.30.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.31
+	title = pro.31.t
+	desc = pro.31.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # pony ncos
+		name = pro.31.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.32
+	title = pro.32.t
+	desc = pro.32.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # unicorns in platoons
+		name = pro.32.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.33
+	title = pro.33.t
+	desc = pro.33.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # first world pony in service act
+		name = pro.33.a
+		ai_chance = {factor = 100}
+		add_stability = 0.05
+		add_manpower = 182812
+	}
+}
+country_event = {
+	id = pro.34
+	title = pro.34.t
+	desc = pro.34.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # two face system
+		name = pro.34.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.35
+	title = pro.35.t
+	desc = pro.35.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # artifical sheidls
+		name = pro.35.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.36
+	title = pro.36.t
+	desc = pro.36.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # supremacy of body
+		name = pro.36.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.37
+	title = pro.37.t
+	desc = pro.37.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # hand and hooves seperated
+		name = pro.37.a
+		ai_chance = {factor = 100}
+		add_war_support = 0.15
+	}
+}
+country_event = {
+	id = pro.38
+	title = pro.38.t
+	desc = pro.38.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # hand and hooves seperated
+		name = pro.38.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.39
+	title = pro.39.t
+	desc = pro.39.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # an assessment of the protean air force
+		name = pro.39.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.40
+	title = pro.40.t
+	desc = pro.40.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea wins the third skirmish
+		name = pro.40.a
+		ai_chance = {factor = 100}
+		clr_country_flag = the_third_skirmish
+		hidden_effect = {
+			country_event = {
+				id = pro.51
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = pro.41
+	title = pro.41.t
+	desc = pro.41.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # SO MANY PONIES HAVE DIED HAHAHAHA
+		name = pro.41.a
+		ai_chance = {factor = 100}
+		clr_country_flag = the_third_skirmish
+		534 = {
+			add_manpower = -583181
+		}	
+		604 = {
+			add_manpower = -421711
+		}	
+		737 = {
+			add_manpower = -2182121
+		}	
+		599 = {
+			add_manpower = -383178
+		}
+		542 = {
+			add_manpower = -928128
+		}
+		CHF = {
+			country_event = {
+				id = chf.9
+			}
+		}
+	}
+}
+country_event = {
+	id = pro.42
+	title = pro.42.t
+	desc = pro.42.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # an assessment of the protean air force
+		name = pro.42.a
+		ai_chance = {factor = 100}		
+	}
+}
+
+country_event = {
+	id = pro.43
+	title = pro.43.t
+	desc = pro.43.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # region 1 destroyed
+		name = pro.43.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = region_1_destroyed
+		add_to_variable = {
+			global.total_destroyed_regions = 1
+		}
+		add_to_variable = {
+			global.num_of_strike_aircraft = 50
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 45
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 45
+				}
+				country_event = {
+					id = chf.17
+				}
+			}
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 45
+				}
+				country_event = { 
+					id = col.103
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.44
+	title = pro.44.t
+	desc = pro.44.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # region 2 destroyed
+		name = pro.44.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = region_2_destroyed
+		add_to_variable = {
+			global.total_destroyed_regions = 1
+		}
+		add_to_variable = {
+			global.num_of_strike_aircraft = 50
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 45
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 45
+				}
+				country_event = {
+					id = chf.18
+				}
+			}
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 45
+				}
+				country_event = { 
+					id = col.104
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.45
+	title = pro.45.t
+	desc = pro.45.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # region 3 destroyed
+		name = pro.45.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = region_3_destroyed
+		add_to_variable = {
+			global.total_destroyed_regions = 1
+		}
+		add_to_variable = {
+			global.num_of_strike_aircraft = 50
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 45
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 45
+				}
+				country_event = {
+					id = chf.19
+				}
+			}
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 45
+				}
+				country_event = { 
+					id = col.105
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.46
+	title = pro.46.t
+	desc = pro.46.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # region 4 destroyed
+		name = pro.46.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = region_4_destroyed
+		add_to_variable = {
+			global.total_destroyed_regions = 1
+		}
+		add_to_variable = {
+			global.num_of_strike_aircraft = 50
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 45
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 45
+				}
+				country_event = {
+					id = chf.20
+				}
+			}
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 45
+				}
+				country_event = { 
+					id = col.106
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.47
+	title = pro.47.t
+	desc = pro.47.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # region 5 destroyed
+		name = pro.47.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = region_5_destroyed
+		add_to_variable = {
+			global.total_destroyed_regions = 1
+		}
+		add_to_variable = {
+			global.num_of_strike_aircraft = 50
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 45
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 45
+				}
+				country_event = {
+					id = chf.21
+				}
+			}
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 45
+				}
+				country_event = { 
+					id = col.107
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.48
+	title = pro.48.t
+	desc = pro.48.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # region 6 destroyed
+		name = pro.48.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = region_6_destroyed
+		add_to_variable = {
+			global.total_destroyed_regions = 1
+		}
+		add_to_variable = {
+			global.num_of_strike_aircraft = 50
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 45
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 45
+				}
+			}
+				country_event = {
+					id = chf.22
+				}	
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 45
+				}
+				country_event = { 
+					id = col.108
+				}
+			}		
+		}
+	}
+}
+
+country_event = {
+	id = pro.49
+	title = pro.49.t
+	desc = pro.49.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # region 7 destroyed
+		name = pro.49.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = region_7_destroyed
+		add_to_variable = {
+			global.total_destroyed_regions = 1
+		}
+		add_to_variable = {
+			global.num_of_strike_aircraft = 50
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 45
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 45
+				}
+				country_event = {
+					id = chf.23
+				}
+			}
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 45
+				}
+				country_event = { 
+					id = col.109
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.50
+	title = pro.50.t
+	desc = pro.50.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea wins
+		name = pro.50.a
+		ai_chance = {factor = 100}		
+		clr_country_flag = pro_showdown
+		clr_country_flag = PRO_showdown
+		set_country_flag = pro_wins_showdown
+		CHF = {
+			set_country_flag = chf_loses_showdown
+			clr_country_flag = chf_showdown
+			clr_country_flag = chf_showdown_phase_2
+		}
+		showdown_over_effects_pro_victory = yes
+	}
+}
+
+country_event = {
+	id = pro.51
+	title = pro.51.t
+	desc = pro.51.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # SO MANY PONIES HAVE DIED HAHAHAHA
+		name = pro.51.a
+		ai_chance = {factor = 100}
+	}
+}
+
+
+country_event = {
+	id = pro.52
+	title = pro.52.t
+	desc = pro.52.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea wins the dead phase like true americans
+		name = pro.42.a
+		ai_chance = {factor = 100}		
+		custom_effect_tooltip = showdown_pro_phase_1_won
+		add_to_variable = {
+			global.num_of_strike_aircraft = 100 
+		}
+		add_days_mission_timeout = {
+			mission = air_war_ends
+			days = 150
+		}
+		hidden_effect = {
+			CHF = {
+				add_days_mission_timeout = {
+					mission = chf_showdown_survive
+					days = 150
+				}
+				country_event = { 
+					id = chf.26
+				}
+			}
+			CLS = {
+				add_days_mission_timeout = {
+					mission = cls_proteas_air_war_ends
+					days = 150
+				}
+				country_event = { 
+					id = col.102
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.53
+	title = pro.53.t
+	desc = pro.53.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea loses showdown
+		name = pro.53.a
+		ai_chance = {factor = 100}
+		showdown_over_effects_pro_loss = yes
+		add_ideas = pro_humiliation
+		CLS = {
+			country_event = {
+				id = col.102
+			}
+		}
+		CHF = {
+			country_event = {
+				id = chf.13
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pro.100
+	title = pro.100.t
+	desc = pro.100.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # test event for scripted loc
+		name = pro.100.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.101
+	title = pro.101.t
+	desc = pro.101.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # test event for scripted loc
+		name = pro.101.a
+		ai_chance = {factor = 100}
+		showdown_ongoing_effects = yes
+	}
+}
+country_event = {
+	id = pro.102
+	title = pro.102.t
+	desc = pro.102.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # test event for scripted loc
+		name = pro.102.a
 		ai_chance = {factor = 100}
 	}
 }

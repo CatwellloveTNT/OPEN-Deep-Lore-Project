@@ -1,0 +1,336 @@
+
+
+CHF_showdown = {
+
+	chf_showdown_survive = {
+		priority = 500
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = chf_showdown
+		}
+
+		available = {
+			OR = {
+				protea_wins_showdown = yes		
+				protea_loses_showdown = yes			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_showdown
+		}
+
+		timeout_effect = {
+
+		}
+	}
+
+	aviceyn_repairing_r1 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r1			
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r1
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.destruction_r1 = 5
+			}
+			CHF = {
+				clr_country_flag = chf_aviceyn_shielding_r1
+			}
+			AVI = {
+				clr_country_flag = avi_ai_request_repair_r1
+			}
+		}
+
+	}
+
+	aviceyn_repairing_r2 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r2	
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r2
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.destruction_r2 = 5
+			}
+			CHF = {
+				clr_country_flag = chf_aviceyn_shielding_r2
+			}
+			AVI = {
+				clr_country_flag = avi_ai_request_repair_r2
+			}
+		}
+
+	}
+
+	aviceyn_repairing_r3 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r3			
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r3
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.destruction_r3 = 5
+			}
+			CHF = {
+				clr_country_flag = chf_aviceyn_shielding_r3
+			}
+			AVI = {
+				clr_country_flag = avi_ai_request_repair_r3
+			}
+		}
+
+	}
+
+	aviceyn_repairing_r4 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r4			
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r4
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.destruction_r4 = 5
+			}
+			CHF = {
+				clr_country_flag = chf_aviceyn_shielding_r4
+			}
+			AVI = {
+				clr_country_flag = avi_ai_request_repair_r4
+			}
+		}
+
+	}
+
+	aviceyn_repairing_r5 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r5			
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r5
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.destruction_r5 = 5
+			}
+			CHF = {
+				clr_country_flag = chf_aviceyn_shielding_r5
+			}
+			AVI = {
+				clr_country_flag = avi_ai_request_repair_r5
+			}
+		}
+
+	}
+
+	aviceyn_repairing_r6 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r6			
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r6
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.destruction_r6 = 5
+			}
+			CHF = {
+				clr_country_flag = chf_aviceyn_shielding_r6
+			}
+			AVI = {
+				clr_country_flag = avi_ai_request_repair_r6
+			}
+		}
+
+	}
+
+	aviceyn_repairing_r7 = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 5
+		is_good = no 
+		days_re_enable = 20
+
+ 
+		activation = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r7		
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+			has_country_flag = chf_showdown
+			has_country_flag = chf_aviceyn_shielding_r7
+			}
+		}
+
+		timeout_effect = {
+			subtract_from_variable = {
+				global.destruction_r7 = 5
+			}
+			CHF = {
+				clr_country_flag = chf_aviceyn_shielding_r7
+			}
+			AVI = {
+				clr_country_flag = avi_ai_request_repair_r7
+			}
+		}
+
+	}
+
+}
+
+
+
+
+
+
+

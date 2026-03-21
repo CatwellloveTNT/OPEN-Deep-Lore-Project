@@ -1,0 +1,6 @@
+scripted_gui = {
+  pro_third_skirmish_ui = {
+    context_type = decision_category
+    window_name = "pro_third_skirmish_ui_window"
+  }
+}

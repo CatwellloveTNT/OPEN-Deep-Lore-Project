@@ -15,15 +15,15 @@
 			}
 		}
 
-		visible_when_empty = yes
+		visible_when_empty = no
 	}
 
 	PRO_the_third_skirmish = {
 		priority = 300
 
-		icon = SOV_paranoia
+		icon = SOV_paranoia 
 
-		scripted_gui = cls_solaris_ui
+		scripted_gui = pro_third_skirmish_ui
 
 		allowed = {
 			original_tag = PRO
@@ -35,7 +35,7 @@
 			}
 		}
 
-		visible_when_empty = yes
+		visible_when_empty = no
 	}
 
 	PRO_the_armed_forces_of_protea = {
@@ -58,6 +58,39 @@
 		visible_when_empty = yes
 	}
 
+	PRO_showdown = { #!!!!!!!! WARNING !!!!!!!!!!! 
+	# showdown, or operation "midnight fury" as its called in game is the first "complex" minigame i ever made, which means ALOT of the shit
+	# going on in there is very, VERY messy. if you are either me from the future, looking to do a revamp of the minigame or just someone peeking at the files, remember:
+	# 1. Protea is the main character of the minigame, all of the timed missions should happen to them/be seen by them, additionally, any decision that alters the minigame variables should
+	# be done ONLY in the protea decsions/timed decisions files
+	# 2. The minigame DOES NOT use global flags, i forgot about them at the time, check the decisions files of CHF and CLS and AVI to see the correct flags to use
+	# 3. The focus that initiates showdown is the one that gives all of the flags required to operate the minigame, not the event that comes along with it
+	# 4. Monsterbird's (MSB) decisions are responsible for progressing the minigame. DEAD phase success, region destruction AND minigame fail/completion effects are tied to them. The
+	# MSB decisions file is where thats located
+	# 5. Within MSB's decision files are country flags that affect all parties involved in showdown (so, chaffia, flaria, protea, coalition states and aviceyn for clarity)
+	# some of these flags are needed for the minigame to function properly
+	# 6. There is some redundant code in there that i left literally because i dont know, felt like it lol. an example of that are the aviceyn SWEEP attacks in the CHF decisions file
+	# (granted, i initially didnt intend for aviceyn to get a decisions tab at all for this, but i decided to get them involved because the aviceyn's fantasy is LITERALLY to
+	# intervene in every First World conflict)
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+		scripted_gui = pro_showdown_ui
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = pro_showdown
+			}
+		}
+
+		visible_when_empty = yes
+	}
 
 
 

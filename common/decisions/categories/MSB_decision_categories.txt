@@ -1,0 +1,21 @@
+	puppetmaster = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		visible = {
+			always = yes
+		}
+
+		visible_when_empty = yes
+	}
+
+
+
+
+# ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

@@ -8,14 +8,31 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
-#defined_text = { # babies first scripted loc wtf is this shit bro lmfaoo
-#	name = testloc
-#	text = {
-#		trigger = {
-#			OR = {
-#				has_war = yes
-#			}
-#		}
-#	localization_key = PRO_test_loc
-#	}
-#}
+defined_text = { # babies first scripted loc wtf is this shit bro lmfaoo
+	name = shit1
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = pro_showdown
+			}
+		}
+	localization_key = showdown_desc_phase_2
+	}
+
+	text = {
+	localization_key = showdown_desc_phase_1
+	}
+
+}
+
+defined_text = { # 
+	name = sead_phase
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = pro_showdown
+			}
+		}
+	localization_key = sead_phase
+	}
+}

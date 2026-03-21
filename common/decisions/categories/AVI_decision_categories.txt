@@ -1,0 +1,25 @@
+
+	AVI_showdown = {
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+		scripted_gui = avi_showdown_ui
+
+		allowed = {
+			original_tag = AVI
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = avi_showdown
+			}
+		}
+
+		visible_when_empty = yes
+	}
+
+
+
+# ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

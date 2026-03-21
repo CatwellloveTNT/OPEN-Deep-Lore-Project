@@ -1,0 +1,189 @@
+scripted_gui = {
+  cls_showdown_ui = {
+    context_type = decision_category
+    window_name = "cls_showdown_ui_window"
+
+    effects = {
+      region_1_click = {
+
+        set_country_flag = region_1_selected
+        clr_country_flag = region_2_selected
+        clr_country_flag = region_3_selected
+        clr_country_flag = region_4_selected
+        clr_country_flag = region_5_selected
+        clr_country_flag = region_6_selected
+        clr_country_flag = region_7_selected
+      }
+      region_2_click = {
+
+        set_country_flag = region_2_selected
+        clr_country_flag = region_1_selected
+        clr_country_flag = region_3_selected
+        clr_country_flag = region_4_selected
+        clr_country_flag = region_5_selected
+        clr_country_flag = region_6_selected
+        clr_country_flag = region_7_selected
+      }
+      region_3_click = {
+
+        set_country_flag = region_3_selected
+        clr_country_flag = region_1_selected
+        clr_country_flag = region_2_selected
+        clr_country_flag = region_4_selected
+        clr_country_flag = region_5_selected
+        clr_country_flag = region_6_selected
+        clr_country_flag = region_7_selected
+      }
+      region_4_click = {
+
+        set_country_flag = region_4_selected
+        clr_country_flag = region_1_selected
+        clr_country_flag = region_3_selected
+        clr_country_flag = region_2_selected
+        clr_country_flag = region_5_selected
+        clr_country_flag = region_6_selected
+        clr_country_flag = region_7_selected
+      }
+      region_5_click = {
+
+        set_country_flag = region_5_selected
+        clr_country_flag = region_1_selected
+        clr_country_flag = region_3_selected
+        clr_country_flag = region_4_selected
+        clr_country_flag = region_2_selected
+        clr_country_flag = region_6_selected
+        clr_country_flag = region_7_selected
+      }
+      region_6_click = {
+
+        set_country_flag = region_6_selected
+        clr_country_flag = region_1_selected
+        clr_country_flag = region_3_selected
+        clr_country_flag = region_4_selected
+        clr_country_flag = region_5_selected
+        clr_country_flag = region_2_selected
+        clr_country_flag = region_7_selected
+      }
+      region_7_click = {
+
+        set_country_flag = region_7_selected
+        clr_country_flag = region_1_selected
+        clr_country_flag = region_3_selected
+        clr_country_flag = region_4_selected
+        clr_country_flag = region_5_selected
+        clr_country_flag = region_6_selected
+        clr_country_flag = region_2_selected
+      }
+  
+
+    }
+
+   ai_enabled = {
+      always = yes
+    }
+
+    ai_test_interval = 100
+    ai_test_variance = 0.5
+
+    ai_check = {
+      has_country_flag = cls_showdown_phase_2
+    }
+
+    ai_check_scope = {
+      
+    }
+
+    ai_weights = {
+      region_1_click = {
+        ai_will_do = {
+          factor = 0
+          modifier = {
+            AND = {
+            has_country_flag = cls_showdown_phase_2
+            has_country_flag = region_1_undestroyed
+            }
+            add = 500
+          }
+        }
+      }
+
+      region_2_click = {
+        ai_will_do = {
+          factor = 0
+          modifier = {
+            AND = {
+            has_country_flag = cls_showdown_phase_2
+            has_country_flag = region_2_undestroyed
+            }
+            add = 0
+          }
+        }
+      }
+      region_3_click = {
+        ai_will_do = {
+          factor = 0
+          modifier = {
+            AND = {
+            has_country_flag = cls_showdown_phase_2
+            has_country_flag = region_3_undestroyed
+            }
+            add = 500
+          }
+        }
+      }
+      region_4_click = {
+        ai_will_do = {
+          factor = 0
+          modifier = {
+            AND = {
+            has_country_flag = cls_showdown_phase_2
+            has_country_flag = region_4_undestroyed
+            }
+            add = 500
+          }
+        }
+      }
+      region_5_click = {
+        ai_will_do = {
+          factor = 0
+          modifier = {
+            AND = {
+            has_country_flag = cls_showdown_phase_2
+            has_country_flag = region_5_undestroyed
+            }
+            add = 500
+          }
+        }
+      }
+      region_6_click = {
+        ai_will_do = {
+          factor = 0
+          modifier = {
+            AND = {
+            has_country_flag = cls_showdown_phase_2
+            has_country_flag = region_6_undestroyed
+            }
+            add = 500
+
+          }
+
+        }
+      }
+      region_7_click = {
+        ai_will_do = {
+          factor = 0
+          modifier = {
+            AND = {
+            has_country_flag = cls_showdown_phase_2
+            }
+            add = 0
+          }
+        }
+      }
+      
+    }
+
+
+
+  }
+}

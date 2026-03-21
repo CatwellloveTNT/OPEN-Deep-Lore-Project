@@ -1,0 +1,49 @@
+focus_tree = {
+	id = chaffia_focus
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = CHF
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = CHF_test
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+		#relative_position_id = 
+		cost = 1
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		allow_branch = {
+#			has_country_flag = first_phase_chf
+		}
+		completion_reward = {
+#			country_event = {
+#				id = chf.20
+#			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+}

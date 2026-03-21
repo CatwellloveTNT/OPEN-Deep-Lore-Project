@@ -273,6 +273,7 @@ music = {
 	}	
 }
 
+# ------------------------------------- OPEN SONGS -------------------------------------
 
 music_station = "First_World_Radio"
 music = {
@@ -312,6 +313,36 @@ music = {
 			tag = PRO
 			has_war = yes
 			factor = 0.4
+		}		
+	}
+}
+music = {
+	song = "showdown"
+	chance = {
+		modifier = {
+			tag = PRO
+			has_war = yes
+			factor = 0.4
+		}		
+	}
+}
+music = {
+	song = "awacs"
+	chance = {
+		modifier = {
+			tag = CLS
+			has_war = yes
+			factor = 0.2
+		}		
+	}
+}
+music = {
+	song = "nukes"
+	chance = {
+		modifier = {
+			tag = CHF
+			has_war = yes
+			factor = 0.05
 		}		
 	}
 }

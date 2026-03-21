@@ -57,6 +57,43 @@ CLS_solaris_minigame = {
 
 }
 
+cls_showdown = {
+	cls_proteas_air_war_ends = {
+		priority = 500
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = cls_showdown
+		}
+
+		available = {
+			OR = {
+				protea_wins_showdown = yes		
+				protea_loses_showdown = yes			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = cls_showdown
+		}
+
+		timeout_effect = {
+			custom_override_tooltip = {
+				tooltip = air_war_loss
+			}
+			country_event = {
+				id = col.101
+			}			
+		}
+
+	}
+}
 
 
 

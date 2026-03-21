@@ -59,4 +59,83 @@ on_actions = {
 			}			
 		}
 	}
+
+
+	on_weekly = {
+		effect = {
+			if = {
+				limit =  {  check_variable = { var = global.num_of_ewa value = 0 compare = less_than_or_equals } }
+				PRO = {
+					set_country_flag = ew_dead
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.num_of_sams value = 0 compare = less_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_won_phase_1
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.num_of_strike_aircraft value = 0 compare = less_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_lost_showdown
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.num_of_radars value = 0 compare = less_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_won_phase_1
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.destruction_r1 value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_r1_destroyed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.destruction_r2 value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_r2_destroyed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.destruction_r3 value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_r3_destroyed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.destruction_r4 value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_r4_destroyed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.destruction_r5 value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_r5_destroyed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.destruction_r6 value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_r6_destroyed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.destruction_r7 value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_r7_destroyed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = global.total_destroyed_regions value = 5 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_wins_showdown
+				}
+			}
+		}
+	}
+
 }

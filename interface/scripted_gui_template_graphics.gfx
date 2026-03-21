@@ -24,4 +24,40 @@ spriteTypes = {
 		name = "GFX_arc_election_ui"
 		textureFile = "/gfx/interface/scripted_gui_graphics/arc_election_ui.dds"
 	}
+	spriteType = {
+		name = "GFX_pro_the_third_skirmish_ui"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_the_third_skirmish.dds"
+	}
+	spriteType = {
+		name = "GFX_pro_showdown_ui"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_showdown.dds"
+	}
+	spriteType = {
+		name = "GFX_showdown_region_1"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_1_showdown.dds"
+	}
+	spriteType = {
+		name = "GFX_showdown_region_2"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_2_showdown.dds"
+	}
+	spriteType = {
+		name = "GFX_showdown_region_3"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_3_showdown.dds"
+	}
+	spriteType = {
+		name = "GFX_showdown_region_4"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_4_showdown.dds"
+	}
+	spriteType = {
+		name = "GFX_showdown_region_5"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_5_showdown.dds"
+	}
+	spriteType = {
+		name = "GFX_showdown_region_6"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_6_showdown.dds"
+	}
+	spriteType = {
+		name = "GFX_showdown_region_7"
+		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_7_showdown.dds"
+	}
 }

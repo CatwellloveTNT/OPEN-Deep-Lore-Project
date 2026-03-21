@@ -1,0 +1,508 @@
+# ----------------------------------------- IMPORTANT ---------------------------------------------
+# ALOT OF THE MINIGAME PROGRESSION AND PROXY WARS/FLAVOUR WARS/NEWS EVENTS/COUNTRY EVENTS ARE TIED TO MONSTERBIRD, THIS IS SO I CAN CHOOSE EXACTLY WHEN A COUNTRY
+# SHOULD PROGRESS IN THEIR MINIGAME OR EXACTLY THE RIGHT MOMENT FOR A PROXY WAR TO KICK OFF WITHOUT HAVING TO RESTART THE GAME
+# EVERY SINGLE TIME TO ADJUST THE ON ACTION (IM ALSO TOO LAZY TO INTERACT WITH THE DEBUG DECISIONS AND I THOUGHT IT WOULD BE FUNNY FOR
+# MONSTERBIRD TO BE LIKE THE DEEP STATE)
+# WHATEVER HAPPENS, DO NOT ANNEX MONSTERBIRD UNTIL 2040 AND BEYOND, YOU'VE BEEN WARNED - The Great Monsterbirdian Puppetmaster
+
+puppetmaster = {
+
+	protea_won_showdown_phase1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_won_phase_1
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.52
+				}
+				set_country_flag = pro_showdown_phase_1_won
+				clr_country_flag = pro_dead_phase
+			}
+			CLS = {
+				set_country_flag = cls_showdown_phase_2
+				clr_country_flag = cls_showdown_phase_1
+			}
+			CHF = {
+				set_country_flag = chf_showdown_phase_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_destroyed_r1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_r1_destroyed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.43
+				}
+				clr_country_flag = region_1_undestroyed
+			}
+			CLS = {
+				clr_country_flag = region_1_undestroyed				
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_destroyed_r2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_r2_destroyed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.44
+				}
+				clr_country_flag = region_2_undestroyed
+			}
+			CLS = {
+				clr_country_flag = region_2_undestroyed				
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_destroyed_r3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_r3_destroyed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.45
+				}
+				clr_country_flag = region_3_undestroyed
+			}
+			CLS = {
+				clr_country_flag = region_3_undestroyed				
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_destroyed_r4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_r4_destroyed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.46
+				}
+				clr_country_flag = region_4_undestroyed
+			}
+			CLS = {
+				clr_country_flag = region_4_undestroyed					
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_destroyed_r5 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_r5_destroyed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.47
+				}
+				clr_country_flag = region_5_undestroyed
+			}
+			CLS = {
+				clr_country_flag = region_5_undestroyed				
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_destroyed_r6 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_r6_destroyed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.48
+				}
+				clr_country_flag = region_6_undestroyed
+			}
+			CLS = {
+				clr_country_flag = region_6_undestroyed				
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_destroyed_r7 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_r7_destroyed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.49
+				}
+				clr_country_flag = region_7_undestroyed
+			}
+			CLS = {
+				clr_country_flag = region_7_undestroyed				
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_wins_showdown = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_wins_showdown
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.50
+				}
+			clr_country_flag = pro_showdown
+			clr_country_flag = PRO_showdown
+			set_country_flag = pro_wins_showdown
+			}
+			CHF = {
+				set_country_flag = chf_loses_showdown
+				clr_country_flag = chf_showdown
+				clr_country_flag = chf_showdown_phase_2	
+				country_event = {
+					id = chf.16
+				}	
+			}
+			CLS = {
+				clr_country_flag = cls_showdown			
+			}
+			AVI = {
+				clr_country_flag = avi_showdown
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_loses_showdown = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_lost_showdown
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.53
+				}
+			clr_country_flag = pro_showdown
+			clr_country_flag = PRO_showdown
+			set_country_flag = pro_loses_showdown
+			}
+			CHF = {
+				set_country_flag = chf_wins_showdown
+				clr_country_flag = chf_showdown
+				clr_country_flag = chf_showdown_phase_2	
+				country_event = {
+					id = chf.15
+				}			
+			}	
+			CLS = {
+				clr_country_flag = cls_showdown			
+			}
+			AVI = {
+				clr_country_flag = avi_showdown
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+}
+
+
+
+
+
+
+

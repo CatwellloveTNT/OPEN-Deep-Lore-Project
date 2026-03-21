@@ -1,5 +1,5 @@
 	CLS_solaris_minigame = {
-		priority = 102
+		priority = 1000
 
 		icon = SOV_paranoia
 
@@ -12,6 +12,27 @@
 		visible = {
 			OR = {
 				has_global_flag = nuclear_exchange_hasnt_happened
+			}
+		}
+
+		visible_when_empty = yes
+	}
+
+	CLS_showdown = {
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+		scripted_gui = cls_showdown_ui
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = cls_showdown
 			}
 		}
 

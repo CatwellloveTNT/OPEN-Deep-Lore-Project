@@ -106,6 +106,83 @@ country_event = {
 		ai_chance = {factor = 100}
 	}
 }
+country_event = {
+	id = chf.8
+	title = chf.8.t
+	desc = chf.8.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # look at what we're fighting against
+		name = chf.8.a
+		ai_chance = {factor = 100}
+		534 = {
+			add_manpower = 129121
+		}
+		604 = {
+			add_manpower = 42121
+		}
+	}
+}
+country_event = {
+	id = chf.9
+	title = chf.9.t
+	desc = chf.9.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # second retreat ponies running from the protean system
+		name = chf.9.a
+		ai_chance = {factor = 100}
+		add_timed_idea = {
+			idea = the_second_great_retreat
+			days = 365
+		}
+		532 = {
+			add_manpower = 282181
+		}
+		605 = {
+			add_manpower = 57317
+		}
+		736 = {
+			add_manpower = 458811
+		}
+	}
+}
+country_event = {
+	id = chf.20
+	title = chf.20.t
+	desc = chf.20.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # the world will be forever changed...
+		name = chf.20.a
+		ai_chance = {factor = 100}
+		CHF_nuke_their_ass = yes
+	}
+}
+country_event = {
+	id = chf.101
+	title = chf.101.t
+	desc = chf.101.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # aviceyn joins the showdown test event
+		name = chf.101.a
+		ai_chance = {factor = 100}
+		set_country_flag = chf_aviceyn_supporting	
+		clr_country_flag = chf_aviceyn_not_supporting
+		PRO = {
+			set_country_flag = pro_aviceyn_in_showdown			
+		}
+	}
+}
 
 
 

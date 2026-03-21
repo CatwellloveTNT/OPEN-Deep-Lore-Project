@@ -778,6 +778,7 @@ bitmapfonts = {
 		A = { 152 101 149 } #Arcadia Purple
  		D = { 165 65 79 } #Aviceyn Red
 		E = { 204 148 224 } #Twilight Sparkle Purple Coat
+		Q = { 236 142 156 } #Protean pink
 		L = { 195 176 145 } # Lilac
 		W = { 255 255 255 } # White
 		B = { 0 0 255 }     # Blue

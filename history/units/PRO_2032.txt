@@ -1,0 +1,43 @@
+﻿division_template = {
+	name = "test"
+	division_names_group = SPAN_INFB_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Ejército de Cuba #####
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRO"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+}

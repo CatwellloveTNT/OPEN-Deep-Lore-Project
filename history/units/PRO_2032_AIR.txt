@@ -1,0 +1,16 @@
+air_wings = {
+	537 = {
+		small_plane_airframe_0 = {
+			owner = PRO
+			amount = 72
+			version_name = "test"
+		}
+	}
+	738 = {
+		small_plane_airframe_1 = {
+			owner = PRO
+			amount = 99
+			version_name = "test2"
+		}
+	}
+}

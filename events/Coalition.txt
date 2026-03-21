@@ -540,6 +540,20 @@ country_event = { # THIS IS THE TESTING EVENT TO CHECK FOR THE SOLARIS VARIABLE 
 		ai_chance = {factor = 100}
 	}
 }
+country_event = {
+	id = col.33
+	title = col.33.t
+	desc = col.33.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # What... Have they... Done...
+		name = col.33.a
+		ai_chance = {factor = 100}
+	}
+}
 
 
 

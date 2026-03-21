@@ -224,9 +224,12 @@
  pro.8.t: "Operation Gilded Throne Fails!"
  pro.8.d: "todo: explain proteas state of mind and plan after losing the second skirmish" 
  pro.8.a: "How did we lose?!"
-# pro.18.t: "scripted loc test"
- #pro.18.d: "todo: buisdaisad BALLS [ROOT.testloc]"
-# pro.18.a: "grind"
+ pro.100.t: "scripted loc test"
+ pro.100.d: "[?pro_showdown]"
+ pro.100.a: "[?pro_showdown]"
+ pro.102.t: "testing"
+ pro.102.d: "[?global.destruction_r1]"
+ pro.102.a: "[?global.destruction_r1]"
 
 # -------------------- CHAFFIA --------------------
  chf.1.t: "Chaffia - The Cradle's Traumatized Bulwark"
@@ -255,6 +258,10 @@
  msb.1.t: "EAW thank you news event"
  msb.1.d: "bro idk how to make a news event shoot off indepentently so im embedding it in a country i hope no one plays and making it happen there"
  msb.1.a: "im dumb asf"
+ msb.2.t: "why cant i link variables from two different countries BRO (news update i did it :D)"
+ msb.2.d: "[?global.num_of_strike_aircraft], [?global.num_of_sams] [?global.num_of_radars]"
+ msb.2.a: "[?global.num_of_strike_aircraft], [?global.num_of_sams] [?global.num_of_radars]"
+
 
 # -------------------- NORTH SRAKIN --------------------
  nsk.1.t: "WAR WAR WAR WAR WAR"
@@ -275,4 +282,12 @@
  aviveyn_inter: "§RAviceynian Agents§R will attempt to support the §RHumanity Opposition Party§R through electoral sabotage"
  the_second_skirmish_tooltip: "We will declare a limited war on Chaffia, Flaria will not join. §RWE MUST SEIZE THE POLAND HEIGHTS FOR THIS OPERATION TO BE A SUCCESS§R"
  wargames_music_reference: "Because there's none of it left in you, left in me."
+ showdown_pro_phase_1_won:0 "We've unlocked decisions to terror bomb the Countermeastures Alliance. Additionally, the Coalition States have granted us additional strike aircraft. \n\n§GOperation Midnight Fury is extended by 150 days§W\n\n§G+ 100 Strike Aircraft added to AO§W"
+ region_1_destroyed:0 "Region 1 has been totally destroyed, and its citizens live in nothing but rubble.\nOperation Midnight Fury's continued success has granted us:\n§G+50 Additional Strike Aircraft§W \n§G+45 days added to Midnight Fury's operational timeline§W."
+ region_2_destroyed:0 "Region 2 has been totally destroyed, and its citizens live in nothing but rubble.\nOperation Midnight Fury's continued success has granted us:\n§G+50 Additional Strike Aircraft§W \n§G+45 days added to Midnight Fury's operational timeline§W."
+ region_3_destroyed:0 "Region 3 has been totally destroyed, and its citizens live in nothing but rubble.\nOperation Midnight Fury's continued success has granted us:\n§G+50 Additional Strike Aircraft§W \n§G+45 days added to Midnight Fury's operational timeline§W."
+ region_4_destroyed:0 "Region 4 has been totally destroyed, and its citizens live in nothing but rubble.\nOperation Midnight Fury's continued success has granted us:\n§G+50 Additional Strike Aircraft§W \n§G+45 days added to Midnight Fury's operational timeline§W."
+ region_5_destroyed:0 "Region 5 has been totally destroyed, and its citizens live in nothing but rubble.\nOperation Midnight Fury's continued success has granted us:\n§G+50 Additional Strike Aircraft§W \n§G+45 days added to Midnight Fury's operational timeline§W."
+ region_6_destroyed:0 "Region 6 has been totally destroyed, and its citizens live in nothing but rubble.\nOperation Midnight Fury's continued success has granted us:\n§G+50 Additional Strike Aircraft§W \n§G+45 days added to Midnight Fury's operational timeline§W."
+ region_7_destroyed:0 "Region 7 has been totally destroyed, and its citizens live in nothing but rubble.\nOperation Midnight Fury's continued success has granted us:\n§G+50 Additional Strike Aircraft§W \n§G+45 days added to Midnight Fury's operational timeline§W."
 
