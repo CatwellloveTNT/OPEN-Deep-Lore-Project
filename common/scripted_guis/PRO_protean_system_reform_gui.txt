@@ -1,0 +1,53 @@
+scripted_gui = {
+  pro_protean_system_ui = {
+    context_type = decision_category
+    window_name = "pro_protean_system_ui_window"
+
+   effects = {
+      iatp_click = {
+
+        set_country_flag = iatp_selected
+        clr_country_flag = tfi_selected
+        clr_country_flag = pfh_selected
+        clr_country_flag = sss_selected
+        clr_country_flag = protean_system_nothing_selected
+      }
+
+      sss_click = {
+
+        set_country_flag = sss_selected
+        clr_country_flag = tfi_selected
+        clr_country_flag = pfh_selected
+        clr_country_flag = iatp_selected
+        clr_country_flag = protean_system_nothing_selected
+      }
+
+      pfh_click = {
+
+        set_country_flag = pfh_selected
+        clr_country_flag = tfi_selected
+        clr_country_flag = iatp_selected
+        clr_country_flag = sss_selected
+        clr_country_flag = protean_system_nothing_selected
+      }
+
+      tfi_click = {
+
+        set_country_flag = tfi_selected
+        clr_country_flag = pfh_selected
+        clr_country_flag = iatp_selected
+        clr_country_flag = sss_selected
+        clr_country_flag = protean_system_nothing_selected
+      }
+
+
+
+   }
+
+
+
+  }
+
+
+
+}

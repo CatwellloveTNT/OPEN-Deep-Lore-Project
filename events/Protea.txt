@@ -1106,4 +1106,237 @@ country_event = {
 		ai_chance = {factor = 100}
 	}
 }
+country_event = {
+	id = pro.103
+	title = pro.102.t
+	desc = pro.102.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # test event for scripted loc
+		name = pro.102.a
+		ai_chance = {factor = 100}
+			set_country_flag = protean_system_minigame_start
+			set_country_flag = iatp_undefeated
+			set_country_flag = sss_unreformed
+			set_country_flag = pfh_unreformed	
+			set_country_flag = tfi_active
+			set_country_flag = valkyrie_free_protean_system
+			set_country_flag = phoenix_free_protean_system
+			set_country_flag = fleetfeather_free_protean_system
+			set_country_flag = supporter1_free_protean_system
+			set_country_flag = supporter2_free_protean_system			
+			set_country_flag = supporter3_free_protean_system
+			set_country_flag = supporter4_free_protean_system
+			set_country_flag = supporter5_free_protean_system
+			set_country_flag = supporter6_free_protean_system
+			set_country_flag = iatp_raid
+			set_country_flag = protean_system_nothing_selected
+	}
+}
+country_event = {
+	id = pro.104
+	title = pro.102.t
+	desc = pro.102.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # test event for scripted loc
+		name = pro.102.a
+		ai_chance = {factor = 100}
+		set_country_flag = scripted_loc_test_reform
+		clr_country_flag = scripted_loc_test_hardline
+	}
+}
+country_event = {
+	id = pro.105
+	title = pro.102.t
+	desc = pro.102.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # test event for scripted loc
+		name = pro.102.a
+		ai_chance = {factor = 100}
+		set_country_flag = scripted_loc_test_hardline
+		clr_country_flag = scripted_loc_test_reform
+	}
+}
+country_event = {
+	id = pro.106
+	title = pro.106.t
+	desc = pro.106.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Wow toothpaste, i didnt expect them to agree!
+		name = pro.106.a
+		ai_chance = {factor = 100}
+		custom_effect_tooltip = pro_tno_reference
+	}
+}
+
+country_event = {
+	id = pro.107
+	title = pro.107.t
+	desc = pro.107.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # sss activiation
+		name = pro.107.a
+		ai_chance = {factor = 100}
+		custom_effect_tooltip = pro_sss_tt
+	}
+}
+
+country_event = {
+	id = pro.113
+	title = pro.113.t
+	desc = pro.113.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # phoenix capture event
+		name = pro.113.a
+		ai_chance = {factor = 100}
+		add_to_variable = {
+			number_of_leads_captured = 1
+		}
+	}
+}
+
+country_event = {
+	id = pro.114
+	title = pro.114.t
+	desc = pro.114.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # fleetfeather capture event
+		name = pro.114.a
+		ai_chance = {factor = 100}
+		add_to_variable = {
+			number_of_leads_captured = 1
+		}
+	}
+}
+
+country_event = {
+	id = pro.116
+	title = pro.116.t
+	desc = pro.116.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # sss defeated event
+		name = pro.116.a
+		ai_chance = {factor = 100}
+		custom_effect_tooltip = pro_sss_tt
+	}
+}
+
+country_event = {
+	id = pro.117
+	title = pro.117.t
+	desc = pro.117.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # sss defeated event
+		name = pro.117.a
+		ai_chance = {factor = 100}
+		clr_country_flag = pro_tfi_support_authorized
+		clr_country_flag = tfi_active
+	}
+}
+
+country_event = {
+	id = pro.118
+	title = pro.118.t
+	desc = pro.118.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protean system win 
+		name = pro.118.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = {
+	id = pro.1180
+	title = pro.118.t
+	desc = pro.118.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protean system win 
+		name = pro.118.a
+		ai_chance = {factor = 100}
+		set_country_flag = iatp_defeated
+		clr_country_flag = iatp_undefeated
+	}
+}
+
+country_event = {
+	id = pro.1066
+	title = pro.118.t
+	desc = pro.118.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protean system win 
+		name = pro.118.a
+		ai_chance = {factor = 100}
+		clr_country_flag = protean_system_minigame_start
+	}
+}
+country_event = {
+	id = pro.1100
+	title = pro.1100.t
+	desc = pro.1100.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protean system win 
+		name = pro.1100.a
+		ai_chance = {factor = 100}
+		clr_country_flag = protean_system_minigame_start
+		complete_national_focus = PRO_proteanism_with_a_smile
+		country_event = {
+			id = pro.1101
+			days = 3
+		}
+	}
+}
+country_event = {
+	id = pro.1101
+	title = pro.1100.t
+	desc = pro.1100.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protean system win 
+		name = pro.1100.a
+		ai_chance = {factor = 100}
+		complete_national_focus = PRO_hands_and_hooves
+		clr_country_flag = pro_won_the_third_skirmish
+		mark_focus_tree_layout_dirty = yes
+	}
+}
 

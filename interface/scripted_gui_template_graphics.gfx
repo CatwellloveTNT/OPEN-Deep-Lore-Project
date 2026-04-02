@@ -60,4 +60,28 @@ spriteTypes = {
 		name = "GFX_showdown_region_7"
 		textureFile = "/gfx/interface/scripted_gui_graphics/pro_region_7_showdown.dds"
 	}
+	spriteType = {
+		name = "GFX_iatp_logo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/IATP_logo_protean_system.dds"
+	}
+	spriteType = {
+		name = "GFX_sss_logo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/SSS_logo_protean_system.dds"
+	}
+	spriteType = {
+		name = "GFX_pfh_logo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/PFH_logo_protean_system.dds"
+	}
+	spriteType = {
+		name = "GFX_tfi_logo_protean_system"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tfi_logo_protean_system.dds"
+	}
+	spriteType = {
+		name = "GFX_white_line"
+		textureFile = "/gfx/interface/scripted_gui_graphics/white_line.dds"
+	}
+	spriteType = {
+		name = "GFX_valkyrie_protean_system_portrait"
+		textureFile = "/gfx/interface/scripted_gui_graphics/valkyrie_protean_system_portrait.dds"
+	}
 }

@@ -46,6 +46,7 @@ puppetmaster = {
 			CLS = {
 				set_country_flag = cls_showdown_phase_2
 				clr_country_flag = cls_showdown_phase_1
+				set_country_flag = cls_bomber_phase
 			}
 			CHF = {
 				set_country_flag = chf_showdown_phase_2
@@ -94,7 +95,8 @@ puppetmaster = {
 				clr_country_flag = region_1_undestroyed
 			}
 			CLS = {
-				clr_country_flag = region_1_undestroyed				
+				clr_country_flag = region_1_undestroyed	
+				set_country_flag = r1_destroyed	
 			}
 		}
 
@@ -140,7 +142,8 @@ puppetmaster = {
 				clr_country_flag = region_2_undestroyed
 			}
 			CLS = {
-				clr_country_flag = region_2_undestroyed				
+				clr_country_flag = region_2_undestroyed	
+				set_country_flag = r2_destroyed			
 			}
 		}
 
@@ -186,7 +189,8 @@ puppetmaster = {
 				clr_country_flag = region_3_undestroyed
 			}
 			CLS = {
-				clr_country_flag = region_3_undestroyed				
+				clr_country_flag = region_3_undestroyed		
+				set_country_flag = r3_destroyed		
 			}
 		}
 
@@ -232,7 +236,8 @@ puppetmaster = {
 				clr_country_flag = region_4_undestroyed
 			}
 			CLS = {
-				clr_country_flag = region_4_undestroyed					
+				clr_country_flag = region_4_undestroyed	
+				set_country_flag = r4_destroyed				
 			}
 		}
 
@@ -278,7 +283,8 @@ puppetmaster = {
 				clr_country_flag = region_5_undestroyed
 			}
 			CLS = {
-				clr_country_flag = region_5_undestroyed				
+				clr_country_flag = region_5_undestroyed		
+				set_country_flag = r5_destroyed		
 			}
 		}
 
@@ -324,7 +330,8 @@ puppetmaster = {
 				clr_country_flag = region_6_undestroyed
 			}
 			CLS = {
-				clr_country_flag = region_6_undestroyed				
+				clr_country_flag = region_6_undestroyed			
+				set_country_flag = r6_destroyed	
 			}
 		}
 
@@ -370,7 +377,8 @@ puppetmaster = {
 				clr_country_flag = region_7_undestroyed
 			}
 			CLS = {
-				clr_country_flag = region_7_undestroyed				
+				clr_country_flag = region_7_undestroyed
+				set_country_flag = r7_destroyed				
 			}
 		}
 
@@ -489,6 +497,275 @@ puppetmaster = {
 			}
 			AVI = {
 				clr_country_flag = avi_showdown
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+
+	protea_activate_the_sss = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_activate_the_sss
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.107
+				}
+				set_country_flag = pro_sss_active
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_lost_protean_system_reform_path = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protean_system_reform_failed
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.116
+				}
+				clr_country_flag = protean_system_minigame_start
+				clr_country_flag = pro_sss_active
+				clr_country_flag = iatp_raid
+				clr_country_flag = iatp_undefeated
+
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_defeated_iatp_reform_path = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_has_defeated_iatp_reform_path
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.116
+				}
+				clr_country_flag = iatp_raid
+				clr_country_flag = iatp_undefeated
+				set_country_flag = iatp_defeated
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_defeated_sss_reform_path = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_has_defeated_sss_reform_path
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.116
+				}
+				clr_country_flag = pro_sss_active
+				clr_country_flag = sss_unreformed
+				set_country_flag = sss_reformed
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_tfi_pulls_out = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_tfi_pulls_out
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.117
+				}
+				clr_country_flag = pro_tfi_support_authorized
+				clr_country_flag = tfi_active
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	protea_reforms_the_pfh = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = msb_protea_reforms_the_pfh
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1000
+
+		days_remove = 1
+
+		modifier = {
+		}
+
+		complete_effect = {
+			PRO = {
+				country_event = {
+					id = pro.118
+				}
+				set_country_flag = pfh_reformed
+				clr_country_flag = pfh_unreformed
 			}
 		}
 

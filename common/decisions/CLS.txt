@@ -225,7 +225,9 @@ CLS_solaris_minigame = {
 	
 }
 
-CLS_showdown = {
+CLS_showdown = { # CURRENTLY THERE IS A BUG WITH THIS THAT IDK HOW TO SOLVE, ESSENTIALLY, THE COALITION WILL TARGET REGIONS EVEN WHEN DESTROYED, I'VE TRIED MY BEST TO
+# REMOVE THEIR DECISION TO TARGET A DESTROYED REGION, BUT IT DOESNT WORK. IF I TAG SWITCH AFTER A REGION HAS BEEN DESTROYED AND MANUALLY CHECK, THEY CANNOT EVEN SEE THE DECISION
+# TO DO AN OCA STRIKE, BUT SOMEHOW THE AI CAN SEE AND PICK IT. SO UNFORTUNATELY, THE COALITION'S INVOLVEMENT IN SHOWDOWN IS GOING TO HAVE TO BE PLAYER ONLY FOR NOW.
 
 	strike_sams = { 
 		priority = 309
@@ -263,7 +265,7 @@ CLS_showdown = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				has_country_flag = ai_showdown_target_sams
+				has_country_flag = ai_showdown_target_radars
 				factor = 500
 			}
 		}		
@@ -304,7 +306,7 @@ CLS_showdown = {
 		}
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 			modifier = {
 				has_country_flag = ai_showdown_target_radars
 				factor = 500
@@ -352,7 +354,11 @@ CLS_showdown = {
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 0
+			modifier = {
+				has_country_flag = r1_destroyed
+				factor = 0
+			}
 		}		
 
 	}
@@ -440,7 +446,11 @@ CLS_showdown = {
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 0
+			modifier = {
+				has_country_flag = r3_destroyed
+				factor = 0
+			}
 		}		
 
 	}
@@ -484,7 +494,11 @@ CLS_showdown = {
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 0
+			modifier = {
+				has_country_flag = r4_destroyed
+				factor = 0
+			}
 		}		
 
 	}
@@ -528,7 +542,11 @@ CLS_showdown = {
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 0
+			modifier = {
+				has_country_flag = r5_destroyed
+				factor = 0
+			}
 		}		
 
 	}
@@ -572,7 +590,11 @@ CLS_showdown = {
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 0
+			modifier = {
+				has_country_flag = r6_destroyed
+				factor = 0
+			}
 		}		
 
 	}

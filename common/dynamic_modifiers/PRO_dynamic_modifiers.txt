@@ -60,6 +60,7 @@
 		resistance_target = the_protean_system_rst
 		compliance_gain = the_protean_system_ceg
 		monthly_population = the_protean_system_mop
+		research_speed_factor = the_protean_system_rss
 		
 	}
 

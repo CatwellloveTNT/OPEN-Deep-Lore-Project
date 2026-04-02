@@ -752,6 +752,50 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	# intervene in every First World conflict)
 
 
+	request_additional_fighters_from_the_coalition = { 
+		priority = 309
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = pro_showdown
+		}
+
+		cost = 100
+
+		days_re_enable = 50
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				global.num_of_strike_aircraft = 50
+			}
+			custom_effect_tooltip = more_planes
+		}
+
+		ai_will_do = {
+			factor = 150
+			modifier = {
+				has_country_flag = pro_showdown_phase_1_won
+				factor = 500
+			}
+		}		
+
+	}
+
+
 	request_the_coalition_focus_on_radar_emitters = { #this is meant to change the behaviour of the ai if the coalition is not a player to do whatever player protea wants, ai protea will always have the coalition eliminate SAMS
 		priority = 310
 
@@ -923,7 +967,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		available = {
-			AND = {
+			OR = {
 			NOT = { has_country_flag = ews_active }
 			NOT = { has_country_flag = ew_dead }
 			}
@@ -4663,9 +4707,1331 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 	}
 
+
+
 }
 
+PRO_the_protean_system = {
 
+# ------------------------------------ UNATTACHED DECISIONS --------------------------------------------------
+
+
+	reform_the_protean_system = { 
+		priority = 500
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = iatp_defeated
+			has_country_flag = pfh_reformed
+			has_country_flag = pro_protean_system_majority_support
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+		}	
+		}
+
+		cost = 0
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			country_event = {
+				id = pro.1100
+			}
+			clr_country_flag = protean_system_minigame_start
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+
+# ------------------------------------ TFI DECISIONS --------------------------------------------------
+
+	meet_with_our_tfi_contacts = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = tfi_selected
+		}	
+		}
+
+		cost = 0
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			country_event = {
+				id = pro.106
+			}
+			set_country_flag = pro_tfi_support_authorized
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	delay_the_capture_of_alcatraz = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			AND = {
+			has_active_mission = sss_a_hit
+			has_country_flag = pro_tfi_support_authorized
+			}
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = tfi_selected
+			has_active_mission = sss_a_hit
+		}	
+		}
+
+		cost = 100
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = pro_tfi_helps_alcatraz
+			add_days_mission_timeout = {
+				mission = sss_a_hit
+				days = 45
+			}
+			add_to_variable = {
+				tfi_suspicion = 4
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	delay_the_capture_of_blinklight = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			AND = {
+			has_active_mission = sss_a_small_fish
+			has_country_flag = pro_tfi_support_authorized
+			}
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = tfi_selected
+			has_active_mission = sss_a_small_fish
+		}	
+		}
+
+		cost = 100
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = pro_tfi_helps_blinklight
+			add_days_mission_timeout = {
+				mission = sss_a_small_fish
+				days = 45
+			}
+			add_to_variable = {
+				tfi_suspicion = 4
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	disrupt_the_sss_audit = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			AND = {
+			has_active_mission = sss_the_second_audit
+			has_country_flag = pro_tfi_support_authorized
+			}
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = tfi_selected
+			has_active_mission = sss_the_second_audit
+		}	
+		}
+
+		cost = 100
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = pro_tfi_disrupts_the_second_audit
+			add_days_mission_timeout = {
+				mission = sss_the_second_audit
+				days = 45
+			}
+			add_to_variable = {
+				tfi_suspicion = 4
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	disrupt_operation_money_mouth = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			AND = { 
+			has_active_mission = sss_operation_money_mouth
+			has_country_flag = pro_tfi_support_authorized	
+			}		
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = tfi_selected
+			has_active_mission = sss_operation_money_mouth
+		}	
+		}
+
+		cost = 100
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = pro_tfi_disrupt_operation_money_mouth
+			add_days_mission_timeout = {
+				mission = sss_operation_money_mouth
+				days = 60
+			}
+			add_to_variable = {
+				tfi_suspicion = 7
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	extract_phoenix = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			AND = { 
+			has_active_mission = sss_operation_insulation
+			has_country_flag = pro_tfi_support_authorized			
+			}
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = tfi_selected
+			has_active_mission = sss_operation_insulation
+		}	
+		}
+
+		cost = 100
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = pro_tfi_save_phoenix
+			remove_mission = sss_operation_insulation
+			add_to_variable = {
+				tfi_suspicion = 7
+			}
+			set_country_flag = pro_sss_action_19
+			set_country_flag = rescued_phoenix
+			clr_country_flag = pro_sss_action_18		
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}
+
+	extract_fleetfeather = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			AND = { 
+			has_active_mission = sss_operation_banknote
+			has_country_flag = pro_tfi_support_authorized
+			}			
+			NOT = { has_country_flag = rescued_phoenix }
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = tfi_selected
+			has_active_mission = sss_operation_banknote
+		}	
+		}
+
+		cost = 100
+
+		days_re_enable = 1000
+
+		days_remove = 0
+
+		fire_only_once = yes
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = pro_tfi_save_fleetfeather
+			remove_mission = sss_operation_banknote
+			add_to_variable = {
+				tfi_suspicion = 7
+			}
+			set_country_flag = pro_sss_action_20
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+
+	}
+
+
+# ------------------------------------ IATP DECISIONS --------------------------------------------------
+
+	undermine_the_iatp = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = iatp_selected
+			has_country_flag = iatp_undefeated
+		}	
+		}
+
+		cost = 30
+
+		days_re_enable = 20
+
+		days_remove = 1
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = iatp_undermine
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -6
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -4
+					}
+				}
+				20 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -3
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	sabotage_iatp_funding = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = iatp_selected
+			has_country_flag = iatp_undefeated
+		}	
+		}
+
+		cost = 30
+
+		days_re_enable = 20
+
+		days_remove = 1
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = iatp_funding_sabotaged
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -6
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -3
+					}
+				}
+				20 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = 0
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	assassinate_iatp_leader = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = iatp_selected
+			has_country_flag = pro_tfi_support_authorized	
+			has_country_flag = iatp_undefeated	
+
+		}	
+		}
+
+		cost = 75
+
+		days_re_enable = 40
+
+		days_remove = 1
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = iatp_assassinate_leader_tt
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -11
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -7
+					}
+				}
+				20 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = 10
+					}
+				}
+			}
+			add_to_variable = {
+				tfi_suspicion = 4
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 150
+		}		
+
+	}
+
+	 intimidate_iatp_members { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = iatp_selected
+			has_country_flag = iatp_undefeated
+		}	
+		}
+
+		cost = 30
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = iatp_intimidate
+			random_list = {
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -6
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -5
+					}
+				}
+				20 = {
+					subtract_from_variable = {
+						iatp_influence_percentage = -3
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+# ------------------------------------ SSS DECISIONS --------------------------------------------------
+
+	 sway_sss_agents_to_our_cause { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+				has_country_flag = phoenix_free_protean_system
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = sss_selected
+			has_country_flag = sss_unreformed
+		}	
+		}
+
+		cost = 30
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = sss_sway_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 3
+					}
+				}
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 2
+					}
+				}
+				20 = {
+					add_to_variable = {
+						sss_reform_percentage = 1
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	threaten_sss_members_to_remain_quiet  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+				has_country_flag = valkyrie_free_protean_system
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = sss_selected
+			has_country_flag = sss_unreformed
+		}	
+		}
+
+		cost = 30
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = sss_threaten_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 3
+					}
+				}
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 2
+					}
+				}
+				20 = {
+					add_to_variable = {
+						sss_reform_percentage = 1
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	coordinate_with_tfi_to_silence_sss_opposition_leaders  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = sss_selected
+			has_country_flag = pro_tfi_support_authorized
+			has_country_flag = sss_unreformed
+		}	
+		}
+
+		cost = 50
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = sss_tfi_silencing_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 5
+					}
+				}
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 3
+					}
+				}
+				20 = {
+					add_to_variable = {
+						sss_reform_percentage = 2
+					}
+				}
+			}
+			add_to_variable = {
+				tfi_suspicion = 3
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	request_tfi_put_pressure_on_the_sss  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = sss_selected
+			has_country_flag = pro_tfi_support_authorized
+			has_country_flag = sss_unreformed
+		}	
+		}
+
+		cost = 50
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = sss_tfi_pressure_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 6
+					}
+				}
+				40 = {
+					add_to_variable = {
+						sss_reform_percentage = 5
+					}
+				}
+				20 = {
+					add_to_variable = {
+						sss_reform_percentage = 3
+					}
+				}
+			}
+			add_to_variable = {
+				tfi_suspicion = 10
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}
+
+# ------------------------------------ PFH ACT POP. SUPPORT DECISIONS --------------------------------------------------
+
+	campaign_for_the_act  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = pfh_selected
+		}	
+		}
+
+		cost = 50
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = pfh_campaign_the_act_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						population_that_supports_reform = 11
+					}
+				}
+				40 = {
+					add_to_variable = {
+						population_that_supports_reform = 7
+					}
+				}
+				20 = {
+					add_to_variable = {
+						population_that_supports_reform = 5
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	an_activist_in_every_street  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = pfh_selected
+		}	
+		}
+
+		cost = 50
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = pfh_an_activist_in_every_street_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						population_that_supports_reform = 9
+					}
+				}
+				40 = {
+					add_to_variable = {
+						population_that_supports_reform = 7
+					}
+				}
+				20 = {
+					add_to_variable = {
+						population_that_supports_reform = 5
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	hijack_social_media_feeds  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = pfh_selected
+			has_country_flag = pro_tfi_support_authorized
+		}	
+		}
+
+		cost = 75
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = pfh_hijack_feeds_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						population_that_supports_reform = 12
+					}
+				}
+				40 = {
+					add_to_variable = {
+						population_that_supports_reform = 7
+					}
+				}
+				20 = {
+					add_to_variable = {
+						population_that_supports_reform = 5
+					}
+				}
+			}
+			}
+
+			add_to_variable = {
+				tfi_suspicion = 3
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+# ------------------------------------ PFH REFORM DECISIONS --------------------------------------------------
+
+	replace_stubborn_electives  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = pfh_selected
+			has_country_flag = pfh_unreformed
+			has_country_flag = iatp_defeated
+		}	
+		}
+
+		cost = 50
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = pfh_replace_stubborn_electives_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						pfh_reform_percentage = 8
+					}
+				}
+				40 = {
+					add_to_variable = {
+						pfh_reform_percentage = 6
+					}
+				}
+				20 = {
+					add_to_variable = {
+						pfh_reform_percentage = 4
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	fund_act_supporters  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = pfh_selected
+			has_country_flag = pfh_unreformed
+			has_country_flag = iatp_defeated
+		}	
+		}
+
+		cost = 50
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = pfh_fund_act_supporters_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						pfh_reform_percentage = 10
+					}
+				}
+				40 = {
+					add_to_variable = {
+						pfh_reform_percentage = 7
+					}
+				}
+				20 = {
+					add_to_variable = {
+						pfh_reform_percentage = 5
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+	i_cant_come_up_with_a_good_decision_name  { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+
+		}
+
+		visible = {
+		AND = {
+			has_country_flag = protean_system_minigame_start
+			has_country_flag = pfh_selected
+			has_country_flag = pfh_unreformed
+			has_country_flag = iatp_defeated
+		}	
+		}
+
+		cost = 50
+
+		days_re_enable = 15
+
+		days_remove = 10
+
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = pfh_idk_tt
+			random_list = {
+				40 = {
+					add_to_variable = {
+						pfh_reform_percentage = 9
+					}
+				}
+				40 = {
+					add_to_variable = {
+						pfh_reform_percentage = 7
+					}
+				}
+				20 = {
+					add_to_variable = {
+						pfh_reform_percentage = 5
+					}
+				}
+			}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}		
+
+	}
+
+
+}
 
 
 

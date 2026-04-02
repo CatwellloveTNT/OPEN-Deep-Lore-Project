@@ -2473,7 +2473,7 @@
 			add_dynamic_modifier = {
 				modifier = PRO_the_protean_system
 			}
-
+			set_country_flag = protean_system_minigame_start
 		}
 
 		ai_will_do = {
@@ -2504,8 +2504,29 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = {
+				id = pro.1001
+			}
 			custom_effect_tooltip = extra_space
 			custom_effect_tooltip = valky_walky		
+			set_country_flag = protean_system_minigame_start
+			set_country_flag = iatp_undefeated
+			set_country_flag = sss_unreformed
+			set_country_flag = pfh_unreformed	
+			set_country_flag = tfi_active
+			set_country_flag = valkyrie_free_protean_system
+			set_country_flag = phoenix_free_protean_system
+			set_country_flag = fleetfeather_free_protean_system
+			set_country_flag = supporter1_free_protean_system
+			set_country_flag = supporter2_free_protean_system			
+			set_country_flag = supporter3_free_protean_system
+			set_country_flag = supporter4_free_protean_system
+			set_country_flag = supporter5_free_protean_system
+			set_country_flag = supporter6_free_protean_system
+			set_country_flag = iatp_raid
+			set_country_flag = protean_system_nothing_selected
+			set_country_flag = scripted_loc_test_reform
+			clr_country_flag = scripted_loc_test_hardline
 		}
 
 		ai_will_do = {
@@ -2522,7 +2543,7 @@
 		relative_position_id = PRO_valkyries_new_plan
 		prerequisite = { focus = PRO_valkyries_new_plan }
 
-		cost = 5
+		cost = 2
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2548,14 +2569,14 @@
 	}
 
 	focus = {
-		id = PRO_a_request_to_the_coalition
+		id = PRO_right_under_their_noses
 		icon = GFX_goal_generic_consumer_goods
 		x = 2
 		y = 1
 		relative_position_id = PRO_the_battle_has_begun
 		prerequisite = { focus = PRO_the_battle_has_begun }
 
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2569,7 +2590,13 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			country_event = {
+				id = pro.1003
+			}
+			add_to_variable = {
+				sss_reform_percentage = 3
+			}
+			custom_effect_tooltip = right_under_their_noses_tt
 		}
 
 		ai_will_do = {
@@ -2579,14 +2606,14 @@
 	}
 
 	focus = {
-		id = PRO_gather_our_allies
+		id = PRO_a_star_citizen
 		icon = GFX_goal_generic_consumer_goods
 		x = -2
 		y = 1
 		relative_position_id = PRO_the_battle_has_begun
 		prerequisite = { focus = PRO_the_battle_has_begun }
 
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2600,6 +2627,13 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = {
+				id = pro.1002
+			}
+			add_to_variable = {
+				iatp_influence_percentage = 5
+			}
+			custom_effect_tooltip = a_star_citizen_tt
 
 		}
 
@@ -2609,15 +2643,15 @@
 
 	}
 
-	focus = {
-		id = PRO_campaign_for_freedom
+	focus = { #fwura
+		id = PRO_replacing_our_electives
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
 		relative_position_id = PRO_the_battle_has_begun
 		prerequisite = { focus = PRO_the_battle_has_begun }
 
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2631,7 +2665,10 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_to_variable = {
+				pfh_reform_percentage = 5
+			}
+			custom_effect_tooltip = replacing_our_electives_tt
 		}
 
 		ai_will_do = {
@@ -2641,14 +2678,14 @@
 	}
 
 	focus = {
-		id = PRO_follow_in_their_footsteps
+		id = PRO_smoke_and_mirrors
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		relative_position_id = PRO_a_request_to_the_coalition
-		prerequisite = { focus = PRO_a_request_to_the_coalition }
+		relative_position_id = PRO_right_under_their_noses
+		prerequisite = { focus = PRO_right_under_their_noses }
 
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2662,7 +2699,13 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			country_event = {
+				id = pro.1004
+			}
+			add_to_variable = {
+				sss_reform_percentage = 5
+			}
+			custom_effect_tooltip = smoke_and_mirrors_tt
 		}
 
 		ai_will_do = {
@@ -2672,14 +2715,14 @@
 	}
 
 	focus = {
-		id = PRO_listen_to_their_message
+		id = PRO_a_true_deciever
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		relative_position_id = PRO_gather_our_allies
-		prerequisite = { focus = PRO_gather_our_allies }
+		relative_position_id = PRO_a_star_citizen
+		prerequisite = { focus = PRO_a_star_citizen }
 
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2693,7 +2736,13 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			country_event = {
+				id = pro.1005
+			}
+			add_to_variable = {
+				iatp_influence_percentage = 10
+			}
+			custom_effect_tooltip = a_true_deciever_tt
 		}
 
 		ai_will_do = {
@@ -2703,14 +2752,14 @@
 	}
 
 	focus = {
-		id = PRO_see_their_examples
+		id = PRO_and_opening_their_eyes
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		relative_position_id = PRO_campaign_for_freedom
-		prerequisite = { focus = PRO_campaign_for_freedom }
+		relative_position_id = PRO_replacing_our_electives
+		prerequisite = { focus = PRO_replacing_our_electives }
 
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2724,7 +2773,10 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_to_variable = {
+				pfh_reform_percentage = 10
+			}
+			custom_effect_tooltip = and_opening_their_eyes_tt
 		}
 
 		ai_will_do = {
@@ -2738,11 +2790,11 @@
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		relative_position_id = PRO_see_their_examples
-		prerequisite = { focus = PRO_listen_to_their_message }
-		prerequisite = { focus = PRO_see_their_examples }		
-		prerequisite = { focus = PRO_follow_in_their_footsteps }
-		cost = 5
+		relative_position_id = PRO_and_opening_their_eyes
+		prerequisite = { focus = PRO_a_true_deciever }
+		prerequisite = { focus = PRO_and_opening_their_eyes }		
+		prerequisite = { focus = PRO_smoke_and_mirrors }
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2756,7 +2808,16 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_to_variable = {
+				pfh_reform_percentage = 10
+			}
+			add_to_variable = {
+				iatp_influence_percentage = 10
+			}
+			add_to_variable = {
+				sss_reform_percentage = 10
+			}
+			custom_effect_tooltip = for_the_sake_of_our_children_tt
 		}
 
 		ai_will_do = {
@@ -2772,8 +2833,9 @@
 		y = 1
 		relative_position_id = PRO_for_the_sake_of_our_children
 		prerequisite = { focus = PRO_for_the_sake_of_our_children }
-		cost = 5
+		cost = 10
 		available = {
+			always = no
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
 		
@@ -2786,7 +2848,9 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			country_event = {
+				id = pro.1100
+			}
 		}
 
 		ai_will_do = {
@@ -2802,7 +2866,7 @@
 		y = 1
 		relative_position_id = PRO_doubling_down
 		prerequisite = { focus = PRO_doubling_down }
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2832,7 +2896,7 @@
 		y = 1
 		relative_position_id = PRO_doubling_down
 		prerequisite = { focus = PRO_doubling_down }
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2862,7 +2926,7 @@
 		y = 1
 		relative_position_id = PRO_doubling_down
 		prerequisite = { focus = PRO_doubling_down }
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2894,7 +2958,7 @@
 		prerequisite = { focus = PRO_silence_the_activists }
 		prerequisite = { focus = PRO_remove_pro_pony_minsters }
 		prerequisite = { focus = PRO_increase_iatp_influence }		
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2924,7 +2988,7 @@
 		y = 1
 		relative_position_id = PRO_increase_iatp_raids
 		prerequisite = { focus = PRO_increase_iatp_raids }	
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -2954,7 +3018,7 @@
 		y = 1
 		relative_position_id = PRO_challenge_coalition_influence
 		prerequisite = { focus = PRO_challenge_coalition_influence }	
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -3014,7 +3078,7 @@
 		y = 1
 		relative_position_id = PRO_challenge_coalition_influence
 		prerequisite = { focus = PRO_challenge_coalition_influence }	
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -3046,7 +3110,7 @@
 		prerequisite = { focus = PRO_protecting_humanity }	
 		prerequisite = { focus = PRO_protecting_our_traditions }	
 		prerequisite = { focus = PRO_protecting_our_culture }					
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -3076,7 +3140,7 @@
 		y = 1
 		relative_position_id = PRO_protea_for_humanity
 		prerequisite = { focus = PRO_protea_for_humanity }					
-		cost = 5
+		cost = 10
 		available = {
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
@@ -3106,9 +3170,9 @@
 		y = 1
 		relative_position_id = PRO_a_letter_to_the_coalition
 		prerequisite = { focus = PRO_a_letter_to_the_coalition }					
-		cost = 5
+		cost = 10
 		available = {
-#			always = no
+			always = no
 		}
 		mutually_exclusive = {
 			focus = PRO_hands_and_hooves
@@ -3141,9 +3205,9 @@
 		y = 1
 		relative_position_id = PRO_proteanism_with_a_smile
 		prerequisite = { focus = PRO_proteanism_with_a_smile }					
-		cost = 5
+		cost = 10
 		available = {
-	#		always = no
+			always = no
 		}
 		mutually_exclusive = {
 			focus = PRO_humanity_first
@@ -3159,7 +3223,7 @@
 
 		completion_reward = {
 			set_country_flag = pro_final_phase_reformed
-			clr_country_flag = pro_won_the_third_skirmish
+			clr_country_flag = protean_system_minigame_start
 			mark_focus_tree_layout_dirty = yes
 		}
 

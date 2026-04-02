@@ -36,3 +36,130 @@ defined_text = { #
 	localization_key = sead_phase
 	}
 }
+
+defined_text = { # 
+	name = protean_system_reform_path
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = scripted_loc_test_reform
+			}
+		}
+	localization_key = protean_system_reform
+	}
+}
+
+defined_text = { # 
+	name = protean_system_tfi_selected
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = tfi_selected
+			}
+		}
+	localization_key = protean_system_tfi_selected_loc
+	}
+}
+
+defined_text = { # 
+	name = protean_system_pfh_selected
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = pfh_selected
+			}
+		}
+	localization_key = protean_system_pfh_selected_loc
+	}
+}
+
+defined_text = { # 
+	name = protean_system_iatp_selected
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = iatp_selected
+			}
+		}
+	localization_key = protean_system_iatp_selected_loc
+	}
+}
+
+defined_text = { # 
+	name = protean_system_sss_selected
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = sss_selected
+			}
+		}
+	localization_key = protean_system_sss_selected_loc
+	}
+}
+
+defined_text = { # 
+	name = protean_system_pfh_fleetfeather_part_red
+	text = {
+		trigger = {
+			PRO = {
+				AND = {
+				has_country_flag = pfh_selected
+				has_country_flag = iatp_undefeated
+				}
+			}
+		}
+	localization_key = protean_system_fleetfeather_part_red_loc
+	}
+}
+
+defined_text = { # 
+	name = protean_system_pfh_fleetfeather_part_green
+	text = {
+		trigger = {
+			PRO = {
+				AND = {
+				has_country_flag = pfh_selected
+				has_country_flag = iatp_defeated
+				}
+
+			}
+		}
+	localization_key = protean_system_fleetfeather_part_green_loc
+	}
+}
+
+defined_text = { # 
+	name = protean_system_hardline_path
+	text = {
+		trigger = {
+			PRO = {
+		#		has_country_flag = pro_protean_system_harline_chosen
+				has_country_flag = scripted_loc_test_hardline
+			}
+		}
+	localization_key = protean_system_hardline
+	}
+}
+defined_text = { # 
+	name = protean_system_nothing_selected
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = protean_system_nothing_selected
+			}
+		}
+	localization_key = protean_system_nothing_selected_loc
+	}
+}
+defined_text = { # 
+	name = protean_system_sss_active
+	text = {
+		trigger = {
+			PRO = {
+				has_country_flag = sss_selected
+				has_country_flag = pro_sss_active
+			}
+		}
+	localization_key = protean_system_sss_active_loc
+	}
+}

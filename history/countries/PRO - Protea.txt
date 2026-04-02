@@ -145,9 +145,21 @@ set_variable = { the_protean_system_ncm = -0.80 } #non core manpower
 set_variable = { the_protean_system_rsa = 0.40 } #resistance activity
 set_variable = { the_protean_system_rst = 0.40} #resistance target
 set_variable = { the_protean_system_ceg = -0.40 } #compliance gain
-set_variable = { the_protean_system_mop = -0.10} #monthly population
-# -------------------------------------- PROTEAN SHOWDOWN VARS --------------------------------------
+set_variable = { the_protean_system_mop = -0.60} #monthly population
+set_variable = { the_protean_system_rss = -0.2 } #research speed (this is meant to simulate brain drain)
+# -------------------------------------- PROTEAN SYSTEM REFORM/DOUBLE DOWN VARS --------------------------------------
+set_variable = { iatp_influence_percentage = 0 } # IMPORTANT: DUE TO A WEIRD BUG IM CHANGING THIS FROM IATP INFLUENCE TO IATP REFORM % BUT IM NOT CHANGING THE VAR NAME BECAUSE I ALR SET UP EVERYTHING!
+set_variable = { pfh_reform_percentage = 0 }
+set_variable = { sss_reform_percentage = 0 }
+set_variable = { population_that_supports_reform = 13 }
 
+set_variable = { iatp_reenforcement_percentage = 0 }
+set_variable = { pfh_reenforcement_percentage = 0 }
+set_variable = { sss_reenforcement_percentage = 0 }
+set_variable = { population_that_opposes_reform = 22 }
+
+set_variable = { tfi_suspicion = 0 }
+set_variable = { number_of_leads_captured = 0 }
 
 
 

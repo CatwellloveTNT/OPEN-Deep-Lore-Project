@@ -24,6 +24,90 @@ units = {
 
 	}
 
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19802 # Havana
+		division_template = "test"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
 	##### No Notable Naval Forces #####
 }
 

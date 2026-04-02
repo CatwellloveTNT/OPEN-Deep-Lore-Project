@@ -83,11 +83,12 @@ ideas = {
 			
 			modifier = {
 				non_core_manpower = -0.80
-				monthly_population = -0.15
+				monthly_population = -0.60
 				resistance_activity = 0.50	
 				ai_badass_factor = 1
 				resistance_target = 0.50
 				compliance_gain = -0.40
+				research_speed_factor = -0.2
 			}
 		}
 

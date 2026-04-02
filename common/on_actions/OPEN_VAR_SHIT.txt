@@ -1,5 +1,5 @@
-on_actions = {
-	on_daily_CLS = { #THIS IS FOR SOLARIS'S OPERATIONAL READYNESS. i got this shit looking like undertale
+on_actions = { #holy FUCK this file looks like undertale 
+	on_daily_CLS = { #THIS IS FOR SOLARIS'S OPERATIONAL READYNESS.
 		effect = { 
 			if = { 
 				limit = { check_variable = { var = solaris_readyness value > 10 }
@@ -63,6 +63,7 @@ on_actions = {
 
 	on_weekly = {
 		effect = {
+# -------------------------------------------------------- PROTEA SHIT ------------------------------------------
 			if = {
 				limit =  {  check_variable = { var = global.num_of_ewa value = 0 compare = less_than_or_equals } }
 				PRO = {
@@ -133,6 +134,48 @@ on_actions = {
 				limit =  {  check_variable = { var = global.total_destroyed_regions value = 5 compare = greater_than_or_equals } }
 				MSB = {
 					set_country_flag = msb_protea_wins_showdown
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = iatp_influence_percentage value = 20 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_activate_the_sss
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = number_of_leads_captured value = 2 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protean_system_reform_failed
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = iatp_influence_percentage value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_has_defeated_iatp_reform_path
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = sss_reform_percentage value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_has_defeated_sss_reform_path
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = tfi_suspicion value = 60 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_tfi_pulls_out
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = pfh_reform_percentage value = 100 compare = greater_than_or_equals } }
+				MSB = {
+					set_country_flag = msb_protea_reforms_the_pfh
+				}
+			}
+			if = {
+				limit =  {  check_variable = { var = population_that_supports_reform value = 70 compare = greater_than_or_equals } }
+				PRO = {
+					set_country_flag = pro_protean_system_majority_support
 				}
 			}
 		}

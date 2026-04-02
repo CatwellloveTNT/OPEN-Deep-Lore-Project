@@ -1,0 +1,223 @@
+unique_id = operation_enlightenment_OPEN_achievements_is_this_unique_enough
+
+# ---------------------------------------- GLOBAL ENDINGS ------------------------------------------------- 
+
+the_end_of_history_and_time = { #global ending E, you know what this one is
+	possible = {
+		difficulty = 2
+		is_ironman = yes
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		is_major = yes
+	}
+
+	happened = {
+		has_global_flag = global_ending_e
+	}
+}
+
+# ------------------------------------------------- PROTEA ACHIEVEMENTS ------------------------------------- 
+
+protea_ascendant = { # protea's ending a (total victory path + sucessful reform of the protean system)
+	possible = {
+		difficulty = 1
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = PRO
+	}
+
+	happened = {
+		has_country_flag = protea_ending_a
+	}
+}
+
+protea_vanquished = { # protea's ending d (just lose as protea, literally)
+	possible = {
+		difficulty = 1
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = PRO
+	}
+
+	happened = {
+		has_country_flag = protea_ending_d
+	}
+}
+
+protea_mangled = { # protea's ending b (total victory path + failed to reform the protean system)
+	possible = {
+		difficulty = 1
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = PRO
+	}
+
+	happened = {
+		has_country_flag = protea_ending_c
+	}
+}
+
+protea_reinforced = { # protea's ending e (total victory path + successful reinforcement of the protean system)
+	possible = {
+		difficulty = 1
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = PRO
+	}
+
+	happened = {
+		has_country_flag = protea_ending_e
+	}
+}
+
+protea_bastardized = { # protea's ending e (total victory path + failed to reinforce the protean system)
+	possible = {
+		difficulty = 1
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = PRO
+	}
+
+	happened = {
+		has_country_flag = protea_ending_f
+	}
+}
+
+# ------------------------------------------------- CHAFFIA ACHIEVEMENTS ------------------------------------- 
+
+song_of_the_ancients = { # total defeat path, get desperate enough to combine with flaria
+	possible = {
+		difficulty = 1
+#		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = CHF
+	}
+
+	happened = {
+		has_country_flag = combined_with_flaria
+	}
+}
+
+sacrifice_and_despair = { #as chaffia drop 6 nukes on Protea
+	possible = {
+		difficulty = 1
+#		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = CHF
+	}
+
+	happened = {
+		has_global_flag = protea_supernuked
+	}
+}
+
+
+arcadia_at_war = { # its in the name
+	possible = {
+		difficulty = 1
+#		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = ARC
+	}
+
+	happened = {
+		has_country_flag = arcadia_at_war_tt #bro i hope i remember this flag when i do testing like a year from now lmao
+	}
+}
+
+fallout_arcadia = { # When nuclear armageddon comes— and trust me, it will come. Simply... fail.
+	possible = {
+		difficulty = 1
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = ARC
+	}
+
+	happened = {
+		has_country_flag = arcadia_ending_f 
+	}
+}
+
+# ------------------------------------------------- LUFTY ACHIEVEMENTS ------------------------------------- 
+
+its_kinda_like_the_comic = { # waifu lufty would go crazy if you think about it
+	possible = {
+		difficulty = 1
+#		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = ARC
+	}
+
+	happened = {
+		has_global_flag = lufty_sent_to_triste
+	}
+}
+
+
+my_guardian_angel = { # if lufty is sent to triste, cls will get an event chain detailing her little adventure in triste, this is the turning point of part 1 in the comic (as you know lol)
+	possible = {
+		difficulty = 1
+	#	is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = CLS
+	}
+
+	happened = {
+		has_global_flag = lufty_meets_team_cerberus 
+	}
+}
+
+not_yet = { # if lufty is sent to triste, cls will get an event chain detailing her little adventure in triste, this is the end of part 1 in the comic (as you know lol)
+	possible = {
+		difficulty = 1
+	#	is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = CLS
+	}
+
+	happened = {
+		has_global_flag = lufty_survives_triste
+	}
+}
+
+lufty_why = { # lufty joins tfi through cls event (atp lufty is a cls character and not an arc one)
+	possible = {
+		difficulty = 1
+	#	is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = CLS
+	}
+
+	happened = {
+		has_global_flag = lufty_joins_tfi
+	}
+}
+
+# ------------------------------------------------- MONSTERBIRD ACHIEVEMENTS ------------------------------------- 
+
+the_shadowlord = { # play as monsterbird... you freak
+	possible = {
+		difficulty = 1
+#		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = MSB
+	}
+
+	happened = {
+		has_country_flag = monsterbird_player_wants_to_listen_to_my_story
+	}
+}
