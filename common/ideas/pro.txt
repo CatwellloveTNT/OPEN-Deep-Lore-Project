@@ -518,6 +518,625 @@ ideas = {
 
 		}
 
+		protean_pony_pride = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+			}
+
+		}
+
+		the_reformed_protean_system = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.1
+				research_speed_factor = 0.15
+				resistance_target = -0.1
+				compliance_gain = 0.05
+			}
+
+		}
+
+		one_more_time = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+
+		}	
+		
+		ponies_at_the_ready = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+
+		}
+
+		humanity_forever_vigilant = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				recon_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+			}
+
+		}
+
+		government_decap = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+				stability_weekly_factor = -0.01
+				political_power_gain = -1
+				political_advisor_cost_factor = 5
+			}
+
+		}
+
+		government_decap_2 = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				stability_weekly_factor = -0.005
+				political_power_gain = -0.50
+				political_advisor_cost_factor = 3
+			}
+
+		}
+
+		military_decap = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.15
+				recon_factor = -0.5
+				army_speed_factor = -0.3
+				army_org_factor = -0.3
+			}
+
+		}
+
+		military_decap_2 = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.10
+				recon_factor = -0.3
+				army_speed_factor = -0.15
+				army_org_factor = -0.2
+			}
+
+		}
+
+		military_decap_3 = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.05
+				recon_factor = -0.15
+				army_speed_factor = -0.10
+				army_org_factor = -0.15
+			}
+
+		}
+
+		central_command_decap = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_abilities_cost_factor = 1
+				command_power_gain = -5
+			}
+
+		}
+
+		central_command_decap_2 = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_abilities_cost_factor = 1
+				command_power_gain = -3
+			}
+
+		}
+
+		central_command_decap_3 = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_abilities_cost_factor = 0.5
+				command_power_gain = -1
+			}
+
+		}
+
+		pro_operation_melborne = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_speed_factor = 0.1
+			}
+
+		}
+
+		pro_operation_sydney = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+			}
+
+		}
+
+		pro_operation_archon = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_speed_factor = 0.2
+				breakthrough_factor = 0.2
+			}
+
+		}
+
+		pro_operation_zero = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_intel_to_others = -50
+				intel_from_combat_factor = 0.2
+			}
+
+		}
+
+		pro_mariposa_lily = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+
+		}
+
+		pro_operation_eridu_flower = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				recon_factor = 0.5
+				army_org_factor = 0.3
+			}
+
+		}
+
+		whats_yours_is_mines = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				equipment_capture_factor = 0.1
+			}
+
+		}
+
+		above_and_beyond = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ground_attack_factor = 0.2
+			}
+
+		}
 
 	}
 }

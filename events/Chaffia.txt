@@ -159,10 +159,10 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # the world will be forever changed...
+	option = {
 		name = chf.20.a
 		ai_chance = {factor = 100}
-		CHF_nuke_their_ass = yes
+
 	}
 }
 country_event = {
@@ -180,6 +180,30 @@ country_event = {
 		clr_country_flag = chf_aviceyn_not_supporting
 		PRO = {
 			set_country_flag = pro_aviceyn_in_showdown			
+		}
+	}
+}
+country_event = {
+	id = chf.1000
+	title = chf.1000.t
+	desc = chf.1000.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # the world will be forever changed...
+		name = chf.1000.a
+		ai_chance = {factor = 100}
+		CHF_nuke_their_ass = yes
+		PRO = {
+			set_country_flag = pro_the_final_skirmish_decision
+			set_country_flag = pro_the_final_skirmish
+			clr_country_flag = pro_reformed_protean_system
+			mark_focus_tree_layout_dirty = yes
+		}
+		CHF = {
+			set_country_flag = chf_the_final_skirmish
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }

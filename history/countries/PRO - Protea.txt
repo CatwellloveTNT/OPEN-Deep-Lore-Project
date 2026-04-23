@@ -146,7 +146,7 @@ set_variable = { the_protean_system_rsa = 0.40 } #resistance activity
 set_variable = { the_protean_system_rst = 0.40} #resistance target
 set_variable = { the_protean_system_ceg = -0.40 } #compliance gain
 set_variable = { the_protean_system_mop = -0.60} #monthly population
-set_variable = { the_protean_system_rss = -0.2 } #research speed (this is meant to simulate brain drain)
+set_variable = { the_protean_system_rss = -0.35 } #research speed (this is meant to simulate brain drain)
 # -------------------------------------- PROTEAN SYSTEM REFORM/DOUBLE DOWN VARS --------------------------------------
 set_variable = { iatp_influence_percentage = 0 } # IMPORTANT: DUE TO A WEIRD BUG IM CHANGING THIS FROM IATP INFLUENCE TO IATP REFORM % BUT IM NOT CHANGING THE VAR NAME BECAUSE I ALR SET UP EVERYTHING!
 set_variable = { pfh_reform_percentage = 0 }

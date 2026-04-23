@@ -541,17 +541,41 @@ country_event = { # THIS IS THE TESTING EVENT TO CHECK FOR THE SOLARIS VARIABLE 
 	}
 }
 country_event = {
-	id = col.33
-	title = col.33.t
-	desc = col.33.d
+	id = col.1000
+	title = col.1000.t
+	desc = col.1000.d
 	picture = GFX_placeholder_art
 
 	is_triggered_only = yes
 
 
 	option = { # What... Have they... Done...
-		name = col.33.a
+		name = col.1000.a
 		ai_chance = {factor = 100}
+		PRO = {
+			country_event = {
+				id = pro.1034
+				days = 2
+			}
+		}
+		RAV = {
+			add_to_war = {
+				targeted_alliance = PRO
+				enemy = CHF
+			}
+		}
+		NEW = {
+			add_to_war = {
+				targeted_alliance = PRO
+				enemy = CHF
+			}
+		}
+		CLS = {
+			add_to_war = {
+				targeted_alliance = PRO
+				enemy = CHF
+			}
+		}		
 	}
 }
 

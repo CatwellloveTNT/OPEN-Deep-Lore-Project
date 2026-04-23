@@ -193,3 +193,13 @@ music = {
 	file = "emildespair.ogg"
 	volume = 0.65
 }
+music = {
+	name = "eotl"
+	file = "end_of_the_line.ogg"
+	volume = 1
+}
+music = {
+	name = "macarena"
+	file = "macarena.ogg"
+	volume = 0.65
+}

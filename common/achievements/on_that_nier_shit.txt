@@ -1,10 +1,48 @@
 unique_id = operation_enlightenment_OPEN_achievements_is_this_unique_enough
 
+
+# ---------------------------------------- CHECKERS AND LIMITERS ------------------------------------------------- 
+
+ended_a_protea_run = { # this checks to see if a player has ALREADY completed a previous protea playthrough, if they did they will not recieve the tooltip about unlocking xperia's E ending path
+	possible = {
+
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = PRO
+	}
+
+	happened = {
+		has_country_flag = player_finished_a_protea_run
+	}
+}
+
+ended_a_run = { # this checks to see if a player has ALREADY completed a previous playthrough, if they did they will not recieve the tooltip about unlocking the Twilight Sparkle Narrative
+	possible = {
+
+		is_ironman = no
+   	 	has_any_custom_difficulty_setting = no
+   	 	game_rules_allow_achievements = yes
+		tag = PRO
+	}
+
+	happened = {
+		has_country_flag = player_finished_a_run
+	}
+}
+
+
+
+
+
+
+
+
 # ---------------------------------------- GLOBAL ENDINGS ------------------------------------------------- 
+
 
 the_end_of_history_and_time = { #global ending E, you know what this one is
 	possible = {
-		difficulty = 2
 		is_ironman = yes
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -18,9 +56,10 @@ the_end_of_history_and_time = { #global ending E, you know what this one is
 
 # ------------------------------------------------- PROTEA ACHIEVEMENTS ------------------------------------- 
 
+
 protea_ascendant = { # protea's ending a (total victory path + sucessful reform of the protean system)
 	possible = {
-		difficulty = 1
+
 		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -34,7 +73,7 @@ protea_ascendant = { # protea's ending a (total victory path + sucessful reform 
 
 protea_vanquished = { # protea's ending d (just lose as protea, literally)
 	possible = {
-		difficulty = 1
+
 		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -48,7 +87,7 @@ protea_vanquished = { # protea's ending d (just lose as protea, literally)
 
 protea_mangled = { # protea's ending b (total victory path + failed to reform the protean system)
 	possible = {
-		difficulty = 1
+
 		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -62,7 +101,7 @@ protea_mangled = { # protea's ending b (total victory path + failed to reform th
 
 protea_reinforced = { # protea's ending e (total victory path + successful reinforcement of the protean system)
 	possible = {
-		difficulty = 1
+
 		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -76,7 +115,7 @@ protea_reinforced = { # protea's ending e (total victory path + successful reinf
 
 protea_bastardized = { # protea's ending e (total victory path + failed to reinforce the protean system)
 	possible = {
-		difficulty = 1
+
 		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -92,7 +131,7 @@ protea_bastardized = { # protea's ending e (total victory path + failed to reinf
 
 song_of_the_ancients = { # total defeat path, get desperate enough to combine with flaria
 	possible = {
-		difficulty = 1
+
 #		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -106,7 +145,6 @@ song_of_the_ancients = { # total defeat path, get desperate enough to combine wi
 
 sacrifice_and_despair = { #as chaffia drop 6 nukes on Protea
 	possible = {
-		difficulty = 1
 #		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -121,7 +159,6 @@ sacrifice_and_despair = { #as chaffia drop 6 nukes on Protea
 
 arcadia_at_war = { # its in the name
 	possible = {
-		difficulty = 1
 #		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -135,7 +172,6 @@ arcadia_at_war = { # its in the name
 
 fallout_arcadia = { # When nuclear armageddon comes— and trust me, it will come. Simply... fail.
 	possible = {
-		difficulty = 1
 		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -151,7 +187,6 @@ fallout_arcadia = { # When nuclear armageddon comes— and trust me, it will com
 
 its_kinda_like_the_comic = { # waifu lufty would go crazy if you think about it
 	possible = {
-		difficulty = 1
 #		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -166,7 +201,6 @@ its_kinda_like_the_comic = { # waifu lufty would go crazy if you think about it
 
 my_guardian_angel = { # if lufty is sent to triste, cls will get an event chain detailing her little adventure in triste, this is the turning point of part 1 in the comic (as you know lol)
 	possible = {
-		difficulty = 1
 	#	is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -180,7 +214,6 @@ my_guardian_angel = { # if lufty is sent to triste, cls will get an event chain 
 
 not_yet = { # if lufty is sent to triste, cls will get an event chain detailing her little adventure in triste, this is the end of part 1 in the comic (as you know lol)
 	possible = {
-		difficulty = 1
 	#	is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -194,7 +227,6 @@ not_yet = { # if lufty is sent to triste, cls will get an event chain detailing 
 
 lufty_why = { # lufty joins tfi through cls event (atp lufty is a cls character and not an arc one)
 	possible = {
-		difficulty = 1
 	#	is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes
@@ -210,7 +242,6 @@ lufty_why = { # lufty joins tfi through cls event (atp lufty is a cls character 
 
 the_shadowlord = { # play as monsterbird... you freak
 	possible = {
-		difficulty = 1
 #		is_ironman = no
    	 	has_any_custom_difficulty_setting = no
    	 	game_rules_allow_achievements = yes

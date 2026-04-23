@@ -163,3 +163,37 @@ defined_text = { #
 	localization_key = protean_system_sss_active_loc
 	}
 }
+defined_text = { # 
+	name = current_date
+	text = {
+	localization_key = current_date_loc
+	}
+}
+defined_text = { # 
+	name = twilight_sparkle_narrative_in_tt_decider
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_custom_achievement = {
+					mod = operation_enlightenment_OPEN_achievements_is_this_unique_enough
+					achievement = ended_a_run
+				}
+			}
+		}
+	localization_key = twilight_sparkle_narrative_unlocked
+	}
+}
+defined_text = { # 
+	name = protea_unlocks_decider
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_custom_achievement = {
+					mod = operation_enlightenment_OPEN_achievements_is_this_unique_enough
+					achievement = ended_a_protea_run
+				}
+			}
+		}
+	localization_key = protea_unlocks_decider_loc
+	}
+}

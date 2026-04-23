@@ -257,7 +257,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # We'll retake our home.
+	option = { # Its time to turn this ship around!.
 		name = pro.15.a
 		ai_chance = {factor = 100}
 	}
@@ -973,7 +973,9 @@ country_event = {
 		ai_chance = {factor = 100}		
 		clr_country_flag = pro_showdown
 		clr_country_flag = PRO_showdown
+		clr_country_flag = pro_won_the_third_skirmish
 		set_country_flag = pro_wins_showdown
+		mark_focus_tree_layout_dirty = yes
 		CHF = {
 			set_country_flag = chf_loses_showdown
 			clr_country_flag = chf_showdown
@@ -1007,7 +1009,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { # protea wins the dead phase like true americans
-		name = pro.42.a
+		name = pro.52.a
 		ai_chance = {factor = 100}		
 		custom_effect_tooltip = showdown_pro_phase_1_won
 		add_to_variable = {
@@ -1063,6 +1065,79 @@ country_event = {
 				id = chf.13
 			}
 		}
+	}
+}
+
+country_event = {
+	id = pro.60
+	title = pro.60.t
+	desc = pro.60.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = pro.60.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = {
+	id = pro.61
+	title = pro.61.t
+	desc = pro.61.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = pro.61.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = {
+	id = pro.62
+	title = pro.62.t
+	desc = pro.62.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = pro.62.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = {
+	id = pro.63
+	title = pro.63.t
+	desc = pro.63.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = pro.63.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.64
+	title = pro.64.t
+	desc = pro.64.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = pro.64.a
+		ai_chance = {factor = 100}
+		set_country_flag = protea_ending_a
+		set_country_flag = player_finished_a_protea_run
+		set_country_flag = player_finished_a_run
+		custom_effect_tooltip = first_time_completing_protea_tt		
 	}
 }
 
@@ -1336,7 +1411,529 @@ country_event = {
 		ai_chance = {factor = 100}
 		complete_national_focus = PRO_hands_and_hooves
 		clr_country_flag = pro_won_the_third_skirmish
+		clr_country_flag = pro_loses_showdown
+		clr_country_flag = pro_wins_showdown
+		set_country_flag = pro_reformed_protean_system
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+country_event = {
+	id = pro.1005
+	title = pro.1005.t
+	desc = pro.1005.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = pro.1005.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = {
+	id = pro.1006
+	title = pro.1006.t
+	desc = pro.1006.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # fleetfeather decides to join valkyrie in reforming the protean system
+		name = pro.1006.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1007
+	title = pro.1007.t
+	desc = pro.1007.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1007.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1008
+	title = pro.1008.t
+	desc = pro.1008.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # reform path
+		name = pro.1008.a
+		ai_chance = {factor = 100}
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = pro_picked_reform
+		complete_national_focus = PRO_a_time_for_change
+		custom_effect_tooltip = protean_system_reform_path_tt		
+	}
+		option = { # hardline path
+		name = pro.1008.b
+		ai_chance = {factor = 100}
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = pro_picked_double_down
+		complete_national_focus = PRO_doubling_down
+		custom_effect_tooltip = protean_system_hardline_path_tt
+	}
+}
+country_event = {
+	id = pro.1009
+	title = pro.1009.t
+	desc = pro.1009.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1009.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1010
+	title = pro.1010.t
+	desc = pro.1010.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1007.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1011
+	title = pro.1011.t
+	desc = pro.1011.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1011.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1012
+	title = pro.1012.t
+	desc = pro.1012.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1012.a
+		ai_chance = {factor = 100}
+		custom_effect_tooltip = going_loud_tt
+	}
+}
+country_event = {
+	id = pro.1013
+	title = pro.1013.t
+	desc = pro.1013.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1013.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1014
+	title = pro.1014.t
+	desc = pro.1014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1014.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1015
+	title = pro.1015.t
+	desc = pro.1015.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1015.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1016
+	title = pro.1016.t
+	desc = pro.1016.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1016.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1017
+	title = pro.1017.t
+	desc = pro.1017.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1017.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1018
+	title = pro.1018.t
+	desc = pro.1018.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1018.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1019
+	title = pro.1019.t
+	desc = pro.1019.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1019.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1020
+	title = pro.1020.t
+	desc = pro.1020.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1020.a
+		ai_chance = {factor = 100}
+		clr_country_flag = pro_won_the_third_skirmish
+		clr_country_flag = pro_loses_showdown
+		clr_country_flag = pro_wins_showdown
+		set_country_flag = pro_reformed_protean_system
+		set_global_flag = global_pro_reformed_protean_system
+		clr_country_flag = protean_system_minigame_start
+		set_country_flag = iatp_defeated
+		set_country_flag = sss_reformed
+		set_country_flag = pfh_reformed
+		clr_country_flag = iatp_raid
+		clr_country_flag = pro_picked_reform
+		clr_country_flag = pro_picked_double_down
+		remove_dynamic_modifier = {
+			modifier = PRO_the_protean_system
+		}
+		add_ideas = protean_pony_pride
+		add_ideas = the_reformed_protean_system
+
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = pro.1021
+	title = pro.1021.t
+	desc = pro.1021.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1021.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1022
+	title = pro.1022.t
+	desc = pro.1022.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1022.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1023
+	title = pro.1023.t
+	desc = pro.1023.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1023.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1024
+	title = pro.1024.t
+	desc = pro.1024.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1024.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1025
+	title = pro.1025.t
+	desc = pro.1025.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1025.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1026
+	title = pro.1026.t
+	desc = pro.1026.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1026.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1027
+	title = pro.1027.t
+	desc = pro.1027.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1027.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1028
+	title = pro.1028.t
+	desc = pro.1028.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1028.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1029
+	title = pro.1029.t
+	desc = pro.1029.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1029.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1030
+	title = pro.1030.t
+	desc = pro.1030.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1030.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1031
+	title = pro.1031.t
+	desc = pro.1031.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1031.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1032
+	title = pro.1032.t
+	desc = pro.1032.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1032.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.1033
+	title = pro.1033.t
+	desc = pro.1033.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1033.a
+		ai_chance = {factor = 100}
+		clr_country_flag = pro_the_final_skirmish
+		clr_country_flag = pro_the_final_skirmish_decision
+		clr_country_flag = pro_the_final_skirmish_second_phase
+		set_country_flag = pro_won_the_final_skirmish
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = pro.1034
+	title = pro.1034.t
+	desc = pro.1034.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea reimplements the protean systems after midnight fury
+		name = pro.1034.a
+		ai_chance = {factor = 100}
+		hidden_effect = {
+					news_event = {
+			id = news.6
+		}
+		}
+	}
+}
+country_event = {
+	id = pro.2000
+	title = pro.2000.t
+	desc = pro.2000.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea gets nuked reaction event 1
+		name = pro.2000.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.2001
+	title = pro.2001.t
+	desc = pro.2001.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea gets nuked reaction event 2
+		name = pro.2001.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = {
+	id = pro.2002
+	title = pro.2002.t
+	desc = pro.2002.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea gets nuked reaction event 3
+		name = pro.2002.a
+		ai_chance = {factor = 100}
+		add_ideas = government_decap
+	}
+}
+country_event = {
+	id = pro.2003
+	title = pro.2003.t
+	desc = pro.2003.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea gets nuked reaction event 4
+		name = pro.2003.a
+		ai_chance = {factor = 100}
+		add_ideas = military_decap
+	}
+}
+country_event = {
+	id = pro.2004
+	title = pro.2004.t
+	desc = pro.2004.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea gets nuked reaction event 5
+		name = pro.2004.a
+		ai_chance = {factor = 100}
+		add_ideas = central_command_decap	
+	}
+}
+country_event = {
+	id = pro.2005
+	title = pro.2005.t
+	desc = pro.2005.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # protea gets nuked reaction event 6
+		name = pro.2005.a
+		ai_chance = {factor = 100}
+		add_timed_idea = {
+			idea = above_and_beyond
+			days = 100
+		}
+	}
+}
+
 

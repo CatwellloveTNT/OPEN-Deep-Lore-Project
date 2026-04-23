@@ -55,7 +55,7 @@
 			}
 		}
 
-		visible_when_empty = yes
+		visible_when_empty = no
 	}
 
 	PRO_showdown = { #!!!!!!!! WARNING !!!!!!!!!!! 
@@ -106,6 +106,28 @@
 		visible = {
 			OR = {
 				has_country_flag = protean_system_minigame_start
+			}
+		}
+
+		visible_when_empty = yes
+	}
+
+
+	PRO_the_final_skirmish = {
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+		scripted_gui = pro_showdown_ui
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = pro_the_final_skirmish_decision
 			}
 		}
 

@@ -17,7 +17,6 @@
 #
 
 CHF_nuke_their_ass = {
-	goto_state = 537
 	launch_nuke = {
 		province = 19798
 	}
@@ -38,21 +37,51 @@ CHF_nuke_their_ass = {
 	}
 	PRO = {
 		country_event = {
-			id = pro.33
+			id = pro.2000
 		}
 		hidden_effect = {
-			scoped_play_song = "non_metal" #placeholder song			
+			scoped_play_song = "eotl"		
 		}
+		hidden_effect = {
+		goto_state = 537			
+		}
+		hidden_effect = {
+		country_event = {
+			id = pro.2001
+			hours = 11
+		}
+		country_event = {
+			id = pro.2002
+			hours = 22
+		}
+		country_event = {
+			id = pro.2003
+			hours = 33
+		}
+		country_event = {
+			id = pro.2004
+			hours = 44
+		}
+		country_event = {
+			id = pro.2005
+			hours = 55
+		}
+		}
+		set_country_flag = pro_the_final_skirmish
+		mark_focus_tree_layout_dirty = yes
 	}
 	CLS = {
 		country_event = {
-			id = col.33
+			id = col.1000
 		}
 		hidden_effect = {
-			scoped_play_song = "non_metal" #placeholder song	
+			scoped_play_song = "eotl"
 			goto_state = 537			
 		}
+		set_country_flag = cls_the_final_skirmish
+		mark_focus_tree_layout_dirty = yes
 		}
+		
 	CHF = {
 		hidden_effect = {
 			scoped_play_song = "nukes"
@@ -61,19 +90,19 @@ CHF_nuke_their_ass = {
 			target = PRO
 			type = liberate_wargoal
 		}
-		declare_war_on = {
-			target = CLS
-			type = liberate_wargoal
+		hidden_effect = {
+		goto_state = 537			
 		}
+		set_country_flag = chf_the_final_skirmish
+		mark_focus_tree_layout_dirty = yes
 	}
 	FLA = {
 		declare_war_on = {
 			target = PRO
 			type = liberate_wargoal
 		}
-		declare_war_on = {
-			target = CLS
-			type = liberate_wargoal
+		hidden_effect = {
+		goto_state = 537			
 		}
 	}
 	}

@@ -24,3 +24,13 @@ protea_loses_showdown = {
 	}
 }
 
+protea_wins_the_final_skirmish = {
+	CHF = {
+		AND = {
+		has_country_flag = chf_the_final_skirmish
+		surrender_progress = 0.9
+		}
+
+	}
+}
+

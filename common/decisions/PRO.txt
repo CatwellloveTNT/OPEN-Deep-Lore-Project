@@ -4748,14 +4748,15 @@ PRO_the_protean_system = {
 
 
 
-		modifier = {
+		modifier = {  
 		}
 
 		complete_effect = {
-			country_event = {
-				id = pro.1100
-			}
+			complete_national_focus = PRO_hands_and_hooves
 			clr_country_flag = protean_system_minigame_start
+			clr_country_flag = pro_sss_active
+			clr_country_flag = sss_unreformed
+			set_country_flag = sss_reformed
 		}
 
 		ai_will_do = {
@@ -6029,6 +6030,12 @@ PRO_the_protean_system = {
 		}		
 
 	}
+
+
+}
+
+PRO_the_final_skirmish = {
+
 
 
 }

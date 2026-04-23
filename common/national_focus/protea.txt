@@ -12,7 +12,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 1300 y = 1500 }
 
 	focus = {
 		id = PRO_prepare_operation_glided_throne
@@ -1180,7 +1180,6 @@
 					}
 				}
 			}
-			clr_country_flag = pro_went_for_factories_first
 
 			add_to_variable = { protea_first_phase_eco_dynamic_st = -0.10 }
 			add_to_variable = { protea_first_phase_eco_dynamic_icf = 0.10 }
@@ -2333,7 +2332,7 @@
 	focus = {
 		id = PRO_reimplement_the_protean_system
 		icon = GFX_goal_generic_consumer_goods
-		x = 16
+		x = 10
 		y = 0
 		#relative_position_id = PRO_a_soldiers_feast
 		#prerequisite = { focus = PRO_a_soldiers_feast }
@@ -2347,7 +2346,11 @@
 		}
 
 		allow_branch = {
-			has_country_flag = pro_won_the_third_skirmish
+			OR = {
+			has_country_flag = pro_wins_showdown
+			has_country_flag = pro_loses_showdown
+			}
+
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2355,7 +2358,7 @@
 
 		completion_reward = {
 			country_event = {
-				id = pro.9
+				id = pro.1007
 			}
 			custom_effect_tooltip = extra_space
 
@@ -2389,7 +2392,7 @@
 
 		completion_reward = {
 			country_event = {
-				id = pro.10
+				id = pro.1008
 			}
 
 		}
@@ -2403,7 +2406,7 @@
 	focus = {
 		id = PRO_a_time_for_change
 		icon = GFX_goal_generic_consumer_goods
-		x = 5
+		x = 0
 		y = 1
 		relative_position_id = PRO_what_kind_of_pony_are_you
 		prerequisite = { focus = PRO_what_kind_of_pony_are_you }
@@ -2419,13 +2422,18 @@
 
 		}
 
+		allow_branch = {
+			has_country_flag = pro_picked_reform
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 50
 			country_event = {
-				id = pro.45
+				id = pro.1009
 			}
 			custom_effect_tooltip = extra_space
 			remove_ideas = the_protean_system
@@ -2444,7 +2452,7 @@
 	focus = {
 		id = PRO_doubling_down
 		icon = GFX_goal_generic_consumer_goods
-		x = -5
+		x = 0
 		y = 1
 		relative_position_id = PRO_what_kind_of_pony_are_you
 		prerequisite = { focus = PRO_what_kind_of_pony_are_you }
@@ -2460,13 +2468,17 @@
 
 		}
 
+		allow_branch = {
+			has_country_flag = pro_picked_double_down
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
 			country_event = {
-				id = pro.46
+				id = pro.1010
 			}
 			custom_effect_tooltip = extra_space
 			remove_ideas = the_protean_system
@@ -2504,8 +2516,9 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 150
 			country_event = {
-				id = pro.1001
+				id = pro.1011
 			}
 			custom_effect_tooltip = extra_space
 			custom_effect_tooltip = valky_walky		
@@ -2558,7 +2571,7 @@
 
 		completion_reward = {
 			country_event = {
-				id = pro.47
+				id = pro.1012
 			}
 		}
 
@@ -2590,8 +2603,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = right_under_their_noses_idea_tt
+			custom_effect_tooltip = extra_space
+			add_political_power = 100
 			country_event = {
-				id = pro.1003
+				id = pro.1017
 			}
 			add_to_variable = {
 				sss_reform_percentage = 3
@@ -2627,8 +2643,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = a_star_citizen_idea_effect_tt
+			custom_effect_tooltip = extra_space
+			add_political_power = 100
 			country_event = {
-				id = pro.1002
+				id = pro.1013
 			}
 			add_to_variable = {
 				iatp_influence_percentage = 5
@@ -2665,8 +2684,14 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = replacing_our_electives_idea_tt
+			custom_effect_tooltip = extra_space
+			add_political_power = 100
 			add_to_variable = {
 				pfh_reform_percentage = 5
+			}
+			country_event = {
+				id = pro.1015
 			}
 			custom_effect_tooltip = replacing_our_electives_tt
 		}
@@ -2699,8 +2724,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = smoke_and_mirrors_idea_tt
+			custom_effect_tooltip = extra_space
+			add_political_power = 100
 			country_event = {
-				id = pro.1004
+				id = pro.1018
 			}
 			add_to_variable = {
 				sss_reform_percentage = 5
@@ -2736,8 +2764,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = a_true_deciever_idea_tt
+			custom_effect_tooltip = extra_space
+			add_political_power = 100
 			country_event = {
-				id = pro.1005
+				id = pro.1014
 			}
 			add_to_variable = {
 				iatp_influence_percentage = 10
@@ -2773,8 +2804,14 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = and_opening_their_eyes_idea_tt
+			custom_effect_tooltip = extra_space
+			add_political_power = 100
 			add_to_variable = {
 				pfh_reform_percentage = 10
+			}
+			country_event = {
+				id = pro.1016
 			}
 			custom_effect_tooltip = and_opening_their_eyes_tt
 		}
@@ -2808,6 +2845,9 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = for_the_sake_of_our_children_idea_tt
+			custom_effect_tooltip = extra_space
+			add_political_power = 200
 			add_to_variable = {
 				pfh_reform_percentage = 10
 			}
@@ -2816,6 +2856,9 @@
 			}
 			add_to_variable = {
 				sss_reform_percentage = 10
+			}
+			country_event = {
+				id = pro.1019
 			}
 			custom_effect_tooltip = for_the_sake_of_our_children_tt
 		}
@@ -2835,7 +2878,6 @@
 		prerequisite = { focus = PRO_for_the_sake_of_our_children }
 		cost = 10
 		available = {
-			always = no
 			NOT = { has_country_flag = protean_existential_crisis}
 		}
 		
@@ -2848,9 +2890,19 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = {
-				id = pro.1100
+			add_to_variable = {
+				pfh_reform_percentage = 10
 			}
+			add_to_variable = {
+				iatp_influence_percentage = 10
+			}
+			add_to_variable = {
+				sss_reform_percentage = 10
+			}
+			country_event = {
+				id = pro.1021
+			}
+			custom_effect_tooltip = for_the_sake_of_our_children_tt
 		}
 
 		ai_will_do = {
@@ -3187,6 +3239,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+
 			set_country_flag = pro_final_phase_doubled_down
 			clr_country_flag = pro_won_the_third_skirmish
 			mark_focus_tree_layout_dirty = yes
@@ -3222,6 +3275,9 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = {
+				id = pro.1020
+			}
 			set_country_flag = pro_final_phase_reformed
 			clr_country_flag = protean_system_minigame_start
 			mark_focus_tree_layout_dirty = yes
@@ -3235,179 +3291,6 @@
 
 # ----------------------------------- PROTEA FINAL NARRATIVE PHASE -------------------------------------------------------
 
-	focus = {
-		id = PRO_protea_triumphant
-		icon = GFX_goal_generic_consumer_goods
-		x = 16
-		y = 1
-#		relative_position_id = PRO_proteanism_with_a_smile
-#		prerequisite = { focus = PRO_proteanism_with_a_smile }					
-		cost = 5
-
-		allow_branch = {
-			has_country_flag = pro_final_phase_reformed
-		}
-
-		available = {
-	#		always = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-				id = pro.60
-			}
-		}
-
-		ai_will_do = {
-		factor = 25
-		}
-
-	}
-
-	focus = {
-		id = PRO_the_forming_of_a_new_great_power
-		icon = GFX_goal_generic_consumer_goods
-		x = -2
-		y = 1
-		relative_position_id = PRO_protea_triumphant
-		prerequisite = { focus = PRO_protea_triumphant }					
-		cost = 5
-
-
-		available = {
-	#		always = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-				id = pro.61
-			}
-		}
-
-		ai_will_do = {
-		factor = 25
-		}
-
-	}
-
-	focus = {
-		id = PRO_for_ponies_and_humans_alike
-		icon = GFX_goal_generic_consumer_goods
-		x = 2
-		y = 1
-		relative_position_id = PRO_protea_triumphant
-		prerequisite = { focus = PRO_protea_triumphant }					
-		cost = 5
-
-
-		available = {
-	#		always = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-				id = pro.62
-			}
-		}
-
-		ai_will_do = {
-		factor = 25
-		}
-
-	}
-
-	focus = {
-		id = PRO_into_the_future
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 2
-		relative_position_id = PRO_protea_triumphant
-		prerequisite = { focus = PRO_the_forming_of_a_new_great_power }		
-		prerequisite = { focus = PRO_for_ponies_and_humans_alike }				
-		cost = 5
-
-
-		available = {
-	#		always = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-				id = pro.69
-			}
-		}
-
-		ai_will_do = {
-		factor = 25
-		}
-
-	}
-
-	focus = {
-		id = PRO_protea_ascendant
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 3
-		relative_position_id = PRO_protea_triumphant
-		prerequisite = { focus = PRO_into_the_future }					
-		cost = 5
-
-
-		available = {
-			always = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-				id = pro.63
-			}
-		}
-
-		ai_will_do = {
-		factor = 25
-		}
-
-	}
 
 	focus = {
 		id = PRO_the_superiority_of_humanity
@@ -3585,10 +3468,10 @@
 	# --------------------------- THIRD PHASE MILITARY TREE -----------------------------------
 
 	focus = {
-		id = PRO_whispers_from_the_south
+		id = PRO_one_final_blow
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
-		y = 11
+		y = 1
 		relative_position_id = PRO_reimplement_the_protean_system
 		#prerequisite = { focus = PRO_proteanism_with_a_smile }					
 		cost = 5
@@ -3601,7 +3484,7 @@
 		}
 
 		allow_branch = {
-			#has_country_flag = pro_showdown_incoming
+			has_country_flag = pro_won_the_third_skirmish
 		}
 
 		cancel_if_invalid = yes
@@ -3623,8 +3506,8 @@
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		relative_position_id = PRO_whispers_from_the_south
-		prerequisite = { focus = PRO_whispers_from_the_south }					
+		relative_position_id = PRO_one_final_blow
+		prerequisite = { focus = PRO_one_final_blow }					
 		cost = 5
 		available = {
 
@@ -4176,7 +4059,7 @@
 
 		completion_reward = {
 			country_event = {
-				id = pro.43
+				id = pro.1005
 			}
 			custom_effect_tooltip = extra_space
 			custom_effect_tooltip = atf_competition
@@ -4353,7 +4236,1600 @@
 		}
 	}
 
+ #                        --------------------------- FORTH PHASE FALSE NARRATIVE TREE ------------------------------------------------------
+	focus = {
+		id = PRO_prepare_operation_stable_garden
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 1
+#		relative_position_id = PRO_the_superiority_of_humanity
+	#	prerequisite = { focus = PRO_the_superiority_of_humanity }					
+		cost = 5
 
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_reformed_protean_system
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1022
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_ready_the_ponies
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_prepare_operation_stable_garden
+		prerequisite = { focus = PRO_prepare_operation_stable_garden }					
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1023
+			}
+			add_timed_idea = {
+				idea = ponies_at_the_ready
+				days = 100
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_ready_the_humans
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_prepare_operation_stable_garden
+		prerequisite = { focus = PRO_prepare_operation_stable_garden }					
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1024
+			}
+			add_timed_idea = {
+				idea = humanity_forever_vigilant
+				days = 100
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_reach_out_to_the_coalition_states
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_prepare_operation_stable_garden
+		prerequisite = { focus = PRO_ready_the_ponies  }	
+		prerequisite = { focus = PRO_ready_the_humans  }				
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1025
+			}
+			CLS = {
+				country_event = {
+					id = col.1000
+				}
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_fakefocus1 #highland railroad initiative
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_reach_out_to_the_coalition_states
+		prerequisite = { focus = PRO_reach_out_to_the_coalition_states  }				
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {		
+			build_railway = {
+				path = {  19798 8829 9544 9557 9527 9573 9567  }
+			}
+			build_railway = {
+				path = {  20378 9336 8407 8399 8420 8398  }
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_fakefocus2 #ready the battlegrounds
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_fakefocus1
+		prerequisite = { focus = PRO_fakefocus1  }				
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			534 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 8398
+					instant_build = yes
+				}
+			}
+			599 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 9567
+					instant_build = yes
+				}
+			}	
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_fakefocus3 #expand the airbases
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_fakefocus1
+		prerequisite = { focus = PRO_fakefocus1  }				
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			534 = {
+			add_building_construction = {
+				type = air_base
+				level = 3
+			}
+			}
+			599 = {
+			add_building_construction = {
+				type = air_base
+				level = 3
+			}
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_fakefocus4 #one final recruitment drive
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_fakefocus2
+		prerequisite = { focus = PRO_fakefocus2  }	
+		prerequisite = { focus = PRO_fakefocus3  }				
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 782378
+			add_timed_idea = {
+				idea = one_more_time
+				days = 100
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_launch_operation_stable_garden
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_fakefocus4
+		prerequisite = { focus = PRO_fakefocus4  }			
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1026
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+ #                        --------------------------- THE FINAL SKIRMISH TREE ------------------------------------------------------	
+
+	focus = {
+		id = PRO_gather_whoever_we_have_left
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 0
+#		relative_position_id = PRO_the_superiority_of_humanity
+	#	prerequisite = { focus = PRO_the_superiority_of_humanity }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_the_final_skirmish
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1027
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_and_put_them_in_the_right_places
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_gather_whoever_we_have_left
+		prerequisite = { focus = PRO_gather_whoever_we_have_left }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = government_decap
+				add_idea = government_decap_2
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+
+	focus = {
+		id = PRO_set_up_an_emergency_government
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_gather_whoever_we_have_left
+		prerequisite = { focus = PRO_and_put_them_in_the_right_places }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = government_decap_2
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+
+	focus = {
+		id = PRO_repair_what_we_have
+		icon = GFX_goal_generic_consumer_goods
+		x = 13
+		y = 0
+	#	relative_position_id = PRO_gather_whoever_we_have_left
+	#	prerequisite = { focus = PRO_gather_whoever_we_have_left }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_the_final_skirmish
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1028
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+
+	focus = {
+		id = PRO_with_duck_tape_love_and_hope
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_repair_what_we_have
+		prerequisite = { focus = PRO_repair_what_we_have }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = military_decap
+				add_idea = military_decap_2
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+	
+	focus = {
+		id = PRO_it_comes_down_to_the_infantryman_and_his_rifle
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_with_duck_tape_love_and_hope
+		prerequisite = { focus = PRO_with_duck_tape_love_and_hope}					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_the_final_skirmish
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = military_decap_2
+				add_idea = military_decap_3
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+ 
+	focus = {
+		id = PRO_uplift_the_ncos
+		icon = GFX_goal_generic_consumer_goods
+		x = 7
+		y = 0
+	#	relative_position_id = PRO_gather_whoever_we_have_left
+	#	prerequisite = { focus = PRO_gather_whoever_we_have_left }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_the_final_skirmish
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1029
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+
+	focus = {
+		id = PRO_educate_the_willing
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_uplift_the_ncos
+		prerequisite = { focus = PRO_uplift_the_ncos }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = central_command_decap
+				add_idea = central_command_decap_2
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+
+	focus = {
+		id = PRO_how_the_new_replace_the_old
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_educate_the_willing
+		prerequisite = { focus = PRO_educate_the_willing }					
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = central_command_decap_2
+				add_idea = central_command_decap_3
+			}			
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+
+	focus = {
+		id = PRO_critical_condition
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_set_up_an_emergency_government
+		prerequisite = { focus = PRO_how_the_new_replace_the_old}	
+		prerequisite = { focus = PRO_set_up_an_emergency_government }
+		prerequisite = { focus = PRO_it_comes_down_to_the_infantryman_and_his_rifle }
+
+		cost = 3
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = pro.1030
+				}
+			}
+			set_country_flag = pro_the_final_skirmish_second_phase
+			clr_country_flag = pro_the_final_skirmish
+			custom_effect_tooltip = critical_condition_tt
+			mark_focus_tree_layout_dirty = yes
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}	
+
+	focus = {
+		id = PRO_form_unicom
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 0
+#		relative_position_id = PRO_the_superiority_of_humanity
+	#	prerequisite = { focus = PRO_the_superiority_of_humanity }					
+		cost = 5
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = military_decap_3
+			remove_ideas = central_command_decap_3
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_reclaim_your_home
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = PRO_form_unicom
+		prerequisite = { focus = PRO_form_unicom }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1030
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_operation_sydney
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 2
+		relative_position_id = PRO_reclaim_your_home
+		prerequisite = { focus = PRO_reclaim_your_home }					
+		cost = 3
+
+		available = {
+			CHF = {
+				OR = {
+				owns_state = 601
+				owns_state = 602
+				}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = pro_operation_sydney
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_resurrect_the_tank_graveyards
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_reclaim_your_home
+		prerequisite = { focus = PRO_reclaim_your_home }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "No Step Back" }
+
+				add_equipment_to_stockpile = {
+				type = medium_tank_chassis_1
+				amount = 500
+				}
+				
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = medium_tank_equipment_1
+					amount = 500
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_break_out_the_bolt_actions
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_reclaim_your_home
+		prerequisite = { focus = PRO_reclaim_your_home }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 10000
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_operation_melborne
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 2
+		relative_position_id = PRO_reclaim_your_home
+		prerequisite = { focus = PRO_reclaim_your_home }					
+		cost = 3
+
+		available = {
+			CHF = {
+				OR = {
+				owns_state = 535
+				owns_state = 533
+				}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = pro_operation_melborne
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_cut_them_off
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_reclaim_your_home
+		prerequisite = { focus = PRO_reclaim_your_home }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1031
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_convert_civilian_transports
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_cut_them_off
+		prerequisite = { focus = PRO_cut_them_off }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment_1 #PLACEHOLDER FOR APCS/IFVS
+				amount = 750
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1 
+				amount = 1000
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_seize_their_equipment
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_cut_them_off
+		prerequisite = { focus = PRO_cut_them_off }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = whats_yours_is_mines
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_operation_zero
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 2
+		relative_position_id = PRO_cut_them_off
+		prerequisite = { focus = PRO_cut_them_off }					
+		cost = 3
+
+		available = {
+			CHF = {
+				OR = {
+				owns_state = 534
+				owns_state = 604
+				}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = pro_operation_zero
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_operation_archon
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 2
+		relative_position_id = PRO_cut_them_off
+		prerequisite = { focus = PRO_cut_them_off }					
+		cost = 3
+
+		available = {
+			CHF = {
+				OR = {
+				owns_state = 599
+				owns_state = 542
+				}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = pro_operation_archon
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_their_homes_their_families
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_cut_them_off
+		prerequisite = { focus = PRO_cut_them_off }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.1032
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_operation_mariposa_lily
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 2
+		relative_position_id = PRO_their_homes_their_families
+		prerequisite = { focus = PRO_their_homes_their_families }					
+		cost = 3
+
+		available = {
+			CHF = {
+				OR = {
+				owns_state = 736
+				owns_state = 532
+				owns_state = 605
+				}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = pro_mariposa_lily
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_mobilize_sadhaak_veterens
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = PRO_their_homes_their_families
+		prerequisite = { focus = PRO_their_homes_their_families }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			534 = {
+			create_unit = {
+   			division = "name = \"Artie\" division_template = \"Artillery Division\" start_manpower_factor = 0.3"
+   			owner = PRO
+   			count = 3
+   			id = 8392
+			}
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_operation_eridu_flower
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 2
+		relative_position_id = PRO_their_homes_their_families
+		prerequisite = { focus = PRO_their_homes_their_families }					
+		cost = 3
+
+		available = {
+			CHF = {
+				OR = {
+				owns_state = 598
+				owns_state = 735
+				owns_state = 543
+				}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = pro_operation_eridu_flower
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_order_additional_black_jeps
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = PRO_their_homes_their_families
+		prerequisite = { focus = PRO_their_homes_their_families }					
+		cost = 3
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1 #PLACEHOLDER!
+				amount = 300
+				#producer = CLS #bring this back when i catch the coalition up
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1 #PLACEHOLDER!
+					amount = 300
+				#producer = CLS #bring this back when i catch the coalition up
+				}
+			}			
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_the_treaty_of_austral
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = PRO_their_homes_their_families
+		prerequisite = { focus = PRO_their_homes_their_families }					
+		cost = 3
+
+		available = {
+			has_country_flag = pro_won_the_final_skirmish_tt
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+#			has_country_flag = pro_the_final_skirmish_second_phase
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = pro_the_treaty_of_austral_tt
+			hidden_effect = {
+			country_event = {
+				id = pro.1033
+			}
+		}
+		set_country_flag = pro_wins_the_final_skirmish
+		mark_focus_tree_layout_dirty = yes
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+ # ----------------------------------------------------- FINAL NARRATIVE TREE -----------------------------------------
+ 	focus = {
+		id = PRO_protea_triumphant
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 1
+#		relative_position_id = PRO_proteanism_with_a_smile
+#		prerequisite = { focus = PRO_proteanism_with_a_smile }					
+		cost = 5
+
+		allow_branch = {
+			AND = {
+			has_country_flag = pro_final_phase_reformed
+			has_country_flag = pro_won_the_final_skirmish				
+			}
+
+		}
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.60
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_the_forming_of_a_new_great_power
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = PRO_protea_triumphant
+		prerequisite = { focus = PRO_protea_triumphant }					
+		cost = 5
+
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.61
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_for_ponies_and_humans_alike
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = PRO_protea_triumphant
+		prerequisite = { focus = PRO_protea_triumphant }					
+		cost = 5
+
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.62
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_into_the_future
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = PRO_protea_triumphant
+		prerequisite = { focus = PRO_the_forming_of_a_new_great_power }		
+		prerequisite = { focus = PRO_for_ponies_and_humans_alike }				
+		cost = 5
+
+
+		available = {
+	#		always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.63
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	focus = {
+		id = PRO_protea_ascendant
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = PRO_protea_triumphant
+		prerequisite = { focus = PRO_into_the_future }					
+		cost = 5
+
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = pro.64
+			}
+		}
+
+		ai_will_do = {
+		factor = 25
+		}
+
+	}
+
+	
 }
+
 
 

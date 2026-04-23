@@ -346,3 +346,26 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "eotl"
+	chance = {
+		modifier = {
+			is_in_faction_with = CLS
+			has_war = yes
+			factor = 0.1
+		}		
+	}
+}
+music = {
+	song = "macarena"
+	chance = {
+		modifier = {
+			strength_ratio = {
+				tag = THIS
+				ratio = 2
+			}
+			has_war = yes
+			factor = 0.5
+		}		
+	}
+}

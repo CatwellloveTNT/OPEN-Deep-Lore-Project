@@ -18,11 +18,11 @@
 
 PRO_wins_the_third_skirmish_peace = {
 	PRO = {
-		set_state_owner = 737
-		set_state_owner = 604
-		set_state_owner = 534
-		set_state_owner = 599
-		set_state_owner = 542
+		transfer_state = 737
+		transfer_state = 604
+		transfer_state = 534
+		transfer_state = 599
+		transfer_state = 542
 		white_peace = CHF
 		white_peace = FLA
 		country_event = {
@@ -62,8 +62,8 @@ FLA_surrenders_in_the_third_skirmish = {
 		set_country_flag = fla_lost_the_third_skirmish
 	}
 	PRO = {
-		set_state_owner = 599
-		set_state_owner = 542
+		transfer_state = 599
+		transfer_state = 542
 	}
 }
 
@@ -102,7 +102,7 @@ showdown_over_effects_pro_victory = {
 		white_peace = FLA
 		remove_ideas = air_war_ongoing_pro
 		country_event = {
-			id = pro.51
+			id = pro.1006
 		}
 	}
 	CHF = {
@@ -132,6 +132,49 @@ showdown_over_effects_pro_loss = {
 	}
 	FLA = {
 		remove_ideas = air_war_ongoing_chf
+	}
+}
+
+protea_wins_the_final_skirmish_effect = {
+	PRO = {
+		white_peace = CHF
+		white_peace = FLA
+	
+		#chaffian states
+		transfer_state = 532
+		transfer_state = 736
+		transfer_state = 605
+		transfer_state = 606
+		transfer_state = 650
+		transfer_state = 649
+		transfer_state = 689
+		transfer_state = 651
+		transfer_state = 607
+		transfer_state = 531
+		transfer_state = 530
+		transfer_state = 608
+		transfer_state = 609
+		transfer_state = 728
+
+		#flarian states
+		transfer_state = 735
+		transfer_state = 734
+		transfer_state = 598
+		transfer_state = 543
+		transfer_state = 544
+		transfer_state = 597
+		transfer_state = 648
+		transfer_state = 545
+		transfer_state = 546		
+
+		#bro there has to be an easier way to do this
+
+		CHF = {
+		transfer_state = 343
+		}
+		343 = {
+			add_core_of = CHF
+		}
 	}
 }
 

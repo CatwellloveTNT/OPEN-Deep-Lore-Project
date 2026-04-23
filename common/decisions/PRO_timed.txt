@@ -1728,8 +1728,50 @@ PRO_the_protean_system = {
 
 # ----------------------------------- SSS INVESTIGATION MINI STORY END -------------------------------------------
 
+}
+
+PRO_the_final_skirmish = {
+
+	war_peace_effect_mission = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 1350
+		is_good = no
+		days_re_enable = 5
 
 
+		activation = {
+			has_country_flag = pro_the_final_skirmish_decision
+		}
+
+		available = {
+			protea_wins_the_final_skirmish = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes
+		}
+
+
+		complete_effect = {
+			custom_override_tooltip = {
+				tooltip = the_final_skirmish_end_the_war_tt_pro	
+			protea_wins_the_final_skirmish_effect = yes		
+			set_country_flag = pro_won_the_final_skirmish_tt
+			}
+
+		}
+
+		timeout_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
 
 
