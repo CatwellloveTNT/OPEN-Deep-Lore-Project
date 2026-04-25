@@ -83,7 +83,7 @@ scripted_gui = {
     }
 
     ai_test_interval = 100
-    ai_test_variance = 0.5
+    ai_test_variance = 0.1
 
     ai_check = {
       has_country_flag = pro_showdown_phase_1_won
@@ -96,13 +96,13 @@ scripted_gui = {
     ai_weights = {
       region_1_click = {
         ai_will_do = {
-          factor = 0
+          factor = 500
           modifier = {
             AND = {
             has_country_flag = pro_showdown_phase_1_won
-            has_country_flag = region_1_undestroyed
+            has_country_flag = r1_destroyed
             }
-            add = 500
+            add = -500
           }
         }
       }
@@ -113,9 +113,13 @@ scripted_gui = {
           modifier = {
             AND = {
             has_country_flag = pro_showdown_phase_1_won
-            has_country_flag = region_2_undestroyed
+            has_country_flag = r1_destroyed
             }
-            add = 0
+            add = 500
+          }
+          modifier = {
+            has_country_flag = r2_destroyed
+            add = -500
           }
         }
       }
@@ -125,9 +129,13 @@ scripted_gui = {
           modifier = {
             AND = {
             has_country_flag = pro_showdown_phase_1_won
-            has_country_flag = region_3_undestroyed
+            has_country_flag = r2_destroyed
             }
             add = 500
+          }
+          modifier = {
+            has_country_flag = r3_destroyed
+            add = -500
           }
         }
       }
@@ -137,9 +145,13 @@ scripted_gui = {
           modifier = {
             AND = {
             has_country_flag = pro_showdown_phase_1_won
-            has_country_flag = region_4_undestroyed
+            has_country_flag = r3_destroyed
             }
             add = 500
+          }
+          modifier = {
+            has_country_flag = r4_destroyed
+            add = -500          
           }
         }
       }
@@ -149,10 +161,14 @@ scripted_gui = {
           modifier = {
             AND = {
             has_country_flag = pro_showdown_phase_1_won
-            has_country_flag = region_5_undestroyed
+            has_country_flag = r4_destroyed
             }
             add = 500
           }
+          modifier = {
+            has_country_flag = r5_destroyed
+            add = -500
+          }          
         }
       }
       region_6_click = {
@@ -161,10 +177,14 @@ scripted_gui = {
           modifier = {
             AND = {
             has_country_flag = pro_showdown_phase_1_won
-            has_country_flag = region_6_undestroyed
+            has_country_flag = r5_destroyed
             }
             add = 500
           }
+          modifier = {
+            has_country_flag = r6_destroyed
+            add = -500
+          }          
         }
       }
       region_7_click = {

@@ -93,6 +93,7 @@ puppetmaster = {
 					id = pro.43
 				}
 				clr_country_flag = region_1_undestroyed
+				set_country_flag = r1_destroyed	
 			}
 			CLS = {
 				clr_country_flag = region_1_undestroyed	
@@ -140,6 +141,7 @@ puppetmaster = {
 					id = pro.44
 				}
 				clr_country_flag = region_2_undestroyed
+				set_country_flag = r2_destroyed	
 			}
 			CLS = {
 				clr_country_flag = region_2_undestroyed	
@@ -187,6 +189,7 @@ puppetmaster = {
 					id = pro.45
 				}
 				clr_country_flag = region_3_undestroyed
+				set_country_flag = r3_destroyed	
 			}
 			CLS = {
 				clr_country_flag = region_3_undestroyed		
@@ -234,6 +237,7 @@ puppetmaster = {
 					id = pro.46
 				}
 				clr_country_flag = region_4_undestroyed
+				set_country_flag = r4_destroyed	
 			}
 			CLS = {
 				clr_country_flag = region_4_undestroyed	
@@ -281,6 +285,7 @@ puppetmaster = {
 					id = pro.47
 				}
 				clr_country_flag = region_5_undestroyed
+				set_country_flag = r5_destroyed	
 			}
 			CLS = {
 				clr_country_flag = region_5_undestroyed		
@@ -328,6 +333,7 @@ puppetmaster = {
 					id = pro.48
 				}
 				clr_country_flag = region_6_undestroyed
+				set_country_flag = r6_destroyed	
 			}
 			CLS = {
 				clr_country_flag = region_6_undestroyed			
@@ -375,6 +381,7 @@ puppetmaster = {
 					id = pro.49
 				}
 				clr_country_flag = region_7_undestroyed
+				set_country_flag = r7_destroyed	
 			}
 			CLS = {
 				clr_country_flag = region_7_undestroyed
@@ -423,6 +430,7 @@ puppetmaster = {
 				}
 			clr_country_flag = pro_showdown
 			clr_country_flag = PRO_showdown
+			clr_country_flag = pro_won_the_third_skirmish
 			set_country_flag = pro_wins_showdown
 			}
 			CHF = {
@@ -482,12 +490,15 @@ puppetmaster = {
 				}
 			clr_country_flag = pro_showdown
 			clr_country_flag = PRO_showdown
+			clr_country_flag = pro_won_the_third_skirmish
 			set_country_flag = pro_loses_showdown
+			mark_focus_tree_layout_dirty = yes
 			}
 			CHF = {
 				set_country_flag = chf_wins_showdown
 				clr_country_flag = chf_showdown
 				clr_country_flag = chf_showdown_phase_2	
+				mark_focus_tree_layout_dirty = yes
 				country_event = {
 					id = chf.15
 				}			

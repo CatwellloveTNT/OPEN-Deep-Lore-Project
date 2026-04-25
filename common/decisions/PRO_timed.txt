@@ -140,12 +140,15 @@ PRO_showdown = {
 				}
 			clr_country_flag = pro_showdown
 			clr_country_flag = PRO_showdown
+			clr_country_flag = pro_won_the_third_skirmish
 			set_country_flag = pro_loses_showdown
+			mark_focus_tree_layout_dirty = yes
 			}
 			CHF = {
 				set_country_flag = chf_wins_showdown
 				clr_country_flag = chf_showdown
 				clr_country_flag = chf_showdown_phase_2	
+			mark_focus_tree_layout_dirty = yes
 				country_event = {
 					id = chf.15
 				}			

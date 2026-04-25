@@ -72,4 +72,9 @@
  pfh_an_activist_in_every_street_tt:0 "We will coordinate with our supporters to hold protests and annoucements across Protea.\n\n§GA moderate portion of the population will begin to support the act.§W"
  the_final_skirmish_end_the_war_tt_pro:0 "§RTHIS IS IT, THE FINAL SKIRMISH. PUT THE STORY OF THE ISOLATIAN TRAGEDY AND IT'S AVENGERS INTO THE DIRT.§W"
  war_peace_effect_mission:0 "§RWIN THE WAR§W"
+ pro_more_attack_text:0 "£army_experience §Y10§!"
+ pro_needs_50_army_xp:0 "£army_experience §Y10§!"
+ pro_needs_50_army_xp_blocked:0 "£army_experience §R50§!"
+
+ 
 

@@ -1011,6 +1011,13 @@ country_event = {
 	option = { # protea wins the dead phase like true americans
 		name = pro.52.a
 		ai_chance = {factor = 100}		
+		if = {
+			limit = { is_ai = yes }
+			add_political_power = 1000
+		}
+		else = {
+			add_political_power = 250
+		}
 		custom_effect_tooltip = showdown_pro_phase_1_won
 		add_to_variable = {
 			global.num_of_strike_aircraft = 100 
@@ -1036,6 +1043,19 @@ country_event = {
 				}
 				country_event = { 
 					id = col.102
+				}
+			}
+			AVI = {
+				set_country_flag = avi_showdown
+				set_country_flag = region_1_undestroyed
+				set_country_flag = region_2_undestroyed
+				set_country_flag = region_3_undestroyed
+				set_country_flag = region_4_undestroyed
+				set_country_flag = region_5_undestroyed
+				set_country_flag = region_6_undestroyed
+				set_country_flag = region_7_undestroyed
+				country_event = {
+					id = avi.100
 				}
 			}
 		}
@@ -1315,7 +1335,6 @@ country_event = {
 	option = { # sss defeated event
 		name = pro.116.a
 		ai_chance = {factor = 100}
-		custom_effect_tooltip = pro_sss_tt
 	}
 }
 
@@ -1327,7 +1346,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # sss defeated event
+	option = { # tfi pulls out
 		name = pro.117.a
 		ai_chance = {factor = 100}
 		clr_country_flag = pro_tfi_support_authorized
@@ -1475,7 +1494,7 @@ country_event = {
 	}
 		option = { # hardline path
 		name = pro.1008.b
-		ai_chance = {factor = 100}
+		ai_chance = {factor = 0}
 		mark_focus_tree_layout_dirty = yes
 		set_country_flag = pro_picked_double_down
 		complete_national_focus = PRO_doubling_down
@@ -1935,5 +1954,44 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = pro.5100
+	title = pro.5100.t
+	desc = pro.5100.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # SO MANY PONIES HAVE DIED HAHAHAHA
+		name = pro.5100.a
+		ai_chance = {factor = 100}
+			country_event = {
+				id = pro.1012
+			}
+			clr_country_flag = won_the_second_skirmish_pro
+			set_country_flag = protean_system_minigame_start
+			set_country_flag = iatp_undefeated
+			set_country_flag = sss_unreformed
+			set_country_flag = pfh_unreformed	
+			set_country_flag = tfi_active
+			set_country_flag = valkyrie_free_protean_system
+			set_country_flag = phoenix_free_protean_system
+			set_country_flag = fleetfeather_free_protean_system
+			set_country_flag = supporter1_free_protean_system
+			set_country_flag = supporter2_free_protean_system			
+			set_country_flag = supporter3_free_protean_system
+			set_country_flag = supporter4_free_protean_system
+			set_country_flag = supporter5_free_protean_system
+			set_country_flag = supporter6_free_protean_system
+			set_country_flag = iatp_raid
+			set_country_flag = protean_system_nothing_selected
+			set_country_flag = scripted_loc_test_reform
+			clr_country_flag = scripted_loc_test_hardline
+			set_country_flag = pro_loses_showdown
+			mark_focus_tree_layout_dirty = yes				
+	}
+}
+
 
 

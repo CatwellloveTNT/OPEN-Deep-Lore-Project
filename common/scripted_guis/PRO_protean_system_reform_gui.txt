@@ -39,11 +39,65 @@ scripted_gui = {
         clr_country_flag = sss_selected
         clr_country_flag = protean_system_nothing_selected
       }
-
-
-
    }
 
+    ai_enabled = {
+      always = yes
+    }
+
+    ai_test_interval = 100
+    ai_test_variance = 0.1
+
+    ai_check = {
+      has_country_flag = protean_system_minigame_start
+    }
+
+    ai_check_scope = {
+      
+    }
+
+
+   ai_weights = {
+      iatp_click = {
+        ai_will_do = {
+          factor = 500
+          modifier = {
+            AND = {
+            has_country_flag = iatp_defeated
+            }
+            add = -500
+          }
+        }
+      }
+
+      sss_click = {
+        ai_will_do = {
+          factor = 500
+          modifier = {
+            AND = {
+            has_country_flag = sss_reformed
+            }
+            add = -600
+          }
+        }
+      }
+      pfh_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }
+      tfi_click = {
+        ai_will_do = {
+          factor = 500
+          modifier = {
+            NOT = {
+              has_country_flag = tfi_active
+            }
+            add = -500
+          }
+        }
+      }    
+    }
 
 
   }

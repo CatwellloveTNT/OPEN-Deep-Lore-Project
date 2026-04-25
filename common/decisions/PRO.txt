@@ -161,14 +161,17 @@ PRO_the_second_protean_chaffian_skirmish = {
 		fire_only_once = yes
 
 		available = {
-
+			has_army_experience > 50
 		}
 
 		visible = {
 			has_country_flag = pro_army_decisions_unlocked
 		}
 
-		cost = 50
+		custom_cost_trigger = {
+			has_army_experience > 50
+		}
+		custom_cost_text = pro_needs_50_army_xp
 
 		days_re_enable = 20
 
@@ -182,6 +185,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 		complete_effect = {
 			add_to_variable = {  protea_armed_forces_of_protea_aaf = 0.05  }
+			army_experience = -50			
 			custom_effect_tooltip = pro_upgrade_aaf_1
 				
 			
@@ -210,14 +214,17 @@ PRO_the_second_protean_chaffian_skirmish = {
 		fire_only_once = yes
 
 		available = {
-
+			has_army_experience > 50
 		}
 
 		visible = {
 			has_country_flag = pro_army_decisions_unlocked
 		}
 
-		cost = 50
+		custom_cost_trigger = {
+			has_army_experience > 50
+		}
+		custom_cost_text = pro_needs_50_army_xp
 
 		days_re_enable = 20
 
@@ -231,6 +238,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 		complete_effect = {
 			add_to_variable = {  protea_armed_forces_of_protea_adf = 0.05  }
+			army_experience = -50			
 			custom_effect_tooltip = pro_upgrade_adf_1
 				
 			
@@ -259,14 +267,17 @@ PRO_the_second_protean_chaffian_skirmish = {
 		fire_only_once = yes
 
 		available = {
-
+			has_army_experience > 50
 		}
 
 		visible = {
 			has_country_flag = pro_army_decisions_unlocked
 		}
 
-		cost = 50
+		custom_cost_trigger = {
+			has_army_experience > 50
+		}
+		custom_cost_text = pro_needs_50_army_xp
 
 		days_re_enable = 20
 
@@ -280,6 +291,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 		complete_effect = {
 			add_to_variable = {  protea_armed_forces_of_protea_aof = 0.05  }
+			army_experience = -50			
 			custom_effect_tooltip = pro_upgrade_aof_1
 				
 			
@@ -308,14 +320,17 @@ PRO_the_second_protean_chaffian_skirmish = {
 		fire_only_once = yes
 
 		available = {
-
+			has_army_experience > 50
 		}
 
 		visible = {
 			has_country_flag = pro_army_decisions_unlocked
 		}
 
-		cost = 50
+		custom_cost_trigger = {
+			has_army_experience > 50
+		}
+		custom_cost_text = pro_needs_50_army_xp
 
 		days_re_enable = 20
 
@@ -329,8 +344,9 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 		complete_effect = {
 			add_to_variable = {  protea_armed_forces_of_protea_mpf = 0.10  }
+			army_experience = -50
 			custom_effect_tooltip = pro_upgrade_mpf_1
-				
+
 			
 		}
 
@@ -589,7 +605,7 @@ PRO_the_third_skirmish = {
 			factor = 0.1
 			modifier = {
 				has_war = yes
-				factor = 5001
+				add = 5001
 			}
 
 		}		
@@ -727,7 +743,7 @@ PRO_the_third_skirmish = {
 			factor = 0.1
 			modifier = {
 				has_war = yes
-				factor = 5001
+				add = 5001
 			}
 
 		}		
@@ -786,10 +802,10 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 150
+			factor = 0
 			modifier = {
 				has_country_flag = pro_showdown_phase_1_won
-				factor = 500
+				factor = 0
 			}
 		}		
 
@@ -1786,7 +1802,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -1848,7 +1864,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -1962,7 +1978,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -2024,7 +2040,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -2086,7 +2102,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -2148,7 +2164,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 750
+			factor = 7500
 		}		
 
 	}
@@ -2388,7 +2404,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -2638,7 +2654,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -2700,7 +2716,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -2814,7 +2830,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -2876,7 +2892,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -2938,7 +2954,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -3000,7 +3016,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 750
+			factor = 7500
 		}		
 
 	}
@@ -3064,7 +3080,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -3126,7 +3142,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -3240,7 +3256,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -3302,7 +3318,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -3364,7 +3380,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -3426,7 +3442,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 750
+			factor = 7500
 		}		
 
 	}
@@ -3490,7 +3506,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -3552,7 +3568,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}	
 
 	}
@@ -3666,7 +3682,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -3728,7 +3744,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -3790,7 +3806,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -3852,7 +3868,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 750
+			factor = 7500
 		}		
 
 	}
@@ -3916,7 +3932,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -3978,7 +3994,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -4091,7 +4107,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -4153,7 +4169,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -4215,7 +4231,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 500
+			factor = 5000
 		}		
 
 	}
@@ -4277,7 +4293,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 750
+			factor = 7500
 		}		
 
 	}
@@ -4516,7 +4532,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 300
+			factor = 3000
 		}		
 
 	}
@@ -5708,6 +5724,12 @@ PRO_the_protean_system = {
 
 		ai_will_do = {
 			factor = 300
+			modifier = {
+				check_variable = {
+					population_that_supports_reform > 70
+				}
+				add = -300
+			}
 		}		
 
 	}
@@ -5769,6 +5791,12 @@ PRO_the_protean_system = {
 
 		ai_will_do = {
 			factor = 300
+			modifier = {
+				check_variable = {
+					population_that_supports_reform > 70
+				}
+				add = -300
+			}
 		}		
 
 	}
@@ -5836,6 +5864,12 @@ PRO_the_protean_system = {
 
 		ai_will_do = {
 			factor = 300
+			modifier = {
+				check_variable = {
+					population_that_supports_reform > 70
+				}
+				add = -300
+			}
 		}		
 
 	}
