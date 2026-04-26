@@ -424,6 +424,9 @@ puppetmaster = {
 		}
 
 		complete_effect = {
+			news_event = {
+				id = news.8
+			}
 			PRO = {
 				country_event = {
 					id = pro.50
@@ -484,6 +487,9 @@ puppetmaster = {
 		}
 
 		complete_effect = {
+			news_event = {
+				id = news.7
+			}			
 			PRO = {
 				country_event = {
 					id = pro.53

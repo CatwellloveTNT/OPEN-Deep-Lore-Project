@@ -42,7 +42,11 @@ PRO_the_second_protean_chaffian_skirmish = {
 					id = chf.5
 				}
 			}
-			
+				hidden_effect = {
+				news_event = {
+					id = news.14
+				}
+			}
 		}
 
 		timeout_effect = {
@@ -63,6 +67,13 @@ PRO_the_second_protean_chaffian_skirmish = {
 				}
 			}
 			white_peace = CHF
+
+			hidden_effect = {
+				news_event = {
+					id = news.15
+				}
+			}
+
 		}
 
 		}
@@ -99,6 +110,10 @@ PRO_the_third_skirmish = {
 
 		complete_effect = {
 			PRO_wins_the_third_skirmish_peace = yes
+		}
+
+		timeout_effect = {
+			pro_loses_the_third_skirmish = yes
 		}
 
 	}
@@ -152,7 +167,11 @@ PRO_showdown = {
 				country_event = {
 					id = chf.15
 				}			
-			}			
+			}	
+			news_event = {
+				id = news.7
+			}
+			
 		}
 
 	}

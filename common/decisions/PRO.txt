@@ -4773,6 +4773,11 @@ PRO_the_protean_system = {
 			clr_country_flag = pro_sss_active
 			clr_country_flag = sss_unreformed
 			set_country_flag = sss_reformed
+			hidden_effect = {
+				news_event = {
+					id = news.10
+				}
+			}
 		}
 
 		ai_will_do = {

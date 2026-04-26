@@ -95,6 +95,13 @@ country_event = {
 			threat = 4
 			name = "The Second Skirmish"
 		}
+
+			hidden_effect = {
+				news_event = {
+					id = news.13
+				}
+			}
+
 	}
 }
 country_event = {
@@ -227,6 +234,11 @@ country_event = {
 		FLA = {
 			set_country_flag = the_third_skirmish
 		}
+				hidden_effect = {
+				news_event = {
+					id = news.16
+				}
+			}
 	}
 }
 country_event = {
@@ -1325,6 +1337,26 @@ country_event = {
 }
 
 country_event = {
+	id = pro.114
+	title = pro.114.t
+	desc = pro.114.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # valkyrie escaping to cls event
+		name = pro.114.a
+		ai_chance = {factor = 100}
+		add_to_variable = {
+			number_of_leads_captured = 1
+		}
+		country_event = {
+			id = pro.119
+		}
+	}
+}
+
+country_event = {
 	id = pro.116
 	title = pro.116.t
 	desc = pro.116.d
@@ -1367,6 +1399,27 @@ country_event = {
 		ai_chance = {factor = 100}
 	}
 }
+
+country_event = {
+	id = pro.119
+	title = pro.119.t
+	desc = pro.119.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { 
+		name = pro.119.a
+		ai_chance = {factor = 100}
+		set_country_flag = pro_failed_to_reform
+		hidden_effect = {
+			news_event = {
+				id = news.12
+			}
+		}
+	}
+}
+
 
 country_event = {
 	id = pro.1180
