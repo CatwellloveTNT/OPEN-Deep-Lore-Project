@@ -1,0 +1,34 @@
+territorial_defense_goons_PRO = { #these guys are bottom of the barrel units, ai will only shit these out when desperate
+
+	available_for = {
+		PRO
+	}
+	
+	role = garrison
+	
+	upgrade_prio = {
+		base = 2
+	}
+
+	tdu_pro_1 = {
+		division_names_group = GER_Arm_01
+		reinforce_prio = 0
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+			}
+			
+			regiments = { #this gives a malformed token error
+				infantry = 6
+			}	
+		}
+	}
+}

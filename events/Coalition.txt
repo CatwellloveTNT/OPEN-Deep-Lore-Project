@@ -20,7 +20,7 @@ country_event = {
 		custom_effect_tooltip = metaltip
 				hidden_effect = {
 			CLS = {
-				scoped_play_song = "ditw"
+				scoped_play_song = "ifrit"
 			}
 	}
 	}

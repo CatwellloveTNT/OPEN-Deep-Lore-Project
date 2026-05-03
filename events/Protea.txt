@@ -1198,6 +1198,9 @@ country_event = {
 		name = pro.101.a
 		ai_chance = {factor = 100}
 		showdown_ongoing_effects = yes
+			news_event = {
+				id = news.11
+			}		
 	}
 }
 country_event = {

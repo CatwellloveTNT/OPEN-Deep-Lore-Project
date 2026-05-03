@@ -16,6 +16,7 @@ is_avian_majority_country = {
 	}
 }
 
+
 operation_enlightenment_successful = { #this is crazy jank, but it works. pretty much this is the trigger that checks if the titan walls hit ATLEAST 1% surrender progress to remove the aviceyn spirit "the dark continent"
 	custom_trigger_tooltip = {
 		tooltip = state_is_in_the_mediterranean_sea_tt

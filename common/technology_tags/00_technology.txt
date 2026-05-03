@@ -2,6 +2,8 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	manpads_tech
+	atgms_tech
 	light_air
 	medium_air
 	heavy_air
@@ -140,6 +142,83 @@ technology_categories = {
 }
 
 technology_folders = {
+#	helicopters_folder = {
+#		ledger = army
+#	}
+#	human_biology_research = {
+#		ledger = civilian
+#		available = {
+#			has_idea = human_majority_population
+#		}
+#	}
+#	pony_biology_research = {
+##		ledger = civilian
+#		available = {
+#			has_idea = pony_majority_population
+#		}
+#	}
+#	avian_biology_research = {
+#		ledger = civilian
+#		available = {
+#			has_idea = avian_majority_population
+#		}
+#	}			
+
+
+
+
+
+# ------------------- OPEN FOLDERS ---------------------------------	
+
+	helicopter_folder = {
+		ledger = army
+	}
+
+	human_genetics_folder = {
+		ledger = civilian
+		available = {
+#		has_idea = human_majority_population
+		}
+
+	}	
+
+	pony_genetics_folder = {
+		ledger = civilian
+		available = {
+#		has_idea = pony_majority_population
+		}		
+	}	
+
+
+	avian_genetics_folder = {
+		ledger = civilian
+		available = {
+#		has_idea = avian_majority_population
+		}		
+	}	
+
+	sukankuworks_folder = {
+		ledger = civilian
+		available = {
+	#		original_tag = CLS
+		}
+	}	
+	
+	skieslabs_folder = {
+		ledger = civilian
+		available = {
+	#		original_tag = ARC
+		}
+	}
+	
+	tmrsrd_folder = { #their magesty's royal special research division
+		ledger = civilian
+		available = {
+#			original_tag = AVI
+		}
+	}	
+
+
 	infantry_folder = {
 		ledger = army
 	}
@@ -149,9 +228,9 @@ technology_folders = {
 	armour_folder = {
 		ledger = army
 		available = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
+	#		NOT = {
+	#			has_dlc = "No Step Back"
+	#		}
 		}
 	}
 	nsb_armour_folder = {
@@ -219,6 +298,9 @@ technology_folders = {
 	electronics_folder = {
 		ledger = civilian
 	}
+
+
+
 }
 
  

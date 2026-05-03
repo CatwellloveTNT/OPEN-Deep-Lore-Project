@@ -13,6 +13,20 @@ state_groups = {
 
     }
 
+    contienntal_cls = { #unfinished
+     994
+     995
+     857
+     858
+     856
+     855
+     854
+     853
+     852
+
+    }
+
+
 }
 
 

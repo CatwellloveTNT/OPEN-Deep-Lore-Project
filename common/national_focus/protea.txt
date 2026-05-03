@@ -4235,10 +4235,6 @@
 				}
 			}
 
-			news_event = {
-				id = news.11
-			}
-
 		}
 
 		ai_will_do = {

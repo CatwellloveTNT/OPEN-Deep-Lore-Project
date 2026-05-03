@@ -1,5 +1,25 @@
 spriteTypes = {
 
+
+
+
+
+
+ # --------------------------- OPEN CUSTOM GFX ----------------------------
+
+	SpriteType = {
+		name = "GFX_atgms_medium"
+		texturefile = "gfx/interface/technologies/infantry2.dds"
+	}	
+
+
+	SpriteType = {
+		name = "GFX_manpads_medium"
+		texturefile = "gfx/interface/technologies/infantry2.dds"
+	}	
+
+
+
 	### generic equipment archetypes ###
 
 	SpriteType = {

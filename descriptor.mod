@@ -38,7 +38,13 @@ replace_path="common/scripted_triggers"
 replace_path="common/scripted_localisation"
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
+replace_path="common/ai_templates"
 replace_path="common/ideas"
+replace_path="common/technologies"
+replace_path="common/scripted_effects"
+replace_path="common/scripted_localisation"
+replace_path="common/scripted_triggers"
+
 
 
 

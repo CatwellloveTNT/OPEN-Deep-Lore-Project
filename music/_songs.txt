@@ -369,3 +369,41 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "ifrit"
+	chance = {
+		modifier = {
+			tag = CLS
+			has_war = yes
+			factor = 0.4
+		}		
+		modifier = {
+			has_war_with = AVI
+			is_in_faction_with = CLS
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "vortex"
+	chance = {
+		modifier = {
+			is_in_faction_with = CLS
+			has_war = yes
+			factor = 0.4
+		}		
+	}
+}
+
+music = {
+	song = "revoker" #idk if its possible, but i want this song to dynamically play if an enemy nation makes landfall on the coalition states
+	chance = {
+		modifier = {
+			tag = CLS
+			surrender_progress > 1
+			has_war = yes
+			factor = 1
+		}		
+	}
+}
