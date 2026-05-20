@@ -1,0 +1,922 @@
+technologies = {
+
+	coalition_op_techs_please_read = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = directed_energy_weapons
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = super_duper_thrust_vectoring
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = anti_aviceyn_department
+			research_cost_coeff = 1
+		}			
+		
+		
+	
+		
+
+		research_cost = 0.1
+		start_year = 2032
+		folder = {
+			name = sukankuworks_folder
+			position = { x = -1 y = 11 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}
+
+	directed_energy_weapons = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = dewsif_concept
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2032
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 1 y = 11 }
+		}
+
+		category_dewsif_infantry = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}
+
+
+	dewsif_concept = { 
+
+		enable_equipments = {
+			dewsif_equipment_1
+		}
+
+		enable_subunits = {
+			dewsif_infantry
+		}
+
+		path = {
+			leads_to_tech = optimized_cooling_design
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2034
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 3 y = 11 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2034.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2034.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2035.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+
+	optimized_cooling_design = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = improved_energy_concentration
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 5 y = 11 }
+		}
+
+		category_dewsif_infantry = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2036.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2036.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2037.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+
+	improved_energy_concentration = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = dewsif_concept_2
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2038
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 7 y = 11 }
+		}
+
+		category_dewsif_infantry = {
+			soft_attack = 0.05
+			defense = 0.05
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}		
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2037.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2037.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2037.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+
+	dewsif_concept_2 = { 
+
+		enable_equipments = {
+			dewsif_equipment_2
+		}
+
+		path = {
+			leads_to_tech = advanced_recharging_methods
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 9 y = 11 }
+		}	
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2039.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2039.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2039.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}		
+
+	advanced_recharging_methods = { 
+
+		enable_equipments = {
+
+		}
+
+	
+		
+
+		research_cost = 1
+		start_year = 2041
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 11 y = 11 }
+		}
+
+		category_dewsif_infantry = {
+			soft_attack = 0.05
+			defense = 0.05
+			ap_attack = 0.20
+			hard_attack = 0.15			
+		}		
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2041.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2041.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2042.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+	}			
+
+	super_duper_thrust_vectoring = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = improved_tvc_engines
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2032
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 1 y = 17 }
+		}
+
+		category_fighter = {
+		air_agility = 0.05				
+		}
+
+		category_heavy_fighter = {
+		air_agility = 0.05				
+		}		
+	
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+
+	improved_tvc_engines = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = optimized_energy_conservation_designs
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2034
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 3 y = 17 }
+		}
+
+		category_fighter = {
+		air_agility = 0.1	
+		air_attack = 0.1
+
+		}
+
+		category_heavy_fighter = {
+		air_agility = 0.1	
+		air_attack = 0.1						
+		}
+
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2034.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2034.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2035.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+	
+	optimized_energy_conservation_designs = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = high_g_resistant_materials
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 5 y = 17 }
+		}
+
+		category_fighter = {
+		air_agility = 0.1
+		}		
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2034.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2034.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2035.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}			
+
+	high_g_resistant_materials = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = queen_jep
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = king_jep
+			research_cost_coeff = 1
+		}		
+	
+		
+
+		research_cost = 1
+		start_year = 2038
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 7 y = 17 }
+		}
+
+		category_fighter = {
+		air_attack = 0.05
+
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2038.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2038.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2038.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}		
+	
+	queen_jep = { 
+
+		enable_equipments = {
+			queen_jep_equipment
+		}
+
+		
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 10 y = 15 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2041.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}			
+
+	king_jep = { 
+
+		enable_equipments = {
+			king_jep_equipment
+		}
+
+		
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 10 y = 19 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2041.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+	
+	anti_aviceyn_department = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = shield_cracking_lasers
+			research_cost_coeff = 1
+		}
+
+	
+	
+		
+
+		research_cost = 1
+		start_year = 2032
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 1 y = 5 }
+		}
+
+
+		on_research_complete = {
+			add_ideas = anti_aviceyn_department_idea
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}			
+
+	shield_cracking_lasers = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = higher_intensity_lasers
+			research_cost_coeff = 1
+		}
+
+	
+	
+		
+
+		research_cost = 1
+		start_year = 2034
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 3 y = 5 }
+		}
+
+		category_front_line = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2034.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2034.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2035.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}			
+
+	higher_intensity_lasers = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = melt_em_to_goop
+			research_cost_coeff = 1
+		}
+
+	
+	
+		
+
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 5 y = 5 }
+		}
+
+		category_front_line = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2036.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2036.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2037.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+	}	
+
+	melt_em_to_goop = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = rechargeable_batteries
+			research_cost_coeff = 1
+		}
+
+	
+	
+		
+
+		research_cost = 1
+		start_year = 2038
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 7 y = 5 }
+		}
+
+		category_front_line = {
+			soft_attack = 0.05
+			hard_attack = 0.10
+			ap_attack = 0.05
+			air_attack = 0.1
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2038.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2038.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2039.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+
+	rechargeable_batteries = { 
+
+		enable_equipments = {
+
+		}
+
+
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = sukankuworks_folder
+			position = { x = 9 y = 5 }
+		}
+
+		category_front_line = {
+			soft_attack = 0.10
+			hard_attack = 0.15
+			ap_attack = 0.1
+			air_attack = 0.1
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2039.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2039.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			sukankuworks_tech
+		}
+
+
+	}	
+
+
+}

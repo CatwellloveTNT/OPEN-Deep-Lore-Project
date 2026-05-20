@@ -31,7 +31,7 @@ country_event = {
 		hidden_effect = {
 			CLS = {
 				country_event = {
-					id = col.27
+					id = col.2700
 				}
 			}
 		}

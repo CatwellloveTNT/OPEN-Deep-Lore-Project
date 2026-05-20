@@ -2,8 +2,23 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	vertical_lift_assault_platform_tech	
+	electronic_warfare
+	air_detection_tech
 	manpads_tech
+	sidewinders_tech
+	amraams_tech
 	atgms_tech
+	open_helicopter_tech
+	attack_helicopter_tech
+	pony_genetics_tech	
+	human_genetics_tech	
+	avian_genetics_tech	
+	skieslabs_tech	
+	sukankuworks_tech
+	tmrsrd_tech				
+# EVERYTHING BELOW IS VANILLA SHIT
+
 	light_air
 	medium_air
 	heavy_air
@@ -228,7 +243,7 @@ technology_folders = {
 	armour_folder = {
 		ledger = army
 		available = {
-	#		NOT = {
+	#		NOT = { REMOVE THIS NOT WHEN YOU ARE DONE WITH THE NON DLC TECH TREE
 	#			has_dlc = "No Step Back"
 	#		}
 		}
@@ -243,7 +258,7 @@ technology_folders = {
 		ledger = army
 	}
 	air_techs_folder = {
-		available = { NOT = { has_dlc = "By Blood Alone" } }
+	#	available = { NOT = { has_dlc = "By Blood Alone" } }  REMOVE THIS NOT WHEN YOU ARE DONE WITH THE NON DLC TECH TREE
 		ledger = air
 	}
 	bba_air_techs_folder = {

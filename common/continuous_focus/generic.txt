@@ -4,10 +4,38 @@ continuous_focus_palette = {
 	country = {
 		factor = 0
 	}
-	
-	default = no
+
+
+
+
+
+	default = yes
 	reset_on_civilwar = no
 			
 	position = { x = 50 y = 1000 }
+
+	focus = {
+		id = continuous_reduce_training_time
+		
+		icon = GFX_goal_continuous_reduce_training_time
+		
+		available = {
+		}
+		
+		modifier = {
+			training_time_army_factor = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		supports_ai_strategy = ai_focus_defense
+		
+		daily_cost = 0
+		
+		available_if_capitulated = yes
+	}
+
 
 }

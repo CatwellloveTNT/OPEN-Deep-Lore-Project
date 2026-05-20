@@ -119,6 +119,39 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
+
+		anti_aviceyn_department_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CLS
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = AVI
+				attack_bonus_against = 0.1
+			}
+
+		}
+
+
+
+
 	}
 
 

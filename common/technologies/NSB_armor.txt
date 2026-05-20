@@ -22,9 +22,9 @@ technologies = {
 		show_equipment_icon = yes
 
 		enable_equipments = {
-
-			mbt_chassis_0
-			medium_tank_artillery_chassis_1
+			modern_tank_chassis_1
+			modern_tank_artillery_chassis_1
+#			mbt_artillery_equipment_1 this is a stopgap measure if i cant solve this issue
 		}
 		enable_equipment_modules = {
 			tank_torsion_bar_suspension
@@ -57,15 +57,9 @@ technologies = {
 			expanded_fuel_tank
 		}
 		enable_subunits = {
-		#	light_armor
-			medium_armor
-		#	heavy_armor
+			modern_armor
 		}
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
+
 		on_research_complete = {
 			hidden_effect = {
 				if = {
@@ -94,8 +88,9 @@ technologies = {
 		}
 
 
+
 		research_cost = 2
-		start_year = 1918
+		start_year = 2025
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 0 }
@@ -111,17 +106,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > 1937.1.1
+				date > 2032.1.1
 			}
 
 			modifier = {
 				factor = 1.2
-				date > 1938.1.1
+				date > 2033.1.1
 			}
 
 			modifier = {
 				factor = 1.2
-				date > 1939.1.1
+				date > 2034.1.1
 			}
 		}
 
@@ -137,54 +132,26 @@ technologies = {
 	basic_light_tank_chassis = { #Panzer I
 
 		enable_equipments = {
-			ifv_chassis_0
-			light_tank_aa_chassis_1
+			ifv_equipment_1
 		}
 		enable_subunits = {
-			light_armor
+			open_ifv_unit
 		}
 
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-			#			has_tech = motorised_infantry
-					}
 
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-			#			NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-
-				if = { #Italian templates
-					limit = {
-						original_tag = ITA
-						has_completed_focus = ITA_italian_tankettes
-					}
-					ITA_add_improved_light_tank_templates = yes
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
 
 		path = {
 			leads_to_tech = improved_light_tank_chassis
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = ifv_aa_1
+			research_cost_coeff = 1
+		}		
+
 		research_cost = 2
-		start_year = 1934
+		start_year = 2025
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -2 y = @1918 }
@@ -193,6 +160,13 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}
+
+
 			modifier = {
 				factor = 2
 				is_major = yes
@@ -200,17 +174,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > 1937.1.1
+				date > 2032.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1938.1.1
+				date > 2033.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1939.1.1
+				date > 2034.1.1
 			}
 		}
 
@@ -223,11 +197,69 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+	ifv_aa_1 = { #Panzer I
+
+		enable_equipments = {
+			ifv_aa_equipment_1
+		}
+		enable_subunits = {
+			open_ifv_aa_unit
+			open_ifv_aa_unit_support
+		}
+	
+
+
+		research_cost = 2
+		start_year = 2030
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2032.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2033.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2034.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+
+
 	improved_light_tank_chassis = { #Panzer II
 
 		enable_equipments = {
-			ifv_chassis_1
-			light_tank_aa_chassis_2
+			ifv_equipment_2
 		}
 
 		path = {
@@ -235,9 +267,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = ifv_aa_2
+			research_cost_coeff = 1
+		}			
+
 
 		research_cost = 2
-		start_year = 2033
+		start_year = 2032
 
 		folder = {
 			name = nsb_armour_folder
@@ -247,87 +284,30 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}
+
 			modifier = {
 				factor = 2
 				is_major = yes
-				NOT = {
-					AND = {
-						tag = JAP
-						num_of_military_factories < 50
-					}
-				}
-			}
-			modifier = {
-				is_major = yes
-				not = { tag = JAP }
-				has_war = yes
-				factor = 10 #you are embarassing yourself
-			}
-			modifier = {
-				tag = SOV
-				factor = 3
-			}
-			modifier = {
-				factor = 8
-				# Matilda II was designed and entered production in 1937
-				tag = ENG
-				date > 1936.9.1
-			}
-			modifier = {
-				factor = 8
-				# M3 Stuart entered production in 1941
-				tag = USA
-				date > 1940.9.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1937.1.1
+				date > 2032.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1938.1.1
+				date > 2033.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1939.1.1
-			}
-		}
-
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_italian_tankettes
-				}
-				ITA_add_improved_light_tank_templates = yes
-			}
-			IF = { #Hungarian templates
-				limit = {
-					original_tag = HUN
-					has_completed_focus = wuw_HUN_the_toldi
-				}
-				#38M Toldi
-				create_equipment_variant = {
-					name = "38M Toldi"
-					type = light_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_small_cannon_2
-						turret_type_slot = tank_light_fixed_superstructure_turret
-						suspension_type_slot = tank_torsion_bar_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_2 = tank_radio_1
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 3
-						tank_nsb_armor_upgrade = 2
-					}
-					#icon = "GFX_ITA_improved_light_tank_medium"
-				}
+				date > 2034.1.1
 			}
 		}
 
@@ -339,6 +319,62 @@ technologies = {
 		}
 		special_project_specialization = { specialization_land }
 	}
+
+	ifv_aa_2 = { #Panzer I
+
+		enable_equipments = {
+			ifv_aa_equipment_2
+		}
+
+
+		research_cost = 2
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 6 }
+		}
+
+		
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2035.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2036.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2037.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+
 
 
 	advanced_light_tank_chassis = { #Leopard
@@ -350,12 +386,16 @@ technologies = {
 
 
 		enable_equipments = {
-			ifv_chassis_2
-			light_tank_aa_chassis_3
+			ifv_equipment_3
 		}
 
+		path = {
+			leads_to_tech = ifv_aa_3
+			research_cost_coeff = 1
+		}		
+
 		research_cost = 2
-		start_year = 1941
+		start_year = 2037
 
 		folder = {
 			name = nsb_armour_folder
@@ -368,26 +408,81 @@ technologies = {
 				is_major = no
 				factor = 2  # Minors prefer light tanks
 			}
+
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}			
+
 			modifier = {
-				factor = 8
-				# M24 Chaffee was designed and entered production in 1943
-				tag = USA
-				date > 1943.3.1
+				factor = 1.1
+				date > 2037.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1942.1.1
+				date > 2038.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1943.1.1
+				date > 2039.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}	
+
+	ifv_aa_3 = { #Panzer I
+
+		enable_equipments = {
+			ifv_aa_equipment_3
+		}
+
+
+		research_cost = 2
+		start_year = 2039
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 10 }
+		}
+
+		
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}			
+
+			modifier = {
+				factor = 1.1
+				date > 2039.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1944.1.1
+				date > 2040.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2041.1.1
 			}
 		}
 
@@ -403,12 +498,16 @@ technologies = {
 	advanced_light_tank_chassis_2 = { 
 
 		enable_equipments = {
-			ifv_chassis_3
-			light_tank_aa_chassis_3
+			ifv_equipment_4
 		}
 
+		path = {
+			leads_to_tech = ifv_aa_4
+			research_cost_coeff = 1
+		}		
+
 		research_cost = 2
-		start_year = 1945
+		start_year = 2040
 
 		folder = {
 			name = nsb_armour_folder
@@ -421,26 +520,26 @@ technologies = {
 				is_major = no
 				factor = 2  # Minors prefer light tanks
 			}
+
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}			
+
 			modifier = {
-				factor = 8
-				# M24 Chaffee was designed and entered production in 1943
-				tag = USA
-				date > 1943.3.1
+				factor = 1.1
+				date > 2040.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1942.1.1
+				date > 2041.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1943.1.1
-			}
-
-			modifier = {
-				factor = 1.1
-				date > 1944.1.1
+				date > 2042.1.1
 			}
 		}
 
@@ -453,23 +552,71 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+	ifv_aa_4 = { #Panzer I
+
+		enable_equipments = {
+			ifv_aa_equipment_4
+		}
+
+
+		research_cost = 2
+		start_year = 2042
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 14 }
+		}
+
+		
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = { #brokies should go for apcs instead
+				is_major = no
+				num_of_military_factories < 25		
+				factor = -5
+			}			
+
+			modifier = {
+				factor = 1.1
+				date > 2042.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2043.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2044.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}	
+
 
 	basic_medium_tank_chassis = { #Panzer III
 
 		enable_equipments = {
-			mbt_chassis_1
-			medium_tank_artillery_chassis_2
+			modern_tank_chassis_2
+			modern_tank_artillery_chassis_2
 		}
 
-		enable_subunits = {
-			medium_armor
-		}
 
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
+
 		on_research_complete = {
 			hidden_effect = {
 				if = {
@@ -488,7 +635,6 @@ technologies = {
 				}
 			}
 
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -497,7 +643,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1938
+		start_year = 2033
 
 		folder = {
 			name = nsb_armour_folder
@@ -509,71 +655,30 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > 1939.1.1
+				date > 2033.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1940.1.1
+				date > 2034.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1941.1.1
+				date > 2035.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1942.1.1
+				date > 2036.1.1
 			}
 
 			modifier = {
 				factor = 3
 				is_major = yes
-				NOT = {
-					AND = {
-						tag = JAP
-						num_of_military_factories < 50
-					}
-				}
-				date > 1938.1.1
+				date > 2033.1.1
 			}
 
-			modifier = {
-				factor = 1.5
-				tag = SOV
-			}
-
-			modifier = {
-				factor = 4
-				# M3 Lee was designed and entered production in 1940-1941
-				tag = USA
-				date > 1940.3.1
-			}
-
-			modifier = {
-				factor = 15.0
-				tag = GER
-				has_completed_focus = GER_advanced_panzer_research
-				has_tech_bonus = {
-				    category = cat_medium_armor
-				}
-			}
-
-			modifier = { #Use the research bonus from the focus!
-				factor = 0.5
-				tag = GER
-				NOT = {
-					has_completed_focus = GER_advanced_panzer_research
-				}
-			}
-
-			modifier = {
-				factor = 6
-				# Crusader was designed and entered production in 1939
-				tag = ENG
-				date > 1938.11.1
-			}
 		}
 
 		categories = {
@@ -589,7 +694,8 @@ technologies = {
 	improved_medium_tank_chassis = { #Panzer IV
 
 		enable_equipments = {
-			mbt_chassis_2
+			modern_tank_chassis_3
+			modern_tank_artillery_chassis_3		
 		}
 
 		path = {
@@ -598,77 +704,13 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 2036
 
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1940 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
-				}
-				ITA_add_improved_medium_tank_templates = yes
-			}
-			IF = { #Hungarian templates
-				limit = {
-					original_tag = HUN
-					has_completed_focus = wuw_HUN_the_turan
-				}
-				#40M Turán
-				create_equipment_variant = {
-					name = "40M Turán"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon_2
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = additional_machine_guns
-						special_type_slot_2 = additional_machine_guns
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 3
-						tank_nsb_armor_upgrade = 3
-					}
-					#icon = "GFX_ITA_basic_medium_tank_medium"
-				}
-			}
-			IF = { #Hungarian templates
-				limit = {
-					original_tag = HUN
-					has_completed_focus = wuw_HUN_assault_gun_focus
-				}
-				# 40M Nimród
-				create_equipment_variant = {
-					name = "40M Nimród"
-					type = medium_tank_aa_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_anti_air_cannon_2
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_torsion_bar_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = auto_loader
-						special_type_slot_2 = secondary_turret_small_cannon
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 2
-					}
-					#icon = "GFX_ITA_advanced_medium_spaa_medium"
-				}
-			}
-		}
 
 		ai_will_do = {
 			factor = 2
@@ -676,57 +718,26 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				NOT = {
-					AND = {
-						tag = JAP
-						num_of_military_factories < 50
-					}
-				}
-			}
-
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-
-			modifier = {
-				factor = 3
-				tag = SOV
-				date > 1940.3.1
-			}
-
-			modifier = {
-				factor = 6
-				# M4 Sherman was entered production in late 1941
-				tag = USA
-				date > 1941.6.1
-			}
-
-			modifier = {
-				factor = 6
-				# Cromwell was designed and entered production in 1942-1944
-				tag = ENG
-				date > 1942.9.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1941.1.1
+				date > 2036.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1942.1.1
+				date > 2037.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1943.1.1
+				date > 2038.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1944.1.1
+				date > 2040.1.1
 			}
 		}
 
@@ -742,8 +753,8 @@ technologies = {
 	advanced_medium_tank_chassis = { #Panther
 
 		enable_equipments = {
-			mbt_chassis_3
-			medium_tank_artillery_chassis_3
+			modern_tank_chassis_4
+			modern_tank_artillery_chassis_4
 		}
 
 		path = {
@@ -752,106 +763,32 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 2039
 
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1943 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_medium_tank_templates = yes
-			}
-			IF = { #Hungarian templates
-				limit = {
-					original_tag = HUN
-					has_completed_focus = wuw_HUN_the_turan
-				}
-				#43M Turán III
-				create_equipment_variant = {
-					name = "43M Turán III"
-					type = medium_tank_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon_2
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = secondary_turret_hmg
-						special_type_slot_2 = additional_machine_guns
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 3
-						tank_nsb_armor_upgrade = 7
-					}
-					#icon = "GFX_ITA_basic_medium_tank_medium"
-				}
-			}
-			IF = { #Hungarian templates
-				limit = {
-					original_tag = HUN
-					has_completed_focus = wuw_HUN_assault_gun_focus
-				}
-				# 43M Zrínyi
-				create_equipment_variant = {
-					name = "43M Zrínyi"
-					type = medium_tank_artillery_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_howitzer_2
-						turret_type_slot = tank_medium_one_man_tank_turret
-						suspension_type_slot = tank_torsion_bar_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_gasoline_engine
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 3
-						tank_nsb_armor_upgrade = 3
-					}
-					#icon = "GFX_ITA_advanced_medium_art_medium"
-				}
-			}
-		}
 
 		ai_will_do = {
 			factor = 1
 
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2039.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2040.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
-			}
-			modifier = {
-				factor = 5.0
-				tag = GER
-				date > "1942.6.1"
-				has_completed_focus = GER_expand_kummersdorfs_capacity
-				has_tech_bonus = {
-				    category = cat_medium_armor
-				}
+				date > "2041.1.1"
 			}
 
-			modifier = {
-				factor = 6
-				# Comet was designed and entered production in 1943-1944
-				tag = ENG
-				date > 1943.6.1
-			}
 		}
 
 		categories = {
@@ -866,76 +803,17 @@ technologies = {
 	advanced_medium_tank_chassis_2 = { #mbt4
 
 		enable_equipments = {
-			mbt_chassis_4
+			modern_tank_chassis_5
+			modern_tank_artillery_chassis_5		
 		}
 
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 2042
 
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 14 }
-		}
-
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_medium_tank_templates = yes
-			}
-			IF = { #Hungarian templates
-				limit = {
-					original_tag = HUN
-					has_completed_focus = wuw_HUN_the_turan
-				}
-				#43M Turán III
-				create_equipment_variant = {
-					name = "43M Turán III"
-					type = medium_tank_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon_2
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = secondary_turret_hmg
-						special_type_slot_2 = additional_machine_guns
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 3
-						tank_nsb_armor_upgrade = 7
-					}
-					#icon = "GFX_ITA_basic_medium_tank_medium"
-				}
-			}
-			IF = { #Hungarian templates
-				limit = {
-					original_tag = HUN
-					has_completed_focus = wuw_HUN_assault_gun_focus
-				}
-				# 43M Zrínyi
-				create_equipment_variant = {
-					name = "43M Zrínyi"
-					type = medium_tank_artillery_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_howitzer_2
-						turret_type_slot = tank_medium_one_man_tank_turret
-						suspension_type_slot = tank_torsion_bar_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_gasoline_engine
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 3
-						tank_nsb_armor_upgrade = 3
-					}
-					#icon = "GFX_ITA_advanced_medium_art_medium"
-				}
-			}
 		}
 
 		ai_will_do = {
@@ -943,33 +821,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2042.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2043.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
-			}
-			modifier = {
-				factor = 5.0
-				tag = GER
-				date > "1942.6.1"
-				has_completed_focus = GER_expand_kummersdorfs_capacity
-				has_tech_bonus = {
-				    category = cat_medium_armor
-				}
-			}
-
-			modifier = {
-				factor = 6
-				# Comet was designed and entered production in 1943-1944
-				tag = ENG
-				date > 1943.6.1
+				date > "2044.1.1"
 			}
 		}
 
@@ -987,47 +849,26 @@ technologies = {
 	basic_heavy_tank_chassis = { #apc1
 
 		enable_equipments = {
-			apc_1
-			heavy_tank_destroyer_chassis_1
+			apc_equipment_1
 		}
 
 		enable_subunits = {
-			heavy_armor
+			open_apc_unit
 		}
 
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
 
 		path = {
 			leads_to_tech = improved_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = apc_td_1
+			research_cost_coeff = 1
+		}		
+
 		research_cost = 2
-		start_year = 1934
+		start_year = 2025
 
 		folder = {
 			name = nsb_armour_folder
@@ -1035,34 +876,27 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0.8
+			factor = 1.5
 
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
-			modifier = {
-				tag = FRA
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
 				factor = 3
 			}
+
+
 			modifier = {
-				tag = SOV
-				factor = 5
+				factor = 1.2
+				date > "2033.1.1"
 			}
+
 			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
+				factor = 1.2
+				date > "2034.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "2035.1.1"
 			}
 		}
 
@@ -1075,11 +909,69 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+
+	apc_td_1 = { #Panzer I
+
+		enable_equipments = {
+			apc_td_equipment_1
+		}
+		enable_subunits = {
+			open_apc_td_unit
+			open_apc_unit_td_support
+		}
+	
+
+
+		research_cost = 2
+		start_year = 2030
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
+				factor = 3
+			}
+
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2032.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2033.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2034.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}	
+
 	improved_heavy_tank_chassis = { #Tiger
 
 		enable_equipments = {
-			apc_2
-			heavy_tank_destroyer_chassis_2
+			apc_equipment_2
 		}
 
 		path = {
@@ -1087,60 +979,42 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = apc_td_2
+			research_cost_coeff = 1
+		}			
 
-		research_cost = 2.5
-		start_year = 1940
+
+		research_cost = 2
+		start_year = 2032
 
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 6 y = @1936 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
-				}
-				ITA_add_improved_heavy_tank_templates = yes
-			}
-		}
-
 		ai_will_do = {
-			factor = 0.8
-			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
+			factor = 1.5
+
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
+				factor = 3
 			}
+
+
 			modifier = {
 				factor = 1.2
-				date > "1942.1.1"
+				date > "2032.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2033.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
-			}
-			modifier = {
-				tag = SOV
-				factor = 5
-			}
-			modifier = {
-				factor = 5.0
-				tag = GER
-				has_completed_focus = GER_expand_kummersdorfs_capacity
-				has_tech_bonus = {
-				    category = cat_heavy_armor
-				}
+				date > "2034.1.1"
 			}
 		}
 
@@ -1153,12 +1027,66 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+	apc_td_2 = { #Panzer I
+
+		enable_equipments = {
+			apc_td_equipment_2
+		}
+
+	
+
+
+		research_cost = 2
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
+				factor = 3
+			}
+
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2035.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2036.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2037.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}		
+
 
 	advanced_heavy_tank_chassis = { #King Tiger
 
 		enable_equipments = {
-			apc_3
-			heavy_tank_destroyer_chassis_3
+			apc_equipment_3
 		}
 
 		path = {
@@ -1166,51 +1094,41 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
-		start_year = 1943
+		path = {
+			leads_to_tech = apc_td_3
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 2
+		start_year = 2037
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 6 y = @1942 }
-		}
-
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_heavy_tank_templates = yes
-			}
+			position = { x = 6 y = @1941 }
 		}
 
 		ai_will_do = {
-			factor = 0.8
+			factor = 1.5
+
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
+				factor = 3
+			}
+
 
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2037.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2038.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
-			}
-			modifier = {
-				tag = SOV
-				factor = 5
-			}
-
-			modifier = {
-				factor = 8
-				# M26 Pershing entered production in 1944
-				tag = USA
-				date > 1944.1.1
+				date > "2039.1.1"
 			}
 		}
 
@@ -1223,14 +1141,73 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+	apc_td_3 = { #Panzer I
+
+		enable_equipments = {
+			apc_td_equipment_3
+		}
+	
+
+
+		research_cost = 2
+		start_year = 2039
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
+				factor = 3
+			}
+
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2039.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2040.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2041.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}		
+
 	advanced_heavy_tank_chassis_2 = { #apc 4
 
 		enable_equipments = {
-			apc_4
+			apc_equipment_4
 		}
 
+		path = {
+			leads_to_tech = apc_td_4
+			research_cost_coeff = 1
+		}			
 
-		research_cost = 2.5
+
+		research_cost = 2
 		start_year = 2040
 
 		folder = {
@@ -1238,43 +1215,29 @@ technologies = {
 			position = { x = 6 y = @1945 }
 		}
 
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_heavy_tank_templates = yes
-			}
-		}
 
 		ai_will_do = {
-			factor = 0.8
+			factor = 1.5
+
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
+				factor = 3
+			}
+
 
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2040.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2041.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
-			}
-			modifier = {
-				tag = SOV
-				factor = 5
-			}
-
-			modifier = {
-				factor = 8
-				# M26 Pershing entered production in 1944
-				tag = USA
-				date > 1944.1.1
+				date > "2042.1.1"
 			}
 		}
 
@@ -1286,6 +1249,61 @@ technologies = {
 		}
 		special_project_specialization = { specialization_land }
 	}	
+
+	apc_td_4 = { #Panzer I
+
+		enable_equipments = {
+			apc_td_equipment_4
+		}
+	
+
+
+		research_cost = 2
+		start_year = 2042
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #fake air jordans
+				num_of_military_factories < 25
+				factor = 3
+			}
+
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2042.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2043.1.1
+			}
+
+			modifier = {
+				factor = 1.1
+				date > 2044.1.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}	
+
 
 	armor_tech_1 = {
 		enable_equipment_modules = {
@@ -1303,10 +1321,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 2032
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1935 }
+			position = { x = 2 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -1323,17 +1341,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "2032.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1938.1.1"
+				date > "2033.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "2035.1.1"
 			}
 		}
 
@@ -1363,10 +1381,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1938
+		start_year = 2034
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1938 }
+			position = { x = 2 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1383,17 +1401,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "2034.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1939.1.1"
+				date > "2034.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1940.1.1"
+				date > "2034.1.1"
 			}
 		}
 
@@ -1424,10 +1442,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1941
+		start_year = 2037
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1941 }
+			position = { x = 2 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -1444,17 +1462,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1941.1.1"
+				date > "2037.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1942.1.1"
+				date > "2038.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1943.1.1"
+				date > "2040.1.1"
 			}
 		}
 
@@ -1471,10 +1489,10 @@ technologies = {
 	armor_tech_4 = {
 
 		research_cost = 1
-		start_year = 1944
+		start_year = 2039
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1944 }
+			position = { x = 2 y = @1944 }
 		}
 
 		on_research_complete = {
@@ -1496,17 +1514,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "2039.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1945.1.1"
+				date > "2040.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "2041.1.1"
 			}
 		}
 
@@ -1532,10 +1550,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1934
+		start_year = 2032
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1935 }
+			position = { x = 1 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -1552,17 +1570,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "2032.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1938.1.1"
+				date > "2033.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "2034.1.1"
 			}
 		}
 
@@ -1590,10 +1608,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1938
+		start_year = 2034
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1938 }
+			position = { x = 1 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1610,17 +1628,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "2034.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1939.1.1"
+				date > "2035.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1940.1.1"
+				date > "2036.1.1"
 			}
 		}
 
@@ -1646,10 +1664,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1941
+		start_year = 2037
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1941 }
+			position = { x = 1 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -1666,17 +1684,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1941.1.1"
+				date > "2037.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1942.1.1"
+				date > "2038.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1943.1.1"
+				date > "2039.1.1"
 			}
 		}
 
@@ -1693,10 +1711,10 @@ technologies = {
 	engine_tech_4 = {
 
 		research_cost = 1
-		start_year = 1944
+		start_year = 2040
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1944 }
+			position = { x = 1 y = @1944 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_4_tt
@@ -1716,17 +1734,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "2040.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1945.1.1"
+				date > "2041.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "2042.1.1"
 			}
 		}
 
@@ -1735,398 +1753,6 @@ technologies = {
 			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	NOR_rikstanken_tech = {
-
-		allow = { always = no } #Only obtained through Rikstanken Event
-
-		enable_equipment_modules = {
-			NOR_rikstanken_turret
-			NOR_tank_rikstanken_armor
-		}
-
-		path = {
-		}
-
-		on_research_complete = {
-
-		}
-
-		show_effect_as_desc = no
-
-		research_cost = 1
-		start_year = 1936
-
-
-		categories = {
-			armor
-		}
-	}
-
-
-	########################
-	### SPECIAL PROJECTS ###
-	########################
-
-	sp_armored_lc_naval_engine_conversion_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_land_cruiser
-			}
-		}
-
-		path = {
-			leads_to_tech = sp_armored_lc_weapon_fire_control_tech
-			research_cost_coeff = 1
-		}
-
-		is_special_project_tech = yes
-
-		land_cruiser = {
-			maximum_speed  = 0.05
-			supply_consumption  = -0.02
-		}
-
-		super_heavy_armor = {
-			maximum_speed  = 0.05
-			supply_consumption  = -0.02
-		}
-
-		research_cost = 1
-		start_year = 1943
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 7 y = @1943 }
-		}
-
-		folder = {
-			name = armour_folder
-			position = { x = 7 y = @1943 }
-		}
-
-		show_effect_as_desc = yes
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1945.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	sp_armored_lc_transmission_improvements_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_land_cruiser
-			}
-		}
-
-		path = {
-			leads_to_tech = sp_armored_lc_weapon_fire_control_tech
-			research_cost_coeff = 1
-		}
-
-		is_special_project_tech = yes
-
-		land_cruiser = {
-			reliability = 0.05
-			supply_consumption = -0.02
-
-			forest = {
-				movement = 0.2
-			}
-			hills = {
-				movement = 0.2
-			}
-			mountain = 	{
-				movement = 0.2
-			}
-			jungle = {
-				movement = 0.2
-			}
-		}
-
-		super_heavy_armor = {
-			reliability = 0.05
-			supply_consumption = -0.02
-
-			forest = {
-				movement = 0.2
-			}
-			jungle = {
-				movement = 0.2
-			}
-		}
-
-		research_cost = 1
-		start_year = 1943
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 9 y = @1943 }
-		}
-
-		folder = {
-			name = armour_folder
-			position = { x = 9 y = @1943 }
-		}
-
-		show_effect_as_desc = yes
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1945.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	sp_armored_lc_specialized_field_manuals_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_land_cruiser
-			}
-		}
-
-		path = {
-			leads_to_tech = sp_armored_lc_weapon_fire_control_tech
-			research_cost_coeff = 1
-		}
-
-		is_special_project_tech = yes
-
-		land_cruiser = {
-			entrenchment = 0.05
-			max_strength = 0.05
-			max_organisation = 10
-		}
-
-		research_cost = 1
-		start_year = 1943
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 11 y = @1943 }
-		}
-
-		folder = {
-			name = armour_folder
-			position = { x = 11 y = @1943 }
-		}
-
-		show_effect_as_desc = yes
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1945.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	sp_armored_lc_weapon_fire_control_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_land_cruiser
-			}
-		}
-
-		is_special_project_tech = yes
-
-		land_cruiser = {
-			breakthrough = 0.1
-			defense = 0.1
-		}
-
-		research_cost = 1
-		start_year = 1945
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 9 y = @1945 }
-		}
-
-		folder = {
-			name = armour_folder
-			position = { x = 9 y = @1945 }
-		}
-
-		show_effect_as_desc = yes
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1945.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	sp_armored_lc_high_impact_obliterator_cannon_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_land_cruiser
-			}
-		}
-
-		is_special_project_tech = yes
-
-		research_cost = 1
-		start_year = 1943
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 13 y = @1943 }
-		}
-
-		enable_equipment_modules = {
-			lc_high_impact_obliterator_cannon
-		}
-
-		show_effect_as_desc = yes
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1945.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }

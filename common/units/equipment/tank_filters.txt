@@ -1,0 +1,9 @@
+
+
+	
+search_filters = {
+	name = modern_tanks
+	values = {modern_tank_chassis modern_tank_aa_chassis modern_tank_artillery_chassis modern_tank_destroyer_chassis}
+}
+
+

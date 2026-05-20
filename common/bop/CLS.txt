@@ -1,0 +1,9 @@
+
+CLS_civil_war_bop = {
+	initial_value = -0.0
+	left_side = CLS_western_half
+	right_side = CLS_eastern_half
+	decision_category = CLS_balance_of_power_category
+	
+}
+

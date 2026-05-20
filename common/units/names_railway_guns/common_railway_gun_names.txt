@@ -1,5 +1,7 @@
 ﻿RG_COMMON = {
+
 	type = railway_gun
 	
 	fallback_name = "Railway Gun %d"
+
 }

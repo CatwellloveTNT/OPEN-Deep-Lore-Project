@@ -4,6 +4,61 @@
 
 sub_units = {
 
+
+ 
+
+	dewsif_infantry = {
+		abbreviation = "DEWINF"
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 700
+		ai_priority = 250
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		#can_exfiltrate_from_coast = yes #Can this subunit board convoys from a non-port location. 
+		#Intended for use with special forces marine templates; all non-support subunits in the division must have this flag set to yes
+		
+		group = infantry
+		
+		categories = {
+			category_dewsif_infantry
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1500
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 1.2
+		weight = 0.5
+		
+		supply_consumption = 0.16
+	
+		need = {
+			dewsif_arche = 120
+		}
+	}
+
+
+
+
+
+
+ #VANILLA SHIT BELOW
+
 	infantry = {
 		abbreviation = "INF"
 		sprite = infantry

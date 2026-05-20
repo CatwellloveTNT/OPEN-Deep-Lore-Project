@@ -1,0 +1,358 @@
+technologies = {
+
+
+	fierce = { 
+
+		enable_equipments = {
+
+		}
+
+
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = avian_genetics_folder
+			position = { x = -1 y = 11 }
+		}
+
+
+		army_org_regain = 0.05
+		org_loss_at_low_org_factor = -0.10
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			avian_genetics_tech
+		}
+
+
+	}
+
+	standard_libido = { 
+
+		enable_equipments = {
+
+		}
+
+
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = avian_genetics_folder
+			position = { x = -1 y = 20 }
+		}
+
+		monthly_population = 0.20
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			avian_genetics_tech
+		}
+
+
+	}
+
+	birds_of_prey = { 
+
+		enable_equipments = {
+
+		}
+
+
+
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = avian_genetics_folder
+			position = { x = -1 y = 13 }
+		}
+
+
+		army_attack_factor = 0.05
+		breakthrough_factor = 0.10
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			avian_genetics_tech
+		}
+
+
+	}	
+
+	strength_through_perseverance = { 
+
+		enable_equipments = {
+
+		}
+
+		army_defence_factor = 0.05
+		army_strength_factor = 0.05
+		army_morale_factor = 0.05
+
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = avian_genetics_folder
+			position = { x = -1 y = 15 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			avian_genetics_tech
+		}
+
+
+	}		
+
+	killer_talons = { 
+
+		enable_equipments = {
+
+		}
+
+		army_attack_factor = 0.03
+		terrain_penalty_reduction = 0.05
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = avian_genetics_folder
+			position = { x = -1 y = 9 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			avian_genetics_tech
+		}
+
+
+	}		
+	
+	no_thumbs_no_problem = { 
+
+		enable_equipments = {
+
+		}
+
+		industrial_capacity_factory = 0.05
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = avian_genetics_folder
+			position = { x = -1 y = 9 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			avian_genetics_tech
+		}
+
+
+	}		
+	
+
+	avian_stoicism = { 
+
+		enable_equipments = {
+
+		}
+
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		weekly_bombing_war_support = 0.10
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = avian_genetics_folder
+			position = { x = -1 y = 9 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			avian_genetics_tech
+		}
+
+
+	}	
+
+
+
+}

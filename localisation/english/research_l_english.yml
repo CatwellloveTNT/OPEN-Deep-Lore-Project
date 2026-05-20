@@ -1,4 +1,34 @@
 ﻿l_english:
+
+
+ anti_aviceyn_department_tt: "You will recieve a permanent national spirit which will grant you an attack bonus against Aviceyn"
+ anti_aviceyn_department_idea: "Anti-Aviceyn Department"
+ anti_aviceyn_department_idea_desc: "Ever since the Aviceyians put up their Titan walls, we've made an effort to counter them with every given opportunity. Today, with Aviceyn becoming more and more active on the global stage, we must push even harder to stop them, lest we be defeated by our complacency."
+ arc_the_ria_program_idea: "The RIA Program"
+ arc_the_ria_program_idea_desc: "The RIA program, or the Radar Interoperability Assessment, is a series of high intensity trials that determine if a unicorn has enough energitcal capacity to effectively interface with, and operate the EEAGR radar system. Any unicorn that passes this program has a latent energitcal strength only seen in the books of old..."
+ elliptical_missile_tech: "Elliptical Missile"
+ elliptical_missile_tech_desc: "I control a missile with my mind for homeland defense, because that's what Spitfire intended. Four bandits break into my air space. "SCRAMBLE! SCRAMBLE!", as I grab my helmet and Elliptical missile- blow a football sized hole through the first bandit- 250 nautical miles, he's dead on the spot. Draw another Elliptical missile on the second pony, miss him entirely because he jams my mind so hard it makes me see stars behind my eyes. The missile goes dumb and falls through the roof of a suburban family of four. I have to resort to my human allies dogfighting the bandits down below, "Tally ho lads" The resulting dogfight shreds two ponies to pieces, the screams of the thrust vectoring engines sets off car alarms. I then resort to dogfighting the last bandit, select my M40 PONE 25mm external gun pod, pull him into the HUD and fire. I foresee he'll be eating through a straw for the rest of his life because 25mm AP is impossible to stitch up. Just as I get a HUNG STORES warning."
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #VANILLA STUFF BELOW
+
  RESEARCH_BONUSES_TOOLTIP:0 "Limited technology bonuses we have:"
  RESEARCH_BONUSES_EMPTY_TOOLTIP:0 "Limited technology bonuses will be listed here."
  RESEARCH_BONUS_SPEED_DESC:1 "§Y$COUNT$x§! $VALUE|G%0$ research speed from $NAME$"
@@ -45,6 +75,10 @@
  RESEARCH_UNLOCKS_SUBUNITS_HEADER:0 "§TEnables $SUBUNITS$§!"
  RESEARCH_UNLOCKS_TACTICS_HEADER:0 "§TEnables Tactic: $TACTICS$§!"
  RESEARCH_MODIFIERS_HEADER:0 "Global Stats"
+
+ iw_small_airframe:0 "testname"
+ iw_small_airframe:0 "testdesc"
+
  RESEARCH_MESSAGE_UNLOCKED_TITLE:0 "Research Finished!"
  RESEARCH_MESSAGE_UNLOCKED_DESC:0 "Our country has completed research into $NAME|Y$.\n $DESC$"
  RESEARCH_INSTANT_DESC:0 "Research is instant when changing the tree with more than one technology researched in the current tree."
@@ -1334,11 +1368,29 @@
  sp_variable_time_fuze_shells: "Variable Time Fuze Shells"
  sp_variable_time_fuze_shells_desc: "With adapting Variable Time Fuze Shells - we have made our field artillery devastating against our opponents. Shells explode before reaching the ground, thus creating much bigger kill-zone."
  sp_helicopter_transport_pods_tech: "Helicopter Transport Company"
- sp_helicopter_transport_pods_tech_desc: "Helicopters equipped with transport pods or towing goods beneath them on a line can move supplies and equipment quickly and without regard for terrain. Getting stuck in the mud is a thing of the past!"
+ sp_helicopter_transport_pods_tech_desc: "Helicopters equipped with transport pods or towing goods beneath them on a line can move supplies and equipment quickly and without regard for terrain."
+ sp_helicopter_transport_pods_tech_2: "Helicopter Transport Company II"
+ sp_helicopter_transport_pods_tech_2_desc: "Helicopters equipped with transport pods or towing goods beneath them on a line can move supplies and equipment quickly and without regard for terrain."
+ sp_helicopter_transport_pods_tech_3: "Helicopter Transport Company III"
+ sp_helicopter_transport_pods_tech_3_desc: "Helicopters equipped with transport pods or towing goods beneath them on a line can move supplies and equipment quickly and without regard for terrain."
+ sp_helicopter_transport_pods_tech_4: "Helicopter Transport Company IV"
+ sp_helicopter_transport_pods_tech_4_desc: "Helicopters equipped with transport pods or towing goods beneath them on a line can move supplies and equipment quickly and without regard for terrain."
  sp_helicopter_artillery_observers_tech: "Helicopter Recon Company"
  sp_helicopter_artillery_observers_tech_desc: "Helicopters are able get a good vantage point of the battlefield regardless of the actual terrain, and thus make excellent forward scouts to provide accurate feedback to artillery barrages."
+ sp_helicopter_artillery_observers_tech_2: "Helicopter Recon Company II"
+ sp_helicopter_artillery_observers_tech_2_desc: "Helicopters are able get a good vantage point of the battlefield regardless of the actual terrain, and thus make excellent forward scouts to provide accurate feedback to artillery barrages."
+ sp_helicopter_artillery_observers_tech_3: "Helicopter Recon Company IIi"
+ sp_helicopter_artillery_observers_tech_3_desc: "Helicopters are able get a good vantage point of the battlefield regardless of the actual terrain, and thus make excellent forward scouts to provide accurate feedback to artillery barrages.
+ sp_helicopter_artillery_observers_tech_3: "Helicopter Recon Company iv"
+ sp_helicopter_artillery_observers_tech_3_desc: "Helicopters are able get a good vantage point of the battlefield regardless of the actual terrain, and thus make excellent forward scouts to provide accurate feedback to artillery barrages."
  sp_helicopter_med_evac_tech: "Helicopter Med-Evac Company"
  sp_helicopter_med_evac_tech_desc: "Incoming wounded! We have incoming wounded! Helicopters provide even faster casualty evacuation than regular ambulances."
+ sp_helicopter_med_evac_tech_2: "Helicopter Med-Evac Company II"
+ sp_helicopter_med_evac_tech_2_desc: "Incoming wounded! We have incoming wounded! Helicopters provide even faster casualty evacuation than regular ambulances."
+ sp_helicopter_med_evac_tech_3: "Helicopter Med-Evac Company III"
+ sp_helicopter_med_evac_tech_3_desc: "Incoming wounded! We have incoming wounded! Helicopters provide even faster casualty evacuation than regular ambulances."
+ sp_helicopter_med_evac_tech_4: "Helicopter Med-Evac Company IV"
+ sp_helicopter_med_evac_tech_4_desc: "Incoming wounded! We have incoming wounded! Helicopters provide even faster casualty evacuation than regular ambulances."
 
  sp_rockets_dual_chamber_rocket_engine_1: "Dual Chamber Rocket Engines"
  sp_rockets_dual_chamber_rocket_engine_1_desc: "By adding a second combustion chamber to the engine, we can improve the flight time and effectiveness of our rocket engines."

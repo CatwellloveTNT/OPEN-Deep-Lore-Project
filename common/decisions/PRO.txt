@@ -5350,7 +5350,7 @@ PRO_the_protean_system = {
 
 	}
 
-	 intimidate_iatp_members { 
+	intimidate_iatp_members = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5412,7 +5412,7 @@ PRO_the_protean_system = {
 	}
 # ------------------------------------ SSS DECISIONS --------------------------------------------------
 
-	 sway_sss_agents_to_our_cause { 
+	sway_sss_agents_to_our_cause = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5476,7 +5476,7 @@ PRO_the_protean_system = {
 
 	}
 
-	threaten_sss_members_to_remain_quiet  { 
+	threaten_sss_members_to_remain_quiet = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5538,7 +5538,7 @@ PRO_the_protean_system = {
 
 	}
 
-	coordinate_with_tfi_to_silence_sss_opposition_leaders  { 
+	coordinate_with_tfi_to_silence_sss_opposition_leaders = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5672,7 +5672,7 @@ PRO_the_protean_system = {
 
 # ------------------------------------ PFH ACT POP. SUPPORT DECISIONS --------------------------------------------------
 
-	campaign_for_the_act  { 
+	campaign_for_the_act = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5806,7 +5806,7 @@ PRO_the_protean_system = {
 
 	}
 
-	hijack_social_media_feeds  { 
+	hijack_social_media_feeds = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5881,7 +5881,7 @@ PRO_the_protean_system = {
 
 # ------------------------------------ PFH REFORM DECISIONS --------------------------------------------------
 
-	replace_stubborn_electives  { 
+	replace_stubborn_electives = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5944,7 +5944,7 @@ PRO_the_protean_system = {
 
 	}
 
-	fund_act_supporters  { 
+	fund_act_supporters = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -6007,7 +6007,7 @@ PRO_the_protean_system = {
 
 	}
 
-	i_cant_come_up_with_a_good_decision_name  { 
+	i_cant_come_up_with_a_good_decision_name = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support

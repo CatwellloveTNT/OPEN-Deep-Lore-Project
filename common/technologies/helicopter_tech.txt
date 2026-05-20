@@ -1,0 +1,861 @@
+technologies = {
+
+
+	modern_helicopter_technology = { 
+
+		enable_equipments = {
+
+		}
+
+
+
+		path = {
+			leads_to_tech = vlap1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = transport_helo1
+			research_cost_coeff = 1
+		}	
+		
+		path = {
+			leads_to_tech = attack_helo1
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = helicopter_folder
+			position = { x = 10 y = 0 }
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = { # the coalition believes heavily in AIRCAV
+				factor = 10
+				tag = CLS
+			}
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = { #the ai should atleast have medevac helos
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			open_helicopter_tech
+		}
+
+
+	}
+
+	vlap1 = { 
+
+		enable_equipments = {
+			vertical_lift_assault_platform_equipment_1
+		}
+
+		enable_subunits = {
+			airmoble_vlaps
+			vlap_lrp
+		}
+
+		path = {
+			leads_to_tech = vlap_chin_mounted_turret
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = vlap2
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2030
+		folder = {
+			name = helicopter_folder
+			position = { x = 5 y = -2 }
+		}
+
+
+		ai_will_do = { # the VLAP concept/doctrine is pioneered by the coalition states and some of her allies, arcadia and aviceyn don't really care about vplaps (virtual plaps)
+			base = 0
+
+			modifier = { # the coalition believes heavily in AIRCAV
+				factor = 10
+				tag = CLS
+			}
+
+			modifier = { # pro follows the coalition's doctine of airmobile infantry to an extent
+				factor = 3
+				tag = PRO
+			}			
+
+			modifier = {
+				add = 10
+				tag = CLS
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			vertical_lift_assault_platform_tech
+		}
+
+
+	}
+
+	vlap2 = { 
+
+		enable_equipments = {
+			vertical_lift_assault_platform_equipment_2
+		}
+
+
+		path = {
+			leads_to_tech = vlap3
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2035
+		folder = {
+			name = helicopter_folder
+			position = { x = 5 y = -4 }
+		}
+
+
+		ai_will_do = { # the VLAP concept/doctrine is pioneered by the coalition states and some of her allies, arcadia and aviceyn don't really care about vplaps (virtual plaps)
+			base = 0
+
+			modifier = { # the coalition believes heavily in AIRCAV
+				factor = 10
+				tag = CLS
+			}
+
+			modifier = { # protea follows the coalition's doctine of airmobile infantry to an extent
+				factor = 3
+				tag = PRO
+			}			
+
+			modifier = {
+				add = 10
+				tag = CLS
+				date > "2034.6.1"
+			}
+		}
+
+		categories = {
+			vertical_lift_assault_platform_tech
+		}
+
+
+	}
+
+	vlap_chin_mounted_turret = { 
+
+
+		category_open_vlap_infantry = {
+			soft_attack = 0.03
+		}
+
+		path = {
+			leads_to_tech = vlap_rocket_pylons
+			research_cost_coeff = 1
+		}
+
+
+		category_open_vlap_infantry = {
+			defense = 0.03
+		}
+
+
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = helicopter_folder
+			position = { x = 2 y = -5 }
+		}
+
+
+		ai_will_do = { # the VLAP concept/doctrine is pioneered by the coalition states and some of her allies, arcadia and aviceyn don't really care about vplaps (virtual plaps)
+			base = 0
+
+			modifier = { # the coalition believes heavily in AIRCAV
+				factor = 10
+				tag = CLS
+			}
+
+			modifier = { # protea follows the coalition's doctine of airmobile infantry to an extent
+				factor = 3
+				tag = PRO
+			}			
+
+			modifier = {
+				add = 10
+				tag = CLS
+				date > "2034.6.1"
+			}
+		}
+
+		categories = {
+			vertical_lift_assault_platform_tech
+		}
+
+
+	}
+
+	vlap_rocket_pylons = { 
+
+
+		category_open_vlap_infantry = {
+			soft_attack = 0.03
+		}
+
+
+
+		category_open_vlap_infantry = {
+			defense = 0.03
+		}
+
+
+		research_cost = 1
+		start_year = 2039
+		folder = {
+			name = helicopter_folder
+			position = { x = 2 y = -8 }
+		}
+
+
+		ai_will_do = { # the VLAP concept/doctrine is pioneered by the coalition states and some of her allies, arcadia and aviceyn don't really care about vplaps (virtual plaps)
+			base = 0
+
+			modifier = { # the coalition believes heavily in AIRCAV
+				factor = 10
+				tag = CLS
+			}
+
+			modifier = { # protea follows the coalition's doctine of airmobile infantry to an extent
+				factor = 3
+				tag = PRO
+			}			
+
+			modifier = {
+				add = 10
+				tag = CLS
+				date > "2034.6.1"
+			}
+		}
+
+		categories = {
+			vertical_lift_assault_platform_tech
+		}
+
+
+	}	
+
+
+	vlap3 = { 
+
+		enable_equipments = {
+			vertical_lift_assault_platform_equipment_3
+		}
+
+
+
+
+		path = {
+			leads_to_tech = vlap4
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2038
+		folder = {
+			name = helicopter_folder
+			position = { x = 5 y = -6 }
+		}
+
+
+		ai_will_do = { # the VLAP concept/doctrine is pioneered by the coalition states and some of her allies, arcadia and aviceyn don't really care about vplaps (virtual plaps)
+			base = 0
+
+			modifier = { # the coalition believes heavily in AIRCAV
+				factor = 10
+				tag = CLS
+			}
+
+			modifier = { # protea follows the coalition's doctine of airmobile infantry to an extent
+				factor = 3
+				tag = PRO
+			}			
+
+			modifier = {
+				add = 10
+				tag = CLS
+				date > "2037.6.1"
+			}
+		}
+
+		categories = {
+			vertical_lift_assault_platform_tech
+		}
+
+
+	}	
+
+	vlap4 = { 
+
+		enable_equipments = {
+			vertical_lift_assault_platform_equipment_4
+		}
+
+
+		research_cost = 1
+		start_year = 2042
+		folder = {
+			name = helicopter_folder
+			position = { x = 5 y = -10 }
+		}
+
+
+		ai_will_do = { # the VLAP concept/doctrine is pioneered by the coalition states and some of her allies, arcadia and aviceyn don't really care about vplaps (virtual plaps)
+			base = 0
+
+			modifier = { # the coalition believes heavily in AIRCAV
+				factor = 10
+				tag = CLS
+			}
+
+			modifier = { # protea follows the coalition's doctine of airmobile infantry to an extent
+				factor = 3
+				tag = PRO
+			}			
+
+			modifier = {
+				add = 10
+				tag = CLS
+				date > "2041.6.1"
+			}
+		}
+
+		categories = {
+			vertical_lift_assault_platform_tech
+		}
+
+
+	}	
+
+	transport_helo1 = { 
+
+		enable_equipments = {
+			transport_helo_equipment_1
+		}
+
+
+		enable_subunits = {
+			transport_helicopter_infantry
+		}
+
+		path = {
+			leads_to_tech = transport_helo2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_helicopter_logistics
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = top_mounted_radars
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = helicopter_folder
+			position = { x = 10 y = -2 }
+		}
+
+
+		ai_will_do = { # you need transport helicopters to run medevacs so everyone would want these
+			base = 2
+
+			modifier = { # 
+				factor = 1.5
+				tag = CLS
+			}	
+
+			modifier = {
+				add = 10
+				date > "2032.1.1"
+			}
+		}
+
+		categories = {
+			open_helicopter_tech
+		}
+
+
+	}	
+
+	improved_helicopter_logistics = { 
+		
+
+		research_cost = 1
+		start_year = 2033
+		folder = {
+			name = helicopter_folder
+			position = { x = 8 y = -3 }
+		}
+
+		category_front_line = {
+			supply_consumption = -0.05
+
+		}
+			
+
+
+
+		ai_will_do = { # you need transport helicopters to run medevacs so everyone would want these
+			base = 2
+
+			modifier = { # 
+				factor = 1.5
+				tag = CLS
+			}	
+
+			modifier = {
+				add = 10
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			open_helicopter_tech
+		}
+
+
+	}	
+
+	top_mounted_radars = { 
+		
+
+		research_cost = 1
+		start_year = 2033
+		folder = {
+			name = helicopter_folder
+			position = { x = 12 y = -3 }
+		}
+
+		category_front_line = {
+			recon = 0.10
+
+		}
+			
+
+
+
+		ai_will_do = { # you need transport helicopters to run medevacs so everyone would want these
+			base = 2
+
+			modifier = { # 
+				factor = 1.5
+				tag = CLS
+			}	
+
+			modifier = {
+				add = 10
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			open_helicopter_tech
+		}
+
+
+	}	
+
+
+
+	transport_helo2 = { 
+
+		enable_equipments = {
+			transport_helo_equipment_2
+		}
+
+
+
+
+		path = {
+			leads_to_tech = transport_helo3
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2035
+		folder = {
+			name = helicopter_folder
+			position = { x = 10 y = -4 }
+		}
+
+
+		ai_will_do = { # you need transport helicopters to run medevacs so everyone would want these
+			base = 2
+
+			modifier = {
+				add = 10
+				date > "2034.6.1"
+			}
+		}
+
+		categories = {
+			open_helicopter_tech
+		}
+
+
+	}		
+			
+
+
+	transport_helo3 = { 
+
+		enable_equipments = {
+			transport_helo_equipment_3
+		}
+
+
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = helicopter_folder
+			position = { x = 10 y = -8 }
+		}
+
+
+		ai_will_do = { # you need transport helicopters to run medevacs so everyone would want these
+			base = 2
+
+
+			modifier = {
+				add = 10
+				date > "2038.1.1"
+			}
+		}
+
+		categories = {
+			open_helicopter_tech
+		}
+
+
+	}	
+
+	attack_helo1 = { 
+
+		enable_equipments = {
+			attack_helo_equipment_1
+		}
+
+		enable_subunits = {
+			attack_helicopters
+			attack_helicopter_support_company
+		}		
+
+		path = {
+			leads_to_tech = improved_sensor_suite
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = attack_helo2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = helicopter_folder
+			position = { x = 15 y = -2 }
+		}
+
+
+		ai_will_do = { # all of the big 3 plus some richer minors are going to want attack helos in their divs, the coalition's AIRCAV divisions literally just feature attack helos and VLAPS
+			base = 2
+
+			modifier = { # coalition AIRCAV divisions are attack helos and VLAPS
+				factor = 5
+				tag = CLS
+			}	
+
+			modifier = { # protea also use coalition like AIRCAV divisions 
+				factor = 2.5
+				tag = PRO
+			}		
+			
+			modifier = { # DO NOT DO THAT SHIT IF YOU BROKE SON LMFAOOO
+				num_of_military_factories < 35
+				factor = -5
+
+			}			
+
+			modifier = {
+				add = 1
+				date > "2032.1.1"
+			}
+		}
+
+		categories = {
+			attack_helicopter_tech
+		}
+
+
+	}	
+
+	attack_helo2 = { 
+
+		enable_equipments = {
+			attack_helo_equipment_2
+		}
+
+		path = {
+			leads_to_tech = attack_helo3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2035
+		folder = {
+			name = helicopter_folder
+			position = { x = 15 y = -4 }
+		}
+
+
+		ai_will_do = { # all of the big 3 plus some richer minors are going to want attack helos in their divs, the coalition's AIRCAV divisions literally just feature attack helos and VLAPS
+			base = 1
+
+			modifier = { # coalition AIRCAV divisions are attack helos and VLAPS
+				factor = 5
+				tag = CLS
+			}	
+
+			modifier = { # protea also use coalition like AIRCAV divisions 
+				factor = 2.5
+				tag = PRO
+			}			
+			
+			modifier = { # DO NOT DO THAT SHIT IF YOU BROKE SON LMFAOOO
+				num_of_military_factories < 35
+				factor = -5
+
+			}					
+
+			modifier = {
+				add = 1
+				date > "2032.1.1"
+			}
+		}
+
+		categories = {
+			attack_helicopter_tech
+		}
+
+
+	}	
+
+	attack_helo3 = { 
+
+		enable_equipments = {
+			attack_helo_equipment_3
+		}
+
+		path = {
+			leads_to_tech = attack_helo4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2038
+		folder = {
+			name = helicopter_folder
+			position = { x = 15 y = -8 }
+		}
+
+
+		ai_will_do = { # all of the big 3 plus some richer minors are going to want attack helos in their divs, the coalition's AIRCAV divisions literally just feature attack helos and VLAPS
+			base = 1
+
+			modifier = { # coalition AIRCAV divisions are attack helos and VLAPS
+				factor = 5
+				tag = CLS
+			}	
+
+			modifier = { # protea also use coalition like AIRCAV divisions 
+				factor = 2.5
+				tag = PRO
+			}			
+			
+			modifier = { # DO NOT DO THAT SHIT IF YOU BROKE SON LMFAOOO
+				num_of_military_factories < 35
+				factor = -5
+
+			}					
+
+			modifier = {
+				add = 1
+				date > "2038.1.1"
+			}
+		}
+
+		categories = {
+			attack_helicopter_tech
+		}
+
+
+	}	
+	
+	attack_helo4 = { 
+
+		enable_equipments = {
+			attack_helo_equipment_4
+		}
+
+
+		research_cost = 1
+		start_year = 2042
+		folder = {
+			name = helicopter_folder
+			position = { x = 15 y = -10 }
+		}
+
+
+		ai_will_do = { # all of the big 3 plus some richer minors are going to want attack helos in their divs, the coalition's AIRCAV divisions literally just feature attack helos and VLAPS
+			base = 1
+
+			modifier = { # coalition AIRCAV divisions are attack helos and VLAPS
+				factor = 5
+				tag = CLS
+			}	
+
+			modifier = { # protea also use coalition like AIRCAV divisions 
+				factor = 2.5
+				tag = PRO
+			}			
+			
+			modifier = { # DO NOT DO THAT SHIT IF YOU BROKE SON LMFAOOO
+				num_of_military_factories < 35
+				factor = -5
+
+			}					
+
+			modifier = {
+				add = 1
+				date > "2042.1.1"
+			}
+		}
+
+		categories = {
+			attack_helicopter_tech
+		}
+
+
+	}	
+	
+	
+	improved_sensor_suite = { 
+
+
+		category_open_attack_helicopters = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = ai_targetting_computer
+			research_cost_coeff = 1
+		}
+
+
+
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = helicopter_folder
+			position = { x = 18 y = -5 }
+		}
+
+
+		ai_will_do = { # apache :D
+			base = 2
+			
+
+			modifier = {
+				add = 10
+				date > "2036.1.1"
+			}
+		}
+
+		categories = {
+			attack_helicopter_tech
+		}
+
+
+	}	
+
+	ai_targetting_computer = { 
+
+
+		category_open_attack_helicopters = {
+			soft_attack = 0.05
+		}
+
+		category_open_attack_helicopters = {
+			breakthrough = 0.05
+		}
+
+		research_cost = 1
+		start_year = 2039
+		folder = {
+			name = helicopter_folder
+			position = { x = 18 y = -8 }
+		}
+
+
+		ai_will_do = { # apache :D
+			base = 2
+			
+
+			modifier = {
+				add = 10
+				date > "2036.1.1"
+			}
+		}
+
+		categories = {
+			attack_helicopter_tech
+		}
+
+
+	}		
+
+
+
+	
+}

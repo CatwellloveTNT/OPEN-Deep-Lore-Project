@@ -1340,15 +1340,15 @@ country_event = {
 }
 
 country_event = {
-	id = pro.114
-	title = pro.114.t
-	desc = pro.114.d
+	id = pro.115
+	title = pro.115.t
+	desc = pro.115.d
 	picture = GFX_placeholder_art
 
 	is_triggered_only = yes
 
 	option = { # valkyrie escaping to cls event
-		name = pro.114.a
+		name = pro.115.a
 		ai_chance = {factor = 100}
 		add_to_variable = {
 			number_of_leads_captured = 1

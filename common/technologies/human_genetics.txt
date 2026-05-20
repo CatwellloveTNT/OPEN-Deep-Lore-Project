@@ -1,0 +1,355 @@
+technologies = {
+
+
+	adaptable_human_tech = { 
+
+		enable_equipments = {
+
+		}
+
+		terrain_penalty_reduction = 0.05
+		acclimatization_cold_climate_gain_factor = 0.05
+		acclimatization_hot_climate_gain_factor = 0.05
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = human_genetics_folder
+			position = { x = -1 y = 11 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			human_genetics_tech
+		}
+
+
+	}
+
+	high_libido = { 
+
+		enable_equipments = {
+
+		}
+
+
+		monthly_population = 0.50
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = human_genetics_folder
+			position = { x = -1 y = 20 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			human_genetics_tech
+		}
+
+
+	}
+
+	apex_pred = { 
+
+		enable_equipments = {
+
+		}
+
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = human_genetics_folder
+			position = { x = -1 y = 13 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			human_genetics_tech
+		}
+
+
+	}	
+
+	violent_kind_and_unpredictable = { 
+
+		enable_equipments = {
+
+		}
+
+		political_power_gain = 1
+		opinion_gain_monthly_factor = 0.1
+
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = human_genetics_folder
+			position = { x = -1 y = 15 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			human_genetics_tech
+		}
+
+
+	}		
+
+	the_hand = { 
+
+		enable_equipments = {
+
+		}
+
+		research_speed_factor = 0.03
+		army_attack_factor = 0.01
+		army_defence_factor = 0.01
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = human_genetics_folder
+			position = { x = -1 y = 9 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			human_genetics_tech
+		}
+
+
+	}		
+	
+	opposable_thumbs = { 
+
+		enable_equipments = {
+
+		}
+
+		army_attack_factor = 0.01
+		army_defence_factor = 0.01
+
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = human_genetics_folder
+			position = { x = -1 y = 9 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			human_genetics_tech
+		}
+
+
+	}		
+	
+
+	the_indomitable_human_spirit = { 
+
+		enable_equipments = {
+
+		}
+
+		surrender_limit = 0.05
+		weekly_bombing_war_support = 0.020
+		weekly_casualties_war_support = 0.020
+		weekly_convoys_war_support = 0.020
+		
+
+		research_cost = 1
+		start_year = 2025
+		folder = {
+			name = human_genetics_folder
+			position = { x = -1 y = 9 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			human_genetics_tech
+		}
+
+
+	}	
+
+
+
+}

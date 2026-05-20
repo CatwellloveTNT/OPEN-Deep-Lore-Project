@@ -1,6 +1,40 @@
 sub_units = {
 	# Small airframe
 
+	queen_jep = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { queen_jep_arche = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
+	}
+
+	talcyon_4 = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { talcyon_4_arche = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
+	}	
+
+	panaravian_trendsetter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { panaravian_trendsetter_arche = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
+	}		
+
+
 	fighter = {
 		sprite = light_plane
 		priority = 1
@@ -11,6 +45,7 @@ sub_units = {
 		land_air_wing_size = 100
 		mega_carrier_air_wing_size = 10
 	}
+	
 	cv_fighter = {
 		sprite = light_plane
 		priority = 1

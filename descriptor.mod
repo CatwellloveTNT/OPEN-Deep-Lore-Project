@@ -44,6 +44,12 @@ replace_path="common/technologies"
 replace_path="common/scripted_effects"
 replace_path="common/scripted_localisation"
 replace_path="common/scripted_triggers"
+replace_path="common/units/names_railway_guns"
+replace_path="common/ai_equipment"
+replace_path="common/bop"
+replace_path="common/peace_conference/ai_peace"
+replace_path="common/military_industrial_organization/organizations"
+replace_path="gfx/loadingscreens" #how did eaw get rid of the dlc loading screens without doing an override???!?!?!?!?! NVM I UNDERSTAND IT NOW
 
 
 

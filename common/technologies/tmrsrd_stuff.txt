@@ -1,0 +1,801 @@
+technologies = {
+
+
+	aviceyn_op_tech_please_read = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = small_artifical_shields			
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = stealth_designs			
+			research_cost_coeff = 1
+		}	
+		
+		path = {
+			leads_to_tech = ai_advancements	
+			research_cost_coeff = 1
+		}			
+		
+		research_cost = 0.1
+		start_year = 2025
+		folder = {
+			name = tmrsrd_folder
+			position = { x = -1 y = 11 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}
+
+
+
+	small_artifical_shields = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = large_artifical_shields			
+			research_cost_coeff = 1
+		}
+		
+		category_all_infantry = {
+			defense = 0.05
+			max_strength = 0.1
+		}
+
+		research_cost = 1
+		start_year = 2032
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 0 y = 5 }
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}
+
+	large_artifical_shields = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = dynamic_artifical_shields			
+			research_cost_coeff = 1
+		}
+		
+		category_all_armor = {
+			defense = 0.05
+			max_organisation = 2
+			max_strength = 0.1		
+		} 
+
+		industry_air_damage_factor = -0.2
+
+
+		research_cost = 1
+		start_year = 2034
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 3 y = 5 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2034.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2034.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2035.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}	
+
+	dynamic_artifical_shields = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = pseudo_organic_artifical_shields			
+			research_cost_coeff = 1
+		}
+		
+		category_front_line = {
+			defense = 0.05
+			max_organisation = 3
+			max_strength = 0.2
+		}
+
+		category_fighter = {
+		air_defence = 0.05			
+		}
+		category_heavy_fighter = {
+		air_defence = 0.05			
+		}		
+
+		naval_defense_factor = 0.05
+
+
+
+
+		research_cost = 1
+		start_year = 2037
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 6 y = 5 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2037.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2037.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2038.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}		
+
+	pseudo_organic_artifical_shields = { 
+
+		enable_equipments = {
+
+		}
+		
+		category_front_line = {
+			defense = 0.05
+		}
+
+		category_fighter = {
+		air_defence = 0.1	
+		air_superiority = 0.05				
+		}
+		category_heavy_fighter = {
+		air_defence = 0.1			
+		air_superiority = 0.05			
+		}		
+
+
+		naval_defense_factor = 0.10
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 8 y = 5 }
+		}
+
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2041.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}		
+
+	stealth_designs = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = ram_coating
+			research_cost_coeff = 1
+		}		
+		
+
+		research_cost = 1
+		start_year = 2033
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 1 y = 11 }
+		}
+
+		army_intel_to_others = -15
+		airforce_intel_to_others = -15
+		navy_intel_to_others = -15
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}
+
+
+	ram_coating = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = reduced_infared_emissions
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2034
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 3 y = 11 }
+		}
+
+		category_fighter = {
+		air_superiority = 0.05		
+		}
+		category_heavy_fighter = {
+		air_superiority = 0.05		
+		}		
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2034.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2034.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2035.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}
+
+	reduced_infared_emissions = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = stealth_wingman_drone_swarms
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2037
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 6 y = 11 }
+		}
+
+		category_fighter = {
+		air_superiority = 0.05				
+		}
+
+		category_heavy_fighter = {
+		air_superiority = 0.05				
+		}		
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2037.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2037.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2038.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}	
+
+	stealth_wingman_drone_swarms = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = talcyon_4
+			research_cost_coeff = 1
+		}
+	
+		
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 8 y = 11 }
+		}
+
+		category_fighter = {
+		air_defence = 0.05
+		air_attack = 0.05			
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2041.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}	
+
+	talcyon_4 = { 
+
+		enable_equipments = {
+			talcyon_4_equipment
+		}
+
+	
+		
+
+		research_cost = 1
+		start_year = 2041
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 10 y = 11 }
+		}
+
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2041.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2041.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2042.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}		
+
+	ai_advancements = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = ai_command_integration
+			research_cost_coeff = 1
+		}		
+		
+
+		research_cost = 1
+		start_year = 2032
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 0 y = 16 }
+		}
+
+		research_speed_factor = 0.05
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}
+	
+	ai_command_integration = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = large_scale_ai_combat_simulations
+			research_cost_coeff = 1
+		}		
+		
+
+		research_cost = 1
+		start_year = 2033
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 2 y = 16 }
+		}
+
+		command_power_gain = 1
+		coordination_bonus = 0.15	
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2033.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2033.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}	
+
+	large_scale_ai_combat_simulations = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = platoon_level_combat_ai_instructor
+			research_cost_coeff = 1
+		}		
+		
+
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 4 y = 16 }
+		}
+
+		experience_gain_army_factor = 0.2 		
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2036.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2036.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2037.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}		
+
+	platoon_level_combat_ai_instructor = { 
+
+		enable_equipments = {
+
+		}
+
+		path = {
+			leads_to_tech = individual_level_combat_ai_instructor
+			research_cost_coeff = 1
+		}		
+		
+
+
+		research_cost = 1
+		start_year = 2037
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 6 y = 16 }
+		}
+
+		category_front_line = {
+			max_organisation = 5
+			experience_loss_factor = -0.1
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2037.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2037.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2037.1.1"
+			}
+		}
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}	
+	
+	individual_level_combat_ai_instructor = { 
+
+		enable_equipments = {
+
+		}
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = tmrsrd_folder
+			position = { x = 8 y = 16 }
+		}
+
+		category_front_line = {
+			experience_loss_factor = -0.2			
+		}
+		army_attack_factor = 0.05
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2041.1.1"
+			}
+		}
+
+
+
+		categories = {
+			tmrsrd_tech
+		}
+
+
+	}		
+
+
+}

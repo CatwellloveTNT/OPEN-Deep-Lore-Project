@@ -1,0 +1,886 @@
+technologies = {
+
+
+	arcadia_op_techs_please_read = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = eeagr_breakthroughs
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = pony_race_experiments
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = the_celestia_project
+			research_cost_coeff = 1
+		}			
+		
+		
+	
+		
+
+		research_cost = 0.1
+		start_year = 2032
+		folder = {
+			name = skieslabs_folder
+			position = { x = -1 y = 11 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2034.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}
+
+	eeagr_breakthroughs = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = unicorn_radar_connection_experiments
+			research_cost_coeff = 1
+		}
+	
+		on_research_complete = {
+
+				country_event = { #make this hidden when i flesh out arcadia
+					id = arc.1000
+				}
+
+			hidden_effect = {
+			}
+		}
+		
+	
+		
+
+		research_cost = 0.5
+		start_year = 2032
+		folder = {
+			name = skieslabs_folder
+			position = { x = 1 y = 11 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2033.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}
+	
+	
+	unicorn_radar_connection_experiments = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = the_unicorn_ria_program # RADAR INTEROPERABILITY ASSESSMENT program
+			research_cost_coeff = 1
+		}
+	
+		on_research_complete = {
+		
+				country_event = { #make this hidden when i flesh out arcadia
+					id = arc.1001
+				}
+
+			hidden_effect = {
+			}
+		}
+		
+	
+		research_speed_factor = 0.10
+
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = skieslabs_folder
+			position = { x = 3 y = 11 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2036.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2036.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2037.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+
+
+	the_unicorn_ria_program = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = eeagr_radar_skieslabs_tech # RADAR INTEROPERABILITY ASSESSMENT program
+			research_cost_coeff = 1
+		}
+	
+		on_research_complete = {
+
+			add_ideas = arc_the_ria_program_idea
+		
+				country_event = { #make this hidden when i flesh out arcadia
+					id = arc.1001
+				}
+
+			hidden_effect = {
+			}
+		}
+		
+	
+		
+
+		research_cost = 1
+		start_year = 2038
+		folder = {
+			name = skieslabs_folder
+			position = { x = 5 y = 11 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2038.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2038.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2039.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+
+	eeagr_radar_skieslabs_tech = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = panaravian_trendsetter_tech
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = elliptical_missile_tech
+			research_cost_coeff = 1
+		}		
+
+
+		enable_building = {
+			building = radar_station
+			level = 10
+		}
+
+
+		category_fighter = {
+			air_attack = 0.10
+			air_defence = 0.1
+		}
+
+		category_strat_bomber = {
+			air_bombing = 0.15
+		}
+
+		air_detection = 0.20
+
+	
+		
+
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 7 y = 11 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}		
+
+	panaravian_trendsetter_tech = { 
+
+		enable_equipments = {
+			panaravian_trendsetter_equipment
+		}	
+
+		research_cost = 0.5
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 9 y = 8 }
+		}
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2041.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}			
+
+	elliptical_missile_tech = { 
+
+		enable_equipments = {
+		}
+
+
+		category_fighter = {
+			air_attack = 0.10
+		}
+
+
+	
+		
+
+		research_cost = 0.5
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 9 y = 14 }
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2041.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+	
+	
+	pony_race_experiments = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = land_pony_experiments
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 2032
+		folder = {
+			name = skieslabs_folder
+			position = { x = 0 y = 18 }
+		}
+
+		research_speed_factor = 0.05
+
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2032.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2032.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2032.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}
+
+	land_pony_experiments = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = pegasi_experiments
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 2 y = 18 }
+		}
+
+		monthly_population = 0.10
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.10	
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+
+
+	pegasi_experiments = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = unicorn_experiments
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 4 y = 18 }
+		}
+
+		supply_consumption_factor = -0.05
+		recon_factor = 0.1
+		coordination_bonus = 0.05
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}		
+
+	unicorn_experiments = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = batpony_experiments
+			research_cost_coeff = 1
+		}		
+
+	
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 6 y = 18 }
+		}
+
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+
+		category_front_line = {
+			max_organisation = 5
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+
+	batpony_experiments = { 
+
+		enable_equipments = {
+		}
+
+	
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 8 y = 18 }
+		}	
+
+		category_fighter = {
+			night_penalty = -0.20
+		}
+
+		category_heavy_fighter = {
+			night_penalty = -0.20
+		}	
+		
+		category_strat_bomber = {
+			night_penalty = -0.20
+		}	
+		
+		category_front_line = {
+			night_penalty = -0.20
+			max_organisation = 3		
+		}		
+
+		
+		night_spotting_chance = 0.20
+		army_defence_factor  = 0.05
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+	
+	the_celestia_project = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = anti_projectile_lasers
+			research_cost_coeff = 1
+		}		
+
+	
+		research_cost = 1
+		start_year = 2032
+		folder = {
+			name = skieslabs_folder
+			position = { x = 0 y = 4 }
+		}
+
+		category_tanks = {
+			defense = 0.05
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}		
+
+	anti_projectile_lasers = { 
+
+		enable_equipments = {
+		}
+		
+
+		path = {
+			leads_to_tech = tech_80kw_laser_protection_system
+			research_cost_coeff = 1
+		}			
+
+	
+		research_cost = 1
+		start_year = 2034
+		folder = {
+			name = skieslabs_folder
+			position = { x = 2 y = 4 }
+		}
+
+		category_tanks = {
+			defense = 0.05
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+
+
+	tech_80kw_laser_protection_system = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = optimized_laser_targeting_systems
+			research_cost_coeff = 1
+		}		
+		
+	
+		research_cost = 1
+		start_year = 2036
+		folder = {
+			name = skieslabs_folder
+			position = { x = 4 y = 4 }
+		}
+
+		category_tanks = {
+			defense = 0.10
+			armor_value = 0.1
+			maximum_speed = -0.2
+			fuel_consumption_factor = 0.15
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+	
+	optimized_laser_targeting_systems = { 
+
+		enable_equipments = {
+		}
+
+		path = {
+			leads_to_tech = the_celestia_tank
+			research_cost_coeff = 1
+		}		
+		
+	
+		research_cost = 1
+		start_year = 2038
+		folder = {
+			name = skieslabs_folder
+			position = { x = 6 y = 4 }
+		}
+
+		category_tanks = {
+			defense = 0.05
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}	
+
+	the_celestia_tank = { 
+
+		enable_equipments = {
+			celestia_tank_equipment
+		}
+	
+		
+	
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = skieslabs_folder
+			position = { x = 8 y = 4 }
+		}
+
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 1.1
+				date > "2040.1.1"
+			}
+
+			modifier = {
+				add = 1.1
+				date > "2040.5.1"
+			}
+
+			modifier = {
+				add = 3.1
+				date > "2040.1.1"
+			}
+		}
+
+		categories = {
+			skieslabs_tech
+		}
+
+
+	}		
+
+}

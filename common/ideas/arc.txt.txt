@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+			arc_the_ria_program_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = ARC
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_attack_factor = 0.10
+			}
+	}
+}
+}
