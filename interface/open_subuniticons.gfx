@@ -1,0 +1,88 @@
+spriteTypes = {	
+
+
+
+ #OPEN STUFF
+
+    spriteType = { 
+     name = "GFX_unit_airmoble_vlaps_icon_medium"				
+     textureFile = "gfx/interface/open_counters/divisions_large/vlap_large.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_airmoble_vlaps_icon_medium_white" # Do not omit "medium"						
+     textureFile = "gfx/interface/open_counters/divisions_small/vlap_small.dds" 
+     noOfFrames = 2
+   }
+
+    spriteType = { 
+     name = "GFX_unit_attack_helicopters_icon_medium"				
+     textureFile = "gfx/interface/open_counters/divisions_large/attack_helo_large.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_attack_helicopters_icon_medium_white" # Do not omit "medium"						
+     textureFile = "gfx/interface/open_counters/divisions_small/attack_helo_small.dds" 
+     noOfFrames = 2
+   }  
+
+     spriteType = { 
+     name = "GFX_unit_open_ifv_unit_icon_medium"				
+     textureFile = "gfx/interface/open_counters/divisions_large/ifv_large.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_open_ifv_unit_icon_medium_white" # Do not omit "medium"						
+     textureFile = "gfx/interface/open_counters/divisions_small/ifv_small.dds" 
+     noOfFrames = 2
+   }   
+   
+     spriteType = { 
+     name = "GFX_unit_open_apc_unit_icon_medium"				
+     textureFile = "gfx/interface/open_counters/divisions_large/apc_large.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_open_apc_unit_icon_medium_white" # Do not omit "medium"						
+     textureFile = "gfx/interface/open_counters/divisions_small/apc_small.dds" 
+     noOfFrames = 2
+   }    
+
+
+ #texticons shit
+
+    spriteType = {
+     name = "GFX_unit_airmoble_vlaps_icon_small"
+     texturefile = "gfx/interface/open_counters/texticons/vlap_ti.dds" 
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }	
+
+    spriteType = {
+     name = "GFX_unit_attack_helicopters_icon_small"
+     texturefile = "gfx/interface/open_counters/texticons/attack_helo_ti.dds" 
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }   
+
+    spriteType = {
+     name = "GFX_unit_open_ifv_unit_icon_small"
+     texturefile = "gfx/interface/open_counters/texticons/ifv_ti.dds" 
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }     
+
+    spriteType = {
+     name = "GFX_unit_open_apc_unit_icon_small"
+     texturefile = "gfx/interface/open_counters/texticons/apc_ti.dds" 
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }    
+
+   
+
+}

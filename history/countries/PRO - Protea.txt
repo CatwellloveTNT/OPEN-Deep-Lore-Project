@@ -21,12 +21,9 @@ if = {
 
 
 OOB = "PRO_2032"
-set_technology = {
-	infantry_weapons = 1
-	tech_trucks = 1 
-	tech_support = 1
-	tech_recon = 1
-}
+
+set_research_slots = 3
+set_convoys = 121
 
 set_politics = {
 	ruling_party = protean_democracy
@@ -50,6 +47,11 @@ add_ideas = {
 	constant_state_of_military_readyness
 	the_protean_economy
 	the_neglected_protean_airforce
+	human_majority_population
+	the_protean_system_idea
+	no_avian_minority
+	limited_conscription
+	no_human_minority
 }
 
 
@@ -59,6 +61,7 @@ add_ai_strategy = {
     value = 2000
 }
 
+
 	set_technology = {
 
 		#doctrines
@@ -66,7 +69,6 @@ add_ai_strategy = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		mechanical_computing = 1
 		iw_small_airframe = 1
 		basic_small_airframe = 1
 		engines_1 = 1
@@ -74,34 +76,59 @@ add_ai_strategy = {
 
 		#industry
 		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		tech_trucks = 1 
+		tech_support = 1
+		support_weapons = 1
+		manpads = 1
+		atgms = 1
+		tech_engineers = 1
+		tech_logistics_company = 1
+		gwtank_chassis = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+		modern_helicopter_technology = 1
+		vlap1 = 1
+		attack_helo1 = 1
+		transport_helo1 = 1
+		gw_artillery = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		early_bombs = 1
+		aa_hmg = 1
+		air_torpedoe_1 = 1
+		modern_missile_systems = 1
+		aircraft_construction = 1
+		engines_1_tvc = 1
+
+
+
 	}
 
 set_grand_doctrine = grand_battleplan
 
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
 
 create_equipment_variant = {
-	name = "test"
+	name = "Battymanzel Gen. I"
 	type = small_plane_airframe_0
 	modules = {
 		fixed_main_weapon_slot = light_mg_2x
 		engine_type_slot = engine_1_1x
+		special_type_slot_1 = standard_configuration		
 	}
 }
 create_equipment_variant = {
-	name = "test2"
+	name = "Battymanzel Gen. II"
 	type = small_plane_airframe_1
 	modules = {
-		fixed_main_weapon_slot = light_mg_2x
-		engine_type_slot = engine_1_1x
+		fixed_main_weapon_slot = aircraft_cannon_1_1x
+		engine_type_slot = engine_2_1x_tvc
+		special_type_slot_1 = standard_configuration
 	}
 }
 

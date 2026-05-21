@@ -192,7 +192,14 @@ technology_folders = {
 	human_genetics_folder = {
 		ledger = civilian
 		available = {
-#		has_idea = human_majority_population
+		has_idea = human_majority_population
+		}
+
+		NOT = {
+			OR = {
+				has_idea = pony_majority_population
+				has_idea = avian_majority_population
+			}
 		}
 
 	}	
@@ -200,36 +207,52 @@ technology_folders = {
 	pony_genetics_folder = {
 		ledger = civilian
 		available = {
-#		has_idea = pony_majority_population
+		has_idea = pony_majority_population
 		}		
+
+		NOT = {
+			OR = {
+				has_idea = human_majority_population
+				has_idea = avian_majority_population
+			}
+		}		
+
 	}	
 
 
 	avian_genetics_folder = {
 		ledger = civilian
 		available = {
-#		has_idea = avian_majority_population
+		has_idea = avian_majority_population
 		}		
+
+		NOT = {
+			OR = {
+				has_idea = pony_majority_population
+				has_idea = human_majority_population
+			}
+		}
+
 	}	
 
 	sukankuworks_folder = {
 		ledger = civilian
 		available = {
-	#		original_tag = CLS
+			original_tag = CLS
 		}
 	}	
 	
 	skieslabs_folder = {
 		ledger = civilian
 		available = {
-	#		original_tag = ARC
+			original_tag = ARC
 		}
 	}
 	
 	tmrsrd_folder = { #their magesty's royal special research division
 		ledger = civilian
 		available = {
-#			original_tag = AVI
+			original_tag = AVI
 		}
 	}	
 
@@ -243,9 +266,9 @@ technology_folders = {
 	armour_folder = {
 		ledger = army
 		available = {
-	#		NOT = { REMOVE THIS NOT WHEN YOU ARE DONE WITH THE NON DLC TECH TREE
-	#			has_dlc = "No Step Back"
-	#		}
+			NOT = { 
+				has_dlc = "No Step Back"
+			}
 		}
 	}
 	nsb_armour_folder = {
@@ -258,7 +281,7 @@ technology_folders = {
 		ledger = army
 	}
 	air_techs_folder = {
-	#	available = { NOT = { has_dlc = "By Blood Alone" } }  REMOVE THIS NOT WHEN YOU ARE DONE WITH THE NON DLC TECH TREE
+		available = { NOT = { has_dlc = "By Blood Alone" } }  
 		ledger = air
 	}
 	bba_air_techs_folder = {

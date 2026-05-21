@@ -99,7 +99,7 @@ equipments = {
 
 
 	modern_tank_equipment_1 = {
-		year = 1945
+		year = 2030
 
 		archetype = modern_tank_chassis
 		priority = 170
@@ -107,7 +107,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 13
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -514,7 +514,7 @@ equipments = {
 	}		
 
 	ifv_equipment_1 = {
-		year = 1934
+		year = 2020
 		
 		archetype = ifv_chassis
 		priority = 10
@@ -522,25 +522,25 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 9
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 4
-		breakthrough = 26
-		hardness = 0.8
-		armor_value = 10
+		defense = 41
+		breakthrough = 9
+		hardness = 0.4
+		armor_value = 9
 
 		#Offensive Abilities
-		soft_attack = 13
-		hard_attack = 4
-		ap_attack = 10
-		air_attack = 0
+		soft_attack = 20
+		hard_attack = 3
+		ap_attack = 4
+		air_attack = 0.3
 
 		#Space taken in convoy
-		lend_lease_cost = 10
+		lend_lease_cost = 4
 		
-		build_cost_ic = 8
+		build_cost_ic = 3.5
 		resources = {
 			#oil = 1
 			steel = 2
@@ -550,7 +550,7 @@ equipments = {
 	}
 
 	ifv_equipment_2 = {
-		year = 1936
+		year = 2032
 		
 		archetype = ifv_chassis
 		parent = ifv_equipment_1
@@ -559,20 +559,20 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 10
 		reliability = 0.8
 		#Defensive Abilities
-		defense = 5
-		breakthrough = 36
-		armor_value = 15
+		defense = 50
+		breakthrough = 14
+		armor_value = 13
 
 		#Offensive Abilities
-		soft_attack = 16
-		hard_attack = 6
-		ap_attack = 30
-		air_attack = 0		
-		fuel_consumption = 2.4
-		build_cost_ic = 9
+		soft_attack = 30
+		hard_attack = 5
+		ap_attack = 5
+		air_attack = 0.5	
+		fuel_consumption = 3
+		build_cost_ic = 4.5
 		resources = {
 			#oil = 1
 			steel = 3
@@ -580,7 +580,7 @@ equipments = {
 	}
 
 	ifv_equipment_3 = {
-		year = 1941
+		year = 2035
 	
 		archetype = ifv_chassis
 		parent = ifv_equipment_2
@@ -589,20 +589,20 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 14
+		maximum_speed = 11
 		reliability = 0.8
 		#Defensive Abilities
-		defense = 6
-		breakthrough = 46
-		armor_value = 30
+		defense = 60
+		breakthrough = 16
+		armor_value = 15
 
 		#Offensive Abilities
-		soft_attack = 22
-		hard_attack = 9
-		ap_attack = 50
-		air_attack = 0	
-		fuel_consumption = 2.4
-		build_cost_ic = 10 
+		soft_attack = 37
+		hard_attack = 7
+		ap_attack = 7
+		air_attack = 0.5
+		fuel_consumption = 3.5
+		build_cost_ic = 5.5
 		resources = {
 			#oil = 2
 			steel = 4
@@ -610,7 +610,7 @@ equipments = {
 	}
 
 	ifv_equipment_4 = {
-		year = 1941
+		year = 2040
 	
 		archetype = ifv_chassis
 		parent = ifv_equipment_3
@@ -619,20 +619,20 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 18
+		maximum_speed = 12
 		reliability = 0.8
 		#Defensive Abilities
-		defense = 8
-		breakthrough = 50
-		armor_value = 35
+		defense = 72
+		breakthrough = 19
+		armor_value = 17
 
 		#Offensive Abilities
-		soft_attack = 27
-		hard_attack = 11
-		ap_attack = 55
-		air_attack = 0	
-		fuel_consumption = 2.4
-		build_cost_ic = 12 
+		soft_attack = 48
+		hard_attack = 9
+		ap_attack = 9
+		air_attack = 0.5	
+		fuel_consumption = 4
+		build_cost_ic = 6.6
 		resources = {
 			#oil = 2
 			steel = 6
@@ -660,7 +660,7 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 2
+		defense = 22
 		breakthrough = 2
 		hardness = 0.5
 		armor_value = 5
@@ -700,7 +700,7 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 2
+		defense = 29
 		breakthrough = 2
 		hardness = 0.5
 		armor_value = 5
@@ -740,7 +740,7 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 2
+		defense = 37
 		breakthrough = 2
 		hardness = 0.5
 		armor_value = 5
@@ -764,7 +764,7 @@ equipments = {
 
 		archetype = ifv_chassis
 #		family = light_tank_equipment_1
-		priority = 30
+		priority = 46
 		visual_level = 0
 		can_convert_from = { 
 			ifv_equipment_4
@@ -794,7 +794,7 @@ equipments = {
 		build_cost_ic = 10
 		resources = {
 			#oil = 1
-			steel = 2
+			steel = 1
 		}
 		fuel_consumption = 0.6
 	}		
@@ -802,7 +802,7 @@ equipments = {
 
 	# 1934
 	apc_equipment_1 = {
-		year = 1934
+		year = 2020
 
 		archetype = apc_chassis
 		priority = 90
@@ -810,32 +810,32 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 5
-		reliability = 0.8
+		maximum_speed = 11.5
+		reliability = 0.7
 
 		#Defensive Abilities
-		defense = 6
-		breakthrough = 36
-		hardness = 0.95
-		armor_value = 70
+		defense = 34
+		breakthrough = 4.5
+		hardness = 0.2
+		armor_value = 6
 
 		#Offensive Abilities
 		soft_attack = 15
-		hard_attack = 12
-		ap_attack = 35
+		hard_attack = 2.3
+		ap_attack = 3
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 14
+		lend_lease_cost = 3
 		
-		build_cost_ic = 25 
+		build_cost_ic = 1.8 
 		resources = {
 			#oil = 1
-			steel = 3
-			chromium = 3
+			steel = 2
+			
 		}
 		
-		fuel_consumption = 4.4
+		fuel_consumption = 2
 
 		upgrades = {
 			tank_reliability_upgrade
@@ -847,7 +847,7 @@ equipments = {
 
 	# 1941
 	apc_equipment_2 = {
-		year = 1941
+		year = 2035
 
 		archetype = apc_chassis
 		parent = apc_equipment_1
@@ -856,29 +856,29 @@ equipments = {
 		is_convertable = yes
 		
 		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.8
+		maximum_speed = 12
+		reliability = 0.7
 		#Defensive Abilities
-		defense = 8
-		breakthrough = 52
-		armor_value = 110
+		defense = 42
+		breakthrough = 5
+		armor_value = 8
 
 		#Offensive Abilities
-		soft_attack = 27
-		hard_attack = 30
-		ap_attack = 111
-		fuel_consumption = 4.4
-		build_cost_ic = 27 
+		soft_attack = 20
+		hard_attack = 3.3
+		ap_attack = 4.5
+		fuel_consumption = 3.2
+		build_cost_ic = 2.2
 		resources = {
 #			oil = 1
 			steel = 3
-			chromium = 3
+			
 		}
 	}
 
 	# 1943
 	apc_equipment_3 = {
-		year = 1943
+		year = 2038
 
 		archetype = apc_chassis
 		parent = apc_equipment_2
@@ -887,28 +887,28 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 13
 		reliability = 0.8
 		#Defensive Abilities
-		defense = 9
-		breakthrough = 67
-		armor_value = 130
+		defense = 56
+		breakthrough = 7
+		armor_value = 9
 
 		#Offensive Abilities
-		soft_attack = 35
-		hard_attack = 40
-		ap_attack = 131
-		fuel_consumption = 4.4
-		build_cost_ic = 30
+		soft_attack = 26
+		hard_attack = 5
+		ap_attack = 6
+		fuel_consumption = 3.5
+		build_cost_ic = 3
 		resources = {
 			#oil = 1
-			steel = 4
-			chromium = 3
+			steel = 3
+			chromium = 1
 		}
 	}
 
 	apc_equipment_4 = {
-		year = 1943
+		year = 2040
 
 		archetype = apc_chassis
 		parent = apc_equipment_3
@@ -917,29 +917,29 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 14
 		reliability = 0.8
 		#Defensive Abilities
-		defense = 9
-		breakthrough = 67
-		armor_value = 130
+		defense = 72
+		breakthrough = 10
+		armor_value = 13
 
 		#Offensive Abilities
-		soft_attack = 35
-		hard_attack = 40
-		ap_attack = 131
-		fuel_consumption = 4.4
-		build_cost_ic = 30
+		soft_attack = 33
+		hard_attack = 8.5
+		ap_attack = 8
+		fuel_consumption = 4
+		build_cost_ic = 4
 		resources = {
 			#oil = 1
 			steel = 4
-			chromium = 3
+			chromium = 2
 		}
 	}
 
 
 	apc_td_equipment_1 = {
-		year = 1934
+		year = 2030
 
 		archetype = apc_chassis
 #		family = heavy_tank_equipment_1
@@ -955,32 +955,32 @@ equipments = {
 			tank_at_upgrade
 		}
 		#Misc Abilities
-		maximum_speed = 5
+		maximum_speed = 7
 		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 1
-		hardness = 0.95
-		armor_value = 70
+		hardness = 0.20
+		armor_value = 4
 
 		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 25
-		ap_attack = 96
+		soft_attack = 2
+		hard_attack = 15
+		ap_attack = 25
 		air_attack = 0
 		
-		build_cost_ic = 25
+		build_cost_ic = 2
 		resources = {
 			#oil = 1
-			steel = 3
-			chromium = 3
+			steel = 2
+			chromium = 0
 		}
 		fuel_consumption = 2.2
 	}
 
 	apc_td_equipment_2 = {
-		year = 1941
+		year = 2035
 
 		archetype = apc_chassis
 		parent = apc_td_equipment_1
@@ -992,29 +992,29 @@ equipments = {
 		visual_level = 1
 
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 1.5
-		armor_value = 110
+		armor_value = 5
 
 		#Offensive Abilities
-		soft_attack = 8
-		hard_attack = 42
-		ap_attack = 140
+		soft_attack = 3
+		hard_attack = 29
+		ap_attack = 40
 		air_attack = 0
 		fuel_consumption = 2.2
-		build_cost_ic = 27
+		build_cost_ic = 4
 		resources = {
 			#oil = 1
-			steel = 4
-			chromium = 3
+			steel = 3
+			chromium = 0
 		}
 	}
 
 	apc_td_equipment_3 = {
-		year = 1943
+		year = 2039
 
 		archetype = apc_chassis
 		parent = apc_td_equipment_2
@@ -1026,29 +1026,29 @@ equipments = {
 		visual_level = 2
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
-		armor_value = 130
+		armor_value = 5
 
 		#Offensive Abilities
-		soft_attack = 10
-		hard_attack = 60
-		ap_attack = 160
+		soft_attack = 4
+		hard_attack = 40
+		ap_attack = 50
 		air_attack = 0
 		fuel_consumption = 2.2
-		build_cost_ic = 30
+		build_cost_ic = 5
 		resources = {
 			#oil = 2
 			steel = 4
-			chromium = 4
+			chromium = 1
 		}
 	}
 
 	apc_td_equipment_4 = {
-		year = 1943
+		year = 2042
 
 		archetype = apc_chassis
 		parent = apc_td_equipment_3
@@ -1060,24 +1060,24 @@ equipments = {
 		visual_level = 2
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 		#Defensive Abilities
-		defense = 7
-		breakthrough = 1.8
-		armor_value = 130
+		defense = 8
+		breakthrough = 2
+		armor_value = 6
 
 		#Offensive Abilities
-		soft_attack = 10
+		soft_attack = 5
 		hard_attack = 60
-		ap_attack = 160
+		ap_attack = 60
 		air_attack = 0
 		fuel_consumption = 2.2
-		build_cost_ic = 30
+		build_cost_ic = 6
 		resources = {
 			#oil = 2
 			steel = 4
-			chromium = 4
+			chromium = 2
 		}
 	}
 

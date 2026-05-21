@@ -5,7 +5,7 @@ equipments = {
 	### tldr; If your gun requires a specific turret: define the turret slot first.
 	
 	ifv_chassis = { #these are IFVS		
-		year = 1922
+		year = 2020
 		is_archetype = yes
 		is_buildable = no
 
@@ -156,16 +156,16 @@ equipments = {
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4
+		maximum_speed = 9.5
 		build_cost_ic = 2
 		reliability = 0.8
-		hardness = 0.8
+		hardness = 0.4
 		armor_value = 10
 		resources = {
-			steel = 1
+			steel = 2
 		}
 
-		lend_lease_cost = 10
+		lend_lease_cost = 7
 
 		manpower = 3
 
@@ -176,7 +176,7 @@ equipments = {
 		abbreviation = "lt0"
 		derived_variant_name = light_tank_equipment_0
 		visual_level = 0
-		year = 1922
+		year = 2020
 		archetype = ifv_chassis
 		priority = 2000
 		module_slots = inherit
@@ -191,30 +191,30 @@ equipments = {
 		abbreviation = "lt1"
 		derived_variant_name = light_tank_equipment_1
 		visual_level = 0
-		year = 1934
+		year = 2032
 		archetype = ifv_chassis
 		parent = ifv_chassis_0
 		priority = 2000
 		module_slots = inherit
-		maximum_speed = 5
+		maximum_speed = 10
 		build_cost_ic = 2.35
-		reliability = 0.95
-		armor_value = 15
+		reliability = 0.8
+		armor_value = 13
 	}
 
 	ifv_chassis_2 = { #ifv 3
 		abbreviation = "lt2"
 		derived_variant_name = light_tank_equipment_2
 		visual_level = 1
-		year = 1936
+		year = 2035
 		archetype = ifv_chassis
 		parent = ifv_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 2.7
-		maximum_speed = 6
-		reliability = 1.1
-		armor_value = 20
+		build_cost_ic = 3.3
+		maximum_speed = 11
+		reliability = 0.9
+		armor_value = 18
 		resources = {
 			steel = 1
 		}
@@ -224,35 +224,35 @@ equipments = {
 		abbreviation = "lt3"
 		derived_variant_name = light_tank_equipment_3
 		visual_level = 2
-		year = 1942
+		year = 2038
 		archetype = ifv_chassis
 		parent = ifv_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 3
-		maximum_speed = 7
-		reliability = 1.3
+		build_cost_ic = 4
+		maximum_speed = 12
+		reliability = 0.9
 		armor_value = 25
 		resources = {
-			steel = 2
+			steel = 1
 		}
 	}
 
 	ifv_chassis_4 = { #ifv 5
 		abbreviation = "lt4"
-		derived_variant_name = light_tank_equipment_4
+		derived_variant_name = light_tank_equipment_3
 		visual_level = 2
-		year = 1945
+		year = 2040
 		archetype = ifv_chassis
 		parent = ifv_chassis_3
 		priority = 2000
 		module_slots = inherit
 		build_cost_ic = 4
-		maximum_speed = 10
-		reliability = 1.5
-		armor_value = 28
+		maximum_speed = 13
+		reliability = 1
+		armor_value = 31
 		resources = {
-			steel = 3
+			steel = 2
 		}
 	}	
 }

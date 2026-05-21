@@ -737,13 +737,13 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
-		name = "country_politics_idea_category_entry"
+		name = "country_politics_idea_category_entry" #parent of the ideas
 		position = { x = 0 y = 0 }
 		size = { width=550 height= 100 }
 		clipping = no
 		
 		iconType ={
-			name ="category_header"
+			name ="category_header" 
 			spriteType = "GFX_category_header"
 			position = { x=-5 y=2 }
 			Orientation = "UPPER_LEFT"
@@ -753,10 +753,9 @@ guiTypes = {
 			spriteType = "GFX_idea_categories"
 			position = { x=4 y=8 }
 			Orientation = "UPPER_LEFT"
-		}
+		}	
 		
-		
-		instantTextboxType = {
+		instantTextboxType = { #names of all categories
 			name = "name"
 			position = { x = 70 y = 14 }
 			font = "hoi_20b"
@@ -765,7 +764,7 @@ guiTypes = {
 			maxHeight = 20
 		}
 		
-		gridboxtype = {
+		gridboxtype = { #all of the ideas will be affected if i touch this
 			name = "ideas_grid"
 			position = { x = 17 y = 46 }
 			size = { width = 100%% height = 100%% }

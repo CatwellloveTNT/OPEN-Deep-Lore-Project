@@ -1,34 +1,636 @@
-territorial_defense_goons_PRO = { #these guys are bottom of the barrel units, ai will only shit these out when desperate
+PRO_go_for_ifvs = {
 
 	available_for = {
 		PRO
 	}
 	
-	role = garrison
+	role = armor
 	
 	upgrade_prio = {
 		base = 2
+
+		modifier = {
+			factor = 4
+			AND = {
+				has_tech = basic_light_tank_chassis
+				num_of_military_factories > 25
+			}
+		}
 	}
 
-	tdu_pro_1 = {
-		division_names_group = GER_Arm_01
-		reinforce_prio = 0
+	PRO_ifvs_endgame = {
+		division_names_group = PRO_MEC_01
 		upgrade_prio = {
 			base = 1
 
 			modifier = {
-				factor = 2
+				factor = 3
+				date > "2038.1.1"
 			}
 		}
 		
 		target_template = {
 			
 			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+				attack_helicopter_support_company = 1
 			}
 			
-			regiments = { #this gives a malformed token error
-				infantry = 6
-			}	
+			regiments = {
+				open_ifv_unit = 6
+				mot_artillery_brigade = 2
+			}
 		}
 	}
+
+	PRO_ifvs_midgame = {
+		division_names_group = PRO_MEC_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2035.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = {
+				open_ifv_unit = 4
+				mot_artillery_brigade = 2
+			}
+		}
+	}
+
+	PRO_ifvs_startgame = {
+		division_names_group = PRO_MEC_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2032.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = {
+				open_ifv_unit = 3
+				mot_artillery_brigade = 2
+			}
+		}
+	}	
+
+
+
 }
+
+PRO_go_for_apcs = {
+
+	available_for = {
+		PRO
+	}
+	
+	role = armor
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 4
+			AND = {
+				has_tech = basic_heavy_tank_chassis
+				num_of_military_factories > 15
+			}
+		}
+	}
+
+	PRO_apcs_endgame = {
+		division_names_group = PRO_MEC_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2038.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+				attack_helicopter_support_company = 1
+			}
+			
+			regiments = {
+				open_apc_unit = 6
+				mot_artillery_brigade = 2
+			}
+		}
+	}
+
+	PRO_apcs_midgame = {
+		division_names_group = PRO_MEC_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2035.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = {
+				open_apc_unit = 4
+				mot_artillery_brigade = 2
+			}
+		}
+	}
+
+	PRO_apcs_startgame = {
+		division_names_group = PRO_MEC_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2032.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = {
+				open_apc_unit = 3
+				mot_artillery_brigade = 2
+			}
+		}
+	}	
+
+
+
+}
+
+PRO_go_for_tanks = {
+
+	available_for = {
+		PRO
+	}
+	
+	role = armor
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 4
+			AND = {
+				num_of_military_factories > 35
+			}
+		}
+	}
+
+	PRO_tanks_endgame = {
+		division_names_group = PRO_ARM_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2038.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+				attack_helicopter_support_company = 1
+			}
+			
+			regiments = { #VERY EXPENSIVE UNIT
+				open_ifv_unit = 4
+				modern_armor = 3
+				modern_sp_artillery_brigade = 2
+			}
+		}
+	}
+
+	PRO_tanks_midgame = {
+		division_names_group = PRO_ARM_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2035.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = { #VERY EXPENSIVE UNIT
+				open_ifv_unit = 3
+				modern_armor = 2
+				modern_sp_artillery_brigade = 1
+			}
+		}
+	}
+
+	PRO_apcs_startgame = {
+		division_names_group = PRO_MEC_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2032.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = { #VERY EXPENSIVE UNIT
+				open_ifv_unit = 3
+				modern_armor = 3
+			}
+		}
+	}	
+
+
+
+}
+
+PRO_footies = {
+
+	available_for = {
+		PRO
+	}
+	
+	role = infantry
+	
+	upgrade_prio = {
+		base = 2
+
+	}
+
+	PRO_infantry_endgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2038.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+				attack_helicopter_support_company = 1
+			}
+			
+			regiments = { 
+				open_ifv_unit = 2
+				infantry = 5
+				artillery_brigade = 2
+			}
+		}
+	}
+
+	PRO_infantry_midgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2035.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = { 
+#				open_ifv_unit = 2
+				infantry = 7
+				artillery_brigade = 2
+			}
+		}
+	}
+
+	PRO_infantry_startgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2032.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				atgm_unit = 1
+				artillery = 1
+			}
+			
+			regiments = { 
+				infantry = 5
+				artillery_brigade = 2
+			}
+		}
+	}	
+
+
+
+}
+
+PRO_attack_helicopters = {
+
+	available_for = {
+		PRO
+	}
+	
+	role = infantry
+	
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 5
+			AND = {
+				num_of_military_factories > 40
+			}
+		}
+
+	}
+
+	PRO_apaches_endgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2038.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				helicopter_transport = 1
+				artillery = 1
+				attack_helicopter_support_company = 1
+			}
+			
+			regiments = { #EXPENSIVE UNIT
+				attack_helicopters = 5
+				transport_helicopter_infantry = 2
+			}
+		}
+	}
+
+	PRO_apaches_midgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2035.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				helicopter_transport = 1
+				artillery = 1
+				attack_helicopter_support_company = 1
+			}
+			
+			regiments = { #EXPENSIVE UNIT
+				attack_helicopters = 4
+				transport_helicopter_infantry = 2
+			}
+		}
+	}
+
+	PRO_apaches_startgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2032.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				helicopter_transport = 1
+				artillery = 1
+				attack_helicopter_support_company = 1
+			}
+			
+			regiments = { #EXPENSIVE UNIT
+				attack_helicopters = 2
+				transport_helicopter_infantry = 2
+			}
+		}
+	}	
+
+
+
+}
+
+PRO_vlaps = {
+
+	available_for = {
+		PRO
+	}
+	
+	role = infantry
+	
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 5
+			AND = {
+				num_of_military_factories > 40
+			}
+		}
+
+	}
+
+	PRO_vlaps_endgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2038.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				helicopter_transport = 1
+				artillery = 1
+				vlap_lrp = 1
+			}
+			
+			regiments = { #EXPENSIVE UNIT
+				attack_helicopters = 4
+				airmoble_vlaps = 5
+			}
+		}
+	}
+
+	PRO_vlaps_midgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2035.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				helicopter_transport = 1
+				artillery = 1
+				vlap_lrp = 1
+			}
+			
+			regiments = { #EXPENSIVE UNIT
+				attack_helicopters = 3
+				airmoble_vlaps = 4
+			}
+		}
+	}
+
+	PRO_vlaps_startgame = {
+		division_names_group = PRO_INF_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > "2032.1.1"
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				manpads_unit = 1
+				helicopter_transport = 1
+				artillery = 1
+			}
+			
+			regiments = { #EXPENSIVE UNIT
+				attack_helicopters = 2
+				airmoble_vlaps = 3
+			}
+		}
+	}	
+
+
+
+}
+
+

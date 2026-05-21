@@ -203,7 +203,6 @@ technologies = {
 			ifv_aa_equipment_1
 		}
 		enable_subunits = {
-			open_ifv_aa_unit
 			open_ifv_aa_unit_support
 		}
 	
@@ -916,7 +915,6 @@ technologies = {
 			apc_td_equipment_1
 		}
 		enable_subunits = {
-			open_apc_td_unit
 			open_apc_unit_td_support
 		}
 	

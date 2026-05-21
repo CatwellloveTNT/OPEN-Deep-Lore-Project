@@ -1,0 +1,182 @@
+ideas = {
+	avian_minority_population = {
+	law = yes
+	use_list_view = yes			
+
+	assimilated_avian_minority = {
+			available = {
+				has_idea = assimilated_avian_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}
+
+	supportive_avian_minority = {
+			available = {
+				has_idea = supportive_avian_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+
+	neutral_avian_minority = {
+			available = {
+				has_idea = neutral_avian_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+
+	wary_avian_minority = {
+			available = {
+				has_idea = wary_avian_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+	
+	rebellious_avian_minority = {
+			available = {
+				has_idea = rebellious_avian_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+	
+	hostile_avian_minority = {
+			available = {
+				has_idea = hostile_avian_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}
+	
+	no_avian_minority = {
+			available = {
+				has_idea = no_avian_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}		
+	
+}
+}

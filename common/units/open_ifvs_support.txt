@@ -1,7 +1,5 @@
 sub_units = {
 
-
-
 	open_ifv_aa_unit_support = {
 		abbreviation = "IFVAAS"
 		sprite = light_armor

@@ -1,6 +1,6 @@
 PRO_create_goon_equipment = {
 	allowed = {
-		original_tag = PRO
+		tag = PRO
 	}
 	enable = {
 		always = yes
@@ -133,4 +133,86 @@ PRO_create_goon_equipment = {
 		value = -10
 	}	
 
+}
+
+PRO_forget_about_the_boats = { #GOD DAMMIT BRO YOU ARE NOT THE BOAT GUY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	allowed = {
+		tag = PRO
+	}
+
+ enable = {
+	country_exists = CHF
+ }
+
+ abort = {
+	has_war_with = AVI
+ }
+ abort_when_not_enabled = yes
+
+ ai_strategy = {
+	type = equipment_production_factor
+	id = naval_carrier
+	value = -1000
+ }
+
+  ai_strategy = {
+	type = equipment_production_factor
+	id = naval_capital
+	value = -1000
+ }
+
+   ai_strategy = {
+	type = equipment_production_factor
+	id = naval_cruiser_scout
+	value = -1000
+ }
+
+    ai_strategy = {
+	type = equipment_production_factor
+	id = naval_cruiser_light
+	value = -1000
+ }
+
+   ai_strategy = {
+	type = equipment_production_factor
+	id = naval_submarine
+	value = -1000
+ }
+
+
+}
+
+PRO_take_the_poland_heights = {
+	allowed = {
+		original_tag = PRO
+	}
+
+ enable = {
+	AND = {
+		has_war_with = CHF
+		CHF = {
+			owns_state = 533
+		}
+	}
+ }
+
+ abort = {
+	PRO = {
+		owns_state = 533
+	}
+ }
+ abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = 533 # poland heights		
+		value = 100 # +100%
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = CHF
+		value = 250
+	}	
+	
 }

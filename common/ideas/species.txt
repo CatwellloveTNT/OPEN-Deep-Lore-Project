@@ -1,0 +1,87 @@
+ideas = {
+	majority_population = {
+	law = yes
+	use_list_view = yes			
+
+	human_majority_population = {
+
+			available = {
+				has_idea = human_majority_population
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}
+
+	pony_majority_population = {
+			picture = warmed_up_pic
+
+
+			available = {
+				has_idea = pony_majority_population
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+
+	avian_majority_population = {
+
+			available = {
+				has_idea = avian_majority_population
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+	
+}
+}

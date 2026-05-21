@@ -2,15 +2,15 @@ air_wings = {
 	537 = {
 		small_plane_airframe_0 = {
 			owner = PRO
-			amount = 72
-			version_name = "test"
+			amount = 25
+			version_name = "Battymanzel Gen. I"
 		}
 	}
 	738 = {
 		small_plane_airframe_1 = {
 			owner = PRO
-			amount = 99
-			version_name = "test2"
+			amount = 44
+			version_name = "Battymanzel Gen. II"
 		}
 	}
 }

@@ -1,0 +1,183 @@
+ideas = {
+	human_minority_population = {
+	law = yes
+	use_list_view = yes			
+
+	assimilated_human_minority = {
+			available = {
+				has_idea = assimilated_human_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}
+
+	supportive_human_minority = {
+			available = {
+				has_idea = supportive_human_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+
+	neutral_human_minority = {
+			available = {
+				has_idea = neutral_human_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+
+	wary_human_minority = {
+			available = {
+				has_idea = wary_human_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+	
+	rebellious_human_minority = {
+			available = {
+				has_idea = rebellious_human_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+	
+	hostile_human_minority = {
+			available = {
+				has_idea = hostile_human_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}
+
+	no_human_minority = {
+			available = {
+				has_idea = no_human_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+	}	
+		
+	
+}
+}

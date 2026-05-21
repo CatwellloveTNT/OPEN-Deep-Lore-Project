@@ -1,0 +1,221 @@
+ideas = {
+	pony_minority_population = {
+	law = yes
+	use_list_view = yes			
+
+	assimilated_pony_minority = {
+			available = {
+				has_idea = assimilated_pony_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+			
+	}
+
+	supportive_pony_minority = {
+			picture = warmed_up_pic
+
+			available = {
+				has_idea = supportive_pony_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+
+	}	
+
+	neutral_pony_minority = {
+			available = {
+				has_idea = neutral_pony_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}		
+			
+	}	
+
+	wary_pony_minority = {
+			available = {
+				has_idea = wary_pony_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+
+	}	
+	
+	rebellious_pony_minority = {
+			available = {
+				has_idea = rebellious_pony_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}			
+
+	}	
+	
+	hostile_pony_minority = {
+			available = {
+				has_idea = hostile_pony_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}		
+
+	}
+	
+	the_protean_system_idea = {
+			available = {
+				has_idea = the_protean_system_idea
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			visible = {
+				has_idea = the_protean_system_idea
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+
+	}	
+	no_pony_minority = {
+			available = {
+				has_idea = no_pony_minority
+			}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
+
+	}	
+	
+	
+}
+}
