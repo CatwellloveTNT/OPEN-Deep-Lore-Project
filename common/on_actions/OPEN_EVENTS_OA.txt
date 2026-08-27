@@ -44,6 +44,20 @@ on_actions = {
 					days = 1
 				}
 			}
+			# ------------- CHAFFIA EVENTS -------------			
+			CHF = {
+				country_event = {
+					id = chf.1
+					days = 1
+				}
+			}
+			AVI = {
+				country_event = {
+					id = avi.1
+					days = 1
+				}
+			}			
+
 		}
 	}
 }

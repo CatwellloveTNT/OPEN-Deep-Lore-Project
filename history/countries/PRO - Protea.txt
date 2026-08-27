@@ -15,7 +15,10 @@ if = {
 
 
 
-
+diplomatic_relation = { #im trying this as a workaround because i cant seem to wrap my head around ai strategies just yet and this stupid ass country keeps putting their troops on flaria's borders during the second skirmish.
+	country = FLA
+	relation = non_aggression_pact
+}
 
 
 
@@ -41,7 +44,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	closed_economy
+	protean_closed_economy
+	partial_economic_mobilisation
 	by_my_shield_and_sword
 	the_protean_system
 	constant_state_of_military_readyness
@@ -59,6 +63,21 @@ add_ai_strategy = {
     type = alliance
     id = "CLS"
     value = 2000
+}
+
+add_opinion_modifier = {
+	target = AVI
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = CHF
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = FLA
+	modifier = dont_trade_with_me
 }
 
 
@@ -112,6 +131,49 @@ add_ai_strategy = {
 
 set_grand_doctrine = grand_battleplan
 
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "Panzer Gen. XXV Ausf. B "
+			type = modern_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "GFX_GER_basic_medium_tank_medium"
+		}
+	}
+
+	if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = { #ground assault variant
+		name = "Battymanzel Gen. II GAV"
+		type = small_plane_cas_airframe_1
+	#	design_team = mio:GER_junkers_organization
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = standard_configuration #the way i scripted the aircraft designed slot 1 MUST be the form factor.
+
+		}
+		icon = "GFX_GER_CAS1_medium"
+	}
 
 create_equipment_variant = {
 	name = "Battymanzel Gen. I"
@@ -119,7 +181,7 @@ create_equipment_variant = {
 	modules = {
 		fixed_main_weapon_slot = light_mg_2x
 		engine_type_slot = engine_1_1x
-		special_type_slot_1 = standard_configuration		
+		special_type_slot_1 = standard_configuration #the way i scripted the aircraft designed slot 1 MUST be the form factor.		
 	}
 }
 create_equipment_variant = {
@@ -128,10 +190,12 @@ create_equipment_variant = {
 	modules = {
 		fixed_main_weapon_slot = aircraft_cannon_1_1x
 		engine_type_slot = engine_2_1x_tvc
-		special_type_slot_1 = standard_configuration
+		special_type_slot_1 = standard_configuration #the way i scripted the aircraft designed slot 1 MUST be the form factor.
 	}
 }
 
+
+}
 
 # -------------------------------------- PROTEAN ECONOMY VARS --------------------------------------
 set_variable = { protea_first_phase_eco_dynamic_st = -0.05 } #stability

@@ -13,4 +13,11 @@ air_wings = {
 			version_name = "Battymanzel Gen. II"
 		}
 	}
+	738 = {
+		small_plane_cas_airframe_1 = {
+			owner = PRO
+			amount = 35
+			version_name = "Battymanzel Gen. II GAV"
+		}
+	}	
 }

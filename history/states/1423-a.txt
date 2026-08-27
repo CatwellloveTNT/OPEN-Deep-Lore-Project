@@ -1,0 +1,46 @@
+state={
+	id=1423
+	name="STATE_1423"
+	provinces={
+		20708 20709 20710 20711 20712 20713 20714 20715 
+	}
+	manpower = 2292181
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_city
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 7
+		rubber = 0
+		tungsten = 2
+		steel = 0
+		coal = 2
+
+	}
+
+	history = {
+		owner = ALV
+		add_core_of = ALV
+
+		victory_points = {
+			20715
+			30
+		}
+
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			radar_station = 0
+			dockyard = 1
+			air_base = 4
+			20715 = {
+				naval_base = 2
+			}
+		}
+	}
+}

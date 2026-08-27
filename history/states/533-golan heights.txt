@@ -28,9 +28,13 @@ state={
 
 
 		victory_points = {
-			20378
+			9336
 			5
 		}
+
+			add_dynamic_modifier = {
+				modifier = entrenched_human_minority
+			}
 
 		buildings = {
 			infrastructure = 1
@@ -39,8 +43,8 @@ state={
 			radar_station = 0
 			dockyard = 0
 			air_base = 1
+		
 
-			
 		}
 	}
 }

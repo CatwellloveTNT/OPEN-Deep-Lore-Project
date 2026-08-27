@@ -10,6 +10,7 @@ garrison_generic = {
 		AVI
 		LAV
 		CHA
+		FLA
 	}
 	
 	role = garrison

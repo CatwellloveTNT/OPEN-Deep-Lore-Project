@@ -533,8 +533,8 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 20
-		hard_attack = 3
-		ap_attack = 4
+		hard_attack = 8
+		ap_attack = 8
 		air_attack = 0.3
 
 		#Space taken in convoy
@@ -568,8 +568,8 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 30
-		hard_attack = 5
-		ap_attack = 5
+		hard_attack = 11
+		ap_attack = 11
 		air_attack = 0.5	
 		fuel_consumption = 3
 		build_cost_ic = 4.5
@@ -598,8 +598,8 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 37
-		hard_attack = 7
-		ap_attack = 7
+		hard_attack = 14
+		ap_attack = 14
 		air_attack = 0.5
 		fuel_consumption = 3.5
 		build_cost_ic = 5.5
@@ -628,8 +628,8 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 48
-		hard_attack = 9
-		ap_attack = 9
+		hard_attack = 16
+		ap_attack = 16
 		air_attack = 0.5	
 		fuel_consumption = 4
 		build_cost_ic = 6.6

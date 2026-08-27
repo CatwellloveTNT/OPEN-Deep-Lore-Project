@@ -16,6 +16,25 @@
 #	}
 #
 
+
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
 PRO_wins_the_third_skirmish_peace = {
 	PRO = {
 		transfer_state = 737
@@ -35,7 +54,7 @@ PRO_wins_the_third_skirmish_peace = {
 	}
 	CHF = {
 		country_event = {
-			id = chf.10
+			id = chf.2021
 		}
 		set_country_flag = chf_lost_the_third_skirmish
 		clr_country_flag = the_third_skirmish
@@ -44,10 +63,9 @@ PRO_wins_the_third_skirmish_peace = {
 		country_event = {
 			id = fla.1
 		}
-		add_timed_idea = {
-			idea = the_second_great_retreat
-			days = 365
-		}
+		add_ideas = the_second_great_retreat
+			
+		
 		set_country_flag = fla_lost_the_third_skirmish
 		clr_country_flag = the_third_skirmish
 	}
@@ -59,42 +77,6 @@ PRO_wins_the_third_skirmish_peace = {
 			}
 
 }
-
-pro_loses_the_third_skirmish = {
-	PRO = {
-		white_peace = CHF
-		white_peace = FLA
-		country_event = {
-			id = pro.2001
-		}
-		set_country_flag = pro_lost_the_third_skirmish
-		clr_country_flag = pro_unlock_eco_and_mil_trees
-		clr_country_flag = won_the_second_skirmish_pro
-		mark_focus_tree_layout_dirty = yes
-	}
-	CHF = {
-		country_event = {
-			id = chf.11
-		}
-		set_country_flag = chf_won_the_third_skirmish
-		clr_country_flag = the_third_skirmish
-	}
-	FLA = {
-		country_event = {
-			id = fla.1
-		}
-		set_country_flag = fla_won_the_third_skirmish
-		clr_country_flag = the_third_skirmish
-	}
-
-			hidden_effect = {
-				news_event = {
-					id = news.18
-				}
-			}
-
-}
-
 
 FLA_surrenders_in_the_third_skirmish = {
 	FLA = {
@@ -220,4 +202,6 @@ protea_wins_the_final_skirmish_effect = {
 		}
 	}
 }
+
+
 

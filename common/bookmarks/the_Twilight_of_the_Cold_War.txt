@@ -5,11 +5,15 @@ bookmarks = { # ----------------- THIS IS THE FIRST WORLD -------------------
 		date = 2032.1.1.12
 		picture = "GFX_bookmark_art"
 		default_country = "CLS"
-		default = yes
+		filters = {
+			big_3_label pawns_label
+		}
 		
-		"CLS"={
+		CLS={
 			history = "CLS_BOOKMARK_DESC"
 			ideology = democratic
+			version = base_game
+			label = { big_3_label }
 			ideas = {
 				#FRA_victors_of_wwi
 			}
@@ -17,9 +21,11 @@ bookmarks = { # ----------------- THIS IS THE FIRST WORLD -------------------
 				#FRA_form_the_popular_front
 			}
 		}
-		"ARC"={
+		ARC={
 			history = "CLS_BOOKMARK_DESC"
 			ideology = democratic
+			version = base_game			
+			label = { big_3_label }			
 			ideas = {
 				#FRA_victors_of_wwi
 			}
@@ -27,10 +33,12 @@ bookmarks = { # ----------------- THIS IS THE FIRST WORLD -------------------
 				#FRA_form_the_popular_front
 			}
 		}
-		"PRO"={
+		PRO={
 			history = "CLS_BOOKMARK_DESC"
 			ideology = democratic
+			version = base_game			
 			minor = yes
+			label = { pawns_label }			
 			ideas = {
 				#FRA_victors_of_wwi
 			}

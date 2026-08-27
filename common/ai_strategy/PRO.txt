@@ -1,218 +1,363 @@
-PRO_create_goon_equipment = {
+PRO_forget_about_the_VLAPS = {
 	allowed = {
-		tag = PRO
+		original_tag = PRO
 	}
+
 	enable = {
 		always = yes
 	}
+
 	abort = {
 		always = no
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = garrison
-		value = 5
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
-		value = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = marines
-		value = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = cavalry
-		value = -100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = motorized
-		value = 10 #because doctrine this = 1
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = anti_armor
-		value = 1
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mechanized
-		value = 15 #because doctrine this = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 15 #because doctrine this = 3
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 25 #88 to 70
-	}
-
-	# Naval unit factors
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = 0
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = 40
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = convoy
-		value = 10
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = naval_bomber
-		value = -50
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = anti_tank
-		value = 20
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = anti_air
-		value = 20
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = artillery
-		value = 50 #20 to 40
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories_archetype #Build these up over time, don't stall
-		id = anti_air_equipment
-		value = 1
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories_archetype
-		id = artillery_equipment
-		value = 4
-	}
-	
-	ai_strategy = { #Germany struggles with manual management of this in an endless loop
-		type = equipment_production_min_factories_archetype
-		id = motorized_equipment
-		value = 1
-	}
-
-	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
-		type = railway_gun_divisions_ratio
-		value = -10
+		id = open_vlaps_ai
+		value = -5
 	}	
 
 }
+
+PRO_altered_production = {
+	allowed = {
+		original_tag = PRO
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 15 #20 to 40
+	}	
+
+
+}
+
 
 PRO_forget_about_the_boats = { #GOD DAMMIT BRO YOU ARE NOT THE BOAT GUY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	allowed = {
 		tag = PRO
 	}
 
- enable = {
-	country_exists = CHF
- }
+	enable = {
+		date > 2032.1.1 
+	}
+	abort = {
+		date > 2038.1.1 
+	}
 
- abort = {
-	has_war_with = AVI
- }
- abort_when_not_enabled = yes
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -3
+	}
 
- ai_strategy = {
-	type = equipment_production_factor
-	id = naval_carrier
-	value = -1000
- }
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -3
+	}
 
-  ai_strategy = {
-	type = equipment_production_factor
-	id = naval_capital
-	value = -1000
- }
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -3
+	}
 
-   ai_strategy = {
-	type = equipment_production_factor
-	id = naval_cruiser_scout
-	value = -1000
- }
-
-    ai_strategy = {
-	type = equipment_production_factor
-	id = naval_cruiser_light
-	value = -1000
- }
-
-   ai_strategy = {
-	type = equipment_production_factor
-	id = naval_submarine
-	value = -1000
- }
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 3
+	}
 
 
 }
 
-PRO_take_the_poland_heights = {
+
+
+
+PRO_take_the_poland_heights = { #second skirmish 
 	allowed = {
 		original_tag = PRO
 	}
 
  enable = {
-	AND = {
-		has_war_with = CHF
 		CHF = {
-			owns_state = 533
+			controls_province = 9336
 		}
+ }
+
+ abort = {
+	PRO = {
+			controls_province = 9336
+	}
+ }
+ abort_when_not_enabled = yes
+
+
+	ai_strategy = { #
+		type = force_concentration_target_weight
+		state = 533 # poland heights	
+		value = 100 # +100%
+	}		
+
+ai_strategy = {
+    type = front_control
+    state = 533
+    priority = 50
+    ratio = 0.1
+    ordertype = front
+    execution_type = rush
+    manual_attack = yes
+    execute_order = yes
+}
+	
+}
+
+PRO_ignore_the_flarians = { #second skirmish
+
+	allowed = {
+		original_tag = PRO
+	}
+
+ enable = {
+		CHF = {
+			controls_province = 9336
+		}
+ }
+
+ abort = {
+		date > 2033.1.1 
+ }
+ abort_when_not_enabled = yes
+
+  ai_strategy = {
+	type = ignore
+	id = FLA
+	value = 1000
+ }
+}
+
+PRO_all_in = { #we will dedicate our entire army to fighting chaffia, no garrisons
+
+	allowed = {
+		original_tag = PRO
+	}
+
+ enable = {
+	PRO = {
+		has_war_with = CHF
+	}
+ }
+
+ abort = {
+	always = no
+ }
+ abort_when_not_enabled = yes
+
+ai_strategy = {
+    type = garrison
+    value = -100
+}
+
+}
+	
+PRO_dont_go_past_poland = { #protea likes to ignore the poland heights and instead go for the regions behind it during the second skirmish 
+	allowed = {
+		original_tag = PRO
+	}
+
+ enable = {
+		CHF = {
+			controls_province = 9336
+		}
+ }
+
+ abort = {
+	date > 2033.1.1 
+ }
+ abort_when_not_enabled = yes
+
+
+	ai_strategy = { #ignore flaria ffs
+		type = force_concentration_target_weight
+		state = 534 # poland heights	
+		state = 605
+		state = 736			
+		state = 532		
+		value = -100 # -100%
+	}		
+	
+}
+
+PRO_buildup_goons_for_third_skirmish = { #its in the name, protea will make divisions in preparation for the third skirmish
+	allowed = {
+		original_tag = PRO
+	}
+
+	enable = {
+		PRO = {
+			has_completed_focus = PRO_consolidate_our_gains		
+		}
+
+	}
+
+	abort = {
+		PRO = {
+			has_completed_focus = PRO_commence_operation_golden_throne		
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { #ok icl bro i didnt realize i put build army instead of role ratio but its already in a nice place so its just gonna have to be like that
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 20
+	}	
+
+	ai_strategy = { #during testing protea made less divisons than usual without apcs, just testing this for now
+		type = role_ratio
+		id = open_apcs_ai
+		value = 10
+	}		
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = -20
+	}	
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = CHF
+		value = 1000
+	}
+
+
+
+}
+
+PRO_buildup_mils_for_BATTLE_GRAAAAH = { #protea listen to me bro i want you making facs on that  shit bro, no slacking type shit you will DIE if you dont make facs bro please bro
+	allowed = {
+		original_tag = PRO
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+
+		always = no
+
+	}
+	abort_when_not_enabled = yes	
+
+ai_strategy = {
+    type = added_military_to_civilian_factory_ratio
+    value = 100
+}
+
+ai_strategy = {
+    type = build_building
+	id = arms_factory
+    value = 100
+	target = 540
+}
+
+
+
+
+}
+
+PRO_win_the_third_skirmish = { #third skirmish
+	allowed = {
+		original_tag = PRO
+	}
+
+ enable = {
+	PRO = {
+	has_completed_focus = PRO_commence_operation_golden_throne
 	}
  }
 
  abort = {
 	PRO = {
-		owns_state = 533
+			has_completed_focus = PRO_one_final_blow
 	}
  }
  abort_when_not_enabled = yes
 
-	ai_strategy = {
+
+	ai_strategy = { #
 		type = force_concentration_target_weight
-		state = 533 # poland heights		
+		state = 534 # poland heights	
+		state = 604
+		state = 737
+		state = 599
+		state = 542				
 		value = 100 # +100%
+	}		
+
+ai_strategy = {
+    type = front_control
+		state = 534
+		state = 604
+		state = 737
+		state = 599
+		state = 542	
+   priority = 50
+   ratio = 0.1
+    ordertype = front
+    execution_type = rush
+    manual_attack = yes
+    execute_order = yes
+}
+	
+}
+
+PRO_dont_go_past_our_cores = { #protea does some death shit against chaffia and flaria and gets themselves encircled for free 
+	allowed = {
+		original_tag = PRO
 	}
 
-	ai_strategy = {
-		type = front_armor_score
-		id = CHF
-		value = 250
-	}	
+ enable = {
+		PRO = {
+			has_completed_focus = PRO_commence_operation_golden_throne
+		}
+ }
+
+ abort = {
+	PRO = {
+		has_completed_focus = PRO_one_final_blow
+	}
+ }
+ abort_when_not_enabled = yes
+
+
+	ai_strategy = { #ignore flaria ffs
+		type = force_concentration_target_weight
+		state = 532 # poland heights	
+		state = 605
+		state = 736			
+		state = 598
+		state = 735
+		state = 543				
+		value = -100 # -100%
+	}		
 	
 }

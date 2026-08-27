@@ -1,0 +1,329 @@
+category = {
+
+ name = "Voices"
+ soundeffects = { 
+
+    CLS_infantry_idle
+    CLS_infantry_neutral_combat
+    CLS_infantry_positive_combat
+    CLS_infantry_retreat
+    CLS_infantry_move_out
+
+    PRO_infantry_idle
+    PRO_infantry_neutral_combat
+    PRO_infantry_positive_combat
+    PRO_infantry_retreat
+    PRO_infantry_move_out    
+
+
+
+ }
+
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+#giving valkyrie an australian accent was the best decision i ever made
+soundeffect = {
+
+    name = "PRO_infantry_idle"
+	sounds = {
+        sound = pro_idle_1
+        sound = pro_idle_2
+       sound = pro_idle_3
+        sound = pro_idle_4
+       sound = pro_idle_5
+    }
+    sounds = {
+        sound = pro_idle_1
+        sound = pro_idle_2
+       sound = pro_idle_3
+        sound = pro_idle_4
+       sound = pro_idle_5
+    }
+    sounds = {
+        sound = pro_idle_1
+        sound = pro_idle_2
+       sound = pro_idle_3
+        sound = pro_idle_4
+       sound = pro_idle_5
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+soundeffect = {
+
+    name = "PRO_infantry_neutral_combat"
+	sounds = {
+        sound = "pro_neutral_1"
+        sound = pro_neutral_2
+        sound = pro_neutral_3
+        sound = pro_neutral_4
+    }
+    sounds = {
+        sound = "pro_neutral_1"
+        sound = pro_neutral_2
+        sound = pro_neutral_3
+        sound = pro_neutral_4
+    }
+    sounds = {
+        sound = "pro_neutral_1"
+        sound = pro_neutral_2
+        sound = pro_neutral_3
+        sound = pro_neutral_4
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+soundeffect = {
+
+    name = "PRO_infantry_positive_combat"
+	sounds = {
+        sound = pro_positive_1
+        sound = pro_positive_2
+        sound = pro_positive_3
+    }
+    sounds = {
+        sound = pro_positive_1
+        sound = pro_positive_2
+        sound = pro_positive_3
+    }
+    sounds = {
+        sound = pro_positive_1
+        sound = pro_positive_2
+        sound = pro_positive_3
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+
+soundeffect = {
+
+    name = "PRO_infantry_move_out"
+	sounds = {
+        sound = pro_move_out_1
+        sound = pro_move_out_2
+    }
+    sounds = {
+        sound = pro_move_out_1
+        sound = pro_move_out_2
+    }
+    sounds = {
+        sound = pro_move_out_1
+        sound = pro_move_out_2
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+soundeffect = {
+
+    name = "PRO_infantry_retreat"
+	sounds = {
+        sound = pro_retreat_1
+    }
+    sounds = {
+        sound = pro_retreat_1
+    }
+    sounds = {
+        sound = pro_retreat_1
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+#the great coalition states
+soundeffect = {
+
+    name = "CLS_infantry_idle"
+	sounds = {
+        sound = cls_ger_idle_1
+        sound = cls_japan_idle_1
+       sound = cls_japan_idle_2
+        sound = cls_japan_idle_3
+       sound = cls_france_idle_1
+        sound = cls_france_idle_2
+        sound = cls_france_idle_3
+    }
+    sounds = {
+     sound = cls_ger_idle_1
+     sound = cls_japan_idle_1
+       sound = cls_japan_idle_2
+      sound = cls_japan_idle_3
+       sound = cls_france_idle_1
+       sound = cls_france_idle_2
+        sound = cls_france_idle_3
+    }
+    sounds = {
+        sound = cls_ger_idle_1
+        sound = cls_japan_idle_1
+        sound = cls_japan_idle_2
+        sound = cls_japan_idle_3
+        sound = cls_france_idle_1
+        sound = cls_france_idle_2
+        sound = cls_france_idle_3
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+soundeffect = {
+
+    name = "CLS_infantry_neutral_combat"
+	sounds = {
+        sound = "cls_ger_neutral_1"
+        sound = cls_france_neutral_1
+    }
+    sounds = {
+        sound = "cls_ger_neutral_1"
+        sound = cls_france_neutral_1
+    }
+    sounds = {
+        sound = "cls_ger_neutral_1"
+        sound = cls_france_neutral_1
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+soundeffect = {
+
+    name = "CLS_infantry_positive_combat"
+	sounds = {
+        sound = cls_ger_positive_1
+        sound = cls_france_positive_1
+        sound = cls_france_positive_2
+        sound = cls_france_positive_3
+        sound = cls_british_positive_1
+        sound = cls_british_positive_2
+    }
+    sounds = {
+        sound = cls_ger_positive_1
+        sound = cls_france_positive_1
+        sound = cls_france_positive_2
+        sound = cls_france_positive_3
+        sound = cls_british_positive_1
+        sound = cls_british_positive_2
+    }
+    sounds = {
+        sound = cls_ger_positive_1
+        sound = cls_france_positive_1
+        sound = cls_france_positive_2
+        sound = cls_france_positive_3
+        sound = cls_british_positive_1
+        sound = cls_british_positive_2
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+
+soundeffect = {
+
+    name = "CLS_infantry_move_out"
+	sounds = {
+        sound = cls_ger_move_out_1
+        sound = cls_ger_move_out_2
+        sound = cls_ger_move_out_3
+        sound = cls_france_move_out_1
+        sound = cls_american_move_out_1
+        sound = cls_british_move_out_1
+        sound = cls_british_move_out_2
+        sound = cls_british_move_out_3
+    }
+    sounds = {
+        sound = cls_ger_move_out_1
+        sound = cls_ger_move_out_2
+        sound = cls_ger_move_out_3
+        sound = cls_france_move_out_1
+        sound = cls_american_move_out_1
+        sound = cls_british_move_out_1
+        sound = cls_british_move_out_2
+        sound = cls_british_move_out_3
+    }
+    sounds = {
+        sound = cls_ger_move_out_1
+        sound = cls_ger_move_out_2
+        sound = cls_ger_move_out_3
+        sound = cls_france_move_out_1
+        sound = cls_american_move_out_1
+        sound = cls_british_move_out_1
+        sound = cls_british_move_out_2
+        sound = cls_british_move_out_3
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+soundeffect = {
+
+    name = "CLS_infantry_retreat"
+	sounds = {
+        sound = cls_ger_retreat_1
+        sound = cls_american_retreat_1
+        sound = cls_british_retreat_1
+        sound = cls_france_retreat_1
+        sound = cls_france_retreat_2
+        sound = cls_caribbean_retreat_1
+    }
+    sounds = {
+        sound = cls_ger_retreat_1
+        sound = cls_american_retreat_1
+        sound = cls_british_retreat_1
+       sound = cls_france_retreat_1
+        sound = cls_france_retreat_2
+        sound = cls_caribbean_retreat_1
+    }
+    sounds = {
+        sound = cls_ger_retreat_1
+        sound = cls_american_retreat_1
+        sound = cls_british_retreat_1
+        sound = cls_france_retreat_1
+        sound = cls_france_retreat_2
+        sound = cls_caribbean_retreat_1
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.25 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+

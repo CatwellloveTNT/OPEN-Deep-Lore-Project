@@ -18,6 +18,11 @@ country_event = {
 		name = pro.1.a
 		ai_chance = {factor = 100}
 		add_political_power = 1
+				hidden_effect = {
+			PRO = {
+				scoped_play_song = "pala"
+			}
+		}	
 	}
 }
 country_event = {
@@ -102,6 +107,11 @@ country_event = {
 				}
 			}
 
+		if = {
+			limit = { is_ai = yes }
+			add_political_power = 75
+		}			
+
 	}
 }
 country_event = {
@@ -119,6 +129,27 @@ country_event = {
 		clr_country_flag = first_phase_pro
 		set_country_flag = won_the_second_skirmish_pro
 		mark_focus_tree_layout_dirty = yes
+
+		if = {
+			limit = { 533 = {
+				has_dynamic_modifier = entrenched_human_minority
+			} }
+
+			533 = {
+			remove_dynamic_modifier = {
+				modifier = entrenched_human_minority
+			}
+			}
+
+			add_timed_idea = {
+				idea = pro_humies_happy_because_chaffia_didnt_kill_them
+				days = 120
+			}
+
+
+		}
+
+
 	}
 }
 country_event = {
@@ -230,6 +261,8 @@ country_event = {
 		}
 		CHF = {
 			set_country_flag = the_third_skirmish
+			clr_country_flag = lost_the_second_skirmish_chf
+			mark_focus_tree_layout_dirty = yes
 		}
 		FLA = {
 			set_country_flag = the_third_skirmish
@@ -603,7 +636,7 @@ country_event = {
 		clr_country_flag = the_third_skirmish
 		hidden_effect = {
 			country_event = {
-				id = pro.51
+				id = pro.41
 				days = 2
 			}
 		}
@@ -638,7 +671,7 @@ country_event = {
 		}
 		CHF = {
 			country_event = {
-				id = chf.9
+				id = chf.2022
 			}
 		}
 	}

@@ -1,0 +1,11 @@
+entrenched_human_minority = {
+	icon = GFX_small_flag_frame_thin2_gold
+	enable = {
+		always = yes
+	}
+	local_manpower = -0.30
+	local_supplies = -0.30
+	defence = -0.10
+	army_speed_factor_for_controller = -0.10
+	local_resources_factor = -0.20
+}

@@ -217,6 +217,8 @@
 
 		}
 
+	will_lead_to_war_with = CHF		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -229,6 +231,7 @@
 				country_event = {
 					id = chf.4
 				}
+				set_country_flag = chf_the_second_skirmish
 			}
 			custom_effect_tooltip = extra_space
 			custom_effect_tooltip = the_second_skirmish_tooltip
@@ -377,6 +380,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+
 			country_event = {
 				id = pro.12
 			}
@@ -514,6 +518,8 @@
 
 		}
 
+			will_lead_to_war_with = CHF	
+			will_lead_to_war_with = FLA
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -624,6 +630,8 @@
 		bypass = {
 
 		}
+
+
 
 		allow_branch = {
 			has_country_flag = pro_unlock_eco_and_mil_trees
@@ -788,7 +796,7 @@
 				id = pro.20
 			}
 			swap_ideas = {
-				remove_idea = closed_economy
+				remove_idea = protean_closed_economy
 				add_idea = limited_exports
 			}
 			subtract_from_variable = { protea_first_phase_eco_dynamic_cgf = 0.05 }
@@ -1048,6 +1056,18 @@
 
 		ai_will_do = {
 		factor = 25
+
+			modifier = {
+				has_completed_focus = PRO_desegregate_the_army
+				factor = 100
+			}
+
+			modifier = {
+				has_completed_focus = PRO_embrace_the_two_face_system
+				factor = -200
+			}				
+
+
 		}
 	}
 
@@ -1439,6 +1459,11 @@
 			add_dynamic_modifier = {
 				modifier = PRO_armed_forces_of_protea
 			}
+
+			delete_units = {
+				division_template = "Conscripted Infantry"
+			}
+
 		}
 
 		ai_will_do = {
@@ -1546,6 +1571,18 @@
 
 		ai_will_do = {
 		factor = 25
+
+			modifier = {
+				has_completed_focus = PRO_reduce_second_citizen_work_hours
+				factor = 100
+			}
+
+			modifier = {
+				has_completed_focus = PRO_crackdown_on_laborer_freedoms
+				factor = -200
+			}			
+
+
 		}
 	}
 
@@ -4185,6 +4222,9 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				
+			
 			if = {
 				limit = { is_ai = yes }
 				add_political_power = 1000
@@ -4192,6 +4232,7 @@
 			else = {
 				add_political_power = 150
 			}
+		}
 			CHF = {
 				set_country_flag = chf_showdown
 				set_country_flag = chf_ew_inactive	

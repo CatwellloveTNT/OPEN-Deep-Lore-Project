@@ -1,4 +1,2034 @@
+CHF_the_second_protean_chaffian_skirmish = {
+	chf_second_skirmish_survive = {
+		priority = 700
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 45
+		is_good = no 
+		days_re_enable = 5
 
+
+		activation = {
+			has_country_flag = chf_the_second_skirmish
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = chf_the_second_skirmish
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_the_second_skirmish
+		}
+
+		timeout_effect = {
+
+		}
+	}
+}
+
+CHF_the_third_skirmish = {
+	chf_the_third_skirmish_survive = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = the_third_skirmish
+		}
+
+		available = {
+			NOT = { has_country_flag = the_third_skirmish}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = the_third_skirmish
+		}
+
+		complete_effect = {
+
+		}
+
+		timeout_effect = {
+
+		}
+
+	}
+}
+
+CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized minigame... if the mod gets too laggy i'll have to give this a facelift
+	chf_the_second_great_retreat_round_1 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}				
+							check_variable = {
+					num_of_displaced_ponies = 0
+				}				
+			}
+
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2024
+				}
+			}				
+			}
+			set_country_flag = open_door_round_2
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_2
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_2 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_2
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}		
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}		
+			}
+			
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2025
+				}
+			}				
+			}
+			set_country_flag = open_door_round_3
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_3
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2026
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_3 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_3
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+			NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}			
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_4
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_4
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}	
+
+	chf_the_second_great_retreat_round_4 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_4
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+			NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}			
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}				
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_5
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_5
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}	
+
+	chf_the_second_great_retreat_round_5 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_5
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}		
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}		
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_6
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_6
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}	
+
+	chf_the_second_great_retreat_round_6 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_6
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_7
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_7
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_7 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_7
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}			
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_8
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_8
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}	
+
+	chf_the_second_great_retreat_round_8 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_8
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_9
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_9
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+	
+	chf_the_second_great_retreat_round_9 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_9
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}		
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}		
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_10
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_10
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_10 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_10
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}			
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_11
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_11
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_11 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_11
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_12
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_12
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_11 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_11
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}		
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}		
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_12
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_12
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+
+	chf_the_second_great_retreat_round_12 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_12
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_13
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_13
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+	
+	chf_the_second_great_retreat_round_13 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_13
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_14
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_14
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_14 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_14
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}			
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_15
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_15
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_15 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_15
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_16
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_16
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_16 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_16
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}				
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_17
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_17
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_17 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_17
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}		
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}		
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_18
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_18
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+
+	chf_the_second_great_retreat_round_18 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_18
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_19
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_19
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}	
+
+	chf_the_second_great_retreat_round_19 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_19
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}			
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}	
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_20
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_20
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}
+	
+	chf_the_second_great_retreat_round_20 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_20
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}	
+								check_variable = {
+					num_of_displaced_ponies = 0
+				}			
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_21
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_21
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}	
+
+	chf_the_second_great_retreat_round_21 = {
+		priority = 332
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 30
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+			has_country_flag = open_door_round_21
+			}
+			check_variable = {
+				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
+			}
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}
+				CHF = {
+					has_country_flag = chf_open_door_group_accepted
+				}				
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}				
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+						NOT = {
+				check_variable = {
+					num_of_displaced_ponies = 0
+				}
+			}
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = chf.2024
+				}
+				20 = {
+					country_event = chf.2028
+				}
+				10 = {
+					country_event = chf.2029
+				}			
+				20 = {
+					country_event = chf.2030
+				}					
+			}				
+			}
+			set_country_flag = open_door_round_22
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted		
+			clr_country_flag = chf_chose_to_deny
+			clr_country_flag = chf_chose_to_accept		
+			
+
+
+		}
+
+		timeout_effect = {
+			set_country_flag = open_door_round_22
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted	
+			hidden_effect = {
+			random_list = {
+				100 = {
+					country_event = chf.2027
+				}
+			}				
+			}			
+		}
+
+	}		
+
+}
 
 CHF_showdown = {
 

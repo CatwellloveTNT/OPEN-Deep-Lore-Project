@@ -197,3 +197,81 @@ defined_text = { #
 	localization_key = protea_unlocks_decider_loc
 	}
 }
+defined_text = { # 
+	name = devola_desperation_no_threat_chaffia
+	text = {
+		trigger = {
+			check_variable = {
+				chf_geopolitical_situation_status = 1
+			}
+		}
+	localization_key = devola_desperation_no_threat_loc
+	}
+}
+defined_text = { # 
+	name = devola_desperation_minor_threat_chaffia
+	text = {
+		trigger = {
+			check_variable = {
+				chf_geopolitical_situation_status = 2
+			}
+		}
+	localization_key = devola_desperation_minor_threat_loc
+	}
+}
+defined_text = { # 
+	name = devola_desperation_moderate_threat_chaffia
+	text = {
+		trigger = {
+			check_variable = {
+				chf_geopolitical_situation_status = 3
+			}
+		}
+	localization_key = devola_desperation_moderate_threat_loc
+	}
+}
+defined_text = { # 
+	name = devola_desperation_major_threat_chaffia
+	text = {
+		trigger = {
+			check_variable = {
+				chf_geopolitical_situation_status = 4
+			}
+		}
+	localization_key = devola_desperation_major_threat_loc
+	}
+}
+defined_text = { # 
+	name = devola_desperation_existential_threat_chaffia
+	text = {
+		trigger = {
+			check_variable = {
+				chf_geopolitical_situation_status = 5
+			}
+		}
+	localization_key = devola_desperation_existential_threat_loc
+	}
+}
+defined_text = { # 
+	name = chf_infliltration_1
+	text = {
+		trigger = {
+			chf = {
+				has_political_power = 1
+			}
+		}
+	localization_key = chf_infliltration_loc1
+	}
+}
+defined_text = { # 
+	name = chf_infliltration_2
+	text = {
+		trigger = {
+			chf = {
+				has_political_power = 1
+			}
+			
+		}
+	localization_key = chf_infliltration_loc2
+	}
+}

@@ -12,15 +12,551 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 200 y = 3500 }
 
-	focus = {
-		id = CHF_test
+	focus = { #referring to the first skirmish
+		id = CHF_healing_the_wounds_of_the_past
 		icon = GFX_goal_generic_consumer_goods
 		x = 8
 		y = 0
 		#relative_position_id = 
-		cost = 1
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		allow_branch = {
+			has_country_flag = first_phase_chf
+		}
+		completion_reward = {
+			country_event = {
+				id = chf.2000
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+	focus = { #ready, resolute, rational. basically telling the ponies returning to the reseized terrirtory to be aware of human infiltration and to fight back against it using force
+		id = CHF_the_three_rs
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_healing_the_wounds_of_the_past
+		prerequisite = {
+			focus = CHF_healing_the_wounds_of_the_past
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			country_event = {
+				id = chf.2001
+			}
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = ifv_equipment_1
+				amount = 10
+			}		
+			add_equipment_to_stockpile = {
+				type = apc_equipment_1
+				amount = 15
+			}				
+
+			add_ideas = chf_ready_resolute_rational
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+	focus = { #
+		id = CHF_removing_the_remnants_of_the_humans
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_healing_the_wounds_of_the_past
+		prerequisite = {
+			focus = CHF_healing_the_wounds_of_the_past
+		}
+		cost = 4
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			set_country_flag = chf_root_out_the_humies
+			custom_effect_tooltip = root_out_the_humies_tt
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+	focus = { #
+		id = CHF_a_home_for_the_uprooted
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_healing_the_wounds_of_the_past
+		prerequisite = { focus = CHF_removing_the_remnants_of_the_humans }
+		prerequisite = { focus = CHF_the_three_rs }
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}
+		
+		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			remove_ideas = the_homebound_program
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = CHF_convene_with_flaria
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_a_home_for_the_uprooted
+		prerequisite = { focus = CHF_a_home_for_the_uprooted }
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			country_event = {
+				id = chf.2002
+			}
+
+			custom_effect_tooltip = chf_focus_flarian_unification_tt
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #
+		id = CHF_fortify_the_liberated_territories
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_a_home_for_the_uprooted
+		prerequisite = { focus = CHF_a_home_for_the_uprooted }
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+			cancel = {
+			has_war = yes
+		}	
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			533 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 20378
+				instant_build = yes
+			}
+			}
+
+			533 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 9346
+				instant_build = yes
+			}
+			}			
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #
+		id = CHF_fund_northern_entrepreneurs
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_a_home_for_the_uprooted
+		prerequisite = { focus = CHF_a_home_for_the_uprooted }
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+			cancel = {
+			has_war = yes
+		}	
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			604 = {
+				add_extra_state_shared_building_slots = 2				
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+			534 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+
+		ai_will_do = { #you're pretty much buffing protea by doing this, dont do it
+		factor = 0
+		}
+	}	
+	
+	focus = { #
+		id = CHF_flarian_arms_deals
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_convene_with_flaria
+		prerequisite = { focus = CHF_convene_with_flaria }
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 750
+			}
+			add_equipment_to_stockpile = {
+				type = manpads_1
+				amount = 200
+			}	
+			add_equipment_to_stockpile = {
+				type = atgms_2023
+				amount = 200
+			}			
+
+			598 = {
+				add_extra_state_shared_building_slots = 2				
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+			544 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #
+		id = CHF_you_get_a_business_and_you_get_a_business
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_fund_northern_entrepreneurs
+		prerequisite = { focus = CHF_fund_northern_entrepreneurs }
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			604 = {
+				add_extra_state_shared_building_slots = 2				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}	
+			534 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+			534 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}				
+		}
+
+		ai_will_do = { #you're pretty much buffing protea by doing this, dont do it
+		factor = 0
+		}
+	}	
+
+	focus = { #
+		id = CHF_the_fort_visck_of_our_time
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_fortify_the_liberated_territories
+		prerequisite = { focus = CHF_fortify_the_liberated_territories }
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			533 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 20378
+				instant_build = yes
+			}
+			}
+
+			533 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 9346
+				instant_build = yes
+			}
+			}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #
+		id = CHF_keep_calm_and_carry_on
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_flarian_arms_deals
+		prerequisite = { focus = CHF_flarian_arms_deals } prerequisite = { focus = CHF_the_fort_visck_of_our_time } prerequisite = { focus = CHF_you_get_a_business_and_you_get_a_business }
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			country_event = {
+				id = chf.2003
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #BEGINNING OF SECOND PHASE CHAFFIA
+		id = CHF_the_devil_rears_his_head
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+#		relative_position_id = CHF_flarian_arms_deals
+#		prerequisite = { focus = CHF_flarian_arms_deals } prerequisite = { focus = CHF_the_fort_visck_of_our_time } prerequisite = { focus = CHF_you_get_a_business_and_you_get_a_business }
+		cost = 5
 		available = {
 
 		}
@@ -33,17 +569,4687 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
+		cancel = {
+			has_war = yes
+		}	
+
 		allow_branch = {
-#			has_country_flag = first_phase_chf
+			has_country_flag = lost_the_second_skirmish_chf
 		}
 		completion_reward = {
-#			country_event = {
-#				id = chf.20
-#			}
+
 		}
 
 		ai_will_do = {
 		factor = 24
 		}
+	}		
+	
+	focus = { #
+		id = CHF_turn_to_our_sibling
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_the_devil_rears_his_head
+		prerequisite = { focus = CHF_the_devil_rears_his_head } 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			country_event = {
+				id = chf.2004
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #my god this formatting has me dead
+		id = CHF_together_we_fight_as_one
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_turn_to_our_sibling
+		prerequisite = { focus = CHF_turn_to_our_sibling } 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+create_faction_from_template = {
+   template = faction_template_defensive_democratic
+   name = CHF_countermeasures_alliance
+   icon = GFX_faction_logo_generic_2
+   color = { 100 100 150 }
+}
+
+add_to_faction = FLA
+hidden_effect = {
+ news_event = {
+	id = news.19
+ }
+}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+
+	focus = { #
+		id = CHF_the_homeland_defense_decree
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_together_we_fight_as_one
+		prerequisite = { focus = CHF_together_we_fight_as_one } 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+		add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.01 } #army defense	
+		add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.03 } #army org regain		
+
+			if = {
+
+				limit = { 
+				OR = {
+						534 = {
+					has_dynamic_modifier = entrenched_human_minority
+					} 
+					
+						604 = {
+					has_dynamic_modifier = entrenched_human_minority
+					} 
+					
+						737 = {
+					has_dynamic_modifier = entrenched_human_minority
+					} 									
+				}					
+
+			}
+
+				534 = {
+					remove_dynamic_modifier = {
+						modifier = entrenched_human_minority
+					}
+				}
+
+				604 = {
+					remove_dynamic_modifier = {
+						modifier = entrenched_human_minority
+					}
+				}	
+				
+				737 = {
+					remove_dynamic_modifier = {
+						modifier = entrenched_human_minority
+					}
+				}		
+
+			}
+
+			if = {
+				limit = { has_idea = hostile_human_minority }
+
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+
+
+			}
+
+
+			custom_effect_tooltip = homeland_defense_decree_tt
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+
+		
+	}	
+
+	focus = { #synergizes up with airland battle and pierce deep
+		id = CHF_create_our_very_own_military_industrial_complex
+		icon = GFX_goal_generic_consumer_goods
+		x = -20
+		y = 1
+		relative_position_id = CHF_the_homeland_defense_decree
+		prerequisite = { focus = CHF_the_homeland_defense_decree } 
+		mutually_exclusive = {
+			focus = CHF_planning_ahead
+		}		
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = { #
+			add_to_variable = {
+				chf_eco_dynamic_mef = 0.03
+			}
+
+			add_to_variable = {
+				chf_eco_dynamic_icf = 0.05
+			}				
+
+			add_to_variable = {
+				chf_eco_dynamic_cgf = 0.02
+			}			
+			custom_effect_tooltip = create_our_very_own_mic_tt
+			custom_effect_tooltip = extra_space
+
+			country_event = {
+				id = chf.2006
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+
+	focus = { #please change the name of this bro
+		id = CHF_create_mios
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_create_our_very_own_military_industrial_complex
+		prerequisite = { focus = CHF_create_our_very_own_military_industrial_complex } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+# -------------------------------------- CHAFFIAN ECONOMY VARS --------------------------------------
+add_to_variable = { chf_eco_dynamic_st = -0.01 } #stability
+add_to_variable = { chf_eco_dynamic_mef = -0.02 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.00 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.02 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = 0.01 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+
+add_political_power = -100
+
+custom_effect_tooltip = extra_space		
+
+# -------------------------------------- CHAFFIAN MILITARY VARS --------------------------------------
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = -0.05 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.05 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.00 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.0 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 1 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+# -------------------------------------- CHAFFIAN AIR FORCE VARS --------------------------------------
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+#add_to_variable = { chaffia_the_chaffian_air_force_aagf = -0.05} # air agility
+#add_to_variable = { chaffia_the_chaffian_air_force_aatkf = -0.10} #air attack
+#add_to_variable = { chaffia_the_chaffian_air_force_adf = -0.10} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.0} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+			custom_effect_tooltip = chf_create_mios_tt
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+
+	focus = { #
+		id = CHF_industrialize_the_heartland
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_create_mios
+		prerequisite = { focus = CHF_create_mios } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+#add_to_variable = { chf_eco_dynamic_st = -0.01 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.05 } #max efficency cap
+add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.03 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = 0.05 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+
+			custom_effect_tooltip = industrialize_the_heartland_dynamic_eco_tt
+			custom_effect_tooltip = extra_space	
+			custom_effect_tooltip = industrialize_the_heartland_tt
+
+			set_country_flag = chf_industrialize_that_shi
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+	
+	focus = { #
+		id = CHF_optimized_production_lines
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_create_mios
+		prerequisite = { focus = CHF_create_mios } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+# -------------------------------------- CHAFFIAN ECONOMY VARS --------------------------------------
+#add_to_variable = { chf_eco_dynamic_st = -0.05 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.05 } #max efficency cap
+add_to_variable = { chf_eco_dynamic_egf = 0.05 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.03 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = 0.02 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+			custom_effect_tooltip = chf_optimized_production_lines_tt
+			custom_effect_tooltip = extra_space					
+
+
+			add_ideas = chf_optimized_production
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+
+	focus = { #
+		id = CHF_clear_out_the_land
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_create_mios
+		prerequisite = { focus = CHF_create_mios } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+
+add_to_variable = { chf_eco_dynamic_st = 0.03 } #stability
+#add_to_variable = { chf_eco_dynamic_mef = 0.05 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.05 } #efficieny growth
+#add_to_variable = { chf_eco_dynamic_icf = 0.03 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = 0.02 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+			custom_effect_tooltip = chf_clear_out_the_land_tt	
+			custom_effect_tooltip = extra_space		
+			
+
+			650 = {
+				add_extra_state_shared_building_slots = 2				
+			}
+
+			530 = {
+				add_extra_state_shared_building_slots = 2				
+			}	
+			649 = {
+				add_extra_state_shared_building_slots = 2				
+			}					
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+	
+	focus = { #
+		id = CHF_the_future_infantry_carrier_program
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		relative_position_id = CHF_create_mios
+		prerequisite = { focus = CHF_clear_out_the_land } 	
+		prerequisite = { focus = CHF_industrialize_the_heartland } 	
+		prerequisite = { focus = CHF_optimized_production_lines } 					
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+#add_to_variable = { chf_eco_dynamic_st = -0.05 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.05 } #max efficency cap
+add_to_variable = { chf_eco_dynamic_egf = 0.02 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.02 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = 0.05 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+			custom_effect_tooltip = chf_ficp_tt
+			custom_effect_tooltip = extra_space		
+
+
+
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_light_armor
+			name = "test"
+		}	
+		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_heavy_armor
+			name = "test"
+		}			
+		
+		
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+	
+	focus = { #
+		id = CHF_too_big_to_fail
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 2
+		relative_position_id = CHF_create_mios
+		prerequisite = { focus = CHF_clear_out_the_land } 	
+		prerequisite = { focus = CHF_industrialize_the_heartland } 	
+		prerequisite = { focus = CHF_optimized_production_lines } 					
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			
+add_to_variable = { chf_eco_dynamic_st = -0.02 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.04 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+#add_to_variable = { chf_eco_dynamic_icf = 0.02 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = 0.03 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+			custom_effect_tooltip = chf_too_big_to_fail_tt
+			custom_effect_tooltip = extra_space
+
+			728 = {
+				add_extra_state_shared_building_slots = 2				
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
+			736 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}		
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+	
+	focus = { #
+		id = CHF_enter_the_export_market
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_create_mios 	
+		prerequisite = { focus = CHF_the_future_infantry_carrier_program } 	
+		prerequisite = { focus = CHF_too_big_to_fail } 					
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+		
+			add_ideas = chf_a_third_world_alternative
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_planning_ahead
+		icon = GFX_goal_generic_consumer_goods
+		x = -12
+		y = 1
+		relative_position_id = CHF_the_homeland_defense_decree
+		prerequisite = { focus = CHF_the_homeland_defense_decree } 
+		mutually_exclusive = {
+			focus = CHF_create_our_very_own_military_industrial_complex
+		}		
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_planning_ahead_tt			
+add_to_variable = { chf_eco_dynamic_st = 0.03 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.01 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.01 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = -0.03 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+
+			custom_effect_tooltip = extra_space
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_expand_our_industrial_potential
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_planning_ahead } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_expand_our_industrial_potential_tt			
+add_to_variable = { chf_eco_dynamic_st = 0.02 } #stability
+#add_to_variable = { chf_eco_dynamic_mef = 0.01 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.01 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = -0.05 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+
+			custom_effect_tooltip = extra_space
+			
+			606 = {
+				add_extra_state_shared_building_slots = 2				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}	
+			736 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}		
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_reduce_resource_exports
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_planning_ahead } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_reduce_resource_exports_tt			
+add_to_variable = { chf_eco_dynamic_st = 0.02 } #stability
+#add_to_variable = { chf_eco_dynamic_mef = 0.01 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.01 } #factory output
+#add_to_variable = { chf_eco_dynamic_cgf = -0.02 } #consumer goods factor
+add_to_variable = { chf_eco_dynamic_bf = 0.03 } #constrution speed
+
+			custom_effect_tooltip = extra_space
+
+
+			add_ideas = chf_the_inwards_consumption_decree
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}		
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_the_devola_project
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_planning_ahead } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_the_devola_project_tt			
+add_to_variable = { chf_eco_dynamic_st = 0.05 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.03 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+#add_to_variable = { chf_eco_dynamic_icf = 0.02 } #factory output
+#add_to_variable = { chf_eco_dynamic_cgf = -0.02 } #consumer goods factor
+add_to_variable = { chf_eco_dynamic_bf = 0.02 } #constrution speed
+
+			custom_effect_tooltip = extra_space
+
+			set_country_flag = chf_devolaing_it
+
+			custom_effect_tooltip = the_devola_project_tt
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}		
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_a_rifle_for_every_grain_of_sand
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 2
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_the_devola_project } 	
+		prerequisite = { focus = CHF_expand_our_industrial_potential } 	
+		prerequisite = { focus = CHF_reduce_resource_exports } 					
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_a_rifle_for_every_grain_of_sand_tt			
+#add_to_variable = { chf_eco_dynamic_st = 0.05 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.02 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.01 } #factory output
+#add_to_variable = { chf_eco_dynamic_cgf = -0.02 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = 0.02 } #constrution speed
+
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.03 } #army defense
+
+			custom_effect_tooltip = extra_space			
+
+			add_ideas = chf_a_gun_for_every_grain_of_sand
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}	
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_focus_on_the_fundamentals
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_the_devola_project } 	
+		prerequisite = { focus = CHF_expand_our_industrial_potential } 	
+		prerequisite = { focus = CHF_reduce_resource_exports } 					
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_focus_on_the_fundamentals_tt			
+#add_to_variable = { chf_eco_dynamic_st = 0.05 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.02 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.01 } #factory output
+#add_to_variable = { chf_eco_dynamic_cgf = -0.02 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = 0.02 } #constrution speed
+
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+
+			custom_effect_tooltip = extra_space			
+
+
+			add_ideas = chf_hoi4_div_fundamentals_idea
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}
+		
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_the_leerian_resource_boom
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_focus_on_the_fundamentals } 	
+		prerequisite = { focus = CHF_a_rifle_for_every_grain_of_sand } 				
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+
+			custom_effect_tooltip = chf_the_leerian_resource_boom_tt			
+add_to_variable = { chf_eco_dynamic_st = 0.03 } #stability
+add_to_variable = { chf_eco_dynamic_mef = 0.02 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+#add_to_variable = { chf_eco_dynamic_icf = 0.01 } #factory output
+add_to_variable = { chf_eco_dynamic_cgf = -0.02 } #consumer goods factor
+add_to_variable = { chf_eco_dynamic_bf = 0.02 } #constrution speed
+
+
+			custom_effect_tooltip = extra_space					
+
+
+			add_resource = {
+				type = tungsten
+				amount = 7
+				state = 606
+			}
+
+			add_resource = {
+				type = rubber
+				amount = 10
+				state = 606
+			}			
+
+			add_resource = {
+				type = chromium
+				amount = 5
+				state = 606
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}		
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_self_sufficiency
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_the_leerian_resource_boom } 				
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_self_sufficiency_tt			
+#add_to_variable = { chf_eco_dynamic_st = 0.03 } #stability
+#add_to_variable = { chf_eco_dynamic_mef = 0.02 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+#add_to_variable = { chf_eco_dynamic_icf = 0.01 } #factory output
+#add_to_variable = { chf_eco_dynamic_cgf = -0.02 } #consumer goods factor
+add_to_variable = { chf_eco_dynamic_bf = 0.03 } #constrution speed
+
+			set_country_flag = chf_resourcing_it
+
+			custom_effect_tooltip = extra_space	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}				
+
+	focus = { #synergizes up with they shall not pass and knights of the sky
+		id = CHF_the_shining_star_of_the_cradle
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 8
+		relative_position_id = CHF_planning_ahead
+		prerequisite = { focus = CHF_enter_the_export_market focus = CHF_self_sufficiency }
+			
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			country_event = {
+				id = chf.2007
+			}			
+			
+		}
+
+		ai_will_do = {
+		factor = 24
+		}		
+		
+		}				
+
+	
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_embrace_the_airland_doctrine_concept
+		icon = GFX_goal_generic_consumer_goods
+		x = 13
+		y = 1
+		relative_position_id = CHF_the_homeland_defense_decree
+		prerequisite = { focus = CHF_the_homeland_defense_decree } 
+		mutually_exclusive = {
+			focus = CHF_knights_of_the_sky
+		}		
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+			
+			
+		}
+		completion_reward = {
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+#add_to_variable = { chaffia_the_chaffian_air_force_aagf = -0.05} # air agility
+#add_to_variable = { chaffia_the_chaffian_air_force_aatkf = -0.10} #air attack
+#add_to_variable = { chaffia_the_chaffian_air_force_adf = -0.10} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.02} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.05} #air sup. bonus in combat
+
+add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.01 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.00 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.0 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.01 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 1 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = chf_embrace_the_airland_doctrine_concept_tt
+			custom_effect_tooltip = extra_space
+
+				country_event = {
+				id = chf.2012
+			}			
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_combined_arms_drills
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_embrace_the_airland_doctrine_concept } 		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+#add_to_variable = { chaffia_the_chaffian_air_force_aagf = -0.05} # air agility
+#add_to_variable = { chaffia_the_chaffian_air_force_aatkf = -0.10} #air attack
+#add_to_variable = { chaffia_the_chaffian_air_force_adf = -0.10} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.03} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.05} #air sup. bonus in combat
+
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.01 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.00 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.0 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.01 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 1 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = chf_combined_arms_drills_tt
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+	
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_kickstart_the_aviation_industry
+		icon = GFX_goal_generic_consumer_goods
+		x = 5
+		y = 1
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_embrace_the_airland_doctrine_concept focus = CHF_knights_of_the_sky } 		
+		cost = 10
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			
+			CHF = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_dedicated_fighter_bomber_aircraft
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_embrace_the_airland_doctrine_concept } 		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_dedicated_fighter_bomber_aircraft_tt
+			custom_effect_tooltip = extra_space
+
+
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+
+			add_tech_bonus = {
+			bonus = 0.50
+			uses = 1
+			category = cas_bomber
+			name = "test"
+		}	
+
+			}
+
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+#add_to_variable = { chaffia_the_chaffian_air_force_aagf = -0.05} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.02} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.02} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.05} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.05} #air sup. bonus in combat
+
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.01 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.00 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.0 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.01 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 1 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_import_our_fighters
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 3
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_combined_arms_drills } 	
+		mutually_exclusive = {
+			focus = CHF_specialized_lines
+		}							
+		cost = 5
+		available = {
+			has_completed_focus = CHF_planning_ahead
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 200
+				}
+				
+			}
+
+			else = {
+				add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 200
+			}			
+			}
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_specialized_lines
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 3
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_dedicated_fighter_bomber_aircraft } 	
+		mutually_exclusive = {
+			focus = CHF_import_our_fighters
+		}			
+		cost = 5
+		available = {
+			has_completed_focus = CHF_create_our_very_own_military_industrial_complex
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_specialized_lines_tt			
+#add_to_variable = { chf_eco_dynamic_st = 0.03 } #stability
+#add_to_variable = { chf_eco_dynamic_mef = 0.02 } #max efficency cap
+#add_to_variable = { chf_eco_dynamic_egf = 0.03 } #efficieny growth
+add_to_variable = { chf_eco_dynamic_icf = 0.05 } #factory output
+#add_to_variable = { chf_eco_dynamic_cgf = -0.02 } #consumer goods factor
+#add_to_variable = { chf_eco_dynamic_bf = 0.03 } #constrution speed
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_create_goldenwing
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_import_our_fighters focus = CHF_specialized_lines  } 	
+			
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_create_goldenwing_tt	
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.03} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.05} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.05} #air sup. bonus in combat
+
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.01 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.00 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.0 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.01 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 1 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}				
+
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_to_defend_what_you_love
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 5
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_create_goldenwing } 	
+			
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_to_defend_what_you_love_tt	
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.02} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.03} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.03} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.05} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.05} #air sup. bonus in combat
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}					
+
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_one_must_have_courage
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 5
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_create_goldenwing } 	
+			
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_one_must_have_courage_tt	
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.05} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.05} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.05} #air sup. bonus in combat
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+	
+	focus = { #synergizes with military industrail complex and pierce deep
+		id = CHF_stopping_them_at_the_gates
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 6
+		relative_position_id = CHF_embrace_the_airland_doctrine_concept
+		prerequisite = { focus = CHF_create_goldenwing } 	
+			
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_stopping_them_at_the_gates_tt	
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+#add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.05} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.05} # air superiority
+add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.10} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+	
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_knights_of_the_sky
+		icon = GFX_goal_generic_consumer_goods
+		x = 24
+		y = 1
+		relative_position_id = CHF_the_homeland_defense_decree
+		prerequisite = { focus = CHF_the_homeland_defense_decree } 
+		mutually_exclusive = {
+			focus = CHF_embrace_the_airland_doctrine_concept
+		}		
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_knights_of_the_sky_tt	
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+#add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.05} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.05} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.10} # ground attack factor
+add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.10} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+			custom_effect_tooltip = extra_space
+
+				country_event = {
+				id = chf.2013
+			}	
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_procure_eaions
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_knights_of_the_sky } 
+		mutually_exclusive = {
+			focus = CHF_the_astra_program
+		}		
+		cost = 5
+		available = {
+			has_completed_focus = CHF_planning_ahead
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_2
+					producer = MSB #msb is used because they are the CHEATER NATION!!!!!!!!!!!!!!!!!!!!!!
+					amount = 200
+				}
+				
+			}
+
+			else = {
+				add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				producer = MSB #msb is used because they are the CHEATER NATION!!!!!!!!!!!!!!!!!!!!!!				
+				amount = 200
+			}			
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+	
+
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_the_astra_program
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_knights_of_the_sky } 
+		mutually_exclusive = {
+			focus = CHF_procure_eaions
+		}		
+		cost = 5
+		available = {
+			has_completed_focus = CHF_create_our_very_own_military_industrial_complex
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+		add_tech_bonus = {
+			bonus = 2
+			uses = 1
+			category = light_fighter
+			name = "test"
+		}
+		
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}			
+
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_know_our_enemy
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_the_astra_program focus = CHF_procure_eaions } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_know_our_enemy_tt		
+			custom_effect_tooltip = extra_space					
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.05} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+#add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.05} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.10} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.10} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+
+			add_ideas = chf_know_your_enemy_idea
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+	
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_fighting_on_our_terms
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 2
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_the_astra_program focus = CHF_procure_eaions } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_fighting_on_our_terms_tt	
+			custom_effect_tooltip = extra_space		
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+#add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.05} # air agility
+#add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.05} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.10} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.10} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+
+
+
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+
+			add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = amraams_tech
+			name = "test"
+		}
+
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = sidewinders_tech
+			name = "test"
+		}
+
+
+			}
+
+			else = { #wow it sucks if you dont own that dlc lol
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = light_fighter
+			name = "test"
+		}			
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+	
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_victory_at_any_cost
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_fighting_on_our_terms}	
+		prerequisite = { focus = CHF_know_our_enemy}		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_victory_at_any_cost_tt	
+			custom_effect_tooltip = extra_space		
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.05} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.05} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.10} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.10} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+	
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_to_be_respected
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 4
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_victory_at_any_cost}		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_to_be_respected_tt	
+			custom_effect_tooltip = extra_space					
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.03} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.03} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.03} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.05} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.10} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.10} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+	
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_is_to_be_feared
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 4
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_victory_at_any_cost}		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_is_to_be_feared_tt	
+			custom_effect_tooltip = extra_space					
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.02} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.02} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.02} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+#add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.05} # air superiority
+#add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.10} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.10} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+	
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_second_to_none
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 6
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_victory_at_any_cost}		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_second_to_none_tt	
+			custom_effect_tooltip = extra_space					
+#add_to_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+add_to_variable = { chaffia_the_chaffian_air_force_aagf = 0.05} # air agility
+add_to_variable = { chaffia_the_chaffian_air_force_aatkf = 0.05} #air attack
+add_to_variable = { chaffia_the_chaffian_air_force_adf = 0.05} # air defense
+#add_to_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+#add_to_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+add_to_variable = { chaffia_the_chaffian_air_force_ase = 0.10} # air superiority
+add_to_variable = { chaffia_the_chaffian_air_force_gtf = 0.05} # ground attack factor
+#add_to_variable = { chaffia_the_chaffian_air_force_ahdf = 0.10} # air home defense factor
+#add_to_variable = { chaffia_the_chaffian_air_force_asbc = 0.10} #air sup. bonus in combat
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}	
+
+	focus = { #synergizes with planning ahead and they shall not pass
+		id = CHF_end_the_human_dogfighting_era
+		icon = GFX_goal_generic_consumer_goods
+		x = -5
+		y = 8
+		relative_position_id = CHF_knights_of_the_sky
+		prerequisite = { focus = CHF_stopping_them_at_the_gates focus = CHF_second_to_none}		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = extra_space
+
+				country_event = {
+				id = chf.2014
+			}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}	
+	}		
+
+
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_they_shall_not_pass
+		icon = GFX_goal_generic_consumer_goods
+		x = 5
+		y = 1
+		relative_position_id = CHF_the_homeland_defense_decree
+		prerequisite = { focus = CHF_the_homeland_defense_decree } 
+		mutually_exclusive = {
+			focus = CHF_pierce_deep
+		}
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_they_shall_not_pass_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = -0.05 } #army attack
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.03 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.0 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+
+		custom_effect_tooltip = extra_space
+
+				country_event = {
+				id = chf.2010
+			}
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_intensify_infantry_drills
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_they_shall_not_pass } 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_intensify_infantry_drills_tt			
+add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_the_backbone_of_any_army
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_they_shall_not_pass } 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_the_backbone_of_any_army_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+	
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_the_future_infantry_rifle_program
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_the_backbone_of_any_army } 
+		prerequisite = { focus = CHF_intensify_infantry_drills }		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {	
+			custom_effect_tooltip = chf_the_future_infantry_rifle_program_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.03 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space		
+		add_tech_bonus = {
+			bonus = 2
+			uses = 1
+			category = infantry_weapons
+			name = "test"
+		}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_individual_excellance #how do you spell that word bro
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 3
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_the_future_infantry_rifle_program } 	
+		mutually_exclusive = {
+			focus = CHF_ten_to_one
+		}
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_individual_excellance_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space		
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_par_excellance #how do you spell that word bro
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 4
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_individual_excellance } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_individual_excellance_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_an_immoveable_object
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 5
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_individual_excellance focus = CHF_ten_to_one } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_an_immoveable_object_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.10 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+add_to_variable = { chaffia_defenders_of_ponykind_mdi = 1 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_ten_to_one
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 3
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_the_future_infantry_rifle_program } 	
+		mutually_exclusive = {
+			focus = CHF_individual_excellance
+		}
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_ten_to_one_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+add_to_variable = { chaffia_defenders_of_ponykind_con = 0.01 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+	
+	focus = { #synergizes with planning ahead and knights of the sky
+		id = CHF_the_pony_hordes
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 4
+		relative_position_id = CHF_they_shall_not_pass
+		prerequisite = { focus = CHF_ten_to_one } 	
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_the_pony_hordes_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.05 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_pierce_deep
+		icon = GFX_goal_generic_consumer_goods
+		x = -5
+		y = 1
+		relative_position_id = CHF_the_homeland_defense_decree
+		prerequisite = { focus = CHF_the_homeland_defense_decree } 
+		mutually_exclusive = {
+			focus = CHF_they_shall_not_pass
+		}
+		cost = 2
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_pierce_deep_tt			
+add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.03 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.02 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.05 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+
+			country_event = {
+				id = chf.2008
+			}
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_remechanize_the_army
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_pierce_deep } 
+		cost = 5
+		available = {
+			has_completed_focus = CHF_create_our_very_own_military_industrial_complex
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_remechanize_the_army_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.03 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.03 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.02 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_focus_on_speed
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 2
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_pierce_deep } 
+		mutually_exclusive = {
+			focus = CHF_focus_on_attack
+		}
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_focus_on_speed_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.03 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.05 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.05 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+	
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_focus_on_attack
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 2
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_pierce_deep } 
+		mutually_exclusive = {
+			focus = CHF_focus_on_speed
+		}
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_focus_on_attack_tt			
+add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.07 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.05 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.05 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_the_popula_x_program
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_pierce_deep } 
+		cost = 5
+		available = {
+			has_completed_focus = CHF_create_our_very_own_military_industrial_complex
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = chf_the_popula_x_program_tt			
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.03 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.02 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.03 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+
+		add_tech_bonus = {
+			bonus = 2
+			uses = 1
+			category = cat_medium_armor
+			name = "test"
+		}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	#!!!!!!!!!! this focus is out of the regular focus order because it was reordered !!!!!!!!!!!!!!#
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_from_the_iii_corps #i spelt it wrong its form but i alr set everything up so life is just tuff
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_new_armoured_doctrines} 
+		prerequisite = { focus = CHF_reform_the_armoured_academy} 		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+
+			custom_override_tooltip = {
+				tooltip = CHF_from_the_iii_corps_tt
+
+
+			736 = {
+
+			create_unit = {
+				division = "name = \"III Corps Mechanized Division\" division_template = \"IFV Division\" start_experience_factor = 0.5 start_equipment_factor = 0.4"
+				
+				owner = CHF
+				count = 3
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CHF						
+					}
+				}
+				id = 2000 #chaffian create unit ids start at 2000 because they are the second country i developed
+			}
+
+			create_unit = {
+				division = "name = \"III Corps Armoured Division\" division_template = \"Armoured Division\" start_experience_factor = 0.5 start_equipment_factor = 0.35"
+				
+				owner = CHF
+				count = 2
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CHF						
+					}
+				}
+				id = 2001 #chaffian create unit ids start at 2000 because they are the second country i developed
+			}
+			
+			create_unit = {
+				division = "name = \"III Corps Light Mech. Division\" division_template = \"APC Division\" start_experience_factor = 0.5 start_equipment_factor = 0.55"
+				
+				owner = CHF
+				count = 1
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CHF						
+					}
+				}
+				id = 2002 #chaffian create unit ids start at 2000 because they are the second country i developed
+			}			
+
+
+			}
+
+
+
+			}
+
+			custom_effect_tooltip = extra_space
+
+				country_event = {
+				id = chf.2009
+			}
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_new_armoured_doctrines
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 3
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_focus_on_attack focus = CHF_focus_on_speed} 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_new_armoured_doctrines_tt			
+add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.02 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.05 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.03 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.05 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_reform_the_armoured_academy
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 3
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_focus_on_attack focus = CHF_focus_on_speed} 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_reform_the_armoured_academy_tt			
+add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.03 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.03 } #army speed
+#add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+#add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.03 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.05 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+			custom_effect_tooltip = extra_space	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_an_unstoppable_force
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 5
+		relative_position_id = CHF_pierce_deep
+		prerequisite = { focus = CHF_from_the_iii_corps} 		
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = chf_an_unstoppable_force_tt				
+#add_to_variable = { chaffia_defenders_of_ponykind_aaf = 0.02 } #army attack
+#add_to_variable = { chaffia_defenders_of_ponykind_adf = 0.02 } #army defense
+#add_to_variable = { chaffia_defenders_of_ponykind_asf = 0.03 } #army speed
+add_to_variable = { chaffia_defenders_of_ponykind_aof = 0.05 } #army org
+#add_to_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthrough
+#add_to_variable = { chaffia_defenders_of_ponykind_mpf = 0.05 } #max planning
+#add_to_variable = { chaffia_defenders_of_ponykind_pns = 0.05 } #lol pns #planning speed
+#add_to_variable = { chaffia_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mtl = 0.1 } #min training time
+#add_to_variable = { chaffia_defenders_of_ponykind_con = 0.02 } #recruitable pop %
+#add_to_variable = { chaffia_defenders_of_ponykind_crb = 0.05 } #coordination bonus
+#add_to_variable = { chaffia_defenders_of_ponykind_ahf = 0.05 } #army health
+#add_to_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+#add_to_variable = { chaffia_defenders_of_ponykind_mdi = 0.5 } #max entrenchment
+#add_to_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #synergizes with military industrail complex and airland battle
+		id = CHF_overkill_its_not
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 9
+		relative_position_id = CHF_the_homeland_defense_decree
+		prerequisite = { focus = CHF_an_unstoppable_force focus = CHF_an_immoveable_object } 
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+				country_event = {
+				id = chf.2011
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #chaffia should never reach this point unless protea is stalling
+		id = CHF_ponies_at_the_ready
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_overkill_its_not
+		prerequisite = { focus = CHF_overkill_its_not} 
+		prerequisite = { focus = CHF_end_the_human_dogfighting_era} 
+		prerequisite = { focus = CHF_the_shining_star_of_the_cradle} 				
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+				country_event = {
+				id = chf.2015
+			}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #chaffia should never reach this point unless protea is stalling
+		id = CHF_prepare_the_flarian_front
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_ponies_at_the_ready
+		prerequisite = { focus = CHF_ponies_at_the_ready} 				
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+				country_event = {
+				id = chf.2016
+			}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #chaffia should never reach this point unless protea is stalling
+		id = CHF_prepare_the_chaffian_front
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_ponies_at_the_ready
+		prerequisite = { focus = CHF_ponies_at_the_ready} 				
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+				country_event = {
+				id = chf.2017
+			}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #chaffia should never reach this point unless protea is stalling
+		id = CHF_prepare_our_bodies_and_minds
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_ponies_at_the_ready
+		prerequisite = { focus = CHF_ponies_at_the_ready} 				
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+				country_event = {
+				id = chf.2018
+			}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #chaffia should never reach this point unless protea is stalling
+		id = CHF_ready_or_not
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_ponies_at_the_ready
+		prerequisite = { focus = CHF_prepare_the_flarian_front} 	
+		prerequisite = { focus = CHF_prepare_the_chaffian_front} 	
+		prerequisite = { focus = CHF_prepare_our_bodies_and_minds} 								
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+				country_event = {
+				id = chf.2019
+			}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	
+	focus = { #chaffia should never reach this point unless protea is stalling
+		id = CHF_into_the_fire
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_ponies_at_the_ready
+		prerequisite = { focus = CHF_ready_or_not} 									
+		cost = 5
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		cancel = {
+			has_war = yes
+		}		
+
+		allow_branch = {
+
+		}
+		completion_reward = {
+				country_event = {
+				id = chf.2020
+			}	
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #chaffia loses the 3rd skirmish
+		id = CHF_failure_twicefold
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+		#relative_position_id = 
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		allow_branch = {
+			has_country_flag = chf_lost_the_third_skirmish
+		}
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #roselina forces the open door decree through parliment
+		id = CHF_force_the_open_door_decree
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_failure_twicefold
+		prerequisite = { focus = CHF_failure_twicefold} 		
+		cost = 3
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+
+	focus = { #gives the player 5 extra shelters
+		id = CHF_expand_our_shelters
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = CHF_force_the_open_door_decree
+		prerequisite = { focus = CHF_force_the_open_door_decree} 		
+		cost = 4
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+			add_to_variable = {
+				num_of_shelters_available = 5
+			}
+
+			custom_effect_tooltip = expand_our_shelters_tt
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #chaffia will send 200k ponies to flaria, will additionally hurt chaffian flarian relations and make peaceful unification harder
+		id = CHF_seek_flarian_assistance
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = CHF_force_the_open_door_decree
+		prerequisite = { focus = CHF_force_the_open_door_decree} 		
+		cost = 4
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2031
+				}
+			}
+			custom_effect_tooltip = extra_space	
+			custom_effect_tooltip = seek_flarian_assistance_tt	
+			custom_effect_tooltip = extra_space		
+			
+
+		FLA = {
+
+		
+		random_state = {
+			limit = {
+				is_owned_and_controlled_by = FLA
+			}
+
+			add_manpower = 200000
+
+
+		}
+
+		random_state = {
+			limit = {
+				is_owned_and_controlled_by = FLA
+			}
+
+			add_manpower = 100000
+
+
+		}
 	}
+
+			subtract_from_variable = {
+				num_of_displaced_ponies = 300000
+			}
+			add_to_variable = {
+				num_of_ponies_denied_housing = 300000
+			}
+
+			custom_effect_tooltip = extra_space			
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+	
+	focus = { #chaffia will home 100k ponies without consuming shelters
+		id = CHF_provide_them_service
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_force_the_open_door_decree
+		prerequisite = { focus = CHF_force_the_open_door_decree} 		
+		cost = 4
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			subtract_from_variable = {
+				num_of_displaced_ponies = 200000
+			}
+
+			add_to_variable = {
+				num_of_rehomed_ponies = 200000
+			}
+
+			custom_effect_tooltip = provide_them_service_tt
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+	
+	focus = { #chaffia will provide 50k ponies with shelters and get 2 civs
+		id = CHF_provide_them_work
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_force_the_open_door_decree
+		prerequisite = { focus = CHF_force_the_open_door_decree} 		
+		cost = 4
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			custom_effect_tooltip = provide_them_work_tt
+			custom_effect_tooltip = extra_space
+			subtract_from_variable = {
+				num_of_displaced_ponies = 150000
+			}
+
+			add_to_variable = {
+				num_of_rehomed_ponies = 150000
+			}
+
+			728 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			608 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #chaffia will deny 200k ponies a shelter
+		id = CHF_reject_the_unwanted
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_force_the_open_door_decree
+		prerequisite = { focus = CHF_force_the_open_door_decree} 		
+		cost = 4
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+			subtract_from_variable = {
+				num_of_displaced_ponies = 400000
+			}
+
+			subtract_from_variable = {
+				devola_desperation_value = 5
+			}
+
+			add_to_variable = {
+				num_of_ponies_denied_housing = 400000
+			}
+
+			custom_effect_tooltip = reject_the_unwanted_tt
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = devola_desp_goes_down_by_5
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #chaffia will provide 100k ponies with shelter without comsuing a shelter, while also gaining 100k manpower
+		id = CHF_to_serve_the_nation
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = CHF_reject_the_unwanted
+		prerequisite = { focus = CHF_reject_the_unwanted} 		
+		cost = 4
+		available = {
+			has_war = no
+		}
+
+		mutually_exclusive = {
+			focus = CHF_to_pull_ourselves_out_of_a_hole
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+			add_ideas = chf_the_breadbasket_decree
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+	
+	focus = { #chaffia will provide 100k ponies with shelter without comsuing a shelter, while gaining 5% stability
+		id = CHF_to_pull_ourselves_out_of_a_hole
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = CHF_reject_the_unwanted
+		prerequisite = { focus = CHF_reject_the_unwanted} 		
+		cost = 4
+		available = {
+			has_war = no
+		}
+
+		mutually_exclusive = {
+			focus = CHF_to_serve_the_nation
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+			add_ideas = chf_in_spite_of_it_all
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+	
+	focus = { #chaffia will have provided a percentage of the 2 million displaced ponies a home, and rosalina procliams that the open door decree has come to a close, based on the amount of ponies given a home, the player can recieve one of three differentt permanent spirits
+		id = CHF_to_end_this_bitter_chapter
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_reject_the_unwanted
+		prerequisite = { focus = CHF_to_pull_ourselves_out_of_a_hole focus = CHF_to_serve_the_nation} 		
+		cost = 4
+		available = {
+			AND = {
+			has_war = no			
+			has_country_flag = chf_completed_the_open_door_minigame	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+			if = {
+				limit = { check_variable = {
+					num_of_rehomed_ponies > 1200000
+				} }
+
+				add_ideas = open_door_best_idea
+
+				CHF = {
+					country_event = {
+						id = chf.2033
+					}
+				}
+
+				else_if = {
+					limit = { check_variable = {
+						num_of_rehomed_ponies > 800000
+					} }
+
+				add_ideas = open_door_meh_idea					
+
+				CHF = {
+					country_event = {
+						id = chf.2034
+					}
+				}
+
+				}
+
+				else_if = {
+					limit = { check_variable = {
+						num_of_rehomed_ponies < 800000
+					} }
+
+			add_ideas = open_door_bad_idea	
+				CHF = {
+					country_event = {
+						id = chf.2033
+					}
+				}									
+
+				}
+
+			
+
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #DO NOT CALL THIS FOCUS PLAN BLACK, NAME IT "AFTERMATH" OR SOMETHING OF THE SORT!!!
+		id = CHF_plan_black
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_to_end_this_bitter_chapter
+		prerequisite = { focus = CHF_to_end_this_bitter_chapter} 		
+		cost = 4
+		available = {
+			AND = {
+			has_war = no			
+			has_country_flag = chf_completed_the_open_door_minigame	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}				
+	
+	focus = { #chaffia begins to work closer with aviceyn
+		id = CHF_a_deal_with_the_crown
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = CHF_plan_black
+		prerequisite = { focus = CHF_plan_black} 		
+		mutually_exclusive = {
+			focus = CHF_trust_in_ourselves
+		}
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+
+			custom_override_tooltip = {
+				tooltip = CHF_a_deal_with_the_twin_headed_devil_tt
+				CHF = {
+				check_variable = {
+					devola_desperation_value > 40
+				}
+			}					
+			}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = CHF_the_suffering_of_every_little_pony
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_a_deal_with_the_crown
+		prerequisite = { focus = CHF_a_deal_with_the_crown} 		
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #aot reference...
+		id = CHF_by_those_across_the_ocean
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_a_deal_with_the_crown
+		prerequisite = { focus = CHF_a_deal_with_the_crown} 		
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #
+		id = CHF_if_only
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_the_suffering_of_every_little_pony
+		prerequisite = { focus = CHF_the_suffering_of_every_little_pony} prerequisite = { focus = CHF_by_those_across_the_ocean} 			
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #
+		id = CHF_we_had_slain_them_all
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_the_suffering_of_every_little_pony
+		prerequisite = { focus = CHF_the_suffering_of_every_little_pony} prerequisite = { focus = CHF_by_those_across_the_ocean} 
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #
+		id = CHF_we_could_have_been_free
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = CHF_the_suffering_of_every_little_pony
+		prerequisite = { focus = CHF_the_suffering_of_every_little_pony} prerequisite = { focus = CHF_by_those_across_the_ocean} 
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #
+		id = CHF_we_have_no_other_choice
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_the_suffering_of_every_little_pony
+		prerequisite = { focus = CHF_if_only} prerequisite = { focus = CHF_we_had_slain_them_all} prerequisite = { focus = CHF_we_could_have_been_free} 
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}			
+
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_trust_in_ourselves
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = CHF_plan_black
+		prerequisite = { focus = CHF_plan_black} 		
+		mutually_exclusive = {
+			focus = CHF_a_deal_with_the_crown
+		}
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+
+			custom_override_tooltip = {
+				tooltip = CHF_trust_in_ourselves_tt
+				CHF = {
+				check_variable = {
+					devola_desperation_value < 40
+				}
+			}					
+			}
+
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_rebuild_and_readjust
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_trust_in_ourselves
+		prerequisite = { focus = CHF_trust_in_ourselves} 		
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_the_marrowbacker_line
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_trust_in_ourselves
+		prerequisite = { focus = CHF_trust_in_ourselves} 		
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_the_marrowbacker_line
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_trust_in_ourselves
+		prerequisite = { focus = CHF_trust_in_ourselves} 		
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_improve_third_world_ties
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_trust_in_ourselves
+		prerequisite = { focus = CHF_the_marrowbacker_line} prerequisite = { focus = CHF_rebuild_and_readjust} 			
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+	
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_strengthen_tristan_chaffian_relations
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 2
+		relative_position_id = CHF_trust_in_ourselves
+		prerequisite = { focus = CHF_the_marrowbacker_line} prerequisite = { focus = CHF_rebuild_and_readjust} 			
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #a union of dreams...? should be the name of the focus
+		id = CHF_a_union_of_dreams
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 2
+		relative_position_id = CHF_trust_in_ourselves
+		prerequisite = { focus = CHF_the_marrowbacker_line} prerequisite = { focus = CHF_rebuild_and_readjust} 			
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+	
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_our_national_awakening
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = CHF_trust_in_ourselves
+		prerequisite = { focus = CHF_improve_third_world_ties} prerequisite = { focus = CHF_strengthen_tristan_chaffian_relations} prerequisite = { focus = CHF_a_union_of_dreams} 			
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
+		id = CHF_operation_blacklight_solitude
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 6
+		relative_position_id = CHF_plan_black
+		prerequisite = { focus = CHF_our_national_awakening focus = CHF_we_have_no_other_choice }			
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+				
+
 }

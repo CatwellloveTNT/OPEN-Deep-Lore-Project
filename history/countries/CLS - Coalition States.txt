@@ -27,3 +27,38 @@ puppet = CAT
 add_ideas = {
 	solaris_maximum
 }
+
+add_opinion_modifier = {
+	target = CHF
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = FLA
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = AVI
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = TST
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = LAV
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = NSK
+	modifier = dont_trade_with_me
+}
+
+add_opinion_modifier = {
+	target = YAN
+	modifier = dont_trade_with_me
+}

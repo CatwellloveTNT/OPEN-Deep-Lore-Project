@@ -31,6 +31,10 @@ state={
 			5
 		}
 
+			add_dynamic_modifier = {
+				modifier = entrenched_human_minority
+			}		
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

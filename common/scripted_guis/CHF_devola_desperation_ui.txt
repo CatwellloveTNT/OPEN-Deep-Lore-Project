@@ -1,0 +1,6 @@
+scripted_gui = {
+  CHF_devola_desperation_ui = {
+    context_type = decision_category
+    window_name = "chf_devola_desperation_ui_window"
+  }
+}

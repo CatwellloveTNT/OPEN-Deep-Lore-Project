@@ -1,0 +1,195 @@
+﻿
+division_template = {
+	name = "Infantry Division"
+	division_names_group = FLA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }	
+		artillery_brigade = { x = 2 y = 0 }		
+		artillery_brigade = { x = 2 y = 1 }					
+	}
+
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+
+
+}
+
+division_template = {
+	name = "Armoured Division"
+	division_names_group = FLA_ARM_01
+
+	regiments = {
+		open_ifv_unit = { x = 0 y = 0 }
+		open_ifv_unit = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+	}
+
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+
+}
+
+
+division_template = {
+	name = "IFV Division"
+	division_names_group = FLA_MEC_01
+
+	regiments = {
+		open_ifv_unit = { x = 0 y = 0 }
+		open_ifv_unit = { x = 0 y = 1 }
+		open_ifv_unit = { x = 0 y = 2 }
+		open_ifv_unit = { x = 0 y = 3 }
+		mot_artillery_brigade = { x = 1 y = 0 }
+		mot_artillery_brigade = { x = 1 y = 1 }		
+	}
+
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+
+
+}
+
+division_template = {
+	name = "APC Division"
+	division_names_group = FLA_MEC_01
+
+	regiments = {
+		open_apc_unit = { x = 0 y = 0 }
+		open_apc_unit = { x = 0 y = 1 }
+		open_apc_unit = { x = 0 y = 2 }
+		open_apc_unit = { x = 0 y = 3 }
+		mot_artillery_brigade = { x = 1 y = 0 }
+		mot_artillery_brigade = { x = 1 y = 1 }		
+	}
+}
+
+units = {
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19789 # POLAND HEIGHTS
+		division_template = "IFV Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.55
+
+	}
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9955 # Havana
+		division_template = "IFV Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.56
+
+	}
+	
+
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9952 # Havana
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.62
+
+	}	
+	
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 19804 # Havana
+		division_template = "APC Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.60
+
+	}	
+
+
+	
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8392 # Havana
+		division_template = "Infantry Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+
+	}		
+	
+	
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9557 # Havana
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.67
+
+	}	
+
+
+		division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8812 # Havana
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.67
+
+	}	
+		
+	
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9543 # Havana
+		division_template = "APC Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}		
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "FLA"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+}

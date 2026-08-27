@@ -1,0 +1,182 @@
+#COALITION VOICE LINES
+
+sound = {
+	name = "cls_american_retreat_1" #retreat! (sourced from Guts and Blackpower)
+	file = "human/cls_american_retreat_1.wav"
+}
+sound = {
+	name = "cls_american_move_out_1" #advance (sourced from Guts and Blackpower)
+	file = "human/cls_american_move_out_1.wav"
+}
+sound = {
+	name = "cls_british_move_out_1" #company! on me! (sourced from Guts and Blackpower)
+	file = "human/cls_british_move_out_1.wav"
+}
+sound = {
+	name = "cls_british_move_out_2" #moove out! (sourced from Guts and Blackpower)
+	file = "human/cls_british_move_out_2.wav"
+}
+sound = {
+	name = "cls_british_move_out_3" #forward (sourced from Guts and Blackpower)
+	file = "human/cls_british_move_out_3.wav"
+}
+sound = {
+	name = "cls_british_positive_1" #advance (sourced from Guts and Blackpower)
+	file = "human/cls_british_positive_1.wav"
+}
+sound = {
+	name = "cls_british_positive_2" #forward! (sourced from Guts and Blackpower)
+	file = "human/cls_british_positive_2.wav"
+}
+sound = {
+	name = "cls_british_retreat_1" #oh my god, we're doomed! (sourced from Guts and Blackpower)
+	file = "human/cls_british_retreat_1.wav"
+}
+sound = {
+	name = "cls_caribbean_retreat_1" #bomboclat, bomboclat! (sourced from https://www.youtube.com/watch?v=FeD07I-SH0g)
+	file = "human/cls_caribbean_retreat_1.wav"
+}
+sound = {
+	name = "cls_france_idle_1" #whats the plan? (sourced from wargame: red dragon)
+	file = "human/cls_france_idle_1.wav"
+}
+sound = {
+	name = "cls_france_idle_2" #any commands for me? (sourced from wargame: red dragon)
+	file = "human/cls_france_idle_2.wav"
+}
+sound = {
+	name = "cls_france_idle_3" #will it be a bit rough this time? 	O///O (sourced from wargame: red dragon)
+	file = "human/cls_france_idle_3.wav"
+}
+sound = {
+	name = "cls_france_neutral_1" #its starting to get dangerous around here (sourced from wargame: red dragon)
+	file = "human/cls_france_neutral_1.wav"
+}
+sound = {
+	name = "cls_france_positive_1" #the situation is under control (sourced from wargame: red dragon)
+	file = "human/cls_france_positive_1.wav"
+}
+sound = {
+	name = "cls_france_positive_2" #everyone fights, no one runs (sourced from wargame: red dragon)
+	file = "human/cls_france_positive_2.wav"
+}
+sound = {
+	name = "cls_france_positive_3" #crush them (sourced from Guts and Blackpowder)
+	file = "human/cls_france_positive_3.wav"
+}
+sound = {
+	name = "cls_france_move_out_1" #break's over guys, lets move (sourced from wargame: red dragon)
+	file = "human/cls_france_move_out_1.wav"
+}
+sound = {
+	name = "cls_france_retreat_1" #we're losing ground, retreat! (sourced from Guts and Blackpowder)
+	file = "human/cls_france_retreat_1.wav"
+}
+sound = {
+	name = "cls_france_retreat_2" #pull back (sourced from Guts and Blackpowder)
+	file = "human/cls_france_retreat_2.wav"
+}
+sound = {
+	name = "cls_ger_retreat_1" #our position is being overrun, where are the reinforcements! (sourced from Gates of Hell: Ostfront (my beloved))
+	file = "human/cls_german_retreat_1.wav"
+}
+sound = {
+	name = "cls_ger_move_out_1" #order is being executed (sourced from Gates of Hell: Ostfront (my beloved))
+	file = "human/cls_german_move_out.wav"
+}
+sound = {
+	name = "cls_ger_move_out_2" #okay, we'll get there as fast as we can (sourced from wargame: red dragon)
+	file = "human/cls_german_move_out_2.wav"
+}
+sound = {
+	name = "cls_ger_move_out_3" #yea i cant find this one, idk what it means (sourced from wargame: red dragon)
+	file = "human/cls_german_move_out_3.wav"
+}
+sound = {
+	name = "cls_ger_idle_1" #excuse me? me? are you sure? (sourced from wargame: red dragon)
+	file = "human/cls_german_idle_1.wav"
+}
+sound = {
+	name = "cls_ger_neutral_1" #the only good enemy is a dead enemy (sourced from wargame: red dragon)
+	file = "human/cls_german_neutral_1.wav"
+}
+sound = {
+	name = "cls_ger_positive_1" #may god have mercy on our enemies, because i wont (sourced from wargame: red dragon)
+	file = "human/cls_german_positive_1.wav"
+}
+sound = {
+	name = "cls_japan_idle_1" #its an honor to serve under your command (sourced from wargame: red dragon)
+	file = "human/cls_japan_idle_1.wav"
+}
+sound = {
+	name = "cls_japan_idle_2" #we'll do it our way (sourced from wargame: red dragon)
+	file = "human/cls_japan_idle_2.wav"
+}
+sound = {
+	name = "cls_japan_idle_3" #this is a no-smoking zone, please understand (sourced from wargame: red dragon)
+	file = "human/cls_japan_idle_3.wav"
+}
+
+#PROTEAN VOICE LINES
+
+sound = {
+	name = "pro_idle_1" #Hey, Idiot! (sourced from forgotten hope 2)
+	file = "human/pro_idle_1.wav"
+}
+sound = {
+	name = "pro_idle_2" #Oi! (sourced from forgotten hope 2)
+	file = "human/pro_idle_2.wav"
+}
+sound = {
+	name = "pro_idle_3" #righto mate (sourced from forgotten hope 2)
+	file = "human/pro_idle_3.wav"
+}
+sound = {
+	name = "pro_idle_4" #hey mate (sourced from command and conquer: red alert 3)
+	file = "human/pro_idle_4.wav"
+}
+sound = {
+	name = "pro_idle_5" #im all ears (sourced from command and conquer: red alert 3)
+	file = "human/pro_idle_5.wav"
+}
+sound = {
+	name = "pro_move_out_1" #lets kick in (sourced from command and conquer: red alert 3)
+	file = "human/pro_move_out_1.wav"
+}
+sound = {
+	name = "pro_move_out_2" #alright, in a tick (sourced from command and conquer: red alert 3)
+	file = "human/pro_move_out_2.wav"
+}
+sound = {
+	name = "pro_neutral_1" #help, im up shit creek! (sourced from forgotten hope 2)
+	file = "human/pro_neutral_1.wav"
+}
+sound = {
+	name = "pro_neutral_2" #bastard spotted (idk if it actually says that, sounds like it tho) (sourced from forgotten hope 2)
+	file = "human/pro_neutral_2.wav"
+}
+sound = {
+	name = "pro_neutral_3" #it's a little busy now (sourced from command and conquer: red alert 3)
+	file = "human/pro_neutral_3.wav"
+}
+sound = {
+	name = "pro_neutral_4" #im almost cactus over here (sourced from command and conquer: red alert 3)
+	file = "human/pro_neutral_4.wav"
+}
+sound = {
+	name = "pro_positive_1" #charge! (sourced from forgotten hope 2)
+	file = "human/pro_positive_1.wav"
+}
+sound = {
+	name = "pro_positive_2" #attack the bastard! (sourced from forgotten hope 2)
+	file = "human/pro_positive_2.wav"
+}
+sound = {
+	name = "pro_positive_3" #put him away! (sourced from command and conquer: red alert 3)
+	file = "human/pro_positive_3.wav"
+}
+sound = {
+	name = "pro_retreat_1" #we're done over (sourced from forgotten hope 2)
+	file = "human/pro_retreat_1.wav"
+}
+

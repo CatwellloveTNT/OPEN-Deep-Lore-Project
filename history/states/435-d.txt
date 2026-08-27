@@ -22,9 +22,12 @@ state={
 	}
 
 	history = {
-		owner = VAL
+		owner = GRU
 		add_core_of = VAL
 
+		set_compliance = 42
+		set_resistance = 10
+		
 		victory_points = {
 			16325
 			3

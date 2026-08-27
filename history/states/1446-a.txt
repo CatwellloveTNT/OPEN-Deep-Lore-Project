@@ -1,0 +1,47 @@
+state={
+	id=1446
+	name="STATE_1446"
+	provinces={
+		20736 
+	}
+	manpower = 127812
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_island
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = KAV
+		add_core_of = KAV
+		add_core_of = MAZ
+
+		victory_points = {
+			20736
+			2
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			20736 = {
+				naval_base = 1
+			}
+		}
+	}
+}

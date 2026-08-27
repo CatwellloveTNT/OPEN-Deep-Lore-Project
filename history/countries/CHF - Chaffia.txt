@@ -7,26 +7,21 @@ if = {
 }
 
 OOB = "CHF_2032"
-set_technology = {
-	infantry_weapons = 1
-	tech_trucks = 1 
-	tech_support = 1
-	tech_recon = 1
-}
+
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	protean_democracy = 0
-	democratic = 98
-	fascism = 1
+	protean_democracy = 6
+	democratic = 0
+	fascism = 2
 	communism = 0
-	neutrality = 1
+	neutrality = 92
 }
 
 add_ideas = {
@@ -39,7 +34,6 @@ add_ideas = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		mechanical_computing = 1
 		iw_small_airframe = 1
 		basic_small_airframe = 1
 		engines_1 = 1
@@ -47,19 +41,36 @@ add_ideas = {
 
 		#industry
 		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		tech_trucks = 1 
+		tech_support = 1
+		support_weapons = 1
+		manpads = 1
+		atgms = 1
+		tech_engineers = 1
+		tech_logistics_company = 1
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		modern_helicopter_technology = 1
+		gw_artillery = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		early_bombs = 1
+		aa_hmg = 1
+		air_torpedoe_1 = 1
+		modern_missile_systems = 1
+		aircraft_construction = 1
+
 	}
 
 set_grand_doctrine = grand_battleplan
 
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
 
 create_equipment_variant = {
 	name = "test"
@@ -77,3 +88,98 @@ create_equipment_variant = {
 		engine_type_slot = engine_1_1x
 	}
 }
+
+add_dynamic_modifier = {
+	modifier = CHF_dynamic_economy
+}
+
+add_dynamic_modifier = {
+	modifier = CHF_defenders_of_ponykind
+}
+
+add_dynamic_modifier = {
+	modifier = CHF_the_chaffian_air_force
+}
+
+add_ideas = the_homebound_program
+
+add_ideas = the_isolatian_tragedy
+
+add_ideas = pony_majority_population
+add_ideas = no_avian_minority
+add_ideas = hostile_human_minority
+add_ideas = no_pony_minority
+
+
+
+
+set_variable = {
+	devola_desperation_value = 0
+}
+set_variable = { #1 = no external threats # 2 = minor, 3 = moderate 4 = major and 5 = existential
+	chf_geopolitical_situation_status = 1
+}
+
+set_variable = { #for the second great retreat
+	num_of_displaced_ponies = 2080000 # 2.08 mil
+}
+
+set_variable = {
+	num_of_rehomed_ponies = 0 
+}	
+		
+set_variable = {
+	num_of_ponies_denied_housing = 0 
+}		
+		
+set_variable = {
+	num_of_shelters_available = 25 
+}	
+
+diplomatic_relation = {
+	country = FLA
+	relation = military_access
+}
+
+
+recruit_character = CHF_devola
+
+
+
+
+# -------------------------------------- CHAFFIAN ECONOMY VARS --------------------------------------
+set_variable = { chf_eco_dynamic_st = -0.05 } #stability
+set_variable = { chf_eco_dynamic_mef = -0.05 } #max efficency cap
+set_variable = { chf_eco_dynamic_egf = 0.00 } #efficieny growth
+set_variable = { chf_eco_dynamic_icf = 0.05 } #factory output
+set_variable = { chf_eco_dynamic_cgf = 0.00 } #consumer goods factor
+set_variable = { chf_eco_dynamic_bf = -0.05 } #constrution speed
+# -------------------------------------- CHAFFIAN MILITARY VARS --------------------------------------
+set_variable = { chaffia_defenders_of_ponykind_aaf = -0.05 } #army attack
+set_variable = { chaffia_defenders_of_ponykind_adf = 0.05 } #army defense
+set_variable = { chaffia_defenders_of_ponykind_asf = 0.00 } #army speed
+set_variable = { chaffia_defenders_of_ponykind_aof = 0.00 } #army org
+set_variable = { chaffia_defenders_of_ponykind_aor = 0.02 } #army org regain
+set_variable = { chaffia_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+set_variable = { chaffia_defenders_of_ponykind_mpf = 0.15 } #max planning
+set_variable = { chaffia_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+set_variable = { chaffia_defenders_of_ponykind_spf = 0.10 } #supply consumption factor
+set_variable = { chaffia_defenders_of_ponykind_mtl = 0.0 } #min training time
+set_variable = { chaffia_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+set_variable = { chaffia_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+set_variable = { chaffia_defenders_of_ponykind_ahf = 0.00 } #army health
+set_variable = { chaffia_defenders_of_ponykind_rcf = 0.00 } #recon factor
+set_variable = { chaffia_defenders_of_ponykind_mdi = 1 } #max entrenchment
+set_variable = { chaffia_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+# -------------------------------------- CHAFFIAN AIR FORCE VARS --------------------------------------
+set_variable = { chaffia_the_chaffian_air_force_acf = 0.0} #air accidents
+set_variable = { chaffia_the_chaffian_air_force_aagf = -0.05} # air agility
+set_variable = { chaffia_the_chaffian_air_force_aatkf = -0.10} #air attack
+set_variable = { chaffia_the_chaffian_air_force_adf = -0.10} # air defense
+set_variable = { chaffia_the_chaffian_air_force_nstf = 0} # naval strike factor
+set_variable = { chaffia_the_chaffian_air_force_arf = 0} # air range
+set_variable = { chaffia_the_chaffian_air_force_ase = 0.0} # air superiority
+set_variable = { chaffia_the_chaffian_air_force_gtf = 0.0} # ground attack factor
+set_variable = { chaffia_the_chaffian_air_force_ahdf = 0.00} # air home defense factor
+set_variable = { chaffia_the_chaffian_air_force_asbc = 0.00 } # air_superiority_bonus_in_combat
+

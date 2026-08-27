@@ -25,17 +25,17 @@ on_actions = {
 					}
 				}
 			}
-			CHF = {
-				create_faction_from_template = {
-					template = faction_template_generic_dominance
-					name = CHF_countermeasures_alliance
-					icon = GFX_faction_logo_axis
-					color = {
-						100 100 150
-					}
-				}
-				add_to_faction = FLA
-			}
+	#		CHF = {
+	#			create_faction_from_template = {
+	#				template = faction_template_generic_dominance
+#					name = CHF_countermeasures_alliance
+#					icon = GFX_faction_logo_axis
+#					color = {
+#						100 100 150
+#					}
+	#			}
+	#			add_to_faction = FLA
+#			}
 			OSH = {
 				create_faction_from_template = {
 					template = faction_template_generic_dominance
@@ -58,7 +58,7 @@ on_actions = {
 			}
 			ARC = {
 				set_country_flag = first_phase_arc
-				set_country_flag = nope
+				set_country_flag = nope #bro why did i name it that, this is the flag that blocks the war council path
 				set_country_flag = nomythbusting 
 				set_country_flag = notrigger 
 				set_country_flag = starail_unelected
@@ -68,6 +68,9 @@ on_actions = {
 			set_global_flag = nuclear_exchange_hasnt_happened
 			PRO = {
 				set_country_flag = first_phase_pro
+			}
+			CHF = {
+				set_country_flag = first_phase_chf
 			}
 			set_global_flag = nuclear_exchange_hasnt_happened
 		}
@@ -94,8 +97,52 @@ on_actions = {
 			set_variable = { global.destruction_r5 = 0 } #
 			set_variable = { global.destruction_r6 = 0 } #
 			set_variable = { global.destruction_r7 = 0 } #		
-			set_variable = { global.total_destroyed_regions = 0} #PLEASE CHANGE T HIS BACK TO 0 FOR RELEASE THIS IS JUST FOR TESTING	
+			set_variable = { global.total_destroyed_regions = 0} #PLEASE CHANGE T HIS BACK TO 0 FOR RELEASE THIS IS JUST FOR TESTING			
+
+		}
+
+		effect = { # ----------------------------- START GAME GOON SETUP ------------------------------
+
+		PRO = {
+			535 = {
+
+			create_unit = {
+				division = "name = \"Mobilized Conscripts\" division_template = \"Conscripted Infantry\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				
+				owner = PRO
+				count = 3
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = PRO					
+					}
+				}
+				id = 1000 #protean create unit ids start at 1000 because they are the first country i developed
+			}
+		}
+
+			603 = {
+
+			create_unit = {
+				division = "name = \"Mobilized Conscripts\" division_template = \"Conscripted Infantry\" start_experience_factor = 0.15 start_equipment_factor = 0.65"
+				
+				owner = PRO
+				count = 3
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = PRO						
+					}
+				}
+				id = 1000 #protean create unit ids start at 1000 because they are the first country i developed
+			}
+		}		
 
 		}
 	}
+}
 }

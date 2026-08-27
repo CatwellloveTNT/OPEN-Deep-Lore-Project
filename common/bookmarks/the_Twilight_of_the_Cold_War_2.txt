@@ -6,15 +6,17 @@ bookmarks = { # ----------------- THIS IS THE THIRD WORLD -------------------
 		picture = "GFX_bookmark_art"
 		default_country = "CLS"
 		default = yes
-		
-		"CLS"={
-			history = "CLS_BOOKMARK_DESC"
+	
+
+		"CHF" = {
+			history = CHF_BOOKMARK_DESC
 			ideology = democratic
 			ideas = {
-				#FRA_victors_of_wwi
+				the_isolatian_tragedy
+				the_homebound_program
 			}
 			focuses = {
-				#FRA_form_the_popular_front
+				CHF_healing_the_wounds_of_the_past
 			}
 		}
 

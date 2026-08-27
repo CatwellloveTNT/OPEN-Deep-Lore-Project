@@ -1,0 +1,19 @@
+characters={
+	CHF_devola={ #as the character is visually based off of devola from nier, i started calling her devola without giving her a real name, while i came up wuth rosalina, the character will be internally be referenced as devola
+		name=CHF_DEVOLA
+		portraits={
+			civilian={
+				large="GFX_starail_leader_art_large"
+			}
+		}
+		country_leader={
+			ideology=conservative_pony_first_worldism
+			traits={
+				ex_aesa_agent
+				aesa_habits
+			}
+		desc = ARC_STARAIL_DESC			
+			expire="2050.1.1.1"
+		}
+	}
+}

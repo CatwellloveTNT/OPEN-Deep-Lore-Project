@@ -1,0 +1,221 @@
+FLA_create_goons = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
+	allowed = {
+		tag = FLA
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 10
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = -10
+	}
+
+
+
+}
+
+
+
+
+
+FLA_forget_about_the_boats = { #GOD DAMMIT BRO YOU ARE NOT THE BOAT GUY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	allowed = {
+		tag = FLA
+	}
+
+	enable = {
+		date > 2032.1.1 
+	}
+	abort = {
+		date > 2038.1.1 
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 3
+	}
+
+
+}
+
+FLA_buildup_goons_until_third_skirmish = { #if flaria has too many divs then protea will lose, too little and protea will steamroll, this should make it so that flaria makes just enough divs to keep the 3rd skirmish competitive but still lean on a protean victory
+	allowed = {
+		original_tag = FLA
+	}
+
+	enable = {
+		country_exists = PRO
+	}
+
+	abort = {
+#		CHF = {
+#			has_completed_focus = CHF_failure_twicefold		
+#		}
+
+		always = no
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 500
+	}	
+
+	ai_strategy = { #during testing protea made less divisons than usual without apcs, just testing this for now
+		type = build_army
+		id = open_apcs_ai
+		value = -10
+	}		
+
+	ai_strategy = {
+		type = build_army
+		id = open_tanks_ai
+		value = 0
+	}	
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = CHF
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 100 #20 to 40
+	}	
+
+
+
+}
+
+FLA_support_your_sister = { #chaffia and flaria will give each other the TFR NATO treatment (and by that i mean they'll send divs to the frontline to help each other)
+	allowed = {
+		original_tag = FLA
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		CHF = {
+			has_war_with = FLA
+		}
+
+	}
+	abort_when_not_enabled = yes	
+
+ai_strategy = {
+    type = force_defend_ally_borders
+    id = CHF
+    value = 500
+}
+
+
+
+}
+
+
+FLA_semper_vigilans = { #as long as protea exists, chaffia will always have troops dedicated to it's border
+	allowed = {
+		original_tag = FLA
+	}
+
+	enable = {
+		CHF = {
+			has_completed_focus = CHF_the_devil_rears_his_head
+		}
+	}
+
+	abort = {
+		always = no
+	}
+	abort_when_not_enabled = yes	
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = PRO
+		value = 1000
+	}
+
+
+
+}
+
+FLA_buildup_mils_for_BATTLE_GRAAAAH = { #milfac buildup for 3rd skirmish
+	allowed = {
+		original_tag = FLA
+	}
+
+	enable = {
+		CHF = {
+			has_completed_focus = CHF_the_devil_rears_his_head
+		}
+	}
+
+	abort = {
+	#	CHF = {
+	#		has_completed_focus = CHF_failure_twicefold
+	#	}
+
+		always = no
+
+	}
+	abort_when_not_enabled = yes	
+
+ai_strategy = {
+    type = added_military_to_civilian_factory_ratio
+    value = 100
+}
+
+
+
+}
+

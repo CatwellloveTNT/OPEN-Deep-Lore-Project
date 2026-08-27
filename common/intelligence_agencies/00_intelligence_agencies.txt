@@ -1,0 +1,79 @@
+# List of names and logos for intelligence agencies
+# available trigger will determine if the logo is in the list of available logos or not
+# names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_usa
+	names = { "Trinidadian Foreign Intelligence" }
+	
+	default = { tag = CLS }
+	available = { original_tag = CLS }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_uk
+	names = { "State Security Service" }
+	
+	default = { tag = PRO }
+	available = { original_tag = PRO }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_sov
+	names = { "Thier Magesty's Royal Security Service" }
+	
+	default = { tag = AVI }
+	available = { original_tag = AVI }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_fra
+	names = { "Arcadian External Security Apparatus" }
+	
+	default = { tag = ARC }
+	available = { original_tag = ARC }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_ger
+	names = { "Laventillian Golden Knights" }
+	
+	default = { 
+		tag = LAV
+	}
+	available = { 
+		original_tag = LAV 
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_GER_stasi
+	names = { "Homeland Security Department" }
+	
+	default = { 
+		tag = TST
+	}
+	available = { 
+		original_tag = TST
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_jap
+	names = { "Chaffian Intelligence Agency" }
+	
+	default = { 
+		tag = CHF
+	}
+	available = { original_tag = CHF }
+}
+
+
+

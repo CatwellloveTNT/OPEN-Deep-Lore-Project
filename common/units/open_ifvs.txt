@@ -9,10 +9,10 @@ sub_units = {
 		active = yes
 		
 		type = {
-			armor
+			mechanized
 		}
 		
-		group = armor
+		group = mechanized
 		
 		categories = {
 			category_open_ifv_mounted_infantry
@@ -26,19 +26,25 @@ sub_units = {
 
 		need = {
 			ifv_chassis = 80
+			infantry_equipment = 150
 		}
-		manpower = 750
+		manpower = 1000
 		max_organisation = 38
+		armor_value = 2
+		hardness = 0.5
+		hard_attack = -0.1
+		ap_attack = -0.1
+		defense = -0.2
 		default_morale = 0.35
 		training_time = 130
-		max_strength = 2.5
+		max_strength = 33
 		weight = 1
 		supply_consumption = 0.40
 
 		#Tanks are awesome
 		# soft_attack = 0.5
 
-		breakthrough = 0.35
+		breakthrough = 0.10
 
 		suppression = 3
 
@@ -80,10 +86,10 @@ sub_units = {
 		active = yes
 		
 		type = {
-			armor
+			mechanized
 		}
 		
-		group = armor
+		group = mechanized
 		
 		categories = {
 			category_open_ifv_mounted_infantry
@@ -99,10 +105,11 @@ sub_units = {
 			ifv_aa_chassis = 40
 		}
 		manpower = 400
+		armor_value = 15		
 		max_organisation = 9
 		default_morale = 0.2
 		training_time = 130
-		max_strength = 1.5
+		max_strength = 25
 		weight = 1
 		supply_consumption = 0.34
 

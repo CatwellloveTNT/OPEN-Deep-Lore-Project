@@ -311,7 +311,7 @@ PRO_AIR_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Air Cavalry Division" }
+		1 = { "%dst Airmobile 'Austral's Angels' Div." }
 		2 = { "%dnd Air Cavalry Division" }
 		3 = { "%drd Air Cavalry Division" }
 		4 = { "%dth Air Cavalry Division" }

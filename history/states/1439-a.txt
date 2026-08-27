@@ -1,0 +1,47 @@
+state={
+	id=1439
+	name="STATE_1439"
+	provinces={
+		20756 20758 
+	}
+	manpower = 22281
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = small_island
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = GRU
+		add_core_of = GRU
+		add_core_of = VAL
+
+		victory_points = {
+			20758	
+			5
+		}
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			20758 = {
+				naval_base = 1
+			}
+		}
+	}
+}

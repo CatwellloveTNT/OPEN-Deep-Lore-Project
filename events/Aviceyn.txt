@@ -2,21 +2,60 @@
 # AVICEYN EVENTS
 ###########################
 
-add_namespace = aviceyn
+add_namespace = avi
 
-# East hakistan's HSSF (their CIA) does a terror attack on Hakistan to intimidate them into demilling the border states
-country_event = {
-	id = aviceyn.1
-	title = aviceyn.1.t
-	desc = aviceyn.1.d
-	picture = GFX_haki_terror_attack_event_image
+# opening event
+country_event = { #Aviceyn - The Pax Avianica
+	id = avi.1
+	title = avi.1.t
+	desc = avi.1.d
+	picture = GFX_placeholder_art
 
 	is_triggered_only = yes
 
-	option = { # terror attack gets authorized
-		name = aviceyn.1.a
+	option = { # we will do what we must... to be left in bliss...
+		name = avi.1.a
 		ai_chance = {factor = 100}
 		add_political_power = 1
+
+	scoped_play_song = police_theme3
+
+	}
+}
+
+country_event = { #avicecyn contacts chaffia after their defeat in the second skirmish and gives them an offering to integrate with the second world
+	id = avi.2
+	title = avi.2.t
+	desc = avi.2.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # we will give them an opportuntity no...pony... can refuse!
+		name = avi.1.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+		country_event = {
+			id = chf.2005
+			days = 4
+		}
+		}
+
+	}
+}
+
+country_event = { #chaffia promptly rejects the offering
+	id = avi.3
+	title = avi.3.t
+	desc = avi.3.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # fine then, be eaten by humanity. i dont care!
+		name = avi.3.a
+		ai_chance = {factor = 100}
 	}
 }
 

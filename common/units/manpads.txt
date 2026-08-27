@@ -10,6 +10,7 @@ sub_units = {
 		affects_speed = no
 
 		type = {
+			anti_air
 			infantry
 			support
 		}
@@ -34,7 +35,7 @@ sub_units = {
 		can_be_parachuted = yes
 		
 		#Size Definitions
-		max_strength = 0.2
+		max_strength = 3
 		max_organisation = 0
 		default_morale = 0.1
 		manpower = 150

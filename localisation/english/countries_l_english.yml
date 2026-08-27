@@ -225,7 +225,7 @@
  JWN_DEF: "Jerwin"
  JWN_ADJ: "Jerwinian"
  KIT: "Kitboga"
- KIT_DEF: "Kitboa"
+ KIT_DEF: "Kitboga"
  KIT_ADJ: "Kitbogan"
  YNA: "Yanya"
  YNA_DEF: "Yanya"
@@ -347,5 +347,8 @@
  HAT: "Hitagawan Arctic Territory"
  HAT_DEF: "Hitagawa's Arctic Territory"
  HAT_ADJ: "Hitagawan Arctic"
+ ALV: "Alvarevia"
+ ALV_DEF: "Alvarevia"
+ ALV_ADJ: "Alvarevian"
 
 

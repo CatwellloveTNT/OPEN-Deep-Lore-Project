@@ -1,0 +1,224 @@
+is_human_majority_country = {
+	OR = {
+		has_idea = human_majority_population
+	}
+}
+
+is_pony_majority_country = {
+	OR = {
+		has_idea = pony_majority_population
+	}
+}
+
+is_avian_majority_country = {
+	OR = {
+		has_idea = avian_majority_population
+	}
+}
+
+is_first_world_country = {
+	OR = {
+		original_tag = CLS
+		original_tag = PRO 
+		original_tag = SSK
+		original_tag = RAV
+		original_tag = ARC
+		original_tag = NEW
+		original_tag = CAT
+		original_tag = ART		
+		original_tag = TAM	
+	}
+}
+
+is_second_world_country = {
+	OR = {
+		original_tag = AVI
+		original_tag = TST
+		original_tag = NSK
+		original_tag = XPA
+		original_tag = YAN
+		original_tag = AAT
+		original_tag = TTW	
+	}
+}
+
+is_third_world_country = {
+	OR = {
+    original_tag = AFC
+         original_tag =   ALK
+          original_tag =  ALV
+         original_tag =   ARI
+        original_tag =    ARN
+        original_tag =    ATX
+        original_tag =    BLG
+         original_tag =   CAE
+         original_tag =   CEN
+        original_tag =    CEP
+         original_tag =   CHA
+         original_tag =   CHF
+         original_tag =   CLA
+         original_tag =   COL
+         original_tag =   CRE
+         original_tag =   CSF
+          original_tag =  CZA
+          original_tag =  DOC
+          original_tag =  EDR
+           original_tag = EHK
+        original_tag =    EQL
+        original_tag =    ERD
+         original_tag =   EST
+         original_tag =   FEM
+         original_tag =   FEO
+         original_tag =   FER
+         original_tag =   FFL
+         original_tag =   FFS
+         original_tag =   FLA
+         original_tag =   FPK
+          original_tag =  FRE
+          original_tag =  FTL
+         original_tag =   FUR
+          original_tag =  GRA
+         original_tag =   GRU
+         original_tag =   HAK
+         original_tag =   HAL
+         original_tag =   HAS
+          original_tag =  HAT
+          original_tag =  HIT
+         original_tag =   HTF
+          original_tag =  INS
+          original_tag =  ISO
+          original_tag =  JER
+          original_tag =  JWN
+          original_tag =  KAT
+          original_tag =  KAV
+          original_tag =  KGA
+          original_tag =  KIR
+          original_tag =  KIT
+          original_tag =  KLD
+          original_tag =  KOR
+         original_tag =   KUV
+        original_tag =    LAV
+         original_tag =   LEG
+        original_tag =    LUM
+         original_tag =   MAD
+        original_tag =    MAT
+         original_tag =   MAY
+         original_tag =   MAZ
+         original_tag =   MON
+          original_tag =  MOT
+         original_tag =   MSB
+         original_tag =   NAV
+         original_tag =   NOR
+        original_tag =    NRN
+         original_tag =   OLY
+         original_tag =   OSH
+          original_tag =  PFC
+          original_tag =  PLA
+        original_tag =    PLD
+        original_tag =    PPT
+        original_tag =    PTA
+        original_tag =    QUI
+        original_tag =    RFS
+        original_tag =    RON
+        original_tag =    SAV
+        original_tag =    SBY
+        original_tag =    SKY
+         original_tag =   SPA
+         original_tag =   STR
+          original_tag =  SUS
+          original_tag =  TOM
+         original_tag =   TPC
+          original_tag =  ULK
+        original_tag =    URA
+         original_tag =   USH
+         original_tag =   VAL
+          original_tag =  VAT
+         original_tag =   VCE
+         original_tag =   VER
+         original_tag =   VET
+         original_tag =   VMD
+         original_tag =   XIL
+         original_tag =   YAN
+         original_tag =   YNA
+         original_tag =   ZEB
+	}
+}
+
+is_irrelevant_country = { #these guys do nothing the whole game or get eaten pretty quickly, i'll remove them from this list as i expand upon them
+	OR = {
+           original_tag =        ALK
+          original_tag =          ARI
+           original_tag =         ARN
+           original_tag =         CAE
+            original_tag =        CEP
+           original_tag =         COL
+           original_tag =         CSF
+           original_tag =         EDR
+           original_tag =         EHK
+           original_tag =         ERD
+            original_tag =        EST
+            original_tag =        FEM
+             original_tag =       FER
+             original_tag =       FFL
+             original_tag =       FFS
+             original_tag =       FPK
+             original_tag =       FTL
+             original_tag =       FUR
+             original_tag =       GRA
+             original_tag =       HAK
+             original_tag =       HAS
+             original_tag =       HAT
+             original_tag =       HIT
+             original_tag =       ISO
+             original_tag =       JER
+             original_tag =       JWN
+             original_tag =       KAT
+             original_tag =       KGA
+             original_tag =       KIT
+             original_tag =       KOR
+             original_tag =       KUV
+             original_tag =       LEG
+             original_tag =       LUM
+             original_tag =       MAT
+             original_tag =       MON
+             original_tag =       MSB
+             original_tag =       OSH
+             original_tag =       PFC
+             original_tag =       PLA
+             original_tag =       PLD
+             original_tag =       PTA
+             original_tag =       QUI
+             original_tag =       RFS
+             original_tag =       SBY
+             original_tag =       SPA
+             original_tag =       TOM
+             original_tag =       TPC
+             original_tag =       ULK
+             original_tag =       URA
+             original_tag =       USH
+             original_tag =       VAT
+             original_tag =       VCE
+             original_tag =       VET
+             original_tag =       YNA
+             original_tag =       ZEB
+	}
+}
+
+is_island_war_country = {
+	OR = {
+                  original_tag =          GRU
+                  original_tag =          NAV
+                 original_tag =           FRE
+                  original_tag =          CZA
+                  original_tag =          INS
+                  original_tag =          MAZ
+                  original_tag =          VAL
+                  original_tag =          CHA
+                 original_tag =           KAV
+                 original_tag =           RAV
+                 original_tag =           MOT
+                  original_tag =          XIL
+                 original_tag =           VER
+                  original_tag =          SUS
+	}
+}

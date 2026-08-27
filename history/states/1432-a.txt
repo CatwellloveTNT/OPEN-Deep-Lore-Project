@@ -1,0 +1,47 @@
+state={
+	id=1432
+	name="STATE_1432"
+	provinces={
+		20737 20739 
+	}
+	manpower = 139321
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_island
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = FRE
+		add_core_of = FRE
+		add_claim_by = CZA
+
+		victory_points = {
+			20757
+			2
+		}
+
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+			20757 = {
+				naval_base = 1
+			}
+		}
+	}
+}

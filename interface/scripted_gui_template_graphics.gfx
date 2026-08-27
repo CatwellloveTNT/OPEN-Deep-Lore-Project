@@ -84,4 +84,20 @@ spriteTypes = {
 		name = "GFX_valkyrie_protean_system_portrait"
 		textureFile = "/gfx/interface/scripted_gui_graphics/valkyrie_protean_system_portrait.dds"
 	}
+
+	spriteType = {
+		name = "GFX_devola_desperation_portrait"
+		textureFile = "/gfx/interface/scripted_gui_graphics/devola_desperation_portrait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_devola_desperation_portrait_holder"
+		textureFile = "/gfx/interface/scripted_gui_graphics/devola_desperation_portrait_holder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_devola_desperation_infobar"
+		textureFile = "/gfx/interface/scripted_gui_graphics/devola_desperation_infobar.dds"
+	}	
+
 }

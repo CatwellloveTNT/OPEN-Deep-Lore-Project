@@ -1,39 +1,14 @@
 ideas = {
 
 	country = {
-		warmed_up = {
+
+ # -------------------------------------- PREGAME IDEAS ----------------------------------------------
+
+		the_isolatian_tragedy = {
 			picture = warmed_up_pic
 
 			allowed = {
-				always = no
-			}
-
-			available = {
-				
-			}
-
-			cancel = {
-				always = no
-			}
-
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_org = 5
-				army_attack_factor = 0.05
-			}
-		}
-
-		memories_of_isolat = {
-			picture = warmed_up_pic
-
-			allowed = {
-				tag = PRO
+				tag = CHF
 				tag = FLA
 			}
 
@@ -53,11 +28,72 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.1
-				ai_focus_aggressive_factor = 0.5
+				stability_factor = 0.05
+				conscription_factor = 0.05
 			}
 
 		}
+
+		the_homebound_program = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				has_war = yes
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				stability_weekly_factor = 0.01
+			}
+
+		}		
+
+ # -------------------------------------- IN-GAME IDEAS ----------------------------------------------
+		chf_ready_resolute_rational = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+				army_core_defence_factor = 0.05
+			}
+		}
+
+ 
 		fooled_by_protean_deception = {
 			picture = warmed_up_pic
 
@@ -90,6 +126,237 @@ ideas = {
 			}
 		}
 
+		chf_optimized_production = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+				equipment_bonus = {
+					ifv_chassis = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					apc_chassis = {
+						build_cost_ic = -0.1
+						instant = yes
+					}	
+					infantry_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}									
+				}
+
+
+			modifier = {
+			}
+		}		
+
+		chf_a_third_world_alternative = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+
+			modifier = {
+				consumer_goods_factor = -0.075
+			}
+		}				
+
+		chf_the_inwards_consumption_decree = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+
+			modifier = {
+				min_export = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}				
+
+		chf_a_gun_for_every_grain_of_sand = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+				equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = -0.2
+						instant = yes
+					}									
+				}
+
+
+			modifier = {
+			}
+		}	
+		
+		chf_hoi4_div_fundamentals_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+				equipment_bonus = {
+					support_equipment = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					artillery_equipment = {
+						build_cost_ic = -0.1
+						instant = yes						
+					}								
+				}
+
+
+			modifier = {
+			}
+		}	
+		
+		chf_know_your_enemy_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+
+			modifier = {
+				intel_from_combat_factor = 0.15
+			}
+		}						
+
+		chf_the_pony_hordes = { #was initially used in chaffia second phase, moved to third phase
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+
+			modifier = {
+				conscription = 0.015
+			}
+		}								
+
 		c6isr_disrupted = {
 			picture = warmed_up_pic
 
@@ -114,8 +381,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_defence_factor = -0.1
-				army_org_factor = -0.3
+				army_org_factor = -0.1
 			}
 
 		}
@@ -144,7 +410,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly_factor = -0.03
+				stability_weekly_factor = -0.01
 				political_power_gain = -0.40
 			}
 
@@ -180,6 +446,157 @@ ideas = {
 			}
 
 		}
+
+		chf_in_spite_of_it_all = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				offensive_war_stability_factor = 0.2
+				defensive_war_stability_factor = 0.2
+			}
+
+		}		
+
+		chf_the_breadbasket_decree = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.2
+				factory_energy_consumption = -0.1
+			}
+
+		}	
+		
+		open_door_best_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.2
+				factory_energy_consumption = -0.1
+			}
+
+		}		
+
+		open_door_meh_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.2
+				factory_energy_consumption = -0.1
+			}
+
+		}	
+		
+		open_door_bad_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.2
+				factory_energy_consumption = -0.1
+			}
+
+		}		
 
 	}
 }

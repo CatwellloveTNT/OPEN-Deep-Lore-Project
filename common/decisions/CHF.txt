@@ -1,4 +1,699 @@
+chf_get_rid_of_the_humies_minigame = {
 
+	get_rid_of_the_humans_in_the_poland_heights = { #533
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 533
+			}
+		}
+
+		visible = {
+			has_country_flag = chf_root_out_the_humies		
+		}
+
+		cost = 50
+
+	#	visible_when_empty = no
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+			533 = {
+				remove_dynamic_modifier = {
+					modifier = entrenched_human_minority
+				}
+			}
+
+			set_country_flag = humies_gone_from_533
+			custom_effect_tooltip = when_we_remove_the_humies_tt
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_533
+					has_country_flag = humies_gone_from_737
+					has_country_flag = humies_gone_from_534
+					has_country_flag = humies_gone_from_604												
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	get_rid_of_the_humans_in_halasia = { #the state 737 city
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 737
+			}
+		}
+
+		visible = {
+			has_country_flag = chf_root_out_the_humies		
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+			737 = {
+				remove_dynamic_modifier = {
+					modifier = entrenched_human_minority
+				}
+			}
+
+			set_country_flag = humies_gone_from_737			
+			custom_effect_tooltip = when_we_remove_the_humies_tt
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_533
+					has_country_flag = humies_gone_from_737
+					has_country_flag = humies_gone_from_534
+					has_country_flag = humies_gone_from_604														
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	get_rid_of_the_humans_in_anchors_pass = { #the state 534 city/state
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 534
+			}
+		}
+
+		visible = {
+			has_country_flag = chf_root_out_the_humies		
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+			534 = {
+				remove_dynamic_modifier = {
+					modifier = entrenched_human_minority
+				}
+			}
+
+			set_country_flag = humies_gone_from_534			
+			custom_effect_tooltip = when_we_remove_the_humies_tt
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_533
+					has_country_flag = humies_gone_from_737
+					has_country_flag = humies_gone_from_534
+					has_country_flag = humies_gone_from_604													
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}		
+
+	get_rid_of_the_humans_in_strykers = { #the state 604 city/state
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 604
+			}
+		}
+
+		visible = {
+			has_country_flag = chf_root_out_the_humies		
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+			604 = {
+				remove_dynamic_modifier = {
+					modifier = entrenched_human_minority
+				}
+			}
+
+			custom_effect_tooltip = when_we_remove_the_humies_tt
+
+			set_country_flag = humies_gone_from_604
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_533
+					has_country_flag = humies_gone_from_737
+					has_country_flag = humies_gone_from_534
+					has_country_flag = humies_gone_from_604												
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}			
+
+
+}
+
+
+	chf_devola_desperation = {
+		
+
+}
+
+
+	chf_industralize_the_heartland_minigame = { 
+
+	build_civilian_factories_in_651 = { #bro please come up with a name for these states
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 651
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_industrialize_that_shi
+			CHF = {
+				owns_state = 651
+			}				
+			}
+	
+		}
+
+		cost = 150
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 60
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+		651 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}	
+		}
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}			
+
+
+	}
+
+	chf_the_devola_project_decisions = {
+		
+	improve_infrastructure_in_leerian = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			606 = {
+				infrastructure < 6
+			}
+		}
+
+		visible = {
+			has_country_flag = chf_devolaing_it			
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		#days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			606 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 250
+		}		
+
+	}
+
+
+	}
+
+	chf_prospect_for_resources_decisions = {
+		
+	drill_for_resources_in_532 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			has_tech = excavation2
+		}
+
+		visible = {
+			has_country_flag = chf_resourcing_it			
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		#days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			606 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 250
+		}		
+
+	}
+
+
+	}	
+
+ 	CHF_the_third_skirmish = {
+
+	the_fortress_decree = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			has_country_flag = the_third_skirmish		
+		}
+
+		visible = {
+			has_country_flag = the_third_skirmish			
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		#days_re_enable = 20
+
+		days_remove = 120
+
+		modifier = {
+
+			army_defence_factor = 0.10
+
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 250
+		}		
+
+	}
+
+
+
+
+	}
+
+	CHF_the_second_great_retreat_minigame = {
+
+		proclaim_an_end_to_the_open_door_decree = {
+		priority = 500
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			AND = {
+			check_variable = {
+				num_of_displaced_ponies = 0
+			}
+			}
+
+		}
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start			
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		#days_re_enable = 20
+
+		days_remove = 1
+
+		modifier = {
+
+
+		}
+
+		complete_effect = {
+			CHF = {
+				complete_national_focus = CHF_to_end_this_bitter_chapter
+			}
+			CHF = {
+				clr_country_flag = chf_second_great_retreat_minigame_start
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 250
+		}		
+
+
+
+		}		
+
+		build_more_shelters = {
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start		
+			}
+
+		}
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start			
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_re_enable = 20
+
+		days_remove = 40
+
+		modifier = {
+
+
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				num_of_shelters_available = 2
+			}
+			chf_open_door_shelter_clamper = yes
+		}
+
+		ai_will_do = {
+			factor = 250
+		}		
+
+
+
+		}			
+
+		deny_group_of_ponies = {
+		priority = 329
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start					
+				NOT = {
+					has_country_flag = chf_chose_to_accept
+					check_variable = {
+						num_of_displaced_ponies = 0
+					}
+				}
+			}
+	
+		}
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start			
+		}
+
+		cost = 5
+
+		fire_only_once = no
+
+		#days_re_enable = 20
+
+		days_remove = 15
+
+		complete_effect = {
+			set_country_flag = chf_chose_to_deny			
+		}
+
+
+		remove_effect = {
+			set_country_flag = chf_open_door_group_denied		
+			country_event = chf.2027
+		}
+
+		ai_will_do = {
+			factor = 250
+		}		
+
+
+
+		}
+
+		accept_group_of_ponies = {
+		priority = 330
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			AND = {
+			has_country_flag = chf_second_great_retreat_minigame_start
+					check_variable = {
+						num_of_shelters_available > 1
+					}								
+				NOT = {
+					has_country_flag = chf_chose_to_deny
+					
+				}
+				NOT = {
+					check_variable = {
+						num_of_displaced_ponies = 0
+					}					
+				}
+				
+			}
+		}
+
+		visible = {
+			has_country_flag = chf_second_great_retreat_minigame_start			
+		}
+
+		cost = 5
+
+		fire_only_once = no
+
+		#days_re_enable = 20
+
+		days_remove = 15
+
+
+		complete_effect = {
+			set_country_flag = chf_chose_to_accept
+		}
+
+		remove_effect = {
+
+			hidden_effect = {
+			set_country_flag = chf_open_door_group_accepted
+			random_list = {
+				50 = {
+			subtract_from_variable = {
+				num_of_shelters_available = 2
+			}
+				}
+				50 = {
+			subtract_from_variable = {
+				num_of_shelters_available = 4
+			}
+				}				
+			}				
+			}
+
+
+			chf_open_door_shelter_clamper = yes			
+		}		
+
+		ai_will_do = {
+			factor = 250
+		}		
+
+
+
+		}		
+
+
+	}
 
 CHF_showdown = {
 

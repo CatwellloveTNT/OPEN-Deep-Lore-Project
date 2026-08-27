@@ -265,9 +265,38 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			army_attack_factor = 0.10
 			army_org = 5
 
+			}
+
+		}
+
+		pro_humies_happy_because_chaffia_didnt_kill_them = { #if chaffia fails to remove the entrenched human minority within the poland heights, protea will recieve a temp. buff
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = PRO
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly_factor = 0.02
+				stability_weekly_factor = 0.01
+				political_power_gain = 0.1
 			}
 
 		}
@@ -324,10 +353,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			stability_weekly_factor = -0.05
-			army_attack_factor = 0.10
+			stability_weekly_factor = -0.02
+			army_attack_factor = 0.03
 			army_defence_factor = -0.05
-			breakthrough_factor = 0.10
+			breakthrough_factor = 0.05
 			}
 
 		}
@@ -355,9 +384,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			stability_weekly_factor = -0.05
+			stability_weekly_factor = -0.02
 			army_attack_factor = 0.05
-			army_artillery_attack_factor = 0.20
+			army_artillery_attack_factor = 0.10
 			}
 
 		}
@@ -386,7 +415,6 @@ ideas = {
 			
 			modifier = {
 			recon_factor = 0.5
-			army_defence_factor = 0.10
 			army_speed_factor = -0.10
 			breakthrough_factor = -0.10
 			}

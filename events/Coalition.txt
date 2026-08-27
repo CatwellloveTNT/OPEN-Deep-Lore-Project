@@ -5,7 +5,7 @@
 add_namespace = col
 
 
-# opening coalition states event that also plays their "theme"
+# opening coalition states event that also plays their moodsetter
 country_event = {
 	id = col.1
 	title = col.1.t
@@ -178,7 +178,7 @@ country_event = {
 	is_triggered_only = yes
 
 
-	option = { # As much as he begged and wished, he never saw a chute.
+	option = { # As much as he begged and prayed, he never saw a chute.
 		name = col.8.a
 		ai_chance = {factor = 100}
 		custom_effect_tooltip = hawksdead
@@ -510,19 +510,24 @@ country_event = {
 	option = { # We made a promise, we'll keep it!"
 		name = col.27.a
 		ai_chance = {factor = 100}
-		set_country_flag = srakin_reunification_war
+		set_country_flag = cls_srakin_reunification_war
 		custom_effect_tooltip = ssk_accept_war
 		mark_focus_tree_layout_dirty = yes
+
+		news_event = {
+			id = news.20
+			days = 0
+		}
+
 	}
 	option = { # there are better things to do"
 		name = col.27.b
 		ai_chance = {factor = 100}
 		add_political_power = -50
-		add_stability = -0.1
 		add_war_support = -0.1
 		custom_effect_tooltip = extra_space
 		custom_effect_tooltip = ssk_reject_war
-		clr_country_flag = srakin_reunification_war
+		clr_country_flag = cls_srakin_reunification_war
 		mark_focus_tree_layout_dirty = yes
 	}
 }
@@ -540,7 +545,7 @@ country_event = { # THIS IS THE TESTING EVENT TO CHECK FOR THE SOLARIS VARIABLE 
 		ai_chance = {factor = 100}
 	}
 }
-country_event = {
+country_event = { #chaffia nukes protea
 	id = col.1000
 	title = col.1000.t
 	desc = col.1000.d
@@ -577,8 +582,40 @@ country_event = {
 			}
 		}		
 	}
-}
 
+
+	
+}
+country_event = { #protea begins losing to chaffia in the third skirmish
+	id = col.1001
+	title = col.1001.t
+	desc = col.1001.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # What?! Fine.
+		name = col.1001.a
+		ai_chance = {factor = 100}	
+
+		CLS = {
+			add_to_war = {
+				targeted_alliance = PRO
+				enemy = CHF
+			}
+		}
+
+	}
+
+
+	option = { # Send them our sympathies
+		name = col.1001.b
+		ai_chance = {factor = 100}	
+	}	
+
+	
+}
 
 
 

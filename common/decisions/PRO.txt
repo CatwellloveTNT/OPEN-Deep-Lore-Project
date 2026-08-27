@@ -37,11 +37,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 		}
 
 		ai_will_do = {
-			factor = 0.1
-			modifier = {
-				has_war = yes
-				factor = 1
-			}
+			factor = 0
 
 		}		
 
@@ -82,10 +78,10 @@ PRO_the_second_protean_chaffian_skirmish = {
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 100
 			modifier = {
 				has_war = yes
-				factor = 1
+				factor = 10
 			}
 
 		}		
@@ -109,7 +105,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 			has_country_flag = the_second_skirmish
 		}
 
-		cost = 50
+		cost = 25
 
 		days_re_enable = 20
 
@@ -135,7 +131,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 500
 			modifier = {
 				has_war = yes
 				factor = 500
@@ -365,6 +361,54 @@ PRO_the_second_protean_chaffian_skirmish = {
 
 PRO_the_third_skirmish = {
 
+	request_coalition_intervention = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = PRO
+		}
+
+		available = {
+			surrender_progress > 0.4
+		}
+
+		visible = {
+			has_country_flag = the_third_skirmish
+		}
+
+		cost = 1
+
+		#days_re_enable = 20
+
+		days_remove = 1
+
+		fire_only_once = yes 
+
+
+
+		modifier = {
+		}
+
+		complete_effect = {
+			CLS = {
+				country_event = {
+					id = col.1001
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5000
+
+
+		}		
+
+	}
+
+
+
 	steady_advance = { 
 		priority = 310
 
@@ -410,6 +454,7 @@ PRO_the_third_skirmish = {
 		}		
 
 	}
+
 
 	thunder_and_flash = { 
 		priority = 310
@@ -488,9 +533,9 @@ PRO_the_third_skirmish = {
 
 
 		modifier = {
-			army_attack_factor = 0.05
+			army_attack_factor = 0.02
 			army_speed_factor = 0.10
-			army_org_factor = -0.10
+			army_org_factor = -0.05
 		}
 
 		complete_effect = {
@@ -544,10 +589,6 @@ PRO_the_third_skirmish = {
 					days = 80
 				}
 			}
-			add_days_mission_timeout = {
-				mission = end_the_war1
-				days = -25
-			}
 		}
 
 		ai_will_do = {
@@ -595,10 +636,6 @@ PRO_the_third_skirmish = {
 
 		complete_effect = {
 			add_ideas = roe_abandoned
-			add_days_mission_timeout = {
-				mission = end_the_war1
-				days = -50
-			}
 		}
 
 		ai_will_do = {
@@ -687,8 +724,7 @@ PRO_the_third_skirmish = {
 
 
 		modifier = {
-			ground_attack_factor = 0.20
-			army_defence_factor = 0.05
+			ground_attack_factor = 0.10
 		}
 
 		complete_effect = {

@@ -23,3 +23,8 @@ set_popularities = {
 
 puppet = AAT
 puppet = TTW
+
+add_opinion_modifier = {
+	target = PRO
+	modifier = dont_trade_with_me
+}

@@ -742,3 +742,132 @@ guiTypes = {
 
 	}
 }
+
+guiTypes = {
+
+	containerWindowType = { # ------------------------------- DEVOLA'S DESPERATION -------------------------------------------
+		name = "chf_devola_desperation_ui_window"
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME GFX_devola_desperation_portrait
+		size = { width = 0 height= 725 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+	#	background = {
+	#		name = "Background"		
+	#		quadTextureSprite ="GFX_arc_election_ui"
+	#	}
+
+
+		iconType = {
+			name = "devola"
+			spriteType = "GFX_devola_desperation_portrait"
+			position = {
+				x = 150 y = -282
+			}
+			orientation = CENTER
+			scale = 0.25
+		}
+
+		iconType = {
+			name = "devola_portrait_holder"
+			spriteType = "GFX_devola_desperation_portrait_holder"
+			position = {
+				x = 30 y = -350
+			}
+			scale = 0.35
+			orientation = CENTER
+		}
+
+		iconType = {
+			name = "infobox1"
+			spriteType = "GFX_devola_desperation_infobar"
+			position = {
+				x = 52 y = 0
+			}
+			orientation = CENTER
+			scale = 0.5			
+		}	
+
+		iconType = {
+			name = "infobox2"
+			spriteType = "GFX_devola_desperation_infobar"
+			position = {
+				x = 52 y = 100
+			}
+			orientation = CENTER
+			scale = 0.5			
+		}			
+				
+
+
+		instantTextBoxType = {
+			name = hhh_score
+			position = {
+				x = -235 y = 320
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = "Roselina's Desperation:"
+			maxWidth = 1000
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hop_score
+			position = {
+				x = -230 y = 540
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = "Threat Status:"
+			maxWidth = 1000
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hhh_var
+			position = {
+				x = 190 y = 383
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = devola_desperation_value_loc
+			maxWidth = 150
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = hop_var
+			position = {
+				x = -483 y = 480
+			}
+			font = "hoi_36header"
+			borderSize = {
+				x = 0 y = 0
+			}
+			text = chaffia_threat_loc
+			maxWidth = 1500
+			maxHeight = 120
+			fixedsize = yes
+			format = center
+		}
+
+	}
+}

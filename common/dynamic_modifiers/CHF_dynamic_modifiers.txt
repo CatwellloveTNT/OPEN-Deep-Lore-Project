@@ -1,0 +1,54 @@
+	CHF_dynamic_economy = { #
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		stability_factor = chf_eco_dynamic_st
+		production_factory_max_efficiency_factor = chf_eco_dynamic_mef
+		production_factory_efficiency_gain_factor = chf_eco_dynamic_egf
+		industrial_capacity_factory = chf_eco_dynamic_icf
+		consumer_goods_factor = chf_eco_dynamic_cgf
+		production_speed_buildings_factor = chf_eco_dynamic_bf
+	}
+
+	CHF_defenders_of_ponykind = { #
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		army_attack_factor = chaffia_defenders_of_ponykind_aaf
+		army_defence_factor = chaffia_defenders_of_ponykind_adf
+		army_speed_factor = chaffia_defenders_of_ponykind_asf
+		army_org_factor = chaffia_defenders_of_ponykind_aof
+		army_org_regain = chaffia_defenders_of_ponykind_aor
+		breakthrough_factor = chaffia_defenders_of_ponykind_btf
+		max_planning_factor = chaffia_defenders_of_ponykind_mpf
+		planning_speed = chaffia_defenders_of_ponykind_pns
+		supply_consumption_factor = chaffia_defenders_of_ponykind_spf
+		minimum_training_level = chaffia_defenders_of_ponykind_mtl
+		conscription = chaffia_defenders_of_ponykind_con
+		coordination_bonus = chaffia_defenders_of_ponykind_crb
+		army_strength_factor = chaffia_defenders_of_ponykind_ahf
+		recon_factor = chaffia_defenders_of_ponykind_rcf
+		max_dig_in = chaffia_defenders_of_ponykind_mdi
+		max_dig_in_factor = chaffia_defenders_of_ponykind_mdf
+	}
+
+	CHF_the_chaffian_air_force = { #
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		air_accidents_factor = chaffia_the_chaffian_air_force_acf
+		air_agility_factor = chaffia_the_chaffian_air_force_aagf
+		air_attack_factor = chaffia_the_chaffian_air_force_aatkf
+ 		air_defence_factor = chaffia_the_chaffian_air_force_adf
+		naval_strike_targetting_factor = chaffia_the_chaffian_air_force_nstf
+		air_range_factor = chaffia_the_chaffian_air_force_arf
+		air_superiority_efficiency = chaffia_the_chaffian_air_force_ase
+		ground_attack_factor = chaffia_the_chaffian_air_force_gtf
+		air_home_defence_factor = chaffia_the_chaffian_air_force_ahdf
+		air_superiority_bonus_in_combat = chaffia_the_chaffian_air_force_asbc
+	}
+
+

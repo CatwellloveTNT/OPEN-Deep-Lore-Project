@@ -1,0 +1,429 @@
+third_worlders_only_interact_with_eachother_reversed = { #makes 2nd and 3rd world nations not support relevant 3rd world nations
+	allowed = {
+		NOT = { is_third_world_country = yes }
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	reversed = yes
+
+	ai_strategy = {
+		type = support
+		id = CHF
+		value = -200
+	}
+
+	ai_strategy = {
+		type = support
+		id = FLA
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = LAV
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = HAL
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = CHF
+		value = 200
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = FLA
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = LAV
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = HAL
+		value = 200
+	}		
+
+
+}
+
+third_worlders_only_interact_with_eachother = { #makes 3rd nations support relevant 3rd world nations
+	allowed = {
+		is_third_world_country = yes
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = support
+		id = CHF
+		value = 200
+	}
+
+	ai_strategy = {
+		type = support
+		id = FLA
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = LAV
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = HAL
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = CHF
+		value = -200
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = FLA
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = LAV
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = HAL
+		value = -200
+	}		
+
+
+}
+
+second_worlders_only_interact_with_eachother_reversed = { #makes 1st and 3rd world nations not support relevant 2nd world nations
+	allowed = {
+		NOT = { is_second_world_country = yes }
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	reversed = yes
+
+	ai_strategy = {
+		type = support
+		id = AVI
+		value = -200
+	}
+
+	ai_strategy = {
+		type = support
+		id = TST
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = NSK
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = XPA
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = AVI
+		value = 200
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = TST
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = NSK
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = XPA
+		value = 200
+	}		
+
+
+}
+
+second_worlders_only_interact_with_eachother = { #makes 2nd nations support relevant 2nd world nations
+	allowed = {
+		is_third_world_country = yes
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = support
+		id = AVI
+		value = 200
+	}
+
+	ai_strategy = {
+		type = support
+		id = NSK
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = TST
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = XPA
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = AVI
+		value = -200
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = NSK
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = TST
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = XPA
+		value = -200
+	}		
+
+
+}
+
+first_worlders_only_interact_with_eachother_reversed = { #makes 2nd and 3rd world nations not support relevant 1st world nations
+	allowed = {
+		NOT = { is_first_world_country = yes }
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	reversed = yes	
+
+	ai_strategy = {
+		type = support
+		id = CLS
+		value = -200
+	}
+
+	ai_strategy = {
+		type = support
+		id = RAV
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = NEW
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = TAM
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = PRO
+		value = -200
+	}	
+	
+	ai_strategy = {
+		type = support
+		id = ARC
+		value = -200
+	}		
+
+	ai_strategy = {
+		type = ignore
+		id = CLS
+		value = 200
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = RAV
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = NEW
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = TAM
+		value = 200
+	}	
+	
+	ai_strategy = {
+		type = ignore
+		id = PRO
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = ARC
+		value = 200
+	}	
+
+
+}
+
+first_worlders_only_interact_with_eachother = { #makes 1st nations support relevant 1st world nations
+	allowed = {
+		is_third_world_country = yes
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	reversed = yes	
+
+	ai_strategy = {
+		type = support
+		id = CLS
+		value = 200
+	}
+
+	ai_strategy = {
+		type = support
+		id = RAV
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = TAM
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = NEW
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = support
+		id = PRO
+		value = 200
+	}		
+
+	ai_strategy = {
+		type = support
+		id = ARC
+		value = 200
+	}		
+
+	ai_strategy = {
+		type = ignore
+		id = CLS
+		value = -200
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = PRO
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = ARC
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = ignore
+		id = RAV
+		value = -200
+	}		
+
+	ai_strategy = {
+		type = ignore
+		id = TAM
+		value = -200
+	}	
+	
+	ai_strategy = {
+		type = ignore
+		id = NEW
+		value = -200
+	}		
+
+
+}
+
+

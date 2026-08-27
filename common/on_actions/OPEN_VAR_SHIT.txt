@@ -14,7 +14,7 @@ on_actions = { #holy FUCK this file looks like undertale
 				}	
 			}
 			else_if = {
-				limit = { check_variable = { var = solaris_readyness value = 8 }
+				limit = { check_variable = { var = solaris_readyness value > 8 }
 			}
 				swap_ideas = {
 					remove_idea = solaris_maximum
@@ -26,7 +26,7 @@ on_actions = { #holy FUCK this file looks like undertale
 				}					
 			}
 			else_if = {
-				limit = { check_variable = { var = solaris_readyness value = 6 }
+				limit = { check_variable = { var = solaris_readyness value > 6 }
 			}
 				swap_ideas = {
 					remove_idea = solaris_high
@@ -38,7 +38,7 @@ on_actions = { #holy FUCK this file looks like undertale
 				}									
 			}
 			else_if = {
-				limit = { check_variable = { var = solaris_readyness value = 4 }
+				limit = { check_variable = { var = solaris_readyness value > 4 }
 			}
 				swap_ideas = {
 					remove_idea = solaris_moderate
@@ -50,7 +50,7 @@ on_actions = { #holy FUCK this file looks like undertale
 				}			
 			}
 			else_if = { 
-				limit = { check_variable = { var = solaris_readyness value = 2 }
+				limit = { check_variable = { var = solaris_readyness value > 2 }
 			}
 				swap_ideas = {
 					remove_idea = solaris_low
@@ -180,5 +180,4 @@ on_actions = { #holy FUCK this file looks like undertale
 			}
 		}
 	}
-
 }

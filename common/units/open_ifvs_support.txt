@@ -9,7 +9,7 @@ sub_units = {
 		active = yes
 		
 		type = {
-			armor
+			mechanized
 			support
 		}
 		

@@ -1,5 +1,48 @@
-	CHF_the_second_protean_chaffian_skirmish = {
+
+	chf_get_rid_of_the_humies_minigame = {
 		priority = 102
+
+		icon = SOV_paranoia
+
+	#	scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = chf_root_out_the_humies
+			}
+		}
+
+		visible_when_empty = no
+	}	
+
+	chf_devola_desperation = { #i dont have a name for the leader of chaffia yet, but her design is heavily inspired by devola, as such devola is the internal name for this character 
+		priority = 300
+
+		icon = SOV_paranoia
+
+	#	scripted_gui = chf_desperation_ui
+
+	scripted_gui = CHF_devola_desperation_ui
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = chf_activate_the_desperation_mechanic_flag
+			}
+		}
+
+		visible_when_empty = yes
+	}	
+
+CHF_the_second_protean_chaffian_skirmish = {
+		priority = 103
 
 		icon = SOV_paranoia
 
@@ -17,6 +60,66 @@
 
 		visible_when_empty = no
 	}
+
+	chf_industralize_the_heartland_minigame = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+	#	scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = chf_industrialize_that_shi
+			}
+		}
+
+		visible_when_empty = no
+	}	
+
+	chf_the_devola_project_decisions = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+	#	scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = chf_devolaing_it
+			}
+		}
+
+		visible_when_empty = no
+	}	
+	
+	chf_prospect_for_resources_decisions = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+	#	scripted_gui = cls_solaris_ui
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = chf_resourcing_it
+			}
+		}
+
+		visible_when_empty = no
+	}		
 
 	CHF_the_third_skirmish = {
 		priority = 300
@@ -37,6 +140,26 @@
 
 		visible_when_empty = no
 	}
+
+	CHF_the_second_great_retreat_minigame = {
+		priority = 290
+
+		icon = SOV_paranoia 
+
+	#	scripted_gui = pro_third_skirmish_ui #i want a photo for this one instead
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = chf_second_great_retreat_minigame_start
+			}
+		}
+
+		visible_when_empty = no
+	}	
 
 	CHF_showdown = {
 		

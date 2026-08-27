@@ -4,7 +4,7 @@ PRO_go_for_ifvs = {
 		PRO
 	}
 	
-	role = armor
+	role = open_ifvs_ai
 	
 	upgrade_prio = {
 		base = 2
@@ -13,7 +13,7 @@ PRO_go_for_ifvs = {
 			factor = 4
 			AND = {
 				has_tech = basic_light_tank_chassis
-				num_of_military_factories > 25
+				num_of_military_factories > 15
 			}
 		}
 	}
@@ -110,7 +110,7 @@ PRO_go_for_apcs = {
 		PRO
 	}
 	
-	role = armor
+	role = open_apcs_ai
 	
 	upgrade_prio = {
 		base = 2
@@ -119,7 +119,7 @@ PRO_go_for_apcs = {
 			factor = 4
 			AND = {
 				has_tech = basic_heavy_tank_chassis
-				num_of_military_factories > 15
+				num_of_military_factories > 10
 			}
 		}
 	}
@@ -216,7 +216,7 @@ PRO_go_for_tanks = {
 		PRO
 	}
 	
-	role = armor
+	role = open_tanks_ai
 	
 	upgrade_prio = {
 		base = 2
@@ -224,7 +224,7 @@ PRO_go_for_tanks = {
 		modifier = {
 			factor = 4
 			AND = {
-				num_of_military_factories > 35
+				num_of_military_factories > 20
 			}
 		}
 	}
@@ -286,7 +286,7 @@ PRO_go_for_tanks = {
 		}
 	}
 
-	PRO_apcs_startgame = {
+	PRO_tanks_startgame = {
 		division_names_group = PRO_MEC_01
 		upgrade_prio = {
 			base = 1
@@ -323,7 +323,7 @@ PRO_footies = {
 		PRO
 	}
 	
-	role = infantry
+	role = open_ground_assault_infantry_ai
 	
 	upgrade_prio = {
 		base = 2
@@ -424,7 +424,7 @@ PRO_attack_helicopters = {
 		PRO
 	}
 	
-	role = infantry
+	role = open_apaches_ai
 	
 	upgrade_prio = {
 		base = 1
@@ -432,7 +432,7 @@ PRO_attack_helicopters = {
 		modifier = {
 			factor = 5
 			AND = {
-				num_of_military_factories > 40
+				num_of_military_factories > 25
 			}
 		}
 
@@ -532,7 +532,7 @@ PRO_vlaps = {
 		PRO
 	}
 	
-	role = infantry
+	role = open_vlaps_ai
 	
 	upgrade_prio = {
 		base = 1

@@ -407,3 +407,97 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "pala"
+	chance = {
+		modifier = {
+			tag = PRO
+			has_war = no
+			factor = 0.1
+		}		
+	}
+}
+
+music = {
+	song = "bdf"
+	chance = {
+		modifier = {
+			tag = CHF
+			has_war = no
+			factor = 0.1
+		}		
+	}
+}
+music = {
+	song = "police_theme3"
+	chance = {
+		modifier = {
+			tag = AVI
+			has_war = no
+			factor = 0.1
+		}		
+	}
+}
+music = {
+	song = "hotel_music_combat"
+	chance = {
+		modifier = {
+			tag = AVI
+			has_war = yes
+			factor = 0.3
+		}		
+	}
+}
+music = { #this song should never play without the player selecting it
+	song = "sealstheme"
+	chance = {
+		modifier = {
+			tag = CLS
+			factor = -100
+		}		
+	}
+}
+music = {
+	song = "tarantula"
+	chance = {
+		modifier = {
+			tag = CLS
+			factor = 0.05
+		}		
+	}
+}
+music = { #enemies to lovers :heart_locket:
+	song = "intothefire"
+	chance = {
+		modifier = {
+			tag = CLS
+			has_war_together_with = AVI
+			factor = 0.25
+		}	
+		modifier = {
+			tag = AVI
+			has_war_together_with = CLS
+			factor = 0.25
+		}				
+	}
+}
+music = { #this song matches so perfectly with laventille's canonical story i wish i made it myself
+	song = "trailermusic1"
+	chance = {
+		modifier = {
+			tag = LAV
+			factor = 0.1
+		}				
+	}
+}
+music = { 
+	song = "theroundtable"
+	chance = {
+		modifier = {
+			tag = TST
+			has_war = yes
+			factor = 0.1
+		}				
+	}
+}

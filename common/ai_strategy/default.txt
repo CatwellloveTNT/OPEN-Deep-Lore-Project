@@ -4,13 +4,10 @@ default_unit_production = {
 		always = yes
 		NOT = {
 			OR = {
-				original_tag = PRO
-				original_tag = CHF
-				original_tag = LAV
-				original_tag = ARC
-				original_tag = AVI
-				original_tag = TST
-				original_tag = CLS
+				is_third_world_country = yes
+				is_second_world_country = yes		
+				is_first_world_country = yes
+				is_irrelevant_country = yes							
 			}
 		}
 	}
@@ -810,11 +807,6 @@ default_area_priority = {
 		value = 10
 	}
 
-	ai_strategy = {
-		type = area_priority
-		id = suez
-		value = 50
-	}
 
 	ai_strategy = {
 		type = area_priority
@@ -841,11 +833,7 @@ default_area_priority_non_africa = {
         id = africa
         value = -70
     }
-    ai_strategy = {
-        type = area_priority
-        id = suez
-        value = -40
-    }
+
 }
 
 default_railway_gun_management = {

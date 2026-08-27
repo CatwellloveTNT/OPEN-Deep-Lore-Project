@@ -446,3 +446,7 @@ HAT = {
 	color = rgb { 77 77 77 }
 	color_ui = rgb { 77 77 77 }
 }
+ALV = {
+	color = rgb { 215 77 18 }
+	color_ui = rgb { 215 77 18 }
+}

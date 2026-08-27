@@ -1,0 +1,46 @@
+state={
+	id=1441
+	name="STATE_1441"
+	provinces={
+		20753 20754 
+	}
+	manpower = 127812
+	buildings_max_level_factor = 1
+	local_supplies = 0
+	state_category = large_island
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = VAL
+		add_core_of = VAL
+
+		victory_points = {
+			20753
+			2
+		}
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 1
+			air_base = 0
+			20753 = {
+				naval_base = 1
+			}
+		}
+	}
+}

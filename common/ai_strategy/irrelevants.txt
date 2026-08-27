@@ -1,0 +1,151 @@
+create_goons = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
+	allowed = {
+		is_irrelevant_country = yes
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = anti_armor
+		value = 1
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 50 #20 to 40
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype #Build these up over time, don't stall
+		id = anti_air_equipment
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = artillery_equipment
+		value = 4
+	}
+	
+	ai_strategy = { #Germany struggles with manual management of this in an endless loop
+		type = equipment_production_min_factories_archetype
+		id = motorized_equipment
+		value = 1
+	}
+
+	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
+		type = railway_gun_divisions_ratio
+		value = -10
+	}	
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 50 
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 10
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_apcs_ai
+		value = 15
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = 10
+	}
+
+
+
+}
+
+
+
+CHF_all_in = { #FIGHT ALL, EVERYONE WILL DIE, KILL ALL
+
+	allowed = {
+		always = yes
+	}
+
+ enable = {
+
+	has_war = yes
+
+ }
+
+ abort = {
+
+	has_war = no
+
+ }
+ abort_when_not_enabled = yes
+
+ai_strategy = {
+    type = garrison
+    value = -10
+}
+
+}

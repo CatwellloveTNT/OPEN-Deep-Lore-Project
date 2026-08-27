@@ -1,20 +1,95 @@
-#	Example:
-#
-#	example_effect = {
-#		add_political_power = 66
-#		add_popularity = {
-#			ideology = fascism
-#			popularity = 0.33
-#		}
-#	}
-#
-#
-#	In a script file:
-#
-#	effect = {
-#		example_effect = yes
-#	}
-#
+
+chf_keep_that_shit_0_to_100 = {
+clamp_variable = {
+	var = var:devola_desperation_value
+	min = 0
+	max = 100
+}	
+}
+
+chf_open_door_shelter_clamper = {
+clamp_variable = {
+	var = var:num_of_shelters_available
+	min = 0
+	max = 100
+}	
+}
+
+chf_open_door_displaced_ponies_clamper = {
+clamp_variable = {
+	var = var:num_of_displaced_ponies
+	min = 0
+	max = 2080000
+}	
+}
+
+chf_open_door_rehomed_ponies_clamper = {
+clamp_variable = {
+	var = var:num_of_rehomed_ponies
+	min = 0
+	max = 2080000
+}	
+}
+
+chf_open_door_denied_ponies_clamper = {
+clamp_variable = {
+	var = var:num_of_ponies_denied_housing
+	min = 0
+	max = 2080000
+}	
+}
+
+CHF_devola_desperation_goes_down_10 = {
+	subtract_from_variable = {
+		devola_desperation_value = 10
+	}
+	chf_keep_that_shit_0_to_100 = yes
+}
+
+CHF_devola_desperation_goes_down_20 = {
+	subtract_from_variable = {
+		devola_desperation_value = 20
+	}
+	chf_keep_that_shit_0_to_100 = yes	
+}
+
+CHF_devola_desperation_goes_down_30 = {
+	subtract_from_variable = {
+		devola_desperation_value = 30
+	}
+	chf_keep_that_shit_0_to_100 = yes	
+}
+
+CHF_devola_desperation_goes_up_10 = {
+	subtract_from_variable = {
+		devola_desperation_value = -10
+	}
+	chf_keep_that_shit_0_to_100 = yes	
+}
+
+CHF_devola_desperation_goes_up_20 = {
+	subtract_from_variable = {
+		devola_desperation_value = -20
+	}
+	chf_keep_that_shit_0_to_100 = yes	
+}
+
+CHF_devola_desperation_goes_up_30 = {
+	subtract_from_variable = {
+		devola_desperation_value = -30
+	}
+	chf_keep_that_shit_0_to_100 = yes	
+}
+
+
+	chf_open_door_good_entry_1 = {
+		country_event = {
+			id = chf.2024
+		}
+
+	}
+
+
 
 CHF_nuke_their_ass = {
 	launch_nuke = {
@@ -95,15 +170,6 @@ CHF_nuke_their_ass = {
 		}
 		set_country_flag = chf_the_final_skirmish
 		mark_focus_tree_layout_dirty = yes
-	}
-	FLA = {
-		declare_war_on = {
-			target = PRO
-			type = liberate_wargoal
-		}
-		hidden_effect = {
-		goto_state = 537			
-		}
 	}
 	}
 

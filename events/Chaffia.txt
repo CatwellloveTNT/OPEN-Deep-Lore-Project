@@ -18,9 +18,14 @@ country_event = {
 		name = chf.1.a
 		ai_chance = {factor = 100}
 		add_political_power = 1
+				hidden_effect = {
+			CHF = {
+				scoped_play_song = "bdf"
+			}
+		}		
 	}
 }
-country_event = {
+country_event = { #triggered by protea's drill the troops focus (i think)
 	id = chf.2
 	title = chf.2.t
 	desc = chf.2.d
@@ -33,7 +38,7 @@ country_event = {
 		ai_chance = {factor = 100}
 	}
 }
-country_event = {
+country_event = { #triggered by one of protea's first phase buildup focuses (i forgot which)
 	id = chf.3
 	title = chf.3.t
 	desc = chf.3.d
@@ -41,12 +46,12 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # We trust the CIS, how about we give half of them a break?
+	option = { # We wont be fooled that easily
 		name = chf.3.a
 		ai_chance = {factor = 100}
 	}
 }
-country_event = {
+country_event = { #protea crosses the border
 	id = chf.4
 	title = chf.4.t
 	desc = chf.4.d
@@ -54,12 +59,12 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # Get those guys off their break, we've been decived!
+	option = { # get troops to the border, now!
 		name = chf.4.a
 		ai_chance = {factor = 100}
 	}
 }
-country_event = {
+country_event = { #chaffia loses the 2nd skirmish
 	id = chf.5
 	title = chf.5.t
 	desc = chf.5.d
@@ -70,13 +75,26 @@ country_event = {
 	option = { # Send in our diplomats, we weren't ready for this!
 		name = chf.5.a
 		ai_chance = {factor = 100}
-		clr_country_flag = the_second_skirmish
+		clr_country_flag = chf_the_second_skirmish
 		clr_country_flag = first_phase_chf
 		set_country_flag = lost_the_second_skirmish_chf
 		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = CHF_the_devil_rears_his_head
+
+	hidden_effect = {
+
+		AVI = {
+			country_event = {
+				id = avi.2
+				days = 2
+			}
+		}
+
+	}
+
 	}
 }
-country_event = {
+country_event = { #chaffia wins the second skirmish
 	id = chf.6
 	title = chf.6.t
 	desc = chf.6.d
@@ -93,7 +111,7 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 	}
 }
-country_event = {
+country_event = { #protea uses chaffian pows as meat shields
 	id = chf.7
 	title = chf.7.t
 	desc = chf.7.d
@@ -106,7 +124,7 @@ country_event = {
 		ai_chance = {factor = 100}
 	}
 }
-country_event = {
+country_event = { #after the defeat in the 2nd skirmish, ponies from the poland heights flock in droves to the neighboring chaffian territories
 	id = chf.8
 	title = chf.8.t
 	desc = chf.8.d
@@ -114,7 +132,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # look at what we're fighting against
+	option = { # we'll take everyone we can! give them passage!
 		name = chf.8.a
 		ai_chance = {factor = 100}
 		534 = {
@@ -125,7 +143,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #after chaffia loses the 3rd skirmish, the ponies in the occupied regions flock in the hundreds of thousands to neighboring chaffian states
 	id = chf.9
 	title = chf.9.t
 	desc = chf.9.d
@@ -133,7 +151,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # second retreat ponies running from the protean system
+	option = { # To think a second Great Retreat would occur within our livespans... Horrifying...Horrifying!
 		name = chf.9.a
 		ai_chance = {factor = 100}
 		add_timed_idea = {
@@ -151,7 +169,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #bro wtf is this event lmao
 	id = chf.20
 	title = chf.20.t
 	desc = chf.20.d
@@ -183,7 +201,9 @@ country_event = {
 		}
 	}
 }
-country_event = {
+
+
+country_event = { #nuke event
 	id = chf.1000
 	title = chf.1000.t
 	desc = chf.1000.d
@@ -206,7 +226,871 @@ country_event = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
+	
 }
 
 
+country_event = { #chaffias actual events start at no.2000
+	id = chf.2000 #a chaffian pony and his family returns to their family home after 60 years of protean occupation, only to find that their home has been totally changed by the protean family living there.
+	title = chf.2000.t
+	desc = chf.2000.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #we've done so much these past few years.
+		name = chf.2000.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+
+country_event = { #as devola (i dont have a name for her yet, leader of chaffia) gives a speech about the homebound program, she reminds the ponies that protea is like a rabid dog, and to always be prepared and ready for them to return.
+	id = chf.2001
+	title = chf.2001.t
+	desc = chf.2001.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #thats why i keep a shotgun for close encounters
+		name = chf.2001.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+country_event = { #describe the relationship between chaffia and flaria, how they started as nations, how the current leader of the two nations are literally sisters, and how they fought and lost against the coalition in 1968, and how they beat back protea in 2028
+	id = chf.2002
+	title = chf.2002.t
+	desc = chf.2002.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #
+		name = chf.2002.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+country_event = { #the player will never get this event as protea will attack before they are able to complete the focus
+	id = chf.2003
+	title = chf.2003.t
+	desc = chf.2003.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #years of history, gone... like it never existed...
+		name = chf.2003.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+
+country_event = { #devola desperately contacts her sister in flaria, and informs her of the situation, they decide to formalize the countermeasures alliance
+	id = chf.2004
+	title = chf.2004.t
+	desc = chf.2004.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Never will this happen again...
+		name = chf.2004.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+country_event = { #after their defeat in poland, chaffia recieves a message from aviceyn, giving them an offer to integrate into the second world
+	id = chf.2005
+	title = chf.2005.t
+	desc = chf.2005.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #To think we'd probably be humanity's true little siblings had they not treat us so wrong... I'll tell them no myself.
+		name = chf.2005.a
+		ai_chance = {factor = 100}
+
+		set_country_flag = chf_activate_the_desperation_mechanic_flag
+		custom_effect_tooltip = chf_desperation_mechanic_starts_tt
+
+		AVI = {
+			country_event = {
+				id = avi.3
+			}
+		}
+
+		add_to_variable = {
+			devola_desperation_value = 10
+		}
+
+		add_to_variable = {
+	chf_geopolitical_situation_status = 1			
+		}
+
+	}
+}
+
+country_event = { #after the defeat in poland, chaffia opts to create their own military industrial complex
+	id = chf.2006
+	title = chf.2006.t
+	desc = chf.2006.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #I know this strays from our ideals, but its necessary...
+		name = chf.2006.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #chaffia finishes their economic tree
+	id = chf.2007
+	title = chf.2007.t
+	desc = chf.2007.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Look, sister! Industrial disticts as far as the eye can see! W-with NO workplace injuries!
+		name = chf.2007.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #after their defeat in poland, devola decides to "rearmourize" the army and follow a more first-world-like army structure
+	id = chf.2008
+	title = chf.2008.t
+	desc = chf.2008.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Well then Blueberry, lets get started.
+		name = chf.2008.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #Blueberry gliddily (bro is that a word) reveals the plan to form the III corps to Devola, despite Devolas' doubts, Blueberry enthusiasm has a major effect on her choice.
+	id = chf.2009
+	title = chf.2009.t
+	desc = chf.2009.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Oh, one last thing Devola... The uhh... the cost...
+		name = chf.2009.a
+		ai_chance = {factor = 100}
+		custom_effect_tooltip = chfevent2009tt
+	}
+}
+country_event = { #after their defeat in poland, devola decides to ensure such a defeat never happens again and pushes the army into a defensive posture
+	id = chf.2010
+	title = chf.2010.t
+	desc = chf.2010.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Never Again...
+		name = chf.2010.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #devola calls her sister over to chaffia to review the newly reformed military, to which popula is very impressed
+	id = chf.2011
+	title = chf.2011.t
+	desc = chf.2011.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #How could we ever lose with an army like this, sister!
+		name = chf.2011.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #Devola meets with her popula to discuss the situation of the air force and the future air wars that chaffia will find itself in (i guess popula is an airforce girl), popula recommends eating their pride and adopting a more first world style of aerial warfare
+	id = chf.2012
+	title = chf.2012.t
+	desc = chf.2012.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Anything to Survive, right sister?
+		name = chf.2012.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #Devola speaks with La Brea (CROSSOVER!!!!!!) and discuss what happened in protea, while giving his sympathies, la brea suggusts that chaffia should try to match the humans in the air, and try to beat them
+	id = chf.2013
+	title = chf.2013.t
+	desc = chf.2013.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Do you really think that would work?
+		name = chf.2013.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #Devola exictedly calls Popula over to review the reformed airforce of Chaffia, Popula is impressed, so impressed infact, that she keeps one of the fighters for herself
+	id = chf.2014
+	title = chf.2014.t
+	desc = chf.2014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Uhh... Is that allowed?
+		name = chf.2014.a
+		ai_chance = {factor = 100}
+
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe
+			amount = -1
+		}	
+
+	}
+}
+country_event = { #Devola exictedly calls Popula over to review the reformed airforce of Chaffia, Popula is impressed, so impressed infact, that she keeps one of the fighters for herself
+	id = chf.2015
+	title = chf.2015.t
+	desc = chf.2014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Uhh... Is that allowed?
+		name = chf.2014.a
+		ai_chance = {factor = 100}
+
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe
+			amount = -1
+		}	
+
+	}
+}
+country_event = { #filler event, chaffia should never reach this point unless protea is a player and has stalled the third skirmish
+	id = chf.2016
+	title = chf.2016.t
+	desc = chf.2014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Uhh... Is that allowed?
+		name = chf.2014.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+country_event = { #filler event, chaffia should never reach this point unless protea is a player and has stalled the third skirmish
+	id = chf.2017
+	title = chf.2017.t
+	desc = chf.2014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Uhh... Is that allowed?
+		name = chf.2014.a
+		ai_chance = {factor = 100}
+
+	}
+}
+country_event = { #filler event, chaffia should never reach this point unless protea is a player and has stalled the third skirmish
+	id = chf.2018
+	title = chf.2018.t
+	desc = chf.2014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Uhh... Is that allowed?
+		name = chf.2014.a
+		ai_chance = {factor = 100}
+
+	}
+}
+country_event = { #filler event, chaffia should never reach this point unless protea is a player and has stalled the third skirmish
+	id = chf.2019
+	title = chf.2019.t
+	desc = chf.2014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Uhh... Is that allowed?
+		name = chf.2014.a
+		ai_chance = {factor = 100}
+
+	}
+}
+country_event = { #filler event, chaffia should never reach this point unless protea is a player and has stalled the third skirmish
+	id = chf.2020
+	title = chf.2020.t
+	desc = chf.2014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Uhh... Is that allowed?
+		name = chf.2014.a
+		ai_chance = {factor = 100}
+
+		PRO = {
+			declare_war_on = {
+				target = CHF
+				type = take_core_state
+			}
+			declare_war_on = {
+				target = FLA
+				type = take_core_state
+			}
+		set_country_flag = the_third_skirmish
+		}
+		add_named_threat = {
+			threat = 6
+			name = "The Third Skirmish"
+		}
+		hidden_effect = {
+			scoped_play_song = "non_metal"
+		}
+		CHF = {
+			set_country_flag = the_third_skirmish
+		}
+		FLA = {
+			set_country_flag = the_third_skirmish
+		}
+				hidden_effect = {
+				news_event = {
+					id = news.16
+				}
+			}
+
+	}
+}
+
+country_event = { #chaffia loses the 3rd skirmish
+	id = chf.2021
+	title = chf.2021.t
+	desc = chf.2021.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Not again... Not again!
+		name = chf.2021.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			complete_national_focus = CHF_failure_twicefold
+		}
+
+
+
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = chf_loses_the_3rd_skirmish
+
+		add_to_variable = {
+			devola_desperation_value = 20
+		}
+
+		add_to_variable = {
+			chf_geopolitical_situation_status = 1
+		}
+
+		custom_effect_tooltip = extra_space		
+
+	}
+}
+
+country_event = { #ponies run from protea's death squads after they reimplement the protean system in the newly reseized land
+	id = chf.2022
+	title = chf.2022.t
+	desc = chf.2022.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Look at what our failures have caused... It breaks my heart. (4.5 mil occupied, 2 mil get away, 2.42 mil dead by protean death squads, rest enslaved)
+		name = chf.2022.a
+		ai_chance = {factor = 100}
+
+
+	#	532 = {
+	#		add_manpower = 251121
+	#	}	
+	#	605 = {
+	#		add_manpower = 291711
+	#	}	
+	#	736 = {
+	#		add_manpower = 912121
+	#	}	
+	#	598 = {
+	#		add_manpower = 123178
+	#	}
+	#	735 = {
+	#		add_manpower = 528128
+	#	}		
+
+		add_ideas = the_second_great_retreat
+
+		set_variable = { #these variables are put into the array below and are responsible for certain effects
+			chf_10_percent_red = 1
+		}
+		set_variable = {
+			chf_20_percent_red = 2
+		}
+		set_variable = {
+			chf_30_percent_red = 3
+		}						
+		set_variable = {
+			chf_50_percent_red = 5
+		}			
+		set_variable = {
+			chf_100_percent_red = 10
+		}			
+
+
+		add_to_variable = {
+			devola_desperation_value = 5
+		}	
+
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = devola_desp_goes_up_by_5
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = chf_second_great_retreat_minigame_start_tt	
+		CHF = {
+			set_country_flag = chf_second_great_retreat_minigame_start
+		}		
+
+		CHF = {
+			set_country_flag = open_door_tutorial_phase_active
+		}
+
+		custom_effect_tooltip = extra_space
+
+		CHF = {
+			complete_national_focus = CHF_force_the_open_door_decree
+		}
+
+	}
+}
+
+country_event = { #this is a once use, scripted terror attack event that happens during the second round of the open door minigame
+	id = chf.2023
+	title = chf.2023.t
+	desc = chf.2023.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Not again... Not again!
+		name = chf.2023.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = chf_loses_the_3rd_skirmish
+
+		custom_effect_tooltip = extra_space		
+
+	}
+}
+
+country_event = { #good entry open door event
+	id = chf.2024
+	title = chf.2024.t
+	desc = chf.2024.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Let's get these ponies a good place to stay...
+		name = chf.2024.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = chf_loses_the_3rd_skirmish
+		custom_effect_tooltip = extra_space		
+
+		subtract_from_variable = {
+			num_of_displaced_ponies = 100000
+		}
+
+		chf_open_door_displaced_ponies_clamper = yes
+
+		add_to_variable = {
+			num_of_rehomed_ponies = 100000
+		}
+
+		chf_open_door_rehomed_ponies_clamper = yes
+
+	}
+}
+
+country_event = { #scripted bad entry for the second round of the open door
+	id = chf.2025
+	title = chf.2025.t
+	desc = chf.2025.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #God damn monsters!
+		name = chf.2025.a
+		ai_chance = {factor = 100}
+
+
+
+		subtract_from_variable = {
+			num_of_displaced_ponies = 100000
+		}
+
+		chf_open_door_displaced_ponies_clamper = yes
+
+		add_to_variable = {
+			num_of_rehomed_ponies = 33459
+		}
+
+		add_to_variable = {
+			num_of_ponies_denied_housing = 66541
+		}	
+		
+		add_to_variable = {
+			devola_desperation_value = 5
+		}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_5
+
+		set_country_flag = open_door_scripted_terror_attack_happened
+
+		chf_open_door_denied_ponies_clamper = yes
+		chf_open_door_shelter_clamper = yes
+		chf_open_door_rehomed_ponies_clamper = yes
+		chf_open_door_displaced_ponies_clamper = yes
+	
+
+	}
+}
+
+country_event = { #scripted event where the player denies entry on the second round of the open door
+	id = chf.2026
+	title = chf.2026.t
+	desc = chf.2026.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #What foresight we must have.
+		name = chf.2026.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+
+		subtract_from_variable = {
+			num_of_displaced_ponies = 100000
+		}
+
+		chf_open_door_displaced_ponies_clamper = yes
+
+		add_to_variable = {
+			num_of_rehomed_ponies = 100000
+		}
+
+		set_country_flag = open_door_scripted_terror_attack_happened
+
+		chf_open_door_denied_ponies_clamper = yes
+		chf_open_door_shelter_clamper = yes
+		chf_open_door_rehomed_ponies_clamper = yes
+		chf_open_door_displaced_ponies_clamper = yes
+
+	}
+}
+
+country_event = { #generic denial event for open door
+	id = chf.2027
+	title = chf.2027.t
+	desc = chf.2027.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #I'm sorry, you'll have to find a home elsewhere.
+		name = chf.2027.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+
+		subtract_from_variable = {
+			num_of_displaced_ponies = 100000
+		}
+
+		chf_open_door_displaced_ponies_clamper = yes
+
+		add_to_variable = {
+			num_of_ponies_denied_housing = 100000
+		}
+
+		set_country_flag = open_door_scripted_terror_attack_happened
+
+		chf_open_door_denied_ponies_clamper = yes
+		chf_open_door_shelter_clamper = yes
+		chf_open_door_rehomed_ponies_clamper = yes
+		chf_open_door_displaced_ponies_clamper = yes
+
+	}
+}
+
+country_event = { #generic terror event 1 for the open door
+	id = chf.2028
+	title = chf.2028.t
+	desc = chf.2028.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Why?!
+		name = chf.2028.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+
+		subtract_from_variable = {
+			num_of_displaced_ponies = 10000
+		}
+
+		add_to_variable = {
+			num_of_ponies_denied_housing = 65679
+		}		
+
+		chf_open_door_displaced_ponies_clamper = yes
+
+		add_to_variable = {
+			num_of_rehomed_ponies = 34321
+		}
+
+		add_to_variable = {
+			devola_desperation_value = 5
+		}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_5		
+
+
+		chf_open_door_denied_ponies_clamper = yes
+		chf_open_door_shelter_clamper = yes
+		chf_open_door_rehomed_ponies_clamper = yes
+		chf_open_door_displaced_ponies_clamper = yes
+
+	}
+}
+
+country_event = { #generic terror event 2 for the open door
+	id = chf.2029
+	title = chf.2029.t
+	desc = chf.2029.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Monsters!
+		name = chf.2029.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+
+		subtract_from_variable = {
+			num_of_displaced_ponies = 100000
+		}
+
+		add_to_variable = {
+			num_of_ponies_denied_housing = 86547
+		}
+
+		chf_open_door_displaced_ponies_clamper = yes
+
+		add_to_variable = {
+			num_of_rehomed_ponies = 13453
+		}
+
+		add_to_variable = {
+			devola_desperation_value = 5
+		}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_5		
+
+
+		chf_open_door_denied_ponies_clamper = yes
+		chf_open_door_shelter_clamper = yes
+		chf_open_door_rehomed_ponies_clamper = yes
+		chf_open_door_displaced_ponies_clamper = yes
+
+	}
+}
+
+country_event = { #generic terror event 3 for the open door
+	id = chf.2030
+	title = chf.2030.t
+	desc = chf.2030.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Monsters!
+		name = chf.2030.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+
+		subtract_from_variable = {
+			num_of_displaced_ponies = 100000
+		}
+
+		add_to_variable = {
+			num_of_ponies_denied_housing = 35477
+		}
+
+		chf_open_door_displaced_ponies_clamper = yes
+
+		add_to_variable = {
+			num_of_rehomed_ponies = 64523
+		}
+
+		add_to_variable = {
+			devola_desperation_value = 5
+		}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_5		
+
+
+		chf_open_door_denied_ponies_clamper = yes
+		chf_open_door_shelter_clamper = yes
+		chf_open_door_rehomed_ponies_clamper = yes
+		chf_open_door_displaced_ponies_clamper = yes
+
+	}
+}
+
+country_event = { #roselina's sister (bro its been awhile i forgot her name) calls and complains about the influx of refugees being filtered into flaria
+	id = chf.2031
+	title = chf.2031.t
+	desc = chf.2031.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #I know, but we need to brunt this together sister!
+		name = chf.2031.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+
+		hidden_effect = {
+			random_list = {
+				50 = {}
+				50 = {
+					country_event = chf.2032
+				}
+			}
+		}
+
+	}
+}
+
+country_event = { #it seems like some of the refugees were protean infiltrators, terror attacks occur across flaria, roselina's sister is furious
+	id = chf.2032
+	title = chf.2032.t
+	desc = chf.2032.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #What...
+		name = chf.2032.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = chf2032tt
+
+		set_country_flag = chf_burdened_flaria_open_door #this flag is responsbile for giving the alternate unification events in the next narrative focus phase, PLEASE remember it
+		
+
+	}
+}
+
+country_event = { #open door best ending event, rosalina is very happy about the amount of ponies she has saved, despite the protean terror attacks
+	id = chf.2033
+	title = chf.2033.t
+	desc = chf.2033.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #This was the right choice... the only choice.
+		name = chf.2033.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #open door meh ending event, rosalina is even more wary of protea, and is grateful she was able to save as many ponies as she could
+	id = chf.2034
+	title = chf.2034.t
+	desc = chf.2034.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Now its time to look to the future.
+		name = chf.2034.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #open door bad ending event, rosalina is distraught (how do you spell that word), she weeps in her room and vows to avenge the ponies wrong by humanity
+	id = chf.2035
+	title = chf.2035.t
+	desc = chf.2035.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #There can only be peace... if we kill them all...
+		name = chf.2035.a
+		ai_chance = {factor = 100}
+	}
+}
+
+
+country_event = { #test event for variables and on actions
+	id = chf.5000
+	title = chf.5000.t
+	desc = chf.5000.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Not again... Not again!
+		name = chf.5000.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = chf_loses_the_3rd_skirmish
+
+		custom_effect_tooltip = extra_space		
+
+	}
+}
 
