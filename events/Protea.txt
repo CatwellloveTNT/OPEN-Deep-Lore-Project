@@ -719,7 +719,7 @@ country_event = {
 					days = 45
 				}
 				country_event = {
-					id = chf.17
+					id = chf.2044
 				}
 			}
 			CLS = {
@@ -764,7 +764,7 @@ country_event = {
 					days = 45
 				}
 				country_event = {
-					id = chf.18
+					id = chf.2045
 				}
 			}
 			CLS = {
@@ -809,7 +809,7 @@ country_event = {
 					days = 45
 				}
 				country_event = {
-					id = chf.19
+					id = chf.2046
 				}
 			}
 			CLS = {
@@ -854,7 +854,7 @@ country_event = {
 					days = 45
 				}
 				country_event = {
-					id = chf.20
+					id = chf.2047
 				}
 			}
 			CLS = {
@@ -899,7 +899,7 @@ country_event = {
 					days = 45
 				}
 				country_event = {
-					id = chf.21
+					id = chf.2048
 				}
 			}
 			CLS = {
@@ -945,7 +945,7 @@ country_event = {
 				}
 			}
 				country_event = {
-					id = chf.22
+					id = chf.2049
 				}	
 			CLS = {
 				add_days_mission_timeout = {
@@ -989,7 +989,7 @@ country_event = {
 					days = 45
 				}
 				country_event = {
-					id = chf.23
+					id = chf.2050
 				}
 			}
 			CLS = {
@@ -1078,7 +1078,7 @@ country_event = {
 					days = 150
 				}
 				country_event = { 
-					id = chf.26
+					id = chf.2042
 				}
 			}
 			CLS = {
@@ -1100,7 +1100,7 @@ country_event = {
 				set_country_flag = region_6_undestroyed
 				set_country_flag = region_7_undestroyed
 				country_event = {
-					id = avi.100
+					id = avi.5
 				}
 			}
 		}
@@ -1127,7 +1127,7 @@ country_event = {
 		}
 		CHF = {
 			country_event = {
-				id = chf.13
+				id = chf.2051
 			}
 		}
 	}
@@ -2041,6 +2041,22 @@ country_event = {
 			idea = above_and_beyond
 			days = 100
 		}
+	}
+}
+country_event = {
+	id = pro.2006
+	title = pro.2006.t
+	desc = pro.2006.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # its a long way to melibar releases
+		name = pro.2006.a
+		ai_chance = {factor = 100}
+
+		add_stability = 0.01
+
 	}
 }
 

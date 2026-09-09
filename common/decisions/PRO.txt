@@ -789,7 +789,7 @@ PRO_the_third_skirmish = {
 }
 
 PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	# showdown, or operation "midnight fury" as its called in game is the first "complex" minigame i ever made, which means ALOT of the shit
+	# showdown, or operation "sacred bow" as its called in game is the first "complex" minigame i ever made, which means ALOT of the shit
 	# going on in there is very, VERY messy. if you are either me from the future, looking to do a revamp of the minigame or just someone peeking at the files, remember:
 	# 1. Protea is the main character of the minigame, all of the timed missions should happen to them/be seen by them, additionally, any decision that alters the minigame variables 
 	# should be done ONLY in the protea decsions/timed decisions files
@@ -2264,7 +2264,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 3000
 		}		
 
 	}
@@ -2326,7 +2326,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 5000
 		}		
 
 	}
@@ -2388,7 +2388,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 7500
 		}		
 
 	}
@@ -2502,7 +2502,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 3000
 		}		
 
 	}
@@ -2564,7 +2564,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 5000
 		}		
 
 	}
@@ -2626,7 +2626,7 @@ PRO_showdown = { # !!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 7500
 		}		
 
 	}

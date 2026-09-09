@@ -4234,6 +4234,12 @@
 			}
 		}
 			CHF = {
+
+				country_event = {
+					id = chf.2041
+				}
+
+				clr_country_flag = chf_lost_the_third_skirmish
 				set_country_flag = chf_showdown
 				set_country_flag = chf_ew_inactive	
 				set_country_flag = chf_dead_phase

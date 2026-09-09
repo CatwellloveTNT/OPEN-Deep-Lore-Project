@@ -598,5 +598,64 @@ ideas = {
 
 		}		
 
+		chf_fear_and_hate = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				breakthrough_factor = 0.05
+			}
+
+		}			
+		
+		chf_chaffia_needs_you = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				minimum_training_level = -0.10
+			}
+
+		}			
+
 	}
+	
 }

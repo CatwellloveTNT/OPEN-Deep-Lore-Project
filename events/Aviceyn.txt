@@ -53,9 +53,44 @@ country_event = { #chaffia promptly rejects the offering
 
 	is_triggered_only = yes
 
-	option = { # fine then, be eaten by humanity. i dont care!
+	option = { # fine then, be eaten by humanity. we dont care!
 		name = avi.3.a
 		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #after the failure in the third skirmish and the resulting open door crsisi, roselina requests a presence with one of the aviceynian kings to see if she could get avicenyian aid and protection
+	id = avi.4
+	title = avi.4.t
+	desc = avi.4.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Ha. Hahaha... HAHAHAHAHAH! A perfect pawn. Let's talk to her.
+		name = avi.4.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #aviceyn comes to the aid of chaffia, sending out talcyon 3s and repairing the regions protea bombed
+	id = avi.5
+	title = avi.5.t
+	desc = avi.5.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Well shit, we can't have them collapse so quickly!
+		name = avi.5.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			country_event = {
+				id = chf.2043
+				days = 1
+			}
+		}
+
 	}
 }
 

@@ -1059,7 +1059,7 @@ country_event = { #open door meh ending event, rosalina is even more wary of pro
 	}
 }
 
-country_event = { #open door bad ending event, rosalina is distraught (how do you spell that word), she weeps in her room and vows to avenge the ponies wrong by humanity
+country_event = { #open door bad ending event, rosalina is distraught (how do you spell that word), she weeps in her room and vows to avenge the ponies wronged by humanity
 	id = chf.2035
 	title = chf.2035.t
 	desc = chf.2035.d
@@ -1071,6 +1071,309 @@ country_event = { #open door bad ending event, rosalina is distraught (how do yo
 		name = chf.2035.a
 		ai_chance = {factor = 100}
 	}
+}
+
+country_event = { #roselina paces around in her room, and contemplates the future of chaffia
+	id = chf.2036
+	title = chf.2036.t
+	desc = chf.2036.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Chaffia can't fail these ponies, not again...
+		name = chf.2036.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #roselina makes the hard decision to collaborate with aviceyn, offically joining the second world
+	id = chf.2037
+	title = chf.2037.t
+	desc = chf.2037.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #I must do this... I must...
+		name = chf.2037.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #a young chaffian guy sees a propaganda edit on his phone and joins the army of hope #ilovepropaganda #armyedit #jointheAOHtoday
+	id = chf.2038
+	title = chf.2038.t
+	desc = chf.2038.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #There will be many more like him
+		name = chf.2038.a
+		ai_chance = {factor = 100}
+	}
+}
+country_event = { #Rosalina meets with one of the aviceynian kings to discuss obtaining nukes and secretly breaking the D.O.N.A treaty
+	id = chf.2039
+	title = chf.2039.t
+	desc = chf.2039.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #They have already crossed the line, why should'nt we?
+		name = chf.2039.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #Chaffia uses the nukes obtained from aviceyn and launches an all out offensive to knock humanity off the eastern cradle
+	id = chf.2040
+	title = chf.2040.t
+	desc = chf.2040.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #For the ponies of Isolat...
+		name = chf.2040.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = { #Roselina is suddenly woken up by the sounds of bombs in the capital, it seems like Protea has launched an air offensive against the CM alliance
+	id = chf.2041
+	title = chf.2041.t
+	desc = chf.2041.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Huh! What!? 
+		name = chf.2041.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = chf2041_tt
+
+			hidden_effect = {
+				
+			
+			if = {
+				limit = { is_ai = yes }
+				add_political_power = 1000
+			}
+			else = {
+				add_political_power = 150
+			}
+		}
+
+		}	
+
+}
+
+country_event = { #Protea completes the DEAD/SEAD phase
+	id = chf.2042
+	title = chf.2042.t
+	desc = chf.2042.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #We can not let them win!
+		name = chf.2042.a
+		ai_chance = {factor = 100}
+
+		if = {
+			limit = { is_ai = yes }
+			add_political_power = 1000
+		}
+		else = {
+			add_political_power = 250
+		}
+
+		custom_effect_tooltip = chf2042_tt
+
+		}	
+
+}
+
+country_event = { #Aviceyn enters the air war on Chaffia's side
+	id = chf.2043
+	title = chf.2043.t
+	desc = chf.2043.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Some well needed assistance!
+		name = chf.2043.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = chf2043_tt
+
+		}	
+
+}
+
+country_event = { #Region 1 destroyed event
+	id = chf.2044
+	title = chf.2044.t
+	desc = chf.2044.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #My God...
+		name = chf.2044.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_10
+		CHF_devola_desperation_goes_up_10 = yes
+		}	
+
+}
+country_event = { #Region 2 destroyed event
+	id = chf.2045
+	title = chf.2045.t
+	desc = chf.2045.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Those devils...
+		name = chf.2045.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_10
+		CHF_devola_desperation_goes_up_10 = yes
+		}	
+
+}
+
+country_event = { #Region 3 destroyed event
+	id = chf.2046
+	title = chf.2046.t
+	desc = chf.2046.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #God help us...
+		name = chf.2046.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_10
+		CHF_devola_desperation_goes_up_10 = yes
+		}	
+
+}
+
+country_event = { #Region 4 destroyed event
+	id = chf.2047
+	title = chf.2047.t
+	desc = chf.2047.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Shit...
+		name = chf.2047.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_10
+		CHF_devola_desperation_goes_up_10 = yes
+		}	
+
+}
+
+country_event = { #Region 5 destroyed event
+	id = chf.2048
+	title = chf.2048.t
+	desc = chf.2048.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #We'll show them...
+		name = chf.2048.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_10
+		CHF_devola_desperation_goes_up_10 = yes
+		}	
+
+}
+country_event = { #Region 6 destroyed event
+	id = chf.2049
+	title = chf.2049.t
+	desc = chf.2049.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #I can't believe it...
+		name = chf.2049.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_10
+		CHF_devola_desperation_goes_up_10 = yes
+		}	
+
+}
+
+country_event = { #Region 7 destroyed event
+	id = chf.2050
+	title = chf.2050.t
+	desc = chf.2050.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #What now...
+		name = chf.2050.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = devola_desp_goes_up_by_10
+		CHF_devola_desperation_goes_up_10 = yes
+		}	
+
+}
+
+country_event = { #Protea loses sacred bow
+	id = chf.2051
+	title = chf.2051.t
+	desc = chf.2051.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #We did it... We survived!
+		name = chf.2051.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			set_country_flag = chf_final_narrative_phase_flag
+		}
+
+		}	
+
+}
+
+country_event = { #Roselina realizes chaffia must take the initiative if they have to win
+	id = chf.2052
+	title = chf.2052.t
+	desc = chf.2052.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Time to take the fight to them
+		name = chf.2052.a
+		ai_chance = {factor = 100}
+
+		}	
+
 }
 
 

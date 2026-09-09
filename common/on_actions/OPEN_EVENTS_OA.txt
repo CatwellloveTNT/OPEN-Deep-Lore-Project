@@ -44,6 +44,12 @@ on_actions = {
 					days = 1
 				}
 			}
+			PRO = {
+				country_event = {
+					id = pro.2006
+					days = 60
+				}
+			}			
 			# ------------- CHAFFIA EVENTS -------------			
 			CHF = {
 				country_event = {

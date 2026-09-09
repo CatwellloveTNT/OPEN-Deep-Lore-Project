@@ -83,9 +83,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}				
 							check_variable = {
@@ -132,6 +129,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}			
 		}
 
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_2			
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}		
+
 	}
 
 	chf_the_second_great_retreat_round_2 = {
@@ -153,9 +162,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 
 		available = {
 			OR = {
-				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
 				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}		
@@ -205,6 +211,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}			
 		}
 
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_3		
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
+
 	}
 
 	chf_the_second_great_retreat_round_3 = {
@@ -231,9 +249,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 
 		available = {
 			OR = {
-				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
 				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}	
@@ -296,6 +311,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}			
 		}
 
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_4		
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
+
 	}	
 
 	chf_the_second_great_retreat_round_4 = {
@@ -322,9 +349,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 
 		available = {
 			OR = {
-				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
 				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}				
@@ -387,6 +411,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}			
 		}
 
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_5	
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}		
+
 	}	
 
 	chf_the_second_great_retreat_round_5 = {
@@ -413,9 +449,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 
 		available = {
 			OR = {
-				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
 				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}		
@@ -476,6 +509,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 				}
 			}				
 			}			
+		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_6		
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
 		}
 
 	}	
@@ -505,9 +550,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}	
 								check_variable = {
@@ -568,6 +610,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_7		
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}		
 
 	}
 
@@ -596,9 +650,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}			
 								check_variable = {
@@ -659,6 +710,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_8	
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}		
 
 	}	
 
@@ -687,9 +750,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}	
 								check_variable = {
@@ -749,6 +809,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 				}
 			}				
 			}			
+		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_9
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
 		}
 
 	}
@@ -778,9 +850,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}		
 								check_variable = {
@@ -841,6 +910,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_10
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}		
 
 	}
 
@@ -869,9 +950,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}			
 								check_variable = {
@@ -933,6 +1011,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}			
 		}
 
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_11
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
+
 	}
 
 	chf_the_second_great_retreat_round_11 = {
@@ -959,9 +1049,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 
 		available = {
 			OR = {
-				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
 				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}	
@@ -1024,99 +1111,19 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}			
 		}
 
-	}
-
-	chf_the_second_great_retreat_round_11 = {
-		priority = 332
-		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 30
-		is_good = no
-		days_re_enable = 5
-
-		activation = {
-			AND = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-			has_country_flag = open_door_round_11
-			}
-			check_variable = {
-				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
-			}
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		available = {
-			OR = {
+		cancel_trigger = {
 				CHF = {
 					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
-					has_country_flag = chf_open_door_group_accepted
-				}		
-								check_variable = {
-					num_of_displaced_ponies = 0
-				}		
-			}
-		}
-
-		fire_only_once = yes
-
-		visible = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		
-
-		complete_effect = {
-			hidden_effect = {
-			random_list = {
-				50 = {
-					country_event = chf.2024
-				}
-				20 = {
-					country_event = chf.2028
-				}
-				10 = {
-					country_event = chf.2029
 				}			
-				20 = {
-					country_event = chf.2030
-				}					
-			}				
-			}
+		}		
+
+		cancel_effect = {
 			set_country_flag = open_door_round_12
 			clr_country_flag = chf_open_door_group_denied
-			clr_country_flag = chf_open_door_group_accepted		
-			clr_country_flag = chf_chose_to_deny
-			clr_country_flag = chf_chose_to_accept		
-			
-
-
-		}
-
-		timeout_effect = {
-			set_country_flag = open_door_round_12
-			clr_country_flag = chf_open_door_group_denied
-			clr_country_flag = chf_open_door_group_accepted	
-			hidden_effect = {
-			random_list = {
-				100 = {
-					country_event = chf.2027
-				}
-			}				
-			}			
-		}
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
 
 	}
-
 
 	chf_the_second_great_retreat_round_12 = {
 		priority = 332
@@ -1143,9 +1150,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}	
 								check_variable = {
@@ -1206,6 +1210,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_13
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
 
 	}
 	
@@ -1234,9 +1250,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}	
 								check_variable = {
@@ -1297,6 +1310,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_14
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
 
 	}
 
@@ -1325,9 +1350,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}			
 								check_variable = {
@@ -1388,6 +1410,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_15
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
 
 	}
 
@@ -1416,9 +1450,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}	
 								check_variable = {
@@ -1479,6 +1510,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_16
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}				
 
 	}
 
@@ -1507,9 +1550,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}
 								check_variable = {
@@ -1570,6 +1610,18 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_17
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted				
+		}			
 
 	}
 
@@ -1598,9 +1650,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}		
 								check_variable = {
@@ -1661,6 +1710,19 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}				
 			}			
 		}
+
+		cancel_trigger = {
+				CHF = {
+					has_country_flag = chf_open_door_group_denied
+				}			
+		}		
+
+		cancel_effect = {
+			set_country_flag = open_door_round_18
+			clr_country_flag = chf_open_door_group_denied
+			clr_country_flag = chf_open_door_group_accepted
+			clr_country_flag = chf_chose_to_deny							
+		}			
 
 	}
 
@@ -1689,9 +1751,6 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 		available = {
 			OR = {
 				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
 					has_country_flag = chf_open_door_group_accepted
 				}
 								check_variable = {
@@ -1753,280 +1812,20 @@ CHF_the_second_great_retreat_minigame = { #wow this SUUUUREE is an optimized min
 			}			
 		}
 
-	}	
-
-	chf_the_second_great_retreat_round_19 = {
-		priority = 332
-		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 30
-		is_good = no
-		days_re_enable = 5
-
-		activation = {
-			AND = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-			has_country_flag = open_door_round_19
-			}
-			check_variable = {
-				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
-			}
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		available = {
-			OR = {
+		cancel_trigger = {
 				CHF = {
 					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
-					has_country_flag = chf_open_door_group_accepted
 				}			
-								check_variable = {
-					num_of_displaced_ponies = 0
-				}	
-			}
-		}
+		}		
 
-		fire_only_once = yes
-
-		visible = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		
-
-		complete_effect = {
-			hidden_effect = {
-			random_list = {
-				50 = {
-					country_event = chf.2024
-				}
-				20 = {
-					country_event = chf.2028
-				}
-				10 = {
-					country_event = chf.2029
-				}			
-				20 = {
-					country_event = chf.2030
-				}					
-			}				
-			}
-			set_country_flag = open_door_round_20
+		cancel_effect = {
+			set_country_flag = open_door_round_19
 			clr_country_flag = chf_open_door_group_denied
 			clr_country_flag = chf_open_door_group_accepted		
-			clr_country_flag = chf_chose_to_deny
-			clr_country_flag = chf_chose_to_accept		
-			
-
-
-		}
-
-		timeout_effect = {
-			set_country_flag = open_door_round_20
-			clr_country_flag = chf_open_door_group_denied
-			clr_country_flag = chf_open_door_group_accepted	
-			hidden_effect = {
-			random_list = {
-				100 = {
-					country_event = chf.2027
-				}
-			}				
-			}			
-		}
-
-	}
-	
-	chf_the_second_great_retreat_round_20 = {
-		priority = 332
-		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 30
-		is_good = no
-		days_re_enable = 5
-
-		activation = {
-			AND = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-			has_country_flag = open_door_round_20
-			}
-			check_variable = {
-				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
-			}
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		available = {
-			OR = {
-				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
-					has_country_flag = chf_open_door_group_accepted
-				}	
-								check_variable = {
-					num_of_displaced_ponies = 0
-				}			
-			}
-		}
-
-		fire_only_once = yes
-
-		visible = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		
-
-		complete_effect = {
-			hidden_effect = {
-			random_list = {
-				50 = {
-					country_event = chf.2024
-				}
-				20 = {
-					country_event = chf.2028
-				}
-				10 = {
-					country_event = chf.2029
-				}			
-				20 = {
-					country_event = chf.2030
-				}					
-			}				
-			}
-			set_country_flag = open_door_round_21
-			clr_country_flag = chf_open_door_group_denied
-			clr_country_flag = chf_open_door_group_accepted		
-			clr_country_flag = chf_chose_to_deny
-			clr_country_flag = chf_chose_to_accept		
-			
-
-
-		}
-
-		timeout_effect = {
-			set_country_flag = open_door_round_21
-			clr_country_flag = chf_open_door_group_denied
-			clr_country_flag = chf_open_door_group_accepted	
-			hidden_effect = {
-			random_list = {
-				100 = {
-					country_event = chf.2027
-				}
-			}				
-			}			
-		}
+			clr_country_flag = chf_chose_to_deny		
+		}			
 
 	}	
-
-	chf_the_second_great_retreat_round_21 = {
-		priority = 332
-		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 30
-		is_good = no
-		days_re_enable = 5
-
-		activation = {
-			AND = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-			has_country_flag = open_door_round_21
-			}
-			check_variable = {
-				var = num_of_displaced_ponies value = 1 compare = greater_than_or_equals
-			}
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		available = {
-			OR = {
-				CHF = {
-					has_country_flag = chf_open_door_group_denied
-				}
-				CHF = {
-					has_country_flag = chf_open_door_group_accepted
-				}				
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}				
-			}
-		}
-
-		fire_only_once = yes
-
-		visible = {
-			has_country_flag = chf_second_great_retreat_minigame_start
-						NOT = {
-				check_variable = {
-					num_of_displaced_ponies = 0
-				}
-			}
-		}
-
-		
-
-		complete_effect = {
-			hidden_effect = {
-			random_list = {
-				50 = {
-					country_event = chf.2024
-				}
-				20 = {
-					country_event = chf.2028
-				}
-				10 = {
-					country_event = chf.2029
-				}			
-				20 = {
-					country_event = chf.2030
-				}					
-			}				
-			}
-			set_country_flag = open_door_round_22
-			clr_country_flag = chf_open_door_group_denied
-			clr_country_flag = chf_open_door_group_accepted		
-			clr_country_flag = chf_chose_to_deny
-			clr_country_flag = chf_chose_to_accept		
-			
-
-
-		}
-
-		timeout_effect = {
-			set_country_flag = open_door_round_22
-			clr_country_flag = chf_open_door_group_denied
-			clr_country_flag = chf_open_door_group_accepted	
-			hidden_effect = {
-			random_list = {
-				100 = {
-					country_event = chf.2027
-				}
-			}				
-			}			
-		}
-
-	}		
 
 }
 

@@ -256,10 +256,10 @@ music = { #
 music = { #
 	name = "trailermusic1"
 	file = "trailermusic1.ogg"
-	volume = 0.80
+	volume = 1
 }
 music = { #
 	name = "theroundtable"
 	file = "theroundtable.ogg"
-	volume = 0.80
+	volume = 1
 }

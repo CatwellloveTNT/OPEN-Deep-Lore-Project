@@ -503,6 +503,10 @@ chf_get_rid_of_the_humies_minigame = {
 				clr_country_flag = chf_second_great_retreat_minigame_start
 			}
 
+			CHF = {
+				set_country_flag = chf_completed_the_open_door_minigame
+			}			
+
 		}
 
 		ai_will_do = {

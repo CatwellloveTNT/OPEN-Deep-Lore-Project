@@ -4577,6 +4577,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			chf = {
+				set_country_flag = chf_completed_the_open_door_minigame
+			}
+
 			if = {
 				limit = { check_variable = {
 					num_of_rehomed_ponies > 1200000
@@ -4613,7 +4618,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 			add_ideas = open_door_bad_idea	
 				CHF = {
 					country_event = {
-						id = chf.2033
+						id = chf.2035
 					}
 				}									
 
@@ -4658,6 +4663,13 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2036
+				}
+			}
+
 		}
 
 		ai_will_do = {
@@ -4706,6 +4718,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			country_event = {
+				id = chf.2037
+			}
+
 		}
 
 		ai_will_do = {
@@ -4713,7 +4730,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}	
 
-	focus = { #
+	focus = { #thinking about it now, would be pretty unfun for these focuses to just be events, rename this to something like "laying the groundwork" or sum
 		id = CHF_the_suffering_of_every_little_pony
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
@@ -4741,6 +4758,29 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			605 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 8446
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 8417
+					instant_build = yes
+				}
+
+			}
+
+			build_railway = {
+				path = {  9554 9878 8417  }
+				level = 3
+			}			
+			
 		}
 
 		ai_will_do = {
@@ -4748,7 +4788,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}		
 
-	focus = { #aot reference...
+	focus = { #aot reference... (rename to "fear and hate")
 		id = CHF_by_those_across_the_ocean
 		icon = GFX_goal_generic_consumer_goods
 		x = 2
@@ -4776,6 +4816,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.05 } #army breakthrough
+			
+			custom_effect_tooltip = fear_and_hate_tt
+
 		}
 
 		ai_will_do = {
@@ -4783,7 +4828,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}			
 
-	focus = { #
+	focus = { #rename to rebuild the army of hope
 		id = CHF_if_only
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
@@ -4811,6 +4856,23 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			add_political_power = 100
+
+			CHF = {
+				add_timed_idea = {
+					idea = chf_chaffia_needs_you
+					days = 365
+				}
+
+			}
+
+				custom_effect_tooltip = extra_space		
+				
+				country_event = {
+					id = chf.2038
+				}				
+
 		}
 
 		ai_will_do = {
@@ -4818,7 +4880,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}			
 
-	focus = { #
+	focus = { #rename to build to kill
 		id = CHF_we_had_slain_them_all
 		icon = GFX_goal_generic_consumer_goods
 		x = 2
@@ -4846,6 +4908,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			custom_effect_tooltip = chf_build_to_kill_tt
+
+			add_to_variable = { chf_eco_dynamic_bf = 0.05 } #constrution speed			
+
 		}
 
 		ai_will_do = {
@@ -4853,7 +4920,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}		
 
-	focus = { #
+	focus = { #rename to remember what we are fighting for
 		id = CHF_we_could_have_been_free
 		icon = GFX_goal_generic_consumer_goods
 		x = 4
@@ -4881,6 +4948,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			add_to_variable = { chf_eco_dynamic_st = 0.05 } #stability
+
+			custom_effect_tooltip = chf_remember_what_we_are_fighting_for_tt
+			
 		}
 
 		ai_will_do = {
@@ -4916,6 +4988,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			country_event = {
+				id = chf.2039
+			}
+
 		}
 
 		ai_will_do = {
@@ -5244,12 +5321,64 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 
 		
 		completion_reward = {
+
+			country_event = {
+				id = chf.2040
+			}
+
 		}
 
 		ai_will_do = {
 		factor = 24
 		}
 	}	
-				
+
+# ---------------------------------------------------------- CHAFFIAN FINAL NARRATIVE PHASE -----------------------------------------------------------------------
+			
+	focus = { #roselina realizes chaffia must take the initative if they are to defeat protea
+		id = CHF_this_cannot_continue
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+		#relative_position_id = CHF_plan_black
+	#	prerequisite = { focus = CHF_our_national_awakening focus = CHF_we_have_no_other_choice }			
+		cost = 4
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+
+		allow_branch = {
+			has_country_flag = chf_final_narrative_phase_flag
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+		country_event = {
+			id = chf.2052
+		}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+
 
 }
