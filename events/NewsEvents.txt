@@ -357,6 +357,38 @@ news_event = { #coalition forces move to aid south srakin
 
 }
 
+news_event = { #flaria and chaffian alignb themselves with the second world
+	id = news.21
+	title = news.21.t
+	desc = news.21.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.21.a
+	}
+
+}
+
+news_event = { #jerdy and estrax join the chuds
+	id = news.22
+	title = news.22.t
+	desc = news.22.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.22.a
+	}
+
+}
+
 
 
 

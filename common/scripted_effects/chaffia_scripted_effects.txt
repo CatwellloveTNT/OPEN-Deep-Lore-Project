@@ -81,6 +81,13 @@ CHF_devola_desperation_goes_up_30 = {
 	chf_keep_that_shit_0_to_100 = yes	
 }
 
+CHF_devola_desperation_goes_up_100 = {
+	subtract_from_variable = {
+		devola_desperation_value = -100
+	}
+	chf_keep_that_shit_0_to_100 = yes	
+}
+
 
 	chf_open_door_good_entry_1 = {
 		country_event = {

@@ -510,7 +510,7 @@ chf_get_rid_of_the_humies_minigame = {
 		}
 
 		ai_will_do = {
-			factor = 250
+			factor = 2500
 		}		
 
 
@@ -562,7 +562,16 @@ chf_get_rid_of_the_humies_minigame = {
 		}
 
 		ai_will_do = {
-			factor = 250
+			factor = 0
+			modifier = {
+				factor = 5000
+				check_variable = {
+					num_of_shelters_available < 5
+				}
+				
+				
+
+			}
 		}		
 
 
@@ -614,7 +623,7 @@ chf_get_rid_of_the_humies_minigame = {
 		}
 
 		ai_will_do = {
-			factor = 250
+			factor = 0
 		}		
 
 
@@ -689,7 +698,7 @@ chf_get_rid_of_the_humies_minigame = {
 		}		
 
 		ai_will_do = {
-			factor = 250
+			factor = 5000
 		}		
 
 

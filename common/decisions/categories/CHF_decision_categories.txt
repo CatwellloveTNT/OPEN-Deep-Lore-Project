@@ -182,6 +182,26 @@ CHF_the_second_protean_chaffian_skirmish = {
 		visible_when_empty = yes
 	}
 
+	CHF_jerdy_war_decision_tab = {
+		priority = 10000
+
+		icon = SOV_paranoia 
+
+	#	scripted_gui = pro_third_skirmish_ui #i want a photo for this one instead
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = chf_jerdy_war_active
+			}
+		}
+
+		visible_when_empty = no
+	}		
+
 
 
 # ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

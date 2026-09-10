@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+			i_do_not_want_you_to_surrender_bro_please = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = JER
+				TAG = EST
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				forced_surrender_limit = 1
+			}
+	}
+}
+}

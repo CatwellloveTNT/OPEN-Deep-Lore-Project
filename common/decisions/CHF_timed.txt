@@ -2157,8 +2157,38 @@ CHF_showdown = {
 
 }
 
+CHF_jerdy_war_decision_tab = {
+	chf_jerdy_war_win = {
+		priority = 700
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 120
+		is_good = no 
+		days_re_enable = 5
 
 
+		activation = {
+			has_country_flag = chf_jerdy_war_active
+		}
+
+		available = {
+			chf_wins_the_jerdy_war_trigger = yes
+		}
+
+		complete_effect = {
+			CHF_wins_the_jerdy_war = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_jerdy_war_active
+		}
+
+		timeout_effect = {
+			CHF_loses_the_jerdy_war = yes
+		}
+	}
+}
 
 
 

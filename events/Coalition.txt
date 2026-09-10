@@ -617,6 +617,21 @@ country_event = { #protea begins losing to chaffia in the third skirmish
 	
 }
 
+country_event = { # chaffia declares war on jerdy and estrax with the intent to genocide the human population
+	id = col.1002
+	title = col.1002.t
+	desc = col.1002.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # ready the men of the 11th, we cant stand idle as this happens"
+		name = col.1002.a
+		ai_chance = {factor = 100}
+	}
+}
+
 
 
 

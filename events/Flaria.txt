@@ -1,0 +1,32 @@
+﻿#####################
+# FLARIA EVENTS
+###########################
+
+add_namespace = fla
+
+
+# flaria was not informed of the invasion and is caught off guard by roselina's sudden change in posture
+country_event = {
+	id = fla.1
+	title = fla.1.t
+	desc = fla.1.d
+
+	is_triggered_only = yes
+
+	option = { # what are you doing sister?!
+		name = jer.1.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			country_event = {
+				id = chf.2065
+				days = 3
+			}
+		}
+
+	}
+}
+
+
+
+

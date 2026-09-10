@@ -5379,6 +5379,1032 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}	
 
+	focus = { #these couple focuses/events NEED to establish that roselina is losing her mind
+		id = CHF_why_me
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_this_cannot_continue
+		prerequisite = { focus = CHF_this_cannot_continue}			
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+		country_event = {
+			id = chf.2053
+		}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #these couple focuses/events NEED to establish that roselina is losing her mind
+		id = CHF_why_us
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_this_cannot_continue
+		prerequisite = { focus = CHF_this_cannot_continue}			
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+		country_event = {
+			id = chf.2055
+		}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #these couple focuses/events NEED to establish that roselina is losing her mind
+		id = CHF_why_ponykind
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_this_cannot_continue
+		prerequisite = { focus = CHF_this_cannot_continue}		
+			
+	
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+		country_event = {
+			id = chf.2056
+		}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #these couple focuses/events NEED to establish that roselina is losing her mind
+		id = CHF_to_hell_with_humanity
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_this_cannot_continue
+		prerequisite = { focus = CHF_why_us}		
+		prerequisite = {  focus = CHF_why_me  }
+		prerequisite = {  focus = CHF_why_ponykind  }		
+			
+	
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+		country_event = {
+			id = chf.2057
+		}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #a roselina now hell bent on avenging the ponies of the cradle and killing all humans on the continent approaches aviceyn to obtain nukes (i know there is already an event like this, but its a one where the player might not get it)
+		id = CHF_the_cradle_must_be_cleansed
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_to_hell_with_humanity
+		prerequisite = { focus = CHF_to_hell_with_humanity}		
+		
+			
+	
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+
+			has_country_flag = chf_roselina_insane_flag
+
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+		country_event = {
+			id = chf.2058
+		}	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #roselina creates the bloodlust decree, allowing the army and the military industrial complex to expand and experiment with a blank check and without restrictions
+		id = CHF_the_bloodlust_decree
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_the_cradle_must_be_cleansed
+		prerequisite = { focus = CHF_the_cradle_must_be_cleansed}		
+		
+			
+	
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #roselina sends an ultimatium to her neighbours with human minority populations to expell them and send them to chaffia or else... (everyone declines)
+		id = CHF_to_root_out_the_cancer_of_the_continent
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_the_bloodlust_decree
+		prerequisite = { focus = CHF_the_bloodlust_decree}		
+		
+			
+	
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			JER = {
+				country_event = {
+					id = jer.1
+				}
+			}
+
+			EST = {
+				country_event = {
+					id = est.1
+				}
+			}		
+			
+			PRO = {
+				country_event = {
+					id = pro.2007
+				}
+			}				
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+
+	focus = { #with jerdy not willing to give up their human population, roselina decides to send an ultimatium to seize their resources to ensure the human population cannot fight them
+		id = CHF_demand_jerdian_disarmament
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = CHF_to_root_out_the_cancer_of_the_continent
+		prerequisite = { focus = CHF_to_root_out_the_cancer_of_the_continent}		
+		
+			
+	
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			JER = {
+				country_event = {
+					id = jer.2
+				}
+			}		
+				
+
+		}
+
+			will_lead_to_war_with = EST	
+			will_lead_to_war_with = JER			
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #with estrax not willing to give up their human population, roselina decides to send an ultimatium to seize their resources to ensure the human population cannot fight them
+		id = CHF_demand_estaxian_disarmament
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = CHF_to_root_out_the_cancer_of_the_continent
+		prerequisite = { focus = CHF_to_root_out_the_cancer_of_the_continent}		
+		
+			
+	
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			EST = {
+				country_event = {
+					id = est.2
+				}
+			}			
+		}
+
+			will_lead_to_war_with = EST	
+			will_lead_to_war_with = JER			
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #chaffia goes to war with jerdy and estrax
+		id = CHF_enough_is_enough
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_to_root_out_the_cancer_of_the_continent
+		prerequisite = { focus = CHF_demand_estaxian_disarmament}
+		prerequisite = { focus = CHF_demand_jerdian_disarmament}					
+		
+			
+	
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			country_event = {
+				id = chf.2064
+			}
+
+			custom_effect_tooltip = extra_space
+
+			CHF = {
+				declare_war_on = {
+					target = JER
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = EST
+					type = annex_everything
+				}
+			}
+
+			custom_effect_tooltip = extra_space
+
+			EST = {
+				country_event = {
+					id = est.3
+				}
+			}		
+			
+			JER = {
+				country_event = {
+					id = jer.3
+				}
+			}			
+			
+			PRO = {
+				country_event = {
+					id = pro.2008
+				}
+			}		
+			CLS = {
+				country_event = {
+					id = col.1002
+				}
+			}	
+			
+			
+			
+
+			custom_effect_tooltip = extra_space
+
+			FLA = {
+				country_event = {
+					id = fla.1
+				}
+			}
+
+			custom_effect_tooltip = extra_space			
+
+			custom_effect_tooltip = chf_enough_is_enough_tt
+
+		}
+
+			will_lead_to_war_with = EST	
+			will_lead_to_war_with = JER			
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #chaffia wins the war against jerdy and estrax
+		id = CHF_we_won_jerdy_war
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_enough_is_enough
+		prerequisite = { focus = CHF_enough_is_enough}				
+		
+			
+		allow_branch = {
+			has_country_flag = chf_won_jerdy_war
+		}
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #roselina and blueberry promote generals whom did well in the conflict
+		id = CHF_reward_the_competent
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_we_won_jerdy_war
+		prerequisite = { focus = CHF_we_won_jerdy_war}				
+		
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #buff to speed and attack
+		id = CHF_focus_on_what_we_did_right
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_we_won_jerdy_war
+		prerequisite = { focus = CHF_we_won_jerdy_war}				
+		
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #gives an idea that gives + 10% reseourc gain
+		id = CHF_absorb_their_wealth
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_we_won_jerdy_war
+		prerequisite = { focus = CHF_we_won_jerdy_war}				
+		
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #gives an idea that gives + 10% reseourc gain
+		id = CHF_shifting_the_focus
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_we_won_jerdy_war
+		prerequisite = { focus = CHF_absorb_their_wealth}
+		prerequisite = { focus = CHF_focus_on_what_we_did_right}							
+		prerequisite = { focus = CHF_reward_the_competent}			
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #chaffia loses the war against jerdy and estrax
+		id = CHF_we_lost_jerdy_war
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_enough_is_enough
+		prerequisite = { focus = CHF_enough_is_enough}				
+		
+			
+		allow_branch = {
+			has_country_flag = chf_lost_jerdy_war
+		}
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #roselina order blueberry to execute some generals and ensure this failure never happens again
+		id = CHF_punish_those_responsible
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_we_lost_jerdy_war
+		prerequisite = { focus = CHF_we_lost_jerdy_war}				
+		
+			
+
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			country_event = {
+				id = chf.2068
+			}
+
+			#retire_character = #she orders blueberry to ice like 5 generals but i dont have any characters for chaffia yet so we gotta wait 
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #roselina order blueberry to execute some generals and ensure this failure never happens again
+		id = CHF_it_never_happens_again
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		relative_position_id = CHF_we_lost_jerdy_war
+		prerequisite = { focus = CHF_punish_those_responsible}				
+		
+			
+
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			country_event = {
+				id = chf.2068
+			}
+
+			#retire_character = #she orders blueberry to ice like 5 generals but i dont have any characters for chaffia yet so we gotta wait 
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #
+		id = CHF_learn_from_our_failures
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_we_lost_jerdy_war
+		prerequisite = { focus = CHF_we_lost_jerdy_war}				
+		
+			
+
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { #
+		id = CHF_and_ensure
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = CHF_learn_from_our_failures
+		prerequisite = { focus = CHF_learn_from_our_failures}				
+		
+			
+
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = CHF_no_more_failures
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_we_lost_jerdy_war
+		prerequisite = { focus = CHF_and_ensure}		
+		prerequisite = { focus = CHF_it_never_happens_again}					
+		
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
 
 
 }

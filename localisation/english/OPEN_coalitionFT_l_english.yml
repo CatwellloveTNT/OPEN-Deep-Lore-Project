@@ -164,9 +164,11 @@ l_english:
  provide_them_work_tt:0 "§GWe will home 150k ponies in a newly developed industrial zone. This will not consume any shelters§W"
  expand_our_shelters_tt:0 "§GWe will construct an additional 5 shelters§W"
  reject_the_unwanted_tt:0 "§GWe will deny 400k ponies entry into Chaffia§W"
- fear_and_hate_tt:0 "The §YDefenders of Ponykind§W Spirit will be improved by:\n§G+ 5% Breakthrough §W"
+ fear_and_hate_tt:0 "The §YDefenders of Ponykind§W Spirit will be improved by:\n§G+ 5% Breakthsrough §W"
  chf_build_to_kill_tt:0 "The §YEconomy of Hope§W Spirit will be improved by:\n§G+ 5% Construction Speed§W"
  chf_remember_what_we_are_fighting_for_tt:0 "The §YEconomy of Hope§W Spirit will be improved by:\n§G+ 5% Stability§W"
+ chf_roselina_insane_flag:0 "Roselina has gone blind with bloodlust"
+ chf_enough_is_enough_tt:0 "§RWe will launch a special military operation to annex Jerdy and Estrax with the intention of clearing out the human population from those nations...§W"
 
 
 

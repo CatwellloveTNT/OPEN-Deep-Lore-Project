@@ -132,9 +132,6 @@ showdown_over_effects_pro_victory = {
 	}
 	CHF = {
 		remove_ideas = air_war_ongoing_chf		
-		country_event = {
-			id = chf.10
-		}
 	}
 	CLS = {
 		country_event = {
@@ -202,6 +199,59 @@ protea_wins_the_final_skirmish_effect = {
 		}
 	}
 }
+
+CHF_wins_the_jerdy_war = {
+	CHF = {			
+		annex_country = {
+			target = JER
+		}
+		annex_country = {
+			target = EST
+		}		
+		country_event = {
+			id = chf.2066
+		}
+		set_country_flag = chf_won_jerdy_war
+		clr_country_flag = chf_jerdy_war_active
+		mark_focus_tree_layout_dirty = yes
+
+		swap_ideas = {
+			remove_idea = no_human_minority
+			add_idea = hostile_human_minority
+		}
+
+	}
+}
+
+CHF_loses_the_jerdy_war = {
+	CHF = {			
+		white_peace = EST
+		white_peace = JER		
+		country_event = {
+			id = chf.2067
+		}
+		set_country_flag = chf_lost_jerdy_war
+		clr_country_flag = chf_jerdy_war_active
+		mark_focus_tree_layout_dirty = yes
+
+	}
+
+	JER = {
+		leave_faction = yes
+
+		country_event = {
+			id = jer.4
+			days = 2
+		}
+
+	}
+	EST = {
+		leave_faction = yes
+	}
+
+
+}
+
 
 
 

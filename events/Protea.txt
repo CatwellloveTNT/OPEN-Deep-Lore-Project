@@ -2060,6 +2060,46 @@ country_event = {
 	}
 }
 
+country_event = { #chaffian focus where they send an event to all nations haboring human populations to expell them to chaffia
+	id = pro.2007
+	title = pro.2007.t
+	desc = pro.2007.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # does she know who we are?
+		name = pro.2007.a
+		ai_chance = {factor = 100}
+
+		add_stability = 0.01
+
+		CHF = {
+			country_event = {
+				id = chf.2061
+			}
+		}
+
+	}
+}
+
+country_event = { #chaffia invades jerdy and estrax to pacify their human populations
+	id = pro.2008
+	title = pro.2008.t
+	desc = pro.2008.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # shit, thats not good.
+		name = pro.2008.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = pro2008_tt
+
+	}
+}
+
 country_event = {
 	id = pro.5100
 	title = pro.5100.t

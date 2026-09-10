@@ -7,3 +7,14 @@ protea_wins_the_third_skirmish = {
 		controls_state = 534
 	}
 }
+
+chf_wins_the_jerdy_war_trigger = {
+	CHF = {
+		controls_state = 652
+		controls_state = 690
+		controls_state = 610
+		controls_state = 529
+		controls_state = 528
+		controls_state = 611
+	}
+}

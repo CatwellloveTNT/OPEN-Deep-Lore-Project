@@ -1376,6 +1376,217 @@ country_event = { #Roselina realizes chaffia must take the initiative if they ha
 
 }
 
+country_event = { #roselina goes insane and vows to wipe humanity off the cradle whatever it takes
+	id = chf.2057
+	title = chf.2057.t
+	desc = chf.2057.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #THEY ALL MUST DIE
+		name = chf.2057.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = chf2057_tt
+
+		CHF_devola_desperation_goes_up_100 = yes
+
+		set_country_flag = chf_roselina_insane_flag
+
+		}	
+
+}
+
+country_event = { #jerdy refuses the chaffian demands
+	id = chf.2059
+	title = chf.2059.t
+	desc = chf.2059.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #are they stupid?
+		name = chf.2059.a
+		ai_chance = {factor = 100}
+
+
+		}	
+
+}
+
+country_event = { #estrax refuses the chaffian demands
+	id = chf.2060
+	title = chf.2060.t
+	desc = chf.2060.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #do they not see the danger humanity presents?!
+		name = chf.2060.a
+		ai_chance = {factor = 100}
+
+
+		}	
+
+}
+
+country_event = { #protea takes note of the ultimatiums across the region, and makes it a joke on their national television
+	id = chf.2061
+	title = chf.2061.t
+	desc = chf.2061.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #expected, but we know how this will end.
+		name = chf.2061.a
+		ai_chance = {factor = 100}
+
+
+		}	
+
+}
+
+country_event = { #Jerdy denies the deamnd to disarm and pacify their human population
+	id = chf.2062
+	title = chf.2062.t
+	desc = chf.2062.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #stupid
+		name = chf.2062.a
+		ai_chance = {factor = 100}
+
+
+		}	
+
+}
+
+country_event = { #estrax denies the deamnd to disarm and pacify their human population
+	id = chf.2063
+	title = chf.2063.t
+	desc = chf.2063.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #they are as much of a threat as humanity...
+		name = chf.2063.a
+		ai_chance = {factor = 100}
+
+
+		}	
+
+}
+
+country_event = { #chaffia goes to war with jerdy and estrax
+	id = chf.2064
+	title = chf.2064.t
+	desc = chf.2064.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #This is for their own good
+		name = chf.2064.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			set_country_flag = chf_jerdy_war_active
+
+			country_event = {
+				id = chf.2068
+				days = 14
+			}
+
+		}
+
+
+		}	
+
+}
+
+country_event = { #Flaria does not join the war with chaffia, and roselina's sister (SHE STILL DOES NOT HAVE A NAME) is confused by her actions
+	id = chf.2065
+	title = chf.2065.t
+	desc = chf.2065.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Sister... W-what?
+		name = chf.2065.a
+		ai_chance = {factor = 100}
+
+
+		}	
+
+}
+
+country_event = { #chaffia wins the jerdy war
+	id = chf.2066
+	title = chf.2066.t
+	desc = chf.2066.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Now rid this land of those scum!
+		name = chf.2066.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			set_country_flag = chf_won_jerdy_war
+			complete_national_focus = CHF_we_won_jerdy_war
+		}
+
+
+		custom_effect_tooltip = chf2066_tt
+
+		}	
+
+}
+
+country_event = { #chaffia loses the jerdy war
+	id = chf.2067
+	title = chf.2067.t
+	desc = chf.2067.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #how could this happen?!
+		name = chf.2067.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			complete_national_focus = CHF_we_lost_jerdy_war
+		}
+
+		}	
+
+}
+
+country_event = { #the coalition states and protea (definitely protea) sends troops to jerdy to assist
+	id = chf.2068
+	title = chf.2068.t
+	desc = chf.2068.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #let them come!
+		name = chf.2068.a
+		ai_chance = {factor = 100}
+
+		}	
+
+}
+
 
 country_event = { #test event for variables and on actions
 	id = chf.5000

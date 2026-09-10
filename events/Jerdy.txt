@@ -1,0 +1,168 @@
+﻿#####################
+# JERDY EVENTS
+###########################
+
+add_namespace = jer
+
+
+# chaffia wants all the jerdian humies
+country_event = {
+	id = jer.1
+	title = jer.1.t
+	desc = jer.1.d
+
+	is_triggered_only = yes
+
+	option = { # wtf no ?!?!?!
+		name = jer.1.a
+		ai_chance = {factor = 100}
+
+		set_technology = {
+
+		#doctrines
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		engines_1 = 1
+		aa_lmg = 1
+
+		#industry
+		basic_machine_tools = 1
+
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		tech_trucks = 1 
+		tech_support = 1
+		support_weapons = 1
+		manpads = 1
+		atgms = 1
+		tech_engineers = 1
+		tech_logistics_company = 1
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		modern_helicopter_technology = 1
+		gw_artillery = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		early_bombs = 1
+		aa_hmg = 1
+		air_torpedoe_1 = 1
+		modern_missile_systems = 1
+		aircraft_construction = 1
+			
+		}
+
+
+		CHF = {
+			country_event = {
+				id = chf.2059
+			}
+		}
+
+	}
+}
+country_event = {
+	id = jer.2
+	title = jer.2.t
+	desc = jer.2.d
+
+	is_triggered_only = yes
+
+	option = { # wtf no ?!?!?!
+		name = jer.2.a
+		ai_chance = {factor = 100}
+
+		load_oob = jerdy_war_oob
+
+	add_equipment_to_stockpile = {
+		type = apc_equipment_1
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_equipment_1
+		amount = 2000
+	}	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 7500
+	}	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_1
+		amount = 700
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_0
+		amount = 2000
+	}	
+
+		CHF = {
+			country_event = {
+				id = chf.2062
+			}
+		}
+
+	}
+}
+country_event = { #chaffia declares war on jerdy
+	id = jer.3
+	title = jer.3.t
+	desc = jer.3.d
+
+	is_triggered_only = yes
+
+	option = { # wtf no ?!?!?!
+		name = jer.3.a
+		ai_chance = {factor = 100}
+
+		add_ideas = i_do_not_want_you_to_surrender_bro_please
+
+		EST = {
+			add_ideas = i_do_not_want_you_to_surrender_bro_please
+		}
+
+		create_faction = Narmer_Pact
+
+		add_to_faction = EST
+
+	}
+}
+country_event = { #if jerdy wins, they will join the CHDI
+	id = jer.4
+	title = jer.3.t
+	desc = jer.3.d
+
+	is_triggered_only = yes
+
+	option = { # wtf no ?!?!?!
+		name = jer.3.a
+		ai_chance = {factor = 100}
+
+		CLS = {
+			add_to_faction = JER
+		}
+		CLS = {
+			add_to_faction = EST
+		}
+
+		news_event = news.22
+
+	}
+}
+
+
+
