@@ -631,6 +631,46 @@ country_event = { # chaffia declares war on jerdy and estrax with the intent to 
 		ai_chance = {factor = 100}
 	}
 }
+country_event = { # chaffia wins in protea during the final skirmish
+	id = col.1003
+	title = col.1003.t
+	desc = col.1003.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # No! We won't abandon Protea!"
+		name = col.1003.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			country_event = {
+				id = chf.2080
+			}
+			set_country_flag = chf_final_skirmish_coalition_fights_flag
+		}
+
+	}
+
+
+	option = { # God damnit! This can't be happening!"
+		name = col.1003.b
+		ai_chance = {factor = 0}
+
+		white_peace = CHF
+		CHF = {
+			country_event = {
+				id = chf.2079
+			}
+
+			annex_country = {
+				target = PRO
+			}
+
+		}
+
+	}
+}
 
 
 

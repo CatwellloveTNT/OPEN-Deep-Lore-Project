@@ -1757,13 +1757,13 @@ PRO_the_final_skirmish = {
 	war_peace_effect_mission = {
 		priority = 320
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 1350
+		days_mission_timeout = 9999
 		is_good = no
 		days_re_enable = 5
 
 
 		activation = {
-			has_country_flag = pro_the_final_skirmish_decision
+			has_country_flag = pro_the_final_skirmish_flag
 		}
 
 		available = {

@@ -1587,6 +1587,347 @@ country_event = { #the coalition states and protea (definitely protea) sends tro
 
 }
 
+country_event = { #roselina maps out what she has to do before she contacts aviceyn
+	id = chf.2069
+	title = chf.2069.t
+	desc = chf.2069.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #ponies of isolat, wait a little longer
+		name = chf.2069.a
+		ai_chance = {factor = 100}
+
+		}	
+
+}
+
+country_event = { #roselina meets with the king of aviceyn and dicusses their plans against the first world and protea
+	id = chf.2070
+	title = chf.2070.t
+	desc = chf.2070.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #wait, we have one thing left to do...
+		name = chf.2070.a
+		ai_chance = {factor = 100}
+
+		}	
+
+}
+
+country_event = { #flaria accepts unification
+	id = chf.2071
+	title = chf.2071.t
+	desc = chf.2071.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Thats right, sister. We'll lead together!
+		name = chf.2071.a
+		ai_chance = {factor = 100}
+
+			annex_country = {
+				target = FLA
+				transfer_troops = yes
+			}
+
+			648 = {
+				add_core_of = CHF
+			}
+
+			598 = {
+				add_core_of = CHF
+			}
+			
+						597 = {
+				add_core_of = CHF
+			}
+
+						543 = {
+				add_core_of = CHF
+			}
+
+						735 = {
+				add_core_of = CHF
+			}
+
+						544 = {
+				add_core_of = CHF
+			}
+
+						734 = {
+				add_core_of = CHF
+			}
+
+						545 = {
+				add_core_of = CHF
+			}
+
+						546 = {
+				add_core_of = CHF
+			}
+
+						599 = {
+				add_core_of = CHF
+			}
+			
+						542 = {
+				add_core_of = CHF
+			}			
+
+			CHF = {
+				set_cosmetic_tag = CHF_FLA
+			}
+
+			hidden_effect = {
+				news_event = {
+					id = news.23
+				}
+			}
+
+
+				clr_country_flag = chf_lost_jerdy_war				
+				clr_country_flag = chf_won_jerdy_war
+				clr_country_flag = chf_final_narrative_phase_flag
+				mark_focus_tree_layout_dirty = yes
+
+				set_country_flag = chf_final_phase_part_1			
+
+
+
+		}	
+
+}
+
+country_event = { #flaria denies unification
+	id = chf.2072
+	title = chf.2072.t
+	desc = chf.2072.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Why do you make me do this sister... WHY!?
+		name = chf.2072.a
+		ai_chance = {factor = 100}
+
+			FLA = {
+				leave_faction = yes
+			}		
+
+			CHF = {
+				declare_war_on = {
+					target = FLA
+					type = annex_everything
+				}
+			}
+
+			CHF = {
+				set_country_flag = chf_sister_war_active
+			}
+
+
+			hidden_effect = {
+				news_event = {
+					id = news.24
+				}
+
+				FLA = {
+					add_ideas = i_do_not_want_you_to_surrender_bro_please
+				}
+
+
+			}
+
+
+
+		}	
+
+}
+
+country_event = { #chaffia wins the sister war
+	id = chf.2073
+	title = chf.2073.t
+	desc = chf.2073.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #now what to do with my sister...
+		name = chf.2073.a
+		ai_chance = {factor = 100}
+
+				clr_country_flag = chf_lost_jerdy_war				
+				clr_country_flag = chf_won_jerdy_war
+				clr_country_flag = chf_final_narrative_phase_flag
+				mark_focus_tree_layout_dirty = yes
+
+				set_country_flag = chf_final_phase_part_1	
+
+		country_event = {
+			id = chf.2074
+			days = 1
+		}
+	
+		}	
+
+}
+
+country_event = { #roselina decides what to do with her sister
+	id = chf.2074
+	title = chf.2074.t
+	desc = chf.2074.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #we should lead together, we still have our purpose!
+		name = chf.2074.a
+		ai_chance = {factor = 50}
+		}	
+
+	option = { #put her under house arrest, we'll figure something out
+		name = chf.2074.b
+		ai_chance = {factor = 50}
+		}	
+		
+	option = { #execute her
+		name = chf.2074.c
+		ai_chance = {factor = 0}
+
+		add_manpower = -1
+		add_stability = -10
+
+		add_to_variable = {
+			devola_desperation_value = 100
+		}
+
+		custom_effect_tooltip = chf2057_tt
+
+		}			
+
+}
+
+country_event = { #roselina meets with aviceyn to actually get nukes fr this time
+	id = chf.2075
+	title = chf.2075.t
+	desc = chf.2075.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #We're almost there...
+		name = chf.2075.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			AVI = {
+				country_event = {
+					id = avi.6
+				}
+			}
+		}
+
+		}	
+		
+
+}
+
+country_event = { #aviceyn grants chaffia 6 nukes
+	id = chf.2076
+	title = chf.2076.t
+	desc = chf.2076.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #There they are...
+		name = chf.2076.a
+		ai_chance = {factor = 100}
+
+		add_nuclear_bombs = 6
+
+		}	
+		
+
+}
+
+country_event = { #chaffia goes to war with protea for the final time
+	id = chf.2077
+	title = chf.2077.t
+	desc = chf.2077.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Let's end them
+		name = chf.2077.a
+		ai_chance = {factor = 100}
+
+		CHF_nuke_their_ass = yes
+
+		}	
+		
+
+}
+
+country_event = { #chaffia wins the final skirmish
+	id = chf.2078
+	title = chf.2078.t
+	desc = chf.2078.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #We've done it!
+		name = chf.2078.a
+		ai_chance = {factor = 100}
+
+		}	
+		
+
+}
+
+country_event = { #the coalition states decides to peace out and abandon protea
+	id = chf.2079
+	title = chf.2079.t
+	desc = chf.2079.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Ha! We've really done it!
+		name = chf.2079.a
+		ai_chance = {factor = 100}
+
+		
+
+		}	
+		
+
+}
+
+country_event = { #the coalition states decides to continue the fight
+	id = chf.2080
+	title = chf.2080.t
+	desc = chf.2080.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Blind bloodlusted wardogs...
+		name = chf.2080.a
+		ai_chance = {factor = 100}
+
+		}	
+		
+
+}
 
 country_event = { #test event for variables and on actions
 	id = chf.5000

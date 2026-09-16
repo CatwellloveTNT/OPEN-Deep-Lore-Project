@@ -4653,7 +4653,7 @@
 		}
 
 		allow_branch = {
-			has_country_flag = pro_the_final_skirmish
+			has_country_flag = pro_the_final_skirmish_flag
 		}
 
 		cancel_if_invalid = yes
@@ -4757,7 +4757,7 @@
 		}
 
 		allow_branch = {
-			has_country_flag = pro_the_final_skirmish
+			has_country_flag = pro_the_final_skirmish_flag
 		}
 
 		cancel_if_invalid = yes
@@ -4829,7 +4829,7 @@
 		}
 
 		allow_branch = {
-			has_country_flag = pro_the_final_skirmish
+			has_country_flag = pro_the_final_skirmish_flag
 		}
 
 		cancel_if_invalid = yes
@@ -4867,7 +4867,7 @@
 		}
 
 		allow_branch = {
-			has_country_flag = pro_the_final_skirmish
+			has_country_flag = pro_the_final_skirmish_flag
 		}
 
 		cancel_if_invalid = yes

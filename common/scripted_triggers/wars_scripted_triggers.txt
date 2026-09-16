@@ -1,18 +1,18 @@
 is_human_majority_country = {
 	OR = {
-		has_idea = majority_human 
+		has_idea = human_majority_population 
 	}
 }
 
 is_pony_majority_country = {
 	OR = {
-		has_idea = majority_pony 
+		has_idea = pony_majority_population
 	}
 }
 
 is_avian_majority_country = {
 	OR = {
-		has_idea = majority_avian
+		has_idea = avian_majority_population
 	}
 }
 

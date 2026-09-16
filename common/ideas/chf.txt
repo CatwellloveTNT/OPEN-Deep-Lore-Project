@@ -654,7 +654,67 @@ ideas = {
 				minimum_training_level = -0.10
 			}
 
-		}			
+		}
+		
+		chf_west_occupation_company = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.15
+				non_core_manpower = 0.05
+			}
+
+		}		
+
+		chf_sharp_minds = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = CHF
+				tag = FLA
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 75
+				command_power_gain = 0.5
+			}
+
+		}				
 
 	}
 	

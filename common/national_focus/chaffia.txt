@@ -5983,6 +5983,10 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
+			add_political_power = 150
+			add_command_power = 50
+
+			add_ideas = chf_sharp_minds
 
 
 		}		
@@ -6028,7 +6032,14 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_aaf = 0.05
+			}
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_btf = 0.10				
+			}
 
+			custom_effect_tooltip = CHF_absorb_their_wealth_tt
 
 		}		
 
@@ -6073,6 +6084,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
+			add_ideas = chf_west_occupation_company
 
 
 		}		
@@ -6119,7 +6131,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
-
+			CHF = {
+				country_event = {
+					id = chf.2069
+				}
+			}
 
 		}		
 
@@ -6211,9 +6227,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
-			country_event = {
-				id = chf.2068
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_pns = 0.15
 			}
+
+			custom_effect_tooltip = CHF_punish_those_responsible_tt
 
 			#retire_character = #she orders blueberry to ice like 5 generals but i dont have any characters for chaffia yet so we gotta wait 
 
@@ -6260,11 +6278,18 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
-			country_event = {
-				id = chf.2068
-			}
 
 			#retire_character = #she orders blueberry to ice like 5 generals but i dont have any characters for chaffia yet so we gotta wait 
+
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_aaf = 0.05
+			}
+
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_adf = 0.05
+			}	
+			
+			custom_effect_tooltip = CHF_it_never_happens_again_tt
 
 		}		
 
@@ -6309,6 +6334,15 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_spf = -0.15
+			}
+
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_aof = 0.05
+			}
+
+			custom_effect_tooltip = CHF_learn_from_our_failures_tt			
 
 		}		
 
@@ -6353,6 +6387,11 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
+			add_to_variable = {
+				chaffia_defenders_of_ponykind_asf = 0.05
+			}
+
+			custom_effect_tooltip = CHF_and_ensure_tt
 
 		}		
 
@@ -6398,6 +6437,62 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
+			CHF = {
+				country_event = {
+					id = chf.2069
+				}
+			}			
+
+		}			
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+
+	focus = { #
+		id = CHF_the_queen_and_the_king
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 5
+		relative_position_id = CHF_enough_is_enough
+		prerequisite = { focus = CHF_shifting_the_focus focus = CHF_no_more_failures}	
+
+		
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2070
+				}
+			}			
 
 		}		
 
@@ -6406,5 +6501,323 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}	
 
+	focus = { #
+		id = CHF_prepare_for_the_worst
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = CHF_the_queen_and_the_king
+		prerequisite = { focus = CHF_the_queen_and_the_king}	
+		mutually_exclusive = {
+			focus = CHF_hope_for_the_best
+		}
+		
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+			set_country_flag = chf_burdened_flaria_open_door
+
+			build_railway = {
+				path = { 9873 9891 9872 9373 }
+			}			
+
+				605 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9537
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9529
+					instant_build = yes
+				}		
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 8440
+					instant_build = yes
+				}	
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9539
+					instant_build = yes
+				}	
+				
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}					
+
+			}
+				689 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 9476
+					instant_build = yes
+				}	
+
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}	
+
+			}
+
+			custom_effect_tooltip = extra_space
+
+			FLA = {
+				country_event = {
+					id = fla.2
+				}
+			}
+
+			custom_effect_tooltip = extra_space
+
+			custom_effect_tooltip = CHF_prepare_for_the_worst_tt			
+		
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = CHF_hope_for_the_best
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = CHF_the_queen_and_the_king
+		prerequisite = { focus = CHF_the_queen_and_the_king}	
+		mutually_exclusive = {
+			focus = CHF_prepare_for_the_worst
+		}
+		
+			
+
+
+
+		cost = 2
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+
+		clr_country_flag = chf_burdened_flaria_open_door	#YOU MUST REMOVE THIS FOR RLEEASE THIS IS FOR TESTING PLEASREMOVE IT PLEASE PLEASE
+		add_stability = 0.10
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+	focus = { #
+		id = CHF_demand_a_union_with_flaria
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = CHF_the_queen_and_the_king
+		prerequisite = { focus = CHF_hope_for_the_best focus = CHF_prepare_for_the_worst}
+
+		
+			
+
+
+
+		cost = 5
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+		FLA = {
+			country_event = {
+				id = fla.3
+			}
+		}
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = CHF_meet_with_aviceyn
+		icon = GFX_goal_generic_consumer_goods
+		x = 9
+		y = 0
+		#relative_position_id = CHF_the_queen_and_the_king
+	#	prerequisite = { focus = CHF_hope_for_the_best focus = CHF_prepare_for_the_worst}
+
+		
+			
+
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+		allow_branch = {
+			has_country_flag = chf_final_phase_part_1
+		}	
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2075
+				}
+			}
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = CHF_the_final_skirmish
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_meet_with_aviceyn
+		prerequisite = { focus = CHF_meet_with_aviceyn}
+
+		
+			
+
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_war = no	
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2077
+				}
+			}
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
 
 }

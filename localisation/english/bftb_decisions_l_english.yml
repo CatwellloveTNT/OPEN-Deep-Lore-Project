@@ -70,7 +70,7 @@
  pfh_reformed:0 "The Protea for Humanity party has been reformed"
  pro_protean_system_majority_support:0 "Atleast 70% of the population supports the First World Universal Rights Act"
  pfh_an_activist_in_every_street_tt:0 "We will coordinate with our supporters to hold protests and annoucements across Protea.\n\n§GA moderate portion of the population will begin to support the act.§W"
- the_final_skirmish_end_the_war_tt_pro:0 "§RTHIS IS IT, THE FINAL SKIRMISH. PUT THE STORY OF THE ISOLATIAN TRAGEDY AND IT'S AVENGERS INTO THE DIRT.§W"
+ the_final_skirmish_end_the_war_tt_pro:0 "§RDEFEAT THEM.§W"
  war_peace_effect_mission:0 "§RWIN THE WAR§W"
  pro_more_attack_text:0 "£army_experience §Y10§!"
  pro_needs_50_army_xp:0 "£army_experience §Y10§!"
@@ -83,6 +83,7 @@
  CHF_the_second_great_retreat_minigame_desc:0 "you get a home, and you get a home, and YOU get a home (bro please change this later)\n\nNumber of Displaced Ponies: [?num_of_displaced_ponies]\nNumber of Ponies Denied Housing: [?num_of_ponies_denied_housing]\nNumber of Rehomed Ponies: [?num_of_rehomed_ponies]\nNumber of Available Shelters: [?num_of_shelters_available]"
  deny_group_of_ponies:0 "§RDENY ENTRY§W"
  accept_group_of_ponies:0 "§GAPPROVE ENTRY§W"
+ when_we_remove_the_humies_jedry_tt:0 "When we get rid of the all the humans in the occupied regions, the §YHostile Human Minority§W law will be changed to §YNo Human Minority§W."
 
  
 

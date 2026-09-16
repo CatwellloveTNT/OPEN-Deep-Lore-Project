@@ -252,6 +252,40 @@ CHF_loses_the_jerdy_war = {
 
 }
 
+CHF_wins_the_sister_war = {
+	CHF = {			
+		annex_country = {
+			target = FLA
+		}	
+		country_event = {
+			id = chf.2073
+		}
+		set_country_flag = chf_won_sister_war
+		clr_country_flag = chf_sister_war_active
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+CHF_wins_the_final_skirmish = {
+	CHF = {			
+		PRO = {
+			become_exiled_in = {
+				target = CLS
+			}
+		}
+		country_event = {
+			id = chf.2078
+		}
+		set_country_flag = chf_final_phase_part_2
+		mark_focus_tree_layout_dirty = yes
+	}
+	CLS = {
+		country_event = {
+			id = col.1003
+		}
+	}
+}
+
 
 
 

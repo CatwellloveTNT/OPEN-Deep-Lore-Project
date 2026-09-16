@@ -241,16 +241,591 @@ chf_get_rid_of_the_humies_minigame = {
 			factor = 5000
 		}		
 
-	}			
+	}		
+	
+	get_rid_of_the_humans_in_danners = { #the state 529 city/state in jerdy
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 529
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_root_out_the_humies
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_529
+
+			529 = {
+				add_resistance = -10
+			}
+			529 = {
+				add_compliance = 20
+			}			
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692												
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	get_rid_of_the_humans_in_sundalua = { #the sundalua 528 state in jerdy
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 528
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = when_we_remove_the_humies_jedry_tt
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_528
+
+			528 = {
+				add_resistance = -10
+			}
+			528 = {
+				add_compliance = 20
+			}				
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692												
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	get_rid_of_the_humans_in_ponyparka = { #the ponyparka 612 state in jerdy
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 612
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_root_out_the_humies
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_612
+
+			612 = {
+				add_resistance = -10
+			}
+			612 = {
+				add_compliance = 20
+			}				
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692												
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	get_rid_of_the_humans_in_contah = { #the ponyparka 611 state in jerdy
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 611
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_root_out_the_humies
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_611
+
+			611 = {
+				add_resistance = -10
+			}
+			611 = {
+				add_compliance = 20
+			}				
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692										
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+
+	get_rid_of_the_humans_in_jaruha = { #the 610 state in jerdy
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 610
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_root_out_the_humies
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_610
+
+			610 = {
+				add_resistance = -10
+			}
+			610 = {
+				add_compliance = 20
+			}	
+
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692														
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	get_rid_of_the_humans_in_bacala = { #the 652 state in estrax
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 652
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_root_out_the_humies
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_652
+
+			652 = {
+				add_resistance = -10
+			}
+			652 = {
+				add_compliance = 20
+			}				
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692																			
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	get_rid_of_the_humans_in_gauss = { #the 690 state in estrax
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 690
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_root_out_the_humies
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_690
+
+			690 = {
+				add_resistance = -10
+			}
+			690 = {
+				add_compliance = 20
+			}	
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692																						
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	get_rid_of_the_humans_in_initia = { #the 692 state in estrax
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CHF
+		}
+
+		available = {
+			CHF = {
+				owns_state = 692
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = chf_root_out_the_humies
+			has_country_flag = chf_won_jerdy_war
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = when_we_remove_the_humies_jedry_tt
+
+			set_country_flag = humies_gone_from_692
+
+			692 = {
+				add_resistance = -10
+			}
+			692 = {
+				add_compliance = 20
+			}	
+
+
+			if = {
+				limit = {
+					has_country_flag = humies_gone_from_529
+					has_country_flag = humies_gone_from_528
+					has_country_flag = humies_gone_from_612
+					has_country_flag = humies_gone_from_611	
+					has_country_flag = humies_gone_from_610	
+					has_country_flag = humies_gone_from_652		
+					has_country_flag = humies_gone_from_690		
+					has_country_flag = humies_gone_from_692																									
+				}
+				swap_ideas = {
+					remove_idea = hostile_human_minority
+					add_idea = no_human_minority
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
 
 
 }
 
 
-	chf_devola_desperation = {
-		
-
-}
+	chf_devola_desperation = { } #NOT A MINIGAME/DECISIONS TASK, JUST A VISUAL 
 
 
 	chf_industralize_the_heartland_minigame = { 

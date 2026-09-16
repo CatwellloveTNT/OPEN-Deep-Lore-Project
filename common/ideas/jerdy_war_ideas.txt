@@ -6,6 +6,9 @@ ideas = {
 			allowed = {
 				tag = JER
 				TAG = EST
+				TAG = FLA
+				TAG = PRO
+				TAG = CHF
 			}
 
 			available = {

@@ -6,22 +6,22 @@
  LOADING_TIP_4: "Burn them out! \n- Tristan Resistance Slogan"
  LOADING_TIP_5: "Uhh... Chaguanas, we have a problem. \n- Solaris Operator to the Chaguanas Space Base, 2040"
  LOADING_TIP_6: "To think a species as kind and as virtous as us can call a species as vile as humanity "big siblings" is vomit inducing. One can only feel pity for the common Arcadian. \n-  La Brea"
- LOADING_TIP_7: "P-Please don't leave me here, m-miss Skies. I'm sorry for what I said. I j-just don't want to die. Please. \n- Ricochet, to Lufty Skies during the Sadhaak Encirclement."
- LOADING_TIP_8: "What?! What are you talking about?! I- Hey! Where are you going?!... Wait, don't leave me here to die alone...  \n- Raechel Hawks, to Izytal during the Sadhaak Encirclement"
- LOADING_TIP_9: "Zulu Don't Fly \n- Slogan of the Coalition Invasion Force in Triste"
+ LOADING_TIP_7: "P-Please don't leave me here, m-miss Skies. I'm sorry for what I said. I j-just don't want to die. Please. \n- Ricochet, to Lufty Skies during the Sadhaak Encirclement." #canonical ricochet quote from the comic
+ LOADING_TIP_8: "What?! What are you talking about?! I- Hey! Where are you going?!... Wait, don't leave me here to die alone...  \n- Raechel Hawks, to Izytal during the Sadhaak Encirclement" #canonical hawks quote from the comic
+ LOADING_TIP_9: "Zulu Don't Fly \n- Slogan of the Coalition Invasion Force in Triste" #charlie dont surf
  LOADING_TIP_10: "Celestia? Equestria? Changelings? Alicorns!? What the hell are you talking about? \n- Satoru, to Twilight Sparkle during her interrogation"
- LOADING_TIP_11: "Don't you think its kind of strange that Trinidadian Foreign Intelligence is assigning priority one targets within our sector?! \n- Micro, 2035 "
- LOADING_TIP_12: "This is Deadly, rearmed and fully loaded. Did ya miss me? \n- Deadly, after saving elements of the Arcadian 82nd Expeditionary in Sadhaak"
+ LOADING_TIP_11: "Don't you think its kind of strange that Trinidadian Foreign Intelligence is assigning priority one targets within our sector?! \n- Micro, 2035 " #canonical quote from the comic
+ LOADING_TIP_12: "This is Deadly, rearmed and fully loaded. Did ya miss me? \n- Deadly, after saving elements of the Arcadian 82nd Expeditionary in Sadhaak" #direct quote from call of duty 4 modern warfare
  LOADING_TIP_13: "Hey Ricochet, Zeebs! Ready to get some medals? \n- Blackwater, to his battle buddies during the invasion of Triste"
- LOADING_TIP_14: "...And to the human invaders and their Arcadian puppets. Know that you have entered a hell made of your own origin. We will burn you out of every house, every alley, every crevice, every hole. This city will be your grave. \n- Excerpt from La Brea's Sadhaak Encirclement Speech"
+ LOADING_TIP_14: "...And to the human invaders and their Arcadian puppets. Know that you have entered a hell made of your own origin. We will burn you out of every house, every alley, every crevice, every hole. This city will be your grave. \n- Excerpt from La Brea's Sadhaak Encirclement Speech" #this is a fnaf referene lmao, its of henry's speech in pizzeria simulator
  LOADING_TIP_15: "Mister Prime Minister, Triste integrating with the Second World presents a existential crisis not seen to us since Isolat. We must act now. \n- TFI Director Israel Singh, to the Coalition Prime Minster"
- LOADING_TIP_16: "To me, I was a pony. To them, I was sub-human. \n- Anonymous Chaffian pony, 2039"
- LOADING_TIP_17: "To each, his rifle. From each, his life. \n- Popular Arcadian Great War Slogan, 2040"
+ LOADING_TIP_16: "To me, I was a pony. To them, I was sub-human. \n- Anonymous Chaffian pony, 2039" #this lowkey tuff
+ LOADING_TIP_17: "To each, his rifle. From each, his life. \n- Popular Arcadian Great War Slogan, 2040" #equestria at war reference
  LOADING_TIP_18: "Respectfully Starrail, you damn well know the War Congress has not an ounce of intent in doing shit for the good of Arcadia. Let me step in, I'll do what's needed. \n- Monarch, to the Arcadian President"
- LOADING_TIP_19: "You're such a dumb pegasus! \n- Bell, to Satoru"
- LOADING_TIP_20: "H-Hey Winshake, I've shot down 6 of the invaders. I have no missles left, No guns and I'm out of fuel. I know what they do to captured pilots... Please tell Bay I did my best. Thank you for the memories... I'm sorry.  \n- Fluffy 'Ironsights' Swirl's last recorded radio transmission, 2040"
- LOADING_TIP_21: "Desperate measures? We're the desperate measures! \n- Member of the 101st 'Hellwings' Pegasus Airdrop Division to elements of the encircled 8th Armoured Cavalry Regiment within the Everbright district, 2040"
- LOADING_TIP_22: "Holy shit man! I think he shot my dick off! \n- Zeebs, after being shot nowhere near his dick, 2035"
+ LOADING_TIP_19: "You're such a dumb pegasus! \n- Bell, to Satoru" #big fan of bell's satoru specific racism 
+ LOADING_TIP_20: "H-Hey Winshake, I've shot down 6 of the invaders. I have no missles left, No guns and I'm out of fuel. I know what they do to captured pilots... Please tell Bay I did my best. Thank you for the memories... I'm sorry.  \n- Fluffy 'Ironsights' Swirl's last recorded radio transmission, 2040" #this is a reference to the hoi4 quote where a german pilot is out of ammo and says hes going to ram and he'll see his friend in valhalla
+ LOADING_TIP_21: "Desperate measures? We're the desperate measures! \n- Member of the 101st 'Hellwings' Pegasus Airdrop Division to elements of the encircled 8th Armoured Cavalry Regiment within the Everbright district, 2040" #halo reference
+ LOADING_TIP_22: "Holy shit man! I think he shot my dick off! \n- Zeebs, after being shot nowhere near his dick, 2035" #he was lowkey flexing
  LOADING_TIP_23: "Well, what kind of pony are you? \n- Valkyrie, to Lufty Skies, 2038"
  LOADING_TIP_24: "Bro I'm sick and tired of naming these damn victory points. \n- A cartographer... maybe"
  LOADING_TIP_25: "Don't stare at me while I work... It makes me feel weird... \n- Bell"
@@ -32,7 +32,7 @@
  LOADING_TIP_30: "The price of a Hummingbird - 110 Million Dollars"
  LOADING_TIP_31: "The price of a single anti air missile - 250 Thousand Dollars"
  LOADING_TIP_32: "The price of a single anti tank missile - 90 Thousand Dollars"
- LOADING_TIP_33: "Welcome to the god damn Narva Gap!\n- Unknown member of the 1-8th Armoured Cavalry Regiment, 2033"
+ LOADING_TIP_33: "Welcome to the god damn Narva Stretch!\n- Tanker in the 1-8th Armoured Cavalry Regiment, 2033" #WELCOME TO THE GOD DAMN FULDA GAP!!!!!!!!!!!!!!!!!!!!!!!
  LOADING_TIP_34: "The estimated life expectancy of a tank commander in the event of a major land war between the Coalition States and Aviceyn - 45 Minutes"
  LOADING_TIP_35: "The estimated life expectancy of a Battymanzel pilot in the event of a major land war between the Coalition States and Aviceyn - 20 Minutes"
  LOADING_TIP_36: "The estimated life expectancy of an infantry soldier in the event of a major land war between the Coalition States and Aviceyn - 1 Hour"
@@ -40,19 +40,20 @@
  LOADING_TIP_38: "History has proven that a nation with ponies tough and determined enough to defend it to it's dying breaths can never truly be defeated.\n- La Brea, after the fall of Triste. 2036"
  LOADING_TIP_39: "Y'know, I think the comic predicted this."
  LOADING_TIP_40: "For The Sake of Our Children!.\n- First World Universal Rights Act Supporter Slogan"
- LOADING_TIP_41: "We're gonna bomb the shit outta em'.\n- Protean Battymanzel pilot upon the annoucement of operation Midnight Fury, 2036"
+ LOADING_TIP_41: "We're gonna bomb the shit outta em'.\n- Protean Battymanzel pilot upon the annoucement of operation Sacred Bow, 2036" #epic fury reference
  LOADING_TIP_42: "For so long as the forces of Protea plan against us, we must remain ready to fight— to the very end, if necessary.\n- Roselina"
  LOADING_TIP_43: "I wanna go home dude!\n- Ricochet, after tripping and falling in Triste, 2035"
- LOADING_TIP_44: "Do what you must to ensure a swift and immediate cleasing of the lands by which we have fought so hard to call home.\n- The final order given to all Coalition soldiers within the newly formed Protea, 1971"
+ LOADING_TIP_44: "Do what you must to ensure a swift and immediate cleasing of the lands by which we have fought so hard to call home.\n- The final order given to all Coalition soldiers within the newly formed Protea, 1971" #i believe this one came from a quote from an israeli minister of defense
  LOADING_TIP_45: "Shuddup and get on the game, bro!\n- Nightrider"
- LOADING_TIP_46: "To those humans who came from across the sea and paid the ultimate price, heed my words. The soil you lay on now bears the undeniable mark of Humanity. Therefore, go forth into the other side, in peace.\n- Couva, after the fall of Triste, 2036"
- LOADING_TIP_47: "Hey, I got a four ship, looks like they got purple panels on them though. Do we have any friendlies up in this area?\n- ALASKA 6-1, moments before the worst friendly fire incident in First World history, 2035"
+ LOADING_TIP_46: "To those humans who came from across the sea and paid the ultimate price, heed my words. The soil you lay on now bears the undeniable mark of Humanity. Therefore, go forth into the other side, in peace.\n- Couva, after the fall of Triste, 2036" #ataturk reference, but i heard theres a chance this quote didnt come from him
+ LOADING_TIP_47: "Hey, I got a four ship, looks like they got purple panels on them though. Do we have any friendlies up in this area?\n- ALASKA 6-1, moments before the worst friendly fire incident in Coalition history, 2035" #a-10 reference (dogshit plane)
  LOADING_TIP_48: "They came here and risked their lives to save us! You think I'm just going to leave them there in the city?! T-to die!? \n- PFC Cythnia, to SPC Wavey shorty after breaking out of the Sadhaak Encirclement, 2035"
  LOADING_TIP_49: "You want the 25' or you want me to shoot a missle in there? \n- Deadly, to Lufty Skies, 2035"
  LOADING_TIP_50: "Deadly, I don't even want them to exist anymore. \n- Lufty Skies, to Deadly, 2035"
- LOADING_TIP_51: "Any time someone says that Protea is our greatest ally in The Cradle, I can't help but wonder, before Sealocker, before Protea. All we had were friends in The Cradle. \n- 11th AIREXPED Commander William "Black" Shehand, 2030"
- LOADING_TIP_52: "Withdrawl all amnesty from those who were involved in the attacks on our sacred homeland and provide them to us, or face a force that wants nothing but to kill each and every doe eyed undersized third-worlder horse in this room. \n- Prime Minster of the Coalition States, hours before operation Red Vengence, 1990"
- LOADING_TIP_53: "14 bullets in the magazine, 2 is enough to drop a pony... Hey, look at me. None of these bullets are for you, if you get captured, we will come for you.\n- Izytal, to Raechel Hawks during the Sadhaak Encirclement"
+ LOADING_TIP_51: "Any time someone says that Protea is our greatest ally in The Cradle, I can't help but wonder, before Sealocker, before Protea. All we had were friends in The Cradle. \n- 11th AIREXPED Commander William "Black" Shehand, 2030" #saw this one on a youtube comment on one of GDF's israel videos, its a quote from an american statesmen or general, but i cant remember
+ LOADING_TIP_52: "Withdrawl all amnesty from those who were involved in the attacks on our sacred homeland and provide them to us, or face a force that wants nothing but to kill each and every doe eyed undersized third-worlder horse in this room. \n- Prime Minster of the Coalition States, hours before operation Red Vengence, 1990" #SADDAM...
+ LOADING_TIP_53: "14 bullets in the magazine, 2 is enough to drop a pony... Hey, look at me. None of these bullets are for you, if you get captured, we will come for you.\n- Izytal, to Raechel Hawks during the Sadhaak Encirclement" #canonical izytal quote in the comic
  LOADING_TIP_54: "The vastness of Aviceyn threatens to consumes us.\n- FWDI Supreme Commander(first world defense initiative)"
+ LOADING_TIP_55: "Ponies who've been knocked down a peg by humans like to see their fellow ponies governing them, even if their interests are not cared for. Thats the trick of empire.\n- Couva, 2036" #this is a Wars That Didn't Happen reference, he has a hard ass quote at around the 35:28 timestamp of the "Could Britain Defend Hong Kong From China in 1984?"
 
 

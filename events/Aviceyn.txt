@@ -93,6 +93,27 @@ country_event = { #aviceyn comes to the aid of chaffia, sending out talcyon 3s a
 
 	}
 }
+country_event = { #roselina comes to aviceyn to obtain nukes to eliminate protea
+	id = avi.6
+	title = avi.6.t
+	desc = avi.6.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Give them the nukes. Put our plans in order.
+		name = avi.6.a
+		ai_chance = {factor = 100}
+
+		CHF = {
+			country_event = {
+				id = chf.2076
+				days = 1
+			}
+		}
+
+	}
+}
 
 
 

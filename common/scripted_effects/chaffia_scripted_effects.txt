@@ -123,6 +123,7 @@ CHF_nuke_their_ass = {
 		}
 		hidden_effect = {
 			scoped_play_song = "eotl"		
+			add_ideas = i_do_not_want_you_to_surrender_bro_please
 		}
 		hidden_effect = {
 		goto_state = 537			
@@ -149,7 +150,8 @@ CHF_nuke_their_ass = {
 			hours = 55
 		}
 		}
-		set_country_flag = pro_the_final_skirmish
+		set_country_flag = pro_the_final_skirmish_flag
+		clr_country_flag = pro_reformed_protean_system
 		mark_focus_tree_layout_dirty = yes
 	}
 	CLS = {
@@ -160,13 +162,15 @@ CHF_nuke_their_ass = {
 			scoped_play_song = "eotl"
 			goto_state = 537			
 		}
-		set_country_flag = cls_the_final_skirmish
+		set_country_flag = cls_the_final_skirmish_flag
+		set_country_flag = cls_the_final_skirmish		
 		mark_focus_tree_layout_dirty = yes
 		}
 		
 	CHF = {
 		hidden_effect = {
 			scoped_play_song = "nukes"
+			add_ideas = i_do_not_want_you_to_surrender_bro_please
 		}
 		declare_war_on = {
 			target = PRO
@@ -175,7 +179,7 @@ CHF_nuke_their_ass = {
 		hidden_effect = {
 		goto_state = 537			
 		}
-		set_country_flag = chf_the_final_skirmish
+		set_country_flag = chf_the_final_skirmish_flag
 		mark_focus_tree_layout_dirty = yes
 	}
 	}

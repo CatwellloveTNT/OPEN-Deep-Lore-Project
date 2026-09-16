@@ -2190,6 +2190,105 @@ CHF_jerdy_war_decision_tab = {
 	}
 }
 
+CHF_sister_war_decision_tab = {
+	chf_sister_war_win = {
+		priority = 700
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 9999
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = chf_sister_war_active
+		}
+
+		available = {
+			chf_wins_the_sister_war_trigger = yes
+		}
+
+		complete_effect = {
+			CHF_wins_the_sister_war = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_sister_war_active
+		}
+
+		timeout_effect = {
+
+		}
+	}
+}
+
+CHF_the_final_skirmish = {
+	chf_protea_wiped_out = {
+		priority = 700
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 9999
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = chf_the_final_skirmish_flag
+		}
+
+		available = {
+			chf_knocks_out_protea_in_the_final_skirmish_trigger = yes
+		}
+
+		complete_effect = {
+			CHF_wins_the_final_skirmish = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_the_final_skirmish_flag
+		}
+
+		timeout_effect = {
+
+		}
+	}
+
+	chf_coalition_states_continues_the_fight = {
+		priority = 700
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 9999
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = chf_final_skirmish_coalition_fights_flag
+		}
+
+		available = {
+#			chf_knocks_out_protea_in_the_final_skirmish_trigger = yes
+			always = no
+		}
+
+		complete_effect = {
+			CHF_wins_the_final_skirmish = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_final_skirmish_coalition_fights_flag
+		}
+
+		timeout_effect = {
+
+		}
+	}
+
+}
+
 
 
 

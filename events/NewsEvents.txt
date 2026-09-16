@@ -389,6 +389,38 @@ news_event = { #jerdy and estrax join the chuds
 
 }
 
+news_event = { #Chaffian-Flarian unification
+	id = news.23
+	title = news.23.t
+	desc = news.23.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.23.a
+	}
+
+}
+
+news_event = { #Chaffian-Flarian war
+	id = news.24
+	title = news.24.t
+	desc = news.24.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.24.a
+	}
+
+}
+
 
 
 

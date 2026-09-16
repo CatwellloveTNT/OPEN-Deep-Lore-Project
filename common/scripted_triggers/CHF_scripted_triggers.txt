@@ -1,4 +1,3 @@
-# ---------------------------------------------- THE THIRD SKIRMISH ----------------------------------------------
 
 protea_wins_the_third_skirmish = { 
 	PRO = {
@@ -16,5 +15,34 @@ chf_wins_the_jerdy_war_trigger = {
 		controls_state = 529
 		controls_state = 528
 		controls_state = 611
+	}
+}
+
+chf_wins_the_sister_war_trigger = {
+	CHF = {
+		controls_state = 734
+		controls_state = 735
+	}
+}
+
+chf_knocks_out_protea_in_the_final_skirmish_trigger = {
+		CHF = {
+		controls_state = 599
+		controls_state = 542
+		controls_state = 604
+		controls_state = 534
+		controls_state = 535
+		controls_state = 533
+		controls_state = 603
+		controls_state = 602
+		controls_state = 601
+		controls_state = 541
+		controls_state = 539
+		controls_state = 538	
+		controls_state = 536
+		controls_state = 737
+		controls_state = 738
+		controls_state = 540
+		controls_state = 537	
 	}
 }

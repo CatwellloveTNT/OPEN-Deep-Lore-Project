@@ -27,6 +27,70 @@ country_event = {
 	}
 }
 
+# flaria notices the buildup on the border by chaffia
+country_event = {
+	id = fla.2
+	title = fla.2.t
+	desc = fla.2.d
+
+	is_triggered_only = yes
+
+	option = { # what are you doing sister?!
+		name = fla.2.a
+		ai_chance = {factor = 100}
+	}
+}
+
+country_event = {
+	id = fla.3
+	title = fla.3.t
+	desc = fla.3.d
+
+	is_triggered_only = yes
+
+	option = { # flaria accepts unification
+		name = fla.3.a
+		ai_chance = { base = 100
+
+	modifier = {
+		CHF = {
+			has_country_flag = chf_burdened_flaria_open_door
+		}
+		add = -1000
+	}	
+	
+	}
+
+	CHF = {
+		country_event = {
+			id = chf.2071
+		}
+	}
+
+	}
+
+	option = { # flaria denies peaceful unification
+		name = fla.3.b
+		ai_chance = { base = 0
+	modifier = {
+		CHF = {
+			has_country_flag = chf_burdened_flaria_open_door
+		}
+		add = 1000
+	}
+
+}
+
+	CHF = {
+		country_event = {
+			id = chf.2072
+		}
+	}
+
+
+	}
+
+}
 
 
 
