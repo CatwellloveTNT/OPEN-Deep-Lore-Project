@@ -647,6 +647,706 @@ CLS_showdown = { # CURRENTLY THERE IS A BUG WITH THIS THAT IDK HOW TO SOLVE, ESS
 
 }
 
+CLS_the_austral_ghetto_minigame = {
+
+	assassinate_ghetto_overseers = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			has_country_flag = cls_austral_ghetto_flag
+		}
+
+		visible = {
+			has_country_flag = cls_austral_ghetto_flag
+		}
+
+		cost = 50
+
+#		days_re_enable = 20
+
+		days_remove = 2
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+		}
+
+		remove_effect = {
+
+			CLS = {
+				set_country_flag = cls_austral_ghetto_leaders_killed
+			}
+
+			add_days_mission_timeout = {
+				mission = cls_the_ghetto_is_cleared
+				days = 20
+			}
+			CHF = {
+				add_days_mission_timeout = {
+					mission = the_austral_ghetto_is_cleared
+					days = 20
+				}
+			}
+
+			CHF = {
+				country_event = {
+					id = chf.2085
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}
+	distribute_rifles_to_the_ghetto = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_leaders_killed
+			}
+
+		}
+
+		visible = {
+			has_country_flag = cls_austral_ghetto_flag
+		}
+
+		cost = 50
+
+#		days_re_enable = 20
+
+		days_remove = 10
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+		}
+
+		remove_effect = {
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -10000
+			}
+
+			add_days_mission_timeout = {
+				mission = cls_the_ghetto_is_cleared
+				days = 50
+			}
+			CHF = {
+				add_days_mission_timeout = {
+					mission = the_austral_ghetto_is_cleared
+					days = 50
+				}
+			}
+
+			CHF = {
+				country_event = {
+					id = chf.2086
+				}
+			}
+			
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = distribute_rifles_to_the_ghetto_tt
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}
+
+	airdrop_supplies_to_the_ghetto = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+		}
+
+		cost = 100
+
+		days_re_enable = 50
+
+		days_remove = 5
+
+#		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+		}
+
+		remove_effect = {
+
+
+			add_days_mission_timeout = {
+				mission = cls_the_ghetto_is_cleared
+				days = 30
+			}
+			CHF = {
+				add_days_mission_timeout = {
+					mission = the_austral_ghetto_is_cleared
+					days = 30
+				}
+			}
+
+			CHF = {
+				country_event = {
+					id = chf.2087
+				}
+			}
+			
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}	
+
+ # -------------------------------------- 1st aircav decisions -------------------------------------
+
+	recall_the_1st_aircav_divison = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+		}
+
+		cost = 50
+
+	#	days_re_enable = 10
+
+		days_remove = 1
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+
+		}
+
+		remove_effect = {
+			
+			airexped_readiness_up_5 = yes	
+			
+			set_country_flag = 1st_aircav_recalled
+
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}	
+
+	train_the_1st_aircav_divsion = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = 1st_aircav_recalled				
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = 1st_aircav_recalled
+			}
+		}
+
+		cost = 50
+
+		days_re_enable = 10
+
+		days_remove = 1
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+
+		}
+
+		remove_effect = {
+			
+			airexped_readiness_up_5 = yes	
+			
+
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}	
+
+ # -------------------------------------- 3rd aircav decisions -------------------------------------
+
+	recall_the_3rd_aircav_divison = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+		}
+
+		cost = 50
+
+	#	days_re_enable = 10
+
+		fire_only_once = yes
+
+		days_remove = 3
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+
+		}
+
+		remove_effect = {
+			
+			airexped_readiness_up_5 = yes			
+
+			set_country_flag = 3rd_aircav_recalled
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}
+	
+	supply_the_3st_aircav_divsion = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = 3rd_aircav_recalled				
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = 3rd_aircav_recalled
+			}
+		}
+
+		cost = 50
+
+		days_re_enable = 10
+
+		days_remove = 1
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+
+		}
+
+		remove_effect = {
+			
+			airexped_readiness_up_5 = yes	
+			
+
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}	
+
+ # -------------------------------------- australs angels decisions -------------------------------------	
+
+	reform_the_australs_angels_aircav_divsion = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+		}
+
+		cost = 50
+
+	#	days_re_enable = 10
+
+		fire_only_once = yes
+
+		days_remove = 5
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+
+		}
+
+		remove_effect = {
+			
+			airexped_readiness_up_10 = yes			
+
+			set_country_flag = australs_angels_reformed
+
+			PRO = {
+			1008 = {
+			create_unit = {
+   			division = "name = \"Austral's Devils\" division_template = \"Air Cavalry Division\" start_manpower_factor = 1"
+   			owner = PRO
+   			count = 1
+   			id = 1001
+			}
+			}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}	
+
+	motivate_the_australs_angels = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = australs_angels_reformed				
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = australs_angels_reformed
+			}
+		}
+
+		cost = 50
+
+		days_re_enable = 10
+
+		days_remove = 1
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+
+		}
+
+		remove_effect = {
+			
+			airexped_readiness_up_5 = yes	
+			
+
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}
+	
+	ready_the_tts_illustrious = { 
+		priority = 315
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = australs_angels_reformed
+				has_country_flag = 3rd_aircav_recalled
+				has_country_flag = 1st_aircav_recalled								
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+				has_country_flag = australs_angels_reformed
+				has_country_flag = 3rd_aircav_recalled
+				has_country_flag = 1st_aircav_recalled					
+			}
+		}
+
+		cost = 50
+
+	#	days_re_enable = 10
+
+		fire_only_once = yes
+
+		days_remove = 15
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+
+		}
+
+		remove_effect = {
+			
+			airexped_readiness_up_10 = yes			
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}
+	
+	launch_operation_flaming_hope = { 
+		priority = 1999
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag				
+				check_variable = {
+					global.cls_aircav_readiness > 69
+				}					
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_austral_ghetto_flag								
+			}
+		}
+
+		cost = 0
+
+	#	days_re_enable = 10
+
+		fire_only_once = yes
+
+		days_remove = 5
+
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+		country_event = {
+			id = col.1005
+		}
+
+		CHF = {
+			country_event = {
+				id = chf.2088
+			}
+		}
+
+		hidden_effect = {
+		news_event = {
+			id = news.28
+		}			
+		}
+
+
+		}
+
+		remove_effect = {
+					
+
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}	
+
+
+}
+
 
 
 

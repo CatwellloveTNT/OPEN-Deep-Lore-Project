@@ -6817,6 +6817,217 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		ai_will_do = {
 		factor = 24
 		}
+	}
+	
+	focus = { #
+		id = CHF_the_final_skirmish_victory
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CHF_the_final_skirmish
+		prerequisite = { focus = CHF_the_final_skirmish}
+
+		
+			
+		allow_branch = {
+			CHF = {
+				has_country_flag = chf_final_phase_part_2
+			}
+		}
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2081
+				}
+			}
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = CHF_undoing_the_wrongs_of_the_isolation_tragedy
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CHF_the_final_skirmish_victory
+		prerequisite = { focus = CHF_the_final_skirmish_victory}
+
+		
+			
+		allow_branch = {
+			CHF = {
+				has_country_flag = chf_final_phase_part_2
+			}
+		}
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel = {
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2090
+				}
+			}
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = CHF_freeing_ourselves_from_the_burden_of_humanity
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CHF_the_final_skirmish_victory
+		prerequisite = { focus = CHF_the_final_skirmish_victory}
+
+		
+			
+		allow_branch = {
+			CHF = {
+				has_country_flag = chf_final_phase_part_2
+			}
+		}
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel = {
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2091
+				}
+			}
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = CHF_the_creation_of_the_forth_world
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CHF_the_final_skirmish_victory
+		prerequisite = { focus = CHF_freeing_ourselves_from_the_burden_of_humanity}
+		prerequisite = { focus = CHF_undoing_the_wrongs_of_the_isolation_tragedy}		
+
+		
+			
+		allow_branch = {
+			CHF = {
+				has_country_flag = chf_final_phase_part_2
+			}
+		}
+
+
+		cost = 3
+		available = {
+			AND = {
+			has_country_flag = chf_roselina_insane_flag
+			}
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel = {
+
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+		completion_reward = {
+
+			CHF = {
+				country_event = {
+					id = chf.2092
+				}
+			}
+
+		}		
+
+		ai_will_do = {
+		factor = 24
+		}
 	}	
 	
 

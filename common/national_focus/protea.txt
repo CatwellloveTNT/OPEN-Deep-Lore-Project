@@ -4988,7 +4988,7 @@
 				}
 			}
 			set_country_flag = pro_the_final_skirmish_second_phase
-			clr_country_flag = pro_the_final_skirmish
+			clr_country_flag = pro_the_final_skirmish_flag
 			custom_effect_tooltip = critical_condition_tt
 			mark_focus_tree_layout_dirty = yes
 		}

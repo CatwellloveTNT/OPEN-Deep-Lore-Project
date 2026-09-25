@@ -114,6 +114,21 @@ country_event = { #roselina comes to aviceyn to obtain nukes to eliminate protea
 
 	}
 }
+country_event = { #chaffia deports humans to aviceyn after winning in protea
+	id = avi.7
+	title = avi.7.t
+	desc = avi.7.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #they say ponies are like house cats, what if this is their version of giving us a dead rat?
+		name = avi.7.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
 
 
 

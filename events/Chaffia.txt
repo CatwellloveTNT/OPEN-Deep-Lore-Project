@@ -1888,6 +1888,17 @@ country_event = { #chaffia wins the final skirmish
 		name = chf.2078.a
 		ai_chance = {factor = 100}
 
+		set_country_flag = chf_final_phase_part_2
+
+		complete_national_focus = CHF_the_final_skirmish_victory
+
+		hidden_effect = {
+		news_event = {
+			id = news.25
+		}			
+		}
+
+
 		}	
 		
 
@@ -1924,7 +1935,392 @@ country_event = { #the coalition states decides to continue the fight
 		name = chf.2080.a
 		ai_chance = {factor = 100}
 
+		set_country_flag = chf_great_war_decisions
+
 		}	
+		
+
+}
+
+country_event = { #rosalina celebrates as chaffia wins the final skirmish
+	id = chf.2081
+	title = chf.2081.t
+	desc = chf.2081.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Now, to undo the sins of the past...
+		name = chf.2081.a
+		ai_chance = {factor = 100}
+
+		country_event = {
+			id = chf.2082
+		}
+
+		}	
+		
+
+}
+
+country_event = { #event to decide what to do with protea in regards to isolat
+	id = chf.2082
+	title = chf.2082.t
+	desc = chf.2082.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Isolat is reborn! 
+		name = chf.2082.a
+		ai_chance = {base = 100}
+
+		ISO = {
+		transfer_state = 600
+		transfer_state = 535
+		transfer_state = 603
+		transfer_state = 602
+		transfer_state = 601
+		transfer_state = 541
+		transfer_state = 539
+		transfer_state = 538	
+		transfer_state = 536
+		transfer_state = 738
+		transfer_state = 540
+		transfer_state = 537	
+		}
+
+		puppet = ISO
+
+		country_event = {
+			id = chf.2083
+		}
+
+		hidden_effect = {
+		news_event = {
+			id = news.26
+			days = 1			
+		}			
+		}		
+
+		}	
+
+
+
+	option = { #Y'know, i kinda like how big i've become on the map...
+		name = chf.2082.b
+		ai_chance = {base = 0}
+
+		add_stability = -0.1
+
+		country_event = {
+			id = chf.2083
+		}
+
+		}	
+				
+		
+
+}
+
+country_event = { #rosalina must decide what to do with the humans of the former protea
+	id = chf.2083
+	title = chf.2083.t
+	desc = chf.2083.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #round up a majority of them and prepare to cleanse them
+		name = chf.2083.a
+		ai_chance = {base = 100}
+
+		country_event = {
+			id = chf.2084
+			days = 4
+		}
+
+		538 = {
+		add_manpower = -727783
+		}
+		536 = { 
+		add_manpower = -489211
+		}	
+		535 = { 
+		add_manpower = -564524
+		}	
+		603 = { 
+		add_manpower = -734524
+		}			
+		738 = { 
+		add_manpower = -2856471
+		}		
+		600 = { 
+		add_manpower = -117171
+		}	
+		601 = { 
+		add_manpower = -435312
+		}	
+		541 = { 
+		add_manpower = -673478
+		}								
+		539 = { 
+		add_manpower = -372317
+		}	
+
+		#around 7 million humans are rounded up and put into the austral ghetto, 6970791 is the exact number 
+
+		537 = { #AUSTRAL
+			add_manpower = 6970791
+		}
+
+
+		}	
+
+	option = { #Deport every single one of them to Aviceyn
+		name = chf.2083.b
+		ai_chance = {base = 0}
+
+		AVI = {
+		country_event = {
+			id = avi.7
+		}
+		}
+
+		538 = {
+		add_manpower = -727783
+		}
+		536 = { 
+		add_manpower = -489211
+		}	
+		535 = { 
+		add_manpower = -564524
+		}	
+		603 = { 
+		add_manpower = -734524
+		}			
+		738 = { 
+		add_manpower = -2856471
+		}		
+		600 = { 
+		add_manpower = -117171
+		}	
+		601 = { 
+		add_manpower = -435312
+		}	
+		541 = { 
+		add_manpower = -673478
+		}								
+		539 = { 
+		add_manpower = -372317
+		}
+
+		}		
+		
+	option = { #Let them be, their fight is over.
+		name = chf.2083.c
+		ai_chance = {factor = 0}
+
+		add_stability = -0.1
+
+		}		
+		
+
+}
+
+country_event = { #austral ghetto event
+	id = chf.2084
+	title = chf.2084.t
+	desc = chf.2084.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #they would have done the same to us if we had lost
+		name = chf.2084.a
+		ai_chance = {factor = 100}	
+		
+		set_country_flag = chf_austral_ghetto_flag
+		CLS = {
+		set_country_flag = cls_austral_ghetto_flag		
+		
+		country_event = {
+			id = col.1004
+		}
+
+		}
+
+		hidden_effect = {
+		news_event = {
+			id = news.27
+			days = 1			
+		}			
+		}		
+
+		custom_effect_tooltip = chf2084_tt
+		}	
+		
+
+}
+
+country_event = { #the coalition assassinates ghetto overseers by throwing them off a roof (true cia move)
+	id = chf.2085
+	title = chf.2085.t
+	desc = chf.2085.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #uhh, i guess we'll make the overseers pegasi next time...
+		name = chf.2085.a
+		ai_chance = {factor = 100}	
+	
+		custom_effect_tooltip = chf2085_tt
+
+		}	
+		
+
+}
+country_event = { #the coalition distributes guns into the ghetto and chaffia realizes the coalition states is attempting to stop the ghetto from being cleansed
+	id = chf.2086
+	title = chf.2086.t
+	desc = chf.2086.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Looks like this won't be so simple after all
+		name = chf.2086.a
+		ai_chance = {factor = 100}	
+	
+		custom_effect_tooltip = chf2085_tt
+
+		CLS = {
+			set_country_flag = cls_austral_ghetto_phase_2_flag
+		}
+		CHF = {
+			set_country_flag = chf_austral_ghetto_phase_2_flag			
+		}
+
+		set_variable = {
+			global.cls_aircav_readiness = 5
+		}
+
+		}	
+		
+
+}
+
+country_event = { #the coalition gives supplies to the ghetto and prolongs the battle
+	id = chf.2087
+	title = chf.2087.t
+	desc = chf.2087.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Not good...
+		name = chf.2087.a
+		ai_chance = {factor = 100}	
+	
+		custom_effect_tooltip = chf2085_tt
+
+
+		}	
+		
+
+}
+
+country_event = { #the coalition launches operation flaming hope, a massive airmobile operation from the illustrius CSG and rescues millions of humans
+	id = chf.2088
+	title = chf.2088.t
+	desc = chf.2088.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #What a humiliation!
+		name = chf.2088.a
+		ai_chance = {factor = 100}	
+	
+		remove_mission = the_austral_ghetto_is_cleared
+
+		clr_country_flag = chf_austral_ghetto_flag
+		clr_country_flag = chf_austral_ghetto_phase_2_flag
+		537 = { #AUSTRAL
+			add_manpower = -6970791
+		}
+
+
+		}	
+		
+
+}
+
+country_event = { #the coalition fails to launch their operation to save the humans and all 7 million humans within the ghetto are slowly starved and killed
+	id = chf.2089
+	title = chf.2089.t
+	desc = chf.2089.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #It is over.
+		name = chf.2089.a
+		ai_chance = {factor = 100}	
+		}	
+		
+
+}
+
+country_event = { #roselina holds a massive parade in celebrating of undoing the wrongs of the isolation tragedy
+	id = chf.2090
+	title = chf.2090.t
+	desc = chf.2090.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #100 cheers for roselina!
+		name = chf.2090.a
+		ai_chance = {factor = 100}	
+		}	
+		
+
+}
+
+country_event = { #chaffia creates a public holiday on the get.date of the event to celebrate eliminating humanity from the region
+	id = chf.2091
+	title = chf.2091.t
+	desc = chf.2091.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #No longer shall they bother us!
+		name = chf.2091.a
+		ai_chance = {factor = 100}	
+		}	
+		
+
+}
+
+country_event = { #roselina holds a speech in front of a massive audience, she proclaims the dawn of a forth world, a chaffian-flarian pony centric world
+	id = chf.2092
+	title = chf.2092.t
+	desc = chf.2092.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #the birth of a new world, a world for ponies!
+		name = chf.2092.a
+		ai_chance = {factor = 100}	
+
+	custom_effect_tooltip = chaffia_a_ending_tool_tip
+
+		}	
+		
 		
 
 }
@@ -1944,7 +2340,15 @@ country_event = { #test event for variables and on actions
 		custom_effect_tooltip = extra_space
 		custom_effect_tooltip = chf_loses_the_3rd_skirmish
 
-		custom_effect_tooltip = extra_space		
+		custom_effect_tooltip = extra_space	
+		
+		hidden_effect = {
+		news_event = {
+			id = news.29
+			days = 1			
+		}			
+		}		
+
 
 	}
 }

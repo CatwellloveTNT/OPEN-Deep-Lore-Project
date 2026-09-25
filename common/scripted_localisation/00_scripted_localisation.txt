@@ -8,6 +8,12 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
+
+
+
+#ok listen, since how this is so confusing for me to grasp: the name = what you put WITHIN the [] brackets in the localization,
+#the loc_key = what you put into the localization file and localize as if it was a tool tip or whatever, it is NOT put within the [] in the localization
+
 defined_text = { # babies first scripted loc wtf is this shit bro lmfaoo
 	name = shit1
 	text = {
@@ -36,6 +42,9 @@ defined_text = { #
 	localization_key = sead_phase
 	}
 }
+
+
+
 
 defined_text = { # 
 	name = protean_system_reform_path
@@ -273,5 +282,27 @@ defined_text = { #
 			
 		}
 	localization_key = chf_infliltration_loc2
+	}
+}
+defined_text = { # 
+	name = cls_austral_ghetto_aircav_readiness_percentage
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_austral_ghetto_phase_2_flag
+			}
+		}
+	localization_key = cls_austral_ghetto_aircav_readiness_percentage_loc
+	}
+}
+defined_text = { # 
+	name = chf_austral_ghetto_aircav_readiness_percentage
+	text = {
+		trigger = {
+			CHF = {
+				has_country_flag = chf_austral_ghetto_phase_2_flag
+			}
+		}
+	localization_key = chf_austral_ghetto_aircav_readiness_percentage_loc
 	}
 }

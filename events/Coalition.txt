@@ -671,6 +671,81 @@ country_event = { # chaffia wins in protea during the final skirmish
 
 	}
 }
+country_event = { # Austral Ghetto event
+	id = col.1004
+	title = col.1004.t
+	desc = col.1004.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Oh my god...
+		name = col.1004.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = col1004_tt
+
+	}
+}
+
+country_event = { # #the coalition launches operation flaming hope, a massive airmobile operation from the illustrius CSG and rescues millions of humans
+	id = col.1005
+	title = col.1005.t
+	desc = col.1005.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # A one for the record, boys!
+		name = col.1005.a
+		ai_chance = {factor = 100}
+
+		854 = {
+			add_manpower = 6970791
+		}
+
+		remove_mission = cls_the_ghetto_is_cleared
+
+		clr_country_flag = cls_austral_ghetto_phase_2_flag
+		clr_country_flag = cls_austral_ghetto_flag
+
+	}
+}
+country_event = { #chaffia deploys additional troops to the ghetto
+	id = col.1006
+	title = col.1006.t
+	desc = col.1006.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # we need to speed things up
+		name = col.1006.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = col1006_tt
+
+	}
+}
+country_event = { #the coalition fails to launch their operation and all humans within the ghetto are killed
+	id = col.1007
+	title = col.1007.t
+	desc = col.1007.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # this will be a stain on humanity for the rest of eternity...
+		name = col.1007.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
 
 
 

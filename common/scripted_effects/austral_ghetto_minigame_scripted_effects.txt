@@ -1,0 +1,37 @@
+
+airexped_readiness_clamper = {
+clamp_variable = {
+	var = var:global.cls_aircav_readiness
+	min = 0
+	max = 100
+}	
+}
+
+airexped_readiness_up_5 = {
+	add_to_variable = {
+		global.cls_aircav_readiness = 5
+	}
+	airexped_readiness_clamper = yes
+		custom_effect_tooltip = airexped_readiness_up_5_tt
+}
+airexped_readiness_up_10 = {
+	add_to_variable = {
+		global.cls_aircav_readiness = 10
+	}
+	airexped_readiness_clamper = yes
+	custom_effect_tooltip = airexped_readiness_up_10_tt
+}
+airexped_readiness_down_5 = {
+	add_to_variable = {
+		global.cls_aircav_readiness = -5
+	}
+	airexped_readiness_clamper = yes
+	custom_effect_tooltip = airexped_readiness_down_5_tt	
+}
+airexped_readiness_down_10 = {
+	add_to_variable = {
+		global.cls_aircav_readiness = -10
+	}
+	airexped_readiness_clamper = yes
+	custom_effect_tooltip = airexped_readiness_down_10_tt		
+}

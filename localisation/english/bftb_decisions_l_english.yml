@@ -84,6 +84,13 @@
  deny_group_of_ponies:0 "§RDENY ENTRY§W"
  accept_group_of_ponies:0 "§GAPPROVE ENTRY§W"
  when_we_remove_the_humies_jedry_tt:0 "When we get rid of the all the humans in the occupied regions, the §YHostile Human Minority§W law will be changed to §YNo Human Minority§W."
-
+ CHF_the_austral_ghetto_minigame:0 "The Austral Ghetto"
+ CHF_the_austral_ghetto_minigame_desc:0 "With our victory in the Final Skirmish comes the task of cleansing the human population from the land to ensure the ponies of the region are safe. In that regard we've rounded up a majority of the human populations from the core regions of Protea and put them all within a specific part of the Austral megacity. All there is left to do now is wait as we slowly close the ghetto in on itself... right?\n\n[chf_austral_ghetto_aircav_readiness_percentage]"
+ cls_austral_ghetto_tt:0 "§R7 Million humans within the occupied Protea will be killed...§W"
+ CLS_the_austral_ghetto_minigame:0 "The Austral Ghetto"
+ CLS_the_austral_ghetto_minigame_desc:0 "With Protea's defeat in the Final Skirmish comes a brutal reality check for many Proteans who now lay in the hooves of a master that was once their slave. Queen Rosalina and her lackies have decided to round up a majority of the human population within the core Protean terrirtories and they have formed a region within Austral known as the Austral Ghetto. They have projected that in one month they would have wiped out all 7 million humans within the ghetto. It goes without saying, but we cannot under any cirumstances let such a thing happen.\n\nTrinidadian Foreign Intelligence believes that, with the help of elements of the 11th AIREXPED Corps, we can launch a massive airmobile operation within the Austral Ghetto and extract a majority of the Proteans held within there and bring them back to the Coalition States safely.\n\n[cls_austral_ghetto_aircav_readiness_percentage]"
+ distribute_rifles_to_the_ghetto_tt:0 "§RChaffia will know something is coming...§W"
+ cls_austral_ghetto_aircav_readiness_percentage_loc:0 "With the Austral Ghetto in open rebellion, Chaffia will be forced to violently clear the Ghetto. As the Ghetto holds out, the 11th AIREXPED Corps needs time to prepare an invasion. They state they need atleast 70% readiness before anything can happen.\n\n11th AIREXPED Readiness: [?global.cls_aircav_readiness]%"
+ chf_austral_ghetto_aircav_readiness_percentage_loc:0 "With the Austral Ghetto in open rebellion, We are now forced to send in our military to clear the Ghetto. Undoubtedly the Coalition States will be preparing for some kind of intervention. The Chaffian Intelligence Service states they are preparing the 11th AIREXPED Corps to launch a massive airmobile assault on Austral to extract the humans we've placed within the Ghetto. The 11th AIREXPED needs atleast 70% readiness to launch any operations on Austral.\n\n11th AIREXPED Readiness: [?global.cls_aircav_readiness]%"
  
 

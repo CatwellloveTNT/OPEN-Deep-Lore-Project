@@ -2273,7 +2273,7 @@ CHF_the_final_skirmish = {
 		}
 
 		complete_effect = {
-			CHF_wins_the_final_skirmish = yes
+			
 		}
 
 		fire_only_once = yes
@@ -2287,6 +2287,68 @@ CHF_the_final_skirmish = {
 		}
 	}
 
+}
+
+CHF_the_austral_ghetto_minigame = {
+	the_austral_ghetto_is_cleared = {
+		priority = 700
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 31
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = chf_austral_ghetto_flag
+		}
+
+		available = {
+			always = no
+		}
+
+		complete_effect = {
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = chf_the_final_skirmish_flag
+		}
+
+		timeout_effect = {
+			537 = {
+				add_manpower = -7000000
+			}
+
+			clr_country_flag = chf_austral_ghetto_flag
+			clr_country_flag = chf_austral_ghetto_phase_2_flag		
+			
+			CLS = {
+				clr_country_flag = cls_austral_ghetto_flag
+				clr_country_flag = cls_austral_ghetto_phase_2_flag				
+			}
+
+			CLS = {
+				country_event = {
+					id = col.1007
+				}
+			}
+
+			CHF = {
+				country_event = {
+					id = chf.2089
+				}
+			}
+
+		hidden_effect = {
+		news_event = {
+			id = news.29			
+		}			
+		}
+
+
+		}
+	}
 }
 
 

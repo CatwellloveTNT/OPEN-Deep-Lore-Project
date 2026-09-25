@@ -20,7 +20,7 @@
 
 	CLS_showdown = {
 		
-		priority = 350
+		priority = 20000
 
 		icon = SOV_paranoia
 
@@ -38,6 +38,27 @@
 
 		visible_when_empty = yes
 	}
+
+	CLS_the_austral_ghetto_minigame = {
+		
+		priority = 20000
+
+		icon = SOV_paranoia
+
+		#scripted_gui = cls_showdown_ui
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = cls_austral_ghetto_flag
+			}
+		}
+
+		visible_when_empty = yes
+	}	
 
 
 

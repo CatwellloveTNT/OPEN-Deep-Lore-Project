@@ -421,6 +421,85 @@ news_event = { #Chaffian-Flarian war
 
 }
 
+news_event = { #Chaffia beats protea in the final skirmish
+	id = news.25
+	title = news.25.t
+	desc = news.25.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.25.a
+	}
+
+}
+
+news_event = { #Chaffia beats protea in the final skirmish
+	id = news.26
+	title = news.26.t
+	desc = news.26.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.26.a
+	}
+
+}
+
+news_event = { #the austral ghetto forms
+	id = news.27
+	title = news.27.t
+	desc = news.27.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.27.a
+	}
+
+}
+news_event = { #operating flaming hope succeeds
+	id = news.28
+	title = news.28.t
+	desc = news.28.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.28.a
+	}
+
+}
+
+news_event = { #Chaffia cleans the austral ghetto
+	id = news.29
+	title = news.29.t
+	desc = news.29.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.29.a
+	}
+
+}
+
 
 
 

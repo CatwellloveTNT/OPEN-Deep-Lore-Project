@@ -95,6 +95,40 @@ cls_showdown = {
 	}
 }
 
+cls_the_austral_ghetto_minigame = {
+	cls_the_ghetto_is_cleared = {
+		priority = 20000
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 31
+		is_good = no 
+		days_re_enable = 5
+
+
+		activation = {
+			has_country_flag = cls_austral_ghetto_flag
+		}
+
+		available = {
+			CLS = {
+				has_country_flag = cls_austral_ghetto_cls_came_to_the_rescue
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = cls_austral_ghetto_flag
+		}
+
+		timeout_effect = {
+			custom_override_tooltip = {
+				tooltip = cls_austral_ghetto_tt
+			}		
+		}
+
+	}
+}
+
 
 
 
