@@ -263,3 +263,8 @@ music = { #
 	file = "theroundtable.ogg"
 	volume = 1
 }
+music = { #
+	name = "galm2"
+	file = "galm2.ogg"
+	volume = 1
+}

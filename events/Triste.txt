@@ -1,0 +1,27 @@
+﻿#####################
+# TRISTE EVENTS
+###########################
+
+add_namespace = tst
+
+
+# tristan opening event that plays their moodsetter
+country_event = {
+	id = tst.1
+	title = tst.1.t
+	desc = tst.1.d
+
+	is_triggered_only = yes
+
+	option = { # Humanity will return, and we'll be ready this time.
+		name = tst.1.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+		scoped_play_song = theroundtable			
+		}
+
+		custom_effect_tooltip = tst1_tt
+
+	}
+}

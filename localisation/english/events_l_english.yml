@@ -877,6 +877,10 @@ fla.3.d: "no way someone plays this country and gets this event"
 fla.3.a: "bruh wtf?!"
 fla.3.b: "bruh wtf?!"
 
+# -------------------- TRISTE -------------------- 
+tst.1.t: "Never Again..."
+tst.1.d: "Triste opening event, speak of triste's history, their relationship to humanity, the first roadtrip war and the fear that humanity will return to finish the job one day"
+tst.1.a: "Humanity will return one day, and we'll be ready this time."
 
 
 # -------------------- Monsterbird --------------------
@@ -952,6 +956,7 @@ fla.3.b: "bruh wtf?!"
  airexped_readiness_down_10_tt:0 "§GThe 11th AIREXPED's readiness will decrease by 10%§W"
  col1006_tt:0 "§RThe Ghetto will not be able to hold out against this pressure for much longer...§W"
  chaffia_a_ending_tool_tip:0 "Thank you for playing §YChaffia§W! You've managed to absorb the losses of the Second and Third Skirmish and came out as the victor of the Final Skirmish.\n\nYou got Chaffia's A (canonical) ending!\n\n[twilight_sparkle_narrative_in_tt_decider]"
+ tst1_tt:0 "§YAs of version 1.0, Triste only has its canonical content. Since how Triste canonically loses the Second Roadtrip War, Triste only has content up to 2035. Meaning there is §RNO CONTENT§Y if you actually manage to beat the Coalition States. Regardless I still hope you have fun with Triste and their struggle against humanity.§W"
 
 
 

@@ -4,12 +4,12 @@ bookmarks = { # ----------------- THIS IS THE SECOND WORLD -------------------
 		desc = "SECOND_WORLD_DESC"
 		date = 2032.1.1.12
 		picture = "GFX_bookmark_art"
-		default_country = "CLS"
+		default_country = "AVI"
 		default = yes
 		
-		"CLS"={
-			history = "CLS_BOOKMARK_DESC"
-			ideology = democratic
+		"AVI"={
+			history = "AVI_BOOKMARK_DESC"
+			ideology = neutrality
 			ideas = {
 				#FRA_victors_of_wwi
 			}
@@ -17,6 +17,16 @@ bookmarks = { # ----------------- THIS IS THE SECOND WORLD -------------------
 				#FRA_form_the_popular_front
 			}
 		}
+		"TST"={
+			history = "TST_BOOKMARK_DESC"
+			ideology = neutrality
+			ideas = {
+				#FRA_victors_of_wwi
+			}
+			focuses = {
+				#FRA_form_the_popular_front
+			}
+		}		
 
 		"---"={
 			history = "IRRELEVANTS_DESC"

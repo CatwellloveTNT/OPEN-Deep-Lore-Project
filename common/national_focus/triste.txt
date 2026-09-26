@@ -1,0 +1,981 @@
+focus_tree = {
+	id = triste_focus
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = TST
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 200 y = 3500 }
+
+	focus = { #la brea and his people meet for the 2032 defense of triste summit
+		id = TST_the_2032_defensive_summit
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+		#relative_position_id = 
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		allow_branch = {
+			has_country_flag = first_phase_tst
+		}
+		completion_reward = {
+			country_event = {
+				id = tst.2
+			}
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+#--------------------------- MILITARY TREE --------------------------------------------------
+
+	focus = { #
+		id = TST_the_defense_of_triste
+		icon = GFX_goal_generic_consumer_goods
+		x = -15
+		y = 1
+		relative_position_id = TST_the_2032_defensive_summit
+		prerequisite = {
+			focus = TST_the_2032_defensive_summit
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+	focus = { #
+		id = TST_follow_the_teachings_of_la_brea
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = TST_the_defense_of_triste
+		prerequisite = {
+			focus = TST_the_defense_of_triste
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		mutually_exclusive = {
+			focus = TST_adopt_the_aviceyian_model
+		}
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_construct_the_arado_training_camp
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = TST_follow_the_teachings_of_la_brea
+		prerequisite = {
+			focus = TST_follow_the_teachings_of_la_brea
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = TST_develop_the_kalpara_5x
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = TST_follow_the_teachings_of_la_brea
+		prerequisite = {
+			focus = TST_follow_the_teachings_of_la_brea
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_embrace_the_gifts_of_ponykind
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_follow_the_teachings_of_la_brea
+		prerequisite = {
+			focus = TST_follow_the_teachings_of_la_brea
+		}	
+		cost = 10
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_study_the_failures_of_the_first_roadtrip_war
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = TST_follow_the_teachings_of_la_brea
+		prerequisite = {
+			focus = TST_develop_the_kalpara_5x
+		}
+		prerequisite = {
+			focus = TST_construct_the_arado_training_camp
+		}		
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_destroy_the_fear_of_humankind
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = TST_study_the_failures_of_the_first_roadtrip_war
+		prerequisite = {
+			focus = TST_study_the_failures_of_the_first_roadtrip_war
+		}
+		
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_adopt_the_aviceyian_model
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 1
+		relative_position_id = TST_the_defense_of_triste
+		prerequisite = {
+			focus = TST_the_defense_of_triste
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+
+		mutually_exclusive = {
+			focus = TST_follow_the_teachings_of_la_brea
+		}		
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_a_tristan_land_war
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = TST_adopt_the_aviceyian_model
+		prerequisite = {
+			focus = TST_adopt_the_aviceyian_model
+		}	
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = TST_mass_mechanization_of_the_force
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = TST_adopt_the_aviceyian_model
+		prerequisite = {
+			focus = TST_adopt_the_aviceyian_model
+		}	
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_to_counter_the_blitzkreig
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = TST_adopt_the_aviceyian_model
+		prerequisite = {
+			focus = TST_a_tristan_land_war
+		}	
+		prerequisite = {
+			focus = TST_mass_mechanization_of_the_force
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = TST_procure_the_pacer_shield_system
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = TST_mass_mechanization_of_the_force
+
+		prerequisite = {
+			focus = TST_mass_mechanization_of_the_force
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #excerise total defense of triste, or TODEFTRI
+		id = TST_excerise_todeftri
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = TST_mass_mechanization_of_the_force
+
+		prerequisite = {
+			focus = TST_mass_mechanization_of_the_force
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_destiny_in_our_own_hooves
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = TST_to_counter_the_blitzkreig
+
+		prerequisite = {
+			focus = TST_to_counter_the_blitzkreig
+		}		
+		prerequisite = {
+			focus = TST_procure_the_pacer_shield_system
+		}	
+		prerequisite = {
+			focus = TST_excerise_todeftri
+		}						
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_kill_the_snake_before_it_strikes
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 6
+		relative_position_id = TST_the_defense_of_triste
+
+		prerequisite = {
+			focus = TST_destiny_in_our_own_hooves
+			focus = TST_destroy_the_fear_of_humankind
+		}		
+					
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		mutually_exclusive = {
+			focus = TST_lure_them_in
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = TST_lure_them_in
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 6
+		relative_position_id = TST_the_defense_of_triste
+
+		prerequisite = {
+			focus = TST_destiny_in_our_own_hooves
+			focus = TST_destroy_the_fear_of_humankind
+		}		
+					
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		mutually_exclusive = {
+			focus = TST_kill_the_snake_before_it_strikes
+		}
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_the_deathbed_plan
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_lure_them_in
+
+		prerequisite = {
+			focus = TST_lure_them_in
+		}		
+					
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_the_sadhaak_megafortress
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_kill_the_snake_before_it_strikes
+
+		prerequisite = {
+			focus = TST_kill_the_snake_before_it_strikes
+		}		
+					
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_nunca_mais
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 9
+		relative_position_id = TST_the_defense_of_triste
+
+		prerequisite = {
+			focus = TST_the_deathbed_plan
+		}		
+		prerequisite = {
+			focus = TST_the_sadhaak_megafortress
+		}			
+					
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+#--------------------------- NAVY TREE ------------------------------------------------------
+
+	focus = { #the coastal navy
+		id = TST_the_marinha_costeira
+		icon = GFX_goal_generic_consumer_goods
+		x = 15
+		y = 1
+		relative_position_id = TST_the_2032_defensive_summit
+		prerequisite = {
+			focus = TST_the_2032_defensive_summit
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+#--------------------------- AIR FORCE TREE -------------------------------------------------
+
+	focus = { #
+		id = TST_the_triste_air_defense_initative
+		icon = GFX_goal_generic_consumer_goods
+		x = 25
+		y = 1
+		relative_position_id = TST_the_2032_defensive_summit
+		prerequisite = {
+			focus = TST_the_2032_defensive_summit
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+
+#--------------------------- ECONOMIC TREE --------------------------------------------------
+
+	focus = { #the coastal navy
+		id = TST_from_rags_to_riches
+		icon = GFX_goal_generic_consumer_goods
+		x = -25
+		y = 1
+		relative_position_id = TST_the_2032_defensive_summit
+		prerequisite = {
+			focus = TST_the_2032_defensive_summit
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+
+#--------------------------- NARRATIVE TREE -------------------------------------------------	
+	focus = { #la brea and his people meet for the 2032 defense of triste summit
+		id = TST_the_situation_at_hoof
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = TST_the_2032_defensive_summit
+		prerequisite = {
+			focus = TST_the_2032_defensive_summit
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+
+
+}

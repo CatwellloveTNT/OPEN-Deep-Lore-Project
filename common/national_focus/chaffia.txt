@@ -4578,7 +4578,7 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		
 		completion_reward = {
 
-			chf = {
+			CHF = {
 				set_country_flag = chf_completed_the_open_door_minigame
 			}
 
@@ -5083,40 +5083,6 @@ add_to_variable = { chaffia_defenders_of_ponykind_btf = 0.15 } #army breakthroug
 		}
 	}		
 
-	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
-		id = CHF_the_marrowbacker_line
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		relative_position_id = CHF_trust_in_ourselves
-		prerequisite = { focus = CHF_trust_in_ourselves} 		
-		cost = 4
-		available = {
-			AND = {
-			has_war = no	
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel = {
-			has_war = yes
-		}		
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		
-		completion_reward = {
-		}
-
-		ai_will_do = {
-		factor = 24
-		}
-	}	
 	
 	focus = { #should be impossible if the player is going down this path, really just here to show what would have happened
 		id = CHF_the_marrowbacker_line

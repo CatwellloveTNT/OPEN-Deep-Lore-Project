@@ -57,12 +57,20 @@ on_actions = {
 					days = 1
 				}
 			}
+			# ------------- AVICEYN EVENTS -------------				
 			AVI = {
 				country_event = {
 					id = avi.1
 					days = 1
 				}
-			}			
+			}	
+			# ------------- TRISTE EVENTS -------------	
+			TST = {
+				country_event = {
+					id = tst.1
+					days = 1
+				}
+			}									
 
 		}
 	}

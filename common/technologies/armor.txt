@@ -44,7 +44,7 @@ technologies = {
 		start_year = 2025
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 0 }
+			position = { x = -4 y = 0 } #x-4 y=0
 		}
 
 
