@@ -900,10 +900,10 @@ focus_tree = {
 
 #--------------------------- ECONOMIC TREE --------------------------------------------------
 
-	focus = { #the coastal navy
+	focus = { #
 		id = TST_from_rags_to_riches
 		icon = GFX_goal_generic_consumer_goods
-		x = -25
+		x = -30
 		y = 1
 		relative_position_id = TST_the_2032_defensive_summit
 		prerequisite = {
@@ -936,6 +936,972 @@ focus_tree = {
 		factor = 24
 		}
 	}
+
+	focus = { #
+		id = TST_la_breas_speech
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = TST_from_rags_to_riches
+		prerequisite = {
+			focus = TST_from_rags_to_riches
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #hyikau is a civilian contractor company
+		id = TST_fund_hyikau
+		icon = GFX_goal_generic_consumer_goods
+		x = -6
+		y = 1
+		relative_position_id = TST_from_rags_to_riches
+		prerequisite = {
+			focus = TST_from_rags_to_riches
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { #petrotrit is a dual use petrol company  
+		id = TST_expand_petrotrit
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = TST_from_rags_to_riches
+		prerequisite = {
+			focus = TST_from_rags_to_riches
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # 
+		id = TST_embrace_our_military_industrial_complex
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = TST_from_rags_to_riches
+		prerequisite = {
+			focus = TST_from_rags_to_riches
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # 
+		id = TST_optimize_the_war_machine
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = TST_from_rags_to_riches
+		prerequisite = {
+			focus = TST_from_rags_to_riches
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+#--------------------------- MILITARY ECONOMIC SUB TREE --------------------------------------------------	
+
+	focus = { # extra production growth
+		id = TST_eliminate_procurement_bottlenecks
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = TST_embrace_our_military_industrial_complex
+		prerequisite = {
+			focus = TST_embrace_our_military_industrial_complex focus = TST_optimize_the_war_machine
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+	focus = { # extra mils in sadhaak
+		id = TST_expand_the_sadhaak_industrial_zone
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = TST_embrace_our_military_industrial_complex
+		prerequisite = {
+		 focus = TST_embrace_our_military_industrial_complex
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # gives steel and aluminum
+		id = TST_preempt_the_resource_blockade
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = TST_embrace_our_military_industrial_complex
+		prerequisite = {
+			 focus = TST_optimize_the_war_machine
+		}
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # gives steel and aluminum
+		id = TST_predict_the_second_bombing_campaign
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = TST_optimize_the_war_machine
+		prerequisite = {
+			 focus = TST_preempt_the_resource_blockade
+		}
+		prerequisite = {
+			 focus = TST_eliminate_procurement_bottlenecks
+		}		
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		mutually_exclusive = {
+			focus = TST_factory_districts
+		}		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	focus = { # gives steel and aluminum
+		id = TST_factory_districts
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = TST_embrace_our_military_industrial_complex
+		prerequisite = {
+			 focus = TST_expand_the_sadhaak_industrial_zone
+		}
+		prerequisite = {
+			 focus = TST_eliminate_procurement_bottlenecks
+		}		
+		cost = 5
+		available = {
+			has_war = no
+		}
+
+		mutually_exclusive = {
+			focus = TST_predict_the_second_bombing_campaign
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # gives steel and aluminum
+		id = TST_intense_repair_drills
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_factory_districts
+		prerequisite = {
+			 focus = TST_factory_districts
+		}		
+		cost = 5
+		available = {
+			has_war = no
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # gives steel and aluminum
+		id = TST_superfactories
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = TST_factory_districts
+		prerequisite = {
+			 focus = TST_factory_districts
+		}		
+		cost = 5
+		available = {
+			has_war = no
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { # gives steel and aluminum
+		id = TST_underground_factories
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_predict_the_second_bombing_campaign
+		prerequisite = {
+			 focus = TST_predict_the_second_bombing_campaign
+		}	
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { # gives steel and aluminum
+		id = TST_hardened_shelters
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = TST_predict_the_second_bombing_campaign
+		prerequisite = {
+			 focus = TST_predict_the_second_bombing_campaign
+		}	
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+	
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # gives steel and aluminum
+		id = TST_the_industry_of_struggle
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 5
+		relative_position_id = TST_eliminate_procurement_bottlenecks
+		prerequisite = {
+			 focus = TST_predict_the_second_bombing_campaign focus = TST_factory_districts
+		}	
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}		
+
+#--------------------------- CIVILIAN ECONOMIC SUB TREE --------------------------------------------------
+
+	focus = { # gives oil in a state
+		id = TST_the_sarabach_oil_boom
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_expand_petrotrit
+		prerequisite = {
+			 focus = TST_expand_petrotrit
+		}	
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+
+	focus = { # get resources decision category
+		id = TST_dig_to_fight
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_fund_hyikau
+		prerequisite = {
+			 focus = TST_fund_hyikau
+		}	
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { # THIS WILL ONLY BECOME AVAILALBE ONCE THE CIRCUIT HAS ACTIVATED
+		id = TST_enact_expansive_measures
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = TST_dig_to_fight
+		prerequisite = {
+			 focus = TST_dig_to_fight
+		}	
+		prerequisite = {
+			 focus = TST_the_sarabach_oil_boom
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { # decision tab to create civs
+		id = TST_begin_the_palarda_works
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = TST_enact_expansive_measures	
+		prerequisite = {
+			 focus = TST_enact_expansive_measures
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # extra stability and less stabilty loss during war
+		id = TST_the_bunker_basement_law
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_enact_expansive_measures	
+		prerequisite = {
+			 focus = TST_enact_expansive_measures
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}
+	
+	focus = { # extra research slot and research speed
+		id = TST_form_the_pancada_institute
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = TST_enact_expansive_measures	
+		prerequisite = {
+			 focus = TST_enact_expansive_measures
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # builds railroads, supply nodes and up infrastuture in some states by 1
+		id = TST_prepare_the_land_for_war
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = TST_begin_the_palarda_works	
+		prerequisite = {
+			 focus = TST_begin_the_palarda_works  focus = TST_the_bunker_basement_law focus = TST_form_the_pancada_institute
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+	
+	focus = { # construction boost
+		id = TST_supercharged_constuction
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 1
+		relative_position_id = TST_begin_the_palarda_works	
+		prerequisite = {
+			 focus = TST_begin_the_palarda_works  focus = TST_the_bunker_basement_law focus = TST_form_the_pancada_institute
+		}			
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # construction boost
+		id = TST_build_to_survive
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = TST_the_bunker_basement_law	
+		prerequisite = {
+			 focus = TST_prepare_the_land_for_war
+		}		
+		prerequisite = {
+			 focus = TST_supercharged_constuction
+		}						
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
+
+	focus = { # construction boost
+		id = TST_prolonging_the_tristian_economic_miracle
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 4
+		relative_position_id = TST_superfactories	
+		prerequisite = {
+			 focus = TST_build_to_survive
+		}		
+		prerequisite = {
+			 focus = TST_the_industry_of_struggle
+		}						
+		cost = 5
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+		
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+	}	
 
 
 #--------------------------- NARRATIVE TREE -------------------------------------------------	
