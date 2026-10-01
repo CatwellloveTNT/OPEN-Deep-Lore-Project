@@ -858,12 +858,673 @@ focus_tree = {
 		}
 	}
 
+	# ------------------ THE 35/65 PLAN SUB TREE ------------------------
+
+	focus = { #name the focus 35/65 plan, meaning triste intents to damage or destroy 35% of the coalition naval invasion fleet in the opening of an invasion and hope to scare off the other 65%
+		id = TST_the_35_65_plan #!!!!!!!!!!!!!!!!!!!!!! FOCUS DONE THROUGH EVENT !!!!!!!!!!!!!!!!!!!!!!!!!!!
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = TST_the_marinha_costeira
+		prerequisite = {
+			focus = TST_the_marinha_costeira
+		}
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			has_country_flag = tst_la_brea_has_embraced_the_35_65_plan
+			}
+		}
+
+		mutually_exclusive = {
+			focus = TST_abandon_the_navy
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = { #canonically la brea will shut down the navy and focus almost entirely on a land war
+		factor = 0
+		}
+	}	
+
+	focus = { #
+		id = TST_construct_the_halarado_dockyards
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = TST_the_35_65_plan
+		prerequisite = {
+			focus = TST_the_35_65_plan
+		}
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+			518 = {
+					add_building_construction = {
+					type = dockyard
+					level = 2
+					province = 9805
+					instant_build = yes
+				}
+			}
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+	
+	focus = { #
+		id = TST_up_production_quotas
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = TST_the_35_65_plan
+		prerequisite = {
+			focus = TST_the_35_65_plan
+		}
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_swarm_theory
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = TST_the_35_65_plan
+		prerequisite = {
+			focus = TST_the_35_65_plan
+		}
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_the_little_fish
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 2
+		relative_position_id = TST_the_35_65_plan
+		prerequisite = {
+			focus = TST_up_production_quotas
+		}
+		prerequisite = {
+			focus = TST_swarm_theory
+		}		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+	
+	focus = { #
+		id = TST_the_big_fish
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		relative_position_id = TST_the_35_65_plan
+		prerequisite = {
+			focus = TST_up_production_quotas
+		}
+		prerequisite = {
+			focus = TST_construct_the_halarado_dockyards
+		}		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+	focus = { #adds 2 carriers to production on 50% completion
+		id = TST_commission_the_portugal_class_carrier
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 3
+		relative_position_id = TST_the_35_65_plan
+		prerequisite = {
+			focus = TST_the_big_fish
+		}
+		prerequisite = {
+			focus = TST_the_little_fish
+		}		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_intense_naval_drills
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = TST_commission_the_portugal_class_carrier
+		prerequisite = {
+			focus = TST_commission_the_portugal_class_carrier
+		}		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+	focus = { #the balatro is triste's non canonical carrier based fighter/attack heavy aircraft
+		id = TST_the_balatro
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = TST_commission_the_portugal_class_carrier
+		prerequisite = {
+			focus = TST_commission_the_portugal_class_carrier
+		}		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = TST_to_challenge_the_navy_of_humankind
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = TST_commission_the_portugal_class_carrier
+		prerequisite = {
+			focus = TST_the_balatro
+		}		
+		prerequisite = {
+			focus = TST_intense_naval_drills
+		}	
+		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}
+	
+	focus = { #
+		id = TST_sailors_at_the_ready
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 9
+		relative_position_id = TST_the_marinha_costeira
+		prerequisite = {
+			focus = TST_to_challenge_the_navy_of_humankind focus = TST_prepare_for_a_total_land_war
+		}		 
+
+		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+	# ------------------ ABANDON THE NAVY SUB TREE ------------------------
+
+
+
+	focus = { #name the focus 35/65 plan, meaning triste intents to damage or destroy 35% of the coalition naval invasion fleet in the opening of an invasion and hope to scare off the other 65%
+		id = TST_abandon_the_navy #!!!!!!!!!!!!!!!!!!!!!! FOCUS DONE THROUGH EVENT !!!!!!!!!!!!!!!!!!!!!!!!!!!
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = TST_the_marinha_costeira
+		prerequisite = {
+			focus = TST_the_marinha_costeira
+		}
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			has_country_flag = tst_la_brea_has_abandoned_the_navy
+			}
+
+		}
+
+		mutually_exclusive = {
+			focus = TST_the_35_65_plan
+		}
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = { #
+		factor = 100
+		}
+	}	
+
+
+	focus = { #
+		id = TST_transfer_sailors_to_other_branches #
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = TST_abandon_the_navy
+		prerequisite = {
+			focus = TST_abandon_the_navy
+		}
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+			add_manpower = 450000
+
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}
+
+	focus = { #
+		id = TST_redirect_funds_towards_the_ground_forces #
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = TST_abandon_the_navy
+		prerequisite = {
+			focus = TST_abandon_the_navy
+		}
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+			
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+	focus = { #
+		id = TST_prepare_for_a_total_land_war #
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 2
+		relative_position_id = TST_abandon_the_navy
+		prerequisite = {
+			focus = TST_transfer_sailors_to_other_branches
+		}
+		prerequisite = {
+			focus = TST_redirect_funds_towards_the_ground_forces
+		}		
+		cost = 5
+		available = {
+			AND = {
+			has_war = no
+			}
+
+		}
+
+		
+		bypass = {
+
+		}
+
+		cancel = {
+			has_war = yes
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+			add_ideas = tst_total_land_war_preparations
+			
+		}
+
+		ai_will_do = { #
+		factor = 24
+		}
+	}	
+
+
 #--------------------------- AIR FORCE TREE -------------------------------------------------
 
 	focus = { #
 		id = TST_the_triste_air_defense_initative
 		icon = GFX_goal_generic_consumer_goods
-		x = 25
+		x = 30
 		y = 1
 		relative_position_id = TST_the_2032_defensive_summit
 		prerequisite = {

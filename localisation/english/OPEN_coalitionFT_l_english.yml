@@ -176,8 +176,9 @@ l_english:
  CHF_punish_those_responsible_tt:0 "The §YDefenders of Ponykind§W Spirit will be improved by:\n§G+ 15% Planning Speed§W"
  CHF_it_never_happens_again_tt:0 "The §YDefenders of Ponykind§W Spirit will be improved by:\n§G+ 5% Division Attack\n+ 5% Division Defense§W"
 
-
-
+# -- COUNTRY FLAG FOR FOCUS HINT PROGRESSION LOC -- #
+ tst_la_brea_has_embraced_the_35_65_plan:0 "La Brea has chosen to go ahead with the 35/65 plan"
+ tst_la_brea_has_abandoned_the_navy:0 "La Brea has chosen to abandon the navy entirely"
 
 
 
