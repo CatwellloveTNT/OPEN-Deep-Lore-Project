@@ -167,6 +167,7 @@ country_event = {
 			id = news.5
 			days = 1
 		}
+		set_global_flag = flashpoint_arcadius_ended
 	}
 }
 country_event = {
@@ -185,6 +186,7 @@ country_event = {
 		set_country_flag = hawkssucceded
 		clr_country_flag = babies_first_flag
 		complete_national_focus = CLS_flashpoint_arcadius
+		set_global_flag = flashpoint_arcadius_ended		
 	}
 }
 # ------------------ END OF THE FLASHPOINT ARCADIUS EVENT CHAIN ------------------

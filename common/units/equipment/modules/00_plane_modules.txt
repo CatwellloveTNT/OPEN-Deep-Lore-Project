@@ -1850,7 +1850,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			air_agility = 0.05
+			air_agility = 0.1
 		}
 
 		build_cost_resources = {
@@ -1870,7 +1870,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			air_attack = 0.05
+			air_defence = 0.07
 		}
 
 		build_cost_resources = {
@@ -1893,6 +1893,28 @@ equipment_modules = {
 			air_defence = 0.01
 			air_attack = 0.01
 			air_agility = 0.01
+		}
+
+		build_cost_resources = {
+			rubber = 1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}	
+
+	alpaca_suite = { #ALPACA suite (it does not have a meaning, sounds cool tho)
+		abbreviation = "alp"
+		category = mine_warfare_defense
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+
+		multiply_stats = {
+			air_range = 0.05
+			air_defence = 0.02
+			air_attack = 0.02
 		}
 
 		build_cost_resources = {
@@ -1982,6 +2004,8 @@ equipment_modules = {
 		dismantle_cost_ic = 2.5
 		xp_cost = 1
 	}
+
+
 
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                ##     ## ######## ########  #### ##     ## ##     ## 
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ###   ### ##       ##     ##  ##  ##     ## ###   ### 
