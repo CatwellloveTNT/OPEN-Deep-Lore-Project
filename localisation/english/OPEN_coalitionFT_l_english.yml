@@ -175,6 +175,15 @@ l_english:
  CHF_and_ensure_tt:0 "The §YDefenders of Ponykind§W Spirit will be improved by:\n§G+ 5% Division Speed§W"
  CHF_punish_those_responsible_tt:0 "The §YDefenders of Ponykind§W Spirit will be improved by:\n§G+ 15% Planning Speed§W"
  CHF_it_never_happens_again_tt:0 "The §YDefenders of Ponykind§W Spirit will be improved by:\n§G+ 5% Division Attack\n+ 5% Division Defense§W"
+ TST_up_production_quota_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by:\n§G+ 10% Dockyard Output"
+ TST_swarm_theory_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by:\n§G+ 5% Dockyard Output§W\n\nThe §YMarinha Costeira§W Spirit will be improved by:\n§G+ 5% Screen Attack\n§G+ 5% Screen Defense§W"
+ TST_the_little_fish_tt:0 "The §YMarinha Costeira§W Spirit will be improved by:\n§G+ 2% Screen Attack\n§G+ 2% Screen Defense§W"
+ TST_the_big_fish_tt:0 "The §YMarinha Costeira§W Spirit will be improved by:\n§G+ 5% Capital Ship Attack\n§G+ 5% Capital Ship Defense§W"
+ TST_commission_the_portugal_class_carrier_tt:0 "The §YMarinha Costeira§W Spirit will be improved by:\n§G+ 15% Sortie Efficiency§W"
+ TST_intense_naval_drills_tt:0 "The §YMarinha Costeira§W Spirit will be §Ygreatly§W improved by:\n§G+ 5% Capital Ship Attack\n§G+ 5% Capital Ship Defense§W\n§G+ 3% Screen Defense§W\n§G+ 3% Screen Attack§W\n§G+ 5% Sortie Efficiency§W\n§G+ 15% Naval Air Attack§W\n§G+ 15% Naval Air Agility§W\n§G+ 5% Naval Damage Factor§W\n§G+ 5% Naval Defense Factor§W"
+ TST_the_balatro_tt:0 "The §YMarinha Costeira§W Spirit will be improved by:\n§G+ 5% Naval Air Attack§W\n§G+ 5% Naval Air Agility§W"
+ TST_to_challenge_the_navy_of_humankind_tt:0 "The §YMarinha Costeira§W Spirit will be improved by:\n§G- 20% Enemy Fleet Size Penality§W\n§G+ 40% Ship Recovery Rate§W"
+ TST_redirect_funds_towards_the_ground_forces_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by:\n§G+ 5% Factory Output§W"
 
 # -- COUNTRY FLAG FOR FOCUS HINT PROGRESSION LOC -- #
  tst_la_brea_has_embraced_the_35_65_plan:0 "La Brea has chosen to go ahead with the 35/65 plan"

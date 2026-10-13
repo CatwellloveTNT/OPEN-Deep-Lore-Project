@@ -29,4 +29,34 @@ ideas = {
 			}
 	}
 }
+	country = {
+			tst_leftover_arcadian_connections = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = TST
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				
+			}
+	}
+}
 }

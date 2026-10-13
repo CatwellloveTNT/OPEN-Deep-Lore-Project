@@ -25,3 +25,147 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = tst.2
+	title = tst.2.t
+	desc = tst.2.d
+
+	is_triggered_only = yes
+
+	option = { # let's get to it
+		name = tst.2.a
+		ai_chance = {factor = 100}
+
+	}
+}
+country_event = {
+	id = tst.3
+	title = tst.3.t
+	desc = tst.3.d
+
+	is_triggered_only = yes
+
+	option = { # OK, tell me about the first option
+		name = tst.3.a
+		ai_chance = {factor = 100}
+
+		country_event = {
+			id = tst.4
+			days = 1
+		}
+
+	}
+}
+
+country_event = {
+	id = tst.4
+	title = tst.4.t
+	desc = tst.4.d
+
+	is_triggered_only = yes
+
+	option = { # And the second option?
+		name = tst.4.a
+		ai_chance = {factor = 100}
+
+		country_event = {
+			id = tst.5
+			days = 1
+		}
+
+	}
+}
+
+country_event = {
+	id = tst.5
+	title = tst.5.t
+	desc = tst.5.d
+
+	is_triggered_only = yes
+
+	option = { # right...
+		name = tst.5.a
+		ai_chance = {factor = 100}
+
+		country_event = {
+			id = tst.6
+			days = 1
+		}
+
+	}
+}
+
+country_event = {
+	id = tst.6
+	title = tst.6.t
+	desc = tst.6.d
+
+	is_triggered_only = yes
+
+	option = { # Humanity has 11 carriers, we have 0. Let's end it at that.
+		name = tst.6.a
+		ai_chance = {factor = 100}
+
+		complete_national_focus = TST_abandon_the_navy
+
+	}
+
+	option = { # To win a battle like this we must fight, even if it seems hopeless
+		name = tst.6.b
+		ai_chance = {factor = 0}
+
+		complete_national_focus = TST_the_35_65_plan
+
+	}
+
+}
+
+country_event = { #triste tests the balatro fighter, in the event they conduct their first cat shot off a carrier deck
+	id = tst.7
+	title = tst.7.t
+	desc = tst.7.d
+
+	is_triggered_only = yes
+
+	option = { # Mudhen 1, Good shot. Let's run it again.
+		name = tst.7.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+
+country_event = { #this event shoots off if the navy is abandoned, sailors pack up their belongings, and somberly look at their ships for the last time as they depart for home or other branches of the armed forces
+	id = tst.8
+	title = tst.8.t
+	desc = tst.8.d
+
+	is_triggered_only = yes
+
+	option = { # What can I say... She'll be lonely now, I know that.
+		name = tst.8.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+
+country_event = { #this event shoots off if the 35/65 plan is put into action, aboard one of the carriers, a admiral looks at the balatros taking off and landing on the deck, and is cautiously optimistic about the future of Triste
+	id = tst.9
+	title = tst.9.t
+	desc = tst.9.d
+
+	is_triggered_only = yes
+
+	option = { # But, can this truly defeat the Arcadius?
+		name = tst.9.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+

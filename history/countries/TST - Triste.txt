@@ -24,11 +24,13 @@ OOB = ""
 		attack_helo1 = 1
 		transport_helo1 = 1
 		gw_artillery = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_submarine = 1
 		basic_light_battery = 1
 		basic_torpedo = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1 
+		early_ship_hull_heavy = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_carrier = 1
 
 
 
@@ -126,3 +128,76 @@ set_popularities = {
 	communism = 0
 	neutrality = 65
 }
+
+add_ideas = tst_leftover_arcadian_connections
+
+add_dynamic_modifier = {
+	modifier = TST_dynamic_economy
+}
+add_dynamic_modifier = {
+	modifier = TST_knights_of_triste
+}
+add_dynamic_modifier = {
+	modifier = TST_the_tristan_air_force
+}
+add_dynamic_modifier = {
+	modifier = TST_the_tristan_navy
+}
+
+# -------------------------------------- TRISTAN ECONOMY VARS --------------------------------------
+set_variable = { tst_eco_dynamic_st = 0.05 } #stability
+set_variable = { tst_eco_dynamic_mef = 0.00 } #max efficency cap
+set_variable = { tst_eco_dynamic_egf = -0.10 } #efficieny growth
+set_variable = { tst_eco_dynamic_icf = -0.05 } #factory output
+set_variable = { tst_eco_dynamic_cgf = 0.00 } #consumer goods factor
+set_variable = { tst_eco_dynamic_bf = 0.00 } #constrution speed
+set_variable = { tst_eco_dynamic_icd = 0.00 } #constrution speed
+# -------------------------------------- TRISTAN MILITARY VARS --------------------------------------
+set_variable = { triste_defenders_of_ponykind_aaf = -0.1 } #army attack
+set_variable = { triste_defenders_of_ponykind_adf = 0.05 } #army defense
+set_variable = { triste_defenders_of_ponykind_asf = -0.1 } #army speed
+set_variable = { triste_defenders_of_ponykind_aof = 0.05 } #army org
+set_variable = { triste_defenders_of_ponykind_aor = 0.00 } #army org regain
+set_variable = { triste_defenders_of_ponykind_btf = -0.1 } #army breakthrough
+set_variable = { triste_defenders_of_ponykind_mpf = 0.0 } #max planning
+set_variable = { triste_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
+set_variable = { triste_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+set_variable = { triste_defenders_of_ponykind_mtl = 0.0 } #min training time
+set_variable = { triste_defenders_of_ponykind_con = 0.00 } #recruitable pop %
+set_variable = { triste_defenders_of_ponykind_crb = 0.0 } #coordination bonus
+set_variable = { triste_defenders_of_ponykind_ahf = 0.00 } #army health
+set_variable = { triste_defenders_of_ponykind_rcf = 0.00 } #recon factor
+set_variable = { triste_defenders_of_ponykind_mdi = 0 } #max entrenchment
+set_variable = { triste_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+# -------------------------------------- TRISTAN AIR FORCE VARS --------------------------------------
+set_variable = { triste_the_tristan_air_force_acf = 0.0} #air accidents
+set_variable = { triste_the_tristan_air_force_aagf = -0.10} # air agility
+set_variable = { triste_the_tristan_air_force_aatkf = -0.10} #air attack
+set_variable = { triste_the_tristan_air_force_adf = -0.10} # air defense
+set_variable = { triste_the_tristan_air_force_nstf = 0} # naval strike factor
+set_variable = { triste_the_tristan_air_force_arf = 0.05} # air range
+set_variable = { triste_the_tristan_air_force_ase = 0.0} # air superiority
+set_variable = { triste_the_tristan_air_force_gtf = 0.0} # ground attack factor
+set_variable = { triste_the_tristan_air_force_ahdf = 0.00} # air home defense factor
+set_variable = { triste_the_tristan_air_force_asbc = -0.05 } # air_superiority_bonus_in_combat
+# -------------------------------------- TRISTAN NAVY VARS --------------------------------------
+set_variable = { triste_the_tristan_navy_ndaf = 0.0} #naval damage factor
+set_variable = { triste_the_tristan_navy_ndef = 0.0} #naval defense factor
+set_variable = { triste_the_tristan_navy_navdet = 0.0} # naval detection
+set_variable = { triste_the_tristan_navy_nefsrpf = -0.10} # naval enemy fleet size ratio penality factor
+set_variable = { triste_the_tristan_navy_nhc = 0} # naval hit chance
+set_variable = { triste_the_tristan_navy_nmhc = 0.05} # naval mine hit chance
+set_variable = { triste_the_tristan_navy_nmdf = 0.0} # naval mines damage factor
+set_variable = { triste_the_tristan_navy_nmf = -0.3} # naval morale factor
+set_variable = { triste_the_tristan_navy_nsf = 0.00} # naval speed factor
+set_variable = { triste_the_tristan_navy_nof = -0.05 } # navy org factor
+set_variable = { triste_the_tristan_navy_nmrf = -0.10} # navy max range
+set_variable = { triste_the_tristan_navy_ncsaf = -0.10} # navy capital ship attack factor
+set_variable = { triste_the_tristan_navy_ncsdf = -0.10} # navy capital ship defense factor
+set_variable = { triste_the_tristan_navy_nsaf = 0.05} # navy screen attack factor
+set_variable = { triste_the_tristan_navy_nsdf = 0.05} # navy screen defense factor
+set_variable = { triste_the_tristan_navy_ncaagf = -0.10} # naval carrier air agility factor
+set_variable = { triste_the_tristan_navy_sorte = -0.1} # sortie effiecncy 
+set_variable = { triste_the_tristan_navy_ncaaf = -0.1} # naval carrier air attack factor
+
+
