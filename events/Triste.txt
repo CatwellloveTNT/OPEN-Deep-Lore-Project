@@ -169,3 +169,78 @@ country_event = { #this event shoots off if the 35/65 plan is put into action, a
 
 }
 
+country_event = { #overview of the tristan air force and its history and red vengeance
+	id = tst.10
+	title = tst.10.t
+	desc = tst.10.d
+
+	is_triggered_only = yes
+
+	option = { # Red Vengeance was a wakeup call, we must remember that 
+		name = tst.10.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+
+country_event = { #test flight by a tristan ace (will have to make this girl a character). she tests the new peregrina aircraft
+	id = tst.11
+	title = tst.11.t
+	desc = tst.11.d
+
+	is_triggered_only = yes
+
+	option = { # I'd say she ready to take the fight to humanity, control.
+		name = tst.11.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+
+country_event = { #the ace girl does mock dogfights with some of the top students in the academy
+	id = tst.12
+	title = tst.12.t
+	desc = tst.12.d
+
+	is_triggered_only = yes
+
+	option = { # You'll all make good pilots, I know it.
+		name = tst.12.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+
+country_event = { #triste tests out the new proximity fuze in the circuit, it manages to down 2 coalition battymanzels before the peregrina retreats
+	id = tst.13
+	title = tst.13.t
+	desc = tst.13.d
+
+	is_triggered_only = yes
+
+	option = { # Looks like we've managed to beat their proximity spoofing, ha!
+		name = tst.13.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+
+country_event = { #the ace girl stands by her plane, looks up into the sky to see her fellow pilots flying eaion 2s, roar of their engines almost deafening. she smiles to herself, and thinks Triste may actually stand a chance.
+	id = tst.14
+	title = tst.14.t
+	desc = tst.14.d
+
+	is_triggered_only = yes
+
+	option = { #But I can't help but wonder... What makes them so unreconcilable?
+		name = tst.14.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+

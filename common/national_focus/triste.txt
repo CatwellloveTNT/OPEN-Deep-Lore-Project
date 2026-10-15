@@ -832,7 +832,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TST_the_2032_defensive_summit
 		}
-		cost = 5
+		cost = 2
 		available = {
 			has_war = no
 		}
@@ -904,6 +904,11 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+
+			hidden_effect = {
+				news_event = news.31
+			}
 
 		}
 
@@ -1235,9 +1240,7 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				improved_ship_hull_carrier = 1
-			}
-			set_technology = {
-				improved_carrier = 1
+				popup = yes
 			}				
 			}
 
@@ -1281,6 +1284,22 @@ focus_tree = {
 
 			custom_effect_tooltip = extra_space
 			custom_effect_tooltip = TST_commission_the_portugal_class_carrier_tt
+
+
+		custom_effect_tooltip = extra_space
+
+		CLS = {
+			country_event = {
+				id = col.1009
+			}
+		}
+
+		custom_effect_tooltip = extra_space
+
+			custom_effect_tooltip = TST_advanced_proximity_fuses__circuit_tt	
+			
+		custom_effect_tooltip = extra_space		
+		
 
 		}
 
@@ -1405,12 +1424,12 @@ focus_tree = {
 			add_to_variable = {
 				triste_the_tristan_navy_ncaagf = 0.05
 			}
+
+			add_to_variable = {
+				triste_the_tristan_air_force_nstf = 0.10
+			}				
 			
-			country_event = {
-				id = tst.7
-			}
-			
-			custom_effect_tooltip = extra_space
+
 
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
@@ -1442,7 +1461,14 @@ focus_tree = {
 			custom_effect_tooltip = extra_space			
 
 
+
 			custom_effect_tooltip = TST_the_balatro_tt			
+			custom_effect_tooltip = extra_space
+			country_event = {
+				id = tst.7
+			}
+			
+			custom_effect_tooltip = extra_space
 
 		}
 
@@ -1611,6 +1637,10 @@ focus_tree = {
 
 		completion_reward = {
 
+			hidden_effect = {
+				news_event = news.32
+			}
+
 		}
 
 		ai_will_do = { #
@@ -1771,7 +1801,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TST_the_2032_defensive_summit
 		}
-		cost = 5
+		cost = 2
 		available = {
 			has_war = no
 		}
@@ -1791,6 +1821,14 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+		air_experience = 50
+
+			country_event = {
+				id = tst.10
+			}
+
+
 
 		}
 
@@ -1856,6 +1894,10 @@ focus_tree = {
 
 			}
 
+			country_event = {
+				id = tst.11
+			}			
+
 		}
 
 		ai_will_do = {
@@ -1893,7 +1935,15 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_the_tristan_air_force_aatkf = 0.05
+			}
 
+			add_to_variable = {
+				triste_the_tristan_air_force_adf = 0.05
+			}		
+			
+			custom_effect_tooltip = TST_the_salvator_missile_tt
 
 		}
 
@@ -1951,6 +2001,17 @@ focus_tree = {
 
 			}
 
+			add_to_variable = {
+				triste_the_tristan_air_force_aatkf = 0.05
+			}
+
+			add_to_variable = {
+				triste_the_tristan_air_force_adf = 0.05
+			}		
+			
+			custom_effect_tooltip = TST_the_salvator_missile_tt
+
+
 		}
 
 		ai_will_do = {
@@ -1989,6 +2050,15 @@ focus_tree = {
 		completion_reward = {
 
 
+			add_to_variable = {
+				triste_the_tristan_air_force_aagf = 0.05
+			}
+
+			add_to_variable = {
+				triste_the_tristan_air_force_arf = -0.05
+			}		
+			
+			custom_effect_tooltip = TST_smaller_wings_tt			
 
 		}
 
@@ -2027,6 +2097,36 @@ focus_tree = {
 
 		completion_reward = {
 
+			air_experience = 50
+
+			add_ideas = tst_the_brazil_air_school_idea
+
+			custom_effect_tooltip = extra_space
+
+			add_to_variable = {
+				triste_the_tristan_air_force_aagf = 0.10
+			}
+
+			add_to_variable = {
+				triste_the_tristan_air_force_aatkf = 0.03
+			}
+			
+			add_to_variable = {
+				triste_the_tristan_air_force_asbc = 0.05
+			}
+
+			add_to_variable = {
+				triste_the_tristan_air_force_adf = 0.03
+			}				
+						
+			
+			custom_effect_tooltip = TST_the_brazil_air_academy_tt	
+
+			custom_effect_tooltip = extra_space
+
+			country_event = {
+				id = tst.12
+			}			
 
 
 		}
@@ -2066,6 +2166,46 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_the_tristan_air_force_aatkf = 0.02
+			}
+
+			add_to_variable = {
+				triste_the_tristan_air_force_adf = 0.02
+			}	
+			
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+
+				add_tech_bonus = {
+					name = "From Focus"
+					category = sidewinders_tech
+					bonus = 1
+					uses = 1
+				}
+
+				add_tech_bonus = {
+					name = "From Focus"
+					category = amraams_tech
+					bonus = 1
+					uses = 1
+				}				
+
+			else_if = {
+				limit = { NOT = {
+					has_dlc = "By Blood Alone"
+				} }
+
+				air_experience = 50
+		
+
+			}
+
+			}	
+			
+			custom_effect_tooltip = extra_space
+
+			custom_effect_tooltip = TST_smarter_weapons_tt						
 
 
 		}
@@ -2105,7 +2245,58 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_the_tristan_air_force_aatkf = 0.05
+			}
 
+			add_to_variable = {
+				triste_the_tristan_air_force_ase = 0.05
+			}			
+	
+			
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+
+				add_tech_bonus = {
+					name = "From Focus"
+					category = sidewinders_tech
+					bonus = 1
+					uses = 1
+				}			
+
+			else_if = {
+				limit = { NOT = {
+					has_dlc = "By Blood Alone"
+				} }
+
+				air_experience = 50
+		
+
+			}
+
+			}	
+			
+			custom_effect_tooltip = extra_space
+
+			custom_effect_tooltip = TST_advanced_proximity_fuses_tt
+
+			custom_effect_tooltip = extra_space
+
+			country_event = {
+				id = tst.13
+			}			
+			
+			CLS = {
+			country_event = {
+				id = col.1008
+			}				
+			}
+
+		custom_effect_tooltip = extra_space
+
+			custom_effect_tooltip = TST_advanced_proximity_fuses__circuit_tt	
+			
+		custom_effect_tooltip = extra_space			
 
 		}
 
@@ -2148,7 +2339,19 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_the_tristan_air_force_adf = 0.10
+			}
 
+			add_to_variable = {
+				triste_the_tristan_air_force_ase = 0.05
+			}
+			
+			add_to_variable = {
+				triste_the_tristan_air_force_gtf = 0.05
+			}		
+			
+			custom_effect_tooltip = TST_the_rc_atp_32_tt
 
 		}
 
@@ -2191,7 +2394,15 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_the_tristan_air_force_aatkf = 0.05
+			}
 
+			add_to_variable = {
+				triste_the_tristan_air_force_ase = 0.05
+			}	
+
+			custom_effect_tooltip = TST_advanced_proximity_fuses_tt			
 
 		}
 
@@ -2234,7 +2445,11 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			add_to_variable = {
+				triste_the_tristan_air_force_aagf = 0.10
+			}		
+			
+			custom_effect_tooltip = TST_dogfighting_the_tristan_way_tt
 
 		}
 
@@ -2273,7 +2488,9 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			country_event = {
+				id = tst.14
+			}
 
 		}
 
@@ -3641,7 +3858,7 @@ focus_tree = {
 		}
 	}	
 
-	focus = { #human rapprochement party
+	focus = { #human reconciliation party
 		id = TST_ban_the_hrp
 		icon = GFX_goal_generic_consumer_goods
 		x = 0

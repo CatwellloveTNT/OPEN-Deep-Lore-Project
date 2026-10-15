@@ -121,6 +121,13 @@
  col.1007.t: "The Austral Ghetto is Cleared!"
  col.1007.d: "todo: cthe coalition fails in their attempt to launch an operation to save the huamns within the ghetto and they all die"
  col.1007.a: "This will be a stain on humanity for the rest of eternity..."
+ col.1008.t: "Trouble in The Circuit"
+ col.1008.d: "todo: Triste implements a new proximity fuze system that manages to bypass the coalition's proximity spoofing suite. they down two battymanzels from the arcadius."
+ col.1008.a: "They did what?! God damnit. Get me on a line with the head of Arawaks-Engels, we need this problem solved now!"
+ col.1009.t: "A Carrier to Challenge the Arcadius?"
+ col.1009.d: "todo: Triste begins prodcution of two portugal class carriers"
+ col.1009.a: "Are they now? Ha! The crew of the Arcadius will finally have some fun!"
+
 
 # -------------------- ARCADIA -------------------- DO NOT DEADNAME THEM
  arc.1.t: "Arcadia - The First World's Pony Paradise."
@@ -906,6 +913,21 @@ tst.8.a: "What can I say... She'll be lonely now, I know that."
 tst.9.t: "Stand Proud, Sailors of Triste"
 tst.9.d: "todo: aboard one of the carriers, a admiral looks at the balatros taking off and landing on the deck, and is cautiously optimistic about the future of Triste"
 tst.9.a: "But, I wonder... Can she truly stand up to the Arcadius?"
+tst.10.t: "Our Shattered Skies"
+tst.10.d: "todo: overview of the tristan air force and its history and red vengeance"
+tst.10.a: "Red Vengeance was a wake-up call, we must remember that..."
+tst.11.t: "The Birth of the Peregrina!"
+tst.11.d: "todo: test flight by a tristan ace (will have to make this girl a character). she tests the new peregrina aircraft"
+tst.11.a: "I'd say she ready to take the fight to humanity, control."
+tst.12.t: "Earning Your Wings"
+tst.12.d: "todo: the ace girl does mock dogfights with some of the top students in the academy"
+tst.12.a: "You'll all make good pilots, I know it."
+tst.13.t: "Respingo"
+tst.13.d: "todo: triste tests out the new proximity fuze in the circuit, it manages to down 2 coalition battymanzels before the peregrina retreats"
+tst.13.a: "Kobald 1, Splash two. That'll be some good data for the tech guys!"
+tst.14.t: "An Airforce to be Proud of"
+tst.14.d: "todo: the ace girl stands by her plane, looks up into the sky to see her fellow pilots flying eaion 2s, roar of their engines almost deafening. she smiles to herself, and thinks Triste may actually stand a chance."
+tst.14.a: "We'll beat them, I know it... We have to..."
 
 
 
@@ -984,6 +1006,8 @@ tst.9.a: "But, I wonder... Can she truly stand up to the Arcadius?"
  chaffia_a_ending_tool_tip:0 "Thank you for playing §YChaffia§W! You've managed to absorb the losses of the Second and Third Skirmish and came out as the victor of the Final Skirmish.\n\nYou got Chaffia's A (canonical) ending!\n\n[twilight_sparkle_narrative_in_tt_decider]"
  tst1_tt:0 "§YAs of version 1.0, Triste only has its canonical content. Since how Triste canonically loses the Second Roadtrip War, Triste only has content up to 2035. Meaning there is §RNO CONTENT§Y if you actually manage to beat the Coalition States. Regardless I still hope you have fun with Triste and their struggle against humanity.§W"
  flashpoint_arcadius_ended:0 "The Flashpoint Arcadius incident has concluded"
+ 1008_circuit_tt: "§YThis will prove troublesome when we decide to ramp up pressure in The Circuit...§W"
+
 
 
 

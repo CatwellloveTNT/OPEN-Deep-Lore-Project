@@ -749,6 +749,42 @@ country_event = { #the coalition fails to launch their operation and all humans 
 	}
 }
 
+country_event = { #Triste implements a new proximity fuze system that manages to bypass the coalition's proximity spoofing suite. they down two battymanzels from the arcadius.
+	id = col.1008
+	title = col.1008.t
+	desc = col.1008.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # They did what?! God damnit. Get me on a line with the head of Arawaks-Engels, we need this problem solved now!
+		name = col.1008.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = 1008_circuit_tt
+
+	}
+}
+
+country_event = { #Triste begins prodcution of two portugal class carriers
+	id = col.1009
+	title = col.1009.t
+	desc = col.1009.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Are they now? Ha! The crew of the Arcadius will finally have some fun!
+		name = col.1009.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = 1008_circuit_tt
+
+	}
+}
+
 
 
 

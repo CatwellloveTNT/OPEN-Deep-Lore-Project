@@ -516,6 +516,38 @@ news_event = { #Chaffia cleans the austral ghetto
 
 }
 
+news_event = { #Triste goes ahead with the 35/65 plan
+	id = news.31
+	title = news.31.t
+	desc = news.31.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.31.a
+	}
+
+}
+
+news_event = { #Triste abandons their navy
+	id = news.32
+	title = news.32.t
+	desc = news.32.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.32.a
+	}
+
+}
+
 
 
 
