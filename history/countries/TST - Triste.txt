@@ -151,7 +151,7 @@ set_variable = { tst_eco_dynamic_egf = -0.10 } #efficieny growth
 set_variable = { tst_eco_dynamic_icf = -0.05 } #factory output
 set_variable = { tst_eco_dynamic_cgf = 0.00 } #consumer goods factor
 set_variable = { tst_eco_dynamic_bf = 0.00 } #constrution speed
-set_variable = { tst_eco_dynamic_icd = 0.00 } #constrution speed
+set_variable = { tst_eco_dynamic_icd = 0.00 } #dockyard output
 # -------------------------------------- TRISTAN MILITARY VARS --------------------------------------
 set_variable = { triste_defenders_of_ponykind_aaf = -0.1 } #army attack
 set_variable = { triste_defenders_of_ponykind_adf = 0.05 } #army defense
@@ -161,7 +161,7 @@ set_variable = { triste_defenders_of_ponykind_aor = 0.00 } #army org regain
 set_variable = { triste_defenders_of_ponykind_btf = -0.1 } #army breakthrough
 set_variable = { triste_defenders_of_ponykind_mpf = 0.0 } #max planning
 set_variable = { triste_defenders_of_ponykind_pns = -0.1 } #lol pns #planning speed
-set_variable = { triste_defenders_of_ponykind_spf = -0.05 } #supply consumption factor
+set_variable = { triste_defenders_of_ponykind_spf = 0.05 } #supply consumption factor
 set_variable = { triste_defenders_of_ponykind_mtl = 0.0 } #min training time
 set_variable = { triste_defenders_of_ponykind_con = 0.00 } #recruitable pop %
 set_variable = { triste_defenders_of_ponykind_crb = 0.0 } #coordination bonus

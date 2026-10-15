@@ -127,6 +127,12 @@
  col.1009.t: "A Carrier to Challenge the Arcadius?"
  col.1009.d: "todo: Triste begins prodcution of two portugal class carriers"
  col.1009.a: "Are they now? Ha! The crew of the Arcadius will finally have some fun!"
+ col.1010.t: "Solaris Picks Up Massive Tristan Fortification Effort"
+ col.1010.d: "todo: Triste begins work on delaying the coalition states in the second roadtrip war"
+ col.1010.a: "Concerning, but worthless."
+ col.1011.t: "Triste: The Paper Tiger"
+ col.1011.d: "todo: A false intelligence report by TFI states that Triste is at its weakest point since 1990"
+ col.1011.a: "Ha! Maybe we'll beat them in 4 days this time."
 
 
 # -------------------- ARCADIA -------------------- DO NOT DEADNAME THEM
@@ -928,6 +934,15 @@ tst.13.a: "Kobald 1, Splash two. That'll be some good data for the tech guys!"
 tst.14.t: "An Airforce to be Proud of"
 tst.14.d: "todo: the ace girl stands by her plane, looks up into the sky to see her fellow pilots flying eaion 2s, roar of their engines almost deafening. she smiles to herself, and thinks Triste may actually stand a chance."
 tst.14.a: "We'll beat them, I know it... We have to..."
+tst.15.t: "In the Defense of Triste"
+tst.15.d: "todo: La Brea meets like a general character and dicusses the situation the triste defense forces are in"
+tst.15.a: "We have much to do."
+tst.16.t: "Blood for Every Meter"
+tst.16.d: "todo: La Brea meets with a couple of aviceynian spies and a top general/theorist to plan out how triste would combat the coalition"
+tst.16.a: "Aviceyn seems to forget we aren't the size of a continent, but we'll try."
+tst.17.t: "Ready for Anything"
+tst.17.d: "todo: La Brea does a personal inspection of the army"
+tst.17.a: "Just let them come..."
 
 
 
@@ -1007,6 +1022,8 @@ tst.14.a: "We'll beat them, I know it... We have to..."
  tst1_tt:0 "§YAs of version 1.0, Triste only has its canonical content. Since how Triste canonically loses the Second Roadtrip War, Triste only has content up to 2035. Meaning there is §RNO CONTENT§Y if you actually manage to beat the Coalition States. Regardless I still hope you have fun with Triste and their struggle against humanity.§W"
  flashpoint_arcadius_ended:0 "The Flashpoint Arcadius incident has concluded"
  1008_circuit_tt: "§YThis will prove troublesome when we decide to ramp up pressure in The Circuit...§W"
+ 1010_tt:0 "The §YLegacy of the First Roadtrip War§W debuff will recieve an additional §R- 15% Division Speed§W on the outbreak of the §YSecond Roadtrip War§W" 
+ 1011_tt:0 "The §W§YLegacy of the First Roadtrip War§W debuff will recieve an additional §R -10% Division Attack§W and §R -10% Breakthrough§W and §R -10% Army Organization Factor§W §Y60§W days after the outbreak of the §YSecond Roadtrip War§W"
 
 
 

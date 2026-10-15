@@ -86,6 +86,12 @@ focus_tree = {
 
 		completion_reward = {
 
+			army_experience = 50
+
+			country_event = {
+				id = tst.15
+			}
+
 		}
 
 		ai_will_do = {
@@ -93,7 +99,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { #
+	focus = { #call this somethingg like "the la brea doctrine"
 		id = TST_follow_the_teachings_of_la_brea
 		icon = GFX_goal_generic_consumer_goods
 		x = 3
@@ -126,6 +132,21 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_adf = 0.02
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.03
+			}	
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_mdi = 0.50
+			}				
+
+			custom_effect_tooltip = TST_follow_the_teachings_of_la_brea_tt
+
 
 		}
 
@@ -165,6 +186,28 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_defenders_of_ponykind_adf = 0.03
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.05
+			}	
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_mdi = 0.5
+			}	
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_btf = 0.05
+			}	
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_asf = 0.05
+			}				
+
+			custom_effect_tooltip = TST_construct_the_arado_training_camp_tt
+
 		}
 
 		ai_will_do = {
@@ -202,6 +245,20 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+		add_tech_bonus = {
+			name = "From Focus"
+			category = infantry_weapons
+			uses = 1
+			bonus = 1
+		}	
+		
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.02
+			}			
+
+			custom_effect_tooltip = TST_develop_the_kalpara_5x_tt
 
 		}
 
@@ -241,6 +298,32 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_tech_bonus = {
+				name = "From Focus"
+				category = pony_genetics_tech
+				bonus = 1
+				uses = 1
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_rcf = 0.10
+			}	
+
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_asf = 0.05
+			}	
+			
+			add_to_variable = {
+				tst_eco_dynamic_st = 0.05
+			}
+			
+			add_to_variable = {
+				tst_eco_dynamic_cgf = 0.02
+			}			
+
+			custom_effect_tooltip = TST_embrace_the_gifts_of_ponykind_tt
+			
 		}
 
 		ai_will_do = {
@@ -282,6 +365,28 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.05
+			}	
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_spf = -0.15
+			}	
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_crb = 0.05
+			}	
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_mpf = 0.05
+			}		
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_pns = 0.15
+			}		
+			
+			custom_effect_tooltip = TST_study_the_failures_of_the_first_roadtrip_war_tt
+
 		}
 
 		ai_will_do = {
@@ -320,6 +425,17 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_aof = 0.05
+			}	
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_adf = 0.05
+			}		
+
+			custom_effect_tooltip = TST_destroy_the_fear_of_humankind_tt
+			
 
 		}
 
@@ -362,6 +478,20 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.05
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_asf = 0.05
+			}
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_btf = 0.05
+			}			
+			
+			custom_effect_tooltip = TST_adopt_the_aviceyian_model_tt			
+
 		}
 
 		ai_will_do = {
@@ -400,6 +530,39 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.05
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_aof = 0.05
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_aor = 0.05
+			}		
+			
+			custom_effect_tooltip = TST_a_tristan_land_war_tt	
+
+			custom_effect_tooltip = extra_space
+
+			custom_effect_tooltip = TST_a_tristan_land_war_tt_2	
+			
+			custom_effect_tooltip = extra_space
+
+			country_event = {
+				id = tst.16
+			}
+
+			custom_effect_tooltip = extra_space
+
+			CLS = {
+			country_event = {
+				id = col.1010
+			}	
+			}
+		
+
 		}
 
 		ai_will_do = {
@@ -437,6 +600,34 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			add_tech_bonus = {
+				name = "From Focus"
+				category = armor
+				uses = 1
+				bonus = 1
+			}
+
+			custom_effect_tooltip = extra_space
+
+			add_ideas = tst_mass_mech_idea
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_btf = 0.05
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_asf = 0.05
+			}	
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.02
+
+			}	
+			
+			custom_effect_tooltip = extra_space
+			
+			custom_effect_tooltip = TST_mass_mechanization_of_the_force_tt
 
 		}
 
@@ -479,6 +670,16 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_defenders_of_ponykind_aof = 0.05
+			}
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_crb = 0.05
+			}	
+			
+			custom_effect_tooltip = TST_to_counter_the_blitzkreig_tt
+
 		}
 
 		ai_will_do = {
@@ -518,6 +719,16 @@ focus_tree = {
 
 		completion_reward = {
 
+			set_technology = {
+				small_artifical_shields = 1
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_ahf = 0.10
+			}
+
+			custom_effect_tooltip = TST_procure_the_pacer_shield_system_tt			
+
 		}
 
 		ai_will_do = {
@@ -525,7 +736,7 @@ focus_tree = {
 		}
 	}	
 
-	focus = { #excerise total defense of triste, or TODEFTRI
+	focus = { #excerise total defense of triste, or TODETRI
 		id = TST_excerise_todeftri
 		icon = GFX_goal_generic_consumer_goods
 		x = 3
@@ -556,6 +767,20 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.03
+			}
+			
+			add_to_variable = {
+				triste_defenders_of_ponykind_btf = 0.05
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_asf = 0.05
+			}			
+
+			custom_effect_tooltip = TST_excerise_todeftri_tt
 
 		}
 
@@ -602,6 +827,20 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_to_variable = {
+				triste_defenders_of_ponykind_aaf = 0.1
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_asf = 0.1
+			}
+
+			add_to_variable = {
+				triste_defenders_of_ponykind_btf = 0.1
+			}
+
+			custom_effect_tooltip = TST_destiny_in_our_own_hooves_tt
+
 		}
 
 		ai_will_do = {
@@ -647,6 +886,8 @@ focus_tree = {
 
 		completion_reward = {
 
+		custom_effect_tooltip = TST_kill_the_snake_before_it_strikes_tt	
+
 		}
 
 		ai_will_do = {
@@ -691,45 +932,15 @@ focus_tree = {
 
 		completion_reward = {
 
-		}
+			custom_effect_tooltip = TST_lure_them_in_tt
 
-		ai_will_do = {
-		factor = 24
-		}
-	}	
+			custom_effect_tooltip = extra_space
 
-	focus = { #
-		id = TST_the_deathbed_plan
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		relative_position_id = TST_lure_them_in
-
-		prerequisite = {
-			focus = TST_lure_them_in
-		}		
-					
-		cost = 5
-		available = {
-			has_war = no
-		}
-		
-
-		bypass = {
-
-		}
-
-		cancel = {
-			has_war = yes
-		}		
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		
-
-		completion_reward = {
+			CLS = {
+				country_event = {
+					id = col.1011
+				}
+			}
 
 		}
 
@@ -737,16 +948,17 @@ focus_tree = {
 		factor = 24
 		}
 	}	
+
 
 	focus = { #
 		id = TST_the_sadhaak_megafortress
 		icon = GFX_goal_generic_consumer_goods
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = TST_kill_the_snake_before_it_strikes
 
 		prerequisite = {
-			focus = TST_kill_the_snake_before_it_strikes
+			focus = TST_kill_the_snake_before_it_strikes focus = TST_lure_them_in
 		}		
 					
 		cost = 5
@@ -770,6 +982,230 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			custom_override_tooltip = {
+				tooltip = TST_the_sadhaak_megafortress_tt
+
+			696 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19856
+				instant_build = yes
+			}
+			}
+
+			696 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19853
+				instant_build = yes
+			}
+			}	
+			
+			696 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19851	
+				instant_build = yes
+			}
+			}		
+			
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19852
+				instant_build = yes
+			}
+			}		
+			
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19849
+				instant_build = yes
+			}
+			}
+			
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19850
+				instant_build = yes
+			}
+			}	
+			
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19848
+				instant_build = yes
+			}
+			}
+			
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19846
+				instant_build = yes
+			}
+			}
+			
+			700 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19845
+				instant_build = yes
+			}
+			}
+			
+			700 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19840
+				instant_build = yes
+			}
+			}	
+			
+			703 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19835
+				instant_build = yes
+			}
+			}		
+			
+			703 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19834
+				instant_build = yes
+			}
+			}		
+			
+			703 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19827
+				instant_build = yes
+			}
+			}	
+			
+			702 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19869
+				instant_build = yes
+			}
+			}		
+			
+			702 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19826
+				instant_build = yes
+			}
+			}		
+			
+			702 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19825
+				instant_build = yes
+			}
+			}		
+			
+			702 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19828
+				instant_build = yes
+			}
+			}	
+			
+			701 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19830
+				instant_build = yes
+			}
+			}		
+			
+			701 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19833
+				instant_build = yes
+			}
+			}	
+			
+			699 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19837
+				instant_build = yes
+			}
+			}
+			
+			699 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19841
+				instant_build = yes
+			}
+			}		
+			
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19843
+				instant_build = yes
+			}
+			}
+			
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19847
+				instant_build = yes
+			}
+			}
+
+			697 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19854
+				instant_build = yes
+			}
+			}			
+
+
+			}
+	
+					
 
 		}
 
@@ -784,15 +1220,12 @@ focus_tree = {
 		x = 0
 		y = 9
 		relative_position_id = TST_the_defense_of_triste
-
-		prerequisite = {
-			focus = TST_the_deathbed_plan
-		}		
+		
 		prerequisite = {
 			focus = TST_the_sadhaak_megafortress
 		}			
 					
-		cost = 5
+		cost = 2
 		available = {
 			has_war = no
 		}
@@ -813,6 +1246,10 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			country_event = {
+				id = tst.17
+			}
 
 		}
 

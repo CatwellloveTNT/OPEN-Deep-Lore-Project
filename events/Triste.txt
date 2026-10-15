@@ -244,3 +244,47 @@ country_event = { #the ace girl stands by her plane, looks up into the sky to se
 
 }
 
+country_event = { #La Brea meets like a general character and dicusses the situation the triste defense forces are in
+	id = tst.15
+	title = tst.15.t
+	desc = tst.15.d
+
+	is_triggered_only = yes
+
+	option = { #We have much to do.
+		name = tst.15.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+
+country_event = { #La Brea meets with a couple of aviceynian spies and a top general/theorist to plan out how triste would combat the coalition
+	id = tst.16
+	title = tst.16.t
+	desc = tst.16.d
+
+	is_triggered_only = yes
+
+	option = { #Aviceyn seems to forget we aren't the size of a continent, but we'll try.
+		name = tst.16.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+
+country_event = { #La Brea does a personal inspection of the army
+	id = tst.17
+	title = tst.17.t
+	desc = tst.17.d
+
+	is_triggered_only = yes
+
+	option = { #Just let them come...
+		name = tst.17.a
+		ai_chance = {factor = 100}
+
+	}
+
+}

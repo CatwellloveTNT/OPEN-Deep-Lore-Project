@@ -444,7 +444,7 @@ technologies = {
 		}
 	
 		research_cost = 1
-		start_year = 2040
+		start_year = 2034
 		folder = {
 			name = skieslabs_folder
 			position = { x = 2 y = 18 }
@@ -492,7 +492,7 @@ technologies = {
 		}
 	
 		research_cost = 1
-		start_year = 2040
+		start_year = 2036
 		folder = {
 			name = skieslabs_folder
 			position = { x = 4 y = 18 }
@@ -540,7 +540,7 @@ technologies = {
 
 	
 		research_cost = 1
-		start_year = 2040
+		start_year = 2038
 		folder = {
 			name = skieslabs_folder
 			position = { x = 6 y = 18 }

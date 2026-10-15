@@ -785,6 +785,42 @@ country_event = { #Triste begins prodcution of two portugal class carriers
 	}
 }
 
+country_event = { #Triste begins work on delaying the coalition states in the second roadtrip war
+	id = col.1010
+	title = col.1010.t
+	desc = col.1010.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # concerning, but worthless
+		name = col.1010.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = 1010_tt
+
+	}
+}
+
+country_event = { #A false intelligence report by TFI states that Triste is at its weakest point since 1990
+	id = col.1011
+	title = col.1011.t
+	desc = col.1011.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Ha! Maybe this time we'll beat them in 4 days!
+		name = col.1011.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = 1011_tt
+
+	}
+}
+
 
 
 
