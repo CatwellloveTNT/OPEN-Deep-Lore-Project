@@ -1,0 +1,231 @@
+	TST_hyikau_building_minigame = { 
+
+	build_civilian_factories_in_664 = { #bro please come up with a name for these states
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			TST = {
+				owns_state = 664
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = hyikau_funding_flag
+			TST = {
+				owns_state = 664
+			}				
+			}
+	
+		}
+
+		cost = 100
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 30
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+		664 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}	
+		}
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}			
+
+
+	}
+
+	TST_petrotrit_building_minigame = { 
+
+	build_civilian_factories_in_627 = { #bro please come up with a name for these states
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+			TST = {
+				owns_state = 627
+			}
+			has_tech = synth_oil_experiments
+			}
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = petrotrit_funding_flag
+			TST = {
+				owns_state = 627
+			}				
+			}
+	
+		}
+
+		cost = 100
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 30
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+		664 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+			}	
+		}
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+	
+	dig_for_oil_in_in_629 = { #bro please come up with a name for these states
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+			TST = {
+				owns_state = 629
+			}
+			}
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = petrotrit_funding_flag
+			TST = {
+				owns_state = 629
+			}				
+			}
+	
+		}
+
+		cost = 100
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 629
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	dig_for_coal_in_in_516 = { #bro please come up with a name for these states
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+			TST = {
+				owns_state = 516
+			}
+			}
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = petrotrit_funding_flag
+			TST = {
+				owns_state = 516
+			}				
+			}
+	
+		}
+
+		cost = 100
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			add_resource = {
+				type = coal
+				amount = 7
+				state = 516
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+
+	}	

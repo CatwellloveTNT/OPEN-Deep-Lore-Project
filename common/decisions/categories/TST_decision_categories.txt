@@ -1,0 +1,46 @@
+
+	TST_hyikau_building_minigame = {
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+		#scripted_gui = avi_showdown_ui
+
+		allowed = {
+			original_tag = TST
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = hyikau_funding_flag
+			}
+		}
+
+		visible_when_empty = no
+	}
+
+	TST_petrotrit_building_minigame = {
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+		#scripted_gui = avi_showdown_ui
+
+		allowed = {
+			original_tag = TST
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = petrotrit_funding_flag
+			}
+		}
+
+		visible_when_empty = no
+	}	
+
+
+
+# ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

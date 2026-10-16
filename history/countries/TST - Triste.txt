@@ -152,6 +152,12 @@ set_variable = { tst_eco_dynamic_icf = -0.05 } #factory output
 set_variable = { tst_eco_dynamic_cgf = 0.00 } #consumer goods factor
 set_variable = { tst_eco_dynamic_bf = 0.00 } #constrution speed
 set_variable = { tst_eco_dynamic_icd = 0.00 } #dockyard output
+set_variable = { tst_eco_dynamic_bunker_speed = 0.00 } #bunker build speed
+set_variable = { tst_eco_dynamic_adf = 0.10 } #enemy strat bombing on our factories factor
+set_variable = { tst_eco_dynamic_frf = 0.00 } #free repair factor
+set_variable = { tst_eco_dynamic_ref = 0.00 } #repair factor
+set_variable = { tst_eco_dynamic_lrf = 0.00 } #local resources factor
+set_variable = { tst_eco_dynamic_plrpf = 0.00 } #lack of resources penality factor
 # -------------------------------------- TRISTAN MILITARY VARS --------------------------------------
 set_variable = { triste_defenders_of_ponykind_aaf = -0.1 } #army attack
 set_variable = { triste_defenders_of_ponykind_adf = 0.05 } #army defense
@@ -169,6 +175,7 @@ set_variable = { triste_defenders_of_ponykind_ahf = 0.00 } #army health
 set_variable = { triste_defenders_of_ponykind_rcf = 0.00 } #recon factor
 set_variable = { triste_defenders_of_ponykind_mdi = 0 } #max entrenchment
 set_variable = { triste_defenders_of_ponykind_mdf = 0.00 } #entrenchment speed
+set_variable = { triste_defenders_of_ponykind_lbef = 0.00 } #land fort effectiveness
 # -------------------------------------- TRISTAN AIR FORCE VARS --------------------------------------
 set_variable = { triste_the_tristan_air_force_acf = 0.0} #air accidents
 set_variable = { triste_the_tristan_air_force_aagf = -0.10} # air agility

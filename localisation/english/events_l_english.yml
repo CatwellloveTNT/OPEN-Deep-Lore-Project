@@ -943,6 +943,18 @@ tst.16.a: "Aviceyn seems to forget we aren't the size of a continent, but we'll 
 tst.17.t: "Ready for Anything"
 tst.17.d: "todo: La Brea does a personal inspection of the army"
 tst.17.a: "Just let them come..."
+tst.18.t: "The Tristan Economic Miracle"
+tst.18.d: "todo: Event going over the tristan economic miracle since the 1990 invasion"
+tst.18.a: "The fasting growing economy in the world they say!"
+tst.19.t: "Ponykind, Unity and Triste"
+tst.19.d: "todo: La Brea has a speech where he speaks about tristan unity and the threat of humanity"
+tst.19.a: "We can not fall into petty interpersonal squabbles, my fellow Tristans..."
+tst.20.t: "Things are Heating Up..."
+tst.20.d: "todo: La Brea drafts a emergency budget which allows the civilian industry to expand massively in preparation for war"
+tst.20.a: "Time is running out..."
+tst.21.t: "Triste, Second to None"
+tst.21.d: "todo: An news interview with La Brea talks about the new construction effort and the strides triste has made in further industrializing"
+tst.21.a: "Three cheers for the economy!"
 
 
 

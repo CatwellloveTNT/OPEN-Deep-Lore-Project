@@ -209,11 +209,29 @@ l_english:
  TST_kill_the_snake_before_it_strikes_tt:0 "We will gain a temporary buff which provides §G+ 10% Division Attack§W and §G+ 5% Division Speed§W for §Y120§W days upon the outbreak of the §YSecond Roadtrip War§W"
  TST_lure_them_in_tt:0 "We will gain a temporary debuff which grants §R -10% Division Attack§W and §R -10% Division Defense§W and §G +10% Division Speed§W for §Y60§W days upon the outbreak of the §YSecond Roadtrip War§W.\n\n After the debuff expires, the [CLS.GetFlag]§CCoalition States' §W§YLegacy of the First Roadtrip War§W debuff will recieve an additional §R -10% Division Attack§W and §R -10% Breakthrough§W and §R -10% Army Organization Factor§W"
  TST_the_sadhaak_megafortress_tt:0 "The §YSadhaak Megacity§W will be moderately fortified"
+ TST_fund_hyikau_tt:0 "§YFunding Hyikau will allow us to construct civilian facilities in the decisions tab§W"
+ TST_expand_petrotrit_tt:0 "§YFunding Petrotrit will allow us to construct Energy and Oil facilities in the decisions tab§W"
+ TST_optimize_the_war_machine_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 5% Factory Output§W\n§G+ 5% Production Efficiency Cap\n§G+ 2% Production Efficiency Growth§W"
+ TST_eliminate_procurement_bottlenecks_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 3% Production Efficiency Cap\n§G+ 3% Production Efficiency Growth§W"
+ TST_preempt_the_resource_blockade_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 5% Local Resoucres\n§G- 10% Lack of Resources Penality§W"
+ TST_predict_the_second_bombing_campaign_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G- 5% Enemy Strategic Bombing\n§G- 5% Lack of Resources Penality§W"
+ TST_expand_the_sadhaak_industrial_zone_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 5% Construction Speed§W"
+ TST_factory_districts_tt:0 "The §YTristan Economic Miracle§W Spirit will be adjusted by: \n§G+ 5% Factory Output\n§G+ 2% Production Efficieny Cap§W\n§G+ 5% Production Efficiency Grwoth§W\n§R+ 10% Enemy Strategic Bombing§W"
+ TST_intense_repair_drills_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 10% Free Factory Repair\n§G+ 20% Factory Repair§W"
+ TST_superfactories_tt:0 "The §YTristan Economic Miracle§W Spirit will be adjusted by: \n§G+ 10% Factory Output\n§G+ 5% Production Efficieny Cap§W\n§R+ 15% Enemy Strategic Bombing§W"
+ TST_underground_factories_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 3% Factory Output\n§G+ 2% Production Efficieny Cap§W\n§G- 10% Enemy Strategic Bombing§W"
+ TST_hardened_shelters_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 2% Factory Output\n§G+ 3% Production Efficieny Cap§W\n§G- 5% Enemy Strategic Bombing§W"
+ TST_the_industry_of_struggle_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G- 10% Lack of Resources Penality§W"
+ TST_begin_the_palarda_works_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 5% Construction Speed\n§G- 5% Consumer Goods Factor§W"
+ TST_the_bunker_basement_law_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G- 5% Enemy Strategic Bombing§W\n§G+ 10% Fort Construction Speed§W"
+ TST_supercharged_constuction_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 10% Construction Speed§W"
+ TST_build_to_survive_tt:0 "The §YTristan Economic Miracle§W Spirit will be improved by: \n§G+ 5% Construction Speed\n§G- 5% Consumer Goods Factor§W"
 
 
 # -- COUNTRY FLAG FOR FOCUS HINT PROGRESSION LOC -- #
  tst_la_brea_has_embraced_the_35_65_plan:0 "La Brea has chosen to go ahead with the 35/65 plan"
  tst_la_brea_has_abandoned_the_navy:0 "La Brea has chosen to abandon the navy entirely"
+ tst_circuit_focus_flag:0 "The Coalition has ramped up pressure in The Circuit..."
 
 
 

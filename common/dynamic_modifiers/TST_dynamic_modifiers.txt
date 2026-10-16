@@ -10,6 +10,12 @@
 		consumer_goods_factor = tst_eco_dynamic_cgf
 		production_speed_buildings_factor = tst_eco_dynamic_bf
 		industrial_capacity_dockyard = tst_eco_dynamic_icd
+		production_speed_bunker_factor = tst_eco_dynamic_bunker_speed
+		industry_air_damage_factor = tst_eco_dynamic_adf
+		industry_free_repair_factor = tst_eco_dynamic_frf
+		industry_repair_factor = tst_eco_dynamic_ref
+		local_resources_factor = tst_eco_dynamic_lrf
+		production_lack_of_resource_penalty_factor = tst_eco_dynamic_plrpf
 	}
 
 	TST_knights_of_triste = { #
@@ -32,7 +38,8 @@
 		army_strength_factor = triste_defenders_of_ponykind_ahf
 		recon_factor = triste_defenders_of_ponykind_rcf
 		max_dig_in = triste_defenders_of_ponykind_mdi
-		max_dig_in_factor = triste_defenders_of_ponykind_mdf
+		max_dig_in_factor = triste_defenders_of_ponykind_mdf #remove this for future nations, its the same thing as above
+		land_bunker_effectiveness_factor = triste_defenders_of_ponykind_lbef
 	}
 
 	TST_the_tristan_air_force = { #

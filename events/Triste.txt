@@ -288,3 +288,61 @@ country_event = { #La Brea does a personal inspection of the army
 	}
 
 }
+
+country_event = { #Event going over the tristan economic miracle since the 1990 invasion
+	id = tst.18
+	title = tst.18.t
+	desc = tst.18.d
+
+	is_triggered_only = yes
+
+	option = { #The fasting growing economy in the world they say!
+		name = tst.18.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+country_event = { #La Brea has a speech where he speaks about tristan unity and the threat of humanity
+	id = tst.19
+	title = tst.19.t
+	desc = tst.19.d
+
+	is_triggered_only = yes
+
+	option = { #We can not fall into petty interpersonal squabbles, my fellow Tristans...
+		name = tst.19.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+
+country_event = { #La Brea drafts a emergency budget which allows the civilian industry to expand massively in preparation for war
+	id = tst.20
+	title = tst.20.t
+	desc = tst.20.d
+
+	is_triggered_only = yes
+
+	option = { #Time is running out...
+		name = tst.20.a
+		ai_chance = {factor = 100}
+
+	}
+
+}
+country_event = { #An news interview with La Brea talks about the new construction effort and the strides triste has made in further industrializing
+	id = tst.21
+	title = tst.21.t
+	desc = tst.21.d
+
+	is_triggered_only = yes
+
+	option = { #Three cheers for the economy!
+		name = tst.21.a
+		ai_chance = {factor = 100}
+
+	}
+
+}

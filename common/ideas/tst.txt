@@ -131,4 +131,37 @@ ideas = {
 	}
 }
 
+	country = {
+			tst_bunker_basement_law_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = TST
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+
+				defensive_war_stability_factor = 0.20
+				offensive_war_stability_factor = 0.10				
+
+			}
+	}
+}
+
 }
