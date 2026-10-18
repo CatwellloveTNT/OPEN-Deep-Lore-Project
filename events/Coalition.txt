@@ -17,7 +17,7 @@ country_event = {
 	option = { # Glory... to Mankind
 		name = col.1.a
 		ai_chance = {factor = 100}
-		custom_effect_tooltip = metaltip
+		custom_effect_tooltip = metaltip #change this to something 1.0 canon related instead of being cheesy :sob:
 				hidden_effect = {
 			CLS = {
 				scoped_play_song = "ifrit"
@@ -41,7 +41,7 @@ country_event = {
 		CLS = {
 			country_event = {
 			id = col.3
-			days = 5
+			days = 3
 		}
 		}
 
@@ -63,7 +63,7 @@ country_event = {
 		CLS = {
 			country_event = {
 			id = col.4
-			days = 1
+			days = 2
 		}
 		}
 	}
@@ -104,7 +104,18 @@ country_event = {
 			id = col.6
 			days = 0
 		}
+
 		}
+
+		hidden_effect = {
+		TST = {
+			country_event = {
+				id = tst.23
+			}
+		}			
+		}
+
+		
 	}
 }
 # This is the event which forks the timeline
@@ -122,10 +133,12 @@ country_event = {
 		hidden_effect = {
 			CLS = {
 				country_event = {
-				id = col.7
-				days = 0
+				id = col.1012
+				days = 2
 			}
 			}
+
+
 		}
 
 	}
@@ -142,7 +155,58 @@ country_event = {
 		}
 	}
 }
-country_event = {
+
+country_event = { #Hawks dogfights the Aryx fighter and wins
+	id = col.1012
+	title = col.1012.t
+	desc = col.1012.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Ha! I got him... I actually got him!
+		name = col.1012.a
+		ai_chance = {factor = 100}
+
+
+		hidden_effect = {
+			CLS = {
+				country_event = {
+				id = col.7
+				days = 2
+			}
+			}
+		}
+
+		if = {
+			limit = { has_dlc = "By Blood Alone" }
+
+			set_technology = {
+				irst = 1
+			}
+
+			else_if = {
+				limit = { NOT = {
+					has_dlc = "By Blood Alone"
+				} }
+
+		air_experience = 10
+
+			}
+
+		}		
+
+
+	}
+
+
+
+
+
+}
+
+country_event = { #after hawks shoots down the aryx but fails to kill the king
 	id = col.7
 	title = col.7.t
 	desc = col.7.d
@@ -152,21 +216,39 @@ country_event = {
 
 	immediate = {
 		set_country_flag = hawksfailed
+
+		hidden_effect = {
+				TST = {
+				country_event = {
+					id = tst.24
+				}
+			}
+		}
+
 	}
 
 
-	option = { # A dogfight to shape the course of history was about to occur...
+	option = { # Pull back the Arcadius, this circus show was a failure!
 		name = col.7.a
 		ai_chance = {factor = 100}
-		custom_effect_tooltip = testtip
+		custom_effect_tooltip = cls.7_tt
+		custom_effect_tooltip = extra_space
 		clr_country_flag = babies_first_flag
 		complete_national_focus = CLS_flashpoint_arcadius
 		mark_focus_tree_layout_dirty = yes
-		air_experience = 10
+
+		hidden_effect = {
 		news_event = {
 			id = news.5
 			days = 1
+		}			
 		}
+
+		custom_effect_tooltip = extra_space
+
+
+
+
 		set_global_flag = flashpoint_arcadius_ended
 	}
 }
@@ -821,6 +903,187 @@ country_event = { #A false intelligence report by TFI states that Triste is at i
 	}
 }
 
+country_event = { #tfi ambushes the engineers moving onto the wreckage
+	id = col.1013
+	title = col.1013.t
+	desc = col.1013.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Let's get started
+		name = col.1013.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = 1013_tt
+
+		set_country_flag = cls_groundforce_selected
+
+	}
+}
+
+country_event = { #tristan engineers blow up the wreckage
+	id = col.1014
+	title = col.1014.t
+	desc = col.1014.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # God damnit
+		name = col.1014.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+
+country_event = { #triste deploys a company to the wreckage and a massive firefight ensues
+	id = col.1015
+	title = col.1015.t
+	desc = col.1015.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # WHERE THE HELL IS WINTERS?!?!
+		name = col.1015.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+
+country_event = { #triste deploys prowler squadron to the scramble
+	id = col.1016
+	title = col.1016.t
+	desc = col.1016.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Looks like its a prototype no more...
+		name = col.1016.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+country_event = { #the coalition manages to seize the wreckage
+	id = col.1017
+	title = col.1017.t
+	desc = col.1017.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Now lets take this apart
+		name = col.1017.a
+		ai_chance = {factor = 100}
+
+		set_technology = {
+			dynamic_artifical_shields = 1
+			popup = yes
+		}
+
+		add_tech_bonus = {
+			name = "From the Talcyon 3's wreckage"
+			category = air_equipment
+			uses = 1
+			bonus = 1
+		}
+
+		custom_effect_tooltip = extra_space
+
+		custom_effect_tooltip = col_1017_tt
+
+	}
+}
+
+country_event = { #bunnygirl event
+	id = col.1018
+	title = col.1018.t
+	desc = col.1018.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	immediate = {
+
+
+		hidden_effect = {
+
+		country_event = {
+			id = col.1018
+			days = 365
+		}
+
+		PRO = {
+			country_event = {
+				id = col.1018
+				days = 365
+			}
+		}
+		RAV = {
+			country_event = {
+				id = col.1018
+				days = 365
+			}
+		}
+		ARC = {
+			country_event = {
+				id = col.1018
+				days = 365
+			}
+		}
+		TAM = {
+			country_event = {
+				id = col.1018
+				days = 365
+			}
+		}
+		SSK = {
+			country_event = {
+				id = col.1018
+				days = 365
+			}
+		}
+		CSF = {
+			country_event = {
+				id = col.1018
+				days = 365
+			}
+		}	
+		CAT = {
+			country_event = {
+				id = col.1018
+				days = 365
+			}
+		}										
+	}			
+		}
+
+
+
+
+	option = { # Everyone likes bunnygirls
+		name = col.1018.a
+		ai_chance = {factor = 100}
+
+
+
+		add_timed_idea = {
+			idea = first_world_bunnygirl_idea
+			days = 60
+		}
+
+	}
+}
 
 
 

@@ -24,8 +24,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 1
-				stability_factor = 0.1
+				political_power_gain = 0.5
+				stability_factor = 0.15
 			}
 		}
 		solaris_high = {
@@ -42,8 +42,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 1
-				stability_factor = 0.05
+				political_power_gain = 0.3				
+				stability_factor = 0.10
 			}
 		}
 		solaris_moderate = {
@@ -60,7 +60,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 1
+				political_power_gain = 0.15				
+				stability_factor = 0.05
 			}
 		}
 
@@ -87,8 +88,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 1
-				stability_factor = 0.1
+				political_power_cost = 0.5
+				stability_factor = -0.05
 			}
 		}
 
@@ -116,7 +117,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				stability_factor = 0.1
+				stability_factor = -0.1
 			}
 		}
 
@@ -148,6 +149,34 @@ ideas = {
 			}
 
 		}
+
+		first_world_bunnygirl_idea = {
+			picture = solaris_1
+
+			allowed = {
+				is_first_world_country = yes
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.20
+				stability_factor = 0.05
+			}
+		}		
 
 
 

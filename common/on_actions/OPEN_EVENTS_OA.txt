@@ -24,10 +24,53 @@ on_actions = {
 					id = col.1
 					days = 1
 				}
-				country_event = {
-					id = col.2
-					days = 12
-				}
+			country_event = {
+					id = col.1018
+					days = 125
+				}	
+		PRO = { # ----------------------- THIS LONG LIST OF EVENTS IS FOR THE BUNNYGIRL CELEBRATION EVENT, WHICH LOOPS EVERY YEAR AND MOST FIRST WORLD NATIONS CELEBRATE IT
+			country_event = {
+				id = col.1018
+				days = 125
+			}
+		}
+		RAV = {
+			country_event = {
+				id = col.1018
+				days = 125
+			}
+		}
+		ARC = {
+			country_event = {
+				id = col.1018
+				days = 125
+			}
+		}
+		TAM = {
+			country_event = {
+				id = col.1018
+				days = 125
+			}
+		}
+		SSK = {
+			country_event = {
+				id = col.1018
+				days = 125
+			}
+		}
+		CSF = {
+			country_event = {
+				id = col.1018
+				days = 125
+			}
+		}	
+		CAT = {
+			country_event = {
+				id = col.1018
+				days = 125
+			}
+		}							
+
 			}
 
 			# ------------- Arcadia EVENTS -------------
@@ -70,6 +113,10 @@ on_actions = {
 					id = tst.1
 					days = 1
 				}
+				country_event = {
+					id = tst.22
+					days = 9
+				}				
 			}									
 
 		}

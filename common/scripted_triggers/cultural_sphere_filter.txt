@@ -27,6 +27,7 @@ is_first_world_country = {
 		original_tag = CAT
 		original_tag = ART		
 		original_tag = TAM	
+    original_tag = CSF
 	}
 }
 

@@ -306,3 +306,47 @@ defined_text = { #
 	localization_key = chf_austral_ghetto_aircav_readiness_percentage_loc
 	}
 }
+defined_text = { # 
+	name = tst_aryx_scramble_minigame_desc_initial
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_aryx_scramble_minigame_flag
+			}
+		}
+	localization_key = tst_aryx_scramble_minigame_desc_initial_loc
+	}
+}
+defined_text = { # 
+	name = tst_aryx_scramble_minigame_desc_second_phase
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+			}
+		}
+	localization_key = tst_aryx_scramble_minigame_desc_second_phase_loc
+	}
+}
+defined_text = { # 
+	name = cls_aryx_scramble_minigame_desc_initial_phase
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_aryx_scramble_setting_up_flag
+			}
+		}
+	localization_key = cls_aryx_scramble_minigame_desc_initial_phase_loc
+	}
+}
+defined_text = { # 
+	name = cls_aryx_scramble_minigame_desc_second_phase
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_aryx_scramble_minigame_flag
+			}
+		}
+	localization_key = cls_aryx_scramble_minigame_desc_second_phase_loc
+	}
+}

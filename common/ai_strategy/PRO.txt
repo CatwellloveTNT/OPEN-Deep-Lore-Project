@@ -19,6 +19,41 @@ PRO_forget_about_the_VLAPS = {
 
 }
 
+PRO_create_ifv_goons = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
+	allowed = {
+		tag = PRO
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 300
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = -10
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = 10
+	}
+
+
+
+}
+
 PRO_altered_production = {
 	allowed = {
 		original_tag = PRO

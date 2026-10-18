@@ -7,6 +7,10 @@ CLS_solaris_minigame = {
 		is_good = no
 		days_re_enable = 5
 
+		activation = {
+			has_country_flag = cls_aviceyn_did_a_minor_cyberattack
+		}
+
 
 		available = {
 			always = no
@@ -33,6 +37,10 @@ CLS_solaris_minigame = {
 		is_good = no
 		days_re_enable = 5
 
+
+		activation = {
+			has_country_flag = cls_aviceyn_did_a_major_cyberattack
+		}		
 
 		available = {
 			always = no

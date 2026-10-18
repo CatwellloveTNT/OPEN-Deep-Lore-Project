@@ -98,6 +98,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_devola_desperation_infobar"
 		textureFile = "/gfx/interface/scripted_gui_graphics/devola_desperation_infobar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tristan_airforce_icon"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristan_airforce_icon_aryx_scramble.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tristan_groundforce_icon"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristan_groundforce_icon_aryx_scramble.dds"
 	}	
 
 }

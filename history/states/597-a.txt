@@ -4,7 +4,7 @@ state={
 	provinces={
 		9952 9953 9960 9963 9967 9968 9970 9974 9976 9977 9979 10287 10288 10289 10302 
 	}
-	manpower = 584382
+	manpower = 384382
 	buildings_max_level_factor = 1
 	local_supplies = 0
 	state_category = town
@@ -35,8 +35,8 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
+			industrial_complex = 0
 			arms_factory = 0
 			radar_station = 0
 			dockyard = 0

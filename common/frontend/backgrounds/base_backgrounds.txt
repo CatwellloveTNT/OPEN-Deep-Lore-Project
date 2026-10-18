@@ -10,10 +10,13 @@
 # You will also need to create a GFX for the small icons to appear,and it should be named GFX_name_small. We have support for 1 small image to show without
 # the need to recreate the it, however that is not scalable. So if you want to have more images / make your mod compatible with other mods you have to add it
 
-# HELLO FUTURE ME, PLEASE REFERENCE LOAD 5 TO SEE HOW TO PROPERLY INPUT MY ART INTO THE MOD, 
+# HELLO FUTURE ME, PLEASE REFERENCE LOAD 1 TO SEE HOW TO PROPERLY INPUT MY ART INTO THE MOD, 
 # I DRAW THESE HOOK DRAWINGS 4000X2000 AND IT DOES NOT TRANSLATE WELL INTO 1920X1440, 
-# BUT WHAT I DID IN LOAD 5 SEEMS TO MAINTAIN THE BEST
+# BUT WHAT I DID IN LOAD 1 SEEMS TO MAINTAIN THE BEST
 # PICTURE WHILE HAVING ACCEPTABLE QUALITY LOSS
+
+#I WANT TO GO INTO GREATER DETAIL AFTER DRAWING LOAD 6 (the operation red vengeance I drawing set in the 1990s). duplicate load 1, port the 4000x2000 drawing into load 1, then scale the
+# drawing exactly into the same resolution as what is in load 1, then flatten and rename the file
 
 
 load_1 = {}
@@ -21,3 +24,4 @@ load_2 = {}
 load_3 = {}
 load_4 = {}
 load_5 = {} 
+load_6 = {} 

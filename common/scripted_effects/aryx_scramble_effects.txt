@@ -1,0 +1,237 @@
+# ---- CLAMPERS ---- #
+coalition_ground_str_clamper = {
+clamp_variable = {
+	var = var:global.coalition_ground_str
+	min = 0
+	max = 100
+}	
+}
+coalition_air_str_clamper = {
+clamp_variable = {
+	var = var:global.coalition_air_str
+	min = 0
+	max = 100
+}	
+}
+tristan_ground_str_clamper = {
+clamp_variable = {
+	var = var:global.triste_ground_str
+	min = 0
+	max = 100
+}	
+}
+tristan_air_str_clamper = {
+clamp_variable = {
+	var = var:global.triste_air_str
+	min = 0
+	max = 100
+}	
+}
+
+# ---- COALITION DECISIONS --- #
+
+cls_ground_strength_up_5_triste_down_5 = {
+
+	add_to_variable = {
+		global.coalition_ground_str = 5
+	}
+
+	add_to_variable = {
+		global.triste_ground_str = -5
+	}	
+
+	coalition_ground_str_clamper = yes
+	tristan_ground_str_clamper = yes	
+
+	custom_effect_tooltip = cls_ground_up_5_triste_down_5_tt
+
+}
+
+cls_ground_strength_up_10_triste_down_10 = {
+
+	add_to_variable = {
+		global.coalition_ground_str = 10
+	}
+
+	add_to_variable = {
+		global.triste_ground_str = -10
+	}	
+
+	coalition_ground_str_clamper = yes
+	tristan_ground_str_clamper = yes	
+
+	custom_effect_tooltip = cls_ground_up_10_triste_down_10_tt	
+
+}
+
+cls_ground_strength_up_15_triste_down_15 = {
+
+	add_to_variable = {
+		global.coalition_ground_str = 15
+	}
+
+	add_to_variable = {
+		global.triste_ground_str = -15
+	}	
+
+	coalition_ground_str_clamper = yes
+	tristan_ground_str_clamper = yes	
+		custom_effect_tooltip = cls_ground_up_15_triste_down_15_tt	
+
+}
+
+cls_air_strength_up_5_triste_down_5 = {
+
+	add_to_variable = {
+		global.coalition_air_str = 5
+	}
+
+	add_to_variable = {
+		global.triste_air_str = -5
+	}	
+
+	tristan_ground_str_clamper = yes
+	coalition_air_str_clamper = yes
+
+		custom_effect_tooltip = cls_air_up_5_triste_down_5_tt	
+
+}
+
+cls_air_strength_up_10_triste_down_10 = {
+
+	add_to_variable = {
+		global.coalition_air_str = 10
+	}
+
+	add_to_variable = {
+		global.triste_air_str = -10
+	}	
+
+	tristan_ground_str_clamper = yes
+	coalition_air_str_clamper = yes	
+
+	custom_effect_tooltip = cls_air_up_10_triste_down_10_tt	
+
+}
+
+cls_air_strength_up_15_triste_down_15 = {
+
+	add_to_variable = {
+		global.coalition_air_str = 15
+	}
+
+	add_to_variable = {
+		global.triste_air_str = -15
+	}	
+
+	tristan_ground_str_clamper = yes
+	coalition_air_str_clamper = yes
+
+		custom_effect_tooltip = cls_air_up_15_triste_down_15_tt	
+
+}
+
+# ---- TRISTAN DECISIONS --- #
+
+tristan_ground_strength_up_5_cls_down_5 = {
+
+	add_to_variable = {
+		global.triste_ground_str = 5
+	}
+
+	add_to_variable = {
+		global.coalition_ground_str = -5
+	}	
+
+	coalition_ground_str_clamper = yes
+	tristan_ground_str_clamper = yes
+	
+	custom_effect_tooltip = tst_ground_up_5_cls_down_5_tt
+
+}
+
+tristan_ground_strength_up_10_cls_down_10 = {
+
+	add_to_variable = {
+		global.triste_ground_str = 10
+	}
+
+	add_to_variable = {
+		global.coalition_ground_str = -10
+	}	
+
+	coalition_ground_str_clamper = yes
+	tristan_ground_str_clamper = yes	
+
+	custom_effect_tooltip = tst_ground_up_10_cls_down_10_tt	
+
+}
+
+tristan_ground_strength_up_15_cls_down_15 = {
+
+	add_to_variable = {
+		global.triste_ground_str = 15
+	}
+
+	add_to_variable = {
+		global.coalition_ground_str = -15
+	}	
+
+	coalition_ground_str_clamper = yes
+	tristan_ground_str_clamper = yes	
+
+	custom_effect_tooltip = tst_ground_up_15_cls_down_15_tt	
+
+}
+
+tristan_air_strength_up_5_cls_down_5 = {
+
+	add_to_variable = {
+		global.triste_air_str = 5
+	}
+
+	add_to_variable = {
+		global.coalition_air_str = -5
+	}	
+
+	tristan_ground_str_clamper = yes
+	coalition_air_str_clamper = yes
+
+	custom_effect_tooltip = tst_air_up_5_cls_down_5_tt	
+
+}
+
+tristan_air_strength_up_10_cls_down_10 = {
+
+	add_to_variable = {
+		global.triste_air_str = 10
+	}
+
+	add_to_variable = {
+		global.coalition_air_str = -10
+	}	
+
+	tristan_ground_str_clamper = yes
+	coalition_air_str_clamper = yes	
+
+	custom_effect_tooltip = tst_air_up_10_cls_down_10_tt		
+
+}
+
+tristan_air_strength_up_15_cls_down_15 = {
+
+	add_to_variable = {
+		global.triste_air_str = 15
+	}
+
+	add_to_variable = {
+		global.coalition_air_str = -15
+	}	
+
+	tristan_ground_str_clamper = yes
+	coalition_air_str_clamper = yes
+
+	custom_effect_tooltip = tst_air_up_15_cls_down_15_tt		
+
+}
+

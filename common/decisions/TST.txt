@@ -229,3 +229,595 @@
 
 
 	}	
+	TST_aryx_scramble_minigame = { #ARYX SCRAMBLE MINIGAME
+
+	demolish_the_aryx_wreckage = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			TST = {
+				has_country_flag = tst_aryx_scramble_minigame_flag	
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag			
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			custom_override_tooltip = {
+				tooltip = fake_demolish_aryx_scramble_tt
+
+				country_event = {
+					id = tst.25
+				}
+
+				CLS = {
+				country_event = {
+					id = col.1013
+				}
+			}
+
+			set_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+				
+
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+	
+	demolish_the_aryx_wreckage = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			TST = {
+				has_country_flag = tst_aryx_scramble_minigame_flag	
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag			
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			custom_override_tooltip = {
+				tooltip = fake_demolish_aryx_scramble_tt
+
+				country_event = {
+					id = tst.25
+				}
+
+				CLS = {
+				country_event = {
+					id = col.1013
+				}
+			}
+
+			set_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+				
+
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	demolish_the_aryx_wreckage_actually = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+
+
+
+			OR = {
+				check_variable = {
+					global.triste_ground_str > 79
+				}
+				check_variable = {
+					global.triste_air_str > 69
+				}				
+			}
+
+			custom_override_tooltip = {
+					tooltip = demolish_the_aryx_wreckage_actually_tt			
+			}
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			custom_override_tooltip = {
+				tooltip = fake_demolish_aryx_scramble_tt
+
+				country_event = {
+					id = tst.26
+				}
+
+				CLS = {
+				country_event = {
+					id = col.1014
+				}
+			}
+
+			clr_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+			clr_country_flag = tst_aryx_scramble_minigame_flag
+
+			CLS = {
+			clr_country_flag = cls_aryx_scramble_minigame_flag
+			clr_country_flag = cls_aryx_scramble_setting_up_flag
+			}
+			
+
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+		}		
+
+	}	
+
+	deploy_another_platoon = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = tst_groundforce_selected
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = tst_groundforce_selected			
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_re_enable = 15
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			tristan_ground_strength_up_5_cls_down_5 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 9999
+		}		
+
+	}
+	
+	deploy_another_company_one_time = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag	
+			has_country_flag = tst_groundforce_selected				
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = tst_groundforce_selected			
+			}
+	
+		}
+
+		cost = 75
+
+		fire_only_once = yes
+
+		#days_re_enable = 15
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			tristan_ground_strength_up_10_cls_down_10 = yes
+
+			set_country_flag = deploy_company_repeatable
+
+			hidden_effect = {
+				CLS = {
+					country_event = {
+						id = col.1015
+					}
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	deploy_another_company = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = deploy_company_repeatable	
+			has_country_flag = tst_groundforce_selected					
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = deploy_company_repeatable		
+			has_country_flag = tst_groundforce_selected				
+			}
+	
+		}
+
+		cost = 75
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			tristan_ground_strength_up_10_cls_down_10 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 9998
+		}		
+
+	}	
+
+	deploy_the_fusilers_battalion = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag	
+			has_country_flag = tst_groundforce_selected						
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = tst_groundforce_selected					
+			}
+	
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+	#	days_re_enable = 30
+
+		days_remove = 20
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			tristan_ground_strength_up_15_cls_down_15 = yes
+
+			custom_effect_tooltip = deploy_the_fusilers_battalion_tt
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	deploy_national_guard_airponies = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag	
+			has_country_flag = tst_airforce_selected						
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = tst_airforce_selected					
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_re_enable = 15
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			tristan_air_strength_up_5_cls_down_5 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+
+	}	
+	
+	deploy_aircraft_from_batponya_airforce_base = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag	
+			has_country_flag = tst_airforce_selected						
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = tst_airforce_selected					
+			}
+	
+		}
+
+		cost = 75
+
+		fire_only_once = no
+
+		days_re_enable = 25
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			tristan_air_strength_up_10_cls_down_10 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+
+	}
+	
+	deploy_prowler_squadron = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag	
+			has_country_flag = tst_airforce_selected	
+			has_completed_focus = TST_the_eaion_2					
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = tst_aryx_scramble_minigame_flag	
+			has_country_flag = tst_aryx_scramble_minigame_unlocked_flag		
+			has_country_flag = tst_airforce_selected					
+			}
+	
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+	#	days_re_enable = 25
+
+		days_remove = 30
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			tristan_air_strength_up_15_cls_down_15 = yes
+
+			hidden_effect = {
+				CLS = {
+					country_event = {
+						id = col.1016
+					}
+				}
+			}
+
+
+			custom_effect_tooltip = deploy_the_fusilers_battalion_tt
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+
+	}
+	

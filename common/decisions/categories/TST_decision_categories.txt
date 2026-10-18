@@ -41,6 +41,27 @@
 		visible_when_empty = no
 	}	
 
+	TST_aryx_scramble_minigame = {
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+		scripted_gui = tst_aryx_scramble_ui
+
+		allowed = {
+			original_tag = TST
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = tst_aryx_scramble_minigame_flag
+			}
+		}
+
+		visible_when_empty = yes
+	}		
+
 
 
 # ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

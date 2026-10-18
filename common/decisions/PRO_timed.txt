@@ -89,7 +89,7 @@ PRO_the_third_skirmish = {
 	end_the_war1 = {
 		priority = 320
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 365
+		days_mission_timeout = 400
 		is_good = no
 		days_re_enable = 5
 
@@ -112,8 +112,8 @@ PRO_the_third_skirmish = {
 			PRO_wins_the_third_skirmish_peace = yes
 		}
 
-		timeout_effect = {
-			pro_loses_the_third_skirmish = yes
+		timeout_effect = { #PLEASE CHANGE THIS WHEN PROTEA GETS ITS B ROUTE THIS MAKES IT SO PROTEA WINS EVEN IF THEY TIME OUT
+			PRO_wins_the_third_skirmish_peace = yes
 		}
 
 	}

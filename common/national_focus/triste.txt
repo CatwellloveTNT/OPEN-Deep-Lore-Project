@@ -2977,7 +2977,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-		factor = 24
+		factor = 1000
 		}
 	}
 

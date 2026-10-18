@@ -871,3 +871,129 @@ guiTypes = {
 
 	}
 }
+
+
+guiTypes = {
+
+
+
+	containerWindowType = {
+		name = "tst_aryx_scramble_ui_window" # -------------------------------------- TRISTAN ARYX SCRAMBLE -----------------------------------------
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 400 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+	#	background = {
+#			name = "Background"		
+#			quadTextureSprite ="GFX_pro_the_third_skirmish_ui"
+#		}
+
+		buttonType = {
+			name = "groundforce"
+			spriteType = "GFX_tristan_groundforce_icon"
+			position = {
+				x = 30 y = -50
+			}
+			orientation = CENTER
+			scale = 0.45
+		}
+		buttonType = {
+			name = "airforce"
+			spriteType = "GFX_tristan_airforce_icon"
+			position = {
+				x = 270 y = 25
+			}
+			orientation = CENTER
+			scale = 0.47
+		}
+		instantTextBoxType = {
+			name = "airforcetext"
+			text = "Airforce Decisions"
+			position = {
+				x = 315 y = 80
+			}
+			orientation = CENTER
+		
+		}
+		instantTextBoxType = {
+			name = "groundforcetext"
+			text = "Army Decisions"
+			position = {
+				x = 45 y = 85
+			}
+			orientation = CENTER
+		
+		}		
+
+
+	}
+}
+
+guiTypes = {
+
+
+
+	containerWindowType = {
+		name = "cls_aryx_scramble_ui_window" # -------------------------------------- TRISTAN ARYX SCRAMBLE -----------------------------------------
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 400 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+	#	background = {
+#			name = "Background"		
+#			quadTextureSprite ="GFX_pro_the_third_skirmish_ui"
+#		}
+
+		buttonType = {
+			name = "groundforce"
+			spriteType = "GFX_tristan_groundforce_icon"
+			position = {
+				x = 30 y = -50
+			}
+			orientation = CENTER
+			scale = 0.45
+		}
+		buttonType = {
+			name = "airforce"
+			spriteType = "GFX_tristan_airforce_icon"
+			position = {
+				x = 270 y = 25
+			}
+			orientation = CENTER
+			scale = 0.47
+		}
+		instantTextBoxType = {
+			name = "airforcetext"
+			text = "Navy Decisions"
+			position = {
+				x = 325 y = 80
+			}
+			orientation = CENTER
+			
+		}
+		instantTextBoxType = {
+			name = "groundforcetext"
+			text = "Army Decisions"
+			position = {
+				x = 45 y = 85
+			}
+			orientation = CENTER
+		
+		}		
+
+
+	}
+}
+

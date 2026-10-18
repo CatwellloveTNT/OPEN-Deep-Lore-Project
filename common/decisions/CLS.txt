@@ -1347,6 +1347,447 @@ CLS_the_austral_ghetto_minigame = {
 
 }
 
+CLS_the_aryx_scramble_minigame = {
+
+
+
+	tfi_setting_up = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = cls_aryx_scramble_setting_up_flag
+		}
+
+		cost = 0
+
+#		days_re_enable = 20
+
+		days_remove = 2
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+
+		}
+
+		remove_effect = {
+
+		
+		}
+
+		ai_will_do = {
+			factor = 25000
+		}		
+
+	}
+
+
+	recover_the_wreckage = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+
+
+
+			OR = {
+				check_variable = {
+					global.coalition_ground_str > 69
+				}			
+			}
+
+			custom_override_tooltip = {
+		#			tooltip = demolish_the_aryx_wreckage_actually_tt			
+			}
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = cls_aryx_scramble_minigame_flag
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = yes		
+
+#		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			custom_override_tooltip = {
+				tooltip = seizing_wreckage_tt
+
+				TST = {
+				country_event = {
+					id = tst.27
+				}
+				}
+
+				CLS = {
+				country_event = {
+					id = col.1017
+				}
+			}
+
+			clr_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+			clr_country_flag = tst_aryx_scramble_minigame_flag
+
+			CLS = {
+			clr_country_flag = cls_aryx_scramble_minigame_flag
+			clr_country_flag = cls_aryx_scramble_setting_up_flag
+			}
+			
+
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+		}		
+
+	}	
+
+	airdrop_heavy_weapons = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected			
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_re_enable = 15
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			cls_ground_strength_up_5_triste_down_5 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 1500
+		}		
+
+	}	
+
+	reenforce_the_11th_airexped = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected			
+			}
+	
+		}
+
+		cost = 75
+
+		fire_only_once = no
+
+		days_re_enable = 20
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			cls_ground_strength_up_10_triste_down_10 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}		
+
+	}	
+
+	trial_team_red = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected			
+			}
+	
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+	#	days_re_enable = 20
+
+		days_remove = 30
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			cls_ground_strength_up_15_triste_down_15 = yes
+
+			custom_effect_tooltip = deploy_the_fusilers_battalion_tt			
+
+			hidden_effect = {
+				TST = {
+				country_event = {
+					id = tst.28
+				}
+				}
+
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 2500
+		}		
+
+	}	
+
+	increase_the_ops_tempo = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_airforce_selected
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_airforce_selected			
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_re_enable = 15
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			cls_air_strength_up_5_triste_down_5 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+
+	}	
+
+	loosen_roe = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_airforce_selected
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_airforce_selected			
+			}
+	
+		}
+
+		cost = 65
+
+		fire_only_once = no
+
+		days_re_enable = 25
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			cls_air_strength_up_10_triste_down_10 = yes
+
+		}
+
+		ai_will_do = {
+			factor = 800
+		}		
+
+	}
+	
+	 request_vernal_deploy_to_batponya { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_airforce_selected
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_airforce_selected			
+			}
+	
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+	#	days_re_enable = 25
+
+		days_remove = 30
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			cls_air_strength_up_15_triste_down_15 = yes
+
+			custom_effect_tooltip = deploy_the_fusilers_battalion_tt
+
+		}
+
+		ai_will_do = {
+			factor = 900
+		}		
+
+	}	
+
+
+
+}
+
 
 
 

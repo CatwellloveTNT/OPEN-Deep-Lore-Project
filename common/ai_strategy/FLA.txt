@@ -104,7 +104,7 @@ FLA_buildup_goons_until_third_skirmish = { #if flaria has too many divs then pro
 	ai_strategy = {
 		type = role_ratio
 		id = open_ifvs_ai
-		value = 500
+		value = 100
 	}	
 
 	ai_strategy = { #during testing protea made less divisons than usual without apcs, just testing this for now
