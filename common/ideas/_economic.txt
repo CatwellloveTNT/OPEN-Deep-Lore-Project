@@ -528,25 +528,6 @@ ideas = {
 					is_in_faction = no
 				}
 
-				modifier = {
-					factor = 300
-
-	#				tag = BRA
-					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
-				}
-
-				modifier = {
-					factor = 400
-	#				original_tag = SWE
-					date > 1941.6.1
-				}
-
-				# Oil for hitlers oil throne!
-				modifier = {
-					factor = 600
-		#			tag = ROM
-	#				is_in_faction_with = GER
-				}
    			}
 		}
 

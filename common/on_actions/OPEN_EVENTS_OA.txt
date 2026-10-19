@@ -40,10 +40,14 @@ on_actions = {
 				days = 125
 			}
 		}
-		ARC = {
+		ARC = { 
 			country_event = {
 				id = col.1018
 				days = 125
+			}
+			country_event = { #this event starts the event chain that determines the a/b ending if cls and arc win the great war
+				id = arc.33
+				days = 70
 			}
 		}
 		TAM = {

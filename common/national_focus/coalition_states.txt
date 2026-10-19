@@ -94,7 +94,7 @@
 	focus = {
 		id = CLS_looking_inwards
 		icon = GFX_goal_generic_consumer_goods
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = CLS_assess_the_situation
 		prerequisite = { focus = CLS_assess_the_situation }
@@ -112,13 +112,16 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+
+			add_political_power = 50
+
 			country_event = {
 				id = col.16
 			}
 		}
 
-		ai_will_do = {
-		factor = 24
+		ai_will_do = { #the ai will rush this for pp for the aryx scrambe minigame
+		factor = 2000
 		}
 
 	}
@@ -127,7 +130,7 @@
 	focus = {
 		id = CLS_a_visit_to_our_little_siblings
 		icon = GFX_goal_generic_consumer_goods
-		x = -3
+		x = -5
 		y = 1
 		relative_position_id = CLS_assess_the_situation
 		prerequisite = { focus = CLS_assess_the_situation }
@@ -163,9 +166,9 @@
 
 
 	focus = {
-		id = CLS_celebrate_our_everlasting_friendship
+		id = CLS_celebrate_our_siblinghood
 		icon = GFX_goal_generic_consumer_goods
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = CLS_a_visit_to_our_little_siblings
 		prerequisite = { focus = CLS_a_visit_to_our_little_siblings }
@@ -194,13 +197,15 @@
 	}
 
 
+
+
 	focus = {
-		id = CLS_prepare_for_exercise_celestial_eclipse
+		id = CLS_renew_the_solaris_contract
 		icon = GFX_goal_generic_consumer_goods
-		x = 0
+		x = -2
 		y = 1
-		relative_position_id = CLS_celebrate_our_everlasting_friendship
-		prerequisite = { focus = CLS_celebrate_our_everlasting_friendship }
+		relative_position_id = CLS_a_visit_to_our_little_siblings
+		prerequisite = { focus = CLS_a_visit_to_our_little_siblings }
 		cost = 5
 		available = {
 		}
@@ -230,12 +235,168 @@
 
 	}
 
+	focus = {
+		id = CLS_fund_the_skyshine_program
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CLS_renew_the_solaris_contract
+		prerequisite = { focus = CLS_renew_the_solaris_contract }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}
+	
+	focus = {
+		id = CLS_the_question_of_alliance
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CLS_renew_the_solaris_contract
+		prerequisite = { focus = CLS_renew_the_solaris_contract }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_exercise_celestial_eclipse
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CLS_a_visit_to_our_little_siblings
+		prerequisite = { focus = CLS_expand_the_cultural_exchange_program }
+		prerequisite = { focus = CLS_the_question_of_alliance }
+		prerequisite = { focus = CLS_a_visit_to_our_little_siblings }				
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			hidden_effect = {
+				news_event = {
+					id = news.2
+					days = 1
+				}
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_the_praxal_festival
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 2
+		relative_position_id = CLS_a_visit_to_our_little_siblings
+		prerequisite = { focus = CLS_celebrate_our_siblinghood }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_expand_the_cultural_exchange_program
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CLS_celebrate_our_siblinghood
+		prerequisite = { focus = CLS_celebrate_our_siblinghood }
+		cost = 5
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
 
 
 	focus = {
 		id = CLS_strength_through_our_diversity
 		icon = GFX_goal_generic_consumer_goods
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = CLS_looking_inwards
 		prerequisite = { focus = CLS_looking_inwards }
@@ -253,25 +414,152 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+
+			add_political_power = 100
+
 			country_event = {
 				id = col.17
 			}
+		}
+
+		ai_will_do = { #the ai will rush this for pp for the aryx scramb
+		factor = 2000
+		}
+
+	}
+
+	focus = {
+		id = CLS_push_the_bilingual_act
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CLS_strength_through_our_diversity
+		prerequisite = { focus = CLS_strength_through_our_diversity }
+		cost = 5
+		available = {
+			NOT = { has_country_flag = coalition_crisis}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
 		}
 
 		ai_will_do = {
 		factor = 24
 		}
 
-	}
-
+	}	
 
 	focus = {
-		id = CLS_reaffirm_our_commitment_to_the_eastern_states
+		id = CLS_push_the_bilingual_act
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
 		relative_position_id = CLS_strength_through_our_diversity
 		prerequisite = { focus = CLS_strength_through_our_diversity }
+		cost = 5
+		available = {
+			NOT = { has_country_flag = coalition_crisis}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_curb_supremacist_elements_of_society
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CLS_strength_through_our_diversity
+		prerequisite = { focus = CLS_strength_through_our_diversity }
+		cost = 5
+		available = {
+			NOT = { has_country_flag = coalition_crisis}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = CLS_curb_supremacist_elements_of_society_tt
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_ban_antipony_clubs
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CLS_strength_through_our_diversity
+		prerequisite = { focus = CLS_strength_through_our_diversity }
+		cost = 5
+		available = {
+			NOT = { has_country_flag = coalition_crisis}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+
+	focus = {
+		id = CLS_reaffirm_our_commitment_to_the_eastern_states
+		icon = GFX_goal_generic_consumer_goods
+		x = -3
+		y = 1
+		relative_position_id = CLS_looking_inwards
+		prerequisite = { focus = CLS_looking_inwards }
 		cost = 5
 		available = {
 			NOT = { has_country_flag = coalition_crisis}
@@ -297,17 +585,16 @@
 
 	}
 
-
 	focus = {
-		id = CLS_exercise_celestial_eclipse
+		id = CLS_grant_amour_additional_autonomy
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
-		y = 4
-		relative_position_id = CLS_assess_the_situation
+		y = 1
+		relative_position_id = CLS_reaffirm_our_commitment_to_the_eastern_states
 		prerequisite = { focus = CLS_reaffirm_our_commitment_to_the_eastern_states }
-		prerequisite = { focus = CLS_prepare_for_exercise_celestial_eclipse } 
 		cost = 5
 		available = {
+			NOT = { has_country_flag = coalition_crisis}
 		}
 		
 		bypass = {
@@ -319,30 +606,60 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = {
-				id = col.19
-			}
-			ARC = {
-				country_event = {
-					id = arc.4
-				}
-			}
+
+			custom_effect_tooltip = CLS_grant_amour_additional_autonomy_tt
+
 		}
 
 		ai_will_do = {
 		factor = 24
 		}
 
-	}
+	}	
 
 	focus = {
-		id = CLS_address_the_chdi
+		id = CLS_humanity_undivided
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		relative_position_id = CLS_exercise_celestial_eclipse
+		relative_position_id = CLS_ban_antipony_clubs
+		prerequisite = { focus = CLS_grant_amour_additional_autonomy }
+		prerequisite = { focus = CLS_push_the_bilingual_act }		
+		cost = 5
+		available = {
+			NOT = { has_country_flag = coalition_crisis}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+
+	focus = {
+		id = CLS_the_chdi_defense_conference
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 6
+		relative_position_id = CLS_assess_the_situation
 		prerequisite = { focus = CLS_exercise_celestial_eclipse }
-		cost = 8
+		prerequisite = { focus = CLS_humanity_undivided }		
+		cost = 1
 		available = {
 			NOT = { has_country_flag = celestial_eclipse_unfinished }
 		}
@@ -357,13 +674,11 @@
 
 
 		select_effect = {
-			country_event = {
-				id = col.20
-			}
+
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = chdi_summit
+			
 		}
 
 		ai_will_do = {
@@ -371,6 +686,222 @@
 		}
 
 	}
+
+	focus = {
+		id = CLS_protea
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = CLS_the_chdi_defense_conference
+		prerequisite = { focus = CLS_the_chdi_defense_conference }		
+		cost = 1
+		available = {
+			NOT = { has_country_flag = celestial_eclipse_unfinished }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		select_effect = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_ravenhaus
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = CLS_the_chdi_defense_conference
+		prerequisite = { focus = CLS_the_chdi_defense_conference }		
+		cost = 1
+		available = {
+			NOT = { has_country_flag = celestial_eclipse_unfinished }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		select_effect = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_tarmarizu
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = CLS_the_chdi_defense_conference
+		prerequisite = { focus = CLS_the_chdi_defense_conference }		
+		cost = 1
+		available = {
+			NOT = { has_country_flag = celestial_eclipse_unfinished }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		select_effect = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_new_germany
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = CLS_the_chdi_defense_conference
+		prerequisite = { focus = CLS_the_chdi_defense_conference }		
+		cost = 1
+		available = {
+			NOT = { has_country_flag = celestial_eclipse_unfinished }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		select_effect = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
+
+	focus = {
+		id = CLS_the_arctic
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = CLS_the_chdi_defense_conference
+		prerequisite = { focus = CLS_the_chdi_defense_conference }		
+		cost = 1
+		available = {
+			NOT = { has_country_flag = celestial_eclipse_unfinished }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		select_effect = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}
+	
+	focus = {
+		id = CLS_the_coalition_states
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = CLS_the_chdi_defense_conference
+		prerequisite = { focus = CLS_tarmarizu }	
+		prerequisite = { focus = CLS_the_arctic }	
+		prerequisite = { focus = CLS_new_germany }	
+		prerequisite = { focus = CLS_ravenhaus }	
+		prerequisite = { focus = CLS_protea }										
+		cost = 1
+		available = {
+			NOT = { has_country_flag = celestial_eclipse_unfinished }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		select_effect = {
+
+		}
+
+		completion_reward = {
+			
+			custom_effect_tooltip = CLS_the_coalition_states_tt
+
+		}
+
+		ai_will_do = {
+		factor = 24
+		}
+
+	}	
 
 	focus = {
 		id = CLS_looking_to_the_future

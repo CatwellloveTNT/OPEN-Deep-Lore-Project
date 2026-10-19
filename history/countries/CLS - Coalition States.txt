@@ -143,7 +143,7 @@ puppet = CAT
 
 
 
-
+add_ideas = free_trade
 add_ideas = {
 	solaris_maximum
 }

@@ -131,6 +131,18 @@ if = {
 	}
 }
 
+set_war_support = 0.07
+set_stability = 0.80
+
+
+
+add_ideas = arc_we_patriotic_few
+add_ideas = arc_colaca
+
+
+
+
+
 puppet = ART
 
 recruit_character = ARC_starail

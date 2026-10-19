@@ -1,0 +1,68 @@
+﻿#####################
+# LAVENTILLE
+###########################
+
+add_namespace = lav
+
+
+# opening event that plays their moodsetter music
+country_event = {
+	id = lav.1
+	title = lav.1.t
+	desc = lav.1.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # We must reclaim what is rightfully ours...
+		name = lav.1.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			LAV ={
+				scoped_play_song = trailermusic1
+			}
+		}
+
+	}
+
+}
+
+country_event = { #arcadia puts sanctions onto laventille
+	id = lav.2
+	title = lav.2.t
+	desc = lav.2.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # Look at how they spit on us from their throne
+		name = lav.2.a
+		ai_chance = {factor = 100}
+
+		add_ideas = lav_light_sanctions		
+
+	}
+
+}
+
+country_event = { #arcadia and the coalition states puts sanctions onto laventille
+	id = lav.3
+	title = lav.3.t
+	desc = lav.3.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # Look at that, we have the entire First World looking down on us
+		name = lav.3.a
+		ai_chance = {factor = 100}
+
+		add_ideas = lav_heavy_sanctions
+
+	}
+
+}
+
+
+

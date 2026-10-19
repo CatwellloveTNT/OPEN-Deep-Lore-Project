@@ -1,0 +1,155 @@
+TST_aryx_scramble_minigame = {
+
+	trinidadian_foreign_intelligence_lifts_the_wreckage = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 21
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			has_country_flag = tst_aryx_scramble_minigame_starting_timed_mission_flag		
+		}
+
+
+		available = {
+			NOT = {
+				has_country_flag = tst_aryx_scramble_minigame_starting_timed_mission_flag
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = tst_aryx_scramble_minigame_starting_timed_mission_flag	
+		}
+
+		timeout_effect = {
+
+			custom_override_tooltip = {
+
+				TST = {
+				country_event = {
+					id = tst.27
+				}
+				}
+
+				CLS = {
+				country_event = {
+					id = col.1017
+				}
+			}
+			
+			TST = {
+			clr_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+			clr_country_flag = tst_aryx_scramble_minigame_flag
+			}
+
+
+			CLS = {
+			clr_country_flag = cls_aryx_scramble_minigame_flag
+			clr_country_flag = cls_aryx_scramble_setting_up_flag
+			}
+			
+
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	aviceynian_interference = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 60
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			has_country_flag = aviceyn_interference	
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = aviceyn_interference
+		}
+
+		timeout_effect = {
+				add_to_variable = {
+				opposition_support = 35
+				}
+				subtract_from_variable = {
+					starail_support = 20
+				}
+
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_country_flag = secured_the_election
+				NOT = { has_country_flag = aviceyn_interference }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	election_day = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 40
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			has_country_flag = election_final_stretch
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = election_final_stretch
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		timeout_effect = {
+			if = { 
+				limit = { check_variable = { var = starail_support value > opposition_support } 
+			}
+			ARC = {
+				country_event = {
+					id = arc.31
+				}
+			}
+			}
+			else_if = {
+				limit = { check_variable = { var = starail_support value > opposition_support } 
+			}
+			ARC = {
+				country_event = {
+					id = arc.32
+				}
+			}
+		}
+
+	}
+	}
+}
+

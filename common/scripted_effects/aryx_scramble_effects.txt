@@ -194,7 +194,7 @@ tristan_air_strength_up_5_cls_down_5 = {
 		global.coalition_air_str = -5
 	}	
 
-	tristan_ground_str_clamper = yes
+	tristan_air_str_clamper = yes
 	coalition_air_str_clamper = yes
 
 	custom_effect_tooltip = tst_air_up_5_cls_down_5_tt	
@@ -211,7 +211,7 @@ tristan_air_strength_up_10_cls_down_10 = {
 		global.coalition_air_str = -10
 	}	
 
-	tristan_ground_str_clamper = yes
+	tristan_air_str_clamper = yes
 	coalition_air_str_clamper = yes	
 
 	custom_effect_tooltip = tst_air_up_10_cls_down_10_tt		
@@ -228,7 +228,7 @@ tristan_air_strength_up_15_cls_down_15 = {
 		global.coalition_air_str = -15
 	}	
 
-	tristan_ground_str_clamper = yes
+	tristan_air_str_clamper = yes
 	coalition_air_str_clamper = yes
 
 	custom_effect_tooltip = tst_air_up_15_cls_down_15_tt		

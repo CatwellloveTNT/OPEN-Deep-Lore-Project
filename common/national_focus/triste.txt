@@ -3012,6 +3012,7 @@ focus_tree = {
 		completion_reward = {
 
 			
+			add_political_power = 25
 			add_stability = 0.10
 			country_event = {
 				id = tst.19
@@ -3020,7 +3021,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-		factor = 24
+		factor = 3000
 		}
 	}	
 

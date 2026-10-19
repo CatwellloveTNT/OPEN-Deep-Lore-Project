@@ -176,6 +176,60 @@ ideas = {
 				monthly_population = 0.20
 				stability_factor = 0.05
 			}
+		}	
+		
+		cls_aryx_scramble_extra_pp_idea = {
+			picture = solaris_1
+
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.10
+			}
+		}
+		
+		cls_aryx_scramble_reduce_pp_idea = {
+			picture = solaris_1
+
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+			}
 		}		
 
 

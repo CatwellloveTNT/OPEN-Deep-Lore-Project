@@ -923,22 +923,7 @@ country_event = { #tfi ambushes the engineers moving onto the wreckage
 	}
 }
 
-country_event = { #tristan engineers blow up the wreckage
-	id = col.1014
-	title = col.1014.t
-	desc = col.1014.d
-	picture = GFX_placeholder_art
 
-	is_triggered_only = yes
-
-
-	option = { # God damnit
-		name = col.1014.a
-		ai_chance = {factor = 100}
-
-
-	}
-}
 
 country_event = { #triste deploys a company to the wreckage and a massive firefight ensues
 	id = col.1015
@@ -1082,8 +1067,416 @@ country_event = { #bunnygirl event
 			days = 60
 		}
 
+		add_political_power = 200
+
 	}
 }
+
+country_event = { #tristan engineers blow up the wreckage
+	id = col.1019
+	title = col.1019.t
+	desc = col.1019.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # God damnit
+		name = col.1019.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+
+country_event = { #event where airdrop drifts into enemy terrirtory and the player must decide between giving the enemy 25pp or losing 5 air sup
+	id = col.1020
+	title = col.1020.t
+	desc = col.1020.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # let them have the airdrop
+		name = col.1020.a
+		ai_chance = {factor = 80}
+
+		TST = {
+			add_political_power = 75
+		}
+
+	}
+	option = { # tell the damn navy to stop with these risky drops!
+		name = col.1020.b
+		ai_chance = {factor = 20}
+
+		tristan_air_strength_up_5_cls_down_5 = yes
+
+	}
+}
+country_event = { #event where the airdrop has extra heavy weapons
+	id = col.1021
+	title = col.1021.t
+	desc = col.1021.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # how nice of the navy
+		name = col.1021.a
+		ai_chance = {factor = 100}
+
+		CLS = {
+			add_political_power = 25
+		}
+
+	}
+}
+country_event = { #event where the airdrop lands on an enemy encampment and explodes
+	id = col.1022
+	title = col.1022.t
+	desc = col.1022.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # now thats funny
+		name = col.1022.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = col.1022_tt
+
+		hidden_effect = {
+		TST = {
+			country_event = {
+				id = tst.29
+			}
+		}			
+		}
+
+
+	}
+}
+country_event = { #event where the airdrop lands in zeebgypt
+	id = col.1023
+	title = col.1023.t
+	desc = col.1023.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # how the hell did that happen?!
+		name = col.1023.a
+		ai_chance = {factor = 100}
+
+		ZEB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 500
+			}
+		}
+
+		custom_override_tooltip = {
+			tooltip = col.1023_tt
+
+		tristan_ground_strength_up_5_cls_down_5 = yes
+
+		}
+
+
+
+	}
+}
+
+country_event = { #event where the 11th reenforcement group arrvies safely to target
+	id = col.1024
+	title = col.1024.t
+	desc = col.1024.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # as planned
+		name = col.1024.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+country_event = { #event where the 11th reenforcement group arrives with a senior commanding officer
+	id = col.1025
+	title = col.1025.t
+	desc = col.1025.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # as planned
+		name = col.1025.a
+		ai_chance = {factor = 100}
+
+		add_timed_idea = {
+			idea = cls_aryx_scramble_extra_pp_idea
+			days = 10
+		}
+
+	}
+}
+
+
+country_event = { #event where the 11th reenforcement group gets wiped out in the air by aaa/manpads
+	id = col.1026
+	title = col.1026.t
+	desc = col.1026.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # how the hell did that happen?!
+		name = col.1026.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			TST = {
+			country_event = {
+				id = tst.30
+			}				
+			}
+		}
+
+		custom_override_tooltip = {
+			tooltip = col.1027.tt
+
+		tristan_ground_strength_up_10_cls_down_10 = yes		
+
+		}
+
+
+
+	}
+}
+
+country_event = { #event where cap sorties goes off as planned
+	id = col.1027
+	title = col.1027.t
+	desc = col.1027.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Right
+		name = col.1027.a
+		ai_chance = {factor = 100}
+
+	}
+}
+
+country_event = { #event where the cat malfunctions due to heavy usage and reduces sortie output
+	id = col.1028
+	title = col.1028.t
+	desc = col.1028.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		CLS = {
+			set_country_flag = cls_aryx_scramble_cats_malfunction
+		}
+
+		MSB = {
+			set_country_flag = hello_msb_please_delay_coalition_sorties_aryx_scramble
+		}			
+		}
+	}
+
+
+	option = { # Somebody get that cat working again NOW!
+		name = col.1028.a
+		ai_chance = {factor = 100}
+
+
+		custom_effect_tooltip = col.1028_tt
+
+	}
+}
+
+country_event = { #event where the lightening of roe results in greater results for the navy
+	id = col.1029
+	title = col.1029.t
+	desc = col.1029.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # As expected
+		name = col.1029.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+
+country_event = { #event where the lightening of roe results in the shootdown of a civilian airliner
+	id = col.1030
+	title = col.1030.t
+	desc = col.1030.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # That was not supposed to happen!
+		name = col.1030.a
+		ai_chance = {factor = 100}
+
+		add_political_power = -25
+
+
+
+		custom_override_tooltip = {
+			tooltip = col.1030_tt
+
+	tristan_air_strength_up_10_cls_down_10 = yes			
+		}
+
+	}
+}
+
+
+
+country_event = { #event where tristan heavy platoons prove troublesome for the lightly armed coalition forces
+	id = col.1031
+	title = col.1031.t
+	desc = col.1031.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_timed_idea = {
+				idea = cls_aryx_scramble_reduce_pp_idea
+				days = 10
+			}
+		}
+	}
+
+
+	option = { # can we please call an airstrike on those guys
+		name = col.1031.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = col.1031_tt
+
+	}
+}
+
+country_event = { #Arcadia comes to the coalition states to help put extra sanctions on laventille 
+	id = col.1032
+	title = col.1032.t
+	desc = col.1032.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # of course we'll help
+		name = col.1032.a
+		ai_chance = {factor = 50}
+
+		add_political_power = -100
+
+		ARC = {
+
+			country_event = {
+				id = arc.34
+			}
+
+		}		
+
+		custom_effect_tooltip = extra_space		
+
+		custom_effect_tooltip = col.1032_a_tt
+
+		add_to_variable = {
+			global.coalition_said_yes = 1
+		}
+
+		
+
+
+
+	}
+	option = { # what do we have to do with laventille again?
+		name = col.1032.b
+		ai_chance = {factor = 50}
+
+		ARC = {
+
+			country_event = {
+				id = arc.35
+			}
+
+		}		
+
+		custom_effect_tooltip = extra_space
+
+		custom_effect_tooltip = col.1032_b_tt
+
+		add_to_variable = {
+			global.coalition_said_no = 1
+		}
+
+
+
+	}
+
+
+}
+
+country_event = { #unique event where triste somehow forgets to initiate the aryx scramble minigame and trinidadian foreign intelligence seizes the wreck without any hassle
+	id = col.1033
+	title = col.1033.t
+	desc = col.1033.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # wow, that was easy.
+		name = col.1033.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+
+country_event = { #aviceyn intervenes in the aryx scramble
+	id = col.1034
+	title = col.1034.t
+	desc = col.1034.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # our window has closed.
+		name = col.1034.a
+		ai_chance = {factor = 100}		
+
+	}
+}
+
 
 
 

@@ -87,6 +87,7 @@ on_actions = {
 				set_variable = { opposition_support = 27 }		
 			}	
 			
+			# ---------------- SACRED BOW -------------------- #
 			set_variable = { global.num_of_strike_aircraft = 650 }
 			set_variable = { global.num_of_awacs = 2 }
 			set_variable = { global.num_of_ewa = 5 }
@@ -99,8 +100,13 @@ on_actions = {
 			set_variable = { global.destruction_r5 = 0 } #
 			set_variable = { global.destruction_r6 = 0 } #
 			set_variable = { global.destruction_r7 = 0 } #		
-			set_variable = { global.total_destroyed_regions = 0} #PLEASE CHANGE THIS BACK TO 0 FOR RELEASE THIS IS JUST FOR TESTING			
-
+			set_variable = { global.total_destroyed_regions = 0} #PLEASE CHANGE THIS BACK TO 0 FOR RELEASE THIS IS JUST FOR TESTING		
+			# ---------------- SACRED BOW -------------------- #
+			
+			# ---------------- THE BOND WITH OUR LITTLE SIBLINGS -------------------- #		
+			set_variable = {  global.coalition_said_yes = 0 }				
+			set_variable = {  global.coalition_said_no = 0 }
+			# ---------------- THE BOND WITH OUR LITTLE SIBLINGS -------------------- #				
 		}
 
 		effect = { # ----------------------------- START GAME GOON SETUP ------------------------------

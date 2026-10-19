@@ -130,6 +130,7 @@ set_popularities = {
 }
 
 add_ideas = tst_leftover_arcadian_connections
+add_ideas = partial_economic_mobilisation
 
 add_dynamic_modifier = {
 	modifier = TST_dynamic_economy

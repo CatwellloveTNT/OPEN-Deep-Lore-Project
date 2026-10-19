@@ -163,5 +163,36 @@ ideas = {
 			}
 	}
 }
+	country = {
+			tst_aryx_scramble_bad_pp_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = TST
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+
+				political_power_factor = -0.1				
+
+			}
+	}
+}
 
 }

@@ -129,6 +129,74 @@ country_event = { #chaffia deports humans to aviceyn after winning in protea
 
 	}
 }
+country_event = { #The Aryx Scramble minigame begins
+	id = avi.8
+	title = avi.8.t
+	desc = avi.8.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #They Can not let those fleshdogs get that wreck!
+		name = avi.8.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			country_event = {
+				id = avi.9
+				days = 170
+			}
+		}
+
+	}
+}
+country_event = { #with the aryx scramble raging on for a several days now and with the king now settled back in aviceyn, aviceyn will intervene in the conflict
+	id = avi.9
+	title = avi.9.t
+	desc = avi.9.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #They Can not let those fleshdogs get that wreck!
+		name = avi.9.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = avi.9_tt
+
+		hidden_effect = {
+			TST = {
+			country_event = {
+				id = tst.34
+			}
+		}
+			CLS = {
+			country_event = {
+				id = col.1034
+			}
+		}	
+		
+		tristan_ground_strength_up_15_cls_down_15 = yes
+		tristan_ground_strength_up_15_cls_down_15 = yes
+		}		
+
+	}
+}
+country_event = { #The Aryx wreck is destroyed
+	id = avi.10
+	title = avi.10.t
+	desc = avi.10.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Good
+		name = avi.10.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
 
 
 

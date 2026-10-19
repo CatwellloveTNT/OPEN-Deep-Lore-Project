@@ -408,6 +408,7 @@ country_event = { #The coalition attempts and fails to assassinate one of the ki
 
 		set_country_flag = tst_groundforce_selected
 		set_country_flag = tst_aryx_scramble_minigame_flag
+		set_country_flag = tst_aryx_scramble_minigame_starting_timed_mission_flag
 		CLS = {
 			set_country_flag = cls_aryx_scramble_setting_up_flag
 		}
@@ -428,11 +429,21 @@ country_event = { #Tristan engineers move towards the wreckage and get ambushed 
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+		clr_country_flag = tst_aryx_scramble_minigame_starting_timed_mission_flag			
+		}
+	}
+
+
 	option = { #If only it had been so easy...
 		name = tst.25.a
 		ai_chance = {factor = 100}	
 
 		custom_effect_tooltip = tst.25_tt
+
+		clr_country_flag = tst_aryx_scramble_minigame_starting_timed_mission_flag
+
 
 		set_country_flag = tst_aryx_scramble_minigame_flag
 		CLS = {
@@ -455,6 +466,8 @@ country_event = { #Tristan engineers blow up the wreckage
 		name = tst.26.a
 		ai_chance = {factor = 100}	
 
+		custom_effect_tooltip = tst.26_tt
+
 	}
 
 }
@@ -470,10 +483,12 @@ country_event = { #The Coalition sezies the wreeckage
 		name = tst.27.a
 		ai_chance = {factor = 100}	
 
+		 custom_effect_tooltip = tst.27_tt
+
 	}
 
 }
-country_event = { #team red is deployed for the first time in the aryx scramble and their energy weapons are very effect (team red is nick and izytal)
+country_event = { #team red is deployed for the first time in the aryx scramble and their energy weapons are very effective (team red is nick and izytal)
 	id = tst.28
 	title = tst.28.t
 	desc = tst.28.d
@@ -487,4 +502,137 @@ country_event = { #team red is deployed for the first time in the aryx scramble 
 	}
 
 }
+country_event = { #event where airdrop lands on an encampment and explodes on a tristan encampment
+	id = tst.29
+	title = tst.29.t
+	desc = tst.29.d
+
+	is_triggered_only = yes
+
+
+	option = { #what the?!
+		name = tst.29.a
+		ai_chance = {factor = 100}	
+
+		add_timed_idea = {
+			idea = tst_aryx_scramble_bad_pp_idea
+			days = 10
+		}		
+
+
+	}
+
+}
+
+country_event = { #event where triste shoots down a vlap with aaa/manpads
+	id = tst.30
+	title = tst.30.t
+	desc = tst.30.d
+
+	is_triggered_only = yes
+
+
+	option = { #Ok
+		name = tst.30.a
+		ai_chance = {factor = 100}	
+	
+
+
+	}
+
+}
+
+country_event = { #event where the tristan platoon arrives safely
+	id = tst.31
+	title = tst.31.t
+	desc = tst.31.d
+
+	is_triggered_only = yes
+
+
+	option = { #Ok
+		name = tst.31.a
+		ai_chance = {factor = 100}	
+	
+
+
+	}
+
+}
+country_event = { #event where the tristan platoon is a heavy weapons platoon
+	id = tst.32
+	title = tst.32.t
+	desc = tst.32.d
+
+	is_triggered_only = yes
+
+
+	option = { #That'll serve us well
+		name = tst.32.a
+		ai_chance = {factor = 100}	
+	
+
+		hidden_effect = {
+		CLS = {
+
+			country_event = {
+				id = col.1031
+			}
+
+		}	
+		
+		
+		
+		}
+
+		custom_effect_tooltip = tst.32_real_tt
+
+
+	}
+
+}
+country_event = { #event where the tristan platoon gets wiped out by an ambush
+	id = tst.33
+	title = tst.33.t
+	desc = tst.33.d
+
+	is_triggered_only = yes
+
+
+	option = { #I want those fields cleared next time!
+		name = tst.33.a
+		ai_chance = {factor = 100}	
+
+		custom_override_tooltip = {
+			tooltip = tst.32_tt
+
+			cls_ground_strength_up_5_triste_down_5 = yes
+
+		}
+	
+
+
+	}
+
+}
+
+country_event = { #aviceyn intervenes on the side of triste in the aryx scramble
+	id = tst.34
+	title = tst.34.t
+	desc = tst.34.d
+
+	is_triggered_only = yes
+
+
+	option = { #Let's finish this
+		name = tst.34.a
+		ai_chance = {factor = 100}	
+
+		add_political_power = 300
+
+		tristan_ground_strength_up_15_cls_down_15 = yes
+	}
+
+}
+
 

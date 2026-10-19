@@ -524,6 +524,73 @@ country_event = {
 	}
 }
 
+country_event = { #arcadia moves to sanction laventille, but they want coalition support first
+	id = arc.33
+	title = arc.33.t
+	desc = arc.33.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # we did it, now its time for the real work
+		name = arc.33.a
+		ai_chance = {factor = 100}
+
+		CLS = {
+			country_event = {
+				id = col.1032
+			}
+		}
+
+	}
+}
+
+country_event = { #the coalition says yes to joining in sanctions
+	id = arc.34
+	title = arc.34.t
+	desc = arc.34.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Perfect!
+		name = arc.34.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = arc.34_tt
+
+		LAV = {
+			country_event = {
+				id = lav.3
+			}
+		}
+
+	}
+}
+
+country_event = { #the coalition says no to joining in sanctions
+	id = arc.35
+	title = arc.35.t
+	desc = arc.35.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # We'll have to sanction them alone then
+		name = arc.35.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = arc.35_tt
+
+		LAV = {
+			country_event = {
+				id = lav.2
+			}
+		}
+
+	}
+}
+
 
 
 

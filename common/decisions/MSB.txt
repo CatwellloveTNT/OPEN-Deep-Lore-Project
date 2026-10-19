@@ -792,6 +792,50 @@ puppetmaster = {
 
 	}
 
+	coalition_cats_have_malfunctioned_aryx_scramble = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			has_country_flag = hello_msb_please_delay_coalition_sorties_aryx_scramble
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+			CLS = {
+				clr_country_flag = cls_aryx_scramble_cats_malfunction
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
 }
 
 

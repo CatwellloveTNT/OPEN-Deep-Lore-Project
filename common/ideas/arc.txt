@@ -26,5 +26,64 @@ ideas = {
 				air_attack_factor = 0.10
 			}
 	}
+
+			arc_we_patriotic_few = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = ARC
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.98
+				army_morale_factor = 0.20
+				army_org_factor = 0.20
+				army_org_regain = 0.10
+				training_time_army_factor = 0.50
+			}
+	}
+
+			arc_colaca = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = ARC
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.05
+			}
+	}	
+	
 }
 }

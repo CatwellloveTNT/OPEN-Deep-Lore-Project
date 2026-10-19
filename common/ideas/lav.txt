@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+			lav_heavy_sanctions= {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = LAV
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.2
+
+				political_power_factor = -0.50
+				
+			}
+	}
+			lav_light_sanctions= {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = LAV
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.1
+
+				political_power_factor = -0.25
+				
+			}
+	}
+
+}
+}

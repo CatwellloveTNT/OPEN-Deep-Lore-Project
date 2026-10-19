@@ -41,27 +41,27 @@ CLS_solaris_minigame = {
 			modifier = {
 				has_idea = solaris_maximum
 				has_country_flag = major_aviceynian_cyberattack
-				factor = 1500
+				factor = 0
 			}
 			modifier = {
 				has_idea = solaris_high
 				has_country_flag = major_aviceynian_cyberattack
-				factor = 2000
+				factor = 0
 			}
 			modifier = {
 				has_idea = solaris_moderate
 				has_country_flag = major_aviceynian_cyberattack
-				factor = 2500
+				factor = 0
 			}
 			modifier = {
 				has_idea = solaris_low
 				has_country_flag = major_aviceynian_cyberattack
-				factor = 3000
+				factor = 0
 			}
 			modifier = {
 				has_idea = solaris_totally_hacked
 				has_country_flag = major_aviceynian_cyberattack
-				factor = 5000
+				factor = 0
 			}
 		}		
 
@@ -1457,9 +1457,12 @@ CLS_the_aryx_scramble_minigame = {
 					id = col.1017
 				}
 			}
-
+			
+			TST = {
 			clr_country_flag = tst_aryx_scramble_minigame_unlocked_flag
 			clr_country_flag = tst_aryx_scramble_minigame_flag
+			}
+
 
 			CLS = {
 			clr_country_flag = cls_aryx_scramble_minigame_flag
@@ -1477,7 +1480,7 @@ CLS_the_aryx_scramble_minigame = {
 
 	}	
 
-	airdrop_heavy_weapons = { #
+	airdrop_heavy_weapons_one_time = { #
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -1505,6 +1508,87 @@ CLS_the_aryx_scramble_minigame = {
 
 		cost = 50
 
+		fire_only_once = yes
+
+		days_re_enable = 15
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			cls_ground_strength_up_5_triste_down_5 = yes
+
+			set_country_flag = _cls_aryx_scramble_perma_airdrop_flag
+
+			hidden_effect = {
+				random_list = {
+					0 = {
+						country_event = {
+							id = col.1020
+						}
+					}
+					100 = {
+						country_event = {
+							id = col.1021
+						}
+					}
+					0 = {
+						country_event = {
+							id = col.1022
+						}
+					}
+					0 = {
+						country_event = {
+							id = col.1023
+						}
+					}
+																				
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 10500
+		}		
+
+	}
+
+
+	airdrop_heavy_weapons = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected
+			has_country_flag = _cls_aryx_scramble_perma_airdrop_flag			
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = cls_aryx_scramble_minigame_flag		
+			has_country_flag = cls_groundforce_selected		
+			has_country_flag = _cls_aryx_scramble_perma_airdrop_flag	
+			}
+	
+		}
+
+		cost = 50
+
 		fire_only_once = no
 
 		days_re_enable = 15
@@ -1518,10 +1602,38 @@ CLS_the_aryx_scramble_minigame = {
 
 			cls_ground_strength_up_5_triste_down_5 = yes
 
+
+			hidden_effect = {
+				random_list = {
+					20 = {
+						country_event = {
+							id = col.1020
+						}
+					}
+					40 = {
+						country_event = {
+							id = col.1021
+						}
+					}
+					30 = {
+						country_event = {
+							id = col.1022
+						}
+					}
+					10 = {
+						country_event = {
+							id = col.1023
+						}
+					}
+																				
+				}
+			}
+
+
 		}
 
 		ai_will_do = {
-			factor = 1500
+			factor = 9999
 		}		
 
 	}	
@@ -1567,10 +1679,33 @@ CLS_the_aryx_scramble_minigame = {
 
 			cls_ground_strength_up_10_triste_down_10 = yes
 
+
+			hidden_effect = {
+				random_list = {
+					70 = {
+						country_event = {
+							id = col.1024
+						}
+					}
+					20 = {
+						country_event = {
+							id = col.1025
+						}
+					}
+					10 = {
+						country_event = {
+							id = col.1026
+						}
+					}
+																				
+				}
+			}
+
+
 		}
 
 		ai_will_do = {
-			factor = 2000
+			factor = 6000
 		}		
 
 	}	
@@ -1589,6 +1724,7 @@ CLS_the_aryx_scramble_minigame = {
 			AND = {
 			has_country_flag = cls_aryx_scramble_minigame_flag		
 			has_country_flag = cls_groundforce_selected
+			
 			}			
 
 		}
@@ -1601,13 +1737,13 @@ CLS_the_aryx_scramble_minigame = {
 	
 		}
 
-		cost = 150
+		cost = 100
 
 		fire_only_once = yes
 
 	#	days_re_enable = 20
 
-		days_remove = 30
+		days_remove = 10
 
 		modifier = {
 		}
@@ -1630,7 +1766,7 @@ CLS_the_aryx_scramble_minigame = {
 		}
 
 		ai_will_do = {
-			factor = 2500
+			factor = 10001
 		}		
 
 	}	
@@ -1649,6 +1785,9 @@ CLS_the_aryx_scramble_minigame = {
 			AND = {
 			has_country_flag = cls_aryx_scramble_minigame_flag		
 			has_country_flag = cls_airforce_selected
+			NOT = {
+				has_country_flag = cls_aryx_scramble_cats_malfunction
+			}
 			}			
 
 		}
@@ -1674,6 +1813,22 @@ CLS_the_aryx_scramble_minigame = {
 
 		remove_effect = {
 
+			hidden_effect = {
+				random_list = {
+					60 = {
+						country_event = {
+							id = col.1027
+						}
+					}
+					40 = {
+						country_event = {
+							id = col.1028
+						}
+					}
+																				
+				}
+			}			
+
 			cls_air_strength_up_5_triste_down_5 = yes
 
 		}
@@ -1698,6 +1853,9 @@ CLS_the_aryx_scramble_minigame = {
 			AND = {
 			has_country_flag = cls_aryx_scramble_minigame_flag		
 			has_country_flag = cls_airforce_selected
+			NOT = {
+				has_country_flag = cls_aryx_scramble_cats_malfunction
+			}			
 			}			
 
 		}
@@ -1722,8 +1880,24 @@ CLS_the_aryx_scramble_minigame = {
 		}
 
 		remove_effect = {
+			hidden_effect = {
+				random_list = {
+					70 = {
+						country_event = {
+							id = col.1029
+						}
+					}
+					30 = {
+						country_event = {
+							id = col.1030
+						}
+					}
+																				
+				}			
 
-			cls_air_strength_up_10_triste_down_10 = yes
+			cls_air_strength_up_10_triste_down_10 = yes				
+			}
+
 
 		}
 
@@ -1747,6 +1921,9 @@ CLS_the_aryx_scramble_minigame = {
 			AND = {
 			has_country_flag = cls_aryx_scramble_minigame_flag		
 			has_country_flag = cls_airforce_selected
+			NOT = {
+				has_country_flag = cls_aryx_scramble_cats_malfunction
+			}			
 			}			
 
 		}
