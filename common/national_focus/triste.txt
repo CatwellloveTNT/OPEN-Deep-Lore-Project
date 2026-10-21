@@ -4378,7 +4378,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TST_the_2032_defensive_summit
 		}
-		cost = 5
+		cost = 3
 		available = {
 			AND = {
 			has_war = no	
@@ -4402,6 +4402,11 @@ focus_tree = {
 
 		completion_reward = {
 
+			country_event = {
+				id = tst.35
+			}
+
+
 		}
 
 		ai_will_do = {
@@ -4409,7 +4414,7 @@ focus_tree = {
 		}
 	}	
 
-	focus = { #la brea and his people meet for the 2032 defense of triste summit
+	focus = { #
 		id = TST_the_situation_at_hoof
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
@@ -4418,7 +4423,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TST_rumbles_from_beyond_the_sea
 		}
-		cost = 5
+		cost = 1
 		available = {
 			has_war = no
 		}
@@ -4439,6 +4444,10 @@ focus_tree = {
 
 		completion_reward = {
 
+			country_event = {
+				id = tst.36
+			}
+
 		}
 
 		ai_will_do = {
@@ -4457,7 +4466,7 @@ focus_tree = {
 		}
 		cost = 5
 		available = {
-			has_war = no
+			always = no
 		}
 		
 		bypass = {
@@ -4484,7 +4493,7 @@ focus_tree = {
 	}
 	
 	focus = { #the sadhaak conferences happens after the aerobach report, it is a second, independent piece of evidence that the coalition does indeed intend to invade triste in the next coming years
-		id = TST_the_sadhaak_conference
+		id = TST_the_sadhaak_conference #RENAME TO THE SOUCOUYANT INCIDENT 
 		icon = GFX_goal_generic_consumer_goods
 		x = -2
 		y = 1
@@ -4494,7 +4503,7 @@ focus_tree = {
 		}
 		cost = 5
 		available = {
-			has_war = no
+			always = no
 		}
 		
 		bypass = {
@@ -4532,7 +4541,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TST_the_aviceynian_aerobach_report
 		}		
-		cost = 5
+		cost = 3
 		available = {
 			has_war = no
 		}
@@ -4552,6 +4561,8 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			add_ideas = tst_state_of_emergency_idea
 
 			hidden_effect = {
 				news_event = news.30
@@ -4595,6 +4606,7 @@ focus_tree = {
 
 		completion_reward = {
 
+			remove_ideas = tst_growing_defeatism_idea
 
 		}
 
@@ -4613,7 +4625,7 @@ focus_tree = {
 			focus = TST_purge_the_defeatist
 		}
 	
-		cost = 5
+		cost = 3
 		available = {
 			has_war = no
 		}
@@ -4634,6 +4646,9 @@ focus_tree = {
 
 		completion_reward = {
 
+			country_event = {
+				id = tst.55
+			}
 
 		}
 
@@ -4673,6 +4688,10 @@ focus_tree = {
 
 		completion_reward = {
 
+			country_event = {
+				id = tst.56
+			}
+
 		}
 
 		ai_will_do = {
@@ -4681,7 +4700,7 @@ focus_tree = {
 	}	
 
 	focus = { #
-		id = TST_reaffirm_our_allegiance_with_aviceyn
+		id = TST_reaffirm_our_allegiance_with_aviceyn #RENAME TO OFFICIAL JOIN THE SECOND WORLD
 		icon = GFX_goal_generic_consumer_goods
 		x = 1
 		y = 1
@@ -4710,6 +4729,17 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			country_event = {
+				id = tst.57
+			}
+
+			hidden_effect = {
+				news_event = {
+					id = news.33
+					days = 1
+				}
+			}
 
 		}
 
@@ -4752,6 +4782,20 @@ focus_tree = {
 
 		completion_reward = {
 
+
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+			}		
+			add_popularity = {
+				ideology = protean_democracy
+				popularity = -0.05
+			}					
+
 		}
 
 		ai_will_do = {
@@ -4790,6 +4834,66 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_dynamic_modifier = {
+				modifier = the_western_cradle_economic_zone_modifier
+			}
+
+			set_country_flag = triste_western_economic_union_decisions
+
+			add_to_array = {
+				array = TST.western_cradle_economic_union_array
+				value = TST.id
+			}
+				
+			
+			custom_override_tooltip = {
+				tooltip = TST_create_the_western_cradle_economic_zone_tt
+
+
+				SUS = {
+					country_event = {
+						id = sus.1
+						days = 3
+					}
+				}	
+				
+				PLA = {
+					country_event = {
+						id = pla.1
+						days = 3						
+					}
+				}	
+				
+				CEN = {
+					country_event = {
+						id = cen.1
+						days = 3						
+					}
+				}	
+				
+				VMD = {
+					country_event = {
+						id = vmd.1
+						days = 3						
+					}
+				}	
+				
+				FEO = {
+					country_event = {
+						id = feo.1
+						days = 3						
+					}
+				}
+				
+				KIR = {
+					country_event = {
+						id = kir.1
+						days = 3						
+					}
+				}					
+				
+			}
+
 
 		}
 
@@ -4801,14 +4905,14 @@ focus_tree = {
 	focus = { #
 		id = TST_deepen_ties
 		icon = GFX_goal_generic_consumer_goods
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = TST_create_the_western_cradle_economic_zone
 		prerequisite = {
 			focus = TST_create_the_western_cradle_economic_zone
 		}
 	
-		cost = 5
+		cost = 3
 		available = {
 			has_war = no
 		}
@@ -4829,6 +4933,17 @@ focus_tree = {
 
 		completion_reward = {
 
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = TST.western_cradle_economic_union_array
+						value = THIS.id
+					}
+				}
+
+				add_stability = 0.05
+
+			}
 
 		}
 
@@ -4839,45 +4954,6 @@ focus_tree = {
 
 	focus = { #
 		id = TST_military_technology_tranfers
-		icon = GFX_goal_generic_consumer_goods
-		x = -2
-		y = 1
-		relative_position_id = TST_create_the_western_cradle_economic_zone
-		prerequisite = {
-			focus = TST_create_the_western_cradle_economic_zone
-		}
-	
-		cost = 5
-		available = {
-			has_war = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel = {
-			has_war = yes
-		}		
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		
-
-		completion_reward = {
-
-
-		}
-
-		ai_will_do = {
-		factor = 24
-		}
-	}	
-
-	focus = { #
-		id = TST_mutual_defense_agreements
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
@@ -4891,7 +4967,6 @@ focus_tree = {
 			has_war = no
 		}
 		
-
 		bypass = {
 
 		}
@@ -4908,6 +4983,18 @@ focus_tree = {
 
 		completion_reward = {
 
+			every_country = {
+				limit = {
+					is_in_array = {
+						array = TST.western_cradle_economic_union_array
+						value = THIS.id
+					}
+				}
+
+				add_research_slot = 1
+
+			}			
+
 
 		}
 
@@ -4916,10 +5003,12 @@ focus_tree = {
 		}
 	}	
 
+	
+
 	focus = { #sends an invite to all the members of the economic zone to join the western union, all members say no
 		id = TST_form_the_western_union
 		icon = GFX_goal_generic_consumer_goods
-		x = -2
+		x = -1
 		y = 3
 		relative_position_id = TST_create_the_western_cradle_economic_zone
 		prerequisite = {
@@ -4927,9 +5016,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = TST_military_technology_tranfers
-		}
-		prerequisite = {
-			focus = TST_mutual_defense_agreements
 		}				
 	
 		cost = 5
@@ -4954,8 +5040,109 @@ focus_tree = {
 
 		completion_reward = {
 
-
+			TST = {
+				create_faction_from_template = {
+					template = faction_template_generic_dominance
+					name = "The Western Union"
+					icon = GFX_faction_logo_axis
+					color = {
+						12 44 150
+					}
+			}			
 		}
+		
+
+
+		SUS = {
+			if = {
+				limit = { is_in_array = {
+					array = TST.western_cradle_economic_union_array
+					value = THIS.id
+				} }
+
+				TST = {
+					add_to_faction = SUS
+				}
+
+			}
+		}
+		PLA = {
+			if = {
+				limit = { is_in_array = {
+					array = TST.western_cradle_economic_union_array
+					value = THIS.id
+				} }
+
+				TST = {
+					add_to_faction = PLA
+				}
+
+			}
+		}	
+		CEN = {
+			if = {
+				limit = { is_in_array = {
+					array = TST.western_cradle_economic_union_array
+					value = THIS.id
+				} }
+
+				TST = {
+					add_to_faction = CEN
+				}
+
+			}
+		}			
+		VMD = {
+			if = {
+				limit = { is_in_array = {
+					array = TST.western_cradle_economic_union_array
+					value = THIS.id
+				} }
+
+				TST = {
+					add_to_faction = VMD
+				}
+
+			}
+		}
+		KIR = {
+			if = {
+				limit = { is_in_array = {
+					array = TST.western_cradle_economic_union_array
+					value = THIS.id
+				} }
+
+				TST = {
+					add_to_faction = KIR
+				}
+
+			}
+		}	
+		FEO = {
+			if = {
+				limit = { is_in_array = {
+					array = TST.western_cradle_economic_union_array
+					value = THIS.id
+				} }
+
+				TST = {
+					add_to_faction = FEO
+				}
+
+			}
+		}			
+
+		hidden_effect = {
+			news_event = {
+				id = news.34
+				days = 1
+			}
+		}
+
+	}
+
+
+		
 
 		ai_will_do = {
 		factor = 24
@@ -4995,6 +5182,10 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			country_event = {
+				id = tst.58
+			}
 
 		}
 
@@ -5046,6 +5237,12 @@ focus_tree = {
 
 		completion_reward = {
 
+			add_timed_idea = {
+				idea = tst_no_time_for_talk_idea
+				days = 75
+			}
+
+
 		}
 
 		ai_will_do = {
@@ -5083,6 +5280,10 @@ focus_tree = {
 		
 
 		completion_reward = {
+
+			country_event = {
+				id = tst.59
+			}
 
 		}
 

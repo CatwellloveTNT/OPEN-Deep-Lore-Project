@@ -83,5 +83,5 @@
 			sortie_efficiency = triste_the_tristan_navy_sorte
 			navy_carrier_air_attack_factor = triste_the_tristan_navy_ncaaf
 	}	
-
+	
 

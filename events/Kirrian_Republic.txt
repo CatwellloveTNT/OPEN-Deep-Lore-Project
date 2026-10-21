@@ -1,0 +1,39 @@
+﻿#####################
+# KIRRIAN REPUBLIC EVENTS
+###########################
+
+add_namespace = kir
+
+
+country_event = {
+	id = kir.1
+	title = kir.1.t
+	desc = kir.1.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # join
+		name = kir.1.a
+		ai_chance = {factor = 70}
+
+		TST = {
+			country_event = {
+				id = tst.49
+			}
+		}
+
+	}
+
+	option = { # decline
+		name = kir.1.b
+		ai_chance = {factor = 30}
+
+		TST = {
+			country_event = {
+				id = tst.50
+			}
+		}
+
+	}
+}

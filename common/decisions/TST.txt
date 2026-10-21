@@ -798,4 +798,320 @@
 
 
 	}
+		TST_western_cradle_eco_union_decision_tab = { #western economic union
+
+	push_for_peace_and_stability = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+			TST = {
+				has_country_flag = triste_western_economic_union_decisions	
+				NOT = {
+					has_war = yes
+				}
+			}
+			}
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = triste_western_economic_union_decisions			
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no	
+
+		days_re_enable = 120
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			
+
+		}
+
+		complete_effect = {
+
+
+
+							every_country = {
+					limit = {
+						is_in_array = {
+							array = TST.western_cradle_economic_union_array
+							value = THIS.id
+						}
+
+
+
+					}
+
+						add_stability = 0.05
+
+				}
+		}
+		
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	coordinate_our_construction = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+			TST = {
+				has_country_flag = triste_western_economic_union_decisions	
+				NOT = {
+					has_country_flag = wceu_initative_active
+				}
+			}
+
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = triste_western_economic_union_decisions			
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no	
+
+		days_re_enable = 120
+
+		days_remove = 5
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+				clr_country_flag = wceu_initative_active
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = wceu_initative_active
+
+							every_country = {
+					limit = {
+						is_in_array = {
+							array = TST.western_cradle_economic_union_array
+							value = THIS.id
+						}
+
+
+
+					}
+
+						add_timed_idea = {
+							idea = wceu_construction_idea
+							days = 30
+						}
+
+				}
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	focus_on_military_production = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+			TST = {
+				has_country_flag = triste_western_economic_union_decisions	
+				NOT = {
+					has_country_flag = wceu_initative_active
+				}
+			}
+
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = triste_western_economic_union_decisions			
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no	
+
+		days_re_enable = 120
+
+		days_remove = 120
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+				clr_country_flag = wceu_initative_active
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = wceu_initative_active
+
+				every_country = {
+					limit = {
+						is_in_array = {
+							array = TST.western_cradle_economic_union_array
+							value = THIS.id
+						}
+
+
+
+					}
+
+						add_timed_idea = {
+							idea = wceu_military_production_idea
+							days = 30
+						}
+
+				}			
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}	
+		
+	
+
+	}
+
+	put_our_best_minds_together = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+			TST = {
+				has_country_flag = triste_western_economic_union_decisions	
+				NOT = {
+					has_country_flag = wceu_initative_active
+				}
+			}
+
+			}
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = triste_western_economic_union_decisions			
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no	
+
+		days_re_enable = 120
+
+		days_remove = 120
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+				clr_country_flag = wceu_initative_active
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = wceu_initative_active
+
+							every_country = {
+					limit = {
+						is_in_array = {
+							array = TST.western_cradle_economic_union_array
+							value = THIS.id
+						}
+
+
+
+					}
+
+						add_timed_idea = {
+							idea = wceu_research_idea
+							days = 30
+						}
+
+				}
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+
+}
 	

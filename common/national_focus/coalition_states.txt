@@ -574,6 +574,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+
+			swap_ideas = {
+				remove_idea = cls_east_to_west_tension_heating_up_idea
+				add_idea = cls_east_to_west_tension_minimal_idea
+			}
+
 			country_event = {
 				id = col.18
 			}

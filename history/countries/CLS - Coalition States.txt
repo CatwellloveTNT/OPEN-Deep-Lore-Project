@@ -142,7 +142,7 @@ puppet = NEW
 puppet = CAT
 
 
-
+add_ideas = cls_east_to_west_tension_heating_up_idea
 add_ideas = free_trade
 add_ideas = {
 	solaris_maximum

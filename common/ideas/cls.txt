@@ -232,7 +232,127 @@ ideas = {
 			}
 		}		
 
+		cls_east_to_west_tension_minimal_idea = {
+			picture = solaris_1
 
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.05
+				offensive_war_stability_factor = 0.15
+				defensive_war_stability_factor = 0.15
+			}
+		}
+
+		cls_east_to_west_tension_heating_up_idea = {
+			picture = solaris_1
+
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+				offensive_war_stability_factor = 0.05
+				defensive_war_stability_factor = 0.05
+			}
+		}
+		
+		cls_east_to_west_tension_tense_idea = {
+			picture = solaris_1
+
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.15
+				offensive_war_stability_factor = -0.10
+				defensive_war_stability_factor = -0.10
+				conscription_factor = -0.25				
+			}
+		}
+		
+		cls_east_to_west_tension_very_tense_idea = {
+			picture = solaris_1
+
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.25
+				offensive_war_stability_factor = -0.15
+				defensive_war_stability_factor = -0.15
+				conscription_factor = -0.50
+			}
+		}		
 
 
 	}

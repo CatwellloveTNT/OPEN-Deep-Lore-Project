@@ -1,7 +1,20 @@
 ﻿l_english:
-# ------------------------------------- PROTEAN IDEAS -------------------------------
+
  warmed_up:0 "Ground Forces Warmed Up"
  by_my_shield_and_sword:0 "By My Shield And Sword"
  the_protean_system:0 "The Protean System"
+ cls_east_to_west_tension_heating_up_idea:0 "§WEast to West Tensions - §W§YHEATING UP§W §W"
+ cls_east_to_west_tension_minimal_idea:0 "§WEast to West Tensions - §W§GMinimal§W §W"
+ cls_east_to_west_tension_tense_idea:0 "§WEast to West Tensions - §W§OTense§W §W"
+ cls_east_to_west_tension_very_tense_idea:0 "§WEast to West Tensions - §W§RVery Tense§W §W"
+ TST_dynamic_economy:0 "The Tristan Economic Miracle"
+ TST_knights_of_triste:0 "The Knights of Triste"
+ TST_the_tristan_air_force:0 "The Wings of Triste"
+ TST_the_tristan_navy:0 "Marinha Costeira"
 
- 
+# ------------------------------------- POLITICAL PARTY NAMES CUZ IDK WHERE TO FIND THE ACTUAL LOC FILE -------------------------------
+protean_democracy_noun:0 "Protean Democracy"
+protean_democracy:0 "Protean Democracy"
+aviceyn_diarchy_noun:0 "Aviceynian Diarchy"
+aviceyn_diarchy:0 "Aviceynian Diarchy"
+

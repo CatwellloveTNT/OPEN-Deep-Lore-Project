@@ -1,0 +1,44 @@
+﻿#####################
+# CENCARTIAN EVENTS
+###########################
+
+add_namespace = cen
+
+
+# Hakistani's reaction to terror attack
+# Invitation to the western cradle economic zone
+country_event = {
+	id = cen.1
+	title = cen.1.t
+	desc = cen.1.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # join
+		name = cen.1.a
+		ai_chance = {factor = 70}
+
+		TST = {
+			country_event = {
+				id = tst.45
+			}
+		}
+
+	}
+
+	option = { # decline
+		name = cen.1.b
+		ai_chance = {factor = 30}
+
+		TST = {
+			country_event = {
+				id = tst.46
+			}
+		}
+
+	}
+}
+
+
+

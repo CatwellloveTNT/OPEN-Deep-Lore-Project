@@ -1,0 +1,43 @@
+﻿#####################
+# AMOGUS EVENTS
+###########################
+
+add_namespace = sus
+
+
+# Invitation to the western cradle economic zone
+country_event = {
+	id = sus.1
+	title = sus.1.t
+	desc = sus.1.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # join
+		name = sus.1.a
+		ai_chance = {factor = 70}
+
+		TST = {
+			country_event = {
+				id = tst.43
+			}
+		}
+
+	}
+
+	option = { # decline
+		name = sus.1.b
+		ai_chance = {factor = 30}
+
+		TST = {
+			country_event = {
+				id = tst.44
+			}
+		}
+
+	}
+}
+
+
+

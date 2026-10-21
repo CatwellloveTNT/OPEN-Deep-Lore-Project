@@ -1,0 +1,39 @@
+﻿#####################
+# PONYLARICA EVENTS
+###########################
+
+add_namespace = pla
+
+
+country_event = {
+	id = pla.1
+	title = pla.1.t
+	desc = pla.1.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # join
+		name = pla.1.a
+		ai_chance = {factor = 70}
+
+		TST = {
+			country_event = {
+				id = tst.51
+			}
+		}
+
+	}
+
+	option = { # decline
+		name = pla.1.b
+		ai_chance = {factor = 30}
+
+		TST = {
+			country_event = {
+				id = tst.52
+			}
+		}
+
+	}
+}

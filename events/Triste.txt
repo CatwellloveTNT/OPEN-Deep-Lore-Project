@@ -635,4 +635,630 @@ country_event = { #aviceyn intervenes on the side of triste in the aryx scramble
 
 }
 
+country_event = { #la brea meets with his top guys for the 2032 defense of triste summit
+	id = tst.35
+	title = tst.35.t
+	desc = tst.35.d
+
+	is_triggered_only = yes
+
+
+	option = { #we have much to do
+		name = tst.35.a
+		ai_chance = {factor = 100}	
+	}
+
+}
+
+country_event = { #la brea is woken up by his aid and is told the aviceynians want to speak with him
+	id = tst.36
+	title = tst.36.t
+	desc = tst.36.d
+
+	is_triggered_only = yes
+
+
+	option = { #i hope this is good news
+		name = tst.36.a
+		ai_chance = {factor = 100}	
+
+		hidden_effect = {
+			country_event = {
+				id = tst.37
+				days = 4
+			}
+		}
+
+	}
+
+}
+
+country_event = { #la brea is travelling with his aid, they discuss what could be happening and wonder what
+	id = tst.37
+	title = tst.37.t
+	desc = tst.37.d
+
+	is_triggered_only = yes
+
+
+	option = { #one can only wonder what the avicynians have to tell us
+		name = tst.37.a
+		ai_chance = {factor = 100}	
+
+		hidden_effect = {
+			country_event = {
+				id = tst.38
+				days = 3
+			}
+		}
+
+	}
+
+}
+
+country_event = { #the aviceynians inform la brea about the aerobach report, aerobach is a place in germany and a mockup of the presidential palace has been seen in the region
+	id = tst.38
+	title = tst.38.t
+	desc = tst.38.d
+
+	is_triggered_only = yes
+
+
+	option = { #We need to start preparing
+		name = tst.38.a
+		ai_chance = {factor = 100}	
+
+		complete_national_focus = TST_the_aviceynian_aerobach_report
+
+		hidden_effect = {
+			CLS = {
+			country_event = {
+				id = col.1035
+				days = 12
+			}
+			}
+
+		}
+
+	}
+
+}
+
+country_event = { #la brea is woken up once again by a clamour outside his door, he is informed that a coalition skyplane has been shot down over batponya and the pilot was taken alive, the pilot was interrogated and revealed he was gather terrian and defense information in the region. (please note that the aircraft was not shot down, it was on a egress route, got shot and the pilot got finicky as the plane decentded and ejected. but the aircraft crashed in the ocean between the coalition and triste and was unrecoverable
+	id = tst.39
+	title = tst.39.t
+	desc = tst.39.d
+
+	is_triggered_only = yes
+
+
+	option = { #Ok. I've seen enough, get me on the line with my aid
+		name = tst.39.a
+		ai_chance = {factor = 100}	
+
+		complete_national_focus = TST_the_sadhaak_conference
+
+	}
+
+}
+
+country_event = { #tfi attacks the blacksite
+	id = tst.40
+	title = tst.40.t
+	desc = tst.40.d
+
+	is_triggered_only = yes
+
+
+	option = { #I can't say im entirely surprised
+			name = tst.40.a
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+country_event = { #the pilot and the tfi extractionn team dies
+	id = tst.41
+	title = tst.41.t
+	desc = tst.41.d
+
+	is_triggered_only = yes
+
+
+	option = { #That's funny
+		name = tst.41.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+country_event = { #the pilot and the tfi extractionn team get out safely
+	id = tst.42
+	title = tst.42.t
+	desc = tst.42.d
+
+	is_triggered_only = yes
+
+
+	option = { #Well, we got what we needed out of him atleast
+		name = tst.42.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+country_event = { #amogus joins the western cradle economic union
+	id = tst.43
+	title = tst.43.t
+	desc = tst.43.d
+
+	is_triggered_only = yes
+
+
+	option = { #welcome aboard!
+		name = tst.43.a	
+		ai_chance = {factor = 100}	
+
+		add_to_array = {
+			array = TST.western_cradle_economic_union_array
+			value = SUS
+		}
+
+
+		add_to_variable = {
+			global.twcez_st = 0.02
+		}
+		add_to_variable = {
+			global.twcez_plrpf = -0.02
+		}
+		add_to_variable = {
+			global.twcez_fgffs = 0.02
+		}
+		add_to_variable = {
+			global.twcez_cgf = -0.02
+		}
+
+		SUS = {
+			add_dynamic_modifier = {
+				modifier = the_western_cradle_economic_zone_modifier
+			}
+		}
+
+		custom_effect_tooltip = extra_space
+		custom_effect_tooltip = nation_joined_western_eco_zone_tt			
+
+
+	}
+
+}
+
+country_event = { #amogus delcines invite to western economic zone
+	id = tst.44
+	title = tst.44.t
+	desc = tst.44.d
+
+	is_triggered_only = yes
+
+
+	option = { #Unfortunate
+		name = tst.44.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+country_event = { #cencartia joins the western cradle economic union
+	id = tst.45
+	title = tst.45.t
+	desc = tst.45.d
+
+	is_triggered_only = yes
+
+
+	option = { #welcome aboard!
+		name = tst.45.a	
+		ai_chance = {factor = 100}	
+
+		add_to_array = {
+			array = TST.western_cradle_economic_union_array
+			value = CEN
+		}
+
+
+		add_to_variable = {
+			global.twcez_st = 0.02
+		}
+		add_to_variable = {
+			global.twcez_plrpf = -0.02
+		}
+		add_to_variable = {
+			global.twcez_fgffs = 0.02
+		}
+		add_to_variable = {
+			global.twcez_cgf = -0.02
+		}	
+
+
+		CEN = {
+			add_dynamic_modifier = {
+				modifier = the_western_cradle_economic_zone_modifier
+			}
+		}		
+		custom_effect_tooltip = extra_space		
+		custom_effect_tooltip = nation_joined_western_eco_zone_tt	
+
+
+	}
+
+}
+
+country_event = { #cencartia delcines invite to western economic zone
+	id = tst.46
+	title = tst.46.t
+	desc = tst.46.d
+
+	is_triggered_only = yes
+
+
+	option = { #Unfortunate
+		name = tst.46.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #feino joins the western cradle economic union
+	id = tst.47
+	title = tst.47.t
+	desc = tst.47.d
+
+	is_triggered_only = yes
+
+
+	option = { #welcome aboard!
+		name = tst.47.a	
+		ai_chance = {factor = 100}	
+
+		add_to_array = {
+			array = TST.western_cradle_economic_union_array
+			value = FEO
+		}
+
+
+		add_to_variable = {
+			global.twcez_st = 0.02
+		}
+		add_to_variable = {
+			global.twcez_plrpf = -0.02
+		}
+		add_to_variable = {
+			global.twcez_fgffs = 0.02
+		}
+		add_to_variable = {
+			global.twcez_cgf = -0.02
+		}	
+
+
+		FEO = {
+			add_dynamic_modifier = {
+				modifier = the_western_cradle_economic_zone_modifier
+			}
+		}		
+		custom_effect_tooltip = extra_space		
+		custom_effect_tooltip = nation_joined_western_eco_zone_tt	
+
+
+	}
+
+}
+
+country_event = { #feino delcines invite to western economic zone
+	id = tst.48
+	title = tst.48.t
+	desc = tst.48.d
+
+	is_triggered_only = yes
+
+
+	option = { #Unfortunate
+		name = tst.48.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #the kirrian republic joins the western cradle economic union
+	id = tst.49
+	title = tst.49.t
+	desc = tst.49.d
+
+	is_triggered_only = yes
+
+
+	option = { #welcome aboard!
+		name = tst.49.a	
+		ai_chance = {factor = 100}	
+
+		add_to_array = {
+			array = TST.western_cradle_economic_union_array
+			value = KIR
+		}
+
+
+
+		add_to_variable = {
+			global.twcez_st = 0.02
+		}
+		add_to_variable = {
+			global.twcez_plrpf = -0.02
+		}
+		add_to_variable = {
+			global.twcez_fgffs = 0.02
+		}
+		add_to_variable = {
+			global.twcez_cgf = -0.02
+		}	
+
+
+		KIR = {
+			add_dynamic_modifier = {
+				modifier = the_western_cradle_economic_zone_modifier
+			}
+		}		
+		custom_effect_tooltip = extra_space		
+		custom_effect_tooltip = nation_joined_western_eco_zone_tt	
+
+
+	}
+
+
+
+
+}
+
+country_event = { #the kirrian republic delcines invite to western economic zone
+	id = tst.50
+	title = tst.50.t
+	desc = tst.50.d
+
+	is_triggered_only = yes
+
+
+	option = { #Unfortunate
+		name = tst.50.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+country_event = { #Ponylarica joins the western cradle economic union
+	id = tst.51
+	title = tst.51.t
+	desc = tst.51.d
+
+	is_triggered_only = yes
+
+
+	option = { #welcome aboard!
+		name = tst.51.a	
+		ai_chance = {factor = 100}	
+
+		add_to_array = {
+			array = TST.western_cradle_economic_union_array
+			value = PLA
+		}
+
+
+		add_to_variable = {
+			global.twcez_st = 0.02
+		}
+		add_to_variable = {
+			global.twcez_plrpf = -0.02
+		}
+		add_to_variable = {
+			global.twcez_fgffs = 0.02
+		}
+		add_to_variable = {
+			global.twcez_cgf = -0.02
+		}	
+
+
+		PLA = {
+			add_dynamic_modifier = {
+				modifier = the_western_cradle_economic_zone_modifier
+			}
+		}		
+		custom_effect_tooltip = extra_space		
+		custom_effect_tooltip = nation_joined_western_eco_zone_tt	
+		
+
+	}
+
+}
+
+country_event = { #Ponylarica delcines invite to western economic zone
+	id = tst.52
+	title = tst.52.t
+	desc = tst.52.d
+
+	is_triggered_only = yes
+
+
+	option = { #Unfortunate
+		name = tst.52.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+country_event = { #Vermund joins the western cradle economic union
+	id = tst.53
+	title = tst.53.t
+	desc = tst.53.d
+
+	is_triggered_only = yes
+
+
+	option = { #welcome aboard!
+		name = tst.53.a	
+		ai_chance = {factor = 100}	
+
+		add_to_array = {
+			array = TST.western_cradle_economic_union_array
+			value = VMD
+		}
+
+
+
+		add_to_variable = {
+			global.twcez_st = 0.02
+		}
+		add_to_variable = {
+			global.twcez_plrpf = -0.02
+		}
+		add_to_variable = {
+			global.twcez_fgffs = 0.02
+		}
+		add_to_variable = {
+			global.twcez_cgf = -0.02
+		}	
+
+		VMD = {
+			add_dynamic_modifier = {
+				modifier = the_western_cradle_economic_zone_modifier
+			}
+		}
+
+		custom_effect_tooltip = extra_space		
+		custom_effect_tooltip = nation_joined_western_eco_zone_tt	
+
+
+
+	}
+
+}
+
+country_event = { #Vermund delcines invite to western economic zone
+	id = tst.54
+	title = tst.54.t
+	desc = tst.54.d
+
+	is_triggered_only = yes
+
+
+	option = { #Unfortunate
+		name = tst.54.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #La Brea uses his powers with the state of emergecny to begin arresting members of the opposition and public figures
+	id = tst.55
+	title = tst.55.t
+	desc = tst.55.d
+
+	is_triggered_only = yes
+
+
+	option = { #Get those fools out the streets
+		name = tst.55.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #La Brea meets with arcadia
+	id = tst.56
+	title = tst.56.t
+	desc = tst.56.d
+
+	is_triggered_only = yes
+
+
+	option = { #BUT THAT'S WHAT THEIR CALLED, THEIR CALLED MARES! 
+		name = tst.56.a	
+		ai_chance = {factor = 100}	
+
+		remove_ideas = tst_leftover_arcadian_connections
+
+		custom_effect_tooltip = extra_space
+
+		custom_effect_tooltip = tst.56_tt
+
+	}
+
+}
+
+country_event = { #La Brea announces on national tv that triste is joining the second world
+	id = tst.57
+	title = tst.57.t
+	desc = tst.57.d
+
+	is_triggered_only = yes
+
+
+	option = { #that shoukd put then on ice
+		name = tst.57.a	
+		ai_chance = {factor = 100}	
+
+		remove_ideas = tst_leftover_arcadian_connections
+
+
+	}
+
+}
+
+country_event = { #La Brea meets with his top guys once again and draws out plans to attack new germany
+	id = tst.58
+	title = tst.58.t
+	desc = tst.58.d
+
+	is_triggered_only = yes
+
+
+	option = { #its almost time
+		name = tst.58.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+
+country_event = { #La Brea announces on national tv that triste is going to war with the coalition to wipe them from triste
+	id = tst.59
+	title = tst.59.t
+	desc = tst.59.d
+
+	is_triggered_only = yes
+
+
+	option = { #Rid this blight from our land!
+		name = tst.59.a	
+		ai_chance = {factor = 100}	
+
+		declare_war_on = {
+			target = CLS
+			type = take_core_state
+		}
+
+		declare_war_on = {
+			target = NEW
+			type = take_core_state
+		}		
+
+
+	}
+
+}
+
+
+
 

@@ -1,0 +1,16 @@
+
+	the_western_cradle_economic_zone_modifier = { #
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+
+		stability_factor = global.twcez_st
+		production_lack_of_resource_penalty_factor = global.twcez_plrpf
+		fuel_gain_factor_from_states = global.twcez_fgffs
+		consumer_goods_factor = global.twcez_cgf
+
+
+
+	}	
+

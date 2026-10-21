@@ -1477,6 +1477,266 @@ country_event = { #aviceyn intervenes in the aryx scramble
 	}
 }
 
+country_event = { #a socyouant is shot down in egress over triste, write the event in third person from the pilot's perspective. note that despite the aircraft being hit, it did not crash until reach far enough in the ocean and became unrecoverable by the tristans
+	id = col.1035
+	title = col.1035.t
+	desc = col.1035.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Overlord, I'i'm ejecting!
+		name = col.1035.a
+		ai_chance = {factor = 100}		
+
+
+		hidden_effect = {
+			country_event = {
+				id = col.1036
+				days = 5
+			}
+		}
+
+		TST = {
+			country_event = {
+				id = tst.39
+			}
+		}
+
+	}
+}
+
+country_event = { #tfi begins plans to rescue the captured pilot
+	id = col.1036
+	title = col.1036.t
+	desc = col.1036.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # we'll extract him via boat
+		name = col.1036.a
+		ai_chance = {factor = 50}		
+
+		hidden_effect = {
+			country_event = {
+				id = col.1037
+				days = 2
+			}			
+		}
+
+	}
+
+	option = { #  we'll extract him via plane
+		name = col.1036.b
+		ai_chance = {factor = 50}		
+
+		hidden_effect = {
+			country_event = {
+				id = col.1040
+				days = 2
+			}
+		}
+
+	}
+
+}
+
+country_event = { #tfi moves into the tristan blacksite and fights their way to the pilot
+	id = col.1037 #boat path
+	title = col.1037.t
+	desc = col.1037.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Alpha, we got the package. moving to extraction
+		name = col.1037.a
+		ai_chance = {factor = 100}		
+
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = {
+						id = col.1038
+						days = 2
+					}
+				}
+				50 = {
+					country_event = {
+						id = col.1039
+						days = 2						
+					}
+				}
+			
+				
+			}
+
+			TST = {
+			country_event = {
+				id = tst.40
+				days = 2
+			}
+		}			
+			
+		}
+
+	}
+}
+
+country_event = { #tfi sucessfully extracts via boat
+	id = col.1038
+	title = col.1038.t
+	desc = col.1038.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Welcome back home, captian.
+		name = col.1038.a
+		ai_chance = {factor = 100}		
+
+		hidden_effect = {
+			TST = {
+			country_event = {
+				id = tst.42
+				days = 2
+			}
+		}
+		}
+		
+
+	}
+}
+
+country_event = { #the boat is hunted by eaion 1s and sinks with everyone aboard dying
+	id = col.1039
+	title = col.1039.t
+	desc = col.1039.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Make sure this is forgotten, all of it
+		name = col.1039.a
+		ai_chance = {factor = 100}	
+		
+		hidden_effect = {
+			TST = {
+			country_event = {
+				id = tst.41
+				days = 2
+			}
+		}
+		}
+
+
+		add_manpower = -5
+
+	}
+}
+country_event = { #tfi moves into the tristan blacksite and fights their way to the pilot
+	id = col.1040 #this event is the exact same and col.1037 plane path
+	title = col.1040.t
+	desc = col.1040.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Alpha, we got the package. moving to extraction
+		name = col.1040.a
+		ai_chance = {factor = 100}	
+		
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = {
+						id = col.1041
+						days = 2						
+					}
+				}
+				50 = {
+					country_event = {
+						id = col.1042
+						days = 2						
+					}
+				}				
+			}	
+			
+			TST = {
+			country_event = {
+				id = tst.40
+				days = 2
+			}
+		}			
+			
+		}		
+
+
+	}
+}
+
+country_event = { #tfi sucessfully extracts via plane
+	id = col.1041
+	title = col.1041.t
+	desc = col.1041.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # This is an operation for the books
+		name = col.1041.a
+		ai_chance = {factor = 100}		
+
+		hidden_effect = {
+			TST = {
+			country_event = {
+				id = tst.42
+				days = 2
+			}
+		}
+		}
+		
+	}
+}
+
+country_event = { #the plane is intercepted by a sam and everyone dies
+	id = col.1042
+	title = col.1042.t
+	desc = col.1042.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Wipe this one off the books. Now.
+		name = col.1042.a
+		ai_chance = {factor = 100}	
+		
+		custom_effect_tooltip = col.1042_tt
+
+		hidden_effect = {
+			TST = {
+			country_event = {
+				id = tst.41
+				days = 2
+			}
+		}
+		}
+
+
+		add_manpower = -7
+
+	}
+}
+
 
 
 

@@ -60,7 +60,28 @@
 		}
 
 		visible_when_empty = yes
-	}		
+	}
+	
+		TST_western_cradle_eco_union_decision_tab = {
+		
+		priority = 350
+
+		icon = SOV_paranoia
+
+#		scripted_gui = tst_aryx_scramble_ui
+
+		allowed = {
+			original_tag = TST
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = triste_western_economic_union_decisions
+			}
+		}
+
+		visible_when_empty = yes
+	}
 
 
 

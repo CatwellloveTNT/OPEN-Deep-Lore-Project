@@ -1,0 +1,39 @@
+﻿#####################
+# VERMUND EVENTS
+###########################
+
+add_namespace = vmd
+
+
+country_event = {
+	id = vmd.1
+	title = vmd.1.t
+	desc = vmd.1.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # join
+		name = vmd.1.a
+		ai_chance = {factor = 70}
+
+		TST = {
+			country_event = {
+				id = tst.53
+			}
+		}
+
+	}
+
+	option = { # decline
+		name = vmd.1.b
+		ai_chance = {factor = 30}
+
+		TST = {
+			country_event = {
+				id = tst.54
+			}
+		}
+
+	}
+}

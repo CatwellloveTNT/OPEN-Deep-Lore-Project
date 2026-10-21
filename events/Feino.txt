@@ -1,0 +1,39 @@
+﻿#####################
+# FEINO EVENTS
+###########################
+
+add_namespace = feo
+
+
+country_event = {
+	id = feo.1
+	title = feo.1.t
+	desc = feo.1.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # join
+		name = feo.1.a
+		ai_chance = {factor = 70}
+
+		TST = {
+			country_event = {
+				id = tst.47
+			}
+		}
+
+	}
+
+	option = { # decline
+		name = feo.1.b
+		ai_chance = {factor = 30}
+
+		TST = {
+			country_event = {
+				id = tst.48
+			}
+		}
+
+	}
+}

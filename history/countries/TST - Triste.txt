@@ -123,10 +123,11 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 35
+	democratic = 15
+	fascism = 15
 	communism = 0
 	neutrality = 65
+	protean_democracy = 5
 }
 
 add_ideas = tst_leftover_arcadian_connections
@@ -207,5 +208,7 @@ set_variable = { triste_the_tristan_navy_nsdf = 0.05} # navy screen defense fact
 set_variable = { triste_the_tristan_navy_ncaagf = -0.10} # naval carrier air agility factor
 set_variable = { triste_the_tristan_navy_sorte = -0.1} # sortie effiecncy 
 set_variable = { triste_the_tristan_navy_ncaaf = -0.1} # naval carrier air attack factor
+
+
 
 
