@@ -1,6 +1,6 @@
 scripted_gui = {
   tst_the_circuit_ui = {
-    context_type = player_context
+    context_type = decision_category
     window_name = "tst_the_circuit_ui_window"
 
 

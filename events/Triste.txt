@@ -1288,8 +1288,26 @@ country_event = { #The coalition states begins aggressively patrolling the ocean
 				id = tst.61
 			}
 		}
-
-
+		# HOLY VARABLES
+		# TRISTE SPECIFIC VARIABLES
+		set_variable = { global.tss_halorado_health = 100 }
+		set_variable = { global.tss_janero_health = 100 }			
+		set_variable = { global.tss_sadhaak_health = 100 }
+		set_variable = { global.tss_batponya_health = 100 }
+		set_variable = { global.tss_yanov_health = 100 }
+		set_variable = { global.naval_drone_stockpile = 350 }
+		set_variable = { global.speedboat_stockpile = 200 }	
+		set_variable = { global.speedboat_morale = 100 }
+		set_variable = { global.airforce_stockpile = 150 }	
+		set_variable = { global.pilot_morale = 100 }	
+		set_variable = { global.cruise_missiles_stockpile = 50 }
+		set_variable = { global.iads_effectiveness = 100 }
+		set_variable = { global.ponypads_strongholds = 2500 }	
+		set_variable = { global.tst_action_points = 10 }	
+		set_variable = { global.tss_portugal_health = 100 }
+		set_variable = { global.tss_portugal_carrier_wing_aircraft = 28 }					
+		# GLOBAL (global in this case meaning being seen by both nations as the same at the same time) VARIABLES		
+		set_variable = { global.turns_passed = 0 }									
 	}
 
 }

@@ -224,11 +224,15 @@
  col.1040.d: "tfi moves into the tristan blacksite and fights their way to the pilot"
  col.1040.a: "Alpha, we got the package. Heading to exfil point."
  col.1041.t: "Operation Ball of Fire - Success"
- col.1041.d: "tfi sucessfully extracts via plane"
+ col.1041.d: "todo: tfi sucessfully extracts via plane"
  col.1041.a: "This is an operation for the books"
  col.1042.t: "Operation Ball of Fire - Failure"
- col.1042.d: "the plane is intercepted by a sam and everyone dies"
+ col.1042.d: "todo: the plane is intercepted by a sam and everyone dies"
  col.1042.a: "Wipe this one off the books. Now."
+ col.1043.t: "The Second Roadtrip War"
+ col.1043.d: ""Shoreline coming into view".\n\n"Copy Sparrow 6-4".\n\nAs Ricochet approached the shores of Triste, he couldn't help but wonder: is this really what he is now? An invader?... Was he an invader? He was protecting humanity's interests. Protecting humanity's interests meant protecting Arcadia's interests. Which meant he was protecting Arcadia... Right? He was told that by his superiors, so it must be right... Ricochet shook his head and tried to think of something else, he looked at his rifle. The UPR, Universal Pony Rifle. Best in it's class... Would he have to shoot an innocent Tristan with this instrument of death?\n\n"Feet dry in 10 seconds".\n\n"Copy".\n\nThose thoughts were dashed by the voice on the radio. 10 seconds. 10 seconds until the 82nd Arcadian Expeditionary Division set hoof on Triste alongside their human allies for the second time in history. History... Would history remember him if he was to die here? In this Second World backwater? What would history make of him? He wondered as his platoon's VLAP steered straight into a hail of gunfire.\n\n"Taking fire", the voice on the radio called.\n\n"Copy"\n\nTheir escort helicopter elegantly spun around, maintaining its forward momentum, it fires off a salvo of rockets at a building where streaking red hot tracers once came from.\n\n"Target suppressed" The escort pilot responded. Her helicopter returning to it's original azimuth as if it had not turned at all.\n\nRicochet glanced at the helicopter's tail, "Deadly" plastered proudly on it. He didn't have to spare a thought on how she got that callsign. Looking closer he noticed a pink and white castle next to her callsign. "The Proteans?!" Ricochet instinctually said aloud, not like anyone could have heard him anyways, the sound of his VLAP drowning out his voice. Save to mention the VLAPS behind him. Proteans protecting ponies? Does she even know we're ponies?\n\n"5 seconds to greenlight" said the voice on the radio. Suddenly, Ricochet's VLAP takes a sharp turn upwards, then rolls over to face the Halarado City Center. "Standby for greenlight"\n\nA light with pegasus wings at the edge of the crew door goes green, Ricochet knows what that means. He straps his UPR to his vest, spreads his wings and jumps out of the VLAP into the evergrowing fire below..."
+ col.1043.a: "Zulu Don't Fly"
+
 
 
 

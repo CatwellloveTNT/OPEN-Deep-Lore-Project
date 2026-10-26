@@ -983,9 +983,9 @@
 
 		fire_only_once = no	
 
-		days_re_enable = 120
+		days_re_enable = 70
 
-		days_remove = 120
+		days_remove = 30
 
 		modifier = {
 
@@ -1064,9 +1064,9 @@
 
 		fire_only_once = no	
 
-		days_re_enable = 120
+		days_re_enable = 70
 
-		days_remove = 120
+		days_remove = 30
 
 		modifier = {
 
@@ -1116,6 +1116,69 @@
 }
 
 TST_the_circuit_minigame_tab = {
+	#------------------------------- GLOBAL DECISIONS -------------------------------#
+
+	end_turn = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				NOT = {
+					OR = {
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing									
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 2
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_global_flag = global_tst_ended_turn
+
+		}
+
+
+		ai_will_do = {
+			factor = 400
+		}		
+
+	}
 
 
 	#------------------------------- NAVAL ASSETS DECISIONS -------------------------------#
@@ -1154,7 +1217,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1219,7 +1282,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1290,9 +1353,9 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
-		days_remove = 1
+		days_remove = 0
 
 		modifier = {
 
@@ -1357,7 +1420,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1422,7 +1485,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1493,9 +1556,9 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
-		days_remove = 1
+		days_remove = 0
 
 		modifier = {
 
@@ -1560,7 +1623,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1625,7 +1688,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1691,9 +1754,9 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
-		days_remove = 1
+		days_remove = 0
 
 		modifier = {
 
@@ -1759,7 +1822,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1824,7 +1887,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -1890,9 +1953,9 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
-		days_remove = 1
+		days_remove = 0
 
 		modifier = {
 
@@ -1919,6 +1982,136 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}
+
+	target_the_carrier_air_wing_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_kin_squadron
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_portugal_targeted_carrier_air_wing			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_kin_squadron_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_carrier_air_wing
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_portugal_targeted_kin_squadron			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
 	
 	#------------------------------- EAION 2 DECISIONS -------------------------------#	
 	
@@ -1955,7 +2148,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2018,7 +2211,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2065,8 +2258,8 @@ TST_the_circuit_minigame_tab = {
 				has_country_flag = tst_cruise_missiles_selected
 				NOT = {
 					OR = {
-					has_country_flag = tst_cruise_missiles_targetted_escort_fleet
-					has_country_flag = tst_cruise_missiles_targetted_repair_fleet
+					has_country_flag = tst_cruise_missiles_targeted_escort_fleet
+					has_country_flag = tst_cruise_missiles_targeted_repair_fleet
 					has_country_flag = tst_the_airforce_is_dead			
 					}
 				}
@@ -2086,7 +2279,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2152,7 +2345,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2182,7 +2375,7 @@ TST_the_circuit_minigame_tab = {
 
 	}	
 
-	target_the_repair_fleet = { #
+	target_the_repair_fleet_cruise_missiles = { #
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -2218,7 +2411,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2282,7 +2475,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2346,7 +2539,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2410,7 +2603,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 
@@ -2474,7 +2667,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 30
+		days_re_enable = 1
 
 		days_remove = 0
 

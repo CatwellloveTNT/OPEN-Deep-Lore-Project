@@ -65,6 +65,70 @@ TST_aryx_scramble_minigame = {
 TST_the_circuit_minigame_tab = { 
 
 
+	tst_time_waits_for_no_one = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 24
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_global_flag = global_the_circuit_is_ongoing			
+		}
+
+
+		available = {
+			AND = {
+			has_global_flag = global_tst_ended_turn	
+			has_global_flag = global_cls_ended_turn				
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_global_flag = global_the_circuit_is_ongoing		
+		}
+
+		timeout_effect = {
+
+	
+
+		}
+
+		complete_effect = {
+			clr_global_flag = global_tst_ended_turn
+			clr_country_flag = tst_naval_assets_targeted_arcadius
+			clr_country_flag = tst_naval_assets_targeted_repair_ships
+			clr_country_flag = tst_naval_assets_targeted_escort_fleet
+			clr_country_flag = tst_speedboats_targeted_arcadius			
+			clr_country_flag = tst_speedboats_targeted_escort_fleet
+			clr_country_flag = tst_speedboats_targeted_repair_ships
+			clr_country_flag = tst_naval_drones_targeted_arcadius
+			clr_country_flag = tst_naval_drones_targeted_escort_fleet
+			clr_country_flag = tst_naval_drones_targeted_repair_ships
+			clr_country_flag = tst_portugal_targeted_arcadius
+			clr_country_flag = tst_portugal_targeted_escort_fleet
+			clr_country_flag = tst_portugal_targeted_repair_ships
+			clr_country_flag = tst_eaion_2_targeted_carrier_wing
+			clr_country_flag = tst_eaion_2_targeted_kin_squadron
+			clr_country_flag = tst_cruise_missiles_targeted_arcadius
+			clr_country_flag = tst_cruise_missiles_targeted_escort_fleet
+			clr_country_flag = tst_cruise_missiles_targeted_repair_fleet
+			clr_country_flag = tst_aaa_targeted_the_carrier_wing
+			clr_country_flag = tst_aaa_targeted_kin_squadron
+			clr_country_flag = tst_manpads_targeted_the_carrier_wing
+			clr_country_flag = tst_manpads_targeted_kin_squadron
+			clr_country_flag = tst_portugal_targeted_kin_squadron
+			clr_country_flag = tst_portugal_targeted_carrier_air_wing			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
 	tst_the_battle_ends = {
 		priority = 1
 		icon = GFX_decision_eng_trade_unions_support

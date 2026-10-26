@@ -1737,6 +1737,23 @@ country_event = { #the plane is intercepted by a sam and everyone dies
 	}
 }
 
+country_event = { #THIS IS THE SECOND ROADTRIP WAR EVENT, I WROTE IT EARLY CUZ INSPIRATION HIT, PLEASE REMEMEBER
+	id = col.1043
+	title = col.1043.t
+	desc = col.1043.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Wipe this one off the books. Now.
+		name = col.1043.a
+		ai_chance = {factor = 100}	
+
+
+	}
+}
+
 
 
 

@@ -262,29 +262,6 @@ defined_text = { #
 	}
 }
 defined_text = { # 
-	name = chf_infliltration_1
-	text = {
-		trigger = {
-			chf = {
-				has_political_power = 1
-			}
-		}
-	localization_key = chf_infliltration_loc1
-	}
-}
-defined_text = { # 
-	name = chf_infliltration_2
-	text = {
-		trigger = {
-			chf = {
-				has_political_power = 1
-			}
-			
-		}
-	localization_key = chf_infliltration_loc2
-	}
-}
-defined_text = { # 
 	name = cls_austral_ghetto_aircav_readiness_percentage
 	text = {
 		trigger = {
@@ -350,3 +327,103 @@ defined_text = { #
 	localization_key = cls_aryx_scramble_minigame_desc_second_phase_loc
 	}
 }
+defined_text = { # 
+	name = tst_the_circuit_naval_assets_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_naval_assets_selected
+			}
+		}
+	localization_key = tst_the_circuit_naval_assets_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_naval_drones_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_naval_drones_selected
+			}
+		}
+	localization_key = tst_the_circuit_naval_drones_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_speedboats_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_speedboats_selected
+			}
+		}
+	localization_key = tst_the_circuit_speedboats_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_airforce_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_eaion_2_selected
+			}
+		}
+	localization_key = tst_the_circuit_airforce_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_cruise_missiles_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_cruise_missiles_selected
+			}
+		}
+	localization_key = tst_the_circuit_cruise_missiles_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_aaa_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_aaa_selected
+			}
+		}
+	localization_key = tst_the_circuit_aaa_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_manpads_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_manpads_selected
+			}
+		}
+	localization_key = tst_the_circuit_manpads_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_portugal_desc
+	text = {
+		trigger = {
+			TST = {
+				has_country_flag = tst_portugal_selected
+			}
+		}
+	localization_key = tst_the_circuit_portugal_desc_loc
+	}
+}
+defined_text = { # 
+	name = tst_the_circuit_ap_and_turns_desc
+	text = {
+		trigger = {
+			TST = {
+				has_global_flag = global_the_circuit_is_ongoing
+			}
+		}
+	localization_key = tst_the_circuit_ap_and_turns_desc_loc
+	}
+}
+
