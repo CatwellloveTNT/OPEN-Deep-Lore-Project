@@ -1114,4 +1114,1395 @@
 
 
 }
+
+TST_the_circuit_minigame_tab = {
+
+
+	#------------------------------- NAVAL ASSETS DECISIONS -------------------------------#
+	target_the_arcadius_naval_assets = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_naval_assets_targeted_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_escort_fleet_naval_assets = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_naval_assets_targeted_escort_fleet			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_the_repair_ships_naval_assets = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_selected					
+				}
+				}
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 1
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_naval_assets_targeted_repair_ships				
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	#------------------------------- SPEEDBOATS DECISIONS -------------------------------#
+
+	target_the_arcadius_speedboats = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_speedboats_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_targeted_escort_fleet
+					has_country_flag = tst_speedboats_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_speedboats_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_speedboats_targeted_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_escort_fleet_speedboats = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_speedboats_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_targeted_arcadius
+					has_country_flag = tst_speedboats_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_speedboats_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_speedboats_targeted_escort_fleet			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_the_repair_ships_speedboats = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_speedboats_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_targeted_arcadius
+					has_country_flag = tst_speedboats_targeted_escort_fleet
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_speedboats_selected	
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_selected					
+				}
+				}
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 1
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_speedboats_targeted_repair_ships				
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	#------------------------------- NAVAL DRONES DECISIONS -------------------------------#	
+	
+	target_the_arcadius_naval_drones = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_drones_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_drones_targeted_escort_fleet
+					has_country_flag = tst_naval_drones_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_naval_drones_targeted_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_escort_fleet_naval_drones = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_drones_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_drones_targeted_arcadius
+					has_country_flag = tst_naval_drones_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_naval_drones_targeted_escort_fleet			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_the_repair_ships_naval_drones = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_drones_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_drones_targeted_arcadius
+					has_country_flag = tst_naval_drones_targeted_escort_fleet
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected	
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 1
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_naval_drones_targeted_repair_ships				
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+
+	#------------------------------- PORTUGAL CARRIER DECISIONS -------------------------------#	
+	
+	target_the_arcadius_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_escort_fleet
+					has_country_flag = tst_portugal_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_portugal_targeted_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_escort_fleet_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_targeted_repair_ships
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_portugal_targeted_escort_fleet			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_the_repair_ships_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_targeted_escort_fleet
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 1
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_portugal_targeted_repair_ships				
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	#------------------------------- EAION 2 DECISIONS -------------------------------#	
+	
+	target_the_carrier_wing = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_eaion_2_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_eaion_2_targeted_kin_squadron
+					}
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_eaion_2_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_eaion_2_targeted_carrier_wing
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+	
+	target_kin_squadron = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_eaion_2_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_eaion_2_targeted_carrier_wing
+					}
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_eaion_2_selected				
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_eaion_2_targeted_kin_squadron
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+	}	
+
+	#------------------------------- CRUISE MISSILES DECISIONS -------------------------------#	
+	
+	target_the_arcadius_cruise_missiles = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_cruise_missiles_targetted_escort_fleet
+					has_country_flag = tst_cruise_missiles_targetted_repair_fleet
+					has_country_flag = tst_the_airforce_is_dead			
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected				
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_cruise_missiles_targeted_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+	
+	target_the_escort_fleet_cruise_missiles = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_arcadius
+					has_country_flag = tst_cruise_missiles_targeted_repair_fleet
+					has_country_flag = tst_the_airforce_is_dead			
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected				
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_cruise_missiles_targeted_escort_fleet
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_repair_fleet = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_arcadius
+					has_country_flag = tst_cruise_missiles_targeted_escort_fleet
+					has_country_flag = tst_the_airforce_is_dead			
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected				
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_cruise_missiles_targeted_repair_fleet
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_carrier_wings_aaa = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_aaa_targeted_kin_squadron		
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected				
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_aaa_targeted_the_carrier_wing
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_kin_squadron_aaa = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_aaa_targeted_the_carrier_wing		
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected				
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_aaa_targeted_kin_squadron
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_the_carrier_wings_manpads = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_manpads_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_manpads_targeted_kin_squadron		
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_manpads_selected				
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_manpads_targeted_the_carrier_wing
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_kin_squadron_manpads = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_manpads_selected
+				NOT = {
+					OR = {
+					has_country_flag = tst_manpads_targeted_the_carrier_wing		
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_manpads_selected	
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_manpads_targeted_kin_squadron
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+}
 	

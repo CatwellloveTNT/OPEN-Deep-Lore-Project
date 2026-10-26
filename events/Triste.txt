@@ -1259,6 +1259,67 @@ country_event = { #La Brea announces on national tv that triste is going to war 
 
 }
 
+country_event = { #The coalition states begins aggressively patrolling the ocean between triste and cls, triste realizes what is going on and sends out naval assets/speedboats to push off the coalition
+	id = tst.60
+	title = tst.60.t
+	desc = tst.60.d
+
+	is_triggered_only = yes
+
+
+	immediate = {
+		hidden_effect = {
+		set_global_flag = global_circuit_phase_1
+		set_global_flag = global_the_circuit_is_ongoing		
+		set_country_flag = tst_circuit_phase_1		
+		}
+	}
+
+
+	option = { #The Circuit is heating up...
+		name = tst.60.a	
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = tst.60_tt
+
+		if = {
+			limit = { has_completed_focus = TST_abandon_the_navy }
+			country_event = {
+				id = tst.61
+			}
+		}
+
+
+	}
+
+}
+
+country_event = { #this event shoots off if triste abandoned the navy, will fast track them to phase 2 of the minigame
+	id = tst.61
+	title = tst.61.t
+	desc = tst.61.d
+
+	is_triggered_only = yes
+
+
+	immediate = {
+		hidden_effect = {
+		set_global_flag = global_circuit_phase_2	
+		clr_global_flag = global_circuit_phase_1	
+		}
+	}
+
+
+	option = { #What a blunder!
+		name = tst.61.a	
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = tst.61_tt
+
+	}
+
+}
+
 
 
 

@@ -12,22 +12,6 @@ propaganda_efforts = {
 
 	}
 }
-MTG_naval_treaties = {
-	picture = GFX_decision_cat_picture_naval_treaties
-	allowed = {
-		has_dlc = "Man the Guns"
-	}
-	visible = {
-		OR = {
-			has_naval_treaty_trigger = yes
-			is_major = yes
-		}
-		any_owned_state = {
-			is_coastal = yes
-		}
-	}
-	priority = 10
-}
 
 war_measures = {
 	icon = generic_propaganda
@@ -108,9 +92,7 @@ governments_in_exile = {
 	}
 
 	visible = {
-		NOT = {
-			has_completed_focus = NOR_the_kings_no 
-		}
+
 	}
 
 	priority = 7
@@ -236,19 +218,9 @@ lar_local_recruitment = {
 	}
 }
 
-nato_decisions = {
-	picture = generic_democracy
-	allowed = {
-		always = yes
-	}
-	visible = {
-		date > 1944.1.1
-	}
-	priority = 100
-}
 
 foreign_mio_decisions_category = {
-	picture = generic_economy
+	#picture = generic_economy
 	allowed = {
 		has_dlc = "Arms Against Tyranny"
 	}

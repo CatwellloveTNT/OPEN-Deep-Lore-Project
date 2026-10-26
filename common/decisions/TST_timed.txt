@@ -60,96 +60,45 @@ TST_aryx_scramble_minigame = {
 			factor = 0
 		}
 	}
+}
+
+TST_the_circuit_minigame_tab = { 
 
 
-	aviceynian_interference = {
-		priority = 320
+	tst_the_battle_ends = {
+		priority = 1
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 60
+		days_mission_timeout = 365
 		is_good = no
-		days_re_enable = 5
+		days_re_enable = 1
 
 		activation = {
-			has_country_flag = aviceyn_interference	
+			has_global_flag = global_the_circuit_is_ongoing			
 		}
 
+
 		available = {
-			always = no
+			AND = {
+				always = no
+			}
+
 		}
 
 		fire_only_once = no
 
 		visible = {
-			has_country_flag = aviceyn_interference
+			has_global_flag = global_the_circuit_is_ongoing		
 		}
 
 		timeout_effect = {
-				add_to_variable = {
-				opposition_support = 35
-				}
-				subtract_from_variable = {
-					starail_support = 20
-				}
 
-		}
+	
 
-		cancel_trigger = {
-			OR = {
-				has_country_flag = secured_the_election
-				NOT = { has_country_flag = aviceyn_interference }
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	election_day = {
-		priority = 320
-		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 40
-		is_good = no
-		days_re_enable = 5
-
-		activation = {
-			has_country_flag = election_final_stretch
-		}
-
-		available = {
-			always = no
-		}
-
-		fire_only_once = yes
-
-		visible = {
-			has_country_flag = election_final_stretch
 		}
 
 		ai_will_do = {
 			factor = 0
 		}
-
-		timeout_effect = {
-			if = { 
-				limit = { check_variable = { var = starail_support value > opposition_support } 
-			}
-			ARC = {
-				country_event = {
-					id = arc.31
-				}
-			}
-			}
-			else_if = {
-				limit = { check_variable = { var = starail_support value > opposition_support } 
-			}
-			ARC = {
-				country_event = {
-					id = arc.32
-				}
-			}
-		}
-
-	}
 	}
 }
 

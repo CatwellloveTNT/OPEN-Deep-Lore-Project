@@ -1,0 +1,200 @@
+scripted_gui = {
+  tst_the_circuit_ui = {
+    context_type = player_context
+    window_name = "tst_the_circuit_ui_window"
+
+
+    triggers = {
+
+
+
+      #NAVAL ASSETS
+
+    tst_portugal_carrier_visible = {
+        AND = {
+          has_completed_focus = TST_the_35_65_plan
+          has_completed_focus = TST_commission_the_portugal_class_carrier         
+          has_global_flag = global_the_circuit_is_ongoing
+        }      
+    }  
+      
+      tst_navalassets_visible = {
+        AND = {
+          has_completed_focus = TST_the_35_65_plan
+          has_global_flag = global_the_circuit_is_ongoing
+          NOT = {
+          has_completed_focus = TST_commission_the_portugal_class_carrier             
+          }
+        }
+      }
+
+      tst_red_transparent_rectangle_for_naval_assets_visible = {
+        AND = {
+          has_completed_focus = TST_the_35_65_plan
+          has_global_flag = global_the_circuit_is_ongoing
+          OR = {
+            has_country_flag = tst_naval_assets_destroyed
+            has_country_flag = tst_carrier_destroyed            
+          }
+        }        
+      }
+
+    tst_destroyed_text_for_naval_assets_visible = {
+         AND = {
+          has_completed_focus = TST_the_35_65_plan
+          has_global_flag = global_the_circuit_is_ongoing
+          OR = {
+            has_country_flag = tst_naval_assets_destroyed
+            has_country_flag = tst_carrier_destroyed            
+          }
+
+        }      
+    }  
+    
+    tst_line1_visible = {
+         AND = {
+          has_completed_focus = TST_the_35_65_plan
+          has_global_flag = global_the_circuit_is_ongoing
+    }
+  }
+
+    tst_line2_visible = {
+         AND = {
+          has_completed_focus = TST_the_35_65_plan
+          has_global_flag = global_the_circuit_is_ongoing
+    }
+  }  
+
+      
+    }
+
+
+   effects = {
+
+
+
+      tst_navalassets_click = {
+
+        set_country_flag = tst_naval_assets_selected
+        clr_country_flag = tst_speedboats_selected
+        clr_country_flag = tst_naval_drones_selected
+        clr_country_flag = tst_portugal_selected
+        clr_country_flag = tst_eaion_2_selected    
+        clr_country_flag = tst_cruise_missiles_selected  
+        clr_country_flag = tst_aaa_selected  
+        clr_country_flag = tst_manpads_selected                                         
+      }
+
+      tst_speedboats_click = {
+         set_country_flag = tst_speedboats_selected
+        clr_country_flag = tst_naval_assets_selected 
+        clr_country_flag = tst_naval_drones_selected 
+         clr_country_flag = tst_portugal_selected
+        clr_country_flag = tst_eaion_2_selected 
+        clr_country_flag = tst_cruise_missiles_selected 
+        clr_country_flag = tst_aaa_selected 
+        clr_country_flag = tst_manpads_selected                                                   
+      }
+
+      tst_naval_drones_click = {
+         set_country_flag = tst_naval_drones_selected
+        clr_country_flag = tst_naval_assets_selected  
+        clr_country_flag = tst_speedboats_selected 
+         clr_country_flag = tst_portugal_selected
+        clr_country_flag = tst_eaion_2_selected  
+        clr_country_flag = tst_cruise_missiles_selected   
+        clr_country_flag = tst_aaa_selected  
+        clr_country_flag = tst_manpads_selected                                          
+      }
+
+      tst_portugal_carrier_click = {
+         set_country_flag = tst_portugal_selected
+        clr_country_flag = tst_naval_assets_selected  
+        clr_country_flag = tst_speedboats_selected    
+        clr_country_flag = tst_naval_drones_selected  
+        clr_country_flag = tst_eaion_2_selected   
+        clr_country_flag = tst_cruise_missiles_selected 
+        clr_country_flag = tst_aaa_selected  
+        clr_country_flag = tst_manpads_selected                                       
+      }      
+
+      tst_eaion_2_click = {
+        set_country_flag = tst_eaion_2_selected
+        clr_country_flag = tst_naval_assets_selected  
+        clr_country_flag = tst_speedboats_selected    
+        clr_country_flag = tst_naval_drones_selected  
+        clr_country_flag = tst_portugal_selected
+        clr_country_flag = tst_cruise_missiles_selected     
+        clr_country_flag = tst_aaa_selected   
+        clr_country_flag = tst_manpads_selected                                     
+      }
+
+      tst_cruise_missiles_click = {
+        set_country_flag = tst_cruise_missiles_selected
+        clr_country_flag = tst_naval_assets_selected 
+        clr_country_flag = tst_speedboats_selected
+        clr_country_flag = tst_naval_drones_selected
+        clr_country_flag = tst_portugal_selected
+        clr_country_flag = tst_eaion_2_selected  
+        clr_country_flag = tst_aaa_selected
+        clr_country_flag = tst_manpads_selected         
+      }
+
+      tst_aaa_click = {
+        set_country_flag = tst_aaa_selected
+        clr_country_flag = tst_naval_assets_selected
+        clr_country_flag = tst_speedboats_selected
+        clr_country_flag = tst_naval_drones_selected
+        clr_country_flag = tst_portugal_selected
+        clr_country_flag = tst_eaion_2_selected
+        clr_country_flag = tst_cruise_missiles_selected
+        clr_country_flag = tst_manpads_selected          
+      }
+
+      tst_manpads_click = {
+
+        set_country_flag = tst_manpads_selected
+        clr_country_flag = tst_naval_assets_selected
+        clr_country_flag = tst_speedboats_selected
+        clr_country_flag = tst_naval_drones_selected
+        clr_country_flag = tst_portugal_selected
+        clr_country_flag = tst_eaion_2_selected
+        clr_country_flag = tst_cruise_missiles_selected     
+        clr_country_flag = tst_aaa_selected
+
+      }
+
+
+   }
+
+    ai_enabled = {
+      always = yes
+    }
+
+    ai_test_interval = 100
+    ai_test_variance = 0.1
+
+    ai_check = {
+      has_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+    }
+
+   # ai_check_scope = {
+    #  
+    #}
+
+
+   ai_weights = {
+      tst_navalassets_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }
+ 
+    }
+
+
+  }
+
+
+
+}

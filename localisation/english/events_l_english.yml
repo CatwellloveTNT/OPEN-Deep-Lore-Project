@@ -1307,6 +1307,8 @@ xpr.1.a: "We must reclaim our birthright"
  col.1042_tt:0 "You feel like you've seen this outcome before..."
  tst.56_tt:0 "Don't call them mares bro... "
  nation_joined_western_eco_zone_tt:0 "The §YWestern Cradle Economic Zone§W Spirit will be improved by: \n§G+ 2% Stability\n§G+ 2% Fuel Gain from States\n§G- 2% Consumer Goods Factor\n§G- 2% Lack of Resources Penality§W"
+ tst.60_tt:0 "It seems the battle for our oceans has begun...\n\n§YThe Circuit minigame has activated, check your decision tab§W"
+ tst.61_tt:0 "As we have abandoned the navy, we cannot contest the coalition in the deep ocean.\n\n§RThe Circuit minigame has automatically advanced to phase 2§W"
 
 
 

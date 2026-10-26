@@ -5640,7 +5640,7 @@ PRO_the_protean_system = {
 
 	}
 
-	request_tfi_put_pressure_on_the_sss  { 
+	request_tfi_put_pressure_on_the_sss = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -5775,7 +5775,7 @@ PRO_the_protean_system = {
 
 	}
 
-	an_activist_in_every_street  { 
+	an_activist_in_every_street = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support

@@ -83,6 +83,25 @@
 		visible_when_empty = yes
 	}
 
+			TST_the_circuit_minigame_tab = {
+		
+		priority = 1000
+
+		icon = SOV_paranoia
+
+		scripted_gui = tst_the_circuit_ui
+
+		allowed = {
+			original_tag = TST
+		}
+
+		visible = {
+			OR = {
+				has_global_flag = global_the_circuit_is_ongoing
+			}
+		}
+
+		visible_when_empty = yes
+	}
 
 
-# ---------------------------------------------------------- BABIES FIRST DECISIONS TESTING # --------------------------------------------------------------------------------

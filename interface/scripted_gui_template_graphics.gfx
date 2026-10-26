@@ -77,7 +77,7 @@ spriteTypes = {
 		textureFile = "/gfx/interface/scripted_gui_graphics/tfi_logo_protean_system.dds"
 	}
 	spriteType = {
-		name = "GFX_white_line"
+		name = "GFX_white_line" #the standard connecting white line
 		textureFile = "/gfx/interface/scripted_gui_graphics/white_line.dds"
 	}
 	spriteType = {
@@ -108,6 +108,101 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_tristan_groundforce_icon"
 		textureFile = "/gfx/interface/scripted_gui_graphics/tristan_groundforce_icon_aryx_scramble.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_circuit_region_1_icon"
+		textureFile = "/gfx/interface/scripted_gui_graphics/the_circuit_region_1.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_circuit_region_2_icon"
+		textureFile = "/gfx/interface/scripted_gui_graphics/the_circuit_region_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_circuit_region_3_icon"
+		textureFile = "/gfx/interface/scripted_gui_graphics/the_circuit_region_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_circuit_region_4_icon"
+		textureFile = "/gfx/interface/scripted_gui_graphics/the_circuit_region_4.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_tst_cruise_missiles_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristian_cruise_missiles_the_circuit.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tst_naval_drones_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristian_naval_drones_the_circuit.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tst_speedboats_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristian_speedboats_the_circuit.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_naval_assets_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/naval_assets_the_circuit.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_tst_eaion_2_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristian_eaion_2_the_circuit.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_tst_aaa_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristian_aaa_the_circuit.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_tst_manpads_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tristian_manpads_the_circuit.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_cls_arcadius_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/cls_arcadius_the_circuit.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_cls_repair_ship_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/cls_repair_ship_the_circuit.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_cls_kin_squadron_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/cls_kin_squadron_the_circuit.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_unavailable_text"
+		textureFile = "/gfx/interface/scripted_gui_graphics/unavailable_text.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_destroyed_text"
+		textureFile = "/gfx/interface/scripted_gui_graphics/destroyed_text.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_red_transparent_box"
+		textureFile = "/gfx/interface/scripted_gui_graphics/red_transparent_box.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_red_transparent_rectangle"
+		textureFile = "/gfx/interface/scripted_gui_graphics/red_transparent_rectangle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tst_portugal_carrier_the_circuit"
+		textureFile = "/gfx/interface/scripted_gui_graphics/tst_portugal_carrier_the_circuit.dds"
 	}	
 
 }

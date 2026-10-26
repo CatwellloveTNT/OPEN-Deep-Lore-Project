@@ -1271,7 +1271,13 @@ focus_tree = {
 		}
 		cost = 1
 		available = {
+			AND = {
 			has_war = no
+			NOT = {
+				has_global_flag = global_the_circuit_is_ongoing
+			}
+			}
+
 		}
 		
 		bypass = {
@@ -1279,7 +1285,10 @@ focus_tree = {
 		}
 
 		cancel = {
+			OR = {
 			has_war = yes
+				has_global_flag = global_the_circuit_is_ongoing
+			}
 		}		
 
 		cancel_if_invalid = yes
@@ -1654,6 +1663,9 @@ focus_tree = {
 		available = {
 			AND = {
 			has_war = no
+			NOT = {
+				has_global_flag = global_the_circuit_is_ongoing
+			}
 			}
 		}
 
@@ -1663,7 +1675,10 @@ focus_tree = {
 		}
 
 		cancel = {
+			OR = {
 			has_war = yes
+				has_global_flag = global_the_circuit_is_ongoing
+			}
 		}		
 
 		cancel_if_invalid = yes

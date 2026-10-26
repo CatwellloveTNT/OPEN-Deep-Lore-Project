@@ -940,7 +940,7 @@ guiTypes = {
 
 
 	containerWindowType = {
-		name = "cls_aryx_scramble_ui_window" # -------------------------------------- TRISTAN ARYX SCRAMBLE -----------------------------------------
+		name = "cls_aryx_scramble_ui_window" # -------------------------------------- COALITION ARYX SCRAMBLE -----------------------------------------
 		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
 		size = { width = 0 height= 400 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
 		orientation = center
@@ -992,6 +992,211 @@ guiTypes = {
 			orientation = CENTER
 		
 		}		
+
+
+	}
+}
+
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "tst_the_circuit_ui_window" # -------------------------------------- TRISTAN THE CIRCUIT -----------------------------------------
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 900 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+	#	background = {
+#			name = "Background"		
+#			quadTextureSprite ="GFX_pro_the_third_skirmish_ui"
+#		}
+
+
+		iconType = {
+			name = "region1"
+			spriteType = "GFX_circuit_region_1_icon"
+			position = {
+				x = -160 y = -450
+			}
+			orientation = CENTER
+			scale = 0.38
+		}
+
+		iconType = {
+			name = "region2"
+			spriteType = "GFX_circuit_region_2_icon"
+			position = {
+				x = -1 y = -300
+			}
+			orientation = CENTER
+			scale = 0.24
+		}		
+
+		iconType = {
+			name = "region3"
+			spriteType = "GFX_circuit_region_3_icon"
+			position = {
+				x = -1 y = -200
+			}
+			orientation = CENTER
+			scale = 0.24
+		}	
+		
+		iconType = {
+			name = "region4"
+			spriteType = "GFX_circuit_region_4_icon"
+			position = {
+				x = -1 y = -100
+			}
+			orientation = CENTER
+			scale = 0.24
+		}			
+
+	
+
+		iconType = {
+			name = "tst_line1"
+			spriteType = "GFX_white_line"
+			position = {
+				x = 240 y = 90
+			}
+			rotation = 120
+			orientation = CENTER
+			scale = 0.30
+		}	
+		iconType = {
+			name = "tst_line2"
+			spriteType = "GFX_white_line"
+			position = {
+				x = 240 y = 90
+			}
+			rotation = 5.7
+			orientation = CENTER
+			scale = 0.30
+		}			
+
+		buttonType = {
+			name = "tst_navalassets"
+			spriteType = "GFX_naval_assets_circuit"
+			position = {
+				x = 117 y = 30
+			}
+			orientation = CENTER
+			scale = 0.45
+
+		}
+
+		iconType = {
+			name = "tst_line3"
+			spriteType = "GFX_white_line"
+			position = {
+				x = 242 y = 280
+			}
+			rotation = 0
+			orientation = CENTER
+			scale = 0.25
+		}	
+
+		buttonType = {
+			name = "tst_eaion_2"
+			spriteType = "GFX_tst_eaion_2_circuit"
+			position = {
+				x = 205 y = 210
+			}
+			orientation = CENTER
+			scale = 0.55
+		}
+
+
+
+		buttonType = {
+			name = "tst_speedboats"
+			spriteType = "GFX_tst_speedboats_circuit"
+			position = {
+				x = 250 y = 135
+			}
+			orientation = CENTER
+			scale = 0.33
+		}	
+		
+		buttonType = {
+			name = "tst_naval_drones"
+			spriteType = "GFX_tst_naval_drones_circuit"
+			position = {
+				x = 100 y = 140
+			}
+			orientation = CENTER
+			scale = 0.35
+		}
+		
+		buttonType = {
+			name = "tst_cruise_missiles"
+			spriteType = "GFX_tst_cruise_missiles_circuit"
+			position = {
+				x = 205 y = 325
+			}
+			orientation = CENTER
+			scale = 0.30
+		}	
+		
+		buttonType = {
+			name = "tst_aaa"
+			spriteType = "GFX_tst_aaa_circuit"
+			position = {
+				x = 20 y = 280
+			}
+			orientation = CENTER
+			scale = 0.35
+		}	
+		
+		buttonType = {
+			name = "tst_manpads"
+			spriteType = "GFX_tst_manpads_circuit"
+			position = {
+				x = 320 y = 280
+			}
+			orientation = CENTER
+			scale = 0.30
+		}	
+		
+		buttonType = {
+			name = "tst_portugal_carrier"
+			spriteType = "GFX_tst_portugal_carrier_the_circuit"
+			position = {
+				x = 80 y = 30
+			}
+			orientation = CENTER
+			scale = 0.40
+		}		
+
+		iconType = {
+			name = "tst_red_transparent_rectangle_for_naval_assets"
+			spriteType = "GFX_red_transparent_rectangle"
+			position = {
+				x = 120 y = 40
+			}
+			orientation = CENTER
+			scale = 0.38
+
+		}	
+
+		iconType = {
+			name = "tst_destroyed_text_for_naval_assets"
+			spriteType = "GFX_destroyed_text"
+			position = {
+				x = 125 y = 70
+			}
+			orientation = CENTER
+			scale = 1
+		}	
+		
+		
 
 
 	}

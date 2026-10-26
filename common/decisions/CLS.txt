@@ -903,7 +903,7 @@ CLS_the_austral_ghetto_minigame = {
 			
 			airexped_readiness_up_5 = yes	
 			
-			set_country_flag = 1st_aircav_recalled
+			set_country_flag = cls_1st_aircav_recalled
 
 
 		}
@@ -927,7 +927,7 @@ CLS_the_austral_ghetto_minigame = {
 			AND = {
 				has_country_flag = cls_austral_ghetto_flag				
 				has_country_flag = cls_austral_ghetto_phase_2_flag
-				has_country_flag = 1st_aircav_recalled				
+				has_country_flag = cls_1st_aircav_recalled				
 			}
 
 		}
@@ -936,7 +936,7 @@ CLS_the_austral_ghetto_minigame = {
 			AND = {
 				has_country_flag = cls_austral_ghetto_flag				
 				has_country_flag = cls_austral_ghetto_phase_2_flag
-				has_country_flag = 1st_aircav_recalled
+				has_country_flag = cls_1st_aircav_recalled
 			}
 		}
 
@@ -1020,7 +1020,7 @@ CLS_the_austral_ghetto_minigame = {
 			
 			airexped_readiness_up_5 = yes			
 
-			set_country_flag = 3rd_aircav_recalled
+			set_country_flag = cls_3rd_aircav_recalled
 		}
 
 		ai_will_do = {
@@ -1042,7 +1042,7 @@ CLS_the_austral_ghetto_minigame = {
 			AND = {
 				has_country_flag = cls_austral_ghetto_flag				
 				has_country_flag = cls_austral_ghetto_phase_2_flag
-				has_country_flag = 3rd_aircav_recalled				
+				has_country_flag = cls_3rd_aircav_recalled				
 			}
 
 		}
@@ -1051,7 +1051,7 @@ CLS_the_austral_ghetto_minigame = {
 			AND = {
 				has_country_flag = cls_austral_ghetto_flag				
 				has_country_flag = cls_austral_ghetto_phase_2_flag
-				has_country_flag = 3rd_aircav_recalled
+				has_country_flag = cls_3rd_aircav_recalled
 			}
 		}
 
@@ -1227,8 +1227,8 @@ CLS_the_austral_ghetto_minigame = {
 				has_country_flag = cls_austral_ghetto_flag				
 				has_country_flag = cls_austral_ghetto_phase_2_flag
 				has_country_flag = australs_angels_reformed
-				has_country_flag = 3rd_aircav_recalled
-				has_country_flag = 1st_aircav_recalled								
+				has_country_flag = cls_3rd_aircav_recalled
+				has_country_flag = cls_1st_aircav_recalled								
 			}
 
 		}
@@ -1238,8 +1238,8 @@ CLS_the_austral_ghetto_minigame = {
 				has_country_flag = cls_austral_ghetto_flag				
 				has_country_flag = cls_austral_ghetto_phase_2_flag
 				has_country_flag = australs_angels_reformed
-				has_country_flag = 3rd_aircav_recalled
-				has_country_flag = 1st_aircav_recalled					
+				has_country_flag = cls_3rd_aircav_recalled
+				has_country_flag = cls_1st_aircav_recalled					
 			}
 		}
 
@@ -1907,7 +1907,7 @@ CLS_the_aryx_scramble_minigame = {
 
 	}
 	
-	 request_vernal_deploy_to_batponya { #
+	 request_vernal_deploy_to_batponya = { #
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
