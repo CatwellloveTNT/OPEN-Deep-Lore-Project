@@ -93,35 +93,16 @@ TST_the_circuit_minigame_tab = {
 
 		timeout_effect = {
 
-	
+			the_circuit_tst_ends_turn = yes	
 
 		}
 
 		complete_effect = {
-			clr_global_flag = global_tst_ended_turn
-			clr_country_flag = tst_naval_assets_targeted_arcadius
-			clr_country_flag = tst_naval_assets_targeted_repair_ships
-			clr_country_flag = tst_naval_assets_targeted_escort_fleet
-			clr_country_flag = tst_speedboats_targeted_arcadius			
-			clr_country_flag = tst_speedboats_targeted_escort_fleet
-			clr_country_flag = tst_speedboats_targeted_repair_ships
-			clr_country_flag = tst_naval_drones_targeted_arcadius
-			clr_country_flag = tst_naval_drones_targeted_escort_fleet
-			clr_country_flag = tst_naval_drones_targeted_repair_ships
-			clr_country_flag = tst_portugal_targeted_arcadius
-			clr_country_flag = tst_portugal_targeted_escort_fleet
-			clr_country_flag = tst_portugal_targeted_repair_ships
-			clr_country_flag = tst_eaion_2_targeted_carrier_wing
-			clr_country_flag = tst_eaion_2_targeted_kin_squadron
-			clr_country_flag = tst_cruise_missiles_targeted_arcadius
-			clr_country_flag = tst_cruise_missiles_targeted_escort_fleet
-			clr_country_flag = tst_cruise_missiles_targeted_repair_fleet
-			clr_country_flag = tst_aaa_targeted_the_carrier_wing
-			clr_country_flag = tst_aaa_targeted_kin_squadron
-			clr_country_flag = tst_manpads_targeted_the_carrier_wing
-			clr_country_flag = tst_manpads_targeted_kin_squadron
-			clr_country_flag = tst_portugal_targeted_kin_squadron
-			clr_country_flag = tst_portugal_targeted_carrier_air_wing			
+
+			the_circuit_days_of_battle_up_1 = yes
+
+			the_circuit_tst_ends_turn = yes
+			
 		}
 
 		ai_will_do = {

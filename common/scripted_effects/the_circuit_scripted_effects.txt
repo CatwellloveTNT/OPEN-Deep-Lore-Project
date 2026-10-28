@@ -1,0 +1,406 @@
+# ------------CLAMPERS------------ #
+
+the_circuit_tst_halorado_health_clamper = {
+clamp_variable = {
+	var = var:global.tss_halorado_health
+	min = 0
+	max = 100
+}	
+}
+the_circuit_tst_janero_health_clamper = {
+clamp_variable = {
+	var = var:global.tss_janero_health
+	min = 0
+	max = 100
+}	
+}
+the_circuit_tst_sadhaak_health_clamper = {
+clamp_variable = {
+	var = var:global.tss_sadhaak_health
+	min = 0
+	max = 100
+}	
+}
+the_circuit_tst_batponya_health_clamper = {
+clamp_variable = {
+	var = var:global.tss_batponya_health
+	min = 0
+	max = 100
+}	
+}
+the_circuit_tst_yanov_health_clamper = {
+clamp_variable = {
+	var = var:global.tss_yanov_health
+	min = 0
+	max = 100
+}	
+}
+the_circuit_tst_portugal_health_clamper = {
+clamp_variable = {
+	var = var:global.tss_portugal_health
+	min = 0
+	max = 100
+}	
+}
+the_circuit_tst_iads_effectiveness_clamper = {
+clamp_variable = {
+	var = var:global.iads_effectiveness
+	min = 0
+	max = 100
+}	
+}
+the_circuit_tst_ponypads_strongholds_clamper = {
+clamp_variable = {
+	var = var:global.ponypads_strongholds
+	min = 0
+	max = 2500
+}	
+}
+the_circuit_tst_naval_drone_stockpile_clamper = {
+	clamp_variable = {
+		var = var:global.naval_drone_stockpile
+		min = 0
+		max = 1000
+	}
+}
+the_circuit_tst_speedboat_stockpile_clamper = {
+	clamp_variable = {
+		var = var:global.speedboat_stockpile
+		min = 0
+		max = 1000
+	}
+}
+the_circuit_tst_airforce_stockpile_clamper = {
+	clamp_variable = {
+		var = var:global.airforce_stockpile
+		min = 0
+		max = 1000
+	}
+}
+the_circuit_tst_cruise_missiles_stockpile_clamper = {
+	clamp_variable = {
+		var = var:global.cruise_missiles_stockpile
+		min = 0
+		max = 1000
+	}
+}
+the_circuit_tst_carrier_air_wing_clamper = {
+	clamp_variable = {
+		var = var:global.cruise_missiles_stockpile
+		min = 0
+		max = 78
+	}
+}
+the_circuit_tst_action_points_clamper = {
+	clamp_variable = {
+		var = var:global.tst_action_points
+		min = 0
+		max = 15
+	}
+}
+
+the_circuit_cls_arcadius_health_clamper = {
+	clamp_variable = {
+		var = var:global.soh_arcadius_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_arcadius_carrier_wing_stockpile_clamper = {
+	clamp_variable = {
+		var = var:global.soh_arcadius_carrier_wing_aircraft
+		min = 0
+		max = 212
+	}
+}
+the_circuit_cls_guyana_health_clamper = {
+	clamp_variable = {
+		var = var:global.soh_guyana_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_jamaica_health_clamper = {
+	clamp_variable = {
+		var = var:global.soh_jamaica_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_grenada_health_clamper = {
+	clamp_variable = {
+		var = var:global.soh_grenada_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_barbados_health_clamper = {
+	clamp_variable = {
+		var = var:global.soh_barbados_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_repair_ship_health_clamper = {
+	clamp_variable = {
+		var = var:global.soh_repair_ship_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_kin_1_health_clamper = {
+	clamp_variable = {
+		var = var:global.kin_1_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_kin_2_health_clamper = {
+	clamp_variable = {
+		var = var:global.kin_2_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_kin_3_health_clamper = {
+	clamp_variable = {
+		var = var:global.kin_3_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_kin_4_health_clamper = {
+	clamp_variable = {
+		var = var:global.kin_4_health
+		min = 0
+		max = 100
+	}
+}
+the_circuit_cls_action_points_clamper = {
+	clamp_variable = {
+		var = var:global.cls_action_points
+		min = 0
+		max = 15
+	}
+}
+
+# ------------ACTION POINT RESETTERS------------ #
+the_circuit_tst_action_points_reset_to_10 = {
+	set_variable = {
+		global.tst_action_points = 10
+	}
+
+	the_circuit_tst_action_points_clamper = yes
+
+}	
+the_circuit_tst_action_points_reset_to_15 = {
+	set_variable = {
+		global.tst_action_points = 15
+	}
+
+	the_circuit_tst_action_points_clamper = yes
+
+}
+
+the_circuit_cls_action_points_reset_to_10 = {
+	set_variable = {
+		global.cls_action_points = 10
+	}
+
+	the_circuit_cls_action_points_clamper = yes
+	
+}
+
+the_circuit_cls_action_points_reset_to_15 = {
+	set_variable = {
+		global.cls_action_points = 15
+	}
+
+	the_circuit_cls_action_points_clamper = yes
+	
+}
+
+# ------------ENDING TURNS------------ #
+
+the_circuit_tst_ends_turn = {
+
+			the_circuit_tst_action_points_reset_to_10 = yes
+
+			clr_global_flag = global_tst_ended_turn
+			clr_country_flag = tst_naval_assets_targeted_arcadius
+			clr_country_flag = tst_naval_assets_targeted_repair_ships
+			clr_country_flag = tst_naval_assets_targeted_escort_fleet
+			clr_country_flag = tst_speedboats_targeted_arcadius			
+			clr_country_flag = tst_speedboats_targeted_escort_fleet
+			clr_country_flag = tst_speedboats_targeted_repair_ships
+			clr_country_flag = tst_naval_drones_targeted_arcadius
+			clr_country_flag = tst_naval_drones_targeted_escort_fleet
+			clr_country_flag = tst_naval_drones_targeted_repair_ships
+			clr_country_flag = tst_portugal_targeted_arcadius
+			clr_country_flag = tst_portugal_targeted_escort_fleet
+			clr_country_flag = tst_portugal_targeted_repair_ships
+			clr_country_flag = tst_eaion_2_targeted_carrier_wing
+			clr_country_flag = tst_eaion_2_targeted_kin_squadron
+			clr_country_flag = tst_cruise_missiles_targeted_arcadius
+			clr_country_flag = tst_cruise_missiles_targeted_escort_fleet
+			clr_country_flag = tst_cruise_missiles_targeted_repair_fleet
+			clr_country_flag = tst_aaa_targeted_the_carrier_wing
+			clr_country_flag = tst_aaa_targeted_kin_squadron
+			clr_country_flag = tst_manpads_targeted_the_carrier_wing
+			clr_country_flag = tst_manpads_targeted_kin_squadron
+			clr_country_flag = tst_portugal_targeted_kin_squadron
+			clr_country_flag = tst_portugal_targeted_carrier_air_wing	
+
+}
+
+the_circuit_cls_ends_turn = {
+	clr_global_flag = global_cls_ended_turn
+}
+
+# ------------SUBTRACTING POINTS ------------ #
+
+the_circuit_tst_use_1_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 1
+	}
+
+	the_circuit_tst_action_points_clamper = yes
+
+}
+the_circuit_tst_use_2_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 2
+	}
+	the_circuit_tst_action_points_clamper = yes
+
+}
+the_circuit_tst_use_3_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 3
+	}
+	the_circuit_tst_action_points_clamper = yes
+}
+the_circuit_tst_use_4_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 4
+	}
+	the_circuit_tst_action_points_clamper = yes
+}
+the_circuit_tst_use_5_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 5
+	}
+	the_circuit_tst_action_points_clamper = yes
+}
+the_circuit_tst_use_6_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 6
+	}
+	the_circuit_tst_action_points_clamper = yes
+}
+the_circuit_tst_use_7_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 8
+	}
+	the_circuit_tst_action_points_clamper = yes
+}
+the_circuit_tst_use_9_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 9
+	}
+	the_circuit_tst_action_points_clamper = yes
+}
+the_circuit_tst_use_10_action_point = {
+
+	subtract_from_variable = {
+		global.tst_action_points = 10
+	}
+	the_circuit_tst_action_points_clamper = yes
+}
+
+
+the_circuit_cls_use_1_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 1
+	}
+
+	the_circuit_cls_action_points_clamper = yes
+
+}
+the_circuit_cls_use_2_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 2
+	}
+	the_circuit_cls_action_points_clamper = yes
+
+}
+the_circuit_cls_use_3_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 3
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+the_circuit_cls_use_4_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 4
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+the_circuit_cls_use_5_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 5
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+the_circuit_cls_use_6_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 6
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+the_circuit_cls_use_7_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 8
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+the_circuit_cls_use_9_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 9
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+the_circuit_cls_use_10_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 10
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+
+
+# DAYS OF BATTLE INCREASE #
+
+the_circuit_days_of_battle_up_1 = {
+
+	add_to_variable = {
+		global.turns_passed = 1
+	}
+
+}

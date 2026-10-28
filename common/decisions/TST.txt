@@ -1118,7 +1118,7 @@
 TST_the_circuit_minigame_tab = {
 	#------------------------------- GLOBAL DECISIONS -------------------------------#
 
-	end_turn = { #
+	tst_the_circuit_end_turn = { #
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -1150,7 +1150,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 2
+		days_re_enable = 12
 
 		days_remove = 0
 
@@ -1195,10 +1195,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 6
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius					
 					has_country_flag = tst_naval_assets_targeted_escort_fleet
 					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1235,6 +1244,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_6_action_point = yes
 
 			set_country_flag = tst_naval_assets_targeted_arcadius
 
@@ -1260,10 +1271,20 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_naval_assets_targeted_escort_fleet
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_targeted_repair_ships
+										has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1301,6 +1322,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+						the_circuit_tst_use_5_action_point = yes
+
 			set_country_flag = tst_naval_assets_targeted_escort_fleet			
 	
 		}
@@ -1325,10 +1348,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_naval_assets_targeted_repair_ships						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1372,8 +1404,12 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+			the_circuit_tst_use_5_action_point = yes
+
 			set_country_flag = tst_naval_assets_targeted_repair_ships				
 	
+
+
 		}
 
 
@@ -1398,10 +1434,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_speedboats_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_speedboats_targeted_arcadius						
 					has_country_flag = tst_speedboats_targeted_escort_fleet
 					has_country_flag = tst_speedboats_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1438,6 +1483,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes			
 
 			set_country_flag = tst_speedboats_targeted_arcadius
 
@@ -1463,10 +1510,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_speedboats_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_speedboats_targeted_escort_fleet						
 					has_country_flag = tst_speedboats_targeted_arcadius
 					has_country_flag = tst_speedboats_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1504,6 +1560,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+			the_circuit_tst_use_3_action_point = yes
+
 			set_country_flag = tst_speedboats_targeted_escort_fleet			
 	
 		}
@@ -1528,10 +1586,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_speedboats_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_speedboats_targeted_repair_ships						
 					has_country_flag = tst_speedboats_targeted_arcadius
 					has_country_flag = tst_speedboats_targeted_escort_fleet
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1575,6 +1642,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+						the_circuit_tst_use_3_action_point = yes
+
 			set_country_flag = tst_speedboats_targeted_repair_ships				
 	
 		}
@@ -1601,10 +1670,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_drones_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_targeted_escort_fleet
 					has_country_flag = tst_naval_drones_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1641,6 +1719,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_4_action_point = yes			
 
 			set_country_flag = tst_naval_drones_targeted_arcadius
 
@@ -1666,10 +1746,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_drones_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_naval_drones_targeted_escort_fleet						
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1707,6 +1796,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+			the_circuit_tst_use_2_action_point = yes			
+
 			set_country_flag = tst_naval_drones_targeted_escort_fleet			
 	
 		}
@@ -1731,10 +1822,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_drones_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_naval_drones_targeted_repair_ships						
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_targeted_escort_fleet
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1773,6 +1873,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+			the_circuit_tst_use_2_action_point = yes			
+
 			set_country_flag = tst_naval_drones_targeted_repair_ships				
 	
 		}
@@ -1798,12 +1900,22 @@ TST_the_circuit_minigame_tab = {
 
 		available = {
 			AND = {
+				
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius						
 					has_country_flag = tst_portugal_targeted_escort_fleet
 					has_country_flag = tst_portugal_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1840,6 +1952,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_4_action_point = yes			
 
 			set_country_flag = tst_portugal_targeted_arcadius
 
@@ -1865,10 +1979,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_portugal_targeted_escort_fleet						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1906,6 +2029,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+						the_circuit_tst_use_3_action_point = yes
+
 			set_country_flag = tst_portugal_targeted_escort_fleet			
 	
 		}
@@ -1930,10 +2055,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_portugal_targeted_repair_ships						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_targeted_escort_fleet
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1971,6 +2105,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+						the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_portugal_targeted_repair_ships				
 	
@@ -1996,9 +2132,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_portugal_targeted_carrier_air_wing						
 					has_country_flag = tst_portugal_targeted_kin_squadron
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -2036,6 +2181,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+						the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_portugal_targeted_carrier_air_wing			
 	
@@ -2061,9 +2208,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_portugal_targeted_kin_squadron						
 					has_country_flag = tst_portugal_targeted_carrier_air_wing
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -2101,6 +2257,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+						the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_portugal_targeted_kin_squadron			
 	
@@ -2128,9 +2286,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_eaion_2_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_eaion_2_targeted_carrier_wing						
 					has_country_flag = tst_eaion_2_targeted_kin_squadron
+					has_global_flag = global_tst_ended_turn
 					}
 				}
 			}
@@ -2167,6 +2334,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+						the_circuit_tst_use_5_action_point = yes
+
 			set_country_flag = tst_eaion_2_targeted_carrier_wing
 
 		}
@@ -2191,9 +2360,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_eaion_2_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_eaion_2_targeted_kin_squadron						
 					has_country_flag = tst_eaion_2_targeted_carrier_wing
+					has_global_flag = global_tst_ended_turn
 					}
 				}
 			}
@@ -2230,6 +2408,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+						the_circuit_tst_use_5_action_point = yes
+
 			set_country_flag = tst_eaion_2_targeted_kin_squadron
 
 		}
@@ -2256,10 +2436,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_cruise_missiles_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
 					has_country_flag = tst_cruise_missiles_targeted_escort_fleet
 					has_country_flag = tst_cruise_missiles_targeted_repair_fleet
+					has_country_flag = tst_cruise_missiles_targeted_arcadius
+					has_global_flag = global_tst_ended_turn					
 					has_country_flag = tst_the_airforce_is_dead			
 					}
 				}
@@ -2297,6 +2486,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_cruise_missiles_targeted_arcadius
 
@@ -2322,10 +2513,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_cruise_missiles_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_escort_fleet						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_country_flag = tst_cruise_missiles_targeted_repair_fleet
+					has_global_flag = global_tst_ended_turn
 					has_country_flag = tst_the_airforce_is_dead			
 					}
 				}
@@ -2363,6 +2563,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_cruise_missiles_targeted_escort_fleet
 
@@ -2388,10 +2590,19 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_cruise_missiles_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_repair_fleet						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_country_flag = tst_cruise_missiles_targeted_escort_fleet
+					has_global_flag = global_tst_ended_turn
 					has_country_flag = tst_the_airforce_is_dead			
 					}
 				}
@@ -2430,6 +2641,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+			the_circuit_tst_use_3_action_point = yes
+
 			set_country_flag = tst_cruise_missiles_targeted_repair_fleet
 
 		}
@@ -2454,9 +2667,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_aaa_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
+					has_country_flag = tst_aaa_targeted_the_carrier_wing						
 					has_country_flag = tst_aaa_targeted_kin_squadron		
+					has_global_flag = global_tst_ended_turn
 					}
 				}
 			}
@@ -2493,6 +2715,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_2_action_point = yes
 
 			set_country_flag = tst_aaa_targeted_the_carrier_wing
 
@@ -2518,9 +2742,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_aaa_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
-					has_country_flag = tst_aaa_targeted_the_carrier_wing		
+					has_country_flag = tst_aaa_targeted_kin_squadron							
+					has_country_flag = tst_aaa_targeted_the_carrier_wing	
+					has_global_flag = global_tst_ended_turn	
 					}
 				}
 			}
@@ -2558,6 +2791,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+			the_circuit_tst_use_3_action_point = yes
+
 			set_country_flag = tst_aaa_targeted_kin_squadron
 
 		}
@@ -2582,9 +2817,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_manpads_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 1
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
 					has_country_flag = tst_manpads_targeted_kin_squadron		
+					has_country_flag = tst_manpads_targeted_the_carrier_wing	
+					has_global_flag = global_tst_ended_turn					
 					}
 				}
 			}
@@ -2622,6 +2866,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+			the_circuit_tst_use_1_action_point = yes
+
 			set_country_flag = tst_manpads_targeted_the_carrier_wing
 
 		}
@@ -2646,9 +2892,18 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_manpads_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 1
+					compare = greater_than_or_equals
+				}
+
 				NOT = {
 					OR = {
-					has_country_flag = tst_manpads_targeted_the_carrier_wing		
+					has_country_flag = tst_manpads_targeted_kin_squadron							
+					has_country_flag = tst_manpads_targeted_the_carrier_wing	
+					has_global_flag = global_tst_ended_turn	
 					}
 				}
 			}
@@ -2685,6 +2940,8 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
+
+			the_circuit_tst_use_1_action_point = yes
 
 			set_country_flag = tst_manpads_targeted_kin_squadron
 

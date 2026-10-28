@@ -1202,3 +1202,144 @@ guiTypes = {
 	}
 }
 
+guiTypes = {
+
+	containerWindowType = {
+		name = "cls_the_circuit_ui_window" # -------------------------------------- COALITION THE CIRCUIT -----------------------------------------
+		position = { x = 10 y = 0}	 # PERFECT SIZE FOR THESE SCRIPTED GUIS ARE 550 x 770, REFERENCE THE ONE I DID FOR THE SOLARIS MINIGAME
+		size = { width = 0 height= 900 } # THE WIDTH DOES NOT MATTER, IT DOESNT CHANGE. 725 HEIGHT IS THE BEST I COULD MAKE IT LOOK
+		orientation = center
+		origo = center
+#		fade_time = 100 DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		moveable = no
+#		fade_type = linear DO NOT ENABLE THE FADE, WILL LITERALLY KILL EPILEPTICS
+		click_to_front = no
+		clipping = no
+		
+	#	background = {
+#			name = "Background"		
+#			quadTextureSprite ="GFX_pro_the_third_skirmish_ui"
+#		}
+
+
+		iconType = {
+			name = "region1"
+			spriteType = "GFX_circuit_region_1_icon"
+			position = {
+				x = -160 y = -450
+			}
+			orientation = CENTER
+			scale = 0.38
+		}
+
+		iconType = {
+			name = "region2"
+			spriteType = "GFX_circuit_region_2_icon"
+			position = {
+				x = -1 y = -300
+			}
+			orientation = CENTER
+			scale = 0.24
+		}		
+
+		iconType = {
+			name = "region3"
+			spriteType = "GFX_circuit_region_3_icon"
+			position = {
+				x = -1 y = -200
+			}
+			orientation = CENTER
+			scale = 0.24
+		}	
+		
+		iconType = {
+			name = "region4"
+			spriteType = "GFX_circuit_region_4_icon"
+			position = {
+				x = -1 y = -100
+			}
+			orientation = CENTER
+			scale = 0.24
+		}			
+
+	
+
+		iconType = {
+			name = "cls_line1"
+			spriteType = "GFX_white_line"
+			position = {
+				x = 270 y = 90
+			}
+			rotation = -12
+			orientation = CENTER
+			scale = 0.37
+		}	
+		iconType = {
+			name = "cls_line2"
+			spriteType = "GFX_white_line"
+			position = {
+				x = 240 y = 90
+			}
+			rotation = 5.8
+			orientation = CENTER
+			scale = 0.33
+		}			
+
+		buttonType = {
+			name = "cls_navalassets"
+			spriteType = "GFX_naval_assets_circuit"
+			position = {
+				x = 280 y = 300
+			}
+			orientation = CENTER
+			scale = 0.40
+
+		}
+
+		buttonType = {
+			name = "cls_carrier_wing"
+			spriteType = "GFX_tristan_airforce_icon"
+			position = {
+				x = 250 y = 150
+			}
+			orientation = CENTER
+			scale = 0.45
+		}
+		
+		buttonType = {
+			name = "cls_kin_squadron"
+			spriteType = "GFX_cls_kin_squadron_circuit"
+			position = {
+				x = 130 y = 110
+			}
+			orientation = CENTER
+			scale = 0.30
+		}	
+
+		buttonType = {
+			name = "cls_repair_ship"
+			spriteType = "GFX_cls_repair_ship_circuit"
+			position = {
+				x = 15 y = 275
+			}
+			orientation = CENTER
+			scale = 0.30
+		}		
+		
+		buttonType = {
+			name = "cls_arcadius_carrier"
+			spriteType = "GFX_tst_portugal_carrier_the_circuit"
+			position = {
+				x = 80 y = 30
+			}
+			orientation = CENTER
+			scale = 0.40
+		}		
+
+		
+		
+
+
+	}
+}
+

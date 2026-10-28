@@ -1,0 +1,104 @@
+scripted_gui = {
+  cls_the_circuit_ui = {
+    context_type = decision_category
+    window_name = "cls_the_circuit_ui_window"
+
+
+    triggers = {
+
+
+
+      #NAVAL ASSETS
+
+
+      
+    }
+
+
+   effects = {
+
+
+    cls_navalassets_click = {
+
+      set_country_flag = cls_escort_fleet_selected
+      clr_country_flag = cls_carrier_wing_selected
+      clr_country_flag = cls_kin_squadron_selected
+      clr_country_flag = cls_repair_ship_selected
+      clr_country_flag = cls_arcadius_selected                  
+
+    }
+
+    cls_carrier_wing_click = {
+
+       set_country_flag = cls_carrier_wing_selected
+      clr_country_flag = cls_escort_fleet_selected
+      clr_country_flag = cls_kin_squadron_selected
+      clr_country_flag = cls_repair_ship_selected
+      clr_country_flag = cls_arcadius_selected         
+      
+    }
+
+    cls_kin_squadron_click = {
+
+      set_country_flag = cls_kin_squadron_selected      
+      clr_country_flag = cls_escort_fleet_selected
+      clr_country_flag = cls_carrier_wing_selected
+      clr_country_flag = cls_repair_ship_selected
+      clr_country_flag = cls_arcadius_selected          
+
+    }
+
+    cls_repair_ship_click = {
+
+            set_country_flag = cls_repair_ship_selected
+      clr_country_flag = cls_escort_fleet_selected
+      clr_country_flag = cls_kin_squadron_selected
+      clr_country_flag = cls_carrier_wing_selected
+      clr_country_flag = cls_arcadius_selected                
+
+    }
+
+    cls_arcadius_carrier_click = {
+
+      set_country_flag = cls_arcadius_selected    
+      clr_country_flag = cls_escort_fleet_selected
+      clr_country_flag = cls_kin_squadron_selected
+      clr_country_flag = cls_carrier_wing_selected
+      clr_country_flag = cls_repair_ship_selected
+    }
+
+
+
+   }
+
+    ai_enabled = {
+      always = yes
+    }
+
+    ai_test_interval = 100
+    ai_test_variance = 0.1
+
+    ai_check = {
+      has_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+    }
+
+   # ai_check_scope = {
+    #  
+    #}
+
+
+   ai_weights = {
+      tst_navalassets_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }
+ 
+    }
+
+
+  }
+
+
+
+}

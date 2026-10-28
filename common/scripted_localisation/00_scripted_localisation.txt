@@ -426,4 +426,70 @@ defined_text = { #
 	localization_key = tst_the_circuit_ap_and_turns_desc_loc
 	}
 }
+defined_text = { # 
+	name = cls_the_circuit_arcadius_selected
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_arcadius_selected
+			}
+		}
+	localization_key = cls_the_circuit_arcadius_selected_loc
+	}
+}
+defined_text = { # 
+	name = cls_the_circuit_escort_fleet_selected
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_escort_fleet_selected
+			}
+		}
+	localization_key = cls_the_circuit_escort_fleet_selected_loc
+	}
+}
+defined_text = { # 
+	name = cls_the_circuit_repair_ships_selected
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_repair_ship_selected
+			}
+		}
+	localization_key = cls_the_circuit_repair_ships_selected_loc
+	}
+}
+defined_text = { # 
+	name = cls_the_circuit_carrier_air_wing_selected
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_carrier_wing_selected
+			}
+		}
+	localization_key = cls_the_circuit_carrier_air_wing_selected_loc
+	}
+}
+defined_text = { # 
+	name = cls_the_circuit_kin_squadron_selected
+	text = {
+		trigger = {
+			CLS = {
+				has_country_flag = cls_kin_squadron_selected
+			}
+		}
+	localization_key = cls_the_circuit_kin_squadron_selected_loc
+	}
+}
+defined_text = { # 
+	name = cls_the_circuit_ap_and_turns_desc
+	text = {
+		trigger = {
+			CLS = {
+				has_global_flag = global_the_circuit_is_ongoing
+			}
+		}
+	localization_key = cls_the_circuit_ap_and_turns_desc_loc
+	}
+}
 

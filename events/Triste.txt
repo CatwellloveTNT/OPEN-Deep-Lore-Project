@@ -1271,7 +1271,10 @@ country_event = { #The coalition states begins aggressively patrolling the ocean
 		hidden_effect = {
 		set_global_flag = global_circuit_phase_1
 		set_global_flag = global_the_circuit_is_ongoing		
-		set_country_flag = tst_circuit_phase_1		
+		set_country_flag = tst_circuit_phase_1
+		CLS = {
+			set_country_flag = cls_circuit_phase_1
+		}
 		}
 	}
 
@@ -1305,7 +1308,20 @@ country_event = { #The coalition states begins aggressively patrolling the ocean
 		set_variable = { global.ponypads_strongholds = 2500 }	
 		set_variable = { global.tst_action_points = 10 }	
 		set_variable = { global.tss_portugal_health = 100 }
-		set_variable = { global.tss_portugal_carrier_wing_aircraft = 28 }					
+		set_variable = { global.tss_portugal_carrier_wing_aircraft = 78 }	
+		# COALITION SPECIFIC VARIABLES			
+		set_variable = { global.soh_arcadius_health = 100 }	
+		set_variable = { global.soh_arcadius_carrier_wing_aircraft = 212 }	
+		set_variable = { global.soh_guyana_health = 100 }
+		set_variable = { global.soh_jamaica_health = 100 }			
+		set_variable = { global.soh_grenada_health = 100 }
+		set_variable = { global.soh_barbados_health = 100 }
+		set_variable = { global.soh_repair_ship_health = 100 }
+		set_variable = { global.kin_1_health = 100 }
+		set_variable = { global.kin_2_health = 100 }
+		set_variable = { global.kin_3_health = 100 }
+		set_variable = { global.kin_4_health = 100 }	
+		set_variable = { global.cls_action_points = 10 }										
 		# GLOBAL (global in this case meaning being seen by both nations as the same at the same time) VARIABLES		
 		set_variable = { global.turns_passed = 0 }									
 	}
