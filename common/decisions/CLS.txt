@@ -1965,6 +1965,3267 @@ CLS_the_aryx_scramble_minigame = {
 
 }
 
+		CLS_the_circuit_minigame_tab = {
+
+
+
+	 cls_the_circuit_end_turn = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				NOT = {
+					OR = {
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_global_flag = global_the_circuit_is_ongoing				
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 12
+
+		days_remove = 0
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		set_global_flag = global_cls_ended_turn
+
+		}
+
+		ai_will_do = {
+			factor = 400
+		}		
+
+	}
+
+
+	# ------------------- ARCADIUS DECISIONS ------------------- #
+
+	cls_the_circuit_launch_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_arcadius_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_aewc_active_the_circuit			
+					has_country_flag = cls_arcadius_sent_out_ew
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_arcadius_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 12
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+			clr_country_flag = cls_aewc_active_the_circuit
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_aewc_active_the_circuit
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	cls_the_circuit_launch_ew = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_arcadius_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_aewc_active_the_circuit			
+					has_country_flag = cls_arcadius_sent_out_ew
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_arcadius_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 12
+
+		days_remove = 24
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_arcadius_sent_out_ew
+
+			TST = {
+				set_country_flag = tst_the_circuit_coalition_ew_active
+			}
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	# ------------------- ESCORT FLEET DECISIONS ------------------- #
+
+	cls_the_circuit_target_the_naval_fleet_escort_fleet = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_escort_fleet_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_escort_fleet_targeted_naval_fleet				
+					has_country_flag = cls_escort_fleet_targeted_speedboats
+					has_country_flag = cls_escort_fleet_targeted_naval_drones	
+					has_country_flag = cls_escort_fleet_targeted_portugal				
+					has_global_flag = global_cls_ended_turn					
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_escort_fleet_selected	
+				TST = {
+					has_completed_focus = TST_the_35_65_plan
+				}											
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_5_action_point = yes
+
+			set_country_flag = cls_escort_fleet_targeted_naval_fleet
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_target_the_portugal_escort_fleet = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_escort_fleet_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 6
+					compare = greater_than_or_equals
+				}
+
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}				
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_escort_fleet_targeted_naval_fleet				
+					has_country_flag = cls_escort_fleet_targeted_speedboats
+					has_country_flag = cls_escort_fleet_targeted_naval_drones	
+					has_country_flag = cls_escort_fleet_targeted_portugal				
+					has_global_flag = global_cls_ended_turn				
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_escort_fleet_selected	
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}										
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_6_action_point = yes
+
+			set_country_flag = cls_escort_fleet_targeted_portugal
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_target_the_speedboats_escort_fleet = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_escort_fleet_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_escort_fleet_targeted_naval_fleet				
+					has_country_flag = cls_escort_fleet_targeted_speedboats
+					has_country_flag = cls_escort_fleet_targeted_naval_drones	
+					has_country_flag = cls_escort_fleet_targeted_portugal				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_escort_fleet_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_escort_fleet_targeted_speedboats
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_target_the_naval_drones_escort_fleet = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_escort_fleet_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_escort_fleet_targeted_naval_fleet				
+					has_country_flag = cls_escort_fleet_targeted_speedboats
+					has_country_flag = cls_escort_fleet_targeted_naval_drones	
+					has_country_flag = cls_escort_fleet_targeted_portugal				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_escort_fleet_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_escort_fleet_targeted_naval_drones
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	# ------------------- REPAIR SHIP DECISIONS ------------------- # note the ai will not interact with fluffy pony, only the player can
+
+	cls_the_circuit_repair_the_arcadius = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_repair_ship_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 10
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_repair_fleet_repaired_arcadius				
+					has_country_flag = cls_repair_fleet_repaired_guyana
+					has_country_flag = cls_repair_fleet_repaired_jamaica	
+					has_country_flag = cls_repair_fleet_repaired_grenada	
+					has_country_flag = cls_repair_fleet_repaired_barbados											
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_repair_ship_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_10_action_point = yes
+
+			set_country_flag = cls_repair_fleet_repaired_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_the_circuit_repair_the_guyana = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_repair_ship_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 10
+					compare = greater_than_or_equals
+				}
+
+				check_variable = {
+					var = var:global.soh_guyana_health
+					value = 1
+					compare = greater_than_or_equals
+				}			
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_repair_fleet_repaired_arcadius				
+					has_country_flag = cls_repair_fleet_repaired_guyana
+					has_country_flag = cls_repair_fleet_repaired_jamaica	
+					has_country_flag = cls_repair_fleet_repaired_grenada	
+					has_country_flag = cls_repair_fleet_repaired_barbados											
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_repair_ship_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_10_action_point = yes
+
+			set_country_flag = cls_repair_fleet_repaired_guyana
+
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_the_circuit_repair_the_jamaica = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_repair_ship_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 10
+					compare = greater_than_or_equals
+				}
+
+				check_variable = {
+					var = var:global.soh_grenada_health
+					value = 1
+					compare = greater_than_or_equals
+				}			
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_repair_fleet_repaired_arcadius				
+					has_country_flag = cls_repair_fleet_repaired_guyana
+					has_country_flag = cls_repair_fleet_repaired_jamaica	
+					has_country_flag = cls_repair_fleet_repaired_grenada	
+					has_country_flag = cls_repair_fleet_repaired_barbados											
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_repair_ship_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_10_action_point = yes
+
+			set_country_flag = cls_repair_fleet_repaired_jamaica
+
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_the_circuit_repair_the_grenada = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_repair_ship_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 10
+					compare = greater_than_or_equals
+				}
+
+				check_variable = {
+					var = var:global.soh_grenada_health
+					value = 1
+					compare = greater_than_or_equals
+				}			
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_repair_fleet_repaired_arcadius				
+					has_country_flag = cls_repair_fleet_repaired_guyana
+					has_country_flag = cls_repair_fleet_repaired_jamaica	
+					has_country_flag = cls_repair_fleet_repaired_grenada	
+					has_country_flag = cls_repair_fleet_repaired_barbados											
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_repair_ship_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_10_action_point = yes
+
+			set_country_flag = cls_repair_fleet_repaired_grenada
+
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_the_circuit_repair_the_barbados = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_repair_ship_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 10
+					compare = greater_than_or_equals
+				}
+
+				check_variable = {
+					var = var:global.soh_barbados_health
+					value = 1
+					compare = greater_than_or_equals
+				}			
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_repair_fleet_repaired_arcadius				
+					has_country_flag = cls_repair_fleet_repaired_guyana
+					has_country_flag = cls_repair_fleet_repaired_jamaica	
+					has_country_flag = cls_repair_fleet_repaired_grenada	
+					has_country_flag = cls_repair_fleet_repaired_barbados											
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_repair_ship_selected							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_10_action_point = yes
+
+			set_country_flag = cls_repair_fleet_repaired_barbados
+
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# ------------------- CARRIER AIR WING DECISIONS ------------------- #
+
+	cls_the_circuit_target_the_naval_fleet_caw = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+				
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+				TST = {
+					has_completed_focus = TST_the_35_65_plan
+				}	
+				NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_5_action_point = yes
+
+			set_country_flag = cls_caw_targeted_naval_fleet
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	cls_the_circuit_target_the_portugal_caw = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 6
+					compare = greater_than_or_equals
+				}
+
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}				
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+				
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}	
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}														
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_6_action_point = yes
+
+			set_country_flag = cls_caw_targeted_portugal
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_target_the_speedboats_caw = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected		
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_speedboats
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_target_the_naval_drones_caw = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_naval_drones
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_target_the_air_force_caw = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_air_force
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_conduct_dead_operations_caw = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_iads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_hunt_for_manpads_caw = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_2_action_point = yes
+
+			set_country_flag = cls_caw_targeted_manpads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	# ------------------- CARRIER AIR WING AEWC DECISIONS ------------------- #
+
+	cls_the_circuit_target_the_naval_fleet_caw_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+				
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected		
+				has_country_flag = cls_aewc_active_the_circuit
+				TST = {
+					has_completed_focus = TST_the_35_65_plan
+				}					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_5_action_point = yes
+
+			set_country_flag = cls_caw_targeted_naval_fleet
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	cls_the_circuit_target_the_portugal_caw_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 6
+					compare = greater_than_or_equals
+				}
+
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}				
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn					
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}										
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_6_action_point = yes
+
+			set_country_flag = cls_caw_targeted_portugal
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_target_the_speedboats_caw_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected		
+				has_country_flag = cls_aewc_active_the_circuit				
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_speedboats
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_target_the_naval_drones_caw_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+				has_country_flag = cls_aewc_active_the_circuit						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_naval_drones
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_target_the_air_force_caw_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+				has_country_flag = cls_aewc_active_the_circuit					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_air_force
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_conduct_dead_operations_caw_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected	
+				has_country_flag = cls_aewc_active_the_circuit					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_4_action_point = yes
+
+			set_country_flag = cls_caw_targeted_iads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_hunt_for_manpads_caw_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_carrier_wing_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_caw_targeted_naval_fleet				
+					has_country_flag = cls_caw_targeted_speedboats
+					has_country_flag = cls_caw_targeted_naval_drones	
+					has_country_flag = cls_caw_targeted_air_force	
+					has_country_flag = cls_caw_targeted_iads		
+					has_country_flag = cls_caw_targeted_manpads	
+					has_country_flag = cls_caw_targeted_portugal										
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_carrier_wing_selected
+				has_country_flag = cls_aewc_active_the_circuit						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_2_action_point = yes
+
+			set_country_flag = cls_caw_targeted_manpads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	# ------------------- KIN SQUADRON DECISIONS ------------------- #
+
+	cls_the_circuit_target_the_naval_fleet_kin = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+				TST = {
+					has_completed_focus = TST_the_35_65_plan
+				}					
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_naval_fleet
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	cls_the_circuit_target_the_portugal_kin = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}
+
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn					
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected	
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}		
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}													
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_portugal
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_target_the_speedboats_kin = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_speedboats
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	cls_the_circuit_target_the_naval_drones_kin = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected	
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_naval_drones
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_target_the_air_force_kin = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_air_force
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_conduct_dead_operations_kin = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_iads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_hunt_for_manpads_kin = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+								NOT = {
+					has_country_flag = cls_aewc_active_the_circuit
+				}							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_manpads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	# ------------------- KIN SQUADRON AEWC DECISIONS ------------------- #
+
+	cls_the_circuit_target_the_naval_fleet_kin_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn					
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+					has_country_flag = cls_aewc_active_the_circuit	
+				TST = {
+					has_completed_focus = TST_the_35_65_plan
+				}											
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_naval_fleet
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	cls_the_circuit_target_the_portugal_kin_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}
+
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected	
+				TST = {
+					has_completed_focus = TST_commission_the_portugal_class_carrier
+				}										
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_portugal
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_target_the_speedboats_kin_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+					has_country_flag = cls_aewc_active_the_circuit							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_speedboats
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	cls_the_circuit_target_the_naval_drones_kin_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected	
+					has_country_flag = cls_aewc_active_the_circuit						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_naval_drones
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_target_the_air_force_kin_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+					has_country_flag = cls_aewc_active_the_circuit							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_air_force
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	cls_the_circuit_conduct_dead_operations_kin_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+					has_country_flag = cls_aewc_active_the_circuit							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_iads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+	cls_the_circuit_hunt_for_manpads_kin_aewc = {
+				priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = CLS
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = cls_kin_squadron_selected
+
+				check_variable = {
+					var = var:global.cls_action_points
+					value = 8
+					compare = greater_than_or_equals
+				}		
+
+				NOT = {
+					OR = {
+					has_country_flag = cls_kin_targeted_naval_fleet				
+					has_country_flag = cls_kin_targeted_speedboats
+					has_country_flag = cls_kin_targeted_naval_drones	
+					has_country_flag = cls_kin_targeted_air_force	
+					has_country_flag = cls_kin_targeted_iads		
+					has_country_flag = cls_kin_targeted_manpads	
+					has_country_flag = cls_kin_targeted_portugal																				
+					has_global_flag = global_cls_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = cls_kin_squadron_selected
+					has_country_flag = cls_aewc_active_the_circuit							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_use_8_action_point = yes
+
+			set_country_flag = cls_kin_targeted_manpads
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}	
+
+
+}
+
 
 
 

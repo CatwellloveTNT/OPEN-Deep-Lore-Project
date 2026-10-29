@@ -137,6 +137,93 @@ cls_the_austral_ghetto_minigame = {
 	}
 }
 
+		CLS_the_circuit_minigame_tab = {
+
+
+	cls_time_waits_for_no_one = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 24
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_global_flag = global_the_circuit_is_ongoing			
+		}
+
+
+		available = {
+			AND = {
+			has_global_flag = global_tst_ended_turn	
+			has_global_flag = global_cls_ended_turn				
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_global_flag = global_the_circuit_is_ongoing		
+		}
+
+		timeout_effect = {
+
+			the_circuit_cls_ends_turn = yes	
+
+		}
+
+		complete_effect = {
+
+			the_circuit_cls_ends_turn = yes
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_the_battle_ends = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_global_flag = global_the_circuit_is_ongoing			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_global_flag = global_the_circuit_is_ongoing		
+		}
+
+		timeout_effect = {
+
+	
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}	
+
+
+
+		 
+
 
 
 

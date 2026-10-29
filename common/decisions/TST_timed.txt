@@ -145,5 +145,42 @@ TST_the_circuit_minigame_tab = {
 			factor = 0
 		}
 	}
+
+	tst_coalition_ew_active = {
+		priority = 1000
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 24
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = tst_the_circuit_coalition_ew_active
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = tst_the_circuit_coalition_ew_active			
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = tst_the_circuit_coalition_ew_active	
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
 }
 

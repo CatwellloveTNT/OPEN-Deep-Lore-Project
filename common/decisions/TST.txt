@@ -1217,7 +1217,10 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_naval_assets_selected							
+				has_country_flag = tst_naval_assets_selected	
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}						
 			}
 	
 		}
@@ -1294,7 +1297,10 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_naval_assets_selected							
+				has_country_flag = tst_naval_assets_selected	
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}											
 			}
 	
 		}
@@ -1372,8 +1378,9 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_naval_assets_selected	
 				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
 					OR = {
-					has_country_flag = tst_speedboats_selected					
+					has_country_flag = tst_speedboats_selected #lowkey idk why this is here but it shouldnt affect anything and im scared
 				}
 				}
 						
@@ -1418,6 +1425,250 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}	
+
+	#------------------------------- NAVAL ASSETS DECISIONS EW -------------------------------#
+
+	target_the_arcadius_naval_assets_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 6
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius					
+					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_the_circuit_coalition_ew_active					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_6_action_point = yes
+
+			set_country_flag = tst_naval_assets_targeted_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_escort_fleet_naval_assets_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+										has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_the_circuit_coalition_ew_active												
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+						the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_targeted_escort_fleet			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_the_repair_ships_naval_assets_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_repair_ships						
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_the_circuit_coalition_ew_active					
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_selected #lowkey idk why this is here but it shouldnt affect anything and im scared
+				}
+				}
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_targeted_repair_ships				
+	
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+
 
 	#------------------------------- SPEEDBOATS DECISIONS -------------------------------#
 
@@ -1925,7 +2176,10 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_portugal_selected							
+				has_country_flag = tst_portugal_selected	
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}											
 			}
 	
 		}
@@ -2001,7 +2255,10 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_portugal_selected							
+				has_country_flag = tst_portugal_selected	
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}											
 			}
 	
 		}
@@ -2077,7 +2334,10 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_portugal_selected
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}						
 						
 			}
 	
@@ -2154,7 +2414,9 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
-						
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}							
 			}
 	
 		}
@@ -2230,7 +2492,9 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
-						
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}							
 			}
 	
 		}
@@ -2270,7 +2534,394 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}	
+
+	#------------------------------- PORTUGAL CARRIER DECISIONS EW -------------------------------#	
+
+		target_the_arcadius_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius						
+					has_country_flag = tst_portugal_targeted_escort_fleet
+					has_country_flag = tst_portugal_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+					has_country_flag = tst_the_circuit_coalition_ew_active											
+			}
 	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_4_action_point = yes			
+
+			set_country_flag = tst_portugal_targeted_arcadius
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_escort_fleet_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_escort_fleet						
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_targeted_repair_ships
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+					has_country_flag = tst_the_circuit_coalition_ew_active											
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+						the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_targeted_escort_fleet			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_the_repair_ships_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_repair_ships						
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_targeted_escort_fleet
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected
+					has_country_flag = tst_the_circuit_coalition_ew_active					
+						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+						the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_targeted_repair_ships				
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	target_the_carrier_air_wing_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_carrier_air_wing						
+					has_country_flag = tst_portugal_targeted_kin_squadron
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+					has_country_flag = tst_the_circuit_coalition_ew_active						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+						the_circuit_tst_use_4_action_point = yes
+
+			set_country_flag = tst_portugal_targeted_carrier_air_wing			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_kin_squadron_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 4
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_kin_squadron						
+					has_country_flag = tst_portugal_targeted_carrier_air_wing
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+					has_country_flag = tst_the_circuit_coalition_ew_active							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+						the_circuit_tst_use_4_action_point = yes
+
+			set_country_flag = tst_portugal_targeted_kin_squadron			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
 	#------------------------------- EAION 2 DECISIONS -------------------------------#	
 	
 	target_the_carrier_wing = { #
@@ -2306,7 +2957,10 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_eaion_2_selected							
+				has_country_flag = tst_eaion_2_selected		
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}										
 			}
 	
 		}
@@ -2380,7 +3034,162 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_eaion_2_selected				
+				has_country_flag = tst_eaion_2_selected	
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}								
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+						the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_eaion_2_targeted_kin_squadron
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+	}	
+
+	#------------------------------- EAION 2 DECISIONS EW -------------------------------#	
+	
+	target_the_carrier_wing_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_eaion_2_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_eaion_2_targeted_carrier_wing						
+					has_country_flag = tst_eaion_2_targeted_kin_squadron
+					has_global_flag = global_tst_ended_turn
+					}
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_eaion_2_selected		
+					has_country_flag = tst_the_circuit_coalition_ew_active										
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+						the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_eaion_2_targeted_carrier_wing
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+	
+	target_kin_squadron_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_eaion_2_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_eaion_2_targeted_kin_squadron						
+					has_country_flag = tst_eaion_2_targeted_carrier_wing
+					has_global_flag = global_tst_ended_turn
+					}
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_eaion_2_selected	
+					has_country_flag = tst_the_circuit_coalition_ew_active								
 			}
 	
 		}
@@ -2654,6 +3463,8 @@ TST_the_circuit_minigame_tab = {
 
 	}	
 
+	# --------------------- IADS DECISIONS ------------------------- #
+
 	target_the_carrier_wings_aaa = { #
 		priority = 310
 
@@ -2688,7 +3499,10 @@ TST_the_circuit_minigame_tab = {
 
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
-				has_country_flag = tst_aaa_selected				
+				has_country_flag = tst_aaa_selected	
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}								
 			}
 
 		}
@@ -2763,7 +3577,10 @@ TST_the_circuit_minigame_tab = {
 
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
-				has_country_flag = tst_aaa_selected				
+				has_country_flag = tst_aaa_selected	
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}								
 			}
 
 		}
@@ -2803,6 +3620,162 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}
+
+	# --------------------- IADS DECISIONS EW ------------------------- #	
+
+	target_the_carrier_wings_aaa_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_aaa_targeted_the_carrier_wing						
+					has_country_flag = tst_aaa_targeted_kin_squadron		
+					has_global_flag = global_tst_ended_turn
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected	
+				has_country_flag = tst_the_circuit_coalition_ew_active								
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_2_action_point = yes
+
+			set_country_flag = tst_aaa_targeted_the_carrier_wing
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+	
+	target_kin_squadron_aaa_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_aaa_targeted_kin_squadron							
+					has_country_flag = tst_aaa_targeted_the_carrier_wing	
+					has_global_flag = global_tst_ended_turn	
+					}
+				}
+			}
+		}
+
+		visible = {
+
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_aaa_selected	
+					has_country_flag = tst_the_circuit_coalition_ew_active							
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_aaa_targeted_kin_squadron
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	# --------------------- PONYPADS DECISIONS ------------------------- #	
 	
 	target_the_carrier_wings_manpads = { #
 		priority = 310

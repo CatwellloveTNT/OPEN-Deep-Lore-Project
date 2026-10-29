@@ -255,6 +255,30 @@ the_circuit_tst_ends_turn = {
 
 the_circuit_cls_ends_turn = {
 	clr_global_flag = global_cls_ended_turn
+	clr_country_flag = cls_escort_fleet_targeted_speedboats
+	clr_country_flag = cls_escort_fleet_targeted_naval_fleet
+	clr_country_flag = cls_escort_fleet_targeted_portugal
+	clr_country_flag = cls_escort_fleet_targeted_naval_drones
+	clr_country_flag = cls_caw_targeted_naval_fleet
+	clr_country_flag = cls_caw_targeted_portugal
+	clr_country_flag = cls_caw_targeted_speedboats
+	clr_country_flag = cls_caw_targeted_naval_drones
+	clr_country_flag = cls_caw_targeted_air_force
+	clr_country_flag = cls_caw_targeted_iads
+	clr_country_flag = cls_caw_targeted_manpads
+	clr_country_flag = cls_repair_fleet_repaired_arcadius
+	clr_country_flag = cls_repair_fleet_repaired_guyana
+	clr_country_flag = cls_repair_fleet_repaired_jamaica
+	clr_country_flag = cls_repair_fleet_repaired_grenada
+	clr_country_flag = cls_repair_fleet_repaired_barbados
+	clr_country_flag = cls_kin_targeted_naval_fleet
+	clr_country_flag = cls_kin_targeted_speedboats
+	clr_country_flag = cls_kin_targeted_naval_drones
+	clr_country_flag = cls_kin_targeted_air_force
+	clr_country_flag = cls_kin_targeted_iads
+	clr_country_flag = cls_kin_targeted_manpads
+	clr_country_flag = cls_kin_targeted_portugal	
+	
 }
 
 # ------------SUBTRACTING POINTS ------------ #
@@ -373,6 +397,13 @@ the_circuit_cls_use_6_action_point = {
 	the_circuit_cls_action_points_clamper = yes
 }
 the_circuit_cls_use_7_action_point = {
+
+	subtract_from_variable = {
+		global.cls_action_points = 8
+	}
+	the_circuit_cls_action_points_clamper = yes
+}
+the_circuit_cls_use_8_action_point = {
 
 	subtract_from_variable = {
 		global.cls_action_points = 8
