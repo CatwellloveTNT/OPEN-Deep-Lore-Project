@@ -82,7 +82,8 @@ scripted_gui = {
         clr_country_flag = tst_eaion_2_selected    
         clr_country_flag = tst_cruise_missiles_selected  
         clr_country_flag = tst_aaa_selected  
-        clr_country_flag = tst_manpads_selected                                         
+        clr_country_flag = tst_manpads_selected   
+    #    clr_country_flag = tst_naval_assets_target_list                                      
       }
 
       tst_speedboats_click = {
@@ -93,7 +94,8 @@ scripted_gui = {
         clr_country_flag = tst_eaion_2_selected 
         clr_country_flag = tst_cruise_missiles_selected 
         clr_country_flag = tst_aaa_selected 
-        clr_country_flag = tst_manpads_selected                                                   
+        clr_country_flag = tst_manpads_selected     
+   #     clr_country_flag = tst_naval_assets_target_list                                              
       }
 
       tst_naval_drones_click = {
@@ -104,7 +106,8 @@ scripted_gui = {
         clr_country_flag = tst_eaion_2_selected  
         clr_country_flag = tst_cruise_missiles_selected   
         clr_country_flag = tst_aaa_selected  
-        clr_country_flag = tst_manpads_selected                                          
+        clr_country_flag = tst_manpads_selected 
+   #     clr_country_flag = tst_naval_assets_target_list                                         
       }
 
       tst_portugal_carrier_click = {
@@ -115,7 +118,8 @@ scripted_gui = {
         clr_country_flag = tst_eaion_2_selected   
         clr_country_flag = tst_cruise_missiles_selected 
         clr_country_flag = tst_aaa_selected  
-        clr_country_flag = tst_manpads_selected                                       
+        clr_country_flag = tst_manpads_selected 
+     #   clr_country_flag = tst_naval_assets_target_list                                      
       }      
 
       tst_eaion_2_click = {
@@ -126,7 +130,8 @@ scripted_gui = {
         clr_country_flag = tst_portugal_selected
         clr_country_flag = tst_cruise_missiles_selected     
         clr_country_flag = tst_aaa_selected   
-        clr_country_flag = tst_manpads_selected                                     
+        clr_country_flag = tst_manpads_selected   
+     #   clr_country_flag = tst_naval_assets_target_list                                  
       }
 
       tst_cruise_missiles_click = {
@@ -137,7 +142,8 @@ scripted_gui = {
         clr_country_flag = tst_portugal_selected
         clr_country_flag = tst_eaion_2_selected  
         clr_country_flag = tst_aaa_selected
-        clr_country_flag = tst_manpads_selected         
+        clr_country_flag = tst_manpads_selected     
+    #    clr_country_flag = tst_naval_assets_target_list    
       }
 
       tst_aaa_click = {
@@ -148,7 +154,8 @@ scripted_gui = {
         clr_country_flag = tst_portugal_selected
         clr_country_flag = tst_eaion_2_selected
         clr_country_flag = tst_cruise_missiles_selected
-        clr_country_flag = tst_manpads_selected          
+        clr_country_flag = tst_manpads_selected 
+    #    clr_country_flag = tst_naval_assets_target_list                  
       }
 
       tst_manpads_click = {
@@ -161,6 +168,7 @@ scripted_gui = {
         clr_country_flag = tst_eaion_2_selected
         clr_country_flag = tst_cruise_missiles_selected     
         clr_country_flag = tst_aaa_selected
+   #   clr_country_flag = tst_naval_assets_target_list          
 
       }
 

@@ -139,6 +139,107 @@ cls_the_austral_ghetto_minigame = {
 
 		CLS_the_circuit_minigame_tab = {
 
+	cls_the_circuit_sitrep_gathering_info = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 24
+		is_good = yes
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_sitrep_mission_shooter			
+		}
+
+
+		available = {
+
+			custom_override_tooltip = {
+				tooltip = cls_circuit_sitrep_tt
+
+			has_country_flag = cls_aewc_active_the_circuit
+
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_sitrep_mission_shooter		
+		}
+
+		timeout_effect = {
+
+			hidden_effect = {
+
+			country_event = {
+				id = col.1044
+			}
+
+			clr_country_flag = cls_the_circuit_sitrep_mission_shooter				
+
+			}
+
+
+
+		}
+
+		complete_effect = {
+
+			hidden_effect = {
+
+			country_event = {
+				id = col.1044
+			}
+
+			clr_country_flag = cls_the_circuit_sitrep_mission_shooter				
+
+			}		
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_the_battle_ends = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_global_flag = global_the_circuit_is_ongoing			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_global_flag = global_the_circuit_is_ongoing		
+		}
+
+		timeout_effect = {
+
+	
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
 
 	cls_time_waits_for_no_one = {
 		priority = 1
@@ -218,6 +319,223 @@ cls_the_austral_ghetto_minigame = {
 			factor = 0
 		}
 	}
+
+	cls_tst_hit_the_arcadius_naval_assets = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_arcadius			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_arcadius		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_arcadius
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_arcadius_naval_assets_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_arcadius_naval_assets_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_arcadius_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_arcadius_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_arcadius_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	cls_tst_hit_the_repair_ship_naval_assets = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_repair_ship			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_repair_ship		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_repair_ship
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_repair_ship_naval_assets_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_repair_ship_critical_hit
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_repair_ship_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_repair_ship_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_repair_ship_naval_assets_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_repair_ship_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_repair_ship_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_repair_ship_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
 }	
 
 

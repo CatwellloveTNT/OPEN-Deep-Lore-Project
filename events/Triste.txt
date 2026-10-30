@@ -1354,6 +1354,64 @@ country_event = { #this event shoots off if triste abandoned the navy, will fast
 
 }
 
+country_event = { #event that tells triste the status of the coalition's arcadius csg
+	id = tst.62
+	title = tst.62.t
+	desc = tst.62.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Right
+		name = tst.62.a	
+		ai_chance = {factor = 100}	
+
+		country_event = {
+			id = tst.63
+		}
+
+	}
+
+}
+
+country_event = { #event that tells triste the status of kin squadron
+	id = tst.63
+	title = tst.63.t
+	desc = tst.63.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Right
+		name = tst.63.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+
+country_event = { #testing event to reset points in the circuit minigame
+	id = tst.6100
+	title = tst.61.t
+	desc = tst.61.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #What a blunder!
+		name = tst.61.a	
+		ai_chance = {factor = 100}	
+
+		cls_reset_action_points = yes
+
+	}
+
+}
+
 
 
 

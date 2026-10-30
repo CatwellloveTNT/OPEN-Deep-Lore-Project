@@ -24,7 +24,8 @@ scripted_gui = {
       clr_country_flag = cls_carrier_wing_selected
       clr_country_flag = cls_kin_squadron_selected
       clr_country_flag = cls_repair_ship_selected
-      clr_country_flag = cls_arcadius_selected                  
+      clr_country_flag = cls_arcadius_selected       
+   #   clr_country_flag = cls_escort_fleet_target_list          
 
     }
 
@@ -35,6 +36,7 @@ scripted_gui = {
       clr_country_flag = cls_kin_squadron_selected
       clr_country_flag = cls_repair_ship_selected
       clr_country_flag = cls_arcadius_selected         
+   #   clr_country_flag = cls_escort_fleet_target_list           
       
     }
 
@@ -44,7 +46,8 @@ scripted_gui = {
       clr_country_flag = cls_escort_fleet_selected
       clr_country_flag = cls_carrier_wing_selected
       clr_country_flag = cls_repair_ship_selected
-      clr_country_flag = cls_arcadius_selected          
+      clr_country_flag = cls_arcadius_selected    
+    # clr_country_flag = cls_escort_fleet_target_list                 
 
     }
 
@@ -54,7 +57,8 @@ scripted_gui = {
       clr_country_flag = cls_escort_fleet_selected
       clr_country_flag = cls_kin_squadron_selected
       clr_country_flag = cls_carrier_wing_selected
-      clr_country_flag = cls_arcadius_selected                
+      clr_country_flag = cls_arcadius_selected  
+  #    clr_country_flag = cls_escort_fleet_target_list                         
 
     }
 
@@ -65,6 +69,7 @@ scripted_gui = {
       clr_country_flag = cls_kin_squadron_selected
       clr_country_flag = cls_carrier_wing_selected
       clr_country_flag = cls_repair_ship_selected
+   #   clr_country_flag = cls_escort_fleet_target_list           
     }
 
 

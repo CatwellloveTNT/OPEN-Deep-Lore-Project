@@ -1754,6 +1754,80 @@ country_event = { #THIS IS THE SECOND ROADTRIP WAR EVENT, I WROTE IT EARLY CUZ I
 	}
 }
 
+country_event = { #event that shows the status of triste's naval fleet
+	id = col.1044
+	title = col.1044.t
+	desc = col.1044.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # ok
+		name = col.1044.a
+		ai_chance = {factor = 100}	
+
+		country_event = {
+			id = col.1045
+		}
+
+	}
+}
+country_event = { #event that shows the status of triste's speedboat and naval drone stockpile
+	id = col.1045
+	title = col.1045.t
+	desc = col.1045.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # ok
+		name = col.1045.a
+		ai_chance = {factor = 100}	
+
+		country_event = {
+			id = col.1046
+		}
+
+	}
+}
+
+country_event = { #event that shows the status of triste's airforce numbers and estimated morale
+	id = col.1046
+	title = col.1046.t
+	desc = col.1046.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # ok
+		name = col.1046.a
+		ai_chance = {factor = 100}	
+
+		country_event = {
+			id = col.1047
+		}
+
+	}
+}
+country_event = { #event that shows the status of triste's iads effectiveness and manpad strongholds
+	id = col.1047
+	title = col.1047.t
+	desc = col.1047.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # well that wraps that up
+		name = col.1047.a
+		ai_chance = {factor = 100}	
+
+	}
+}
+
 
 
 

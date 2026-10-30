@@ -1119,7 +1119,7 @@ TST_the_circuit_minigame_tab = {
 	#------------------------------- GLOBAL DECISIONS -------------------------------#
 
 	tst_the_circuit_end_turn = { #
-		priority = 310
+		priority = 1000
 
 		icon = GFX_decision_eng_trade_unions_support
 
@@ -1180,6 +1180,62 @@ TST_the_circuit_minigame_tab = {
 
 	}
 
+	tst_the_circuit_sitrep = { #
+		priority = 1000
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing									
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 24
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			set_country_flag = tst_the_circuit_sitrep_mission_shooter
+
+		}
+
+
+		ai_will_do = {
+			factor = 0
+		}		
+
+	}	
+
 
 	#------------------------------- NAVAL ASSETS DECISIONS -------------------------------#
 	target_the_arcadius_naval_assets = { #
@@ -1204,9 +1260,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_assets_targeted_arcadius					
-					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
 					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1219,8 +1278,12 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_naval_assets_selected	
 				NOT = {
+					OR = {
 					has_country_flag = tst_the_circuit_coalition_ew_active
-				}						
+					has_country_flag = tst_naval_assets_target_list
+					}
+
+				}					
 			}
 	
 		}
@@ -1252,6 +1315,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_assets_targeted_arcadius
 
+			tst_attacks_arcadius_with_naval_assets = yes
+
 		}
 
 
@@ -1275,18 +1340,10 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_assets_selected
 
-				check_variable = {
-					var = var:global.tst_action_points
-					value = 5
-					compare = greater_than_or_equals
-				}
 
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_assets_targeted_escort_fleet
-					has_country_flag = tst_naval_assets_targeted_arcadius
-					has_country_flag = tst_naval_assets_targeted_repair_ships
 										has_global_flag = global_tst_ended_turn
 					}
 
@@ -1299,7 +1356,11 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_naval_assets_selected	
 				NOT = {
+					OR = {
 					has_country_flag = tst_the_circuit_coalition_ew_active
+					has_country_flag = tst_naval_assets_target_list
+					}
+
 				}											
 			}
 	
@@ -1328,9 +1389,9 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_5_action_point = yes
+					#	the_circuit_tst_use_5_action_point = yes
 
-			set_country_flag = tst_naval_assets_targeted_escort_fleet			
+			set_country_flag = tst_naval_assets_target_list			
 	
 		}
 
@@ -1340,6 +1401,408 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}
+
+
+	#------------------------------- NAVAL ASSETS TARGET LIST DECISIONS -------------------------------#
+	
+
+	tst_the_circuit_go_back = { #
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			clr_country_flag = tst_naval_assets_target_list
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}
+
+
+	target_the_guyana_naval_assets = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_guyana
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_grenada_naval_assets = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_grenada
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_jamaica_naval_assets = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_jamaica
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_barbados_naval_assets = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_barbados
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
 	
 	target_the_repair_ships_naval_assets = { #
 		priority = 310
@@ -1363,9 +1826,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_assets_targeted_repair_ships						
 					has_country_flag = tst_naval_assets_targeted_arcadius
-					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1378,10 +1844,11 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_naval_assets_selected	
 				NOT = {
-					has_country_flag = tst_the_circuit_coalition_ew_active
 					OR = {
-					has_country_flag = tst_speedboats_selected #lowkey idk why this is here but it shouldnt affect anything and im scared
-				}
+					has_country_flag = tst_the_circuit_coalition_ew_active
+					has_country_flag = tst_naval_assets_target_list
+					}
+
 				}
 						
 			}
@@ -1450,9 +1917,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_assets_targeted_arcadius					
-					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
 					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1464,7 +1934,10 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_naval_assets_selected	
-				has_country_flag = tst_the_circuit_coalition_ew_active					
+				has_country_flag = tst_the_circuit_coalition_ew_active		
+				NOT = {
+				has_country_flag = tst_naval_assets_target_list					
+				}			
 			}
 	
 		}
@@ -1519,19 +1992,17 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_assets_selected
 
-				check_variable = {
-					var = var:global.tst_action_points
-					value = 5
-					compare = greater_than_or_equals
-				}
 
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_assets_targeted_escort_fleet
 					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
 					has_country_flag = tst_naval_assets_targeted_repair_ships
-										has_global_flag = global_tst_ended_turn
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
 					}
 
 				}
@@ -1570,9 +2041,9 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_5_action_point = yes
+			
 
-			set_country_flag = tst_naval_assets_targeted_escort_fleet			
+			set_country_flag = tst_naval_assets_target_list			
 	
 		}
 
@@ -1582,6 +2053,401 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}
+
+	# ---------------- NAVAL ASSETS TARGET LIST EW DECISIONS ----------------------------- #
+
+
+	tst_the_circuit_go_back_ew = { #
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			clr_country_flag = tst_naval_assets_target_list
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}	
+
+	target_the_guyana_naval_assets_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_guyana
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_grenada_naval_assets_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_grenada
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_jamaica_naval_assets_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_jamaica
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_barbados_naval_assets_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_assets_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 5
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_assets_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_5_action_point = yes
+
+			set_country_flag = tst_naval_assets_attacked_barbados
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+
+
+
+
 	
 	target_the_repair_ships_naval_assets_ew = { #
 		priority = 310
@@ -1605,9 +2471,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_assets_targeted_repair_ships						
 					has_country_flag = tst_naval_assets_targeted_arcadius
-					has_country_flag = tst_naval_assets_targeted_escort_fleet
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1621,10 +2490,8 @@ TST_the_circuit_minigame_tab = {
 				has_country_flag = tst_naval_assets_selected	
 				has_country_flag = tst_the_circuit_coalition_ew_active					
 				NOT = {
-					OR = {
-					has_country_flag = tst_speedboats_selected #lowkey idk why this is here but it shouldnt affect anything and im scared
-				}
-				}
+				has_country_flag = tst_naval_assets_target_list					
+				}	
 						
 			}
 	
@@ -1694,9 +2561,11 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_speedboats_targeted_arcadius						
-					has_country_flag = tst_speedboats_targeted_escort_fleet
-					has_country_flag = tst_speedboats_targeted_repair_ships
+					has_country_flag = tst_speedboats_targeted_arcadius
+					has_country_flag = tst_speedboats_attacked_grenada
+					has_country_flag = tst_speedboats_attacked_guyana					
+					has_country_flag = tst_speedboats_attacked_jamaica
+					has_country_flag = tst_speedboats_attacked_barbados
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1707,7 +2576,10 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_speedboats_selected							
+				has_country_flag = tst_speedboats_selected	
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}										
 			}
 	
 		}
@@ -1762,17 +2634,9 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_speedboats_selected
 
-				check_variable = {
-					var = var:global.tst_action_points
-					value = 3
-					compare = greater_than_or_equals
-				}
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_speedboats_targeted_escort_fleet						
-					has_country_flag = tst_speedboats_targeted_arcadius
-					has_country_flag = tst_speedboats_targeted_repair_ships
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1783,7 +2647,151 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_speedboats_selected							
+				has_country_flag = tst_speedboats_selected	
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			set_country_flag = tst_naval_assets_target_list			
+	
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	#------------------------------- SPEEDBOATS ESCORT FLEET TARGET LIST DECISIONS -------------------------------#
+
+	
+
+	tst_the_circuit_go_back_speedboats = { #
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_speedboats_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			clr_country_flag = tst_naval_assets_target_list
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}
+
+
+	target_the_guyana_speedboats = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_speedboats_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_targeted_arcadius
+					has_country_flag = tst_speedboats_attacked_grenada
+					has_country_flag = tst_speedboats_attacked_guyana					
+					has_country_flag = tst_speedboats_attacked_jamaica
+					has_country_flag = tst_speedboats_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_speedboats_selected	
+				has_country_flag = tst_naval_assets_target_list					
 			}
 	
 		}
@@ -1813,8 +2821,9 @@ TST_the_circuit_minigame_tab = {
 
 			the_circuit_tst_use_3_action_point = yes
 
-			set_country_flag = tst_speedboats_targeted_escort_fleet			
-	
+			set_country_flag = tst_speedboats_attacked_guyana
+
+
 		}
 
 
@@ -1822,9 +2831,9 @@ TST_the_circuit_minigame_tab = {
 			factor = 1000
 		}		
 
-	}
-	
-	target_the_repair_ships_speedboats = { #
+	}	
+
+	target_the_grenada_speedboats = { #
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -1846,9 +2855,11 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_speedboats_targeted_repair_ships						
 					has_country_flag = tst_speedboats_targeted_arcadius
-					has_country_flag = tst_speedboats_targeted_escort_fleet
+					has_country_flag = tst_speedboats_attacked_grenada
+					has_country_flag = tst_speedboats_attacked_guyana					
+					has_country_flag = tst_speedboats_attacked_jamaica
+					has_country_flag = tst_speedboats_attacked_barbados
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1860,12 +2871,7 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_speedboats_selected	
-				NOT = {
-					OR = {
-					has_country_flag = tst_naval_assets_selected					
-				}
-				}
-						
+				has_country_flag = tst_naval_assets_target_list					
 			}
 	
 		}
@@ -1893,10 +2899,172 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_3_action_point = yes
+			the_circuit_tst_use_3_action_point = yes
 
-			set_country_flag = tst_speedboats_targeted_repair_ships				
+			set_country_flag = tst_speedboats_attacked_grenada
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+
+	target_the_jamaica_speedboats = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_speedboats_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_targeted_arcadius
+					has_country_flag = tst_speedboats_attacked_grenada
+					has_country_flag = tst_speedboats_attacked_guyana					
+					has_country_flag = tst_speedboats_attacked_jamaica
+					has_country_flag = tst_speedboats_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_speedboats_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
 	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_speedboats_attacked_jamaica
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	target_the_barbados_speedboats = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_speedboats_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_speedboats_targeted_arcadius
+					has_country_flag = tst_speedboats_attacked_grenada
+					has_country_flag = tst_speedboats_attacked_guyana					
+					has_country_flag = tst_speedboats_attacked_jamaica
+					has_country_flag = tst_speedboats_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_speedboats_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_speedboats_attacked_barbados
+
+
 		}
 
 
@@ -1931,8 +3099,11 @@ TST_the_circuit_minigame_tab = {
 				NOT = {
 					OR = {
 					has_country_flag = tst_naval_drones_targeted_arcadius
-					has_country_flag = tst_naval_drones_targeted_escort_fleet
-					has_country_flag = tst_naval_drones_targeted_repair_ships
+					has_country_flag = tst_naval_drones_attacked_grenada
+					has_country_flag = tst_naval_drones_attacked_guyana					
+					has_country_flag = tst_naval_drones_attacked_jamaica
+					has_country_flag = tst_naval_drones_attacked_barbados
+					has_country_flag = tst_naval_drones_targeted_repair_ships					
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -1943,7 +3114,12 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_naval_drones_selected							
+				has_country_flag = tst_naval_drones_selected		
+				
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}				
+
 			}
 	
 		}
@@ -1998,17 +3174,9 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_naval_drones_selected
 
-				check_variable = {
-					var = var:global.tst_action_points
-					value = 2
-					compare = greater_than_or_equals
-				}
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_drones_targeted_escort_fleet						
-					has_country_flag = tst_naval_drones_targeted_arcadius
-					has_country_flag = tst_naval_drones_targeted_repair_ships
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2019,7 +3187,12 @@ TST_the_circuit_minigame_tab = {
 		visible = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
-				has_country_flag = tst_naval_drones_selected							
+				has_country_flag = tst_naval_drones_selected		
+				
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}				
+				
 			}
 	
 		}
@@ -2049,7 +3222,7 @@ TST_the_circuit_minigame_tab = {
 
 			the_circuit_tst_use_2_action_point = yes			
 
-			set_country_flag = tst_naval_drones_targeted_escort_fleet			
+			set_country_flag = tst_naval_assets_target_list		
 	
 		}
 
@@ -2059,6 +3232,396 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}
+
+
+	#------------------------------- NAVAL DRONES ESCORT FLEET TARGET LIST DECISIONS -------------------------------#
+
+	
+
+	tst_the_circuit_go_back_naval_drones = { #
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			clr_country_flag = tst_naval_assets_target_list
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}
+
+
+	target_the_guyana_naval_drones = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_drones_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_drones_targeted_arcadius
+					has_country_flag = tst_naval_drones_attacked_grenada
+					has_country_flag = tst_naval_drones_attacked_guyana					
+					has_country_flag = tst_naval_drones_attacked_jamaica
+					has_country_flag = tst_naval_drones_attacked_barbados
+					has_country_flag = tst_naval_drones_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_2_action_point = yes
+
+			set_country_flag = tst_naval_drones_attacked_guyana
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_grenada_naval_drones = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_drones_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_drones_targeted_arcadius
+					has_country_flag = tst_naval_drones_attacked_grenada
+					has_country_flag = tst_naval_drones_attacked_guyana					
+					has_country_flag = tst_naval_drones_attacked_jamaica
+					has_country_flag = tst_naval_drones_attacked_barbados
+					has_country_flag = tst_naval_drones_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_2_action_point = yes
+
+			set_country_flag = tst_naval_drones_attacked_grenada
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+
+	target_the_jamaica_naval_drones = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_drones_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_drones_targeted_arcadius
+					has_country_flag = tst_naval_drones_attacked_grenada
+					has_country_flag = tst_naval_drones_attacked_guyana					
+					has_country_flag = tst_naval_drones_attacked_jamaica
+					has_country_flag = tst_naval_drones_attacked_barbados
+					has_country_flag = tst_naval_drones_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_2_action_point = yes
+
+			set_country_flag = tst_naval_drones_attacked_jamaica
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	target_the_barbados_naval_drones = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_naval_drones_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 2
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_drones_targeted_arcadius
+					has_country_flag = tst_naval_drones_attacked_grenada
+					has_country_flag = tst_naval_drones_attacked_guyana					
+					has_country_flag = tst_naval_drones_attacked_jamaica
+					has_country_flag = tst_naval_drones_attacked_barbados
+					has_country_flag = tst_naval_drones_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_naval_drones_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_2_action_point = yes
+
+			set_country_flag = tst_naval_drones_attacked_barbados
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
 	
 	target_the_repair_ships_naval_drones = { #
 		priority = 310
@@ -2082,9 +3645,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_naval_drones_targeted_repair_ships						
 					has_country_flag = tst_naval_drones_targeted_arcadius
-					has_country_flag = tst_naval_drones_targeted_escort_fleet
+					has_country_flag = tst_naval_drones_attacked_grenada
+					has_country_flag = tst_naval_drones_attacked_guyana					
+					has_country_flag = tst_naval_drones_attacked_jamaica
+					has_country_flag = tst_naval_drones_attacked_barbados
+					has_country_flag = tst_naval_drones_targeted_repair_ships					
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2096,6 +3662,9 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_naval_drones_selected	
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}
 						
 			}
 	
@@ -2163,9 +3732,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_portugal_targeted_arcadius						
-					has_country_flag = tst_portugal_targeted_escort_fleet
-					has_country_flag = tst_portugal_targeted_repair_ships
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2178,7 +3750,10 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
 				NOT = {
+					OR = {
 					has_country_flag = tst_the_circuit_coalition_ew_active
+					has_country_flag = tst_naval_assets_target_list
+					}
 				}											
 			}
 	
@@ -2234,17 +3809,9 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_portugal_selected
 
-				check_variable = {
-					var = var:global.tst_action_points
-					value = 3
-					compare = greater_than_or_equals
-				}
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_portugal_targeted_escort_fleet						
-					has_country_flag = tst_portugal_targeted_arcadius
-					has_country_flag = tst_portugal_targeted_repair_ships
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2257,7 +3824,10 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
 				NOT = {
+					OR = {
 					has_country_flag = tst_the_circuit_coalition_ew_active
+					has_country_flag = tst_naval_assets_target_list
+					}
 				}											
 			}
 	
@@ -2286,9 +3856,9 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_3_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_escort_fleet			
+
+			set_country_flag = tst_naval_assets_target_list	
 	
 		}
 
@@ -2298,6 +3868,400 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}
+
+	#------------------------------- PORTUGAL ESCORT FLEET TARGET LIST DECISIONS -------------------------------#
+
+	
+
+	tst_the_circuit_go_back_portugal = { #
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list		
+				NOT = {
+					has_country_flag = tst_the_circuit_coalition_ew_active
+				}			
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			clr_country_flag = tst_naval_assets_target_list
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}
+
+
+	target_the_guyana_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_guyana
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_grenada_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_grenada
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+
+	target_the_jamaica_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_jamaica
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	target_the_barbados_portugal = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_barbados
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+
+
 	
 	target_the_repair_ships_portugal = { #
 		priority = 310
@@ -2321,9 +4285,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_portugal_targeted_repair_ships						
 					has_country_flag = tst_portugal_targeted_arcadius
-					has_country_flag = tst_portugal_targeted_escort_fleet
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2336,7 +4303,10 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected
 				NOT = {
+					OR = {
 					has_country_flag = tst_the_circuit_coalition_ew_active
+					has_country_flag = tst_naval_assets_target_list
+					}
 				}						
 						
 			}
@@ -2415,7 +4385,10 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
 				NOT = {
+					OR = {
 					has_country_flag = tst_the_circuit_coalition_ew_active
+					has_country_flag = tst_naval_assets_target_list
+					}
 				}							
 			}
 	
@@ -2493,7 +4466,10 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
 				NOT = {
+					OR = {
 					has_country_flag = tst_the_circuit_coalition_ew_active
+					has_country_flag = tst_naval_assets_target_list
+					}
 				}							
 			}
 	
@@ -2560,9 +4536,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_portugal_targeted_arcadius						
-					has_country_flag = tst_portugal_targeted_escort_fleet
-					has_country_flag = tst_portugal_targeted_repair_ships
+					has_country_flag = tst_portugal_targeted_arcadius
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2574,7 +4553,10 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
-					has_country_flag = tst_the_circuit_coalition_ew_active											
+					has_country_flag = tst_the_circuit_coalition_ew_active		
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}															
 			}
 	
 		}
@@ -2629,17 +4611,9 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_portugal_selected
 
-				check_variable = {
-					var = var:global.tst_action_points
-					value = 3
-					compare = greater_than_or_equals
-				}
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_portugal_targeted_escort_fleet						
-					has_country_flag = tst_portugal_targeted_arcadius
-					has_country_flag = tst_portugal_targeted_repair_ships
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2651,7 +4625,10 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
-					has_country_flag = tst_the_circuit_coalition_ew_active											
+					has_country_flag = tst_the_circuit_coalition_ew_active		
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}															
 			}
 	
 		}
@@ -2679,9 +4656,8 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_3_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_escort_fleet			
+			set_country_flag = tst_naval_assets_target_list		
 	
 		}
 
@@ -2691,6 +4667,397 @@ TST_the_circuit_minigame_tab = {
 		}		
 
 	}
+
+
+	# ---------------- PORTUGAL TARGET LIST EW DECISIONS ----------------------------- #
+
+
+	tst_the_circuit_go_back_portugal_ew = { #
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			clr_country_flag = tst_naval_assets_target_list
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}	
+
+	target_the_guyana_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active							
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_guyana
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_grenada_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_grenada
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_jamaica_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_jamaica
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_barbados_portugal_ew = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_portugal_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_naval_assets_targeted_arcadius
+					has_country_flag = tst_naval_assets_attacked_grenada
+					has_country_flag = tst_naval_assets_attacked_guyana					
+					has_country_flag = tst_naval_assets_targeted_repair_ships
+					has_country_flag = tst_naval_assets_attacked_jamaica
+					has_country_flag = tst_naval_assets_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_portugal_selected	
+				has_country_flag = tst_naval_assets_target_list
+				has_country_flag = tst_the_circuit_coalition_ew_active						
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_portugal_attacked_barbados
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
 	
 	target_the_repair_ships_portugal_ew = { #
 		priority = 310
@@ -2714,9 +5081,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_portugal_targeted_repair_ships						
 					has_country_flag = tst_portugal_targeted_arcadius
-					has_country_flag = tst_portugal_targeted_escort_fleet
+					has_country_flag = tst_portugal_attacked_grenada
+					has_country_flag = tst_portugal_attacked_guyana					
+					has_country_flag = tst_portugal_attacked_jamaica
+					has_country_flag = tst_portugal_attacked_barbados
+					has_country_flag = tst_portugal_targeted_repair_ships					
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2729,7 +5099,9 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected
 					has_country_flag = tst_the_circuit_coalition_ew_active					
-						
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}							
 			}
 	
 		}
@@ -2805,7 +5177,12 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
-					has_country_flag = tst_the_circuit_coalition_ew_active						
+					has_country_flag = tst_the_circuit_coalition_ew_active			
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}						
+					
+					
 			}
 	
 		}
@@ -2881,7 +5258,12 @@ TST_the_circuit_minigame_tab = {
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = tst_portugal_selected	
-					has_country_flag = tst_the_circuit_coalition_ew_active							
+					has_country_flag = tst_the_circuit_coalition_ew_active	
+					
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}						
+
 			}
 	
 		}
@@ -3268,7 +5650,10 @@ TST_the_circuit_minigame_tab = {
 
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
-				has_country_flag = tst_cruise_missiles_selected				
+				has_country_flag = tst_cruise_missiles_selected	
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}								
 			}
 
 		}
@@ -3323,17 +5708,9 @@ TST_the_circuit_minigame_tab = {
 				has_global_flag = global_the_circuit_is_ongoing
 				has_country_flag = tst_cruise_missiles_selected
 
-				check_variable = {
-					var = var:global.tst_action_points
-					value = 3
-					compare = greater_than_or_equals
-				}
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_cruise_missiles_targeted_escort_fleet						
-					has_country_flag = tst_cruise_missiles_targeted_arcadius
-					has_country_flag = tst_cruise_missiles_targeted_repair_fleet
 					has_global_flag = global_tst_ended_turn
 					has_country_flag = tst_the_airforce_is_dead			
 					}
@@ -3345,7 +5722,10 @@ TST_the_circuit_minigame_tab = {
 
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
-				has_country_flag = tst_cruise_missiles_selected				
+				has_country_flag = tst_cruise_missiles_selected	
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}							
 			}
 
 		}
@@ -3373,9 +5753,391 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
+
+			set_country_flag = tst_naval_assets_target_list
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+
+	# --------------------------- CRUISE MISSILES NAVAL ASSETS TARGET LIST --------------------------- #
+
+	tst_the_circuit_go_back_cruise_missiles = { #
+		priority = 311
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_cruise_missiles_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+
+			clr_country_flag = tst_naval_assets_target_list
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 100
+		}		
+
+	}
+
+
+	target_the_guyana_cruise_missiles = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_arcadius
+					has_country_flag = tst_cruise_missiles_attacked_grenada
+					has_country_flag = tst_cruise_missiles_attacked_guyana					
+					has_country_flag = tst_cruise_missiles_attacked_jamaica
+					has_country_flag = tst_cruise_missiles_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_cruise_missiles_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
 			the_circuit_tst_use_3_action_point = yes
 
-			set_country_flag = tst_cruise_missiles_targeted_escort_fleet
+			set_country_flag = tst_cruise_missiles_attacked_guyana
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+	target_the_grenada_cruise_missiles = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_arcadius
+					has_country_flag = tst_cruise_missiles_attacked_grenada
+					has_country_flag = tst_cruise_missiles_attacked_guyana					
+					has_country_flag = tst_cruise_missiles_attacked_jamaica
+					has_country_flag = tst_cruise_missiles_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_cruise_missiles_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_cruise_missiles_attacked_grenada
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}	
+
+
+	target_the_jamaica_cruise_missiles = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_arcadius
+					has_country_flag = tst_cruise_missiles_attacked_grenada
+					has_country_flag = tst_cruise_missiles_attacked_guyana					
+					has_country_flag = tst_cruise_missiles_attacked_jamaica
+					has_country_flag = tst_cruise_missiles_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_cruise_missiles_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_cruise_missiles_attacked_jamaica
+
+
+		}
+
+
+		ai_will_do = {
+			factor = 1000
+		}		
+
+	}
+
+	target_the_barbados_cruise_missiles = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = TST
+		}
+
+		available = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing
+				has_country_flag = tst_cruise_missiles_selected
+
+				check_variable = {
+					var = var:global.tst_action_points
+					value = 3
+					compare = greater_than_or_equals
+				}
+
+				NOT = {
+					OR = {
+					has_country_flag = tst_cruise_missiles_targeted_arcadius
+					has_country_flag = tst_cruise_missiles_attacked_grenada
+					has_country_flag = tst_cruise_missiles_attacked_guyana					
+					has_country_flag = tst_cruise_missiles_attacked_jamaica
+					has_country_flag = tst_cruise_missiles_attacked_barbados
+					has_global_flag = global_tst_ended_turn
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			AND = {
+				has_global_flag = global_the_circuit_is_ongoing		
+				has_country_flag = tst_cruise_missiles_selected	
+				has_country_flag = tst_naval_assets_target_list					
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 1
+
+		days_remove = 0
+
+		modifier = {
+
+			
+		}
+
+		remove_effect = {		
+
+
+
+
+
+		}
+
+		complete_effect = {
+
+			the_circuit_tst_use_3_action_point = yes
+
+			set_country_flag = tst_cruise_missiles_attacked_barbados
+
 
 		}
 
@@ -3408,11 +6170,12 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_cruise_missiles_targeted_repair_fleet						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
-					has_country_flag = tst_cruise_missiles_targeted_escort_fleet
+					has_country_flag = tst_cruise_missiles_attacked_grenada
+					has_country_flag = tst_cruise_missiles_attacked_guyana					
+					has_country_flag = tst_cruise_missiles_attacked_jamaica
+					has_country_flag = tst_cruise_missiles_attacked_barbados
 					has_global_flag = global_tst_ended_turn
-					has_country_flag = tst_the_airforce_is_dead			
 					}
 				}
 			}
@@ -3422,7 +6185,10 @@ TST_the_circuit_minigame_tab = {
 
 			AND = {
 				has_global_flag = global_the_circuit_is_ongoing
-				has_country_flag = tst_cruise_missiles_selected				
+				has_country_flag = tst_cruise_missiles_selected	
+				NOT = {
+					has_country_flag = tst_naval_assets_target_list
+				}			
 			}
 
 		}

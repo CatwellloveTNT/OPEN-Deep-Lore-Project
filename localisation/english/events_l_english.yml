@@ -232,7 +232,21 @@
  col.1043.t: "The Second Roadtrip War"
  col.1043.d: ""Shoreline coming into view".\n\n"Copy Sparrow 6-4".\n\nAs Ricochet approached the shores of Triste, he couldn't help but wonder: is this really what he is now? An invader?... Was he an invader? He was protecting humanity's interests. Protecting humanity's interests meant protecting Arcadia's interests. Which meant he was protecting Arcadia... Right? He was told that by his superiors, so it must be right... Ricochet shook his head and tried to think of something else, he looked at his rifle. The UPR, Universal Pony Rifle. Best in it's class... Would he have to shoot an innocent Tristan with this instrument of death?\n\n"Feet dry in 10 seconds".\n\n"Copy".\n\nThose thoughts were dashed by the voice on the radio. 10 seconds. 10 seconds until the 82nd Arcadian Expeditionary Division set hoof on Triste alongside their human allies for the second time in history. History... Would history remember him if he was to die here? In this Second World backwater? What would history make of him? He wondered as his platoon's VLAP steered straight into a wall of gunfire.\n\n"Taking fire", the voice on the radio called.\n\n"Copy"\n\nTheir escort helicopter elegantly spun around, maintaining its forward momentum, it fires off a salvo of rockets at a building where streaking red hot tracers once came from.\n\n"Target suppressed" The escort pilot responded. Her helicopter returning to it's original azimuth as if it had not turned at all.\n\nRicochet glanced at the helicopter's tail, "Deadly" plastered proudly on it. He didn't have to spare a thought on how she got that callsign. Looking closer he noticed a pink and white castle next to her callsign. "The Proteans?!" Ricochet instinctually said aloud, not like anyone could have heard him anyways, the sound of his VLAP drowning out his voice. Save to mention the VLAPS behind him. Proteans protecting ponies? Does she even know we're ponies?\n\n"5 seconds to greenlight" said the voice on the radio. Suddenly, Ricochet's VLAP takes a sharp turn upwards, then rolls over to face the Halarado City Center. "Standby for greenlight"\n\nA light with pegasus wings at the edge of the crew door goes green, Ricochet knows what that means. He straps his UPR to his vest, spreads his wings and jumps out of the VLAP into the evergrowing fire below..."
  col.1043.a: "Zulu Don't Fly"
-
+ cls_the_circuit_naval_report_tst_did_not_invest_loc:0 "According to the recce group, Triste did not invest in a blue water navy."
+ cls_the_circuit_naval_report_tst_did_35_65_plan_loc:0 "According to the recce group, Triste has 5 active warships contesting us for The Circuit, they estimate their status as follows:\n\nShip Health:\n\nTSS Halarado: [?global.tss_halorado_health]%\nTSS Janero: [?global.tss_janero_health]%\nTSS Sadhaak: [?global.tss_sadhaak_health]%\nTSS Batponya: [?global.tss_batponya_health]%\nTSS Yanov: [?global.tss_yanov_health]%"
+ cls_the_circuit_naval_report_tst_did_portugal_loc:0 "According to the recce group, Triste has 6 active warships including an aircraft carrier contesting us for the Circuit, they estimate their status as follows: \n\nShip Health:\n\nTSS Portugal: [?global.tss_portugal_health]%\nEstimated aircraft aboard carrier: [?global.tss_portugal_carrier_wing_aircraft]\nTSS Halarado: [?global.tss_halorado_health]%\nTSS Janero: [?global.tss_janero_health]%\nTSS Sadhaak: [?global.tss_sadhaak_health]%\nTSS Batponya: [?global.tss_batponya_health]%\nTSS Yanov: [?global.tss_yanov_health]%"
+ col.1044.t: "Blue Water Navy Report"
+ col.1044.d: "[cls_the_circuit_naval_report_tst_did_not_invest][cls_the_circuit_naval_report_tst_did_35_65_plan][cls_the_circuit_naval_report_tst_did_portugal]"
+ col.1044.a: "Ok"
+ col.1045.t: "Smallboat and Naval Drones Report"
+ col.1045.d: "SOLARIS satellite images give Triste an estimated [?global.speedboat_stockpile] smallboats. SIGINT and ORGAINT has estimated their smallboat fleet's morale to be: [?global.speedboat_morale]%\n\nFrom the current operations tempo, we estimate Triste has [?global.naval_drone_stockpile] naval drones left."
+ col.1045.a: "Ok"
+ col.1046.t: "Airforce Report"
+ col.1046.d: "Soucouyant flyovers of Tristan coastal airbases have revealed they have an estimated [?global.airforce_stockpile] aircraft. From the rate of their use in air operations, we can assume that Triste has about [?global.cruise_missiles_stockpile] cruise missiles left.\n\nAdditionally, given their encounters with Kin Squadron, we can estimate their pilot morale is [?global.pilot_morale]%"
+ col.1046.a: "Ok"
+ col.1047.t: "IADS and PONYPADS Report"
+ col.1047.d: "Given how often our aircraft are painted, we can assume their IADS to be [?global.iads_effectiveness]% functional.\n\nAdditionally, Trinidadian Foreign Intelligence has estimated that they have [?global.ponypads_strongholds] PONYPAD strongholds left."
+ col.1047.a: "Well, that wraps that up."
 
 
 
@@ -1191,6 +1205,18 @@ tst.58.a: "It's almost time..."
 tst.59.t: "The Second Roadtrip War"
 tst.59.d: "todo: La Brea announces on national tv that triste is going to war with the coalition to wipe them from triste"
 tst.59.a: "Rid this blight from our land!"
+tst.60.t: "The Arcadius Carrier Strike Group Arrives in The Circuit!"
+tst.60.d: "todo: the arcadius csg pulls up in the circuit to retake control of the region, la brea gathers with his goons and they decide unanimously to fight back"
+tst.60.a: "This is the moment which decides our fate"
+tst.61.t: "Humanity Dominates the Deep Ocean!"
+tst.61.d: "As we have not invested in a blue water navy, we are simply unable to contest the Coalition in region A7, and as such they have moved into the region and secured dominance over it without any incursions from us."
+tst.61.a: "Should we have really abandoned the navy?"
+tst.62.t: "The Arcadius Strike Group Report"
+tst.62.d: "Our recon helicopters estimate that all 6 ships of the Arcadius Strike Group has come to push us back. The status of these ships are as follows: \n\nShip Health:\n\nSOH Arcadius: [?global.soh_arcadius_health]%\nIt is estimated that of the total 212 aircraft compliment the Arcadius can carry, she has [?global.soh_arcadius_carrier_wing_aircraft] aircraft left.\n\nSOH Guyana: [?global.soh_guyana_health]%\nSOH Jamaica: [?global.soh_jamaica_health]%\nSOH Grenada: [?global.soh_grenada_health]%\nSOH Barbados: [?global.soh_barbados_health]%\nSOH Fluffy Pony Repair Ship: [?global.soh_repair_ship_health]%"
+tst.62.a: "Right"
+tst.63.t: "The Kin Squadron Report"
+tst.63.d: "Reports from our pilots who have survived Kin Squadron's assaults have estimated the status of the Kin Squadron Members:\n\nKin 1-1: [?global.kin_1_health]%\nKin 1-2: [?global.kin_2_health]%\nKin 1-3: [?global.kin_3_health]%\nKin 1-4: [?global.kin_4_health]%"
+tst.63.a: "We have work to do"
 
 
 # -------------------- LAVENTILLE --------------------
@@ -1311,7 +1337,7 @@ xpr.1.a: "We must reclaim our birthright"
  col.1042_tt:0 "You feel like you've seen this outcome before..."
  tst.56_tt:0 "Don't call them mares bro... "
  nation_joined_western_eco_zone_tt:0 "The §YWestern Cradle Economic Zone§W Spirit will be improved by: \n§G+ 2% Stability\n§G+ 2% Fuel Gain from States\n§G- 2% Consumer Goods Factor\n§G- 2% Lack of Resources Penality§W"
- tst.60_tt:0 "It seems the battle for our oceans has begun...\n\n§YThe Circuit minigame has activated, check your decision tab§W"
+ tst.60_tt:0 "It seems the battle for our oceans has begun...\n\n§YThe Circuit minigame has activated, check your decision tab§W\n\n§RIt can be safely assumed that the Coalition States will invade as soon as the battle of The Circuit is over§W"
  tst.61_tt:0 "As we have abandoned the navy, we cannot contest the coalition in the deep ocean.\n\n§RThe Circuit minigame has automatically advanced to phase 2§W"
 
 

@@ -492,4 +492,49 @@ defined_text = { #
 	localization_key = cls_the_circuit_ap_and_turns_desc_loc
 	}
 }
+defined_text = { # 
+	name = cls_the_circuit_naval_report_tst_did_not_invest
+	text = {
+		trigger = {
+			TST = {
+				NOT = {
+				has_completed_focus = TST_the_35_65_plan
+				}
+
+			}
+		}
+	localization_key = cls_the_circuit_naval_report_tst_did_not_invest_loc
+	}
+}
+defined_text = { # 
+	name = cls_the_circuit_naval_report_tst_did_35_65_plan
+	text = {
+		trigger = {
+			AND = {
+			TST = {
+				has_completed_focus = TST_the_35_65_plan
+			}
+			NOT = {
+				TST = {
+				has_completed_focus = TST_commission_the_portugal_class_carrier					
+				}
+			}
+			}
+
+		}
+	localization_key = cls_the_circuit_naval_report_tst_did_35_65_plan_loc
+	}
+}
+defined_text = { # 
+	name = cls_the_circuit_naval_report_tst_did_portugal
+	text = {
+		trigger = {
+			TST = {
+				has_completed_focus = TST_commission_the_portugal_class_carrier
+			}
+		}
+	localization_key = cls_the_circuit_naval_report_tst_did_portugal_loc
+	}
+}
+
 

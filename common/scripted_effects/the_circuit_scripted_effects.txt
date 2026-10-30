@@ -229,20 +229,20 @@ the_circuit_tst_ends_turn = {
 			clr_global_flag = global_tst_ended_turn
 			clr_country_flag = tst_naval_assets_targeted_arcadius
 			clr_country_flag = tst_naval_assets_targeted_repair_ships
-			clr_country_flag = tst_naval_assets_targeted_escort_fleet
+		#	clr_country_flag = tst_naval_assets_targeted_escort_fleet
 			clr_country_flag = tst_speedboats_targeted_arcadius			
-			clr_country_flag = tst_speedboats_targeted_escort_fleet
-			clr_country_flag = tst_speedboats_targeted_repair_ships
+	#		clr_country_flag = tst_speedboats_targeted_escort_fleet
+	#		clr_country_flag = tst_speedboats_targeted_repair_ships
 			clr_country_flag = tst_naval_drones_targeted_arcadius
-			clr_country_flag = tst_naval_drones_targeted_escort_fleet
+		#	clr_country_flag = tst_naval_drones_targeted_escort_fleet
 			clr_country_flag = tst_naval_drones_targeted_repair_ships
 			clr_country_flag = tst_portugal_targeted_arcadius
-			clr_country_flag = tst_portugal_targeted_escort_fleet
+	#		clr_country_flag = tst_portugal_targeted_escort_fleet
 			clr_country_flag = tst_portugal_targeted_repair_ships
 			clr_country_flag = tst_eaion_2_targeted_carrier_wing
 			clr_country_flag = tst_eaion_2_targeted_kin_squadron
 			clr_country_flag = tst_cruise_missiles_targeted_arcadius
-			clr_country_flag = tst_cruise_missiles_targeted_escort_fleet
+		#	clr_country_flag = tst_cruise_missiles_targeted_escort_fleet
 			clr_country_flag = tst_cruise_missiles_targeted_repair_fleet
 			clr_country_flag = tst_aaa_targeted_the_carrier_wing
 			clr_country_flag = tst_aaa_targeted_kin_squadron
@@ -250,16 +250,47 @@ the_circuit_tst_ends_turn = {
 			clr_country_flag = tst_manpads_targeted_kin_squadron
 			clr_country_flag = tst_portugal_targeted_kin_squadron
 			clr_country_flag = tst_portugal_targeted_carrier_air_wing	
+			clr_country_flag = tst_naval_assets_targeted_arcadius
+			clr_country_flag = tst_naval_assets_attacked_grenada
+			clr_country_flag = tst_naval_assets_attacked_guyana					
+			clr_country_flag = tst_naval_assets_targeted_repair_ships
+			clr_country_flag = tst_naval_assets_attacked_jamaica
+			clr_country_flag = tst_naval_assets_attacked_barbados
+			clr_country_flag = tst_speedboats_targeted_arcadius
+			clr_country_flag = tst_speedboats_attacked_grenada
+			clr_country_flag = tst_speedboats_attacked_guyana
+			clr_country_flag = tst_speedboats_attacked_jamaica
+			clr_country_flag = tst_speedboats_attacked_barbados
+			clr_country_flag = tst_naval_drones_attacked_grenada
+			clr_country_flag = tst_naval_drones_attacked_guyana
+			clr_country_flag = tst_naval_drones_attacked_jamaica
+			clr_country_flag = tst_naval_drones_attacked_barbados	
+			clr_country_flag = tst_cruise_missiles_attacked_grenada
+			clr_country_flag = tst_cruise_missiles_attacked_guyana
+			clr_country_flag = tst_cruise_missiles_attacked_jamaica
+			clr_country_flag = tst_cruise_missiles_attacked_barbados	
+			clr_country_flag = tst_portugal_attacked_grenada
+			clr_country_flag = tst_portugal_attacked_guyana
+			clr_country_flag = tst_portugal_attacked_jamaica
+			clr_country_flag = tst_portugal_attacked_barbados								
+
+
+
+
+
 
 }
 
 the_circuit_cls_ends_turn = {
+
+			the_circuit_cls_action_points_reset_to_10 = yes
+
 	clr_global_flag = global_cls_ended_turn
 	clr_country_flag = cls_escort_fleet_targeted_speedboats
-	clr_country_flag = cls_escort_fleet_targeted_naval_fleet
+#	clr_country_flag = cls_escort_fleet_targeted_naval_fleet
 	clr_country_flag = cls_escort_fleet_targeted_portugal
 	clr_country_flag = cls_escort_fleet_targeted_naval_drones
-	clr_country_flag = cls_caw_targeted_naval_fleet
+	#clr_country_flag = cls_caw_targeted_naval_fleet
 	clr_country_flag = cls_caw_targeted_portugal
 	clr_country_flag = cls_caw_targeted_speedboats
 	clr_country_flag = cls_caw_targeted_naval_drones
@@ -271,13 +302,29 @@ the_circuit_cls_ends_turn = {
 	clr_country_flag = cls_repair_fleet_repaired_jamaica
 	clr_country_flag = cls_repair_fleet_repaired_grenada
 	clr_country_flag = cls_repair_fleet_repaired_barbados
-	clr_country_flag = cls_kin_targeted_naval_fleet
+	#clr_country_flag = cls_kin_targeted_naval_fleet
 	clr_country_flag = cls_kin_targeted_speedboats
 	clr_country_flag = cls_kin_targeted_naval_drones
 	clr_country_flag = cls_kin_targeted_air_force
 	clr_country_flag = cls_kin_targeted_iads
 	clr_country_flag = cls_kin_targeted_manpads
 	clr_country_flag = cls_kin_targeted_portugal	
+	clr_country_flag = cls_escort_fleet_targeted_batponya
+	clr_country_flag = cls_escort_fleet_targeted_yanov
+	clr_country_flag = cls_escort_fleet_targeted_sadhaak
+	clr_country_flag = cls_escort_fleet_targeted_janero
+	clr_country_flag = cls_escort_fleet_targeted_halorado
+	clr_country_flag = cls_kin_targeted_batponya
+	clr_country_flag = cls_kin_targeted_yanov
+	clr_country_flag = cls_kin_targeted_sadhaak
+	clr_country_flag = cls_kin_targeted_janero
+	clr_country_flag = cls_kin_targeted_halorado
+	clr_country_flag = cls_caw_targeted_batponya
+	clr_country_flag = cls_caw_targeted_yanov
+	clr_country_flag = cls_caw_targeted_sadhaak
+	clr_country_flag = cls_caw_targeted_janero
+	clr_country_flag = cls_caw_targeted_halorado	
+		
 	
 }
 
@@ -435,3 +482,97 @@ the_circuit_days_of_battle_up_1 = {
 	}
 
 }
+
+# TRISTAN ATTACKS #
+
+tst_attacks_arcadius_with_naval_assets = {
+
+	hidden_effect = {
+		random_list = {
+			50 = {
+				subtract_from_variable = {
+					global.soh_arcadius_health = 10
+				}
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_arcadius_health = 20
+				}				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit
+				}
+			}
+			40 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_repair_ship_with_naval_assets = {
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.soh_repair_ship_health = 10
+				}
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_repair_ship_health = 20
+				}				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+ # -------------- TESTING --------------- #
+
+ cls_reset_action_points = {
+
+	the_circuit_cls_action_points_reset_to_10 = yes
+	the_circuit_tst_action_points_reset_to_10 = yes
+
+ }
+
+ 
+

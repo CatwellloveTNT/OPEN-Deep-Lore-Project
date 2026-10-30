@@ -163,6 +163,7 @@
  cls_the_circuit_carrier_air_wing_selected_loc:0 "The Carrier Air Wing aboard the Arcadius supercarrier serves as the carrier strike group's primary form of offense. §GThe supercarrier has over 200 multirole combat aircraft in addition to electronic warfare and command aircraft aboard and can overwhelm and destroy any enemy it comes across.§W\n\nNumber of Aircraft Available: [?global.soh_arcadius_carrier_wing_aircraft]\n---------------------------------------------------------------------------------------------------------------------"
  cls_the_circuit_kin_squadron_selected_loc:0 "Naval Air Academy Specialized Pilots Squadron A-1, also known as Kin Squadron are 4 hyperlethal ace pilots trained by the Naval Air Academy. §GPiloting ultra-maneuverable, ultra-survivable Brown and Black Jeps, Kin Squadron will have an immediate and direct effect on any target they are sent after.§W\n\nStatus of Kin Squadron:\n\nKin 1-1: [?global.kin_1_health]%\nKin 1-2: [?global.kin_2_health]%\nKin 1-3: [?global.kin_3_health]%\nKin 1-4: [?global.kin_4_health]%\n---------------------------------------------------------------------------------------------------------------------"
  cls_the_circuit_ap_and_turns_desc_loc:0 "We currently have: [?global.cls_action_points] Action Points                   Ongoing Battle Length: [?global.turns_passed] Days"
+ cls_circuit_sitrep_tt:0 "§YWe are currently pulling strings to gather an accurate report of the situation...§W"
 
  
 
