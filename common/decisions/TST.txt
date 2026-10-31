@@ -3786,6 +3786,7 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_portugal_targeted_arcadius
 
+
 		}
 
 
