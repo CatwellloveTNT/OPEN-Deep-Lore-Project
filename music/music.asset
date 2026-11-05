@@ -268,3 +268,8 @@ music = { #
 	file = "galm2.ogg"
 	volume = 1
 }
+music = { # it was alot harder than it sounds (?) to cut out the sotoan chanting noises in a way that doesnt make the song not flow together anymore
+	name = "frostwave"
+	file = "frostwaveac8.ogg"
+	volume = 1
+}

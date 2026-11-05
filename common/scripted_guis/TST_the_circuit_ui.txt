@@ -65,6 +65,41 @@ scripted_gui = {
     }
   }  
 
+    tst_eaion_2_visible = {
+      AND = {
+        has_global_flag = global_the_circuit_is_ongoing
+        has_global_flag = global_the_circuit_phase_2
+      }
+
+    }
+
+    tst_line3_visible = {
+      AND = {
+        has_global_flag = global_the_circuit_is_ongoing
+        has_global_flag = global_the_circuit_phase_2
+      }
+
+    }  
+    
+    tst_cruise_missiles_visible = {
+      AND = {
+        has_global_flag = global_the_circuit_is_ongoing
+        has_global_flag = global_the_circuit_phase_2
+      }
+    }
+    tst_aaa_visible = { #aaa is iads if you forgot
+      AND = {
+        has_global_flag = global_the_circuit_is_ongoing
+        has_global_flag = global_the_circuit_phase_3
+      }
+    }  
+    tst_manpads_visible = {
+      AND = {
+        has_global_flag = global_the_circuit_is_ongoing
+        has_global_flag = global_the_circuit_phase_3
+      }
+    }        
+
       
     }
 
@@ -179,11 +214,11 @@ scripted_gui = {
       always = yes
     }
 
-    ai_test_interval = 100
+    ai_test_interval = 50
     ai_test_variance = 0.1
 
     ai_check = {
-      has_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+      has_global_flag = global_the_circuit_is_ongoing
     }
 
    # ai_check_scope = {
@@ -197,6 +232,48 @@ scripted_gui = {
           factor = 500
         }
       }
+
+      tst_speedboats_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      } 
+      
+      tst_naval_drones_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }
+      
+      tst_portugal_carrier_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }      
+      
+      tst_eaion_2_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }   
+      
+      tst_cruise_missiles_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }   
+      
+      tst_aaa_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }   
+      
+      tst_manpads_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }       
  
     }
 

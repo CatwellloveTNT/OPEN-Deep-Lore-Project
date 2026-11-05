@@ -80,11 +80,11 @@ scripted_gui = {
       always = yes
     }
 
-    ai_test_interval = 100
+    ai_test_interval = 50
     ai_test_variance = 0.1
 
     ai_check = {
-      has_country_flag = tst_aryx_scramble_minigame_unlocked_flag
+      has_global_flag = global_the_circuit_is_ongoing
     }
 
    # ai_check_scope = {
@@ -93,11 +93,35 @@ scripted_gui = {
 
 
    ai_weights = {
-      tst_navalassets_click = {
+      cls_navalassets_click = {
         ai_will_do = {
           factor = 500
         }
       }
+
+      cls_carrier_wing_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }
+      
+      cls_kin_squadron_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }
+      
+      cls_repair_ship_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }
+      
+      cls_arcadius_carrier_click = {
+        ai_will_do = {
+          factor = 500
+        }
+      }      
  
     }
 

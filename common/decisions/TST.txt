@@ -1150,7 +1150,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 12
+		days_re_enable = 7
 
 		days_remove = 0
 
@@ -1175,7 +1175,41 @@ TST_the_circuit_minigame_tab = {
 
 
 		ai_will_do = {
-			factor = 400
+			base = 0
+
+			modifier = {		
+
+
+					check_variable = {
+						global.tst_action_points < 1
+					}  
+
+					add = 1500				
+
+				
+			}
+			modifier = {		
+
+
+					check_variable = {
+						global.tst_action_points < 2
+					}  
+
+					add = 1500				
+
+				
+			}
+			modifier = {		
+
+
+					check_variable = {
+						global.tst_action_points < 3
+					}  
+
+					add = 1500				
+
+				
+			}						
 		}		
 
 	}
@@ -1542,6 +1576,7 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_assets_attacked_guyana
 
+			tst_attacks_guyana_with_naval_assets = yes
 
 		}
 
@@ -1625,6 +1660,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_5_action_point = yes
 
 			set_country_flag = tst_naval_assets_attacked_grenada
+
+			tst_attacks_grenada_with_naval_assets = yes
 
 
 		}
@@ -1710,7 +1747,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_assets_attacked_jamaica
 
-
+			tst_attacks_jamaica_with_naval_assets = yes
+			
 		}
 
 
@@ -1793,6 +1831,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_5_action_point = yes
 
 			set_country_flag = tst_naval_assets_attacked_barbados
+
+			tst_attacks_barbados_with_naval_assets = yes
 
 
 		}
@@ -1882,7 +1922,7 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_assets_targeted_repair_ships				
 	
-
+			tst_attacks_repair_ship_with_naval_assets = yes
 
 		}
 
@@ -1968,6 +2008,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_6_action_point = yes
 
 			set_country_flag = tst_naval_assets_targeted_arcadius
+
+			tst_attacks_arcadius_with_naval_assets_ew = yes			
 
 		}
 
@@ -2188,6 +2230,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_assets_attacked_guyana
 
+			tst_attacks_guyana_with_naval_assets_ew = yes					
+
 
 		}
 
@@ -2269,6 +2313,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_5_action_point = yes
 
 			set_country_flag = tst_naval_assets_attacked_grenada
+
+			tst_attacks_grenada_with_naval_assets_ew = yes	
 
 
 		}
@@ -2352,6 +2398,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_assets_attacked_jamaica
 
+			tst_attacks_jamaica_with_naval_assets_ew = yes
+
 
 		}
 
@@ -2433,6 +2481,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_5_action_point = yes
 
 			set_country_flag = tst_naval_assets_attacked_barbados
+
+			tst_attacks_barbados_with_naval_assets_ew = yes
 
 
 		}
@@ -2522,7 +2572,9 @@ TST_the_circuit_minigame_tab = {
 
 			the_circuit_tst_use_5_action_point = yes
 
-			set_country_flag = tst_naval_assets_targeted_repair_ships				
+			set_country_flag = tst_naval_assets_targeted_repair_ships	
+			
+			tst_attacks_repair_ship_with_naval_assets_ew = yes
 	
 
 
@@ -2610,6 +2662,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_5_action_point = yes			
 
 			set_country_flag = tst_speedboats_targeted_arcadius
+
+			tst_attacks_arcadius_with_speedboats = yes
 
 		}
 
@@ -2823,6 +2877,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_speedboats_attacked_guyana
 
+			tst_attacks_guyana_with_speedboats = yes			
+
 
 		}
 
@@ -2904,6 +2960,7 @@ TST_the_circuit_minigame_tab = {
 			set_country_flag = tst_speedboats_attacked_grenada
 
 
+			tst_attacks_grenada_with_speedboats = yes
 		}
 
 
@@ -2984,7 +3041,7 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_speedboats_attacked_jamaica
 
-
+			tst_attacks_jamaica_with_speedboats = yes
 		}
 
 
@@ -3064,7 +3121,7 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_speedboats_attacked_barbados
 
-
+			tst_attacks_barbados_with_speedboats = yes
 		}
 
 
@@ -3151,6 +3208,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_drones_targeted_arcadius
 
+			tst_attacks_arcadius_with_naval_drones = yes
+
 		}
 
 
@@ -3219,8 +3278,7 @@ TST_the_circuit_minigame_tab = {
 		}
 
 		complete_effect = {
-
-			the_circuit_tst_use_2_action_point = yes			
+		
 
 			set_country_flag = tst_naval_assets_target_list		
 	
@@ -3368,6 +3426,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_drones_attacked_guyana
 
+			tst_attacks_guyana_with_naval_drones = yes
+
 
 		}
 
@@ -3448,6 +3508,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_2_action_point = yes
 
 			set_country_flag = tst_naval_drones_attacked_grenada
+
+			tst_attacks_grenada_with_naval_drones = yes			
 
 
 		}
@@ -3531,6 +3593,7 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_naval_drones_attacked_jamaica
 
+			tst_attacks_jamaica_with_naval_drones = yes		
 
 		}
 
@@ -3611,6 +3674,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_2_action_point = yes
 
 			set_country_flag = tst_naval_drones_attacked_barbados
+
+			tst_attacks_barbados_with_naval_drones = yes					
 
 
 		}
@@ -3695,7 +3760,9 @@ TST_the_circuit_minigame_tab = {
 
 			the_circuit_tst_use_2_action_point = yes			
 
-			set_country_flag = tst_naval_drones_targeted_repair_ships				
+			set_country_flag = tst_naval_drones_targeted_repair_ships	
+			
+			tst_attacks_repair_ship_with_naval_drones = yes
 	
 		}
 
@@ -3785,6 +3852,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_4_action_point = yes			
 
 			set_country_flag = tst_portugal_targeted_arcadius
+
+			tst_attacks_arcadius_with_portugal = yes
 
 
 		}
@@ -4007,6 +4076,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_portugal_attacked_guyana
 
+			tst_attacks_guyana_with_portugal = yes
+
 
 		}
 
@@ -4087,6 +4158,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_portugal_attacked_grenada
+
+			tst_attacks_grenada_with_portugal = yes			
 
 
 		}
@@ -4170,6 +4243,7 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_portugal_attacked_jamaica
 
+			tst_attacks_jamaica_with_portugal = yes			
 
 		}
 
@@ -4250,6 +4324,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_portugal_attacked_barbados
+
+			tst_attacks_barbados_with_portugal = yes			
 
 
 		}
@@ -4339,7 +4415,9 @@ TST_the_circuit_minigame_tab = {
 
 						the_circuit_tst_use_3_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_repair_ships				
+			set_country_flag = tst_portugal_targeted_repair_ships	
+			
+			tst_attacks_repair_ship_with_portugal = yes
 	
 		}
 
@@ -4420,7 +4498,9 @@ TST_the_circuit_minigame_tab = {
 
 						the_circuit_tst_use_4_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_carrier_air_wing			
+			set_country_flag = tst_portugal_targeted_carrier_air_wing	
+			
+			tst_attacks_caw_with_portugal = yes
 	
 		}
 
@@ -4501,7 +4581,9 @@ TST_the_circuit_minigame_tab = {
 
 						the_circuit_tst_use_4_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_kin_squadron			
+			set_country_flag = tst_portugal_targeted_kin_squadron	
+			
+			tst_attacks_kin_with_portugal = yes
 	
 		}
 
@@ -4588,6 +4670,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_4_action_point = yes			
 
 			set_country_flag = tst_portugal_targeted_arcadius
+
+			tst_attacks_arcadius_with_portugal_ew = yes
 
 		}
 
@@ -4804,6 +4888,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_portugal_attacked_guyana
 
+			tst_attacks_guyana_with_portugal_ew = yes
+
 
 		}
 
@@ -4885,6 +4971,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_portugal_attacked_grenada
+
+			tst_attacks_grenada_with_portugal_ew = yes
 
 
 		}
@@ -4968,6 +5056,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_portugal_attacked_jamaica
 
+			tst_attacks_jamaica_with_portugal_ew = yes
+
 
 		}
 
@@ -5049,6 +5139,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_portugal_attacked_barbados
+
+			tst_attacks_barbados_with_portugal_ew = yes
 
 
 		}
@@ -5132,7 +5224,9 @@ TST_the_circuit_minigame_tab = {
 
 						the_circuit_tst_use_3_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_repair_ships				
+			set_country_flag = tst_portugal_targeted_repair_ships	
+			
+			tst_attacks_repair_ship_with_portugal_ew = yes
 	
 		}
 
@@ -5213,7 +5307,9 @@ TST_the_circuit_minigame_tab = {
 
 						the_circuit_tst_use_4_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_carrier_air_wing			
+			set_country_flag = tst_portugal_targeted_carrier_air_wing	
+			
+			tst_attacks_caw_with_portugal_ew = yes
 	
 		}
 
@@ -5294,7 +5390,9 @@ TST_the_circuit_minigame_tab = {
 
 						the_circuit_tst_use_4_action_point = yes
 
-			set_country_flag = tst_portugal_targeted_kin_squadron			
+			set_country_flag = tst_portugal_targeted_kin_squadron	
+			
+			tst_attacks_kin_with_portugal_ew = yes
 	
 		}
 
@@ -5375,6 +5473,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_eaion_2_targeted_carrier_wing
 
+			tst_attacks_the_caw_with_air_force = yes
+
 		}
 
 
@@ -5451,6 +5551,8 @@ TST_the_circuit_minigame_tab = {
 						the_circuit_tst_use_5_action_point = yes
 
 			set_country_flag = tst_eaion_2_targeted_kin_squadron
+
+			tst_attacks_kin_with_air_force = yes
 
 		}
 
@@ -5529,6 +5631,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_eaion_2_targeted_carrier_wing
 
+			tst_attacks_the_caw_with_air_force_ew = yes
+
 		}
 
 
@@ -5603,6 +5707,8 @@ TST_the_circuit_minigame_tab = {
 						the_circuit_tst_use_5_action_point = yes
 
 			set_country_flag = tst_eaion_2_targeted_kin_squadron
+
+			tst_attacks_kin_with_air_force_ew = yes
 
 		}
 
@@ -5685,6 +5791,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_cruise_missiles_targeted_arcadius
+
+			tst_attacks_arcadius_with_cruise_missiles = yes
 
 		}
 
@@ -5898,6 +6006,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_cruise_missiles_attacked_guyana
 
+			tst_attacks_guyana_with_cruise_missiles = yes
+
 
 		}
 
@@ -5977,6 +6087,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_cruise_missiles_attacked_grenada
+
+			tst_attacks_grenada_with_cruise_missiles = yes			
 
 
 		}
@@ -6059,6 +6171,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_cruise_missiles_attacked_jamaica
 
+			tst_attacks_jamaica_with_cruise_missiles = yes		
+
 
 		}
 
@@ -6138,6 +6252,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_cruise_missiles_attacked_barbados
+
+			tst_attacks_barbados_with_cruise_missiles = yes		
 
 
 		}
@@ -6221,6 +6337,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_cruise_missiles_targeted_repair_fleet
 
+			tst_attacks_repair_ship_with_cruise_missiles = yes
+
 		}
 
 
@@ -6301,6 +6419,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_aaa_targeted_the_carrier_wing
 
+			tst_attacks_the_caw_with_iads = yes
+
 		}
 
 
@@ -6378,6 +6498,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_aaa_targeted_kin_squadron
+
+			tst_attacks_kin_with_iads = yes
 
 		}
 
@@ -6457,6 +6579,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_aaa_targeted_the_carrier_wing
 
+			tst_attacks_the_caw_with_iads_ew = yes
+
 		}
 
 
@@ -6532,6 +6656,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_3_action_point = yes
 
 			set_country_flag = tst_aaa_targeted_kin_squadron
+
+			tst_attacks_kin_with_iads_ew = yes
 
 		}
 
@@ -6610,6 +6736,8 @@ TST_the_circuit_minigame_tab = {
 
 			set_country_flag = tst_manpads_targeted_the_carrier_wing
 
+			tst_attacks_the_caw_with_ponypads = yes
+
 		}
 
 
@@ -6684,6 +6812,8 @@ TST_the_circuit_minigame_tab = {
 			the_circuit_tst_use_1_action_point = yes
 
 			set_country_flag = tst_manpads_targeted_kin_squadron
+
+			tst_attacks_kin_with_ponypads = yes
 
 		}
 

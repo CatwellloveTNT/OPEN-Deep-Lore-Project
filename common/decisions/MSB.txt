@@ -836,7 +836,1526 @@ puppetmaster = {
 
 	}	
 
+	msb_the_circuit_phase_2_initiator = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						TST = {
+							has_completed_focus = TST_the_35_65_plan
+						}
+					}
+
+					check_variable = {
+						global.number_of_tristan_ships_sunk < 3
+					}
+
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1048
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.64
+				}
+			}
+			
+			set_global_flag = global_the_circuit_phase_2
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_cls_sinks_the_portugal = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.tss_portugal_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1049
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.65
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_portugal_sunk
+
+			add_to_variable = {
+				global.number_of_tristan_ships_sunk = 1
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_sinks_the_halorado = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.tss_halorado_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1050
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.66
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_halorado_sunk
+
+			add_to_variable = {
+				global.number_of_tristan_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_cls_sinks_the_janero = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.tss_janero_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1051
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.67
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_janero_sunk
+
+			add_to_variable = {
+				global.number_of_tristan_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_sinks_the_sadhaak = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.tss_sadhaak_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1052
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.68
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_sadhaak_sunk
+
+			add_to_variable = {
+				global.number_of_tristan_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_sinks_the_batponya = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.tss_batponya_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1053
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.69
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_batponya_sunk
+
+			add_to_variable = {
+				global.number_of_tristan_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_sinks_the_yanov = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.tss_yanov_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1054
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.70
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_yanov_sunk
+
+			add_to_variable = {
+				global.number_of_tristan_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_sinks_the_batponya = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.tss_batponya_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1053
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.69
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_batponya_sunk
+
+			add_to_variable = {
+				global.number_of_tristan_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_wipes_out_naval_drones = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.naval_drone_stockpile = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1055
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.71
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_naval_drones_wiped_out
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_wipes_out_speedboats = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.speedboat_stockpile = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1056
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.72
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_speedboats_wiped_out
+
+			set_global_flag = global_the_circuit_phase_3
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_wipes_out_airforce = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.airforce_stockpile = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1057
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.73
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_airforce_wiped_out
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+	
+	msb_cls_wipes_out_iads = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.iads_effectiveness = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1058
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.74
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_iads_wiped_out
+
+			set_global_flag = global_the_circuit_phase_4
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_wipes_out_manpads = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.ponypads_strongholds = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1059
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.75
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_ponypads_wiped_out
+
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_tst_sinks_the_arcadius = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.soh_arcadius_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1060
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.76
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_arcadius_sunk
+
+			add_to_variable = {
+				global.number_of_coalition_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_tst_sinks_the_guyana = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.soh_guyana_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1061
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.77
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_guyana_sunk
+
+			add_to_variable = {
+				global.number_of_coalition_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_tst_sinks_the_grenada = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.soh_grenada_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1062
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.78
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_grenada_sunk
+
+			add_to_variable = {
+				global.number_of_coalition_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_tst_sinks_the_jamaica = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.soh_jamaica_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1063
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.79
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_jamaica_sunk
+
+			add_to_variable = {
+				global.number_of_coalition_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_tst_sinks_the_barbados = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.soh_barbados_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1064
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.80
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_barbados_sunk
+
+			add_to_variable = {
+				global.number_of_coalition_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_tst_sinks_the_fluffy_pony = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.soh_repair_ship_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1065
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.81
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_repair_ship_sunk
+
+			add_to_variable = {
+				global.number_of_coalition_ships_sunk = 1
+			}			
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_tst_wipes_out_the_caw = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.soh_arcadius_carrier_wing_aircraft = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1066
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.82
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_caw_wiped_out
+	
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_tst_wipes_out_kin_4 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.kin_4_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1067
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.83
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_kin_4_wiped_out
+	
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_tst_wipes_out_kin_3 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.kin_3_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1068
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.84
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_kin_3_wiped_out
+	
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+
+	msb_tst_wipes_out_kin_2 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.kin_2_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1069
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.85
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_kin_2_wiped_out
+	
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_tst_wipes_out_kin_1 = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			check_variable = {
+				global.kin_1_health = 0
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			CLS = {
+				country_event = {
+					id = col.1070
+				}
+			}
+			TST = {
+				country_event = {
+					id = tst.86
+				}
+
+			}	
+			
+			set_global_flag = global_the_circuit_kin_1_wiped_out
+	
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
 }
+
+
+
 
 
 

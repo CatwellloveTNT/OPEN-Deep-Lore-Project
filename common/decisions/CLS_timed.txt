@@ -284,48 +284,13 @@ cls_the_austral_ghetto_minigame = {
 		}
 	}
 
-	cls_the_battle_ends = {
-		priority = 1
-		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 365
-		is_good = no
-		days_re_enable = 1
 
-		activation = {
-			has_global_flag = global_the_circuit_is_ongoing			
-		}
-
-
-		available = {
-			AND = {
-				always = no
-			}
-
-		}
-
-		fire_only_once = no
-
-		visible = {
-			has_global_flag = global_the_circuit_is_ongoing		
-		}
-
-		timeout_effect = {
-
-	
-
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	cls_tst_hit_the_arcadius_naval_assets = {
+	cls_tst_hit_the_arcadius = {
 		priority = 1
 		icon = GFX_decision_eng_trade_unions_support
 		days_mission_timeout = 4
 		is_good = no
-		days_re_enable = 1
+		days_re_enable = 5
 
 		activation = {
 			has_country_flag = cls_the_circuit_tst_hit_arcadius			
@@ -356,7 +321,7 @@ cls_the_austral_ghetto_minigame = {
 		}
 	}
 
-	cls_tst_hit_the_arcadius_naval_assets_critical = {
+	cls_tst_hit_the_arcadius_critical = {
 		priority = 1
 		icon = GFX_decision_eng_trade_unions_support
 		days_mission_timeout = 4
@@ -392,7 +357,7 @@ cls_the_austral_ghetto_minigame = {
 		}
 	}	
 
-	cls_tst_hit_the_arcadius_naval_assets_miss = {
+	cls_tst_hit_the_arcadius_miss = {
 		priority = 1
 		icon = GFX_decision_eng_trade_unions_support
 		days_mission_timeout = 4
@@ -535,6 +500,980 @@ cls_the_austral_ghetto_minigame = {
 			factor = 0
 		}
 	}	
+
+	cls_tst_hit_the_guyana = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_guyana			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_guyana		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_guyana
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_guyana_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_guyana_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_guyana_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_guyana_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_guyana_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_guyana_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_guyana_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_guyana_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_grenada = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_grenada			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_guyana		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_guyana
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_grenada_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_grenada_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_grenada_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_grenada_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_grenada_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_grenada_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_grenada_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_grenada_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_jamaica = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_jamaica			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_jamaica		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_jamaica
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_jamaica_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_jamaica_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_jamaica_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_jamaica_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_jamaica_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_jamaica_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_jamaica_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_jamaica_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	cls_tst_hit_the_barbados = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_barbados		
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_barbados		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_barbados
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_barbados_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_barbados_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_barbados_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_barbados_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_barbados_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_barbados_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_barbados_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_barbados_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	cls_tst_hit_the_caw = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_caw	
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_caw		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_caw
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_caw_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_caw_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_caw_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_caw_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_caw_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_caw_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_caw_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_caw_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_kin_4 = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_4	
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_4		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_4
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_kin_4_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_4_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_4_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_4_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_kin_4_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_4_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_4_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_4_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_kin_3 = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_3
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_3		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_3
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_kin_3_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_3_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_3_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_3_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_kin_3_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_3_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_3_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_3_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_kin_2 = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_2	
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_2		
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_2
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_kin_2_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_2_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_2_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_2_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_kin_2_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_2_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_2_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_2_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_kin_1 = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_1	
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_1
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_1
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	cls_tst_hit_the_kin_1_critical = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_1_critical_hit			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_1_critical_hit
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_1_critical_hit
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	cls_tst_hit_the_kin_1_miss = {
+		priority = 1
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 4
+		is_good = no
+		days_re_enable = 1
+
+		activation = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_1_miss			
+		}
+
+
+		available = {
+			AND = {
+				always = no
+			}
+
+		}
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cls_the_circuit_tst_hit_kin_1_miss
+		}
+
+		timeout_effect = {
+
+			clr_country_flag = cls_the_circuit_tst_hit_kin_1_miss
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
 
 }	
 

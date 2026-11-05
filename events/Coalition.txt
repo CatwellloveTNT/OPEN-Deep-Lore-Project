@@ -1827,6 +1827,23 @@ country_event = { #event that shows the status of triste's iads effectiveness an
 
 	}
 }
+country_event = { #event that msb gives to cls when they knock out 3 tristan big ships
+	id = col.1048
+	title = col.1048.t
+	desc = col.1048.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # well that wraps that up
+		name = col.1048.a
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = col_1048_tt
+
+	}
+}
 
 
 

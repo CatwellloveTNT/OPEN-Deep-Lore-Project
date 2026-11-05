@@ -247,6 +247,9 @@
  col.1047.t: "IADS and PONYPADS Report"
  col.1047.d: "Given how often our aircraft are painted, we can assume their IADS to be [?global.iads_effectiveness]% functional.\n\nAdditionally, Trinidadian Foreign Intelligence has estimated that they have [?global.ponypads_strongholds] PONYPAD strongholds left."
  col.1047.a: "Well, that wraps that up."
+ col.1048.t: "Phase 2 of The Circuit"
+ col.1048.d: "With naval dominance over the deep ocean on the approaches to Triste, we can now begin our work towards securing region C7"
+ col.1048.a: "Not done yet..."
 
 
 
@@ -1339,6 +1342,8 @@ xpr.1.a: "We must reclaim our birthright"
  nation_joined_western_eco_zone_tt:0 "The §YWestern Cradle Economic Zone§W Spirit will be improved by: \n§G+ 2% Stability\n§G+ 2% Fuel Gain from States\n§G- 2% Consumer Goods Factor\n§G- 2% Lack of Resources Penality§W"
  tst.60_tt:0 "It seems the battle for our oceans has begun...\n\n§YThe Circuit minigame has activated, check your decision tab§W\n\n§RIt can be safely assumed that the Coalition States will invade as soon as the battle of The Circuit is over§W"
  tst.61_tt:0 "As we have abandoned the navy, we cannot contest the coalition in the deep ocean.\n\n§RThe Circuit minigame has automatically advanced to phase 2§W"
+ col_1048_tt:0 "§YWe have made it to region B7 of The Circuit§W\n\nIn order for us to progress to C7, we must eliminate Triste's §RSpeedboat§W fleet in its entirety§W"
+ tst_64_tt:0 "§RWe have been pushed back to region B7 of The Circuit§W\n\nThe Coalition §Ymust eliminate our speedboat presence in the region§W to secure region B7"
 
 
 

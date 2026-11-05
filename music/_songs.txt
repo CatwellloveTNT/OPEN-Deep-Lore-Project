@@ -511,3 +511,12 @@ music = {
 		}				
 	}
 }
+music = { 
+	song = "frostwave"
+	chance = {
+		modifier = {
+			tag = CLS
+			factor = 0.15
+		}				
+	}
+}

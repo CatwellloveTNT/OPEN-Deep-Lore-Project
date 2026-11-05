@@ -497,7 +497,7 @@ the_circuit_days_of_battle_up_1 = {
 
 }
 
-# TRISTAN ATTACKS #
+# ------------------------------------------------- TRISTAN ATTACKS ------------------------------------------------- #
 
 
 
@@ -1093,6 +1093,600 @@ tst_attacks_kin_with_portugal = {
 
 
 }
+
+
+# -------------------------------- PORTUGAL ATTACKS WITH EW ACTIVE -------------------------------- #
+
+tst_attacks_arcadius_with_portugal_ew = {
+
+	hidden_effect = {
+		random_list = {
+			30 = {
+				subtract_from_variable = {
+					global.soh_arcadius_health = 10
+				}
+
+				the_circuit_cls_arcadius_health_clamper = yes
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_arcadius_health = 20
+				}				
+
+				the_circuit_cls_arcadius_health_clamper = yes				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit
+				}
+			}
+			60 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius_miss
+				}
+
+				subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 5
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes
+
+
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_guyana_with_portugal_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_guyana_health = 10
+				}
+
+				the_circuit_cls_guyana_health_clamper = yes			
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_guyana
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_guyana_health = 20
+				}			
+				
+				the_circuit_cls_guyana_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_guyana_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_guyana_miss
+				}
+
+				subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 5
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes				
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_grenada_with_portugal_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_grenada_health = 10
+				}
+
+				the_circuit_cls_grenada_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_grenada
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_grenada_health = 20
+				}	
+				
+				the_circuit_cls_grenada_health_clamper = yes				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_grenada_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_grenada_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 5
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_jamaica_with_portugal_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_jamaica_health = 10
+				}
+
+				the_circuit_cls_jamaica_health_clamper = yes				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_jamaica
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_jamaica_health = 20
+				}			
+				
+				the_circuit_cls_jamaica_health_clamper = yes						
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_jamaica_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_jamaica_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 5
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_barbados_with_portugal_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_barbados_health = 10
+				}
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_barbados
+				}
+
+				the_circuit_cls_barbados_health_clamper = yes						
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_barbados_health = 20
+				}		
+				
+				the_circuit_cls_barbados_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_barbados_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_barbados_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 5
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_repair_ship_with_portugal_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_repair_ship_health = 10
+				}
+
+				the_circuit_cls_repair_ship_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_repair_ship_health = 20
+				}	
+				
+				the_circuit_cls_repair_ship_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 5
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_caw_with_portugal_ew = {
+
+
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_arcadius_carrier_wing_aircraft = 8
+				}
+
+				the_circuit_cls_arcadius_carrier_wing_stockpile_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_arcadius_carrier_wing_aircraft = 16
+				}				
+
+				the_circuit_cls_arcadius_carrier_wing_stockpile_clamper = yes
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 9
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes				
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_kin_with_portugal_ew = {
+
+
+
+	hidden_effect = {
+
+		if = {
+			limit = { 
+				NOT = {
+				TST = {
+				has_global_flag = global_the_circuit_kin_4_dead
+			} 
+				}
+
+		}
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_4_health = 25
+				}
+
+				the_circuit_cls_kin_4_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4
+				}
+
+			}
+			1 = {
+
+				subtract_from_variable = {
+					global.kin_4_health = 50
+				}				
+
+				the_circuit_cls_kin_4_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4_critical
+				}
+			}
+			99 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 8
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes				
+
+			}
+
+
+
+		}
+	}
+
+	if = {
+		limit = { 
+			TST = {
+				has_global_flag = global_the_circuit_kin_4_dead
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_3_health = 25
+				}
+
+				the_circuit_cls_kin_3_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3
+				}
+
+			}
+			1 = {
+
+				subtract_from_variable = {
+					global.kin_3_health = 50
+				}				
+
+				the_circuit_cls_kin_3_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3_critical
+				}
+			}
+			99 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 8
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes					
+
+			}
+
+
+
+		}
+
+	}
+
+
+	if = {
+		limit = { 
+			TST = {
+				AND = {
+				has_global_flag = global_the_circuit_kin_4_dead
+				has_global_flag = global_the_circuit_kin_3_dead				
+				}
+
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_2_health = 25
+				}
+
+				the_circuit_cls_kin_2_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2
+				}
+
+			}
+			1 = {
+
+				subtract_from_variable = {
+					global.kin_2_health = 50
+				}				
+
+				the_circuit_cls_kin_2_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2_critical
+				}
+			}
+			99 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 8
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes					
+
+			}
+
+
+
+		}
+
+	}
+	
+	if = {
+		limit = { 
+			TST = {
+				AND = {
+				has_global_flag = global_the_circuit_kin_4_dead
+				has_global_flag = global_the_circuit_kin_3_dead	
+				has_global_flag = global_the_circuit_kin_2_dead								
+				}
+
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_1_health = 25
+				}
+
+				the_circuit_cls_kin_1_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1
+				}
+
+			}
+			1 = {
+
+				subtract_from_variable = {
+					global.kin_1_health = 50
+				}				
+
+				the_circuit_cls_kin_1_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1_critical
+				}
+			}
+			99 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1_miss
+				}
+
+								subtract_from_variable = {
+					global.tss_portugal_carrier_wing_aircraft = 8
+				}
+
+				the_circuit_tst_carrier_air_wing_clamper = yes					
+
+			}
+
+
+
+		}
+
+	}	
+
+}
+
+
+
+
+}
 	
 
 
@@ -1341,6 +1935,267 @@ tst_attacks_repair_ship_with_naval_assets = {
 				}
 			}
 			30 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+
+# -------------------------------- NAVAL ASSETS ATTACKS WITH EW ACTIVE -------------------------------- #
+
+tst_attacks_arcadius_with_naval_assets_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_arcadius_health = 10
+				}
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_arcadius_health = 20
+				}				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_arcadius_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_guyana_with_naval_assets_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_guyana_health = 10
+				}
+
+				the_circuit_cls_guyana_health_clamper = yes			
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_guyana
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_guyana_health = 20
+				}			
+				
+				the_circuit_cls_guyana_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_guyana_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_guyana_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_grenada_with_naval_assets_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_grenada_health = 10
+				}
+
+				the_circuit_cls_grenada_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_grenada
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_grenada_health = 20
+				}	
+				
+				the_circuit_cls_grenada_health_clamper = yes				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_grenada_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_grenada_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_jamaica_with_naval_assets_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_jamaica_health = 10
+				}
+
+				the_circuit_cls_jamaica_health_clamper = yes				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_jamaica
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_jamaica_health = 20
+				}			
+				
+				the_circuit_cls_jamaica_health_clamper = yes						
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_jamaica_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_jamaica_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+tst_attacks_barbados_with_naval_assets_ew = {
+
+	hidden_effect = {
+		random_list = {
+			20 = {
+				subtract_from_variable = {
+					global.soh_barbados_health = 10
+				}
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_barbados
+				}
+
+				the_circuit_cls_barbados_health_clamper = yes						
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_barbados_health = 20
+				}		
+				
+				the_circuit_cls_barbados_health_clamper = yes					
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_barbados_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_barbados_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+}
+
+
+
+tst_attacks_repair_ship_with_naval_assets_ew = {
+
+	hidden_effect = {
+		random_list = {
+			30 = {
+				subtract_from_variable = {
+					global.soh_repair_ship_health = 10
+				}
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_repair_ship_health = 20
+				}				
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_repair_ship_critical_hit
+				}
+			}
+			60 = { # attack assumed missed or intercepted
 
 					CLS = {
 					set_country_flag = cls_the_circuit_tst_hit_repair_ship_miss
@@ -1734,7 +2589,9 @@ tst_attacks_guyana_with_naval_drones = {
 
 }
 
-tst_attacks_grenada_with_speedboats = {
+
+
+tst_attacks_grenada_with_naval_drones = {
 
 	hidden_effect = {
 		random_list = {
@@ -1784,7 +2641,7 @@ tst_attacks_grenada_with_speedboats = {
 
 }
 
-tst_attacks_jamaica_with_speedboats = {
+tst_attacks_jamaica_with_naval_drones = {
 
 	hidden_effect = {
 		random_list = {
@@ -1834,7 +2691,7 @@ tst_attacks_jamaica_with_speedboats = {
 
 }
 
-tst_attacks_barbados_with_speedboats = {
+tst_attacks_barbados_with_naval_drones = {
 
 	hidden_effect = {
 		random_list = {
@@ -2207,6 +3064,311 @@ tst_attacks_kin_with_air_force = {
 				}
 			}
 			80 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1_miss
+				}
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 10
+				}
+
+				subtract_from_variable = {
+					global.pilot_morale = 5
+				}
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes					
+
+			}
+
+
+
+		}
+
+	}	
+
+}
+
+}
+
+# -------------------------------- AIR FORCE ATTACKS WITH EW ACTIVE -------------------------------- #
+
+tst_attacks_the_caw_with_air_force_ew = {
+
+		random_list = {
+			30 = {
+				subtract_from_variable = {
+					global.soh_arcadius_carrier_wing_aircraft = 8
+				}
+
+				the_circuit_cls_arcadius_carrier_wing_stockpile_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.soh_arcadius_carrier_wing_aircraft = 16
+				}				
+
+				the_circuit_cls_arcadius_carrier_wing_stockpile_clamper = yes
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw_critical_hit
+				}
+			}
+			70 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw_miss
+				}
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 10
+				}
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+
+			}
+
+
+
+		}
+
+
+}
+
+
+tst_attacks_kin_with_air_force_ew = {
+
+
+
+	hidden_effect = {
+
+		if = {
+			limit = { 
+				NOT = {
+				TST = {
+				has_global_flag = global_the_circuit_kin_4_dead
+			} 
+				}
+
+		}
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_4_health = 25
+				}
+
+				the_circuit_cls_kin_4_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_4_health = 50
+				}				
+
+				the_circuit_cls_kin_4_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4_miss
+				}
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 20
+				}
+
+				subtract_from_variable = {
+					global.pilot_morale = 5
+				}
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes	
+
+			}
+
+
+
+		}
+	}
+
+	if = {
+		limit = { 
+			TST = {
+				has_global_flag = global_the_circuit_kin_4_dead
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_3_health = 25
+				}
+
+				the_circuit_cls_kin_3_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_3_health = 50
+				}				
+
+				the_circuit_cls_kin_3_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3_miss
+				}
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 10
+				}
+
+				subtract_from_variable = {
+					global.pilot_morale = 5
+				}
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes					
+
+			}
+
+
+
+		}
+
+	}
+
+
+	if = {
+		limit = { 
+			TST = {
+				AND = {
+				has_global_flag = global_the_circuit_kin_4_dead
+				has_global_flag = global_the_circuit_kin_3_dead				
+				}
+
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_2_health = 25
+				}
+
+				the_circuit_cls_kin_2_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_2_health = 50
+				}				
+
+				the_circuit_cls_kin_2_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2_miss
+				}
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 10
+				}
+
+				subtract_from_variable = {
+					global.pilot_morale = 5
+				}
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes					
+
+			}
+
+
+
+		}
+
+	}
+	
+	if = {
+		limit = { 
+			TST = {
+				AND = {
+				has_global_flag = global_the_circuit_kin_4_dead
+				has_global_flag = global_the_circuit_kin_3_dead	
+				has_global_flag = global_the_circuit_kin_2_dead								
+				}
+
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_1_health = 25
+				}
+
+				the_circuit_cls_kin_1_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_1_health = 50
+				}				
+
+				the_circuit_cls_kin_1_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
 
 					CLS = {
 					set_country_flag = cls_the_circuit_tst_hit_kin_1_miss
@@ -2880,6 +4042,261 @@ tst_attacks_kin_with_iads = {
 
 }
 
+# -------------------------------- IADS ATTACKS WITH EW ACTIVE -------------------------------- #
+
+tst_attacks_the_caw_with_iads_ew = {
+
+		random_list = {
+			30 = {
+				subtract_from_variable = {
+					global.soh_arcadius_carrier_wing_aircraft = 8
+				}
+
+				the_circuit_cls_arcadius_carrier_wing_stockpile_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.soh_arcadius_carrier_wing_aircraft = 16
+				}				
+
+				the_circuit_cls_arcadius_carrier_wing_stockpile_clamper = yes
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw_critical_hit
+				}
+			}
+			60 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_caw_miss
+				}
+
+			}
+
+
+
+		}
+
+
+}
+
+
+tst_attacks_kin_with_iads_ew = {
+
+
+
+	hidden_effect = {
+
+		if = {
+			limit = { 
+				NOT = {
+				TST = {
+				has_global_flag = global_the_circuit_kin_4_dead
+			} 
+				}
+
+		}
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_4_health = 25
+				}
+
+				the_circuit_cls_kin_4_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_4_health = 50
+				}				
+
+				the_circuit_cls_kin_4_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_4_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+	if = {
+		limit = { 
+			TST = {
+				has_global_flag = global_the_circuit_kin_4_dead
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_3_health = 25
+				}
+
+				the_circuit_cls_kin_3_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_3_health = 50
+				}				
+
+				the_circuit_cls_kin_3_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_3_miss
+				}
+
+			}
+
+
+
+		}
+
+	}
+
+
+	if = {
+		limit = { 
+			TST = {
+				AND = {
+				has_global_flag = global_the_circuit_kin_4_dead
+				has_global_flag = global_the_circuit_kin_3_dead				
+				}
+
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_2_health = 25
+				}
+
+				the_circuit_cls_kin_2_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_2_health = 50
+				}				
+
+				the_circuit_cls_kin_2_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_2_miss
+				}
+
+			}
+
+
+
+		}
+
+	}
+	
+	if = {
+		limit = { 
+			TST = {
+				AND = {
+				has_global_flag = global_the_circuit_kin_4_dead
+				has_global_flag = global_the_circuit_kin_3_dead	
+				has_global_flag = global_the_circuit_kin_2_dead								
+				}
+
+			}
+		 }
+
+
+	random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.kin_1_health = 25
+				}
+
+				the_circuit_cls_kin_1_health_clamper = yes		
+				
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1
+				}
+
+			}
+			0 = {
+
+				subtract_from_variable = {
+					global.kin_1_health = 50
+				}				
+
+				the_circuit_cls_kin_1_health_clamper = yes	
+
+				CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1_critical
+				}
+			}
+			100 = { # attack assumed missed or intercepted
+
+					CLS = {
+					set_country_flag = cls_the_circuit_tst_hit_kin_1_miss
+				}
+
+			}
+
+
+
+		}
+
+	}	
+
+}
+
+}
+
 # -------------------------------- PONYPADS ATTACKS -------------------------------- #
 
 tst_attacks_the_caw_with_ponypads = {
@@ -3134,6 +4551,2508 @@ tst_attacks_kin_with_ponypads = {
 }
 
 }
+
+# ------------------------------------------------- COALITION ATTACKS ------------------------------------------------- #
+
+# ----------------------------------- CARRIER AIR WING DECISIONS  ----------------------------------- #
+
+ cls_the_circuit_target_the_portugal_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			50 = {
+				subtract_from_variable = {
+					global.tss_portugal_health = 10
+				}
+
+				the_circuit_tst_portugal_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_portugal_health = 20
+				}				
+
+				the_circuit_tst_portugal_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_critical_hit
+				}
+			}
+			40 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_halorado_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.tss_halorado_health = 10
+				}
+
+				the_circuit_tst_halorado_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_halorado_health = 20
+				}				
+
+				the_circuit_tst_halorado_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_janero_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.tss_janero_health = 10
+				}
+
+				the_circuit_tst_janero_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_janero_health = 20
+				}				
+
+				the_circuit_tst_janero_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+  cls_the_circuit_target_the_sadhaak_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 10
+				}
+
+				the_circuit_tst_sadhaak_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 20
+				}				
+
+				the_circuit_tst_sadhaak_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+   cls_the_circuit_target_the_batponya_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.tss_batponya_health = 10
+				}
+
+				the_circuit_tst_batponya_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_batponya_health = 20
+				}				
+
+				the_circuit_tst_batponya_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_yanov_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.tss_yanov_health = 10
+				}
+
+				the_circuit_tst_yanov_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_yanov_health = 20
+				}				
+
+				the_circuit_tst_yanov_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_speedboats_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.speedboat_stockpile = 10
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.speedboat_stockpile = 20
+				}				
+
+				subtract_from_variable = {
+					global.speedboat_morale = 10
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes		
+				the_circuit_tst_speedboat_morale_clamper = yes		
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_naval_drones_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 15
+				}
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 25
+				}				
+
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_air_force_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.airforce_stockpile = 10
+				}
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 20
+				}				
+
+
+				the_circuit_tst_airforce_stockpile_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_iads_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.iads_effectiveness = 5
+				}
+
+				the_circuit_tst_iads_effectiveness_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.iads_effectiveness = 10
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ } 
+
+cls_the_circuit_target_the_ponypads_caw = {
+
+
+	hidden_effect = {
+		random_list = {
+			90 = {
+				subtract_from_variable = {
+					global.ponypads_strongholds = 50
+				}
+
+				the_circuit_tst_ponypads_strongholds_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.ponypads_strongholds = 100
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }  
+
+# ----------------------------------- CARRIER AIR WING DECISIONS WITH AEWC ACTIVE  ----------------------------------- #
+
+ cls_the_circuit_target_the_portugal_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.tss_portugal_health = 10
+				}
+
+				the_circuit_tst_portugal_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_portugal_health = 20
+				}				
+
+				the_circuit_tst_portugal_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_halorado_caw_awec = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_halorado_health = 10
+				}
+
+				the_circuit_tst_halorado_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_halorado_health = 20
+				}				
+
+				the_circuit_tst_halorado_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_janero_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_janero_health = 10
+				}
+
+				the_circuit_tst_janero_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_janero_health = 20
+				}				
+
+				the_circuit_tst_janero_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+  cls_the_circuit_target_the_sadhaak_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 10
+				}
+
+				the_circuit_tst_sadhaak_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 20
+				}				
+
+				the_circuit_tst_sadhaak_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+   cls_the_circuit_target_the_batponya_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_batponya_health = 10
+				}
+
+				the_circuit_tst_batponya_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_batponya_health = 20
+				}				
+
+				the_circuit_tst_batponya_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_yanov_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_yanov_health = 10
+				}
+
+				the_circuit_tst_yanov_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_yanov_health = 20
+				}				
+
+				the_circuit_tst_yanov_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_speedboats_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.speedboat_stockpile = 10
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats
+				}
+
+			}
+			20 = {
+
+				subtract_from_variable = {
+					global.speedboat_stockpile = 20
+				}				
+
+				subtract_from_variable = {
+					global.speedboat_morale = 10
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes		
+				the_circuit_tst_speedboat_morale_clamper = yes		
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_naval_drones_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 15
+				}
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones
+				}
+
+			}
+			40 = {
+
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 25
+				}				
+
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_air_force_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			90 = {
+				subtract_from_variable = {
+					global.airforce_stockpile = 10
+				}
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 20
+				}				
+
+
+				the_circuit_tst_airforce_stockpile_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_iads_caw_awec = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.iads_effectiveness = 5
+				}
+
+				the_circuit_tst_iads_effectiveness_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.iads_effectiveness = 10
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ } 
+
+cls_the_circuit_target_the_ponypads_caw_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			50 = {
+				subtract_from_variable = {
+					global.ponypads_strongholds = 50
+				}
+
+				the_circuit_tst_ponypads_strongholds_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads
+				}
+
+			}
+			50 = {
+
+				subtract_from_variable = {
+					global.ponypads_strongholds = 100
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+
+# ----------------------------------- KIN SQUADRON DECISIONS  ----------------------------------- #
+
+ cls_the_circuit_target_the_portugal_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.tss_portugal_health = 25
+				}
+
+				the_circuit_tst_portugal_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_portugal_health = 50
+				}				
+
+				the_circuit_tst_portugal_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_halorado_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_halorado_health = 40
+				}
+
+				the_circuit_tst_halorado_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_halorado_health = 80
+				}				
+
+				the_circuit_tst_halorado_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_janero_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_janero_health = 40
+				}
+
+				the_circuit_tst_janero_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_janero_health = 80
+				}				
+
+				the_circuit_tst_janero_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+  cls_the_circuit_target_the_sadhaak_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 40
+				}
+
+				the_circuit_tst_sadhaak_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 80
+				}				
+
+				the_circuit_tst_sadhaak_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+   cls_the_circuit_target_the_batponya_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_batponya_health = 40
+				}
+
+				the_circuit_tst_batponya_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_batponya_health = 80
+				}				
+
+				the_circuit_tst_batponya_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_yanov_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_yanov_health = 40
+				}
+
+				the_circuit_tst_yanov_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_yanov_health = 80
+				}				
+
+				the_circuit_tst_yanov_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_speedboats_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.speedboat_stockpile = 30
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats
+				}
+
+			}
+			30 = {
+
+				subtract_from_variable = {
+					global.speedboat_stockpile = 60
+				}				
+
+				subtract_from_variable = {
+					global.speedboat_morale = 20
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes		
+				the_circuit_tst_speedboat_morale_clamper = yes		
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_naval_drones_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 30
+				}
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 60
+				}				
+
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_air_force_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.airforce_stockpile = 20
+				}
+				subtract_from_variable = {
+					global.pilot_morale = 10
+				}				
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 30
+				}				
+				subtract_from_variable = {
+					global.pilot_morale = 20
+				}	
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes							
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_iads_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			90 = {
+				subtract_from_variable = {
+					global.iads_effectiveness = 10
+				}
+
+				the_circuit_tst_iads_effectiveness_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.iads_effectiveness = 20
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ } 
+
+cls_the_circuit_target_the_ponypads_kin = {
+
+
+	hidden_effect = {
+		random_list = {
+			50 = {
+				subtract_from_variable = {
+					global.ponypads_strongholds = 100
+				}
+
+				the_circuit_tst_ponypads_strongholds_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads
+				}
+
+			}
+			50 = {
+
+				subtract_from_variable = {
+					global.ponypads_strongholds = 200
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }  
+
+# ----------------------------------- KIN SQUADRON DECISIONS WITH AEWC ACTIVE  ----------------------------------- #
+
+  cls_the_circuit_target_the_portugal_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			90 = {
+				subtract_from_variable = {
+					global.tss_portugal_health = 25
+				}
+
+				the_circuit_tst_portugal_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_portugal_health = 50
+				}				
+
+				the_circuit_tst_portugal_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_halorado_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_halorado_health = 40
+				}
+
+				the_circuit_tst_halorado_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado
+				}
+
+			}
+			20 = {
+
+				subtract_from_variable = {
+					global.tss_halorado_health = 80
+				}				
+
+				the_circuit_tst_halorado_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_janero_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_janero_health = 40
+				}
+
+				the_circuit_tst_janero_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero
+				}
+
+			}
+			20 = {
+
+				subtract_from_variable = {
+					global.tss_janero_health = 80
+				}				
+
+				the_circuit_tst_janero_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+  cls_the_circuit_target_the_sadhaak_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 40
+				}
+
+				the_circuit_tst_sadhaak_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak
+				}
+
+			}
+			20 = {
+
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 80
+				}				
+
+				the_circuit_tst_sadhaak_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+   cls_the_circuit_target_the_batponya_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_batponya_health = 40
+				}
+
+				the_circuit_tst_batponya_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya
+				}
+
+			}
+			20 = {
+
+				subtract_from_variable = {
+					global.tss_batponya_health = 80
+				}				
+
+				the_circuit_tst_batponya_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_yanov_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.tss_yanov_health = 40
+				}
+
+				the_circuit_tst_yanov_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov
+				}
+
+			}
+			20 = {
+
+				subtract_from_variable = {
+					global.tss_yanov_health = 80
+				}				
+
+				the_circuit_tst_yanov_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_speedboats_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			30 = {
+				subtract_from_variable = {
+					global.speedboat_stockpile = 30
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats
+				}
+
+			}
+			70 = {
+
+				subtract_from_variable = {
+					global.speedboat_stockpile = 60
+				}				
+
+				subtract_from_variable = {
+					global.speedboat_morale = 20
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes		
+				the_circuit_tst_speedboat_morale_clamper = yes		
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_naval_drones_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			50 = {
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 30
+				}
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones
+				}
+
+			}
+			50 = {
+
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 60
+				}				
+
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_air_force_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			50 = {
+				subtract_from_variable = {
+					global.airforce_stockpile = 20
+				}
+				subtract_from_variable = {
+					global.pilot_morale = 10
+				}				
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce
+				}
+
+			}
+			50 = {
+
+				subtract_from_variable = {
+					global.airforce_stockpile = 30
+				}				
+				subtract_from_variable = {
+					global.pilot_morale = 20
+				}	
+
+				the_circuit_tst_airforce_stockpile_clamper = yes
+				the_circuit_tst_pilot_morale_clamper = yes							
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_airforce_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_iads_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			50 = {
+				subtract_from_variable = {
+					global.iads_effectiveness = 10
+				}
+
+				the_circuit_tst_iads_effectiveness_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads
+				}
+
+			}
+			50 = {
+
+				subtract_from_variable = {
+					global.iads_effectiveness = 20
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_iads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ } 
+
+cls_the_circuit_target_the_ponypads_kin_aewc = {
+
+
+	hidden_effect = {
+		random_list = {
+			0 = {
+				subtract_from_variable = {
+					global.ponypads_strongholds = 100
+				}
+
+				the_circuit_tst_ponypads_strongholds_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads
+				}
+
+			}
+			100 = {
+
+				subtract_from_variable = {
+					global.ponypads_strongholds = 200
+				}				
+
+
+				the_circuit_tst_iads_effectiveness_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_ponypads_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }  
+
+# ----------------------------------- ESCORT FLEET DECISIONS  ----------------------------------- #
+
+  cls_the_circuit_target_the_portugal_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			60 = {
+				subtract_from_variable = {
+					global.tss_portugal_health = 10
+				}
+
+				the_circuit_tst_portugal_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_portugal_health = 20
+				}				
+
+				the_circuit_tst_portugal_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_critical_hit
+				}
+			}
+			30 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_portugal_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_halorado_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.tss_halorado_health = 10
+				}
+
+				the_circuit_tst_halorado_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_halorado_health = 20
+				}				
+
+				the_circuit_tst_halorado_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_halorado_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+ cls_the_circuit_target_the_janero_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.tss_janero_health = 10
+				}
+
+				the_circuit_tst_janero_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_janero_health = 20
+				}				
+
+				the_circuit_tst_janero_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_janero_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+  cls_the_circuit_target_the_sadhaak_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 10
+				}
+
+				the_circuit_tst_sadhaak_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_sadhaak_health = 20
+				}				
+
+				the_circuit_tst_sadhaak_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_sadhaak_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+   cls_the_circuit_target_the_batponya_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.tss_batponya_health = 10
+				}
+
+				the_circuit_tst_batponya_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_batponya_health = 20
+				}				
+
+				the_circuit_tst_batponya_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_batponya_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_yanov_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			70 = {
+				subtract_from_variable = {
+					global.tss_yanov_health = 10
+				}
+
+				the_circuit_tst_yanov_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.tss_yanov_health = 20
+				}				
+
+				the_circuit_tst_yanov_health_clamper = yes				
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_critical_hit
+				}
+			}
+			20 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_yanov_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+    cls_the_circuit_target_the_speedboats_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.speedboat_stockpile = 20
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.speedboat_stockpile = 40
+				}				
+
+				subtract_from_variable = {
+					global.speedboat_morale = 10
+				}
+
+				the_circuit_tst_speedboat_stockpile_clamper = yes		
+				the_circuit_tst_speedboat_morale_clamper = yes		
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_critical_hit
+				}
+			}
+			10 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_speedboats_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+cls_the_circuit_target_the_naval_drones_escort_fleet = {
+
+
+	hidden_effect = {
+		random_list = {
+			80 = {
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 20
+				}
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones
+				}
+
+			}
+			10 = {
+
+				subtract_from_variable = {
+					global.naval_drone_stockpile = 40
+				}				
+
+
+				the_circuit_tst_naval_drone_stockpile_clamper = yes			
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_critical_hit
+				}
+			}
+			0 = { # attack assumed missed or intercepted
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_hit_naval_drones_miss
+				}
+
+			}
+
+
+
+		}
+	}
+
+
+ }
+
+
+# ----------------------------------- REPAIR FLEET DECISIONS  ----------------------------------- #
+
+ cls_the_circuit_repair_the_arcadius = {
+
+
+	hidden_effect = {
+		add_to_variable = {
+			global.soh_arcadius_health = 25
+		}
+
+		the_circuit_cls_arcadius_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_heals_arcadius
+				}		
+
+	}
+
+ }
+
+ cls_the_circuit_repair_the_guyana = {
+
+
+	hidden_effect = {
+		add_to_variable = {
+			global.soh_guyana_health = 25
+		}
+
+		the_circuit_cls_guyana_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_heals_guyana
+				}		
+
+	}
+
+ }
+
+  cls_the_circuit_repair_the_grenada = {
+
+
+	hidden_effect = {
+		add_to_variable = {
+			global.soh_grenada_health = 25
+		}
+
+		the_circuit_cls_grenada_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_heals_grenada
+				}		
+
+	}
+
+ }
+
+  cls_the_circuit_repair_the_jamaica = {
+
+
+	hidden_effect = {
+		add_to_variable = {
+			global.soh_jamaica_health = 25
+		}
+
+		the_circuit_cls_jamaica_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_heals_jamaica
+				}		
+
+	}
+
+ }
+
+  cls_the_circuit_repair_the_barbados = {
+
+
+	hidden_effect = {
+		add_to_variable = {
+			global.soh_barbados_health = 25
+		}
+
+		the_circuit_cls_barbados_health_clamper = yes
+
+				TST = {
+					set_country_flag = tst_the_circuit_cls_heals_barbados
+				}		
+
+	}
+
+ }
 
 
  # -------------- TESTING --------------- #
