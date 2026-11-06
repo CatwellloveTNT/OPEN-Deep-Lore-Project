@@ -1,0 +1,182 @@
+CLS_StrikeForce_1 = {
+	allowed = {
+		original_tag = CLS
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	keep_updated = yes
+	mission = { naval_strike }
+	min_composition = {
+		carrier = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 1
+		}
+	}
+	
+	optimal_composition = {
+		carrier = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 10
+
+		}
+	}
+}
+
+CLS_PatrolReconForce_1 = {
+	allowed = {
+		original_tag = CLS
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	mission = { naval_patrol }
+	min_composition = {
+		light_cruiser = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 1
+		}
+	}	
+	optimal_composition = {
+		#we add CA so that the patrols can stay longer in battle for the strikeforce to show up
+		carrier = {
+			amount = 1
+		}
+		light_cruiser = {
+			amount = 2
+		}
+		destroyer = {
+			amount = 5
+		}
+	}
+}
+
+CLS_PatrolDominanceForce_BC_1 = {
+	allowed = {
+		original_tag = CLS
+	}
+	ai_will_do = {
+		factor = 5
+	}	
+	mission = { naval_patrol }
+	min_composition = {
+		destroyer = {
+			amount = 4
+		}
+	}
+	optimal_composition = {
+		carrier = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 12
+		}
+	}
+}
+
+CLS_NavalInvasionSupport_1 = {
+	allowed = {
+		original_tag = CLS
+	}
+	ai_will_do = {
+		factor = 5
+	}	
+	mission = { naval_invasion_support }
+	min_composition = {
+		heavy_cruiser = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 3
+		}
+	}
+
+	optimal_composition = {
+		heavy_cruiser = {
+			amount = 3
+		}
+		destroyer = {
+			amount = 6
+		}
+	}
+}
+
+CLS_ConvoyRaiding_1 = {
+	allowed = {
+		original_tag = CLS
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	keep_updated = yes
+	mission = { convoy_raiding }
+	min_composition = {
+		submarine = {
+			amount = 4
+		}
+	}
+
+	optimal_composition = {
+		submarine = {
+			amount = 12
+		}
+	}
+}
+
+CLS_ConvoyEscort_1 = {
+	allowed = {
+		original_tag = CLS
+	}
+	ai_will_do = {
+		factor = 5
+	}	
+	mission = { convoy_escort }
+	min_composition = {
+		destroyer = {
+			amount = 5
+		}
+	}
+	
+	optimal_composition = {
+		light_cruiser = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 12
+		}
+	}
+}
+
+CLS_MineLaying_1 = {
+	allowed = {
+		original_tag = CLS
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	mission = { mines_planting }
+	min_composition = {
+		destroyer = {
+			amount = 2
+			role = 4
+		}
+	}
+	
+	optimal_composition = {
+		destroyer = {
+			amount = 4
+			role = 4
+		}
+		
+		light_cruiser = {
+			amount = 1
+			role = 4
+		}
+	}
+}

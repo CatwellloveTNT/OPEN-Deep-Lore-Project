@@ -10,71 +10,122 @@ units = {
 				name = "Arcadius"
 				pride_of_the_fleet = yes
 				ordered_name = 1
-				definition = carrier #that equipment error is not real please ignore it wtf 
-				equipment = { arcadius_supercarrier_equipment = { amount = 1 owner = CLS version_name = "Arcadius Class"} }
+				definition = carrier start_experience_factor = 1 #that equipment error is not real please ignore it wtf 
+				equipment  = { arcadius_supercarrier_equipment = { amount = 1 owner = CLS version_name = "Arcadius Class"} }
 			}
 			ship = {
 				ordered_name = 2
-				definition = destroyer #that equipment error is not real please ignore it wtf 
+				definition = destroyer start_experience_factor = 0.25 #that equipment error is not real please ignore it wtf 
 				equipment = { destroyer_1 = { amount = 1 owner = CLS version_name = "Trinidad Class"} }
 			}	
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = battleship equipment = { battleship_1 { amount = 1 owner = CLS version_name = "Noncanonical Class" } }}	
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.40 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 4 definition = heavy_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Caribbean Class" } }}		
+			ship = { ordered_name = 4 definition = heavy_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Caribbean Class" } }}	
+			ship = { ordered_name = 4 definition = heavy_cruiser start_experience_factor = 0.40 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Caribbean Class" } }}		
 
 		}
+		task_force = { #CCRG = Covert Convoy Raiding Group
+			name = "Arcadius CCRG"
+			location = 11269
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}	
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}		
+
+		}		
 	
 	}
 
 	fleet = {
-		name = "Arcadius Carrier Strike Group2"
+		name = "Regalis Carrier Strike Group"
 		naval_base = 11314
 		task_force = { 
-			name = "Arcadius Carrier Strike Group2"
+			name = "Regalis Carrier Strike Group"
 			location = 11314
 			ship = {
-				name = "Arcadius2"
+				name = "Regalis"
 				ordered_name = 2
-				definition = carrier #that equipment error is not real please ignore it wtf 
+				definition = carrier start_experience_factor = 0.75 #that equipment error is not real please ignore it wtf 
 				equipment = { arcadius_supercarrier_equipment = { amount = 1 owner = CLS version_name = "Arcadius Class"} }
 			}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
-			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}		
-			ship = { ordered_name = 2 definition = battleship equipment = { battleship_1 { amount = 1 owner = CLS version_name = "Noncanonical Class" } }}		
-
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}				
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Alkyon Class" } }}	
+			ship = { ordered_name = 3 definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Caribbean Class" } }}		
+			ship = { ordered_name = 3 definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Caribbean Class" } }}	
+			ship = { ordered_name = 3 definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 { amount = 1 owner = CLS version_name = "Caribbean Class" } }}																										
 		}
+
+		task_force = { #CCRG = Covert Convoy Raiding Group
+			name = "Regalis CCRG"
+			location = 11314
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}	
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 { amount = 1 owner = CLS version_name = "Dagger Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 3 definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}		
+
+		}		
 	
 	}
 
