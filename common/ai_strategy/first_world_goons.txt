@@ -1,7 +1,14 @@
 FW_create_goons_and_equipment = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
 	allowed = {
 		is_first_world_country = yes
+		NOT = {
+			tag = CLS
+		}
+
 	}
+
+
+
 	enable = {
 		always = yes
 	}

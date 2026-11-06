@@ -3,23 +3,27 @@ CLS_create_goons = { #this shit was kicking my ass before i figured it out, in o
 		tag = CLS
 	}
 	enable = {
-		always = yes
+			CLS = {
+				has_country_flag = cls_buddy_its_time_to_make_divs
+			}
 	}
 	abort = {
-		always = no
+			CLS = {
+				has_country_flag = cls_buddy_its_time_to_chill
+			}
 	}
 
 
 	ai_strategy = {
 		type = role_ratio
 		id = open_ifvs_ai
-		value = 10
+		value = 15
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = open_vlaps_ai
-		value = 15
+		value = 10
 	}
 
 
@@ -39,7 +43,9 @@ CLS_kill_triste = { #KILL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	}
 
 	enable = {
-		tag = CLS
+		TST = {
+			exists = yes
+		}
 	}
 
 	abort_when_not_enabled = yes	
@@ -87,21 +93,7 @@ CLS_kill_triste = { #KILL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 }
 
-dont_lag_the_game_yo = { #the coalition likes to make FIFTY (50) divisions at a time when left unsupervised
-	allowed = {
-		tag = CLS
-	}
-	enable = {
-		date < 2035.1.1
-	}
-	abort = {
-		date > 2035.1.1		
-	}
-	ai_strategy = {
-		type = force_build_armies
-		value = -900
-	}
-}
+
 
 
 

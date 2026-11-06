@@ -14,6 +14,51 @@
 
 	continuous_focus_position = { x = 50 y = 1500 }
 
+	focus = { #please pull this out and put it in sequence when i make their tree for the circuit
+		id = CLS_renter_the_circuit
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		#relative_position_id = 
+		cost = 1
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			
+			CLS = {
+				country_event = {
+					id = col.1071
+				}
+			}
+
+			hidden_effect = {
+				TST = {
+					country_event = {
+						id = tst.60
+					}
+				}
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+
 	focus = {
 		id = CLS_flashpoint_arcadius
 		icon = GFX_goal_generic_consumer_goods

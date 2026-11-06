@@ -316,6 +316,11 @@
  col.1070.t: "Kin 1-1 Shot Down!"
  col.1070.d: "todo: write up a scenario where kin 1-1 gets shot down"
  col.1070.a: "And so ends the story of Kin Squadron..."
+ col.1071.t: "Operation Blue Crested Eagle"
+ col.1071.d: "todo: the cls goes in to secure the circuit once again"
+ col.1071.a: "Let's push them back"
+ col.10000.t: "cls stop making divisons"
+ col.10001.t: "cls start making divisons"
 
 
 
@@ -1293,7 +1298,7 @@ tst.64.d: "The Coalition has managed to firmly push us out of region A7. The bat
 tst.64.a: "Troubling"
 tst.65.t: "The Portugal has been Sunk!"
 tst.65.d: "todo: write up a scenario where the portugal is overwhelmed by kin squadron and sinks"
-tst.65.a: "A loss which so great we may never recover from it"
+tst.65.a: "A loss so great we may never recover from it"
 tst.66.t: "The Halorado has been Sunk!"
 tst.66.d: "todo: write up a scenario the halorado gets hit by a vls and sinks"
 tst.66.a: "Their sacrifice will not be forgotten"
@@ -1357,6 +1362,9 @@ tst.85.a: "One left to go"
 tst.86.t: "Kin 1-1 Confirmed Eliminated!"
 tst.86.d: "todo: write a scenario where kin 1-1 gets shot down"
 tst.86.a: "That's that"
+tst.87.t: "The Second Roadtrip War"
+tst.87.d: "todo: a couple of soldiers in halorado port are playing cards, suddenly their drinks start to vibrate and they hear a ominous droning noise, the noise gets louder and louder until it is right on top of them. they look out to see hundreds of VLAPS and helicopters flying over the halorado port city. they know the coalition has come to finish the job"
+tst.87.a: "So it begins..."
 
 
 # -------------------- LAVENTILLE --------------------
@@ -1485,6 +1493,8 @@ xpr.1.a: "We must reclaim our birthright"
  col_1058_tt:0 "§YWe have made it to region D7 of The Circuit. We have control of all we need to ensure our air mobile forces can immediately deploy without risk of shoot down.§W\n\nIn order for us to secure D7, we must eliminate all of Triste's §RPONYPADS§W strongholds§W\n\n§WSecuring region D7 will give Triste a §Gdebuff§W §Ythat will last the entirety of the Second Roadtrip War.§W The debuff inflicts:\n §R-10 Army Organization\n -15% Division Recovery Rate\n -5% Division Defense§W"
  tst_72_tt:0 "§RWe have been pushed back to region C7 of The Circuit§W\n\n§YThe Coalition must dismantle our IADS to secure region C7§W\n\nIf the Coalition secures C7, §Rthey will seize control of the cities, coasts and ports of our Batponya state upon the breakout of the Second Roadtrip War.§W"
  tst_74_tt:0 "§RWe have been pushed back to region D7 of The Circuit§W\n\n§YThe Coalition must destroy all of our PONYPADS strongholds to secure region D7§W\n\nIf the Coalition secures D7, §Rwe will gain a debuff that will last for the entirety of the Second Roadtrip War.§W\nThe debuff inflicts:\n §R-10 Army Organization\n -15% Division Recovery Rate\n -5% Division Defense§W"
+ tst_76_tt:0 "§GThe Coalition has begin to pull back from The Circuit, it seems like we've won!§W\n\n§RThey will invade, this is certain. But we have bought some extra time...§W"
+ col_1060_tt:0 "§RWith the Arcadius defeated, we have no choice but to pull out of The Circuit... We have been defeated, but this is no more than a temporary setback.§W"
 
 
 

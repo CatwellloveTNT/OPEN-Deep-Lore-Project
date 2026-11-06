@@ -901,6 +901,7 @@ puppetmaster = {
 			}
 			
 			set_global_flag = global_the_circuit_phase_2
+			clr_global_flag = global_the_circuit_phase_1
 
 		}
 
@@ -1600,6 +1601,10 @@ puppetmaster = {
 			
 			set_global_flag = global_the_circuit_ponypads_wiped_out
 
+			TST = {
+				set_country_flag = tst_the_cls_somehow_defeated_the_manpads
+			}
+
 		
 
 		}
@@ -1661,6 +1666,8 @@ puppetmaster = {
 			}	
 			
 			set_global_flag = global_the_circuit_arcadius_sunk
+
+			clr_global_flag = global_the_circuit_is_ongoing
 
 			add_to_variable = {
 				global.number_of_coalition_ships_sunk = 1
@@ -2369,7 +2376,7 @@ puppetmaster = {
 
 	}	
 
-	msb_cls_all_escort_ships_sunk = { 
+	msb_cls_all_kin_members_dead = { 
 		priority = 310
 
 		icon = GFX_decision_eng_trade_unions_support

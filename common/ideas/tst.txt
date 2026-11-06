@@ -388,6 +388,40 @@ ideas = {
 			}
 	}	
 
+
+			tst_the_circuit_perma_debuff_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = TST
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+
+				army_defence_factor = -0.05
+				army_org = -10
+				army_org_regain = -0.10
+
+			}
+	}
+
+
 }
 
 }

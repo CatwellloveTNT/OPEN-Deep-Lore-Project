@@ -1746,10 +1746,11 @@ country_event = { #THIS IS THE SECOND ROADTRIP WAR EVENT, I WROTE IT EARLY CUZ I
 	is_triggered_only = yes
 
 
-	option = { # Wipe this one off the books. Now.
+	option = { # Zulu Don't Fly
 		name = col.1043.a
 		ai_chance = {factor = 100}	
 
+		set_global_flag = global_the_second_roadtrip_war_is_ongoing
 
 	}
 }
@@ -2042,6 +2043,7 @@ country_event = { #tst critically damages the arcadius
 		name = col.1060.a
 		ai_chance = {factor = 100}	
 	
+		custom_effect_tooltip = col_1060_tt
 
 	}
 }
@@ -2201,6 +2203,67 @@ country_event = { #tst kills kin 1
 	option = { # And so ends the story of kin squadron...
 		name = col.1070.a
 		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #event that kicks off the circuit
+	id = col.1071
+	title = col.1071.t
+	desc = col.1071.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { #lets push them back
+		name = col.1071.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+
+
+
+country_event = { #testing event that makes the coalition not make divions
+	id = col.10000
+	title = col.10000.t
+	desc = col.1071.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { #lets push them back
+		name = col.1071.a
+		ai_chance = {factor = 100}	
+
+		CLS = {
+			clr_country_flag = cls_buddy_its_time_to_make_divs
+			set_country_flag = cls_buddy_its_time_to_chill
+		}
+	
+
+	}
+}
+country_event = { #testing event that makes the coalition make divions 
+	id = col.10001
+	title = col.10001.t
+	desc = col.1071.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { #lets push them back
+		name = col.1071.a
+		ai_chance = {factor = 100}	
+
+		CLS = {
+			set_country_flag = cls_buddy_its_time_to_make_divs
+			clr_country_flag = cls_buddy_its_time_to_chill
+		}
 	
 
 	}

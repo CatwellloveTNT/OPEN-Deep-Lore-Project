@@ -96,6 +96,10 @@ scripted_gui = {
       cls_navalassets_click = {
         ai_will_do = {
           factor = 500
+          modifier = {
+            has_global_flag = global_the_circuit_phase_3
+            add = -1000
+          }
         }
       }
 
@@ -113,13 +117,13 @@ scripted_gui = {
       
       cls_repair_ship_click = {
         ai_will_do = {
-          factor = 500
+          factor = 0
         }
       }
       
       cls_arcadius_carrier_click = {
         ai_will_do = {
-          factor = 500
+          factor = 0
         }
       }      
  

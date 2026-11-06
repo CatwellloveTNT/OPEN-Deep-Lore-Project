@@ -187,8 +187,8 @@ TST_the_circuit_minigame_tab = {
 
 
 		available = {
-			AND = {
-				always = no
+			NOT = {
+			has_global_flag = global_the_circuit_is_ongoing		
 			}
 
 		}
@@ -201,7 +201,27 @@ TST_the_circuit_minigame_tab = {
 
 		timeout_effect = {
 
-	
+			clr_global_flag = global_the_circuit_is_ongoing
+
+			TST = {
+				country_event = {
+					id = tst.87
+				}
+			}
+
+			if = {
+				limit = {
+				TST = {
+					has_country_flag = tst_the_cls_somehow_defeated_the_manpads
+				}
+				}
+
+				TST = {
+					add_ideas = tst_the_circuit_perma_debuff_idea
+				}
+
+
+			}	
 
 		}
 

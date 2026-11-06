@@ -105,7 +105,7 @@ country_event = {
 
 	option = { # Humanity has 11 carriers, we have 0. Let's end it at that.
 		name = tst.6.a
-		ai_chance = {factor = 100}
+		ai_chance = {base = 30}
 
 		complete_national_focus = TST_abandon_the_navy
 
@@ -113,7 +113,7 @@ country_event = {
 
 	option = { # To win a battle like this we must fight, even if it seems hopeless
 		name = tst.6.b
-		ai_chance = {factor = 0}
+		ai_chance = {base = 70}
 
 		complete_national_focus = TST_the_35_65_plan
 
@@ -1269,7 +1269,7 @@ country_event = { #The coalition states begins aggressively patrolling the ocean
 
 	immediate = {
 		hidden_effect = {
-		set_global_flag = global_circuit_phase_1
+		set_global_flag = global_the_circuit_phase_1
 		set_global_flag = global_the_circuit_is_ongoing		
 		set_country_flag = tst_circuit_phase_1
 		CLS = {
@@ -1604,7 +1604,11 @@ country_event = { #tst critically damages the arcadius
 		name = tst.76.a	
 		ai_chance = {factor = 100}	
 
+	custom_effect_tooltip = tst_76_tt
+
 	}
+
+
 
 }
 country_event = { #tst sinks the guyana
@@ -1762,6 +1766,23 @@ country_event = { #tst kills kin 1
 
 	option = { #Legendary Squadron? Ha!
 		name = tst.86.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+
+country_event = { #the second roadtrip war kicks off
+	id = tst.87
+	title = tst.87.t
+	desc = tst.87.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #They have come...
+		name = tst.87.a	
 		ai_chance = {factor = 100}	
 
 	}

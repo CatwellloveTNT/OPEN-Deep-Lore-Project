@@ -2516,6 +2516,13 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}
+
 		}
 	}	
 
@@ -2609,6 +2616,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -2702,6 +2715,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -2795,6 +2814,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -2888,6 +2913,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -2983,6 +3014,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -3070,6 +3107,10 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_2
+				add = 100
+			}
 		}
 	}
 	
@@ -3877,6 +3918,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -3987,6 +4034,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -4097,6 +4150,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -4317,6 +4376,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -4429,6 +4494,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -4533,6 +4604,10 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_2
+				add = 100
+			}			
 		}
 	}
 	
@@ -4847,7 +4922,14 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+
+			modifier = {
+				has_global_flag = global_the_circuit_phase_3
+				add = 10000
+			}
+
 		}
+
 	}	
 
 	cls_the_circuit_hunt_for_manpads_caw = {
@@ -4952,6 +5034,13 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				check_variable = {
+					global.iads_effectiveness = 0
+				}
+
+				add = 1005
+			}
 		}
 	}	
 
@@ -5242,6 +5331,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -5351,6 +5446,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			
 		}
 	}	
 
@@ -5898,6 +5994,10 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_2
+				add = 100
+			}			
 		}
 	}
 	
@@ -6218,6 +6318,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+
+			modifier = {
+				has_global_flag = global_the_circuit_phase_3
+				add = 10000
+			}
+
 		}
 	}	
 
@@ -6325,6 +6431,13 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				check_variable = {
+					global.iads_effectiveness = 0
+				}
+
+				add = 1005
+			}			
 		}
 	}
 
@@ -6622,6 +6735,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -6732,6 +6851,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -6842,6 +6967,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -6952,6 +7083,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -7062,6 +7199,13 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}
+
 		}
 	}
 
@@ -7174,6 +7318,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_1
+
+				add = 1000
+
+			}			
 		}
 	}	
 
@@ -7278,6 +7428,10 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_2
+				add = 100
+			}			
 		}
 	}
 
@@ -7592,6 +7746,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+
+			modifier = {
+				has_global_flag = global_the_circuit_phase_3
+				add = 10000
+			}
+
 		}
 	}	
 
@@ -7697,6 +7857,13 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				check_variable = {
+					global.iads_effectiveness = 0
+				}
+
+				add = 1005
+			}			
 		}
 	}
 	
@@ -8644,6 +8811,10 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				has_global_flag = global_the_circuit_phase_2
+				add = 100
+			}			
 		}
 	}
 
@@ -8964,6 +9135,12 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+
+			modifier = {
+				has_global_flag = global_the_circuit_phase_3
+				add = 10000
+			}
+
 		}
 	}	
 
@@ -9071,6 +9248,13 @@ CLS_the_aryx_scramble_minigame = {
 
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				check_variable = {
+					global.iads_effectiveness = 0
+				}
+
+				add = 1005
+			}			
 		}
 	}	
 

@@ -31,6 +31,7 @@ OOB = "TST_2032"
 		early_ship_hull_heavy = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_carrier = 1
+		basic_train = 1
 
 
 
@@ -208,6 +209,75 @@ set_variable = { triste_the_tristan_navy_nsdf = 0.05} # navy screen defense fact
 set_variable = { triste_the_tristan_navy_ncaagf = -0.10} # naval carrier air agility factor
 set_variable = { triste_the_tristan_navy_sorte = -0.1} # sortie effiecncy 
 set_variable = { triste_the_tristan_navy_ncaaf = -0.1} # naval carrier air attack factor
+
+	create_equipment_variant = {
+		name = "Ajaxia"
+		type = modern_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = stabilizer
+			special_type_slot_3 = sloped_armor
+			special_type_slot_4 = easy_maintenance
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 5
+			tank_nsb_armor_upgrade = 5
+		}
+	#	icon = "GFX_USA_improved_medium_tank_medium"
+	}
+
+
+set_convoys = 251
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 20
+}
+add_equipment_to_stockpile = {
+	type = apc_equipment_1
+	amount = 783
+}
+add_equipment_to_stockpile = {
+	type = ifv_equipment_1
+	amount = 432
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 210
+}
+add_equipment_to_stockpile = {
+	type = modern_tank_equipment_1
+	amount = 121
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 435
+}
+add_equipment_to_stockpile = {
+	type = manpads_0
+	amount = 1210
+}
+add_equipment_to_stockpile = {
+	type = atgms_0
+	amount = 154
+}
+add_equipment_to_stockpile = {
+	type = transport_helo_equipment_1
+	amount = 55
+}
+add_equipment_to_stockpile = {
+	type = attack_helo_equipment_1
+	amount = 44
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 8141
+}
 
 
 
