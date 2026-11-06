@@ -2222,6 +2222,8 @@ tst_attacks_arcadius_with_speedboats = {
 					global.soh_arcadius_health = 5
 				}
 
+				the_circuit_cls_arcadius_health_clamper = yes				
+
 				CLS = {
 					set_country_flag = cls_the_circuit_tst_hit_arcadius
 				}
@@ -2231,7 +2233,9 @@ tst_attacks_arcadius_with_speedboats = {
 
 				subtract_from_variable = {
 					global.soh_arcadius_health = 10
-				}				
+				}	
+				
+				the_circuit_cls_arcadius_health_clamper = yes						
 
 				CLS = {
 					set_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit
@@ -2502,6 +2506,8 @@ tst_attacks_arcadius_with_naval_drones = {
 					global.soh_arcadius_health = 20
 				}
 
+				the_circuit_cls_arcadius_health_clamper = yes						
+
 				CLS = {
 					set_country_flag = cls_the_circuit_tst_hit_arcadius
 				}
@@ -2512,6 +2518,8 @@ tst_attacks_arcadius_with_naval_drones = {
 				subtract_from_variable = {
 					global.soh_arcadius_health = 30
 				}				
+
+				the_circuit_cls_arcadius_health_clamper = yes						
 
 				CLS = {
 					set_country_flag = cls_the_circuit_tst_hit_arcadius_critical_hit
@@ -5856,7 +5864,7 @@ cls_the_circuit_target_the_ponypads_caw_aewc = {
 				}
 
 			}
-			30 = {
+			29 = {
 
 				subtract_from_variable = {
 					global.speedboat_stockpile = 60
@@ -5873,7 +5881,7 @@ cls_the_circuit_target_the_ponypads_caw_aewc = {
 					set_country_flag = tst_the_circuit_cls_hit_speedboats_critical_hit
 				}
 			}
-			0 = { # attack assumed missed or intercepted
+			1 = { # attack assumed missed or intercepted
 
 				TST = {
 					set_country_flag = tst_the_circuit_cls_hit_speedboats_miss
@@ -6369,7 +6377,7 @@ cls_the_circuit_target_the_ponypads_kin = {
 				}
 
 			}
-			70 = {
+			69 = {
 
 				subtract_from_variable = {
 					global.speedboat_stockpile = 60
@@ -6386,7 +6394,7 @@ cls_the_circuit_target_the_ponypads_kin = {
 					set_country_flag = tst_the_circuit_cls_hit_speedboats_critical_hit
 				}
 			}
-			0 = { # attack assumed missed or intercepted
+			1 = { # attack assumed missed or intercepted
 
 				TST = {
 					set_country_flag = tst_the_circuit_cls_hit_speedboats_miss

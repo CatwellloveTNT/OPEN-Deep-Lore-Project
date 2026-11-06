@@ -846,20 +846,26 @@ puppetmaster = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					NOT = {
-						TST = {
-							has_completed_focus = TST_the_35_65_plan
-						}
-					}
 
-					check_variable = {
-						global.number_of_tristan_ships_sunk < 3
-					}
+			AND = {
+	
+				has_global_flag = global_the_circuit_is_ongoing
 
+			OR = {
+				NOT = {
+					TST = {
+						has_completed_focus = TST_the_35_65_plan
+					}
 				}
+
+				check_variable = {
+					global.number_of_tristan_ships_sunk > 2
+				}
+
 			}
+			}
+
+
 		}
 
 		visible = {
@@ -1286,71 +1292,7 @@ puppetmaster = {
 			factor = 5000
 		}		
 
-	}	
-
-	msb_cls_sinks_the_batponya = { 
-		priority = 310
-
-		icon = GFX_decision_eng_trade_unions_support
-
-		allowed = {
-			original_tag = MSB
-		}
-
-		available = {
-
-			check_variable = {
-				global.tss_batponya_health = 0
-			}
-
-		}
-
-		visible = {
-			always = yes
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-		days_re_enable = 1
-
-		days_remove = 10
-
-		modifier = {
-		}
-
-		remove_effect = {
-
-		}
-
-		complete_effect = {
-
-			CLS = {
-				country_event = {
-					id = col.1053
-				}
-			}
-			TST = {
-				country_event = {
-					id = tst.69
-				}
-
-			}	
-			
-			set_global_flag = global_the_circuit_batponya_sunk
-
-			add_to_variable = {
-				global.number_of_tristan_ships_sunk = 1
-			}			
-
-		}
-
-		ai_will_do = {
-			factor = 5000
-		}		
-
-	}	
+	}		
 
 	msb_cls_wipes_out_naval_drones = { 
 		priority = 310
@@ -1424,9 +1366,15 @@ puppetmaster = {
 
 		available = {
 
+			AND = {
 			check_variable = {
 				global.speedboat_stockpile = 0
 			}
+
+			has_global_flag = global_the_circuit_phase_2
+
+			}
+
 
 		}
 
@@ -1768,6 +1716,9 @@ puppetmaster = {
 				country_event = {
 					id = col.1061
 				}
+
+				set_country_flag = cls_the_circuit_guyana_sunk
+				
 			}
 			TST = {
 				country_event = {
@@ -1832,6 +1783,9 @@ puppetmaster = {
 				country_event = {
 					id = col.1062
 				}
+
+				set_country_flag = cls_the_circuit_grenada_sunk
+
 			}
 			TST = {
 				country_event = {
@@ -1896,6 +1850,9 @@ puppetmaster = {
 				country_event = {
 					id = col.1063
 				}
+
+				set_country_flag = cls_the_circuit_jamaica_sunk
+
 			}
 			TST = {
 				country_event = {
@@ -1960,6 +1917,9 @@ puppetmaster = {
 				country_event = {
 					id = col.1064
 				}
+
+				set_country_flag = cls_the_circuit_barbados_sunk
+
 			}
 			TST = {
 				country_event = {
@@ -2033,6 +1993,7 @@ puppetmaster = {
 			}	
 			
 			set_global_flag = global_the_circuit_repair_ship_sunk
+
 
 			add_to_variable = {
 				global.number_of_coalition_ships_sunk = 1
@@ -2343,6 +2304,175 @@ puppetmaster = {
 			
 			set_global_flag = global_the_circuit_kin_1_wiped_out
 	
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_all_escort_ships_sunk = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			CLS = {
+				AND = {
+				has_country_flag = cls_the_circuit_guyana_sunk
+				has_country_flag = cls_the_circuit_grenada_sunk
+				has_country_flag = cls_the_circuit_jamaica_sunk
+				has_country_flag = cls_the_circuit_barbados_sunk	
+				}											
+			}
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			
+			set_global_flag = global_the_circuit_all_cls_escort_ships_dead
+
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_cls_all_escort_ships_sunk = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+
+				AND = {
+				has_global_flag = global_the_circuit_kin_1_wiped_out
+				has_global_flag = global_the_circuit_kin_2_wiped_out
+				has_global_flag = global_the_circuit_kin_3_wiped_out
+				has_global_flag = global_the_circuit_kin_4_wiped_out	
+				}											
+
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			
+			set_global_flag = global_the_circuit_all_cls_kin_members_dead
+
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}
+	
+	msb_tst_all_escort_ships_sunk = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+
+				AND = {
+				has_global_flag = global_the_circuit_halorado_sunk	
+				has_global_flag = global_the_circuit_janero_sunk	
+				has_global_flag = global_the_circuit_sadhaak_sunk
+				has_global_flag = global_the_circuit_batponya_sunk
+				has_global_flag = global_the_circuit_yanov_sunk				
+				}											
+
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			
+			set_global_flag = global_the_circuit_all_tst_escort_ships_dead
+
+		
 
 		}
 

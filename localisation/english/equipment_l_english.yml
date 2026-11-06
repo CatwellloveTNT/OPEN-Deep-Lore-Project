@@ -59,6 +59,7 @@
  tech_support:0 "Support Equipment"
  support_equipment_1:0 "Support Equipment"
  support_equipment_1_desc:0 "Radios, Jeeps, Pontoons & other equipment used to support troops."
+ arcadius_supercarrier_equipment:0 "Arcadius Class Supercarrier"
  EQUIPMENT_DESIGNER_DESC:0 "Designed by: $DESIGNER|Y$"
  EQUIPMENT_ARMOR:0 "Armor"
  EQUIPMENT_MOTORIZED:1 "Truck"

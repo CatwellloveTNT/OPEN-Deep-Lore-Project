@@ -1,5 +1,72 @@
 technologies = {
 
+
+
+
+# --------------------------------- OPEN TECHNOLOGIES --------------------------------- #
+
+
+
+	cls_arcadius_supercarrier = {
+
+		enable_equipments = {
+			arcadius_supercarrier_equipment
+		}
+
+		research_cost = 1.5
+
+		start_year = 2040
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 20 }
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #   ###  ##  #  # ###      ## #  # ### ###   ##
 #    #  #    #  #  #      #   #  #  #  #  # #
 #    #  # ## ####  #       #  ####  #  ###   #

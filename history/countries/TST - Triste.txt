@@ -1,5 +1,5 @@
 capital = 701
-OOB = ""
+OOB = "TST_2032"
 	set_technology = {
 
 		#doctrines

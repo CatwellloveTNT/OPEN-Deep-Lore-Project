@@ -142,7 +142,7 @@ cls_the_austral_ghetto_minigame = {
 	cls_the_circuit_sitrep_gathering_info = {
 		priority = 1
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 24
+		days_mission_timeout = 12
 		is_good = yes
 		days_re_enable = 1
 
@@ -230,7 +230,7 @@ cls_the_austral_ghetto_minigame = {
 
 		timeout_effect = {
 
-	
+
 
 		}
 

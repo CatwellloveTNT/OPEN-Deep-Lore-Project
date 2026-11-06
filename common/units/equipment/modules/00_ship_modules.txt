@@ -2637,7 +2637,7 @@ equipment_modules = {
 			carrier_surface_detection = 6
 			carrier_sub_detection = 3
 		}
-		mega_carrier = yes
+	#	mega_carrier = yes
 		manpower = 800 #outside the add_stats section for code reasons
 		multiply_stats = {
 			naval_speed = -0.1

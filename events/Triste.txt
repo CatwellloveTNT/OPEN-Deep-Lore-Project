@@ -1306,41 +1306,7 @@ country_event = { #The coalition states begins aggressively patrolling the ocean
 				id = tst.61
 			}
 		}
-		# HOLY VARABLES
-		# TRISTE SPECIFIC VARIABLES
-		set_variable = { global.tss_halorado_health = 100 }
-		set_variable = { global.tss_janero_health = 100 }			
-		set_variable = { global.tss_sadhaak_health = 100 }
-		set_variable = { global.tss_batponya_health = 100 }
-		set_variable = { global.tss_yanov_health = 100 }
-		set_variable = { global.naval_drone_stockpile = 350 }
-		set_variable = { global.speedboat_stockpile = 200 }	
-		set_variable = { global.speedboat_morale = 100 }
-		set_variable = { global.airforce_stockpile = 150 }	
-		set_variable = { global.pilot_morale = 100 }	
-		set_variable = { global.cruise_missiles_stockpile = 50 }
-		set_variable = { global.iads_effectiveness = 100 }
-		set_variable = { global.ponypads_strongholds = 2500 }	
-		set_variable = { global.tst_action_points = 10 }	
-		set_variable = { global.tss_portugal_health = 100 }
-		set_variable = { global.tss_portugal_carrier_wing_aircraft = 78 }	
-		# COALITION SPECIFIC VARIABLES			
-		set_variable = { global.soh_arcadius_health = 100 }	
-		set_variable = { global.soh_arcadius_carrier_wing_aircraft = 212 }	
-		set_variable = { global.soh_guyana_health = 100 }
-		set_variable = { global.soh_jamaica_health = 100 }			
-		set_variable = { global.soh_grenada_health = 100 }
-		set_variable = { global.soh_barbados_health = 100 }
-		set_variable = { global.soh_repair_ship_health = 100 }
-		set_variable = { global.kin_1_health = 100 }
-		set_variable = { global.kin_2_health = 100 }
-		set_variable = { global.kin_3_health = 100 }
-		set_variable = { global.kin_4_health = 100 }	
-		set_variable = { global.cls_action_points = 10 }										
-		# GLOBAL (global in this case meaning being seen by both nations as the same at the same time) VARIABLES		
-		set_variable = { global.turns_passed = 0 }									
-		set_variable = { global.number_of_tristan_ships_sunk = 0}
-		set_variable = { global.number_of_coalition_ships_sunk = 0}		
+	
 			
 		
 	}
@@ -1425,6 +1391,378 @@ country_event = { #event that msb shoots off to triste letting them know the cir
 		ai_chance = {factor = 100}	
 
 		custom_effect_tooltip = tst_64_tt
+
+	}
+
+}
+
+country_event = { #cls sinks the portugal
+	id = tst.65
+	title = tst.65.t
+	desc = tst.65.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #a loss which we may never recover from
+		name = tst.65.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+
+country_event = { #cls sinks the halorado
+	id = tst.66
+	title = tst.66.t
+	desc = tst.66.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #their sacrifice will not be forgotten
+		name = tst.66.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+country_event = { #cls sinks the janero
+	id = tst.67
+	title = tst.67.t
+	desc = tst.67.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #their sacrifice will not be forgotten
+		name = tst.67.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+
+country_event = { #cls sinks the sadhaak
+	id = tst.68
+	title = tst.68.t
+	desc = tst.68.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #their sacrifice will not be forgotten
+		name = tst.68.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+country_event = { #cls sinks the batponya
+	id = tst.69
+	title = tst.69.t
+	desc = tst.69.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #their sacrifice will not be forgotten
+		name = tst.69.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+
+country_event = { #cls sinks the yanov
+	id = tst.70
+	title = tst.70.t
+	desc = tst.70.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #their sacrifice will not be forgotten
+		name = tst.70.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+
+country_event = { #cls wipes out the naval drones
+	id = tst.71
+	title = tst.71.t
+	desc = tst.71.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #a setback, but no lives lost thankfully
+		name = tst.71.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+
+country_event = { #cls wipes out the speedboats
+	id = tst.72
+	title = tst.72.t
+	desc = tst.72.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #heros of our nation... heros
+		name = tst.72.a	
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = tst_72_tt
+
+	}
+
+}
+
+country_event = { #cls wipes out the airforce
+	id = tst.73
+	title = tst.73.t
+	desc = tst.73.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #they have done all they could for us
+		name = tst.73.a	
+		ai_chance = {factor = 100}	
+
+
+	}
+
+}
+
+country_event = { #cls wipes out the iads
+	id = tst.74
+	title = tst.74.t
+	desc = tst.74.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #there is nothing we can do...
+		name = tst.74.a	
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = tst_74_tt
+
+	}
+
+}
+country_event = { #cls wipes out the manpads
+	id = tst.75
+	title = tst.75.t
+	desc = tst.75.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #we're done for
+		name = tst.75.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst critically damages the arcadius
+	id = tst.76
+	title = tst.76.t
+	desc = tst.76.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Hahaha! The behemoth has been slain!
+		name = tst.76.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst sinks the guyana
+	id = tst.77
+	title = tst.77.t
+	desc = tst.77.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Got them
+		name = tst.77.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst sinks the grenada
+	id = tst.78
+	title = tst.78.t
+	desc = tst.78.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Got them
+		name = tst.78.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst sinks the jamaica
+	id = tst.79
+	title = tst.79.t
+	desc = tst.79.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Got them
+		name = tst.79.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst sinks the barbados
+	id = tst.80
+	title = tst.80.t
+	desc = tst.80.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Got them
+		name = tst.80.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst sinks the fluffy pony
+	id = tst.81
+	title = tst.81.t
+	desc = tst.81.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Go on and repair that!
+		name = tst.81.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst wipes out the caw
+	id = tst.82
+	title = tst.82.t
+	desc = tst.82.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Humanity bested in their own domain
+		name = tst.82.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst kills kin 4
+	id = tst.83
+	title = tst.83.t
+	desc = tst.83.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #One down
+		name = tst.83.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst kills kin 3
+	id = tst.84
+	title = tst.84.t
+	desc = tst.84.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Another one
+		name = tst.84.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst kills kin 2
+	id = tst.85
+	title = tst.85.t
+	desc = tst.85.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Yet another one
+		name = tst.85.a	
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #tst kills kin 1
+	id = tst.86
+	title = tst.86.t
+	desc = tst.86.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Legendary Squadron? Ha!
+		name = tst.86.a	
+		ai_chance = {factor = 100}	
 
 	}
 

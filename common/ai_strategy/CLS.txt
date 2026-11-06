@@ -1,8 +1,107 @@
-CLS_unit_production = {
-
-	allowed = {	original_tag = CLS }
+CLS_create_goons = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
+	allowed = {
+		tag = CLS
+	}
 	enable = {
 		always = yes
 	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_vlaps_ai
+		value = 15
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = 5
+	}
+
+
 
 }
+
+CLS_kill_triste = { #KILL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	allowed = {
+		tag = CLS
+	}
+
+	enable = {
+		tag = CLS
+	}
+
+	abort_when_not_enabled = yes	
+
+	ai_strategy = {
+		type = invade
+		id = "TST"
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = TST
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 1000
+	}	
+
+	ai_strategy = {
+		type = invasion_unit_request
+		state = 517
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		state = 518
+		value = 1000
+	}	
+
+	ai_strategy = {
+	    type = front_unit_request
+	    tag = TST
+	    value = 125
+	}	
+
+#	ai_strategy = {
+#		type = area_priority
+#		id = triste_naval_invasion_zone
+#		value = 1000
+#	}
+
+}
+
+dont_lag_the_game_yo = { #the coalition likes to make FIFTY (50) divisions at a time when left unsupervised
+	allowed = {
+		tag = CLS
+	}
+	enable = {
+		date < 2035.1.1
+	}
+	abort = {
+		date > 2035.1.1		
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = -900
+	}
+}
+
+
+

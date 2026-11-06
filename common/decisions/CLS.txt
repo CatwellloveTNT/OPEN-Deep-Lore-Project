@@ -2090,7 +2090,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		fire_only_once = no
 
-		days_re_enable = 24
+		days_re_enable = 12
 
 		days_remove = 0
 
@@ -2144,6 +2144,7 @@ CLS_the_aryx_scramble_minigame = {
 					has_country_flag = cls_aewc_active_the_circuit			
 					has_country_flag = cls_arcadius_sent_out_ew
 					has_global_flag = global_cls_ended_turn
+					has_global_flag = global_the_circuit_arcadius_sunk
 					}
 
 				}
@@ -2218,6 +2219,7 @@ CLS_the_aryx_scramble_minigame = {
 					has_country_flag = cls_aewc_active_the_circuit			
 					has_country_flag = cls_arcadius_sent_out_ew
 					has_global_flag = global_cls_ended_turn
+					has_global_flag = global_the_circuit_arcadius_sunk					
 					}
 
 				}
@@ -2290,7 +2292,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {				
-					has_global_flag = global_cls_ended_turn					
+					has_global_flag = global_cls_ended_turn	
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead				
 					}
 
 				}
@@ -2450,6 +2453,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_halorado_sunk							
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -2542,6 +2546,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_janero_sunk							
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -2634,6 +2639,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_sadhaak_sunk							
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -2726,6 +2732,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_batponya_sunk							
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -2818,6 +2825,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_yanov_sunk					
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -2910,6 +2918,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_portugal_sunk
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -2999,6 +3008,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_speedboats_wiped_out						
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -3085,6 +3095,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_cls_escort_ships_dead						
 					has_global_flag = global_the_circuit_naval_drones_wiped_out
 					has_country_flag = cls_escort_fleet_targeted_batponya
 					has_country_flag = cls_escort_fleet_targeted_yanov
@@ -3173,6 +3184,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_repair_ship_sunk
 					has_country_flag = cls_repair_fleet_repaired_arcadius				
 					has_country_flag = cls_repair_fleet_repaired_guyana
 					has_country_flag = cls_repair_fleet_repaired_jamaica	
@@ -3261,6 +3273,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = cls_repair_fleet_repaired_arcadius				
 					has_country_flag = cls_repair_fleet_repaired_guyana
 					has_country_flag = cls_repair_fleet_repaired_jamaica	
@@ -3346,6 +3359,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = cls_repair_fleet_repaired_arcadius				
 					has_country_flag = cls_repair_fleet_repaired_guyana
 					has_country_flag = cls_repair_fleet_repaired_jamaica	
@@ -3431,6 +3445,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = cls_repair_fleet_repaired_arcadius				
 					has_country_flag = cls_repair_fleet_repaired_guyana
 					has_country_flag = cls_repair_fleet_repaired_jamaica	
@@ -3516,6 +3531,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = cls_repair_fleet_repaired_arcadius				
 					has_country_flag = cls_repair_fleet_repaired_guyana
 					has_country_flag = cls_repair_fleet_repaired_jamaica	
@@ -3592,6 +3608,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk				
+					has_global_flag = global_the_circuit_caw_wiped_out	
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
 					has_country_flag = cls_caw_targeted_sadhaak
@@ -3779,6 +3797,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_halorado_sunk							
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -3887,6 +3907,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_janero_sunk							
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -3995,6 +4017,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_sadhaak_sunk							
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4103,6 +4127,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_batponya_sunk						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4211,6 +4237,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_yanov_sunk
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4318,6 +4346,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_portugal_sunk					
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4424,6 +4454,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_speedboats_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4526,6 +4558,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_naval_drones_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4628,6 +4662,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_airforce_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4731,6 +4767,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_iads_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4834,6 +4872,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_ponypads_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -4934,6 +4974,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
 					has_country_flag = cls_caw_targeted_sadhaak
@@ -5122,6 +5164,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 				has_global_flag = global_the_circuit_halorado_sunk						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5229,6 +5273,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 				has_global_flag = global_the_circuit_janero_sunk							
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5336,6 +5382,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 				has_global_flag = global_the_circuit_sadhaak_sunk							
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5443,6 +5491,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 				has_global_flag = global_the_circuit_batponya_sunk							
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5550,6 +5600,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 				has_global_flag = global_the_circuit_yanov_sunk							
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5656,6 +5708,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_portugal_sunk					
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5763,6 +5817,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_speedboats_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5867,6 +5923,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_naval_drones_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -5971,6 +6029,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_airforce_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -6076,6 +6136,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_iads_wiped_out									
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -6110,7 +6172,7 @@ CLS_the_aryx_scramble_minigame = {
 				has_global_flag = global_the_circuit_is_ongoing		
 				has_country_flag = cls_carrier_wing_selected	
 				has_country_flag = cls_aewc_active_the_circuit	
-				has_global_flag = global_circuit_phase_3				
+				has_global_flag = global_the_circuit_phase_3				
 				
 				NOT = {	
 					OR = {
@@ -6181,6 +6243,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_global_flag = global_the_circuit_ponypads_wiped_out						
 					has_country_flag = cls_caw_targeted_batponya
 					has_country_flag = cls_caw_targeted_yanov
@@ -6282,12 +6346,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
 					has_country_flag = cls_kin_targeted_sadhaak
@@ -6466,7 +6532,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -6476,6 +6542,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_halorado_sunk											
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -6543,7 +6611,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_halorado
 
@@ -6574,7 +6642,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -6584,6 +6652,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_janero_sunk							
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -6651,7 +6721,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_janero
 
@@ -6682,7 +6752,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -6692,6 +6762,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_sadhaak_sunk							
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -6759,7 +6831,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_sadhaak
 
@@ -6790,7 +6862,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -6800,6 +6872,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_batponya_sunk							
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -6867,7 +6941,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_batponya
 
@@ -6898,7 +6972,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -6908,6 +6982,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_yanov_sunk							
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -6975,7 +7051,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_yanov
 
@@ -7006,7 +7082,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -7016,6 +7092,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_portugal_sunk					
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7085,7 +7163,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_portugal
 
@@ -7115,12 +7193,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_speedboats_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7187,9 +7267,11 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_speedboats
+
+			cls_the_circuit_target_the_speedboats_kin = yes
 
 		}
 
@@ -7215,12 +7297,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_naval_drones_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7287,7 +7371,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_naval_drones
 
@@ -7317,12 +7401,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_airforce_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7390,7 +7476,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_air_force
 
@@ -7420,12 +7506,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_iads_wiped_out									
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7493,7 +7581,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_iads
 
@@ -7523,12 +7611,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_ponypads_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7596,7 +7686,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_manpads
 
@@ -7629,6 +7719,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
 					has_country_flag = cls_kin_targeted_sadhaak
@@ -7807,7 +7899,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -7817,6 +7909,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_halorado_sunk
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7883,7 +7977,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_halorado
 
@@ -7914,7 +8008,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -7924,6 +8018,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_janero_sunk						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -7990,7 +8086,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_janero
 
@@ -8021,7 +8117,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -8031,6 +8127,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_sadhaak_sunk						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8097,7 +8195,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_sadhaak
 
@@ -8128,7 +8226,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -8138,6 +8236,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_batponya_sunk						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8204,7 +8304,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_batponya
 
@@ -8235,7 +8335,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -8245,6 +8345,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_yanov_sunk						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8311,7 +8413,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_yanov
 
@@ -8342,7 +8444,7 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}
 
@@ -8352,6 +8454,8 @@ CLS_the_aryx_scramble_minigame = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_portugal_sunk					
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8423,7 +8527,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_portugal
 
@@ -8453,12 +8557,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_speedboats_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8527,7 +8633,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_speedboats
 
@@ -8557,12 +8663,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_naval_drones_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8631,7 +8739,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_naval_drones
 
@@ -8661,12 +8769,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_airforce_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8736,7 +8846,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_air_force
 
@@ -8766,12 +8876,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_iads_wiped_out									
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8841,7 +8953,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_iads
 
@@ -8871,12 +8983,14 @@ CLS_the_aryx_scramble_minigame = {
 
 				check_variable = {
 					var = var:global.cls_action_points
-					value = 8
+					value = 6
 					compare = greater_than_or_equals
 				}		
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_arcadius_sunk							
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_global_flag = global_the_circuit_ponypads_wiped_out						
 					has_country_flag = cls_kin_targeted_batponya
 					has_country_flag = cls_kin_targeted_yanov
@@ -8946,7 +9060,7 @@ CLS_the_aryx_scramble_minigame = {
 
 		complete_effect = {
 
-			the_circuit_cls_use_8_action_point = yes
+			the_circuit_cls_use_6_action_point = yes
 
 			set_country_flag = cls_kin_targeted_manpads
 

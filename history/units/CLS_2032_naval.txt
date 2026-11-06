@@ -1,0 +1,96 @@
+units = {
+
+	fleet = {
+		name = "Arcadius Carrier Strike Group"
+		naval_base = 11269
+		task_force = { 
+			name = "Arcadius Carrier Strike Group"
+			location = 11269
+			ship = {
+				name = "Arcadius"
+				pride_of_the_fleet = yes
+				ordered_name = 1
+				definition = carrier #that equipment error is not real please ignore it wtf 
+				equipment = { arcadius_supercarrier_equipment = { amount = 1 owner = CLS version_name = "Arcadius Class"} }
+			}
+			ship = {
+				ordered_name = 2
+				definition = destroyer #that equipment error is not real please ignore it wtf 
+				equipment = { destroyer_1 = { amount = 1 owner = CLS version_name = "Trinidad Class"} }
+			}	
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = battleship equipment = { battleship_1 { amount = 1 owner = CLS version_name = "Noncanonical Class" } }}	
+
+		}
+	
+	}
+
+	fleet = {
+		name = "Arcadius Carrier Strike Group2"
+		naval_base = 11314
+		task_force = { 
+			name = "Arcadius Carrier Strike Group2"
+			location = 11314
+			ship = {
+				name = "Arcadius2"
+				ordered_name = 2
+				definition = carrier #that equipment error is not real please ignore it wtf 
+				equipment = { arcadius_supercarrier_equipment = { amount = 1 owner = CLS version_name = "Arcadius Class"} }
+			}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}	
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}
+			ship = { ordered_name = 2 definition = destroyer equipment = { destroyer_1 { amount = 1 owner = CLS version_name = "Trinidad Class" } }}		
+			ship = { ordered_name = 2 definition = battleship equipment = { battleship_1 { amount = 1 owner = CLS version_name = "Noncanonical Class" } }}		
+
+		}
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1844,6 +1844,368 @@ country_event = { #event that msb gives to cls when they knock out 3 tristan big
 
 	}
 }
+country_event = { #cls sinks the portugal
+	id = col.1049
+	title = col.1049.t
+	desc = col.1049.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # a great victory
+		name = col.1049.a
+		ai_chance = {factor = 100}	
+
+
+
+	}
+}
+country_event = { #cls sinks the halorado
+	id = col.1050
+	title = col.1050.t
+	desc = col.1050.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Got them
+		name = col.1050.a
+		ai_chance = {factor = 100}	
+
+
+
+	}
+}
+country_event = { #cls sinks the janero
+	id = col.1051
+	title = col.1051.t
+	desc = col.1051.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Got them
+		name = col.1051.a
+		ai_chance = {factor = 100}	
+
+
+
+	}
+}
+country_event = { #cls sinks the sadhaak
+	id = col.1052
+	title = col.1052.t
+	desc = col.1052.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Got them
+		name = col.1052.a
+		ai_chance = {factor = 100}	
+
+
+
+	}
+}
+country_event = { #cls sinks the batponya
+	id = col.1053
+	title = col.1053.t
+	desc = col.1053.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Got them
+		name = col.1053.a
+		ai_chance = {factor = 100}	
+
+
+
+	}
+}
+country_event = { #cls sinks the yanov
+	id = col.1054
+	title = col.1054.t
+	desc = col.1054.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Got them
+		name = col.1054.a
+		ai_chance = {factor = 100}	
+
+
+
+	}
+}
+country_event = { #cls wipes out all naval drones
+	id = col.1055
+	title = col.1055.t
+	desc = col.1055.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Got that thorn out of our back
+		name = col.1055.a
+		ai_chance = {factor = 100}	
+
+
+
+	}
+}
+country_event = { #cls wipes out all speedboats
+	id = col.1056
+	title = col.1056.t
+	desc = col.1056.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Good
+		name = col.1056.a
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = col_1056_tt
+
+	}
+}
+country_event = { #cls wipes out all the airforce
+	id = col.1057
+	title = col.1057.t
+	desc = col.1057.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # A valiant effort from the Tristans, but theres no beating us in the air
+		name = col.1057.a
+		ai_chance = {factor = 100}	
+
+
+	}
+}
+country_event = { #cls wipes out all the iads
+	id = col.1058
+	title = col.1058.t
+	desc = col.1058.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # We've done it.
+		name = col.1058.a
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = col_1058_tt		
+
+	}
+}
+country_event = { #cls wipes out all the manpads
+	id = col.1059
+	title = col.1059.t
+	desc = col.1059.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # To Total Victory!
+		name = col.1059.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst critically damages the arcadius
+	id = col.1060
+	title = col.1060.t
+	desc = col.1060.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # The Arcadius?... Defeated?... How... 
+		name = col.1060.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst sinks the guyana
+	id = col.1061
+	title = col.1061.t
+	desc = col.1061.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Save the survivors, this is just a setback
+		name = col.1061.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst sinks the grenada
+	id = col.1062
+	title = col.1062.t
+	desc = col.1062.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Save the survivors, this is just a setback
+		name = col.1062.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst sinks the jamaica
+	id = col.1063
+	title = col.1063.t
+	desc = col.1063.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Save the survivors, this is just a setback
+		name = col.1063.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst sinks the barbados
+	id = col.1064
+	title = col.1064.t
+	desc = col.1064.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Save the survivors, this is just a setback
+		name = col.1064.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst sinks the fluffy pony
+	id = col.1065
+	title = col.1065.t
+	desc = col.1065.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Thats it for our repairs...
+		name = col.1065.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst wipes out the caw
+	id = col.1066
+	title = col.1066.t
+	desc = col.1066.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # how did that happen!?!?
+		name = col.1066.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst kills kin 4
+	id = col.1067
+	title = col.1067.t
+	desc = col.1067.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # No mayday call... no chute... Shes dead, Kin 1.
+		name = col.1067.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst kills kin 3
+	id = col.1068
+	title = col.1068.t
+	desc = col.1068.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # Roman... Roman! No!
+		name = col.1068.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst kills kin 2
+	id = col.1069
+	title = col.1069.t
+	desc = col.1069.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # So it's just me left then... so be it.
+		name = col.1069.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+country_event = { #tst kills kin 1
+	id = col.1070
+	title = col.1070.t
+	desc = col.1070.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { # And so ends the story of kin squadron...
+		name = col.1070.a
+		ai_chance = {factor = 100}	
+	
+
+	}
+}
+
 
 
 

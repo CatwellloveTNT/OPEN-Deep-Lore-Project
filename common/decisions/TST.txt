@@ -1240,7 +1240,7 @@ TST_the_circuit_minigame_tab = {
 
 		fire_only_once = no
 
-		days_re_enable = 24
+		days_re_enable = 12
 
 		days_remove = 0
 
@@ -1294,6 +1294,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+						has_global_flag = global_the_circuit_arcadius_sunk
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -1524,6 +1526,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_guyana_sunk
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -1609,6 +1613,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_grenada_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -1695,6 +1701,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_jamaica_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -1780,6 +1788,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_barbados_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -1866,6 +1876,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -1957,6 +1969,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_arcadius_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -2038,6 +2052,7 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead												
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -2180,6 +2195,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_guyana_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -2264,6 +2281,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_grenada_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -2348,6 +2367,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_jamaica_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -2432,6 +2453,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_barbados_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -2521,6 +2544,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_all_tst_escort_ships_dead						
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -2607,12 +2632,14 @@ TST_the_circuit_minigame_tab = {
 
 				check_variable = {
 					var = var:global.tst_action_points
-					value = 5
+					value = 4
 					compare = greater_than_or_equals
 				}
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_speedboats_wiped_out					
+					has_global_flag = global_the_circuit_arcadius_sunk					
 					has_country_flag = tst_speedboats_targeted_arcadius
 					has_country_flag = tst_speedboats_attacked_grenada
 					has_country_flag = tst_speedboats_attacked_guyana					
@@ -2659,7 +2686,7 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-			the_circuit_tst_use_5_action_point = yes			
+			the_circuit_tst_use_4_action_point = yes			
 
 			set_country_flag = tst_speedboats_targeted_arcadius
 
@@ -2691,6 +2718,7 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_speedboats_wiped_out											
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -2829,6 +2857,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_speedboats_wiped_out					
+					has_global_flag = global_the_circuit_guyana_sunk							
 					has_country_flag = tst_speedboats_targeted_arcadius
 					has_country_flag = tst_speedboats_attacked_grenada
 					has_country_flag = tst_speedboats_attacked_guyana					
@@ -2911,6 +2941,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_speedboats_wiped_out					
+					has_global_flag = global_the_circuit_grenada_sunk							
 					has_country_flag = tst_speedboats_targeted_arcadius
 					has_country_flag = tst_speedboats_attacked_grenada
 					has_country_flag = tst_speedboats_attacked_guyana					
@@ -2993,6 +3025,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_speedboats_wiped_out					
+					has_global_flag = global_the_circuit_jamaica_sunk							
 					has_country_flag = tst_speedboats_targeted_arcadius
 					has_country_flag = tst_speedboats_attacked_grenada
 					has_country_flag = tst_speedboats_attacked_guyana					
@@ -3073,6 +3107,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_speedboats_wiped_out					
+					has_global_flag = global_the_circuit_barbados_sunk							
 					has_country_flag = tst_speedboats_targeted_arcadius
 					has_country_flag = tst_speedboats_attacked_grenada
 					has_country_flag = tst_speedboats_attacked_guyana					
@@ -3155,6 +3191,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_naval_drones_wiped_out					
+					has_global_flag = global_the_circuit_arcadius_sunk							
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_attacked_grenada
 					has_country_flag = tst_naval_drones_attacked_guyana					
@@ -3237,6 +3275,7 @@ TST_the_circuit_minigame_tab = {
 				NOT = {
 					OR = {
 					has_global_flag = global_tst_ended_turn
+					has_global_flag = global_the_circuit_naval_drones_wiped_out								
 					}
 
 				}
@@ -3377,6 +3416,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_naval_drones_wiped_out					
+					has_global_flag = global_the_circuit_guyana_sunk						
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_attacked_grenada
 					has_country_flag = tst_naval_drones_attacked_guyana					
@@ -3460,6 +3501,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_naval_drones_wiped_out					
+					has_global_flag = global_the_circuit_grenada_sunk							
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_attacked_grenada
 					has_country_flag = tst_naval_drones_attacked_guyana					
@@ -3544,6 +3587,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_naval_drones_wiped_out					
+					has_global_flag = global_the_circuit_jamaica_sunk							
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_attacked_grenada
 					has_country_flag = tst_naval_drones_attacked_guyana					
@@ -3626,6 +3671,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_naval_drones_wiped_out					
+					has_global_flag = global_the_circuit_barbados_sunk							
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_attacked_grenada
 					has_country_flag = tst_naval_drones_attacked_guyana					
@@ -3710,6 +3757,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_naval_drones_wiped_out					
+					has_global_flag = global_the_circuit_repair_ship_sunk							
 					has_country_flag = tst_naval_drones_targeted_arcadius
 					has_country_flag = tst_naval_drones_attacked_grenada
 					has_country_flag = tst_naval_drones_attacked_guyana					
@@ -3799,6 +3848,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_arcadius_sunk					
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -3882,6 +3933,7 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk									
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -4027,6 +4079,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_guyana_sunk							
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -4110,6 +4164,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_grenada_sunk						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -4194,6 +4250,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_jamaica_sunk						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -4276,6 +4334,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_barbados_sunk						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -4362,6 +4422,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -4450,6 +4512,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_country_flag = tst_portugal_targeted_carrier_air_wing						
 					has_country_flag = tst_portugal_targeted_kin_squadron
 					has_global_flag = global_tst_ended_turn
@@ -4533,6 +4597,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_country_flag = tst_portugal_targeted_kin_squadron						
 					has_country_flag = tst_portugal_targeted_carrier_air_wing
 					has_global_flag = global_tst_ended_turn
@@ -4619,6 +4685,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_arcadius_sunk						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -4699,6 +4767,7 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk										
 					has_global_flag = global_tst_ended_turn
 					}
 
@@ -4838,6 +4907,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_guyana_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -4922,6 +4993,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_grenada_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -5006,6 +5079,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_jamaica_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -5090,6 +5165,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_barbados_sunk						
 					has_country_flag = tst_naval_assets_targeted_arcadius
 					has_country_flag = tst_naval_assets_attacked_grenada
 					has_country_flag = tst_naval_assets_attacked_guyana					
@@ -5174,6 +5251,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = tst_portugal_targeted_arcadius
 					has_country_flag = tst_portugal_attacked_grenada
 					has_country_flag = tst_portugal_attacked_guyana					
@@ -5259,6 +5338,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_country_flag = tst_portugal_targeted_carrier_air_wing						
 					has_country_flag = tst_portugal_targeted_kin_squadron
 					has_global_flag = global_tst_ended_turn
@@ -5342,6 +5423,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_portugal_sunk				
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_country_flag = tst_portugal_targeted_kin_squadron						
 					has_country_flag = tst_portugal_targeted_carrier_air_wing
 					has_global_flag = global_tst_ended_turn
@@ -5421,12 +5504,14 @@ TST_the_circuit_minigame_tab = {
 
 				check_variable = {
 					var = var:global.tst_action_points
-					value = 5
+					value = 4
 					compare = greater_than_or_equals
 				}
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out			
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_country_flag = tst_eaion_2_targeted_carrier_wing						
 					has_country_flag = tst_eaion_2_targeted_kin_squadron
 					has_global_flag = global_tst_ended_turn
@@ -5469,7 +5554,7 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_5_action_point = yes
+						the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_eaion_2_targeted_carrier_wing
 
@@ -5500,12 +5585,14 @@ TST_the_circuit_minigame_tab = {
 
 				check_variable = {
 					var = var:global.tst_action_points
-					value = 5
+					value = 4
 					compare = greater_than_or_equals
 				}
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out			
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_country_flag = tst_eaion_2_targeted_kin_squadron						
 					has_country_flag = tst_eaion_2_targeted_carrier_wing
 					has_global_flag = global_tst_ended_turn
@@ -5548,7 +5635,7 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_5_action_point = yes
+						the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_eaion_2_targeted_kin_squadron
 
@@ -5581,12 +5668,14 @@ TST_the_circuit_minigame_tab = {
 
 				check_variable = {
 					var = var:global.tst_action_points
-					value = 5
+					value = 4
 					compare = greater_than_or_equals
 				}
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out			
+					has_global_flag = global_the_circuit_caw_wiped_out							
 					has_country_flag = tst_eaion_2_targeted_carrier_wing						
 					has_country_flag = tst_eaion_2_targeted_kin_squadron
 					has_global_flag = global_tst_ended_turn
@@ -5627,7 +5716,7 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_5_action_point = yes
+						the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_eaion_2_targeted_carrier_wing
 
@@ -5658,12 +5747,14 @@ TST_the_circuit_minigame_tab = {
 
 				check_variable = {
 					var = var:global.tst_action_points
-					value = 5
+					value = 4
 					compare = greater_than_or_equals
 				}
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out			
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead							
 					has_country_flag = tst_eaion_2_targeted_kin_squadron						
 					has_country_flag = tst_eaion_2_targeted_carrier_wing
 					has_global_flag = global_tst_ended_turn
@@ -5704,7 +5795,7 @@ TST_the_circuit_minigame_tab = {
 
 		complete_effect = {
 
-						the_circuit_tst_use_5_action_point = yes
+						the_circuit_tst_use_4_action_point = yes
 
 			set_country_flag = tst_eaion_2_targeted_kin_squadron
 
@@ -5743,11 +5834,15 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
-					has_country_flag = tst_cruise_missiles_targeted_escort_fleet
+					has_global_flag = global_the_circuit_airforce_wiped_out
+					has_country_flag = tst_cruise_missiles_attacked_grenada
+					has_country_flag = tst_cruise_missiles_attacked_guyana					
+					has_country_flag = tst_cruise_missiles_attacked_jamaica
+					has_country_flag = tst_cruise_missiles_attacked_barbados
 					has_country_flag = tst_cruise_missiles_targeted_repair_fleet
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_global_flag = global_tst_ended_turn					
-					has_country_flag = tst_the_airforce_is_dead			
+			#		has_country_flag = tst_the_airforce_is_dead			
 					}
 				}
 			}
@@ -5821,7 +5916,7 @@ TST_the_circuit_minigame_tab = {
 				NOT = {
 					OR = {
 					has_global_flag = global_tst_ended_turn
-					has_country_flag = tst_the_airforce_is_dead			
+					has_global_flag = global_the_circuit_airforce_wiped_out		
 					}
 				}
 			}
@@ -5958,6 +6053,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out
+					has_global_flag = global_the_circuit_guyana_sunk						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_country_flag = tst_cruise_missiles_attacked_grenada
 					has_country_flag = tst_cruise_missiles_attacked_guyana					
@@ -6040,6 +6137,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out
+					has_global_flag = global_the_circuit_grenada_sunk						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_country_flag = tst_cruise_missiles_attacked_grenada
 					has_country_flag = tst_cruise_missiles_attacked_guyana					
@@ -6123,6 +6222,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out
+					has_global_flag = global_the_circuit_jamaica_sunk						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_country_flag = tst_cruise_missiles_attacked_grenada
 					has_country_flag = tst_cruise_missiles_attacked_guyana					
@@ -6205,6 +6306,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out
+					has_global_flag = global_the_circuit_barbados_sunk						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_country_flag = tst_cruise_missiles_attacked_grenada
 					has_country_flag = tst_cruise_missiles_attacked_guyana					
@@ -6287,6 +6390,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_airforce_wiped_out
+					has_global_flag = global_the_circuit_repair_ship_sunk						
 					has_country_flag = tst_cruise_missiles_targeted_arcadius
 					has_country_flag = tst_cruise_missiles_attacked_grenada
 					has_country_flag = tst_cruise_missiles_attacked_guyana					
@@ -6372,6 +6477,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_iads_wiped_out
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_country_flag = tst_aaa_targeted_the_carrier_wing						
 					has_country_flag = tst_aaa_targeted_kin_squadron		
 					has_global_flag = global_tst_ended_turn
@@ -6452,6 +6559,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_iads_wiped_out
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_country_flag = tst_aaa_targeted_kin_squadron							
 					has_country_flag = tst_aaa_targeted_the_carrier_wing	
 					has_global_flag = global_tst_ended_turn	
@@ -6534,6 +6643,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_iads_wiped_out
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_country_flag = tst_aaa_targeted_the_carrier_wing						
 					has_country_flag = tst_aaa_targeted_kin_squadron		
 					has_global_flag = global_tst_ended_turn
@@ -6612,6 +6723,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_iads_wiped_out
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_country_flag = tst_aaa_targeted_kin_squadron							
 					has_country_flag = tst_aaa_targeted_the_carrier_wing	
 					has_global_flag = global_tst_ended_turn	
@@ -6692,6 +6805,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_ponypads_wiped_out
+					has_global_flag = global_the_circuit_caw_wiped_out						
 					has_country_flag = tst_manpads_targeted_kin_squadron		
 					has_country_flag = tst_manpads_targeted_the_carrier_wing	
 					has_global_flag = global_tst_ended_turn					
@@ -6769,6 +6884,8 @@ TST_the_circuit_minigame_tab = {
 
 				NOT = {
 					OR = {
+					has_global_flag = global_the_circuit_ponypads_wiped_out
+					has_global_flag = global_the_circuit_all_cls_kin_members_dead						
 					has_country_flag = tst_manpads_targeted_kin_squadron							
 					has_country_flag = tst_manpads_targeted_the_carrier_wing	
 					has_global_flag = global_tst_ended_turn	

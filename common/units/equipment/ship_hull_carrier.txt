@@ -1,23 +1,9 @@
 equipments = {
 
+
 	ship_hull_carrier = {
 		year = 1922
 
-		can_be_produced = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
-			}
-		}
 
 		is_archetype = yes
 		is_buildable = no
@@ -299,6 +285,89 @@ equipments = {
 		}
 		manpower = 5500
 	}
+
+ # ------------------------------------ OPEN NAVAL EQUIPMENT ------------------------------------ #
+
+
+
+
+
+
+	#ARCADIUS SUPERCARRIER
+
+
+	arcadius_supercarrier_equipment = {
+		abbreviation = "hac"
+		year = 1944
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = ship_hull_carrier_3
+		module_slots = {
+			fixed_ship_deck_slot_1 = inherit
+			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_dp_secondaries
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_dp_secondaries
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_dp_secondaries
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+		}
+		default_modules = {
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+		}
+
+		naval_range = 12500
+		reliability = 0.90
+		max_strength = 500
+		naval_speed = 25
+		fuel_consumption = 100
+		naval_dominance_factor = 800
+		build_cost_ic = 6250
+		resources = {
+			steel = 10
+			chromium = 10
+			tungsten = 10
+		}
+		manpower = 16000
+	}
+
 
 	#MODERN CARRIER
 	ship_hull_carrier_modern = {

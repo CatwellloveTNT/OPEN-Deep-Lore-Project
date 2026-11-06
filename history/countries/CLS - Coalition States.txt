@@ -1,5 +1,6 @@
 capital = 1008
-OOB = ""
+OOB = "CLS_2032"
+set_naval_oob = "CLS_2032_naval"
 set_technology = {
 	infantry_weapons = 1
 	tech_trucks = 1
@@ -54,11 +55,52 @@ set_popularities = {
 		basic_ship_hull_carrier = 1
 		basic_light_battery = 1
 		basic_torpedo = 1
-
+		cls_arcadius_supercarrier = 1
+		basic_battleship = 1
+		early_battleship = 1
 
 
 
 	}
+
+		create_equipment_variant = {
+			name = "Arcadius Class"
+			type = arcadius_supercarrier_equipment
+			name_group = JAP_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+			}		
+		}
+	create_equipment_variant = {
+		name = "Trinidad Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 1
+		}
+	}	
+	create_equipment_variant = {
+		name = "Noncanonical Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 1
+		}
+	}		
+
 
 
 if = {
@@ -144,6 +186,7 @@ puppet = CAT
 
 add_ideas = cls_east_to_west_tension_heating_up_idea
 add_ideas = free_trade
+add_ideas = cls_operation_red_vengeance_2_planning_idea
 add_ideas = {
 	solaris_maximum
 }
@@ -185,3 +228,5 @@ add_opinion_modifier = {
 	target = YAN
 	modifier = dont_trade_with_me
 }
+
+set_convoys = 961

@@ -1,0 +1,41 @@
+CLS_home_fleet = {
+	required_taskforces = {
+		CLS_StrikeForce_1 = 1
+		CLS_PatrolReconForce_1 = 3
+	}	
+	optional_taskforces = {
+		ENG_StrikeForce_1 = 1
+		ENG_PatrolReconForce_1 = 2
+	}
+}
+
+CLS_mediterranean_fleet = {
+	required_taskforces = {
+		CLS_StrikeForce_1 = 1
+		CLS_PatrolReconForce_1 = 3
+		CLS_NavalInvasionSupport_1 = 1
+	}	
+	optional_taskforces = {
+		CLS_PatrolDominanceForce_BC_1 = 1
+		CLS_PatrolReconForce_1 = 2
+	}
+}
+
+
+CLS_raiding_fleet_2 = {
+	required_taskforces = {
+		CLS_ConvoyRaiding_1 = 3
+	}	
+	optional_taskforces = {
+		CLS_ConvoyRaiding_1 = 4
+	}
+}
+
+CLS_escort_fleet_3 = {
+	required_taskforces = {
+		CLS_ConvoyEscort_1 = 6
+	}
+	optional_taskforces = {
+		CLS_ConvoyEscort_1 = 4
+	}
+}

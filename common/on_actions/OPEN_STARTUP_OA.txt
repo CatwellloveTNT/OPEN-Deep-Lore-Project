@@ -55,7 +55,6 @@ on_actions = {
 			CLS = {
 				set_country_flag = babies_first_flag
 				set_country_flag = first_phase
-				set_country_flag = cls_the_circuit_minigame_flag #REMOVE THIS AFTER I SETUP THE CIRCUIT PROPERLY PLEASE
 			}
 			ARC = {
 				set_country_flag = first_phase_arc
@@ -124,6 +123,43 @@ on_actions = {
 			}							
 			# ---------------- WESTERN CRADLE ECONOMIC UNION -------------------- #	
 
+			# ---------------- THE CIRCUIT -------------------- #	
+		# TRISTE SPECIFIC VARIABLES
+		set_variable = { global.tss_halorado_health = 100 }
+		set_variable = { global.tss_janero_health = 100 }			
+		set_variable = { global.tss_sadhaak_health = 100 }
+		set_variable = { global.tss_batponya_health = 100 }
+		set_variable = { global.tss_yanov_health = 100 }
+		set_variable = { global.naval_drone_stockpile = 350 }
+		set_variable = { global.speedboat_stockpile = 200 }	
+		set_variable = { global.speedboat_morale = 100 }
+		set_variable = { global.airforce_stockpile = 150 }	
+		set_variable = { global.pilot_morale = 100 }	
+		set_variable = { global.cruise_missiles_stockpile = 50 }
+		set_variable = { global.iads_effectiveness = 100 }
+		set_variable = { global.ponypads_strongholds = 2500 }	
+		set_variable = { global.tst_action_points = 10 }	
+		set_variable = { global.tss_portugal_health = 100 }
+		set_variable = { global.tss_portugal_carrier_wing_aircraft = 78 }	
+		# COALITION SPECIFIC VARIABLES			
+		set_variable = { global.soh_arcadius_health = 100 }	
+		set_variable = { global.soh_arcadius_carrier_wing_aircraft = 212 }	
+		set_variable = { global.soh_guyana_health = 100 }
+		set_variable = { global.soh_jamaica_health = 100 }			
+		set_variable = { global.soh_grenada_health = 100 }
+		set_variable = { global.soh_barbados_health = 100 }
+		set_variable = { global.soh_repair_ship_health = 100 }
+		set_variable = { global.kin_1_health = 100 }
+		set_variable = { global.kin_2_health = 100 }
+		set_variable = { global.kin_3_health = 100 }
+		set_variable = { global.kin_4_health = 100 }	
+		set_variable = { global.cls_action_points = 10 }										
+		# GLOBAL (global in this case meaning being seen by both nations as the same at the same time) VARIABLES		
+		set_variable = { global.turns_passed = 0 }						
+		# FOR THE SHADOWLORD			
+		set_variable = { global.number_of_tristan_ships_sunk = 0}
+		set_variable = { global.number_of_coalition_ships_sunk = 0}	
+			# ---------------- THE CIRCUIT -------------------- #				
 
 		}
 
@@ -167,6 +203,95 @@ on_actions = {
 				id = 1000 #protean create unit ids start at 1000 because they are the first country i developed
 			}
 		}		
+
+		}
+		CLS = {
+			1016 = {
+			create_unit = {
+				division = "name = \"1st AIREXPED Division\" division_template = \"Air Cavalry Division\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				
+				owner = CLS
+				count = 1
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CLS			
+					}
+				}
+				id = 5000 #coalition create unit ids start at 5000 because they are the fifth country i developed
+			}				
+			}
+
+			814 = {
+			create_unit = {
+				division = "name = \"2nd AIREXPED Division\" division_template = \"Air Cavalry Division\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				
+				owner = CLS
+				count = 1
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CLS			
+					}
+				}
+				id = 5000 #coalition create unit ids start at 5000 because they are the fifth country i developed
+			}				
+			}
+			814 = {
+			create_unit = {
+				division = "name = \"3rd AIREXPED Division\" division_template = \"Air Cavalry Division\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				
+				owner = CLS
+				count = 1
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CLS			
+					}
+				}
+				id = 5000 #coalition create unit ids start at 5000 because they are the fifth country i developed
+			}				
+			}
+			602 = {
+			create_unit = {
+				division = "name = \"4th AIREXPED Division\" division_template = \"Air Cavalry Division\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				
+				owner = CLS
+				count = 1
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CLS			
+					}
+				}
+				id = 5000 #coalition create unit ids start at 5000 because they are the fifth country i developed
+			}				
+			}
+			1407 = {
+			create_unit = {
+				division = "name = \"5th AIREXPED Division\" division_template = \"Air Cavalry Division\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				
+				owner = CLS
+				count = 1
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = CLS			
+					}
+				}
+				id = 5000 #coalition create unit ids start at 5000 because they are the fifth country i developed
+			}				
+			}									
 
 		}
 	}

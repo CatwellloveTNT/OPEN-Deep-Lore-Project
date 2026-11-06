@@ -352,10 +352,41 @@ ideas = {
 				defensive_war_stability_factor = -0.15
 				conscription_factor = -0.50
 			}
-		}		
+		}	
+		
+		cls_operation_red_vengeance_2_planning_idea = {
+			picture = solaris_1
+
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				naval_invasion_capacity = 10
+				naval_invasion_division_cap = 20
+				naval_invasion_prep_speed = 20
+			}
+		}			
 
 
 	}
+
+	
 
 
 

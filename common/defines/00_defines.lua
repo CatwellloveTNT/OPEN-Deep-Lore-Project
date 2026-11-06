@@ -2839,8 +2839,8 @@ NAI = {
 	AREA_DEFENSE_CIVIL_WAR_IMPORTANCE = 30,             -- Area defense order importance value when a country is in a civil war as target or revolter.
 	AREA_DEFENSE_IMPORTANCE_FACTOR = 1.0,               -- used to balance defensive area importance vs other fronts
 
-	MAX_DISTANCE_NAVAL_INVASION = 200.0,				-- AI is extremely unwilling to plan naval invasions above this naval distance limit.
-	ENEMY_NAVY_STRENGTH_DONT_BOTHER = 2.5,				-- If the enemy has a navy at least these many times stronger that the own, don't bother invading
+	MAX_DISTANCE_NAVAL_INVASION = 2000.0,		-- altered for OP:EN, original value was 2.5		-- AI is extremely unwilling to plan naval invasions above this naval distance limit.
+	ENEMY_NAVY_STRENGTH_DONT_BOTHER = 20,		-- altered for OP:EN, original value was 2.5		-- If the enemy has a navy at least these many times stronger that the own, don't bother invading
 	MIN_SUPPLY_USE_SANITY_CAP = 100,					-- Ignore supply cap if below this value when deciding on how many divisions to produce.
 	MAX_SUPPLY_DIVISOR = 1.75,							-- To make sure the AI does not overdeploy divisions. Higher number means more supply per unit.
 	MISSING_CONVOYS_BOOST_FACTOR = 50.0,				-- The more convoys a country is missing, the more resources it diverts to cover this.
@@ -3312,8 +3312,8 @@ NAI = {
 	RAILWAY_GUN_ASSIGNMENT_SCORE_UNITCOUNT_MULTIPLIER = 10.0,	-- Score multiplier for favoring orders groups with more units when assigning railway guns
 	RAILWAY_GUN_ASSIGNMENT_SCORE_HOLD = 20,						-- Score for keeping current assignment when assigning railway guns
 
-	MAX_UNIT_RATIO_FOR_INVASIONS = 0.4,                         -- countries won't use armies more than this ratio of total units for invasions
-	MIN_UNIT_RATIO_FOR_INVASIONS = 0.1,                         -- don't allocate more divisions than this for naval invasions
+	MAX_UNIT_RATIO_FOR_INVASIONS = 0.8,              -- altered for OP:EN, original value was 0.4           -- countries won't use armies more than this ratio of total units for invasions
+	MIN_UNIT_RATIO_FOR_INVASIONS = 0.3,              -- altered for OP:EN, original value was 0.1           -- don't allocate more divisions than this for naval invasions
 	MAX_INVASION_FRONT_SCORE = 1000,                            -- max score for naval invasion front scores
 	MIN_FRONT_SCORE_FOR_AFTER_INVASION_AREAS = 1500,			-- min score for army fronts that are created on recently invaded regions
 

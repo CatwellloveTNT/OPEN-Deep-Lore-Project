@@ -1,0 +1,95 @@
+TST_create_goons = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
+	allowed = {
+		tag = TST
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 5
+	}
+
+
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = 2
+	}
+
+
+
+}
+
+
+
+TST_forget_about_the_boats = { #GOD DAMMIT BRO YOU ARE NOT THE BOAT GUY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	allowed = {
+		tag = TST
+	}
+
+	enable = {
+		date > 2032.1.1 
+	}
+	abort = {
+		date > 2038.1.1 
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 3
+	}
+
+
+}
+
+TST_semper_vigilans = { #triste will be in a constant state of readyness against the coalition
+	allowed = {
+		original_tag = TST
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+	abort_when_not_enabled = yes	
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = CLS
+		value = 1000
+	}
+
+
+
+}
