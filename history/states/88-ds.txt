@@ -24,6 +24,7 @@ state={
 	history = {
 		owner = HTF
 		add_core_of = HTF
+		add_claim_by = LAV		
 
 		victory_points = {
 			1871

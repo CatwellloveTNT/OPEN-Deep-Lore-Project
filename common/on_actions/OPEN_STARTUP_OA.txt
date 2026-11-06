@@ -51,10 +51,26 @@ on_actions = {
 			}
 		}
 
+		effect = { # ----------------------------- START GAME RESOURCE RIGHTS SETUP ------------------------------
+			
+		LAV = {
+			give_resource_rights = {
+				receiver = ARC
+				state = 86		
+			}
+			give_resource_rights = {
+				receiver = ARC
+				state = 90		
+			}						
+		}
+
+		}
+
 		effect = { # ----------------------------- START GAME FLAG SETUP ------------------------------
 			CLS = {
 				set_country_flag = babies_first_flag
 				set_country_flag = first_phase
+				set_country_flag = cls_buddy_its_time_to_chill #this flag is responsible for ensuring the coalition DOES NOT make divisons
 			}
 			ARC = {
 				set_country_flag = first_phase_arc
@@ -73,6 +89,9 @@ on_actions = {
 			}
 			TST = {
 				set_country_flag = first_phase_tst
+			}
+			LAV = {
+				set_country_flag = first_phase_lav
 			}
 			set_global_flag = nuclear_exchange_hasnt_happened
 		}

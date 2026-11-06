@@ -63,5 +63,164 @@ ideas = {
 			}
 	}
 
+			lav_overwhelming_unrest_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = LAV
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				industrial_capacity_factory = -1
+				consumer_goods_factor = 0.7
+				political_power_factor = -1
+				production_speed_buildings_factor = -1
+				industrial_capacity_dockyard = -1
+				
+			}
+	}
+	
+			lav_overwhelming_hopelessness_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				tag = LAV
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				stability_factor = -0.25
+				
+			}
+	}	
+
+			arcadian_economic_dominance_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				local_resources_factor = -0.35
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.15
+				political_power_gain = -0.25
+
+				
+			}
+	}
+	
+			lav_growing_militarism_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				conscription_factor = 0.10
+				
+				
+			}
+	}
+	
+			lav_laventillian_revanchism_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				political_power_gain = 0.20
+				
+				
+				
+			}
+	}	
+
 }
 }

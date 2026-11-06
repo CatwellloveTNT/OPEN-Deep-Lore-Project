@@ -10,7 +10,7 @@ country_event = {
 	id = lav.1
 	title = lav.1.t
 	desc = lav.1.d
-	picture = GFX_haki_terror_attack_event_image
+#	picture = GFX_haki_terror_attack_event_image
 
 	is_triggered_only = yes
 
@@ -32,7 +32,7 @@ country_event = { #arcadia puts sanctions onto laventille
 	id = lav.2
 	title = lav.2.t
 	desc = lav.2.d
-	picture = GFX_haki_terror_attack_event_image
+#	picture = GFX_haki_terror_attack_event_image
 
 	is_triggered_only = yes
 
@@ -50,7 +50,7 @@ country_event = { #arcadia and the coalition states puts sanctions onto laventil
 	id = lav.3
 	title = lav.3.t
 	desc = lav.3.d
-	picture = GFX_haki_terror_attack_event_image
+	#picture = GFX_haki_terror_attack_event_image
 
 	is_triggered_only = yes
 
@@ -59,6 +59,160 @@ country_event = { #arcadia and the coalition states puts sanctions onto laventil
 		ai_chance = {factor = 100}
 
 		add_ideas = lav_heavy_sanctions
+
+	}
+
+}
+
+country_event = { #event to choose the leader of the opposition party, atm its only arad
+	id = lav.4
+	title = lav.4.t
+	desc = lav.4.d
+#	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # Arad will lead us to a better future!
+		name = lav.4.a
+		ai_chance = {factor = 100}
+
+		set_country_flag = lav_first_phase_arad_chosen
+		mark_focus_tree_layout_dirty = yes
+
+	}
+
+}
+country_event = { #arad speaks to his people and lists out his agenda to uproot the country
+	id = lav.5
+	title = lav.5.t
+	desc = lav.5.d
+#	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # Let's get these ponies off their asses
+		name = lav.5.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+country_event = { #arad makes speech about laventille's history of owning the ponyland hook
+	id = lav.6
+	title = lav.6.t
+	desc = lav.6.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # Remember we are a nation of conquerors!
+		name = lav.6.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+country_event = { #yea i'll have to cook something up here, the sword is a metaphor for laventille and the sea is arcadia
+	id = lav.7
+	title = lav.7.t
+	desc = lav.7.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # Fall twice, rise thice
+		name = lav.7.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+country_event = { #arad makes a speech about ensuring laventille is free from arcadian shackles
+	id = lav.8
+	title = lav.8.t
+	desc = lav.8.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # Only when we break free from their grip shall we see change
+		name = lav.8.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+country_event = { #arad supports stages a nationwide riot so big it forces the government to hold a conference
+	id = lav.9
+	title = lav.9.t
+	desc = lav.9.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # This is how you fight for change!
+		name = lav.9.a
+		ai_chance = {factor = 100}
+
+
+	}
+
+}
+country_event = { #the country comes to a standstill and the government calls a snap election, arad is voten in as the head of state
+	id = lav.10
+	title = lav.10.t
+	desc = lav.10.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # and so, they gave him the throne..
+		name = lav.10.a
+		ai_chance = {factor = 100}
+
+		clr_country_flag = first_phase_lav
+		clr_country_flag = lav_first_phase_arad_chosen
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = lav_second_phase
+
+
+	}
+
+}
+country_event = { #arad settles in as head of state
+	id = lav.11
+	title = lav.11.t
+	desc = lav.11.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # an incredible amount of work is ahead of us
+		name = lav.11.a
+		ai_chance = {factor = 100}
+
+
+
+	}
+
+}
+country_event = { #
+	id = lav.12
+	title = lav.12.t
+	desc = lav.12.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = lav.12.a
+		ai_chance = {factor = 100}
+
+
 
 	}
 

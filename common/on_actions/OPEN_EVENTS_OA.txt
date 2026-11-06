@@ -45,10 +45,6 @@ on_actions = {
 				id = col.1018
 				days = 125
 			}
-			country_event = { #this event starts the event chain that determines the a/b ending if cls and arc win the great war
-				id = arc.33
-				days = 70
-			}
 		}
 		TAM = {
 			country_event = {
@@ -121,7 +117,14 @@ on_actions = {
 					id = tst.22
 					days = 9
 				}										
-			}									
+			}	
+			# ------------- LAVENTILLE EVENTS -------------				
+			LAV = {
+				country_event = {
+					id = lav.1
+					days = 1
+				}
+			}											
 
 		}
 	}

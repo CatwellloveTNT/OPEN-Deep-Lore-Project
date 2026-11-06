@@ -24,6 +24,7 @@ state={
 	history = {
 		owner = CLA
 		add_core_of = CLA
+		add_claim_by = LAV
 
 		victory_points = {
 			19984
