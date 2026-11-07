@@ -1401,12 +1401,29 @@ lav.10.a: "And so, they gave him the throne.."
 lav.11.t: "The Catalyst for Change"
 lav.11.d: "todo: arad settles in as head of state"
 lav.11.a: "An incredible amount of work is ahead of us"
+lav.12.t: "Remember 1987"
+lav.12.d: "todo: a propaganda movie out the slow collapse of the laventillian empire is made"
+lav.12.a: "A wrong that must be righted"
+lav.13.t: "Arcadia Sends a Strongly Worded Voicenote"
+lav.13.d: "todo: arcadia gives laventille a stern letter after reintroducing conscription"
+lav.13.a: "No longer shall we obey this slavemaster"
+lav.14.t: "The Highcliff Trade Federation Refuses our Demands"
+lav.14.d: ""
+lav.14.a: "They shall humiliate us no longer"
+lav.15.t: "Claxton Bay Refuses Reintegration"
+lav.15.d: ""
+lav.15.a: "We shall do it by force then"
 
 
 # -------------------- XPERIA --------------------
 xpr.1.t: "Xperia - The Fallen Empire"
 xpr.1.d: "todo: explains xperia's history on the tarmarizu sub continent, explain the heights of the empire and its gradual fall, explain that the nation is re nationalizing and that it seeks to reclaim the empire"
 xpr.1.a: "We must reclaim our birthright"
+
+# -------------------- HIGHCLIFF TRADE FEDERATION --------------------
+ htf.1.t:0 "Laventille Demands our Western Terrirtories" 
+# -------------------- CLAXTON BAY --------------------
+ cla.1.t:0 "Laventille Demands our Reintegration" 
 
 
 # -------------------- Monsterbird --------------------

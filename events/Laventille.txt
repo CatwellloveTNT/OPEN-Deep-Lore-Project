@@ -200,7 +200,7 @@ country_event = { #arad settles in as head of state
 	}
 
 }
-country_event = { #
+country_event = { #a propaganda movie out the slow collapse of the laventillian empire is made
 	id = lav.12
 	title = lav.12.t
 	desc = lav.12.d
@@ -208,7 +208,7 @@ country_event = { #
 
 	is_triggered_only = yes
 
-	option = { # 
+	option = { # a wrong that must be righted
 		name = lav.12.a
 		ai_chance = {factor = 100}
 
@@ -217,6 +217,58 @@ country_event = { #
 	}
 
 }
+country_event = { #arcadia gives laventille a stern letter after reintroducing conscription
+	id = lav.13
+	title = lav.13.t
+	desc = lav.13.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #no longer shall we obey this slavemaster
+		name = lav.13.a
+		ai_chance = {factor = 100}
+
+
+
+	}
+
+}
+country_event = { #htf says no to giving land
+	id = lav.14
+	title = lav.14.t
+	desc = lav.14.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #we have grown greatly these past few years, we shall show them
+		name = lav.14.a
+		ai_chance = {factor = 100}
+
+
+
+	}
+
+}
+country_event = { #cla says no to giving land
+	id = lav.15
+	title = lav.15.t
+	desc = lav.15.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #we have grown greatly these past few years, we shall show them
+		name = lav.15.a
+		ai_chance = {factor = 100}
+
+
+
+	}
+
+}
+
 
 
 

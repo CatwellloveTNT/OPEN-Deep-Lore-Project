@@ -590,6 +590,27 @@ country_event = { #the coalition says no to joining in sanctions
 
 	}
 }
+country_event = { #laventille reintoduces conscription and arcadia sends them a strongly worded voicenote
+	id = arc.36
+	title = arc.36.t
+	desc = arc.36.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # That'll teach em!
+		name = arc.36.a
+		ai_chance = {factor = 100}
+
+		LAV = {
+			country_event = {
+				id = lav.13
+				days = 1
+			}
+		}
+
+	}
+}
 
 
 

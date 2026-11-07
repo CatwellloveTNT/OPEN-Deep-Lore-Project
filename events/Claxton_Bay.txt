@@ -1,0 +1,102 @@
+﻿#####################
+# HIGHCLIFF TRADE FEDERATION EVENTS
+###########################
+
+add_namespace = cla
+
+
+# laventille demands htf land
+country_event = {
+	id = cla.1
+	title = cla.1.t
+	desc = cla.1.d
+
+	is_triggered_only = yes
+
+	option = { # wtf no ?!?!?!
+		name = cla.1.a
+		ai_chance = {factor = 100}
+
+		set_technology = {
+
+		#doctrines
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		engines_1 = 1
+		aa_lmg = 1
+
+		#industry
+		basic_machine_tools = 1
+
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		tech_trucks = 1 
+		tech_support = 1
+		support_weapons = 1
+		manpads = 1
+		atgms = 1
+		tech_engineers = 1
+		tech_logistics_company = 1
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		modern_helicopter_technology = 1
+		gw_artillery = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		early_bombs = 1
+		aa_hmg = 1
+		air_torpedoe_1 = 1
+		modern_missile_systems = 1
+		aircraft_construction = 1
+			
+		}
+
+		load_oob = ponyland_hook_war_cla_oob
+
+	add_equipment_to_stockpile = {
+		type = apc_equipment_1
+		amount = 259
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_equipment_1
+		amount = 259
+	}	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 3000
+	}	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_1
+		amount = 100
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 500
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_0
+		amount = 200
+	}		
+
+
+		LAV = {
+			country_event = {
+				id = lav.15
+				days = 2
+			}
+		}
+
+	}
+}
