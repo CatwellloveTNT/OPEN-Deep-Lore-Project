@@ -11,12 +11,12 @@ state={
 
 
 	resources = {
-		oil = 0
+		oil = 2
 		chromium = 0
 		aluminium = 0
 		rubber = 0
-		tungsten = 0
-		steel = 0
+		tungsten = 5
+		steel = 3
 		coal = 0
 
 	}
@@ -33,14 +33,11 @@ state={
 
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 			arms_factory = 1
 			radar_station = 0
 			dockyard = 1
 			air_base = 0
-			1885 = {
-				naval_base = 0
-			}
 			
 		}
 	}

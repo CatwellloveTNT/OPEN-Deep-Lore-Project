@@ -164,6 +164,14 @@
  cls_the_circuit_kin_squadron_selected_loc:0 "Naval Air Academy Specialized Pilots Squadron A-1, also known as Kin Squadron are 4 hyperlethal ace pilots trained by the Naval Air Academy. §GPiloting ultra-maneuverable, ultra-survivable Brown and Black Jeps, Kin Squadron will have an immediate and direct effect on any target they are sent after.§W\n\nStatus of Kin Squadron:\n\nKin 1-1: [?global.kin_1_health]%\nKin 1-2: [?global.kin_2_health]%\nKin 1-3: [?global.kin_3_health]%\nKin 1-4: [?global.kin_4_health]%\n---------------------------------------------------------------------------------------------------------------------"
  cls_the_circuit_ap_and_turns_desc_loc:0 "We currently have: [?global.cls_action_points] Action Points                   Ongoing Battle Length: [?global.turns_passed] Days"
  cls_circuit_sitrep_tt:0 "§YWe are currently pulling strings to gather an accurate report of the situation...§W"
+ deploy_team_epilson_pats_tt:0 "§YWe will deploy Team Epilson into Laventille, they are our best assets in AESA and will arouse little suspicion§W\n\n§GLaventillian Destabilization will increase by: 25%§W\n§RThe War Congress will become 10% more suspicious of AESA§W"
+ hijack_news_networks_pats_tt:0 "§YWe will buy off media companies and promote instability in Laventille§W\n\n§GLaventillian Destabilization will increase by: 10%§W\n§RThe War Congress will become 15% more suspicious of AESA§W"
+ assassinate_arad_pats_tt:0 "§YWe will conduct a risky operation to assassinate Arad, let's kill this baby in the crib before it gets any worse§W\n\n§GLaventillian Destabilization will increase by: 25%§W\n§RThe War Congress will become 50% more suspicious of AESA§W"
+ destabilze_the_nation_pats_tt:0 "§YOur Operatives will conduct operations to destabilze Laventille§W\n\n§GLaventillian Destabilization will increase by: 10%§W\n§RThe War Congress will become 20% more suspicious of AESA§W"
+ collapse_the_nation_pats_tt:0 "§YOnce Laventille reaches 100% Destabilization, we will move onto phase 2...§W"
+ fein_ignorance_pats_tt:0 "§YSenator I do not know what on earth you are talking about...§W\n\n§GWar Congress suspicion will decrease by: 15%§W"
+ destroy_operational_records_pats_tt:0 "§YIf it happened there would be records of it, yes?...§W\n\n§GWar Congress suspicion will decrease by: 25%§W"
+ ARC_the_pen_and_the_sword:0 "The Pen and the Sword"
+ ARC_the_pen_and_the_sword_desc:0 "It seems like the Laventillian empire is trying to revive itself oncemore...\n\nWith the War Congress denying military intervention in Laventille, we must find another way to prevent their rise. Monarch has stepped up to the task and was given permission to send in her best AESA teams to disrupt and destabilize Laventillian operations. Starail can only hope she understands subtly is key...\n---------------------------------------------------------------------------------------------------------------------§GLaventillian Destabilization: [?arc_infiltration_level]%§W                               §RWar Congress Suspicion: [?arc_war_council_suspicion]%"
 
- 
 

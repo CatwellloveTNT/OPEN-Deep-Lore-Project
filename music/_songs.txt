@@ -520,3 +520,12 @@ music = {
 		}				
 	}
 }
+music = { 
+	song = "letsgo"
+	chance = {
+		modifier = {
+			tag = LAV
+			factor = 0.05
+		}				
+	}
+}

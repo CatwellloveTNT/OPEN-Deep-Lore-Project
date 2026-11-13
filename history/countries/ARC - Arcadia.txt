@@ -139,6 +139,9 @@ set_stability = 0.80
 add_ideas = arc_we_patriotic_few
 add_ideas = arc_colaca
 
+set_rule = {
+	can_send_volunteers = no
+}
 
 
 

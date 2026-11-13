@@ -53,6 +53,7 @@ replace_path="common/peace_conference/ai_peace"
 replace_path="common/military_industrial_organization/organizations"
 replace_path="common/ai_strategy"
 replace_path="map/railways.txt"
+replace_path="common/peace_conference"
 replace_path="gfx/loadingscreens" #how did eaw get rid of the dlc loading screens without doing an override???!?!?!?!?! NVM I UNDERSTAND IT NOW
 
 

@@ -17,6 +17,26 @@
 		visible_when_empty = no
 	}
 
+	ARC_the_pen_and_the_sword = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+		scripted_gui = arc_pats_ui
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = arc_covert_intervention_in_the_plh_war
+			}
+		}
+
+		visible_when_empty = no
+	}
+
 
 
 

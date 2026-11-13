@@ -246,6 +246,27 @@ country_event = { #htf says no to giving land
 		name = lav.14.a
 		ai_chance = {factor = 100}
 
+			set_global_flag = ponyland_hook_war_active
+
+			declare_war_on = {
+				target = HTF
+				type = take_claimed_state
+			}
+
+			hidden_effect = {
+				news_event = {
+					id = news.35
+					days = 1
+				}
+			}			
+
+			hidden_effect = {
+				ARC = {
+					country_event = {
+						id = arc.37
+					}
+				}
+			}
 
 
 	}
@@ -263,12 +284,334 @@ country_event = { #cla says no to giving land
 		name = lav.15.a
 		ai_chance = {factor = 100}
 
+			declare_war_on = {
+				target = CLA
+				type = take_claimed_state
+			}
 
+	}
+
+}
+country_event = { #cla accecpts demands
+	id = lav.16
+	title = lav.16.t
+	desc = lav.16.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #We shall reach great heights together
+		name = lav.16.a
+		ai_chance = {factor = 100}
+
+
+		LAV = {
+			annex_country = {
+				target = CLA
+			}
+
+		}
+
+			99 = {
+				add_core_of = LAV
+			}
+			87 = {
+				add_core_of = LAV
+			}					
+
+	}
+
+}
+country_event = { #aesa fails its assassination attempt on arad
+	id = lav.17
+	title = lav.17.t
+	desc = lav.17.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #praytell how thou blundered such a simple task?
+		name = lav.17.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			ARC = {
+				country_event = {
+					id = arc.41
+					days = 3
+				}
+			}
+		}				
+
+	}
+
+}
+country_event = { #todo: arcadia places total economic sanctions and naval blockades laventille, nothing can get in or out of the country and the nations begins to collapse
+	id = lav.18
+	title = lav.18.t
+	desc = lav.18.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Shit!
+		name = lav.18.a
+		ai_chance = {factor = 100}				
+
+	}
+
+}
+country_event = { #Hunger strikes break out across the country as citizens starve
+	id = lav.19
+	title = lav.19.t
+	desc = lav.19.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Not Good
+		name = lav.19.a
+		ai_chance = {factor = 100}		
+		
+		custom_effect_tooltip = lav_19_tt
+
+	}
+
+}
+country_event = { #hospitals shut down as medical supplies run out
+	id = lav.20
+	title = lav.20.t
+	desc = lav.20.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Not Good
+		name = lav.20.a
+		ai_chance = {factor = 100}		
+		
+		custom_effect_tooltip = lav_19_tt
+
+	}
+
+}
+country_event = { #Water supplies run out and citizens being to die of thirst
+	id = lav.21
+	title = lav.21.t
+	desc = lav.21.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Not Good
+		name = lav.21.a
+		ai_chance = {factor = 100}		
+		
+		custom_effect_tooltip = lav_21_tt
+
+	}
+
+}
+country_event = { #Electricty across the nations gets cut off, the nation is at the brink
+	id = lav.22
+	title = lav.22.t
+	desc = lav.22.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Not Good
+		name = lav.22.a
+		ai_chance = {factor = 100}		
+		
+		custom_effect_tooltip = lav_22_tt
 
 	}
 
 }
 
+country_event = { #the nation breaks out into civil war!
+	id = lav.23
+	title = lav.23.t
+	desc = lav.23.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Someday, it will be Arcadian Blood... In Arcadian Land...
+		name = lav.23.a
+		ai_chance = {factor = 100}	
+
+			hidden_effect = {
+				news_event = {
+					id = news.36
+					days = 1
+				}
+			}		
+
+		hidden_effect = {
+			LAV = {
+
+				set_country_flag = lav_civil_war_tree
+				scoped_play_song = "letsgo"
+				add_ideas = i_do_not_want_you_to_surrender_bro_please
+				set_country_flag = lav_civil_war_active
+				clr_country_flag = lav_phase_1_point_5
+				mark_focus_tree_layout_dirty = yes
+			}
+
+			country_event = {
+				id = lav.24
+				days = 15
+			}
+
+		}
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = democratic
+			size = 0.45
+			capital = 96
+			states = {
+				96 84 83 82
+			}
+			keep_all_characters = yes
+			remove_ideas = lav_heavy_sanctions
+			remove_ideas = lav_light_sanctions
+			remove_ideas = lav_overwhelming_hopelessness_idea
+			add_ideas = i_do_not_want_you_to_surrender_bro_please
+		}
+
+	}
+
+}
+country_event = { #the htf rises up and declares war on both laventilles
+	id = lav.24
+	title = lav.24.t
+	desc = lav.24.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Huh?! We just beat you?!?!
+		name = lav.24.a
+		ai_chance = {factor = 100}	
+
+
+	custom_effect_tooltip = lav_24_tt
+
+
+		hidden_effect = {
+		HTF = {
+
+			add_ideas = i_do_not_want_you_to_surrender_bro_please
+
+			transfer_state = 81
+			transfer_state = 357	
+			transfer_state = 89		
+			transfer_state = 93
+			transfer_state = 95	
+			
+			declare_war_on = {
+				target = ROOT
+				type = independence_wargoal
+			}
+
+
+			 declare_war_on = {
+				target = D01
+				type = independence_wargoal
+				 }
+
+			81 = {
+
+			create_unit = {
+				division = "name = \"Freedom Fighters\" division_template = \"Conscripted Infantry\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				
+				owner = HTF
+				count = 4
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = HTF				
+					}
+				}
+				id = 21000 #protean create unit ids start at 1000 because they are the first country i developed
+			}
+		}
+
+			93 = {
+
+			create_unit = {
+				division = "name = \"Freedom Fighters\" division_template = \"Conscripted Infantry\" start_experience_factor = 0.15 start_equipment_factor = 0.65"
+				
+				owner = HTF
+				count = 3
+
+				country_score = {
+					base = 4
+					modifier = {
+					factor = 2
+					tag = HTF						
+					}
+				}
+				id = 21000 #21k cuz they arnt playable
+			}
+		}				 
+
+			
+
+		}			
+		}
+
+
+
+	}
+
+}
+country_event = { #arad speaks to her people, she vows revenge against arcadia and against the first world
+	id = lav.25
+	title = lav.25.t
+	desc = lav.25.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Their blood... Their land...
+		name = lav.25.a
+		ai_chance = {factor = 100}		
+
+		set_country_flag = lav_third_phase
+		clr_country_flag = lav_civil_war_tree
+		mark_focus_tree_layout_dirty = yes
+
+		delete_unit = {
+			id = 4000
+		}
+		
+		hidden_effect = {
+			remove_ideas = i_do_not_want_you_to_surrender_bro_please
+		}
+
+			hidden_effect = {
+				news_event = {
+					id = news.37
+					days = 1
+				}
+			}	
+			
+			hidden_effect = {
+				ARC = {
+					country_event = {
+						id = arc.47
+					}
+				}
+			}			
+
+	}
+
+}
 
 
 

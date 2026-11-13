@@ -15,7 +15,7 @@ country_event = {
 
 	option = { # wtf no ?!?!?!
 		name = cla.1.a
-		ai_chance = {factor = 100}
+		ai_chance = {base = 50}
 
 		set_technology = {
 
@@ -99,4 +99,16 @@ country_event = {
 		}
 
 	}
+	option = { # ok bro sure
+		name = cla.1.b
+		ai_chance = {base = 50}	
+
+		LAV = {
+			country_event = {
+				id = lav.16
+				days = 2
+			}
+		}
+
+	}	
 }

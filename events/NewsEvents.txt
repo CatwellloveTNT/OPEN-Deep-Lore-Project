@@ -577,8 +577,50 @@ news_event = { #Triste officially joins the second world
 	}
 
 }
+news_event = { #The Ponyland Hook War Breaks out
+	id = news.35
+	title = news.35.t
+	desc = news.35.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.35.a
+	}
 
+}
+news_event = { #laventille civil war breaks out
+	id = news.36
+	title = news.36.t
+	desc = news.36.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.36.a
+	}
 
+}
+news_event = { #arad wins the civil war
+	id = news.37
+	title = news.37.t
+	desc = news.37.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.37.a
+	}
 
+}
 
 

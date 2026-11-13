@@ -273,3 +273,8 @@ music = { # it was alot harder than it sounds (?) to cut out the sotoan chanting
 	file = "frostwaveac8.ogg"
 	volume = 1
 }
+music = { #
+	name = "letsgo"
+	file = "lets_go.ogg"
+	volume = 1
+}

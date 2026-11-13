@@ -833,3 +833,874 @@ ARC_starail_election_minigame = {
 		}
 	}
 }
+
+ARC_the_pen_and_the_sword = {
+
+	force_an_economic_collapse = { #
+		priority = 999
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			check_variable = {
+				arc_infiltration_level = 100
+			}
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = arc_covert_intervention_in_the_plh_war	
+			}
+	
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 10
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+
+		}
+
+		remove_effect = {			
+
+			custom_effect_tooltip = collapse_the_nation_pats_tt
+
+
+			hidden_effect = {
+				country_event = {
+					id = arc.45
+				}				
+			}
+
+			LAV = {
+				set_country_flag = lav_second_phase_pats
+	
+				country_event = {
+					id = lav.18
+				}
+			}
+			ARC = {
+				set_country_flag = arc_second_phase_pats
+				clr_country_flag = arc_pats_phase_1
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 9000	
+		}		
+
+	}
+
+
+	# ------------------------- AESA DECISIONS ------------------------- #
+	deploy_team_epsilon = { #
+		priority = 500
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		days_re_enable = 10
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			deploy_team_epilson_pats = yes
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+			set_country_flag = arc_pats_team_epilson_deployed
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+			modifier = {
+				check_variable = {
+					arc_war_council_suspicion > 69
+				}
+				add = -10000
+			}		
+		}		
+
+	}
+
+	hijack_the_news_networks = { #
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+				has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		days_re_enable = 10
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			hijack_news_networks_pats = yes
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		ai_will_do = {
+			factor = 9001
+			modifier = {
+				check_variable = {
+					arc_war_council_suspicion > 69
+				}
+				add = -10000
+			}
+
+
+		}		
+
+	}	
+
+	assassinate_arad = { #
+		priority = 501
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			has_country_flag = arc_pats_team_epilson_deployed
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_re_enable = 10
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			assassinate_arad_pats = yes
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+
+			hidden_effect = {
+			LAV = {
+				country_event = {
+					id = lav.17
+				}
+			}	
+			ARC = {
+				country_event = {
+					id = arc.40
+				}
+			}						
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+			modifier = {
+				check_variable = {
+					arc_war_council_suspicion > 69
+				}
+				add = -10000
+			}
+
+
+		}		
+
+	}	
+
+	destabalize_the_nation = { #
+		priority = 200
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = arc_pats_phase_1
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		days_re_enable = 5
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			destabilze_the_nation_pats = yes
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+
+
+		}
+
+		ai_will_do = {
+			factor = 9001
+			modifier = {
+				check_variable = {
+					arc_war_council_suspicion > 69
+				}
+				add = -10000
+			}
+
+
+		}		
+
+	}	
+
+
+	# ------------------------- WAR CONGRESS DECISIONS ------------------------- #
+
+	fein_ignorace = { #FEIN FEIN FEIN FEIN FEIN FEIN FIEN FEIN FEIN FEIN
+		priority = 200
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_warcongress_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			has_country_flag = arc_second_phase_pats				
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_warcongress_selected		
+			}
+	
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_re_enable = 5
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			fein_ignorance_pats = yes
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				check_variable = {
+					arc_war_council_suspicion > 69
+				}
+				add = 10000
+			}
+
+
+		}		
+
+	}
+
+	destroy_operational_records = { #
+		priority = 202
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_warcongress_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			has_country_flag = arc_second_phase_pats				
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_warcongress_selected		
+			}
+	
+		}
+
+		cost = 100
+
+		fire_only_once = no
+
+		days_re_enable = 5
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			destroy_operational_records_pats = yes
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				check_variable = {
+					arc_war_council_suspicion > 69
+				}
+				add = 11000
+			}
+
+
+		}		
+
+	}	
+
+
+	# ------------------------- SECOND PHASE DECISIONS ------------------------- #
+
+	cut_off_food_aid = { #
+		priority = 400
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 10
+
+		fire_only_once = yes
+
+		days_re_enable = 5
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {		
+
+			clr_country_flag = arc_pats_covert_action_ongoing			
+			
+			set_country_flag = arc_cut_off_food_suppies
+
+
+			add_days_mission_timeout = {
+				mission = arc_estimated_laventillian_collapse
+				days = -45
+			}
+
+			hidden_effect = {
+			LAV = {
+			add_days_mission_timeout = {
+				mission = lav_total_collapse_imminent
+				days = -45
+			}
+			}				
+			}
+
+
+
+			custom_effect_tooltip = extra_space
+
+			LAV = {
+				country_event = {
+					id = lav.19
+				}
+			}			
+
+
+		}
+
+		ai_will_do = {
+			factor = 9001
+
+		}		
+
+	}
+
+	cut_off_medical_aid = { #
+		priority = 400
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 10
+
+		fire_only_once = yes
+
+		days_re_enable = 5
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+
+			set_country_flag = arc_cut_off_medical_suppies
+
+			add_days_mission_timeout = {
+				mission = arc_estimated_laventillian_collapse
+				days = -45
+			}
+
+			hidden_effect = {
+			LAV = {
+			add_days_mission_timeout = {
+				mission = lav_total_collapse_imminent
+				days = -45
+			}
+			}				
+			}
+
+			custom_effect_tooltip = extra_space
+
+			LAV = {
+				country_event = {
+					id = lav.20
+				}
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 9001
+
+		}		
+
+	}
+
+	cut_off_water_nationwide = { #
+		priority = 400
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_cut_off_food_suppies
+			has_country_flag = arc_cut_off_medical_suppies
+			has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 10
+
+		fire_only_once = yes
+
+		days_re_enable = 5
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {			
+
+			clr_country_flag = arc_pats_covert_action_ongoing
+
+			set_country_flag = arc_cut_off_water
+
+			add_days_mission_timeout = {
+				mission = arc_estimated_laventillian_collapse
+				days = -70
+			}
+
+			hidden_effect = {
+			LAV = {
+			add_days_mission_timeout = {
+				mission = lav_total_collapse_imminent
+				days = -70
+			}
+			}				
+			}
+
+			custom_effect_tooltip = extra_space
+
+			LAV = {
+				country_event = {
+					id = lav.21
+				}
+			}			
+
+
+		}
+
+		ai_will_do = {
+			factor = 9001
+
+		}		
+
+	}	
+	
+	eliminate_nationwide_electricity = { #
+		priority = 400
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = ARC
+		}
+
+		available = {
+
+			AND = {
+			has_country_flag = arc_cut_off_water			
+			has_country_flag = arc_cut_off_food_suppies
+			has_country_flag = arc_cut_off_medical_suppies
+			has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected
+			NOT = {
+				has_country_flag = arc_pats_covert_action_ongoing
+			}
+			}			
+
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = arc_second_phase_pats
+			has_country_flag = arc_covert_intervention_in_the_plh_war
+			has_country_flag = arc_pats_aesa_selected		
+			}
+	
+		}
+
+		cost = 10
+
+		fire_only_once = yes
+
+		days_re_enable = 5
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+			
+			set_country_flag = arc_pats_covert_action_ongoing
+
+		}
+
+		remove_effect = {	
+			
+			clr_country_flag = arc_pats_covert_action_ongoing			
+
+			add_days_mission_timeout = {
+				mission = arc_estimated_laventillian_collapse
+				days = -120
+			}
+
+			hidden_effect = {
+			LAV = {
+			add_days_mission_timeout = {
+				mission = lav_total_collapse_imminent
+				days = -120
+			}
+			}				
+			}
+
+			custom_effect_tooltip = extra_space
+
+			LAV = {
+				country_event = {
+					id = lav.22
+				}
+			}			
+
+
+		}
+
+		ai_will_do = {
+			factor = 9001
+
+		}		
+
+	}
+
+
+
+
+}

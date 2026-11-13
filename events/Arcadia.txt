@@ -18,7 +18,6 @@ country_event = {
 		name = arc.1.a
 		ai_chance = {factor = 100}
 		add_political_power = 1
-		custom_effect_tooltip = dubsteptip
 				hidden_effect = {
 			ARC = {
 				scoped_play_song = "hia"
@@ -608,6 +607,238 @@ country_event = { #laventille reintoduces conscription and arcadia sends them a 
 				days = 1
 			}
 		}
+
+	}
+}
+country_event = { #the htf sends a request for aid upon laventillian invasion
+	id = arc.37
+	title = arc.37.t
+	desc = arc.37.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Mobilize the 82nd and the 8th, we'll help them out!
+		name = arc.37.a
+		ai_chance = {factor = 100}
+
+		#custom_effect_tooltip = arc_37_tt
+
+		ARC = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = arc.38
+			}
+		}
+
+	}
+}
+country_event = { #the war congress immediately denies the motion to support htf militarily
+	id = arc.38
+	title = arc.38.t
+	desc = arc.38.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		ARC = {
+			set_rule = {
+				can_send_volunteers = no
+			}
+		}			
+		}
+
+	}
+
+	option = { # Braindead Geezers!
+		name = arc.38.a
+		ai_chance = {factor = 100}
+
+		ARC = {
+			set_rule = {
+				can_send_volunteers = no
+			}
+		}	
+		
+		hidden_effect = {
+			country_event = {
+				id = arc.39
+				days = 3
+			}
+		}
+
+	}
+}
+country_event = { #monarch approches starail saying she can send in aesa to do the work of the army in laventille
+	id = arc.39
+	title = arc.39.t
+	desc = arc.39.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # You have my permission, Monarch
+		name = arc.39.a
+		ai_chance = {factor = 100}
+
+		ARC = {
+			set_country_flag = arc_covert_intervention_in_the_plh_war
+			set_country_flag = arc_pats_phase_1
+		}	
+		
+		custom_effect_tooltip = arc_39_tt
+		
+		set_variable = {
+			arc_war_council_suspicion = 0
+		}
+		set_variable = {
+			arc_infiltration_level = 0
+		}
+
+
+	}
+}
+
+country_event = { #aesa believes it has assassinated arad by putting a neurotoxin on her eyelash brush
+	id = arc.40
+	title = arc.40.t
+	desc = arc.40.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Well, thats wrapped up. Let's go home!
+		name = arc.40.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+country_event = { #aesa confirms a sighting of arad in Durovo and realizes the assassination attempt failed
+	id = arc.41
+	title = arc.41.t
+	desc = arc.41.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Huh?!
+		name = arc.41.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+
+country_event = { #the war congress realizes starial has been intervening in laventille behind its back and moves to impeach her
+	id = arc.42
+	title = arc.42.t
+	desc = arc.42.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # God Damnit Monarch!
+		name = arc.42.a
+		ai_chance = {factor = 100}
+
+		country_event = {
+			id = arc.43
+			days = 4
+		}
+
+
+	}
+}
+country_event = { #the imperial court has a trial for starail
+	id = arc.43
+	title = arc.43.t
+	desc = arc.43.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Lets hurry up and get this over with
+		name = arc.43.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			country_event = {
+				id = arc.44
+				days = 4
+			}
+		}
+
+
+	}
+}
+country_event = { #the imperial court comes to the verdict that due to the lack of evidence starail is innocent
+	id = arc.44
+	title = arc.44.t
+	desc = arc.44.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # We have decided there is insufficient evidence to prove the accused guilty of Treason. The verdict - innocent
+		name = arc.44.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+country_event = { #monarch determines laventille is destablized enough and green lights phase 2 of the intervention
+	id = arc.45
+	title = arc.45.t
+	desc = arc.45.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Time to put them in their place
+		name = arc.45.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = arc_45_tt
+
+	}
+}
+country_event = { #Laventille breaks out into civil war
+	id = arc.46
+	title = arc.46.t
+	desc = arc.46.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # I wonder how that happened...
+		name = arc.46.a
+		ai_chance = {factor = 100}
+
+
+
+	}
+}
+country_event = { #The Arad regime wins t he civil war
+	id = arc.47
+	title = arc.47.t
+	desc = arc.47.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Huh, i dont think thats ever happened before...
+		name = arc.47.a
+		ai_chance = {factor = 100}
+
+
 
 	}
 }

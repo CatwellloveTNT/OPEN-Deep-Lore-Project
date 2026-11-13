@@ -1,0 +1,92 @@
+# ----------------- CLAMPERS ----------------- #
+arc_clamp_war_congress_sus = {
+	clamp_variable = {
+		var = var:arc_war_council_suspicion
+		min = 0
+		max = 100
+	}
+}
+arc_clamp_infiltration_value = { #infiltration = destabilization, just thought about it and it really doesnt make sense for infiltration to be the deciding factor in shutting down the nation
+	clamp_variable = {
+		var = var:arc_infiltration_level
+		min = 0
+		max = 100
+	}
+}
+
+deploy_team_epilson_pats = {
+	add_to_variable = {
+		arc_infiltration_level = 25
+	}
+	add_to_variable = {
+		arc_war_council_suspicion = 10
+	}
+	arc_clamp_infiltration_value = yes
+	arc_clamp_war_congress_sus = yes
+
+	custom_effect_tooltip = deploy_team_epilson_pats_tt
+
+}
+hijack_news_networks_pats = {
+	add_to_variable = {
+		arc_infiltration_level = 10
+	}
+	add_to_variable = {
+		arc_war_council_suspicion = 15
+	}
+	arc_clamp_infiltration_value = yes
+	arc_clamp_war_congress_sus = yes
+
+	custom_effect_tooltip = hijack_news_networks_pats_tt
+
+}
+assassinate_arad_pats = {
+	add_to_variable = {
+		arc_infiltration_level = 25
+	}
+	add_to_variable = {
+		arc_war_council_suspicion = 50
+	}
+	arc_clamp_infiltration_value = yes
+	arc_clamp_war_congress_sus = yes
+
+	custom_effect_tooltip = assassinate_arad_pats_tt
+
+}
+
+destabilze_the_nation_pats = {
+	add_to_variable = {
+		arc_infiltration_level = 10
+	}
+	add_to_variable = {
+		arc_war_council_suspicion = 20
+	}
+	arc_clamp_infiltration_value = yes
+	arc_clamp_war_congress_sus = yes
+
+	custom_effect_tooltip = destabilze_the_nation_pats_tt
+
+}
+
+fein_ignorance_pats = { #FEIN FIEN FEIN FEIN FEIN FEINM 
+	add_to_variable = {
+		arc_war_council_suspicion = -15
+	}
+
+	arc_clamp_war_congress_sus = yes
+
+	custom_effect_tooltip = fein_ignorance_pats_tt
+
+}
+destroy_operational_records_pats = {
+	add_to_variable = {
+		arc_war_council_suspicion = -25
+	}
+
+	arc_clamp_war_congress_sus = yes
+
+	custom_effect_tooltip = destroy_operational_records_pats_tt
+
+}
+
+

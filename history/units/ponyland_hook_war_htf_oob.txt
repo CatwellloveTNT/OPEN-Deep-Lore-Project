@@ -80,7 +80,7 @@ units = {
 		}
 		location = 19989 
 		name = "31st Mechanized Division"		
-		division_template = "IFV Division"
+		division_template = "APC Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
@@ -93,23 +93,9 @@ units = {
 		}
 		location = 388  # Havana
 		name = "3rd Mechanized Division"					
-		division_template = "IFV Division"
+		division_template = "APC Division"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.9
-
-	}
-
-
-	division= {	# "1a Brigada de Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 19992  # Havana
-		name = "4th Mechanized Division"					
-		division_template = "IFV Division"
-		start_experience_factor = 0.6
-		start_equipment_factor = 0.8
 
 	}	
 
@@ -152,33 +138,7 @@ units = {
 
 	}	
 	
-
-	division= {	# "1a Brigada de Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		name = "15th Motorized Division"	
-		location = 422 # Havana
-		division_template = "APC Division"
-		start_experience_factor = 0.6
-		start_equipment_factor = 0.8
-
-	}	
-	
-
-	division= {	# "1a Brigada de Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 390  # Havana
-		name = "5th Mechanized Division"					
-		division_template = "IFV Division"
-		start_experience_factor = 0.6
-		start_equipment_factor = 0.8
-
-	}	
+		
 	
 	division= {	# "1a Brigada de Ejercito"
 		division_name = {
@@ -186,7 +146,7 @@ units = {
 				name_order = 1
 		}
 		location = 1879 
-		name = "Sunset Drove Volunteers"		
+		name = "1st Penal Battalion"		
 		division_template = "Conscripted Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -198,7 +158,7 @@ units = {
 				name_order = 1
 		}
 		location = 369 
-		name = "Sunset Drove Volunteers"		
+		name = "1st Penal Storm Detachment"		
 		division_template = "Conscripted Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -210,7 +170,7 @@ units = {
 				name_order = 1
 		}
 		location = 372 
-		name = "Sunset Drove Volunteers"		
+		name = "2nd Penal Storm Detachment"		
 		division_template = "Conscripted Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -222,7 +182,7 @@ units = {
 				name_order = 1
 		}
 		location = 1871 
-		name = "Sunset Drove Volunteers"		
+		name = "3rd Penal Storm Detachment"		
 		division_template = "Conscripted Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -236,7 +196,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "EST"
+			creator = "HTF"
 		}
 		requested_factories = 1
 		progress = 0.54

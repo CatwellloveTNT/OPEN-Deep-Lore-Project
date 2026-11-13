@@ -1,5 +1,5 @@
 capital = 97
-OOB = ""
+OOB = "LAV_2032"
 	set_technology = {
 
 		#doctrines
@@ -119,6 +119,9 @@ set_politics = {
 	elections_allowed = yes
 }
 
+set_stability = 0.14
+set_war_support = 0.12
+
 set_popularities = {
 	democratic = 50
 	fascism = 15
@@ -132,3 +135,53 @@ add_ideas = {
 	arcadian_economic_dominance_idea
 	lav_growing_militarism_idea
 }
+
+set_convoys = 2
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 5
+}
+add_equipment_to_stockpile = {
+	type = apc_equipment_1
+	amount = 183
+}
+add_equipment_to_stockpile = {
+	type = ifv_equipment_1
+	amount = 132
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 210
+}
+add_equipment_to_stockpile = {
+	type = modern_tank_equipment_1
+	amount = 54
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 126
+}
+add_equipment_to_stockpile = {
+	type = manpads_0
+	amount = 64
+}
+add_equipment_to_stockpile = {
+	type = atgms_0
+	amount = 53
+}
+add_equipment_to_stockpile = {
+	type = transport_helo_equipment_1
+	amount = 15
+}
+add_equipment_to_stockpile = {
+	type = attack_helo_equipment_1
+	amount = 2
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 3232
+}
+
+
+
+

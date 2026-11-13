@@ -671,6 +671,43 @@ focus_tree = {
 		completion_reward = {
 			
 
+			build_railway = {
+				path = { 19986 402 1870 1877 1876 4270 }
+			}
+			build_railway = {
+				path = { 411 391 20394 370 20127  }
+			}			
+
+			86 = {
+
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 4270
+				}
+
+			}
+
+
+			91 = {
+
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 365
+				}
+
+			}	
+			
+			82 = {
+
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 20127
+				}
+
+			}			
 
 		}
 
@@ -1136,7 +1173,8 @@ focus_tree = {
 
 		completion_reward = {
 				
-														
+		add_research_slot = 1
+		
 
 
 
@@ -1427,6 +1465,8 @@ focus_tree = {
 		completion_reward = {
 				
 
+		custom_effect_tooltip = LAV_demand_our_land_returned_tt			
+
 		HTF = {
 			country_event = {
 				id = htf.1
@@ -1436,8 +1476,577 @@ focus_tree = {
 			country_event = {
 				id = cla.1
 			}
+		}	
+		
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #lav wins the plh war
+		id = LAV_the_plh_war_victory
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+	#	relative_position_id = LAV_fan_the_flames_of_discontent
+	#	prerequisite = {
+	##		focus = LAV_fan_the_flames_of_discontent		
+	#	}
+			
+		cost = 1
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = lav_phase_1_point_5
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #lav wins the plh war
+		id = LAV_reintegrate_the_territories
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_the_plh_war_victory
+		prerequisite = {
+			focus = LAV_the_plh_war_victory		
+		}
+			
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel = {
+		NOT = {
+			has_country_flag = lav_phase_1_point_5
+		}	
+		}
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+					
+			87 = {
+				add_core_of = LAV
+			}
+			99 = {
+				add_core_of = LAV
+			}
+			92 = {
+				add_core_of = LAV
+			}
+			98 = {
+				add_core_of = LAV
+			}			
+			93 = {
+				add_core_of = LAV
+			}			
+			95 = {
+				add_core_of = LAV
+			}
+			89 = {
+				add_core_of = LAV
+			}
+			357 = {
+				add_core_of = LAV
+			}
+			81 = {
+				add_core_of = LAV
+			}
+			88 = {
+				add_core_of = LAV
+			}
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #lav wins the plh war
+		id = LAV_abandon_the_arcadian_economic_model
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_reintegrate_the_territories
+		prerequisite = {
+			focus = LAV_reintegrate_the_territories		
+		}
+			
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel = {
+		NOT = {
+			has_country_flag = lav_phase_1_point_5
+		}	
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+				
+			remove_ideas = arcadian_economic_dominance_idea
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #lav wins the plh war
+		id = LAV_abandon_the_dollar
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_reintegrate_the_territories
+		prerequisite = {
+			focus = LAV_reintegrate_the_territories		
+		}
+			
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel = {
+		NOT = {
+			has_country_flag = lav_phase_1_point_5
+		}	
 		}		
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+				
+			if = {
+				limit = { has_idea = lav_heavy_sanctions }
+				remove_ideas = lav_heavy_sanctions
+				else = {
+					remove_ideas = lav_light_sanctions
+				}
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #lav wins the plh war
+		id = LAV_rebuild_once_more
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_reintegrate_the_territories
+		prerequisite = {
+			focus = LAV_abandon_the_dollar		
+		}
+		prerequisite = {
+			focus = LAV_abandon_the_arcadian_economic_model		
+		}			
+		cost = 10
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel = {
+		NOT = {
+			has_country_flag = lav_phase_1_point_5
+		}	
+		}		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+				
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	focus = { #lav wins the plh war
+		id = LAV_turn_to_aviceyn
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_rebuild_once_more
+		prerequisite = {
+			focus = LAV_rebuild_once_more		
+		}
+		
+		cost = 10
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel = {
+		NOT = {
+			has_country_flag = lav_phase_1_point_5
+		}	
+		}		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+				
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #lav wins the plh war
+		id = LAV_one_final_conquest
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_turn_to_aviceyn
+		prerequisite = {
+			focus = LAV_turn_to_aviceyn		
+		}
+		
+		cost = 10
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+		cancel = {
+		NOT = {
+			has_country_flag = lav_phase_1_point_5
+		}	
+		}		
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+				
+			LAV = {
+				declare_war_on = {
+					target = EQL
+					type = annex_everything
+				}
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_conscript_the_masses
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+	#	relative_position_id = LAV_fan_the_flames_of_discontent
+	#	prerequisite = {
+	##		focus = LAV_fan_the_flames_of_discontent		
+	#	}
+			
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = lav_civil_war_tree
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			97 = {
+
+			create_unit = {
+				division = "name = \"Conscripts\" division_template = \"Conscripted Infantry\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+				
+				owner = LAV
+				count = 2
+
+				country_score = {
+					base = 3
+					modifier = {
+					factor = 2
+					tag = LAV		
+					}
+				}
+				id = 4000 #4k cuz they are the 4th nation i developed
+			}
+		}
+
+			88 = {
+
+			create_unit = {
+				division = "name = \"Conscripts\" division_template = \"Conscripted Infantry\" start_experience_factor = 0.15 start_equipment_factor = 0.65"
+				
+				owner = LAV
+				count = 3
+
+				country_score = {
+					base = 4
+					modifier = {
+					factor = 2
+					tag = LAV						
+					}
+				}
+				id = 4000 #4k cuz they are the 4th nation i developed
+			}
+		}
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_fortify_the_capital
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_conscript_the_masses
+		prerequisite = {
+			focus = LAV_conscript_the_masses		
+		}
+			
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+		#	has_country_flag = lav_civil_war_tree
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_break_out_the_repeaters
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_conscript_the_masses
+		prerequisite = {
+			focus = LAV_conscript_the_masses		
+		}
+			
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+		#	has_country_flag = lav_civil_war_tree
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2500
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_test_our_new_tactics
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_conscript_the_masses
+		prerequisite = {
+			focus = LAV_conscript_the_masses		
+		}
+			
+		cost = 3
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+		#	has_country_flag = lav_civil_war_tree
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
 
 
 		}

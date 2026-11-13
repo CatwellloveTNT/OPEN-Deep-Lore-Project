@@ -2489,6 +2489,66 @@ puppetmaster = {
 
 	}	
 
+	msb_arc_war_congress_impreaches_starail = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+
+		check_variable = {
+			arc_war_council_suspicion = 100
+		}										
+
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 10
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+
+			
+			ARC = {
+				clr_country_flag = arc_covert_intervention_in_the_plh_war
+			}
+			ARC = {
+				country_event = {
+					id = arc.42
+				}
+			}
+
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
 }
 
 

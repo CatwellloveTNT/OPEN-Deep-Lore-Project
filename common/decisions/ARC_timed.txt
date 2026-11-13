@@ -153,3 +153,50 @@ ARC_starail_election_minigame = {
 	}
 }
 
+ARC_the_pen_and_the_sword = {
+
+
+
+	arc_estimated_laventillian_collapse = {
+		priority = 550
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 320
+		is_good = no
+		days_re_enable = 5
+
+		activation = {
+			has_country_flag = arc_second_phase_pats
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = arc_second_phase_pats
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		timeout_effect = {
+
+			country_event = {
+				id = arc.46
+			}
+
+			clr_country_flag = arc_second_phase_pats
+			clr_country_flag = arc_covert_intervention_in_the_plh_war
+			clr_country_flag = arc_pats_phase_1
+
+	}
+	}
+
+
+
+
+}
+

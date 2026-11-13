@@ -1,0 +1,32 @@
+	lav_the_ponyland_hook_war = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+
+		allowed = {
+			tag = LAV
+		}
+
+		visible = {
+			has_global_flag = ponyland_hook_war_active
+		}
+
+		visible_when_empty = no
+	}
+	lav_the_country_collapses = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+
+		allowed = {
+			tag = LAV
+		}
+
+		visible = {
+			has_country_flag = lav_second_phase_pats
+		}
+
+		visible_when_empty = yes
+	}
