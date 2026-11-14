@@ -172,5 +172,110 @@ lav_the_country_collapses = {
 		}
 	}	
 
+	lav_the_clock_strikes_twelve = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 200
+		is_good = no
+		days_re_enable = 1
+
+
+		activation = {
+			AND = {
+				has_war = no
+				has_country_flag = lav_war_of_conquest_flag
+			}
+		}
+
+		available = {
+			has_war = yes
+		
+		}
+
+		fire_only_once = no
+
+		visible = {
+			AND = {
+				has_war = no
+				has_country_flag = lav_war_of_conquest_flag
+			}
+		}
+
+
+		complete_effect = {
+
+		}
+
+		timeout_effect = {
+
+			custom_effect_tooltip = the_clock_strikes_twelve_tt
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+
+}
+
+lav_wars_of_revenge = {
+
+
+
+	lav_defeat_equiland = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no
+		days_re_enable = 5
+
+
+		activation = {
+			LAV = {
+				has_war_with = EQL
+			}
+		}
+
+		available = {
+			EQL = {
+				exists = no
+			}
+		
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			LAV = {
+				has_war_with = EQL
+			}
+		}
+
+
+		complete_effect = {
+
+			set_country_flag = lav_wor_phase_2
+
+			mark_focus_tree_layout_dirty = yes
+
+
+		}
+
+		timeout_effect = {
+
+
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+
+
 
 }

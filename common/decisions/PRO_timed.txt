@@ -3,7 +3,7 @@ PRO_the_second_protean_chaffian_skirmish = {
 	end_the_war = {
 		priority = 320
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 45
+		days_mission_timeout = 56
 		is_good = no
 		days_re_enable = 5
 

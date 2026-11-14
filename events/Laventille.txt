@@ -592,6 +592,9 @@ country_event = { #arad speaks to her people, she vows revenge against arcadia a
 		
 		hidden_effect = {
 			remove_ideas = i_do_not_want_you_to_surrender_bro_please
+
+			complete_national_focus = LAV_revenge_tenfold
+
 		}
 
 			hidden_effect = {
@@ -608,6 +611,83 @@ country_event = { #arad speaks to her people, she vows revenge against arcadia a
 					}
 				}
 			}			
+
+	}
+
+}
+country_event = { #arad sets out a military agenda to claw their way to the acradian border by any means 
+	id = lav.26
+	title = lav.26.t
+	desc = lav.26.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #We shall not stop until it is done
+		name = lav.26.a
+		ai_chance = {factor = 100}	
+		
+		hidden_effect = {
+			ARC = {
+				country_event = {
+					id = arc.48
+				}
+			}
+		}
+
+	}
+
+}
+country_event = { #arcadia totally cuts off laventille from the outside world, nothing can get in or out of the nation without arcadia green lighting it
+	id = lav.27
+	title = lav.27.t
+	desc = lav.27.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Not this shit again
+		name = lav.26.a
+		ai_chance = {factor = 100}	
+
+		set_country_flag = lav_war_of_conquest_flag
+
+		every_country = {
+			limit = {
+				NOT = {
+					tag = LAV
+				}
+			}
+
+			send_embargo = LAV
+		}
+
+		if = {
+			limit = { LAV = {
+				has_idea = free_trade
+			} }
+
+			swap_ideas = {
+				remove_idea = free_trade
+				add_idea = laventillian_closed_economy
+			}
+			else_if = {
+				limit = { LAV = {
+					has_idea = export_focus
+				} }
+
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = laventillian_closed_economy
+				}
+
+			}
+
+		}
+
+		custom_effect_tooltip = extra_space
+
+		custom_effect_tooltip = lav_27_tt
 
 	}
 

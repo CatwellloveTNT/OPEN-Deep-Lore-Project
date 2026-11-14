@@ -173,5 +173,6 @@
  destroy_operational_records_pats_tt:0 "§YIf it happened there would be records of it, yes?...§W\n\n§GWar Congress suspicion will decrease by: 25%§W"
  ARC_the_pen_and_the_sword:0 "The Pen and the Sword"
  ARC_the_pen_and_the_sword_desc:0 "It seems like the Laventillian empire is trying to revive itself oncemore...\n\nWith the War Congress denying military intervention in Laventille, we must find another way to prevent their rise. Monarch has stepped up to the task and was given permission to send in her best AESA teams to disrupt and destabilize Laventillian operations. Starail can only hope she understands subtly is key...\n---------------------------------------------------------------------------------------------------------------------§GLaventillian Destabilization: [?arc_infiltration_level]%§W                               §RWar Congress Suspicion: [?arc_war_council_suspicion]%"
+ the_clock_strikes_twelve_tt:0 "§RLetting this time out will result in a game ending civil war§W"
 
 

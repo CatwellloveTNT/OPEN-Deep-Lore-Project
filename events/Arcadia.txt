@@ -842,6 +842,31 @@ country_event = { #The Arad regime wins t he civil war
 
 	}
 }
+country_event = { #Arcadia catches wind of arad saying they will battle their way to arcadia
+	id = arc.48
+	title = arc.48.t
+	desc = arc.48.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Cut off all trade routes and blockade their ports, I want these guys dead
+		name = arc.48.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			LAV = {
+				country_event = {
+					id = lav.27
+					days = 2
+				}
+			}
+		}
+
+
+
+	}
+}
 
 
 

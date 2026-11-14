@@ -25,8 +25,28 @@
 		}
 
 		visible = {
-			has_country_flag = lav_second_phase_pats
+			OR = {
+			has_country_flag = lav_second_phase_pats	
+			has_country_flag = lav_war_of_conquest_flag			
+			}
+
+		}
+
+		visible_when_empty = no
+	}
+	lav_wars_of_revenge = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+
+		allowed = {
+			tag = LAV
+		}
+
+		visible = {
+			has_country_flag = lav_war_of_revenge_flag
 		}
 
 		visible_when_empty = yes
-	}
+	}	

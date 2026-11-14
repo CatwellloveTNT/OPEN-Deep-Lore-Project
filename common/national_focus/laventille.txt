@@ -1962,8 +1962,54 @@ focus_tree = {
 
 		completion_reward = {
 						
-
-
+			97 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19987
+				instant_build = yes
+			}
+			}
+			97 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 19986
+				instant_build = yes
+			}
+			}			
+			85 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 20094
+				instant_build = yes
+			}
+			}
+			85 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 20098
+				instant_build = yes
+			}
+			}						
+			85 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 374
+				instant_build = yes
+			}
+			}	
+			85 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 1870
+				instant_build = yes
+			}
+			}				
 		}
 
 		ai_will_do = {
@@ -2037,6 +2083,220 @@ focus_tree = {
 
 		allow_branch = {
 		#	has_country_flag = lav_civil_war_tree
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_revenge_tenfold
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+	#	relative_position_id = LAV_fan_the_flames_of_discontent
+	#	prerequisite = {
+	##		focus = LAV_fan_the_flames_of_discontent		
+	#	}
+			
+		cost = 1
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = lav_third_phase
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+	focus = { #
+		id = LAV_conquor_the_north
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_revenge_tenfold
+		prerequisite = {
+			focus = LAV_revenge_tenfold		
+		}
+			
+		cost = 1
+
+		available = {
+		has_army_manpower = { size > 150000 } #80 div
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			LAV = {
+				declare_war_on = {
+					target = EQL
+					type = annex_everything
+				}
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_claw_our_way_to_arcadia
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_conquor_the_north
+		prerequisite = {
+			focus = LAV_conquor_the_north		
+		}
+			
+		cost = 1
+
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = lav_wor_phase_2
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			country_event = {
+				id = lav.26
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+	
+	focus = { #
+		id = LAV_our_new_economic_system
+		icon = GFX_goal_generic_consumer_goods
+		x = -5
+		y = 1
+		relative_position_id = LAV_revenge_tenfold
+		prerequisite = {
+			focus = LAV_revenge_tenfold		
+		}
+			
+		cost = 1
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_our_army_of_conquest
+		icon = GFX_goal_generic_consumer_goods
+		x = 5
+		y = 1
+		relative_position_id = LAV_revenge_tenfold
+		prerequisite = {
+			focus = LAV_revenge_tenfold		
+		}
+			
+		cost = 1
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
 		}
 
 

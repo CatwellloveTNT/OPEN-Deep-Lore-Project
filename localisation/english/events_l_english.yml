@@ -471,6 +471,9 @@
  arc.47.t: "The Arad Regime Survives!"
  arc.47.d: "todo: the arad regime wins the civil war"
  arc.47.a: "Huh, I don't think thats ever happened before..."
+ arc.48.t: ""Death to Arcadia""
+ arc.48.d: "todo: aesa catches wind of arad's intention to fight its way to arcadia, stairail and monarch are having none of it and ramp up economic pressure once more"
+ arc.48.a: "Cut off all trade routes and blockade their ports, let them eat themselves alive"
 
 # -------------------- PROTEA --------------------
  pro.1.t: "Protea - Humanity's Jewel in The Cradle"
@@ -1479,6 +1482,12 @@ lav.24.a: "Huh?! We just beat you!"
 lav.25.t: "Clarity"
 lav.25.d: "todo: arad speaks to her people, she vows revenge against arcadia and against the first world"
 lav.25.a: "Their blood... Their land..."
+lav.26.t: "To See Arcadia Burn..."
+lav.26.d: "todo: arad sets out a military agenda to claw their way to the acradian border by any means "
+lav.26.a: "We shall not stop until it is done"
+lav.27.t: "Arcadia Slices our Trade Arteries!"
+lav.27.d: "todo: explain that arcadia has blockaded all ports and have restricted all trade and imports/exports to and from laventille, the nation is totally cut off and in the same position as it was just before the civil war"
+lav.27.a: "Not this shit again"
 
 
 # -------------------- XPERIA --------------------
@@ -1610,6 +1619,7 @@ xpr.1.a: "We must reclaim our birthright"
  arc_45_tt:0 "§YThe War Congress has no say or stake in the economic dealings of Arcadia, as such Starail and Monarch are free to act as they wish...§W\n\n§GThe War Congress Suspicion mechanic has deactivated, we can now act as we please without repercussion...§W"
  lav_22_tt:0 "§R120 days are removed from the §YImminent Collapse§Y Mission...§W"
  lav_24_tt:0 "§RRemants of the Highcliff Trade Federation have risen up to claim their independence!§W"
+ lav_27_tt:0 "§RArcadia has cut off our ability to import and export resources in totality, this includes food and basic living supplies. They are doing the same play again...\n\n§YThe Economy of War mechanic has activated, we will descend into a nation ending civil war if we are not actively at war with another nation after a given amount of time...§W"
 
 
 
