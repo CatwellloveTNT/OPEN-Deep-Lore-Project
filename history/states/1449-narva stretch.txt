@@ -1,0 +1,48 @@
+state={
+	id=1449
+	name="STATE_1449"
+	provinces={
+		3242 3638 20170 
+	}
+	manpower = 43242
+	buildings_max_level_factor=1
+	local_supplies=0
+	state_category = city
+
+
+
+	resources = {
+		oil = 0
+		chromium = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		coal = 0
+
+	}
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+		victory_points = {
+			20170
+			15
+		}
+
+
+		
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 1
+			
+		}
+	}
+
+}

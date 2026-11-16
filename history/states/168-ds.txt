@@ -9,6 +9,7 @@ state={
 	local_supplies = 0
 	state_category = pastoral
 
+	impassable = yes
 
 	resources = {
 		oil = 0

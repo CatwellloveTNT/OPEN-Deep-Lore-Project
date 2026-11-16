@@ -1,0 +1,42 @@
+state={
+	id=1450
+	name="STATE_1450"
+	provinces={
+		28 34 36 595 597 601 610 612 616 620 628 632 633 634 636 640 642 647 648 649 650 651 652 658 659 662 663 2015 2016 2026 2030 2031 2034 2035 2036 2041 2118 2136 2563 2565 2566 2569 2570 2573 2579 2623 2654 2659 2666 2675 2734 2735 2749 2752 4097 4100 4104 4174 4178 4180 4183 4186 4190 4191 4426 4433 4434 4442 
+	}
+	manpower=3231
+	buildings_max_level_factor=1
+	local_supplies=0
+	state_category = pastoral
+
+	resources={
+		oil=0
+		chromium=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		coal=0
+	}
+
+
+	history = {
+		owner = ARC
+		add_core_of = ARC
+
+
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			radar_station = 0
+			dockyard = 0
+			air_base = 0
+		}
+	}
+
+
+
+
+}
