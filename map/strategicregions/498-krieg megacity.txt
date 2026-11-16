@@ -1,0 +1,9 @@
+strategic_region={
+	id=498
+	name="STRATEGICREGION_498"
+	provinces={
+		19697 19698 19699 19700 
+	}
+	weather={
+	}
+}

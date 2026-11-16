@@ -1,0 +1,9 @@
+strategic_region={
+	id=423
+	name="STRATEGICREGION_423"
+	provinces={
+		19931 19934 19936 19937 19941 19943 19944 19945 19948 
+	}
+	weather={
+	}
+}
