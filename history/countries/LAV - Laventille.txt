@@ -136,6 +136,52 @@ add_ideas = {
 	lav_growing_militarism_idea
 }
 
+
+# -------------------------------------- LAVENTILLE ECONOMY VARS --------------------------------------
+set_variable = { lav_eco_dynamic_st = 0.05 } #stability
+set_variable = { lav_eco_dynamic_mef = 0.00 } #max efficency cap
+set_variable = { lav_eco_dynamic_egf = -0.10 } #efficieny growth
+set_variable = { lav_eco_dynamic_icf = -0.05 } #factory output
+set_variable = { lav_eco_dynamic_cgf = 0.00 } #consumer goods factor
+set_variable = { lav_eco_dynamic_bf = 0.00 } #constrution speed
+set_variable = { lav_eco_dynamic_icd = 0.00 } #dockyard output
+set_variable = { lav_eco_dynamic_bunker_speed = 0.00 } #bunker build speed
+set_variable = { lav_eco_dynamic_adf = 0.0 } #enemy strat bombing on our factories factor
+set_variable = { lav_eco_dynamic_frf = 0.00 } #free repair factor
+set_variable = { lav_eco_dynamic_ref = 0.00 } #repair factor
+set_variable = { lav_eco_dynamic_lrf = 0.00 } #local resources factor
+set_variable = { lav_eco_dynamic_plrpf = 0.00 } #lack of resources penality factor
+# -------------------------------------- LAVENTILLE MILITARY VARS --------------------------------------
+set_variable = { laventille_ad_aethera_domandum_aaf = -0.1 } #army attack
+set_variable = { laventille_ad_aethera_domandum_adf = -0.1 } #army defense
+set_variable = { laventille_ad_aethera_domandum_asf = -0.1 } #army speed
+set_variable = { laventille_ad_aethera_domandum_aof = -0.05 } #army org
+set_variable = { laventille_ad_aethera_domandum_aor = -0.10 } #army org regain
+set_variable = { laventille_ad_aethera_domandum_btf = -0.1 } #army breakthrough
+set_variable = { laventille_ad_aethera_domandum_mpf = -0.10 } #max planning
+set_variable = { laventille_ad_aethera_domandum_pns = -0.1 } #lol pns #planning speed
+set_variable = { laventille_ad_aethera_domandum_spf = 0.05 } #supply consumption factor
+set_variable = { laventille_ad_aethera_domandum_mtl = 0.0 } #min training time
+set_variable = { laventille_ad_aethera_domandum_con = 0.00 } #recruitable pop %
+set_variable = { laventille_ad_aethera_domandum_crb = 0.0 } #coordination bonus
+set_variable = { laventille_ad_aethera_domandum_ahf = 0.00 } #army health
+set_variable = { laventille_ad_aethera_domandum_rcf = 0.00 } #recon factor
+set_variable = { laventille_ad_aethera_domandum_mdi = 0 } #max entrenchment
+set_variable = { laventille_ad_aethera_domandum_mdf = 0.00 } #entrenchment speed
+set_variable = { laventille_ad_aethera_domandum_lbef = 0.00 } #land fort effectiveness
+# -------------------------------------- LAVENTILLE AIR FORCE VARS --------------------------------------
+set_variable = { laventille_fieri_ventus_acf = 0.1} #air accidents
+set_variable = { laventille_fieri_ventus_aagf = -0.15} # air agility
+set_variable = { laventille_fieri_ventus_aatkf = -0.15} #air attack
+set_variable = { laventille_fieri_ventus_adf = -0.15} # air defense
+set_variable = { laventille_fieri_ventus_nstf = 0} # naval strike factor
+set_variable = { laventille_fieri_ventus_arf = 0.00} # air range
+set_variable = { laventille_fieri_ventus_ase = 0.0} # air superiority
+set_variable = { laventille_fieri_ventus_gtf = 0.0} # ground attack factor
+set_variable = { laventille_fieri_ventus_ahdf = 0.00} # air home defense factor
+set_variable = { laventille_fieri_ventus_asbc = 0 } # air_superiority_bonus_in_combat
+
+
 set_convoys = 2
 add_equipment_to_stockpile = {
 	type = train_equipment_1

@@ -1,0 +1,62 @@
+	LAV_economy_of_revenge = { #
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		stability_factor = lav_eco_dynamic_st
+		production_factory_max_efficiency_factor = lav_eco_dynamic_mef
+		production_factory_efficiency_gain_factor = lav_eco_dynamic_egf
+		industrial_capacity_factory = lav_eco_dynamic_icf
+		consumer_goods_factor = lav_eco_dynamic_cgf
+		production_speed_buildings_factor = lav_eco_dynamic_bf
+		industrial_capacity_dockyard = lav_eco_dynamic_icd
+		production_speed_bunker_factor = lav_eco_dynamic_bunker_speed
+		industry_air_damage_factor = lav_eco_dynamic_adf
+		industry_free_repair_factor = lav_eco_dynamic_frf
+		industry_repair_factor = lav_eco_dynamic_ref
+		local_resources_factor = lav_eco_dynamic_lrf
+		production_lack_of_resource_penalty_factor = lav_eco_dynamic_plrpf
+	}
+
+	LAV_ad_aethera_domandum = { #to tame the heavens
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		army_attack_factor = laventille_ad_aethera_domandum_aaf
+		army_defence_factor = laventille_ad_aethera_domandum_adf
+		army_speed_factor = laventille_ad_aethera_domandum_asf
+		army_org_factor = laventille_ad_aethera_domandum_aof
+		army_org_regain = laventille_ad_aethera_domandum_aor
+		breakthrough_factor = laventille_ad_aethera_domandum_btf
+		max_planning_factor = laventille_ad_aethera_domandum_mpf
+		planning_speed = laventille_ad_aethera_domandum_pns
+		supply_consumption_factor = laventille_ad_aethera_domandum_spf
+		minimum_training_level = laventille_ad_aethera_domandum_mtl
+		conscription = laventille_ad_aethera_domandum_con
+		coordination_bonus = laventille_ad_aethera_domandum_crb
+		army_strength_factor = laventille_ad_aethera_domandum_ahf
+		recon_factor = laventille_ad_aethera_domandum_rcf
+		max_dig_in = laventille_ad_aethera_domandum_mdi
+		land_bunker_effectiveness_factor = laventille_ad_aethera_domandum_lbef
+	}
+
+	LAV_fieri_ventus = { #to become the wind
+		icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+		enable = {
+			always = yes
+		}
+		air_accidents_factor = laventille_fieri_ventus_acf
+		air_agility_factor = laventille_fieri_ventus_aagf
+		air_attack_factor = laventille_fieri_ventus_aatkf
+ 		air_defence_factor = laventille_fieri_ventus_adf
+		naval_strike_targetting_factor = laventille_fieri_ventus_nstf
+		air_range_factor = laventille_fieri_ventus_arf
+		air_superiority_efficiency = laventille_fieri_ventus_ase
+		ground_attack_factor = laventille_fieri_ventus_gtf
+		air_home_defence_factor = laventille_fieri_ventus_ahdf
+		air_superiority_bonus_in_combat = laventille_fieri_ventus_asbc
+	}
+
+	
+

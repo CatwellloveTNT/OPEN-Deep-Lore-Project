@@ -144,3 +144,31 @@ TW_create_goons_and_equipment = { #this shit was kicking my ass before i figured
 
 }
 
+	eql_can_you_make_guys_please = {
+	allowed = {
+		tag = EQL
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 5
+	}
+
+
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = 2
+	}		
+	}
+

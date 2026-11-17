@@ -267,6 +267,13 @@ country_event = { #htf says no to giving land
 					}
 				}
 			}
+			hidden_effect = {
+				EQL = {
+					country_event = {
+						id = eql.1
+					}
+				}
+			}			
 
 
 	}
@@ -457,13 +464,23 @@ country_event = { #the nation breaks out into civil war!
 				add_ideas = i_do_not_want_you_to_surrender_bro_please
 				set_country_flag = lav_civil_war_active
 				clr_country_flag = lav_phase_1_point_5
+				clr_country_flag = lav_second_phase
 				mark_focus_tree_layout_dirty = yes
 			}
+
+			if = {
+				limit = { HTF = {
+					exists = no
+				} }
 
 			country_event = {
 				id = lav.24
 				days = 15
 			}
+
+			}
+
+
 
 		}
 		start_civil_war = {
@@ -594,6 +611,8 @@ country_event = { #arad speaks to her people, she vows revenge against arcadia a
 			remove_ideas = i_do_not_want_you_to_surrender_bro_please
 
 			complete_national_focus = LAV_revenge_tenfold
+			clr_country_flag = lav_phase_1_point_5
+			mark_focus_tree_layout_dirty = yes
 
 		}
 
