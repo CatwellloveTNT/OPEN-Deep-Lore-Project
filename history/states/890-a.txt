@@ -24,7 +24,7 @@ state={
 	history = {
 		owner = CLS
 		add_core_of = CLS
-		add_core_of = AMO
+		#add_core_of = AMO
 
 		victory_points = {
 			11594

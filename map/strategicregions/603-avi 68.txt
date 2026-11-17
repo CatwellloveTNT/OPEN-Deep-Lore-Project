@@ -5,5 +5,47 @@ strategic_region={
 		12096 12450 12451 12452 12456 12466 12467 12961 12965 13089 13091 13093 13099 13103 13174 13175 13177 13178 13179 13180 13182 13183 13184 13185 13186 13187 13188 13189 13190 13192 13193 13196 13197 13200 13201 13202 13204 13205 13207 13208 13209 13210 13211 13212 13213 13214 13215 13220 13221 13224 13225 13226 13227 13229 13230 13232 13233 13235 13236 13237 13242 13243 13244 13245 13248 13249 13250 13251 13252 13253 13254 13255 13257 19641 
 	}
 	weather={
+		period={
+			between={ 0.0 30.2 }
+			temperature={ -10.0 15.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.300
+			rain_heavy=0.100
+			snow=0.200
+			blizzard=0.050
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.3 30.6 }
+			temperature={ -5.0 20.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.250
+			rain_heavy=0.100
+			snow=0.050
+			blizzard=0.000
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.7 30.11 }
+			temperature={ -20.0 5.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.250
+			rain_heavy=0.100
+			snow=0.400
+			blizzard=0.200
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
 	}
 }

@@ -24,7 +24,7 @@ state={
 	history = {
 		owner = CLS
 		add_core_of = CLS
-		add_core_of = TRI
+	#	add_core_of = TRI
 
 		victory_points = {
 			11253
@@ -42,9 +42,6 @@ state={
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			111181 = {
-				naval_base = 0
-			}
 			
 		}
 	}

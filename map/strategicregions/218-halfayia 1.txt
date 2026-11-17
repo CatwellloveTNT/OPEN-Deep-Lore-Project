@@ -5,5 +5,47 @@ strategic_region={
 		964 965 966 967 968 969 970 971 972 973 1890 1891 1892 1898 1899 1900 1901 1902 1904 1906 1911 1912 1913 1914 1915 1916 1917 1919 1920 1921 1922 1923 1925 1926 1927 1928 1929 1968 1969 1975 1976 1980 1982 1988 1992 3305 3306 3307 3308 3309 4360 4361 4362 4363 4364 4365 4366 4367 4368 4513 4517 4520 4521 4526 20083 20084 20085 20092 20093 20096 20097 20099 20101 20106 
 	}
 	weather={
+		period={
+			between={ 0.0 30.2 }
+			temperature={ -10.0 15.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.300
+			rain_heavy=0.100
+			snow=0.200
+			blizzard=0.050
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.3 30.6 }
+			temperature={ -5.0 20.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.250
+			rain_heavy=0.100
+			snow=0.050
+			blizzard=0.000
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.7 30.11 }
+			temperature={ -20.0 5.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.250
+			rain_heavy=0.100
+			snow=0.400
+			blizzard=0.200
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
 	}
 }

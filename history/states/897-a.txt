@@ -24,7 +24,7 @@ state={
 	history = {
 		owner = CLS
 		add_core_of = CLS
-		add_core_of = TRI
+	#	add_core_of = TRI
 
 
 		buildings = {
@@ -34,9 +34,7 @@ state={
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			11594 = {
-				naval_base = 0
-			}
+
 			
 		}
 	}

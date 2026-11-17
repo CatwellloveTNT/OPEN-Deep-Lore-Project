@@ -24,7 +24,7 @@ state={
 	history = {
 		owner = CLS
 		add_core_of = CLS
-		add_core_of = AMO
+	#	add_core_of = AMO
 
 		victory_points = {
 			10447
@@ -33,7 +33,7 @@ state={
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 0
 			arms_factory = 0
 			radar_station = 0
 			dockyard = 0
