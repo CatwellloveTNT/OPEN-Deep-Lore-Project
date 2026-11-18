@@ -61,7 +61,7 @@ on_actions = { #holy FUCK this file looks like undertale
 	}
 
 
-	on_weekly = {
+	on_weekly = { #coming back here after working on The Circuit minigame, i can definitely revamp this in the future to be more optimized
 		effect = {
 # -------------------------------------------------------- PROTEA SHIT ------------------------------------------
 			if = {

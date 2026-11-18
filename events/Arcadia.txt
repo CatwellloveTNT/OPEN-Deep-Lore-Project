@@ -867,7 +867,60 @@ country_event = { #Arcadia catches wind of arad saying they will battle their wa
 
 	}
 }
+country_event = { #Laventille declares war on Nova Yanov, Starail realizes Laventille may be more serious about their goal of seeing Arcadia bleed than it initially seemed
+	id = arc.49
+	title = arc.49.t
+	desc = arc.49.d
+#	picture = GFX_placeholder_art
 
+	is_triggered_only = yes
+
+	option = { # How about we contact the Coalition, see if they help us out
+		name = arc.49.a
+		ai_chance = {factor = 100}
+
+
+		CLS = {
+			country_event = {
+				id = col.1072
+			}
+		}
+
+
+	}
+}
+country_event = { #cls agrees to support Nova Yanov
+	id = arc.50
+	title = arc.50.t
+	desc = arc.50.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # Nice!
+		name = arc.50.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = arc.34_tt
+
+	}
+}
+country_event = { #cls refuses to support Nova Yanov
+	id = arc.51
+	title = arc.51.t
+	desc = arc.51.d
+#	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { # That sucks
+		name = arc.51.a
+		ai_chance = {factor = 100}
+
+		custom_effect_tooltip = arc.35_tt
+
+	}
+}
 
 
 

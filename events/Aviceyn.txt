@@ -197,6 +197,207 @@ country_event = { #The Aryx wreck is destroyed
 
 	}
 }
+country_event = { #aviceyn comes up with the amazing idea to create L.A.T.S, which stands for Laventille, Aviceyn, Triste, Srakin. it is like brics but has more military connection
+	id = avi.11
+	title = avi.11.t
+	desc = avi.11.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Lets send the proposals
+		name = avi.11.a
+		ai_chance = {factor = 100}
+
+		add_ideas = lats_idea
+
+		TST = {
+			country_event = {
+				id = tst.88
+			}
+		}
+
+		NSK = {
+			country_event = {
+				id = nsk.2
+			}
+		}
+
+		LAV = {
+			country_event = {
+				id = lav.29
+			}
+		}
+
+	}
+}
+country_event = { #Laventille joins lats
+	id = avi.12
+	title = avi.12.t
+	desc = avi.12.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Theres L
+		name = avi.12.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+country_event = { #Triste joins lats
+	id = avi.13
+	title = avi.13.t
+	desc = avi.13.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Theres T
+		name = avi.13.a
+		ai_chance = {factor = 100}
+
+
+	}
+}
+country_event = { #NSK joins lats
+	id = avi.14
+	title = avi.14.t
+	desc = avi.14.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Y'know it would have been really awkward if they didn't join
+		name = avi.14.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			news_event = {
+				id = news.38
+				days = 1
+			}
+		}
+
+	}
+}
+country_event = { #Laventille requests economic aid
+	id = avi.15
+	title = avi.15.t
+	desc = avi.15.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #We see potential in you... Grant them aid.
+		name = avi.15.a
+		ai_chance = {factor = 100}
+
+		hidden_effect = {
+			LAV = {
+				country_event = {
+					id = lav.32
+				}
+			}
+		}
+
+	}
+}
+country_event = { #It becomes clear that laventille will be invading nova yanov
+	id = avi.16
+	title = avi.16.t
+	desc = avi.16.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #What?! Contact them at once!
+		name = avi.16.a
+		ai_chance = {factor = 100}
+
+			LAV = {
+				country_event = {
+					id = lav.36
+				}
+			}
+		
+
+	}
+}
+country_event = { #Laventille ignores the warning and begins final preparations to invade Nova Yanov
+	id = avi.17
+	title = avi.17.t
+	desc = avi.17.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #We have no choice but to stand against them then...
+		name = avi.17.a
+		ai_chance = {base = 80}
+
+			LAV = {
+				country_event = {
+					id = lav.37
+					days = 1
+				}
+			}
+
+			custom_effect_tooltip = extra_space
+			custom_effect_tooltip = avi_17_tt
+		
+
+	}
+	option = { #They can prove a greater ally than Nova Yanov... We'll let them off this once...
+		name = avi.17.b
+		ai_chance = {base = 20}
+
+			LAV = {
+				country_event = {
+					id = lav.38
+					days = 1
+				}
+			}
+		
+
+	}	
+}
+country_event = { #Laventille invades nova yanov, aviceyn sends in the troops
+	id = avi.18
+	title = avi.18.t
+	desc = avi.18.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #idiots
+		name = avi.18.a
+		ai_chance = {factor = 100}	
+
+		add_timed_idea = {
+			idea = extra_expeditionary_forces_idea
+			days = 30
+		}
+
+	}
+}
+country_event = { #Coalition forces move to support nova yanov
+	id = avi.19
+	title = avi.19.t
+	desc = avi.19.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+	option = { #Why the hell would they do that?!
+		name = avi.19.a
+		ai_chance = {factor = 100}	
+
+
+	}
+}
+
 
 
 

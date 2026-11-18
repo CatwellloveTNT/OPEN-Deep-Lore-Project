@@ -175,7 +175,7 @@ lav_the_country_collapses = {
 	lav_the_clock_strikes_twelve = {
 		priority = 320
 		icon = GFX_decision_eng_trade_unions_support
-		days_mission_timeout = 200
+		days_mission_timeout = 365
 		is_good = no
 		days_re_enable = 1
 
@@ -260,6 +260,10 @@ lav_wars_of_revenge = {
 
 			mark_focus_tree_layout_dirty = yes
 
+			country_event = {
+				id = lav.35
+			}
+
 
 		}
 
@@ -273,6 +277,60 @@ lav_wars_of_revenge = {
 			factor = 0
 		}
 	}
+
+	lav_defeat_nova_yanov = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 365
+		is_good = no
+		days_re_enable = 5
+
+
+		activation = {
+			LAV = {
+				has_war_with = YAN
+			}
+		}
+
+		available = {
+			YAN = {
+				exists = no
+			}
+		
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			LAV = {
+				has_war_with = YAN
+			}
+		}
+
+
+		complete_effect = {
+
+			set_country_flag = lav_wor_phase_3
+
+			mark_focus_tree_layout_dirty = yes
+
+			country_event = {
+				id = lav.35
+			}
+
+
+		}
+
+		timeout_effect = {
+
+
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
 
 
 

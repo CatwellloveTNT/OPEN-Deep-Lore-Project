@@ -622,5 +622,35 @@ news_event = { #arad wins the civil war
 	}
 
 }
+news_event = { #L.A.T.S is formed
+	id = news.38
+	title = news.38.t
+	desc = news.38.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.38.a
+	}
+
+}
+news_event = { #L.A.T.S is formed
+	id = news.39
+	title = news.39.t
+	desc = news.39.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.39.a
+	}
+
+}
 
 

@@ -207,5 +207,94 @@ country_groups = {
         SUS
     }
 
+    nations_of_avian_majority = {
+   AVI
+	 YAN
+	FFL
+	TTW
+	NSK
+	SSK
+	KOR
+	XPA
+	FRE
+	RFS
+	KAV
+	VAL
+	AAT
+    }
+
+    nations_of_pony_majority = {
+ 		ARC
+		TST
+		LAV
+		NOR	
+		CLA
+		HTF
+		EQL
+		OSH
+		URA
+		CAE
+		FER
+		ARI
+		PTA
+		FEM
+		PFC
+		CRE
+		MAY
+		PPT
+		KLD
+		HAL
+		GRU
+		NAV
+	    CZA
+		INS
+		MAZ
+		MOT
+		CHA
+		VER
+		XIL
+		SUS
+		PLA
+		CEN	
+		VMD
+		KIR
+		FEO
+		SPA
+		ZEB
+		ALK
+		HAK
+		CHF
+		FLA
+		RON
+		ATX
+		SAV
+		LEG
+		ALV
+		HAT
+		KAT
+		KIT
+		MAT
+		MON
+		VET
+		VAT
+		ART       
+    }
+
+    nations_of_human_majority = {
+
+
+	    CLS
+		PRO 
+		RAV
+		NEW
+		CAT
+		TAM	
+    	CSF
+		COL
+		EHK
+
+
+    }
+
 
 }

@@ -14,6 +14,10 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 2200 }
 
+
+
+	
+
 	focus = { #this is how the player selects a candidate for election, just arad for now
 		id = LAV_race_for_the_polls
 		icon = GFX_goal_generic_consumer_goods
@@ -2210,7 +2214,7 @@ focus_tree = {
 		cost = 1
 
 		available = {
-		has_army_manpower = { size > 150000 } #80 div
+		has_army_manpower = { size > 150000 } 
 		}
 		
 		bypass = {
@@ -2229,6 +2233,8 @@ focus_tree = {
 
 		completion_reward = {
 						
+			set_country_flag = lav_war_of_revenge_flag
+
 			LAV = {
 				declare_war_on = {
 					target = EQL
@@ -2287,11 +2293,81 @@ focus_tree = {
 
 		}
 	}	
+
+	focus = { #
+		id = LAV_subdue_nova_yanov
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_claw_our_way_to_arcadia
+		prerequisite = {
+			focus = LAV_claw_our_way_to_arcadia		
+		}
+			
+		cost = 5
+
+		available = {
+		has_army_manpower = { size > 250000 }
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		select_effect = {
+			AVI = {
+				country_event = {
+					id = avi.16
+					days = 2
+				}
+			}
+		}
+		
+
+		completion_reward = {
+						
+
+			LAV = {
+				declare_war_on = {
+					target = YAN
+					type = annex_everything
+				}
+			}
+
+			hidden_effect = {
+				AVI = {
+					country_event = {
+						id = avi.18
+					}
+				}
+				ARC = {
+					country_event = {
+						id = arc.49
+					}
+				}			
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
 	
 	focus = { #
 		id = LAV_our_new_economic_system
 		icon = GFX_goal_generic_consumer_goods
-		x = -5
+		x = -11
 		y = 1
 		relative_position_id = LAV_revenge_tenfold
 		prerequisite = {
@@ -2300,7 +2376,118 @@ focus_tree = {
 			
 		cost = 4
 		available = {
-			always = no
+			has_country_flag = is_lats_member
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+			mark_focus_tree_layout_dirty = yes
+						
+			add_dynamic_modifier = {
+				modifier = LAV_economy_of_revenge
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+	focus = { #
+		id = LAV_call_for_economic_aid
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_our_new_economic_system
+		prerequisite = {
+			focus = LAV_our_new_economic_system		
+		}
+			
+		cost = 4
+		available = {
+			has_country_flag = is_lats_member
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = is_lats_member
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			custom_override_tooltip = {
+				tooltip = lav_call_for_eco_aid_tt
+
+
+				AVI = {
+					country_event = {
+						id = avi.15
+					}
+				}
+				TST = {
+					country_event = {
+						id = tst.89
+					}
+				}
+
+			}
+
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_the_aviceynian_aid_package
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = LAV_call_for_economic_aid
+		prerequisite = {
+			focus = LAV_call_for_economic_aid		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = lav_aviceyn_greenlit_eco_aid
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
 		}
 		
 		bypass = {
@@ -2319,9 +2506,6 @@ focus_tree = {
 
 		completion_reward = {
 						
-			add_dynamic_modifier = {
-				modifier = LAV_economy_of_revenge
-			}
 
 		}
 
@@ -2332,9 +2516,694 @@ focus_tree = {
 	}
 	
 	focus = { #
+		id = LAV_the_tools_of_war
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_the_aviceynian_aid_package
+		prerequisite = {
+			focus = LAV_the_aviceynian_aid_package		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+	focus = { #
+		id = LAV_specalized_production_facilities
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = LAV_the_tools_of_war
+		prerequisite = {
+			focus = LAV_the_tools_of_war		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+	
+	focus = { #
+		id = LAV_aviceynian_economic_advisors
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_the_aviceynian_aid_package
+		prerequisite = {
+			focus = LAV_the_aviceynian_aid_package		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_our_means_of_defense
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_the_aviceynian_aid_package
+		prerequisite = {
+			focus = LAV_the_aviceynian_aid_package		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_shielded_factories
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = LAV_our_means_of_defense
+		prerequisite = {
+			focus = LAV_our_means_of_defense		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_domestic_aircraft_production
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = LAV_aviceynian_economic_advisors
+		prerequisite = {
+			focus = LAV_aviceynian_economic_advisors 		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_domestic_tank_production
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = LAV_aviceynian_economic_advisors
+		prerequisite = {
+			focus = LAV_aviceynian_economic_advisors 		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_the_beginning_of_something_beautiful
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 4
+		relative_position_id = LAV_the_aviceynian_aid_package
+		prerequisite = {
+			focus = LAV_domestic_aircraft_production 	
+		}
+		prerequisite = {
+			focus = LAV_domestic_tank_production 		
+		}		
+		prerequisite = {
+			focus = LAV_shielded_factories focus = LAV_specalized_production_facilities 		
+		}		
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			AVI = {
+				exists = yes
+			}
+			}
+
+		}
+		
+		bypass = {
+			AVI = {
+				exists = no
+			}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_the_tristan_aid_package
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = LAV_call_for_economic_aid
+		prerequisite = {
+			focus = LAV_call_for_economic_aid		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = lav_triste_greenlit_eco_aid
+			has_country_flag = is_lats_member
+			TST = {
+				AND = {
+					has_war = no
+					exists = yes
+				}
+			}
+			}
+
+		}
+		
+		bypass = {
+			OR = {
+
+			
+			TST = {
+				OR = {
+					has_war = yes
+					exists = no
+				}
+			}
+			LAV = {
+				has_country_flag = lav_triste_no_eco_aid
+			}
+		}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_advanced_metallurgy_equipment
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_the_tristan_aid_package
+		prerequisite = {
+			focus = LAV_the_tristan_aid_package		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = lav_triste_greenlit_eco_aid
+			has_country_flag = is_lats_member
+			TST = {
+				AND = {
+					has_war = no
+					exists = yes
+				}
+			}
+			}
+
+		}
+		
+		bypass = {
+			OR = {
+
+			
+			TST = {
+				OR = {
+					has_war = yes
+					exists = no
+				}
+			}
+			LAV = {
+				has_country_flag = lav_triste_no_eco_aid
+			}
+		}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+	
+	focus = { #iron pickaxe :money_mouth:
+		id = LAV_improved_mining_equipment
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_advanced_metallurgy_equipment
+		prerequisite = {
+			focus = LAV_advanced_metallurgy_equipment		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = lav_triste_greenlit_eco_aid
+			has_country_flag = is_lats_member
+			TST = {
+				AND = {
+					has_war = no
+					exists = yes
+				}
+			}
+			}
+
+		}
+		
+		bypass = {
+			OR = {
+
+			
+			TST = {
+				OR = {
+					has_war = yes
+					exists = no
+				}
+			}
+			LAV = {
+				has_country_flag = lav_triste_no_eco_aid
+			}
+		}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_help_most_useful
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_improved_mining_equipment
+		prerequisite = {
+			focus = LAV_improved_mining_equipment		
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = lav_triste_greenlit_eco_aid
+			has_country_flag = is_lats_member
+			TST = {
+				AND = {
+					has_war = no
+					exists = yes
+				}
+			}
+			}
+
+		}
+		
+		bypass = {
+			OR = {
+
+			
+			TST = {
+				OR = {
+					has_war = yes
+					exists = no
+				}
+			}
+			LAV = {
+				has_country_flag = lav_triste_no_eco_aid
+			}
+		}
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_our_great_leap
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 6
+		relative_position_id = LAV_call_for_economic_aid
+		prerequisite = {
+			focus = LAV_the_beginning_of_something_beautiful		
+		}
+
+		prerequisite = {
+			focus = LAV_help_most_useful
+		}
+			
+		cost = 4
+		available = {
+			AND = {
+			has_country_flag = is_lats_member
+			}
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+	
+	focus = { #
 		id = LAV_our_army_of_conquest
 		icon = GFX_goal_generic_consumer_goods
-		x = 5
+		x = 11
 		y = 1
 		relative_position_id = LAV_revenge_tenfold
 		prerequisite = {
@@ -2365,6 +3234,840 @@ focus_tree = {
 			add_dynamic_modifier = {
 				modifier = LAV_ad_aethera_domandum
 			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_ruthless_aggression
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		relative_position_id = LAV_our_army_of_conquest
+		prerequisite = {
+			focus = LAV_our_army_of_conquest		
+		}
+		mutually_exclusive = {
+			focus = LAV_methodical_destruction
+		}
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_promote_the_bold
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_ruthless_aggression
+		prerequisite = {
+			focus = LAV_ruthless_aggression		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_mechanize_the_armed_forces
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_promote_the_bold
+		prerequisite = {
+			focus = LAV_promote_the_bold		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+	focus = { #
+		id = LAV_focus_on_troop_survivability
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = LAV_mechanize_the_armed_forces
+		prerequisite = {
+			focus = LAV_mechanize_the_armed_forces		
+		}
+		mutually_exclusive = {
+			focus = LAV_focus_on_breakthrough_capaicty
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_focus_on_breakthrough_capaicty
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = LAV_mechanize_the_armed_forces
+		prerequisite = {
+			focus = LAV_mechanize_the_armed_forces		
+		}
+		mutually_exclusive = {
+			focus = LAV_focus_on_troop_survivability
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+	
+	focus = { #
+		id = LAV_the_future_tank_initative
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_promote_the_bold
+		prerequisite = {
+			focus = LAV_promote_the_bold		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_aquire_aviceynian_shields
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = LAV_the_future_tank_initative
+		prerequisite = {
+			focus = LAV_the_future_tank_initative		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_the_l_66_gun
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = LAV_the_future_tank_initative
+		prerequisite = {
+			focus = LAV_the_future_tank_initative		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_trial_true_combined_arms_warfare
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = LAV_promote_the_bold
+		prerequisite = {
+			focus = LAV_promote_the_bold	
+		}
+		prerequisite = {
+			focus = LAV_the_l_66_gun focus = LAV_aquire_aviceynian_shields focus = LAV_focus_on_breakthrough_capaicty focus = LAV_focus_on_troop_survivability
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+	
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_methodical_destruction
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = LAV_our_army_of_conquest
+		prerequisite = {
+			focus = LAV_our_army_of_conquest		
+		}
+		mutually_exclusive = {
+			focus = LAV_ruthless_aggression
+		}
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			add_days_mission_timeout = {
+				mission = lav_the_clock_strikes_twelve
+				days = 45
+			}
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_commission_eastpoint
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_methodical_destruction
+		prerequisite = {
+			focus = LAV_methodical_destruction		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_intensify_the_courses
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		relative_position_id = LAV_commission_eastpoint
+		prerequisite = {
+			focus = LAV_commission_eastpoint		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_promote_the_competent
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_methodical_destruction
+		prerequisite = {
+			focus = LAV_methodical_destruction		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_tacmap_innovations
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = LAV_promote_the_competent
+		prerequisite = {
+			focus = LAV_promote_the_competent focus = LAV_commission_eastpoint
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_improved_orgaint_capabilities
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = LAV_promote_the_competent
+		prerequisite = {
+			focus = LAV_promote_the_competent focus = LAV_consult_foreign_advisors
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_consult_foreign_advisors
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_methodical_destruction
+		prerequisite = {
+			focus = LAV_methodical_destruction		
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_approach_aviceyn
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 2
+		relative_position_id = LAV_consult_foreign_advisors
+		prerequisite = {
+			focus = LAV_consult_foreign_advisors		
+		}
+
+			
+		cost = 4
+		available = {
+			has_country_flag = is_lats_member # L.A.T.S stands for Laventille, Aviceyn, Triste, Srakin. its BRICS with more military connection
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_expand_the_scope
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 3
+		relative_position_id = LAV_promote_the_competent
+		prerequisite = {
+			focus = LAV_improved_orgaint_capabilities		
+		}
+		prerequisite = {
+			focus = LAV_tacmap_innovations		
+		}		
+
+			
+		cost = 4
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_weve_got_bigger_fish_to_fry
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 7
+		relative_position_id = LAV_our_army_of_conquest
+		prerequisite = {
+			focus = LAV_expand_the_scope		
+		}
+		prerequisite = {
+			focus = LAV_trial_true_combined_arms_warfare		
+		}		
+
+			
+		cost = 4
+		available = {
+			EQL = {
+				exists = no
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			country_event = {
+				id = lav.28
+			}
+
 
 		}
 

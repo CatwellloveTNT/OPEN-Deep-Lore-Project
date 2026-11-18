@@ -2224,6 +2224,80 @@ country_event = { #event that kicks off the circuit
 	}
 }
 
+country_event = { #Arcadia sends the coalition states a request to intervene in Nova Yanov
+	id = col.1072
+	title = col.1072.t
+	desc = col.1072.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { #Fight alongside Second World Avians?... Fine, if only for them
+		name = col.1072.a
+		ai_chance = {base = 80}	
+	
+		add_to_variable = {
+			global.coalition_said_yes = 1
+		}
+
+		add_timed_idea = {
+			idea = extra_expeditionary_forces_idea
+			days = 30
+		}
+
+		custom_effect_tooltip = extra_space		
+		custom_effect_tooltip = col_1072_a_tt
+		custom_effect_tooltip = extra_space			
+		custom_effect_tooltip = col.1032_a_tt
+		custom_effect_tooltip = extra_space		
+
+		ARC = {
+			country_event = {
+				id = arc.50
+				days = 1
+			}
+		}
+
+		hidden_effect = {
+			AVI = {
+				country_event = {
+					id = avi.19
+					days = 1
+				}
+			}
+			LAV = {
+				country_event = {
+					id = lav.39
+					days = 2
+				}
+			}
+		}
+
+
+	}
+	option = { #Arcadia should know by now our views on fighting alongside those Second Worlders
+		name = col.1072.b
+		ai_chance = {base = 20}	
+	
+		add_to_variable = {
+			global.coalition_said_no = 1
+
+		}
+		custom_effect_tooltip = extra_space
+			custom_effect_tooltip = col_1072_b_tt	
+		custom_effect_tooltip = extra_space		
+
+		ARC = {
+			country_event = {
+				id = arc.51
+				days = 1
+			}
+		}			
+
+	}	
+}
+
 
 
 country_event = { #testing event that makes the coalition not make divions

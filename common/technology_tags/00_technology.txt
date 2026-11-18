@@ -207,15 +207,18 @@ technology_folders = {
 	pony_genetics_folder = {
 		ledger = civilian
 		available = {
+		any_country = {
 		has_idea = pony_majority_population
-		}		
-
 		NOT = {
 			OR = {
 				has_idea = human_majority_population
 				has_idea = avian_majority_population
 			}
+		}			
+		}
+
 		}		
+	
 
 	}	
 

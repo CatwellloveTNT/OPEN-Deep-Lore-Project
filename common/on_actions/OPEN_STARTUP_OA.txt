@@ -182,7 +182,28 @@ on_actions = {
 
 		}
 
+		effect = { # ----------------------------- START GAME SPECIES SETUP ------------------------------
+
+		# i learn something new every time i look at EAW's code
+		every_collection_element = {
+			input = collection:pony_majority_nations
+			add_ideas = pony_majority_population
+		}
+		every_collection_element = {
+			input = collection:human_majority_nations
+			add_ideas = human_majority_population
+		}
+		every_collection_element = {
+			input = collection:avian_majority_nations
+			add_ideas = avian_majority_population
+		}		
+
+
+		}
+
+
 		effect = { # ----------------------------- START GAME GOON SETUP ------------------------------
+
 
 		PRO = {
 			535 = {

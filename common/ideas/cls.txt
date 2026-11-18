@@ -381,7 +381,65 @@ ideas = {
 				naval_invasion_division_cap = 20
 				naval_invasion_prep_speed = 20
 			}
-		}			
+		}	
+		
+		extra_expeditionary_forces_idea = {
+			picture = solaris_1
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 5
+			}
+		}
+		
+		cls_east_to_west_tension_very_tense_idea = {
+			picture = solaris_1
+
+			allowed = {
+				TAG = CLS
+			}
+
+			available = {
+			
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.25
+				offensive_war_stability_factor = -0.15
+				defensive_war_stability_factor = -0.15
+				conscription_factor = -0.50
+			}
+		}		
 
 
 	}

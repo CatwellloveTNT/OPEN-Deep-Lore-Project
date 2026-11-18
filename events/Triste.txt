@@ -1789,6 +1789,72 @@ country_event = { #the second roadtrip war kicks off
 
 }
 
+country_event = { #event that aviceyn shoots to triste asking them if they want to joins LATS
+	id = tst.88
+	title = tst.88.t
+	desc = tst.88.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Of Course!
+		name = tst.88.a	
+		ai_chance = {factor = 100}	
+
+		hidden_effect = {
+			AVI = {
+				country_event = {
+					id = avi.13
+					days = 3
+				}
+			}
+		}
+
+		add_ideas = lats_idea
+
+	}
+
+}
+country_event = { #laventille requests aid
+	id = tst.89
+	title = tst.89.t
+	desc = tst.89.d
+
+	is_triggered_only = yes
+
+
+
+	option = { #Sure
+		name = tst.89.a	
+		ai_chance = {base = 80}	
+
+		hidden_effect = {
+			LAV = {
+				country_event = {
+					id = lav.33
+				}
+			}
+		}
+
+	}
+	option = { #I'm sorry friends, not this time
+		name = tst.89.b
+		ai_chance = {base = 20}	
+
+		hidden_effect = {
+			LAV = {
+				country_event = {
+					id = lav.34
+				}
+			}
+		}
+
+	}
+
+
+}
+
 country_event = { #testing event to reset points in the circuit minigame
 	id = tst.6100
 	title = tst.61.t

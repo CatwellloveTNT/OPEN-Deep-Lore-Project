@@ -38,6 +38,31 @@ country_event = {
 	}
 
 }
+country_event = { #event that aviceyns shoots asking to join lats
+	id = nsk.2
+	title = nsk.2.t
+	desc = nsk.2.d
+	picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { # yea bro word
+		name = nsk.2.a
+		ai_chance = {factor = 100}
+
+		add_ideas = lats_idea
+		hidden_effect = {
+			AVI = {
+				country_event = {
+					id = avi.14
+					days = 5
+				}
+			}
+		}		
+
+	}
+
+}
 
 
 

@@ -666,7 +666,7 @@ country_event = { #arcadia totally cuts off laventille from the outside world, n
 	is_triggered_only = yes
 
 	option = { #Not this shit again
-		name = lav.26.a
+		name = lav.27.a
 		ai_chance = {factor = 100}	
 
 		set_country_flag = lav_war_of_conquest_flag
@@ -707,6 +707,258 @@ country_event = { #arcadia totally cuts off laventille from the outside world, n
 		custom_effect_tooltip = extra_space
 
 		custom_effect_tooltip = lav_27_tt
+
+		custom_effect_tooltip = extra_space
+
+		custom_effect_tooltip = lav_35_tt
+
+	}
+
+}
+country_event = { #event that pushes laventille onto the second phase of its military focus tree
+	id = lav.28
+	title = lav.28.t
+	desc = lav.28.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Not this shit again
+		name = lav.28.a
+		ai_chance = {factor = 100}	
+
+		set_country_flag = lav_military_tree_second_phase
+
+		custom_effect_tooltip = lav_28_tt
+
+	}
+
+}
+country_event = { #eventt that aviceyn shoots to ask if they want to join lats
+	id = lav.29
+	title = lav.29.t
+	desc = lav.29.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #of course
+		name = lav.29.a
+		ai_chance = {factor = 100}	
+
+		set_country_flag = is_lats_member
+		add_ideas = lats_idea
+
+		mark_focus_tree_layout_dirty = yes
+
+		custom_effect_tooltip = extra_space
+
+		custom_effect_tooltip = lav_29_tt		
+
+		hidden_effect = {
+			AVI = {
+				country_event = {
+					id = avi.12
+					days = 1
+				}
+			}
+		}
+
+	}
+
+}
+country_event = { #we request economic aid from aviceyn
+	id = lav.30
+	title = lav.30.t
+	desc = lav.30.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Let's hope for the best
+		name = lav.30.a
+		ai_chance = {factor = 100}	
+
+		hidden_effect = {
+			AVI = {
+				country_event = {
+					id = avi.15
+					days = 1
+				}
+			}
+		}
+
+	}
+
+}
+country_event = { #we request economic aid from triste
+	id = lav.31
+	title = lav.31.t
+	desc = lav.31.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #of course
+		name = lav.31.a
+		ai_chance = {factor = 100}	
+
+
+		hidden_effect = {
+			TST = {
+				country_event = {
+					id = tst.89
+					days = 1
+				}
+			}
+		}
+
+	}
+
+}
+
+country_event = { #Aviceyn gives lavnetille eco aid
+	id = lav.32
+	title = lav.32.t
+	desc = lav.32.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Perfect!
+		name = lav.32.a
+		ai_chance = {factor = 100}	
+
+		set_country_flag = lav_aviceyn_greenlit_eco_aid
+
+	}
+
+}
+country_event = { #Triste gives lavnetille eco aid
+	id = lav.33
+	title = lav.33.t
+	desc = lav.33.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Nice
+		name = lav.33.a
+		ai_chance = {factor = 100}	
+
+		set_country_flag = lav_triste_greenlit_eco_aid
+
+	}
+
+}
+country_event = { #Triste does not give lavnetille eco aid
+	id = lav.34
+	title = lav.34.t
+	desc = lav.34.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Unfortunate...
+		name = lav.34.a
+		ai_chance = {factor = 100}	
+
+		set_country_flag = lav_triste_no_eco_aid
+
+	}
+
+}
+country_event = { #lav wins against equiland
+	id = lav.35
+	title = lav.35.t
+	desc = lav.35.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #The empire has been restored, but there is more to gain...
+		name = lav.35.a
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = lav_35_tt		
+
+	}
+
+}
+country_event = { #aviceyn sends laventille a warning to not invade nova yanov
+	id = lav.36
+	title = lav.36.t
+	desc = lav.36.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Who are you to tell us how to act?
+		name = lav.36.a
+		ai_chance = {factor = 100}		
+
+		AVI = {
+			country_event = {
+				id = avi.17
+			}
+		}
+
+	}
+
+}
+country_event = { #aviceyn threatens laventille in a last ditch attempt to stop them from invading
+	id = lav.37
+	title = lav.37.t
+	desc = lav.37.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #all of these empires are the same, brutish and uncivilized
+		name = lav.37.a
+		ai_chance = {factor = 100}		
+
+		custom_effect_tooltip = lav_37_tt
+
+	}
+
+}
+country_event = { #aviceyn begrudingly allows in invasion of Nova Yanov
+	id = lav.38
+	title = lav.38.t
+	desc = lav.38.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #not like we needed permission in the first place
+		name = lav.38.a
+		ai_chance = {factor = 100}		
+
+		custom_effect_tooltip = lav_38_tt
+
+	}
+
+}
+country_event = { #The Coalition intervenes in Nova Yanov!
+	id = lav.39
+	title = lav.39.t
+	desc = lav.39.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #No doubt due to Arcadian meddling
+		name = lav.39.a
+		ai_chance = {factor = 100}		
+
+
+		hidden_effect = {
+			news_event = {
+				id = news.39
+				days = 1
+			}
+		}
 
 	}
 

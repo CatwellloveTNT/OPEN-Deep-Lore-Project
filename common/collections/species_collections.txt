@@ -1,0 +1,12 @@
+human_majority_nations = {
+	input = constant:country_groups.nations_of_human_majority
+	name = COLLECTION_HUMAN_NATIONS_AT_GAME_START
+}
+avian_majority_nations = {
+	input = constant:country_groups.nations_of_avian_majority
+	name = COLLECTION_AVIAN_NATIONS_AT_GAME_START
+}
+pony_majority_nations = {
+	input = constant:country_groups.nations_of_pony_majority
+	name = COLLECTION_PONY_NATIONS_AT_GAME_START
+}

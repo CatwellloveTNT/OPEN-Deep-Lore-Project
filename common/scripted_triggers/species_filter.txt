@@ -1,0 +1,93 @@
+set_human_majority_idea = {
+	OR = {
+		original_tag = CLS
+		original_tag = PRO 
+		original_tag = RAV
+		original_tag = NEW
+		original_tag = CAT
+		original_tag = TAM	
+    	original_tag = CSF
+		original_tag = COL
+		original_tag = EHK
+		
+	}
+}
+
+set_pony_majority_idea = {
+	OR = {
+		original_tag = ARC
+		original_tag = TST
+		original_tag = LAV
+		original_tag = NOR	
+		original_tag = CLA
+		original_tag = HTF
+		original_tag = EQL
+		original_tag = OSH
+		original_tag = URA
+		original_tag = CAE
+		original_tag = FER
+		original_tag = ARI
+		original_tag = PTA
+		original_tag = FEM
+		original_tag = PFC
+		original_tag = CRE
+		original_tag = MAY
+		original_tag = PPT
+		original_tag = KLD
+		original_tag = HAL
+		original_tag = GRU
+		original_tag = NAV
+		original_tag = CZA
+		original_tag = INS
+		original_tag = MAZ
+		original_tag = MOT
+		original_tag = CHA
+		original_tag = VER
+		original_tag = XIL
+		original_tag = SUS
+		original_tag = PLA
+		original_tag = CEN	
+		original_tag = VMD
+		original_tag = KIR
+		original_tag = FEO
+		original_tag = SPA
+		original_tag = ZEB
+		original_tag = ALK
+		original_tag = HAK
+		original_tag = CHF
+		original_tag = FLA
+		original_tag = RON
+		original_tag = ATX
+		original_tag = SAV
+		original_tag = LEG
+		original_tag = ALV
+		original_tag = HAT
+		original_tag = KAT
+		original_tag = KIT
+		original_tag = MAT
+		original_tag = MON
+		original_tag = VET
+		original_tag = VAT
+		original_tag = ART
+
+	}
+}
+
+set_avian_majority_idea = {
+	OR = {
+    original_tag = AVI
+	original_tag = YAN
+	original_tag = FFL
+	original_tag = TTW
+	original_tag = NSK
+	original_tag = SSK
+	original_tag = KOR
+	original_tag = XPA
+	original_tag = FRE
+	original_tag = RFS
+	original_tag = KAV
+	original_tag = VAL
+	original_tag = AAT
+
+	}
+}
