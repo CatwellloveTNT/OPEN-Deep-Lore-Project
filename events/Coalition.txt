@@ -2342,6 +2342,31 @@ country_event = { #testing event that makes the coalition make divions
 
 	}
 }
+country_event = { #testing event that makes the coalition make divions 
+	id = col.10002
+	title = col.10001.t
+	desc = col.1071.d
+	picture = GFX_placeholder_art
+
+	is_triggered_only = yes
+
+
+	option = { #lets push them back
+		name = col.1071.a
+		ai_chance = {factor = 100}	
+
+		CLS = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			add_relation_rule_override = {
+				can_send_volunteers = yes
+			}
+		}
+	
+
+	}
+}
 
 
 

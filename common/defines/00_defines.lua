@@ -1,8 +1,8 @@
 NDefines = {
 
 NGame = {
-	START_DATE = "2032.1.1.12",
-	END_DATE = "2042.1.1.1",
+	START_DATE = "2032.1.1.12", --altered by OP:EN
+	END_DATE = "2042.1.1.1",	--altered by OP:EN
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
 	SAVE_VERSION = 33,								-- 1.17.0 (Case Green)
 	MINOR_SAVE_VERSION = 0,                         -- Minor save version is used to identifiy different backward compatible savegame versions
@@ -10,10 +10,10 @@ NGame = {
 	LAG_DAYS_FOR_LOWER_SPEED = 10,					-- Days of client lag for decrease of gamespeed
 	LAG_DAYS_FOR_PAUSE = 25,						-- Days of client lag for pause of gamespeed.
 	GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.0 }, -- game speeds for each level. Must be 5 entries with last one 0 for unbound
-	MAJOR_PARTICIPANTS_FOR_MAJOR_WAR = 2,			-- Minimum number of major countries involved in a war to consider it major enough to not end the game even though the enddate has been reached.
+	MAJOR_PARTICIPANTS_FOR_MAJOR_WAR = 2, -- altered by OP:EN, original value was 3			-- Minimum number of major countries involved in a war to consider it major enough to not end the game even though the enddate has been reached.
 	TRADE_ROUTE_RECALCULATE_FREQUENCY_DAYS = 45, -- Max recalculation time for all trade routes (0 means we do not recalucate prediodically trade routes)
 	COMBAT_LOG_MAX_MONTHS = 12,
-	MESSAGE_TIMEOUT_DAYS = 30,						-- Useful if running the handsoff game. The popup messages that doesn't require the player respond will automatically hide after some timeout.
+	MESSAGE_TIMEOUT_DAYS = 30,				-- altered by OP:EN, i think. original value was 60		-- Useful if running the handsoff game. The popup messages that doesn't require the player respond will automatically hide after some timeout.
 	INFO_MESSAGE_TIMEOUT_DAYS = 3,					-- Same but for unimportant messages.
 	AIR_LOG_TIMEOUT_HOURS = 24,						-- Data storring data
 	EVENT_TIMEOUT_DEFAULT = 13,						-- Default days before an event times out if not scripted
@@ -24,7 +24,7 @@ NGame = {
 	ENERGY_RESOURCE = "coal",						-- resource that will give country energy 
 	MAX_EFFECT_ITERATION = 1000,					-- maximum allowed iteration for loop effects
 	MAX_SCRIPTED_LOC_RECURSION = 30,				-- max recursion for scripted localizations
-	HANDS_OFF_START_TAG = "MSB",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
+	HANDS_OFF_START_TAG = "MSB",		-- altered by OP:EN, original tag was HAI, but they obviously dont exist in open			-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
 	ALERT_SFX_COOLDOWN_DAYS = 14,					-- After playing an alert sound, don't play the same sound for XXX days, even if it fires again.
 	MUSIC_PLAYER_RECENTLY_PLAYED_SIZE = 10,			-- The music player keeps track of recently played music to try and avoid playing the same songs too often. This determines the max number of songs in the recently played list.
 },
@@ -34,11 +34,18 @@ NGeography = {
 },
 
 NDiplomacy = {
+
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END BELOW ##################################### --
+	VOLUNTEERS_RECALL_DAYS_PER_UNIT = 2,	-- days to recall a unit, scales linearly for each army unit in the recall order	
+	SEND_VOLUNTEERS_AGAIN_COOLDOWN = 7,	 -- altered by OP:EN, original value was 180 		-- How long after recalling volunteers can you send volunteers to the same country (Days)
+	RECALL_VOLUNTEERS_AFTER_ARRIVAL_COOLDOWN = 7, -- altered by OP:EN, original value was 180 -- How long after arriving can the volunteers be recalled (Days)
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END ABOVE ##################################### --
+
 	DIPLOMACY_REQUEST_EXPIRY_DAYS = 30,
 	BASE_SURRENDER_LEVEL = 1.0,						-- Surrender when level reached. valid 0-1
-	MAX_TRUST_VALUE = 200,							-- Max trust value cap.
+	MAX_TRUST_VALUE = 200,		-- altered by OP:EN, original value was 100					-- Max trust value cap.
 	MIN_TRUST_VALUE = -100,							-- Min trust value cap.
-	MAX_OPINION_VALUE = 200,						-- Max opinion value cap.
+	MAX_OPINION_VALUE = 200,	-- altered by OP:EN, original value was 100					-- Max opinion value cap.
 	MIN_OPINION_VALUE = -100,						-- Min opinion value cap.
 	BASE_TRUCE_PERIOD = 180,						-- Base truce period in days.
 	TRUCE_PERIOD_AFTER_KICKING_FROM_FACTION = 60,				-- Truce period after kicking someone from faction in days.
@@ -136,7 +143,7 @@ NDiplomacy = {
 	VOLUNTEERS_PER_TARGET_PROVINCE = 0.05,			-- Each province owned by the target country contributes this amount of volunteers to the limit.
 	VOLUNTEERS_PER_COUNTRY_ARMY = 0.05,				-- Each army unit owned by the source country contributes this amount of volunteers to the limit.
 	VOLUNTEERS_RETURN_EQUIPMENT = 0.95,				-- Returning volunteers keep this much equipment
-	VOLUNTEERS_TRANSFER_SPEED = 14,					-- days to transfer a unit to another nation
+	VOLUNTEERS_TRANSFER_SPEED = 7,	--altered by OP:EN, was 14				-- days to transfer a unit to another nation
 	VOLUNTEERS_DIVISIONS_REQUIRED = 15,				-- This many divisons are required for the country to be able to send volunteers.
 	TENSION_STATE_VALUE = 0.10,						-- Tension value gained by annexing one state (this value used to be divided by 20, this is no longer the case)
 	TENSION_CIVIL_WAR_IMPACT = 0.2,					-- civil war multiplier on tension.
@@ -150,7 +157,7 @@ NDiplomacy = {
 	TENSION_VOLUNTEER_FORCE_DIVISION = 0.2,			-- Amount of tension generated for each sent division
 	TENSION_DECAY_DAILY = 0.005,					-- Each day tension decays this much for Threat sources which are no longer relevant. Replaces TENSION_DECAY as of 1.12.0
 	TENSION_SIZE_FACTOR = 1.0,						-- All action tension values are multiplied by this value
-	TENSION_TIME_SCALE_START_DATE = "2040.1.1.12",	-- Starting at this date, the tension values will be scaled down (will be equal to 1 before that)
+	TENSION_TIME_SCALE_START_DATE = "2040.1.1.12", --altered by OP:EN, forgot orginially value	-- Starting at this date, the tension values will be scaled down (will be equal to 1 before that)
 	TENSION_TIME_SCALE_MONTHLY_FACTOR = -0.005,		-- Timed tension scale will be modified by this amount starting with TENSION_TIME_SCALE_START_DATE
 	TENSION_TIME_SCALE_MIN = 0.25,					-- Timed tension scale won't decrease under this value
 	TENSION_GUARANTEE = -5,
@@ -765,6 +772,14 @@ NDeployment = {
 },
 
 NMilitary = {
+
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END BELOW ##################################### --	
+	MEDAL_AWARD_CONFIRM_PP_THRESHOLD = 1.0,	-- altered by OP:EN, original value was 200.0 -- Below this much political power, awarding a medal asks for confirmation; at or above it is granted directly
+	MAX_CASUALTY_TRICKLEBACK = 0.95,								--Upper cap on casualty trickleback so it can't create more troops than die
+
+
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END ABOVE ##################################### --
+	
 	COMBAT_VALUE_ORG_IMPORTANCE = 1,		-- Multiplier on TotalOrganisation when determining the combat value of a division
 	COMBAT_VALUE_STR_IMPORTANCE = 1,		-- Multiplier on TotalStrength when determining the combat value of a division
 
@@ -2316,6 +2331,19 @@ NRailwayGun = {
 },
 
 NTrade = {
+
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END BELOW ##################################### --	
+	AUTO_IMPORT_DEFICIT_TOLERANCE = 0,			-- Player auto-import tolerates a resource balance down to minus this before importing (set higher to ignore small shortfalls)
+	AUTO_IMPORT_TARGET_MARGIN = 0,				-- Player auto-import aims for a balance of at least plus this, and only shrinks/cancels its trades once the surplus exceeds it (hysteresis to avoid churn)
+	AUTO_IMPORT_DEFAULT_BUDGET_FRACTION = 0.25,	-- Fraction of usable civilian factories the auto-import budget is seeded to when first enabled
+	
+	-- auto import trade
+	AUTO_IMPORT_MIN_CONVOY_EFFICIENCY = 0.4,	-- Don't start a sea trade whose convoy efficiency is below this
+	AUTO_IMPORT_FUEL_TOPPING_START_RATIO = 0.5,	-- Spend leftover budget on extra oil once the fuel stockpile falls below this fraction
+	AUTO_IMPORT_FUEL_TOPPING_STOP_RATIO = 0.9,	-- Stop spending leftover budget on extra oil once the fuel stockpile reaches this fraction
+	AUTO_IMPORT_MAX_ACCEPTED_SHORTAGE = 99,		-- Highest shortage a player can accept per resource in the auto-import priority window
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END ABOVE ##################################### --
+
 	DISTANCE_TRADE_FACTOR = -0.02,				-- Trade factor is modified by distance times this
 	RELATION_TRADE_FACTOR = 1,					-- Trade factor is modified by Opinion value times this
 	ALLOW_TRADE_CUT_OFF = 0,					-- If trade factor is less than this, no trade will be allowed
@@ -2332,6 +2360,12 @@ NTrade = {
 },
 
 NAI = {
+
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END BELOW ##################################### --
+	MOBILIZATION_RATIO_REQUIRED_TO_RAISE_MOBILIZATION_LAW = 0.95,		-- ratio of its target conscription an AI must already have mobilized before a higher conscription law is treated as urgent. raising the law does not speed up mobilization, so escalating below this only pays the industrial penalty
+	LENDLEASE_TO_CAPITULATED_DESIRE_PENALTY = 500, -- Flat lend lease desire penalty towards a capitulated country we don't host
+	AI_CONVOY_COUNT_CACHE_REBUILD_INTERVAL_HOURS = 40; --altered by OP:EN, original value was 20 -- Recount the convoys per strategic region the naval AI raids this often (affects performance)		
+ -- ##################################### NEW SHIT AS OF TO THE BITTER END ABOVE ##################################### --
 	PEACE_TIME_NAVY_FUEL_FACTOR = 0.25,			-- Percentage of fuel available to navy that is allowed to use for missiosn during peace time
 	PEACE_TIME_NAVY_FUEL_LIMIT = 0.5,			-- The maximum fuel percentage to use for navy at peace from available fuel scaled with world tension
 	AI_TASKFORCE_REQUIRED_RESERVE_RATIO = 0.2,	-- Fraction of required TF optimal composition held in reserve for reinforcement (rounded up per type)
@@ -2412,7 +2446,7 @@ NAI = {
 	GUN_EMPLACEMENT_MIN_ASSIGN_SCORE = 1,       -- Minimum total score for region to be considered for gun emplacement air missions
 	GUN_EMPLACEMENT_MIN_PRIO_ASSIGN_SCORE = 50, -- Minimum total score for region to be considered for critical gun emplacement air missions
 	GUN_EMPLACEMENT_ASSIGN_SCORE_REDUCTION_PER_ASSIGNMENT = 0.5, -- each assigned gun emplacement reduces the score of a region by this amount
-	MAX_VOLUNTEER_ARMY_FRACTION = 0.25,			-- Countries will not send more than their forces time this number to aid another country
+	MAX_VOLUNTEER_ARMY_FRACTION = 0.40, --altered by OP:EN, was 0.25			-- Countries will not send more than their forces time this number to aid another country
 	DEPLOY_MIN_TRAINING_SURRENDER_FACTOR = 0.5,     -- Required percentage of training (1.0 = 100%) for AI to deploy unit in wartime while surrender progress is higher than 0
 	DEPLOY_MIN_EQUIPMENT_SURRENDER_FACTOR = 0.90,   -- Required percentage of equipment (1.0 = 100%) for AI to deploy unit in wartime while surrender progress is higher than 0
 	DEPLOY_MIN_TRAINING_PEACE_FACTOR = 0.98,        -- Required percentage of training (1.0 = 100%) for AI to deploy unit in peacetime

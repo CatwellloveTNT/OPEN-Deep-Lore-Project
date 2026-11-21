@@ -1,12 +1,22 @@
 # ---------------------------------------------- THE THIRD SKIRMISH ----------------------------------------------
 
 protea_wins_the_third_skirmish = { 
+	OR = {
 	PRO = {
 		controls_state = 737
 		controls_state = 604
 		controls_state = 534
 		controls_state = 599
 		controls_state = 542
+	}
+	CHF = {
+		AND = {
+		has_country_flag = the_third_skirmish
+		surrender_progress = 0.70
+		}
+
+
+	}
 	}
 }
 
