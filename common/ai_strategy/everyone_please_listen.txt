@@ -1,0 +1,20 @@
+GUYS_DEFEND_YOUR_CAPITAL = { 
+	allowed = {
+		always = yes
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = garrison
+		value = 5
+	}
+
+
+
+}

@@ -134,16 +134,18 @@ add_ideas = {
 	lav_overwhelming_hopelessness_idea
 	arcadian_economic_dominance_idea
 	lav_growing_militarism_idea
+	lav_laventille_economy_idea
+	lav_incompetent_recruitment_office_idea
 }
 
 
 # -------------------------------------- LAVENTILLE ECONOMY VARS --------------------------------------
 set_variable = { lav_eco_dynamic_st = 0.05 } #stability
-set_variable = { lav_eco_dynamic_mef = 0.00 } #max efficency cap
-set_variable = { lav_eco_dynamic_egf = -0.10 } #efficieny growth
-set_variable = { lav_eco_dynamic_icf = -0.05 } #factory output
-set_variable = { lav_eco_dynamic_cgf = 0.00 } #consumer goods factor
-set_variable = { lav_eco_dynamic_bf = 0.00 } #constrution speed
+set_variable = { lav_eco_dynamic_mef = -0.10 } #max efficency cap
+set_variable = { lav_eco_dynamic_egf = -0.05 } #efficieny growth
+set_variable = { lav_eco_dynamic_icf = -0.10 } #factory output
+set_variable = { lav_eco_dynamic_cgf = 0.10 } #consumer goods factor
+set_variable = { lav_eco_dynamic_bf = -0.05 } #constrution speed
 set_variable = { lav_eco_dynamic_icd = 0.00 } #dockyard output
 set_variable = { lav_eco_dynamic_bunker_speed = 0.00 } #bunker build speed
 set_variable = { lav_eco_dynamic_adf = 0.0 } #enemy strat bombing on our factories factor
@@ -169,6 +171,8 @@ set_variable = { laventille_ad_aethera_domandum_rcf = 0.00 } #recon factor
 set_variable = { laventille_ad_aethera_domandum_mdi = 0 } #max entrenchment
 set_variable = { laventille_ad_aethera_domandum_mdf = 0.00 } #entrenchment speed
 set_variable = { laventille_ad_aethera_domandum_lbef = 0.00 } #land fort effectiveness
+set_variable = { laventille_ad_aethera_domandum_ifcf = 0.00} #intel from combat factor
+set_variable = { laventille_ad_aethera_domandum_aaaf = 0.00} #armor specific attack factor
 # -------------------------------------- LAVENTILLE AIR FORCE VARS --------------------------------------
 set_variable = { laventille_fieri_ventus_acf = 0.1} #air accidents
 set_variable = { laventille_fieri_ventus_aagf = -0.15} # air agility

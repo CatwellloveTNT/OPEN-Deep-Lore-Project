@@ -1,7 +1,19 @@
 ﻿l_english:
 
  #THUNDER AT OUR WWALLETS STUFF
- DIPLOMACY_RECALL_VOLUNTEER:0 "test"
+ CLICK_DETAILS_CLICK: "§GClick§! for details"
+ CLICK_DETAILS_CTRL: "§GCtrl+Click§! for details and keep others open"
+ CLICK_DETAILS_SHIFT_START: "§GShift+Click§! to start"
+ CLICK_DETAILS_SHIFT_BYPASS: "§GShift+Click§! to bypass"
+ CLICK_DETAILS_ALT_START: "§GAlt+Click§! to start and keep this window open"
+ CLICK_DETAILS_SHIFT_RESEARCH: "§GShift+Click§! to research"
+ RIGHT_CLICK_RESEARCH_NO_BONUS: "§GShift+Right-Click§! to research without using §YResearch Bonus§! ($TIME_TEXT$)"
+ CLICK_DETAILS_ALT_RESEARCH: "§GAlt+Click§! to research and keep this window open"
+ CLICK_DETAILS_SHIFT_ALT_RESEARCH: "§GShift+Alt+Click§! to research and select the next free slot"
+ CLICK_DETAILS_SHIFT_RESEARCH_WITH_MIO: "§GShift+Click§! to research with $ORG|H$ (Size $SIZE|H$)"
+ RIGHT_CLICK_RESEARCH_WITH_MIO_NO_BONUS: "§GShift+Right-Click§! to research with $ORG|H$ without using §YResearch Bonus§! ($TIME_TEXT$)"
+ CLICK_DETAILS_ALT_RESEARCH_WITH_MIO: "§GAlt+Click§! to research with $ORG|H$ and keep this window open"
+ CLICK_DETAILS_SHIFT_ALT_RESEARCH_WITH_MIO: "§GShift+Alt+Click§! to research with $ORG|H$ and select the next free slot"
  CONFIRMDELETETEXT_HQ_WITHDRAW_LINE: "§Y$NAME$§!'s §YArmy HQ§! will be §RWITHDRAWN§!."
  CONFIRMUNASSIGN_HQ_WITHDRAW_LINE: "§Y$NAME$§!'s §YArmy HQ§! will also be §RWITHDRAWN§!." 
  DISBAND_BUTTON_HQ_WITHDRAW_NOTE: "§RWithdraws§! all selected Army HQs"

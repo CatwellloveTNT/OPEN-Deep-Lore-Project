@@ -1,6 +1,24 @@
 ﻿l_english:
 
-# NOTE FOR ME, THIS IS THE VANILLA TECH LOC FILE.
+# NOTE FOR ME, THIS IS THE NON DLC TECH LOC FILE.
+
+
+ CLS_fighter_equipment_0:0 "ASA-83 Battymanzel"
+ CLS_fighter_equipment_0_short:0 "Battymanzel"
+ CLS_CAS_equipment_0:0 "Battymanzel GSV"
+ CLS_CAS_equipment_0_short:0 "Battymanzel GSV"
+ CLS_fighter_equipment_1:0 "ASA-83 Battymanzel GEN II"
+ CLS_fighter_equipment_1_short:0 "Battymanzel GEN II"
+ CLS_CAS_equipment_1:0 "Battymanzel GEN II GSV"
+ CLS_CAS_equipment_1_short:0 "Battymanzel GEN II GSV"
+ CLS_fighter_equipment_2:0 "ASA-25 Black Jep"
+ CLS_fighter_equipment_2_short:0 "Black Jep"
+ CLS_CAS_equipment_2:0 "Brown Jep"
+ CLS_CAS_equipment_2_short:0 "Brown Jep"
+ CLS_fighter_equipment_3:0 "ASA-37 Queen Jep"
+ CLS_fighter_equipment_3_short:0 "Queen Jep"
+ CLS_CAS_equipment_3:0 "King Jep"
+ CLS_CAS_equipment_3_short:0 "King Jep"
 
  fighter:0 "Fighter"
  fighter_equipment_desc:0 "Fighters are fast and nimble and can do many jobs. Everything from fighting for air superiority, protect your bombers and intercept the enemies bombers."

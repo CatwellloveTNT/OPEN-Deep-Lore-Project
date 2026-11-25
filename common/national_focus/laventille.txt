@@ -758,7 +758,10 @@ focus_tree = {
 
 		completion_reward = {
 			
-
+			swap_ideas = {
+				remove_idea = lav_incompetent_recruitment_office_idea
+				add_idea = lav_incompetent_recruitment_office_idea_2
+			}
 
 		}
 
@@ -799,8 +802,18 @@ focus_tree = {
 
 
 		completion_reward = {
-			
 
+			custom_effect_tooltip = extra_space
+			
+			custom_effect_tooltip = LAV_exercise_reclaimer_tt
+
+			custom_effect_tooltip = extra_space
+
+			add_ideas = lav_exercise_reclaimer_idea
+
+			hidden_effect = {
+				remove_ideas = lav_exercise_reclaimer_idea
+			}
 
 		}
 
@@ -1096,7 +1109,9 @@ focus_tree = {
 		completion_reward = {
 				
 														
-
+			country_event = {
+				id = lav.40
+			}
 
 
 		}
@@ -1137,7 +1152,10 @@ focus_tree = {
 		completion_reward = {
 				
 														
-
+			swap_ideas = {
+				remove_idea = lav_laventille_economy_idea
+				add_idea = lav_laventille_economy_idea_2
+			}
 
 
 		}
@@ -1220,7 +1238,7 @@ focus_tree = {
 		completion_reward = {
 				
 														
-
+			add_ideas = lav_entrepreneurs_idea
 
 
 		}
@@ -2150,7 +2168,7 @@ focus_tree = {
 
 		completion_reward = {
 						
-
+			army_experience = 50
 
 		}
 
@@ -2395,11 +2413,41 @@ focus_tree = {
 
 		completion_reward = {
 
+
+
+		custom_effect_tooltip = LAV_our_new_economic_system_tt
+		custom_effect_tooltip = extra_space
+
 			mark_focus_tree_layout_dirty = yes
 						
+			remove_ideas = lav_laventille_economy_idea_2
+
 			add_dynamic_modifier = {
 				modifier = LAV_economy_of_revenge
 			}
+
+			custom_effect_tooltip = extra_space
+
+			if = {
+				limit = { has_idea = lav_heavy_sanctions }
+
+				remove_ideas = lav_heavy_sanctions
+				else_if = {
+					limit = { has_idea = lav_light_sanctions  }
+
+					remove_ideas = lav_light_sanctions
+
+
+				}
+
+			}
+			if = {
+				limit = { has_idea = arcadian_economic_dominance_idea }
+
+				remove_ideas = arcadian_economic_dominance_idea
+
+			}
+
 
 		}
 
@@ -2429,7 +2477,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_country_flag = is_lats_member
+	#		has_country_flag = is_lats_member
 		}
 
 
@@ -2505,7 +2553,17 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+			
+			add_political_power = -100
+
+			add_to_variable = {
+				lav_eco_dynamic_st = 0.025
+			}
+			add_to_variable = {
+				lav_eco_dynamic_mef = 0.05
+			}	
+			
+			custom_effect_tooltip = LAV_the_aviceynian_aid_package_tt	
 
 		}
 
@@ -2554,6 +2612,14 @@ focus_tree = {
 
 		completion_reward = {
 						
+			add_to_variable = {
+				lav_eco_dynamic_icf = 0.05
+			}
+			add_to_variable = {
+				lav_eco_dynamic_egf = 0.025
+			}	
+			
+			custom_effect_tooltip = LAV_the_tools_of_war_tt	
 
 		}
 
@@ -2602,6 +2668,17 @@ focus_tree = {
 
 		completion_reward = {
 						
+			add_to_variable = {
+				lav_eco_dynamic_icf = 0.05
+			}
+			add_to_variable = {
+				lav_eco_dynamic_egf = 0.075
+			}	
+			add_to_variable = {
+				lav_eco_dynamic_mef = 0.05
+			}			
+			
+			custom_effect_tooltip = LAV_specalized_production_facilities_tt	
 
 		}
 
@@ -2649,7 +2726,16 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+				
+			add_to_variable = {
+				lav_eco_dynamic_st = 0.025
+			}
+			add_to_variable = {
+				lav_eco_dynamic_cgf = -0.05
+			}		
+			
+			custom_effect_tooltip = LAV_aviceynian_economic_advisors_tt
+
 
 		}
 
@@ -2698,7 +2784,20 @@ focus_tree = {
 
 		completion_reward = {
 						
-
+			add_to_variable = {
+				lav_eco_dynamic_frf = 0.10
+			}
+			add_to_variable = {
+				lav_eco_dynamic_ref = 0.20
+			}	
+			add_to_variable = {
+				lav_eco_dynamic_adf = -0.05
+			}
+			add_to_variable = {
+				lav_eco_dynamic_bunker_speed = 0.05
+			}								
+			
+			custom_effect_tooltip = LAV_our_means_of_defense_tt
 		}
 
 		ai_will_do = {
@@ -2745,7 +2844,12 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+		
+			add_to_variable = {
+				lav_eco_dynamic_adf = -0.15
+			}			
+
+			custom_effect_tooltip = LAV_shielded_factories_tt
 
 		}
 
@@ -2794,6 +2898,45 @@ focus_tree = {
 
 		completion_reward = {
 						
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = light_fighter
+			name = "From Focus"
+		}	
+
+		custom_effect_tooltip = extra_space
+
+			add_to_variable = {
+				lav_eco_dynamic_icf = 0.025
+			}		
+			add_to_variable = {
+				lav_eco_dynamic_mef = 0.025
+			}			
+			add_to_variable = {
+				lav_eco_dynamic_egf = 0.025
+			}		
+
+			357 = {
+				add_extra_state_shared_building_slots = 2					
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			98 = {
+				add_extra_state_shared_building_slots = 2					
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+			
+			custom_effect_tooltip = extra_space
+			
+			custom_effect_tooltip = LAV_domestic_aircraft_production_tt
 
 		}
 
@@ -2841,7 +2984,46 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_light_armor
+			name = "From Focus"
+		}	
+
+		custom_effect_tooltip = extra_space
+
+			add_to_variable = {
+				lav_eco_dynamic_icf = 0.025
+			}		
+			add_to_variable = {
+				lav_eco_dynamic_mef = 0.025
+			}			
+			add_to_variable = {
+				lav_eco_dynamic_egf = 0.025
+			}		
+
+			85 = {
+				add_extra_state_shared_building_slots = 2					
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			82 = {
+				add_extra_state_shared_building_slots = 2					
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+			
+			custom_effect_tooltip = extra_space
+			
+			custom_effect_tooltip = LAV_domestic_aircraft_production_tt			
 
 		}
 
@@ -2895,7 +3077,15 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+
+			add_to_variable = {
+				lav_eco_dynamic_st = 0.05
+			}		
+			add_to_variable = {
+				lav_eco_dynamic_cgf = -0.05
+			}	
+			
+			custom_effect_tooltip = LAV_the_beginning_of_something_beautiful_tt
 
 		}
 
@@ -2959,6 +3149,20 @@ focus_tree = {
 		completion_reward = {
 						
 
+			add_political_power = -100
+
+			add_to_variable = {
+				lav_eco_dynamic_bf = 0.05
+			}
+			add_to_variable = {
+				lav_eco_dynamic_lrf = 0.025
+			}
+			add_to_variable = {
+				lav_eco_dynamic_plrpf = -0.025
+			}	
+			
+			custom_effect_tooltip = LAV_the_tristan_aid_package_tt
+
 		}
 
 		ai_will_do = {
@@ -3019,7 +3223,15 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+	
+			add_to_variable = {
+				lav_eco_dynamic_plrpf = -0.05
+			}
+			add_to_variable = {
+				lav_eco_dynamic_lrf = 0.05
+			}
+			
+			custom_effect_tooltip = LAV_advanced_metallurgy_equipment_tt			
 
 		}
 
@@ -3081,7 +3293,12 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+	
+			add_to_variable = {
+				lav_eco_dynamic_bf = 0.10
+			}
+			
+			custom_effect_tooltip = LAV_improved_mining_equipment_tt			
 
 		}
 
@@ -3144,6 +3361,14 @@ focus_tree = {
 
 		completion_reward = {
 						
+			add_to_variable = {
+				lav_eco_dynamic_lrf = 0.025
+			}
+			add_to_variable = {
+				lav_eco_dynamic_plrpf = -0.025
+			}	
+			
+			custom_effect_tooltip = LAV_help_most_useful_tt
 
 		}
 
@@ -3190,7 +3415,11 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+					
+		country_event = {
+			id = lav.42
+		}	
+
 
 		}
 
@@ -3277,7 +3506,14 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.05
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_asf = 0.05
+			}	
+			
+			custom_effect_tooltip = LAV_ruthless_aggression_tt
 
 		}
 
@@ -3319,7 +3555,7 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+			add_ideas = lav_culture_of_overconfidence_idea
 
 		}
 
@@ -3361,7 +3597,18 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+			add_ideas = lav_optimized_production_idea
+
+			custom_effect_tooltip = extra_space
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.025				
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_btf = 0.05			
+			}			
+
+			custom_effect_tooltip = LAV_mechanize_the_armed_forces_tt
 
 		}
 
@@ -3406,7 +3653,17 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ahf = 0.05			
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_adf = 0.05			
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aof = 0.10			
+			}	
+			
+			custom_effect_tooltip = LAV_focus_on_troop_survivability_tt
 
 		}
 
@@ -3451,7 +3708,17 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.025			
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_asf = 0.05			
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_btf = 0.10			
+			}	
+
+			custom_effect_tooltip = LAV_focus_on_breakthrough_capaicty_tt
 
 		}
 
@@ -3493,7 +3760,21 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_medium_armor
+			name = "From Focus"
+		}	
+
+		add_to_variable = {
+		laventille_ad_aethera_domandum_aaaf = 0.05		
+		}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_asf = 0.025			
+			}			
+
+			custom_effect_tooltip = LAV_the_future_tank_initative_tt
 
 		}
 
@@ -3535,7 +3816,14 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+		add_to_variable = {
+		laventille_ad_aethera_domandum_aof = 0.10		
+		}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ahf = 0.05			
+			}			
+
+			custom_effect_tooltip = LAV_aquire_aviceynian_shields_tt	
 
 		}
 
@@ -3577,7 +3865,21 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = artillery
+			name = "From Focus"
+		}		
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.05			
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_btf = 0.05			
+			}		
+			
+			custom_effect_tooltip = LAV_the_l_66_gun_tt
 
 		}
 
@@ -3622,7 +3924,20 @@ focus_tree = {
 
 		completion_reward = {
 						
-	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.025			
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_btf = 0.05
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_asf = 0.025	
+			}				
+			add_to_variable = {
+				laventille_ad_aethera_domandum_crb = 0.05
+			}				
+			
+			custom_effect_tooltip = LAV_trial_true_combined_arms_warfare_tt	
 
 		}
 
@@ -3665,12 +3980,29 @@ focus_tree = {
 
 
 		completion_reward = {
-						
+				
+			if = {
+				limit = { has_active_mission = lav_the_clock_strikes_twelve }
+
 			add_days_mission_timeout = {
 				mission = lav_the_clock_strikes_twelve
 				days = 45
 			}
 
+			}
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_adf = 0.05
+			}
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_mpf = 0.05
+			}
+
+
+			custom_effect_tooltip =  LAV_methodical_destruction_tt_1
+			custom_effect_tooltip =  extra_space
+			custom_effect_tooltip =  LAV_methodical_destruction_tt_2
 
 		}
 
@@ -3712,8 +4044,28 @@ focus_tree = {
 
 		completion_reward = {
 						
+			remove_ideas = lav_incompetent_recruitment_office_idea_2
 
+			custom_effect_tooltip = extra_space
 
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aof = 0.025
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_btf = 0.05
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_mpf = 0.03
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_pns = 0.05
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aof = 0.05
+			}				
+
+			
+			custom_effect_tooltip = LAV_commission_eastpoint_tt					
 
 		}
 
@@ -3726,7 +4078,7 @@ focus_tree = {
 	focus = { #
 		id = LAV_intensify_the_courses
 		icon = GFX_goal_generic_consumer_goods
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = LAV_commission_eastpoint
 		prerequisite = {
@@ -3755,7 +4107,20 @@ focus_tree = {
 
 		completion_reward = {
 						
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.05
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_adf = 0.05
+			}			
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aof = 0.1
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aor = 0.05
+			}						
 
+			custom_effect_tooltip = LAV_intensify_the_courses_tt
 
 
 		}
@@ -3798,7 +4163,14 @@ focus_tree = {
 
 		completion_reward = {
 						
-
+			LAV = {
+				every_army_leader = {
+					add_skill_level = 1
+					add_defense = 1
+					add_logistics = 1
+					add_planning = 	1
+				}
+			}
 
 
 		}
@@ -3841,7 +4213,20 @@ focus_tree = {
 
 		completion_reward = {
 						
-
+			add_to_variable = {
+				laventille_ad_aethera_domandum_pns = 0.10
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_mpf = 0.1
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_adf = 0.05
+			}		
+			add_to_variable = {
+				laventille_ad_aethera_domandum_mdi = 0.5
+			}	
+			
+			custom_effect_tooltip = LAV_tacmap_innovations_tt
 
 
 		}
@@ -3885,7 +4270,23 @@ focus_tree = {
 		completion_reward = {
 						
 
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ifcf = 0.10
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_mdi = 0.5
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_mpf = 0.02
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_pns = 0.05
+			}	
+			add_to_variable = {
+				laventille_ad_aethera_domandum_rcf = 0.05
+			}										
 
+			custom_effect_tooltip = LAV_improved_orgaint_capabilities_tt
 
 		}
 
@@ -3927,7 +4328,11 @@ focus_tree = {
 
 		completion_reward = {
 						
+			country_event = {
+				id = lav.41
+			}
 
+			set_country_flag = lav_foreign_mil_advisors_flag
 
 
 		}
@@ -3941,11 +4346,11 @@ focus_tree = {
 	focus = { #
 		id = LAV_approach_aviceyn
 		icon = GFX_goal_generic_consumer_goods
-		x = -1
+		x = 1
 		y = 2
-		relative_position_id = LAV_consult_foreign_advisors
+		relative_position_id = LAV_our_army_of_conquest
 		prerequisite = {
-			focus = LAV_consult_foreign_advisors		
+			focus = LAV_methodical_destruction focus = LAV_ruthless_aggression		
 		}
 
 			
@@ -3970,8 +4375,14 @@ focus_tree = {
 
 		completion_reward = {
 						
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.05
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_asf = 0.05
+			}			
 
-
+			custom_effect_tooltip = LAV_approach_aviceyn_tt				
 
 		}
 
@@ -3982,7 +4393,7 @@ focus_tree = {
 	}	
 
 	focus = { #
-		id = LAV_expand_the_scope
+		id = LAV_expand_the_scope #RENAME TO TOTAL INFORMATION WARFARE
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 3
@@ -4016,7 +4427,14 @@ focus_tree = {
 
 		completion_reward = {
 						
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ifcf = 0.15
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_rcf = 0.05
+			}			
 
+			custom_effect_tooltip = LAV_expand_the_scope_tt
 
 
 		}

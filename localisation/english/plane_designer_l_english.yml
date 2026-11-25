@@ -1,4 +1,10 @@
 ﻿l_english:
+
+
+ # ------------------------------ COUNTRY UNIQUE TECH NAMES/DESCS ------------------------------ #
+
+
+
  EQ_MOD_CAT_plane_engine_type_TITLE:1 "1 Engine"
  EQ_MOD_CAT_twin_plane_engine_type_TITLE:0 "2 Engines"
  EQ_MOD_CAT_medium_plane_engine_type_TITLE:0 "3 Engines"

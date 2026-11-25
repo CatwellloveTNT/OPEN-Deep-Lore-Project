@@ -248,6 +248,11 @@ country_event = { #htf says no to giving land
 
 			set_global_flag = ponyland_hook_war_active
 
+			add_timed_idea = {
+				idea = lav_exercise_reclaimer_idea
+				days = 60
+			}
+
 			declare_war_on = {
 				target = HTF
 				type = take_claimed_state
@@ -340,6 +345,7 @@ country_event = { #aesa fails its assassination attempt on arad
 	option = { #praytell how thou blundered such a simple task?
 		name = lav.17.a
 		ai_chance = {factor = 100}
+
 
 		hidden_effect = {
 			ARC = {
@@ -491,11 +497,12 @@ country_event = { #the nation breaks out into civil war!
 			states = {
 				96 84 83 82
 			}
-			keep_all_characters = yes
+			hidden_effect = {
 			remove_ideas = lav_heavy_sanctions
 			remove_ideas = lav_light_sanctions
 			remove_ideas = lav_overwhelming_hopelessness_idea
-			add_ideas = i_do_not_want_you_to_surrender_bro_please
+			add_ideas = i_do_not_want_you_to_surrender_bro_please				
+			}
 		}
 
 	}
@@ -959,6 +966,55 @@ country_event = { #The Coalition intervenes in Nova Yanov!
 				days = 1
 			}
 		}
+
+	}
+
+}
+country_event = { #Laventille promotes itself for foreign advisors
+	id = lav.40
+	title = lav.40.t
+	desc = lav.40.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #You called and called... but no one ever came...
+		name = lav.40.a
+		ai_chance = {factor = 100}		
+
+	}
+
+}
+country_event = { #unlocks a decisions tab to request foreign military aid
+	id = lav.41
+	title = lav.41.t
+	desc = lav.41.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Important an asset such is, verily
+		name = lav.41.a
+		ai_chance = {factor = 100}	
+		
+		custom_effect_tooltip = lav_41_tt
+
+	}
+
+}
+country_event = { #a news broadcaster talks about the fact that laventille's city lights can now be seen from space
+	id = lav.42
+	title = lav.42.t
+	desc = lav.42.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #How we have grown since those dark days
+		name = lav.42.a
+		ai_chance = {factor = 100}	
+		
+		
 
 	}
 

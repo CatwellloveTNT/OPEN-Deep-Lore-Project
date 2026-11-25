@@ -222,5 +222,274 @@ ideas = {
 			}
 	}	
 
+			lav_laventille_economy_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+
+				
+				
+				
+			}
+	}	
+
+			lav_laventille_economy_idea_2 = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.05
+
+				
+				
+				
+			}
+	}
+
+			lav_entrepreneurs_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+
+			}
+	}	
+
+			lav_incompetent_recruitment_office_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				training_time_army_factor = 0.20
+				experience_loss_factor = 0.10
+				army_org_factor = -0.05
+				army_morale_factor = -0.10
+
+			}
+	}
+			lav_incompetent_recruitment_office_idea_2 = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				training_time_army_factor = 0.20
+				experience_loss_factor = 0.10
+
+			}
+	}	
+	
+			lav_exercise_reclaimer_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+				intel_from_combat_factor = 0.15
+
+			}
+	}	
+
+			lav_culture_of_overconfidence_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				breakthrough_factor = 0.05
+				experience_loss_factor = 0.15
+			}
+
+
+
+
+	}
+	
+		lav_optimized_production_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+				equipment_bonus = {
+					ifv_chassis = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					apc_chassis = {
+						build_cost_ic = -0.1
+						instant = yes
+					}	
+								
+				}
+
+
+			modifier = {
+			}
+		}	
+
+
 }
 }

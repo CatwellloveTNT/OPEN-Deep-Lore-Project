@@ -1564,6 +1564,15 @@ lav.38.a: "Not like we needed your permission in the first place"
 lav.39.t: "Coalition Forces Support Nova Yanov!"
 lav.39.d: "todo: laventille realizes coalition forces are inside of nova yanov after they come across one in a bloody urban battle"
 lav.39.a: "No doubt due to Arcadian Meddling"
+lav.40.t: ""come help plz!""
+lav.40.d: "todo: laventille promotes itself on social media for aid from foreign economic advisors"
+lav.40.a: "We called and called, but no one ever came..."
+lav.41.t: "Grey Zone Business"
+lav.41.d: "todo: laventille begins to look into recruiting foreign military advisors to further their military quality"
+lav.41.a: "Important an asset such is, verily"
+lav.42.t: "Bright Nights"
+lav.42.d: "todo: a news broadcaster talks about the fact that laventille's city lights can now be seen from space"
+lav.42.a: "How we have grown since those dark days"
 
 
 # -------------------- XPERIA --------------------
@@ -1707,6 +1716,7 @@ xpr.1.a: "We must reclaim our birthright"
  lav_38_tt:0 "§YAviceyn will not support Nova Yanov...§W"
  col_1072_a_tt:0 "§YWe will be able to send additional divisions to support Nova Yanov§W"
  col_1072_b_tt:0 "Our bond with our §ALittle Siblings§W becomes evermore fragile"
+ lav_41_tt:0 "§YWe have unlocked a new decision tab, in this tab we can request specalized advisors from nations willing to grant us aid§W"
 
 
  

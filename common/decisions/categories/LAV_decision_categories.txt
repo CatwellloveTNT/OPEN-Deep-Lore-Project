@@ -50,3 +50,19 @@
 
 		visible_when_empty = yes
 	}	
+	lav_foreign_advisors = {
+		priority = 102
+
+		icon = SOV_paranoia
+
+
+		allowed = {
+			tag = LAV
+		}
+
+		visible = {
+			has_country_flag = lav_foreign_mil_advisors_flag
+		}
+
+		visible_when_empty = no
+	}	

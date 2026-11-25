@@ -340,12 +340,6 @@ news_event = { #coalition forces move to aid south srakin
 		name = news.20.a
 
 		hidden_effect = {
-		if = {
-			limit = { NOT = { tag = CLS } }
-
-			play_song = "sealstheme"
-
-		}
 
 		CLS = {
 			scoped_play_song = "tarantula"

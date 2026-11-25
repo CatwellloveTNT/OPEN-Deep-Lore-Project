@@ -118,3 +118,237 @@
 
 
 }
+
+lav_foreign_advisors = {
+
+
+	learn_from_aviceyn = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = LAV
+		}
+
+		available = {
+			AND = {
+			AVI = {
+				has_opinion = {
+					target = LAV
+					value = 90
+				}
+
+				exists = yes
+
+			}				
+			}
+		}
+
+		visible = {
+			has_country_flag = lav_foreign_mil_advisors_flag
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_aaf = 0.025
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ahf = 0.025
+			}	
+			
+			custom_effect_tooltip = lav_learn_from_aviceyn_tt
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+	}
+
+	learn_from_triste = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = LAV
+		}
+
+		available = {
+			AND = {
+			TST = {
+				has_opinion = {
+					target = LAV
+					value = 90
+				}
+
+				exists = yes
+
+			}				
+			}
+		}
+
+		visible = {
+			has_country_flag = lav_foreign_mil_advisors_flag
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_adf = 0.025
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ahf = 0.025
+			}	
+			
+			custom_effect_tooltip = lav_learn_from_triste_tt
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+	}	
+
+	learn_from_srakin = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = LAV
+		}
+
+		available = {
+			AND = {
+			NSK = {
+				has_opinion = {
+					target = LAV
+					value = 90
+				}
+
+				exists = yes
+
+			}				
+			}
+		}
+
+		visible = {
+			has_country_flag = lav_foreign_mil_advisors_flag
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_lbef = 0.05
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ahf = 0.025
+			}	
+			
+			custom_effect_tooltip = lav_learn_from_srakin_tt
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+	}	
+
+	learn_from_xperia = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = LAV
+		}
+
+		available = {
+			AND = {
+			XPA = {
+				has_opinion = {
+					target = LAV
+					value = 90
+				}
+
+				exists = yes
+
+			}				
+			}
+		}
+
+		visible = {
+			has_country_flag = lav_foreign_mil_advisors_flag
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			add_to_variable = {
+				laventille_ad_aethera_domandum_btf = 0.05
+			}
+			add_to_variable = {
+				laventille_ad_aethera_domandum_ahf = 0.025
+			}	
+			
+			custom_effect_tooltip = lav_learn_from_xperia_tt
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}	
+		
+		
+
+		
+	}	
+
+
+}

@@ -769,7 +769,7 @@
  UNIT_BUTTON_EDIT_ACTION: "(Shift click to edit template)"
  ARMY_LIST_CLICK_SELECT_DIVISION: "Click to select division"
  ARMY_LIST_RIGHT_CLICK_PAN: "Right click to pan to division"
- DEPLOY_HQ_BUTTON_NO_COMMANDER:0 "DEPLOY COMMANDER"
+ DEPLOY_HQ_BUTTON_NO_COMMANDER:0 "§RNo Commander Deployed!§W"
  # bro wtf are theses
  ARMY_LIST_DOUBLE_CLICK_TEMPLATE: "" 
  ARMY_LIST_SHIFT_CLICK_RANGE: ""

@@ -39,6 +39,8 @@
 		recon_factor = laventille_ad_aethera_domandum_rcf
 		max_dig_in = laventille_ad_aethera_domandum_mdi
 		land_bunker_effectiveness_factor = laventille_ad_aethera_domandum_lbef
+		intel_from_combat_factor = laventille_ad_aethera_domandum_ifcf
+		army_armor_attack_factor = laventille_ad_aethera_domandum_aaaf
 	}
 
 	LAV_fieri_ventus = { #to become the wind
