@@ -124,7 +124,7 @@ create_goons = { #this shit was kicking my ass before i figured it out, in order
 
 
 
-CHF_all_in = { #FIGHT ALL, EVERYONE WILL DIE, KILL ALL
+all_in = { #FIGHT ALL, EVERYONE WILL DIE, KILL ALL
 
 	allowed = {
 		always = yes

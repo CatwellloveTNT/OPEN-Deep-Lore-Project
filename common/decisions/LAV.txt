@@ -43,6 +43,59 @@
 		}		
 	}
 
+	plunder_nova_yanovs_supplies = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = LAV
+		}
+
+		available = {
+			AND = {
+			has_country_flag = lav_war_of_conquest_flag
+			YAN = {
+				exists = no
+			}
+			}
+
+		}
+
+		visible = {
+			AND = {
+			has_country_flag = lav_war_of_conquest_flag
+			YAN = {
+				exists = no
+			}
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 20
+
+		days_remove = 5
+
+		modifier = {
+		}
+
+		complete_effect = {
+
+			add_days_mission_timeout = {
+				mission = lav_the_clock_strikes_twelve
+				days = 140
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 500
+		}		
+	}	
+
 
 
 

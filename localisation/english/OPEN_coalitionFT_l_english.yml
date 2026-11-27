@@ -245,7 +245,7 @@ l_english:
  LAV_ruthless_aggression_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 5% Division Attack§W\n§G+ 5% Division Speed§W"
  LAV_mechanize_the_armed_forces_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 2.50% Division Attack§W\n§G+ 5% Breakthrough Factor§W"
  LAV_focus_on_troop_survivability_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 5% Division Defense§W\n§G+ 5% Army Health\n§G+ 10% Army Organization Factor§W"
- LAV_focus_on_breakthrough_capaicty_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 2.50% Division Attack§W\n§G+ 5% Division Speed\n§G+ 10% Breakthrough Factor Factor§W"
+ LAV_focus_on_breakthrough_capaicty_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 2.50% Division Attack§W\n§G+ 5% Division Speed\n§G+ 10% Breakthrough Factor§W"
  LAV_the_future_tank_initative_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 5% Attack for §YArmoured§G Units§W\n§G+ 2.50% Division Speed§W"
  LAV_aquire_aviceynian_shields_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 10% Army Organization Factor§W\n§G+ 5% Army Health Factor§W"
  LAV_the_l_66_gun_tt:0 "The §YAd Aethera Domandum§W Spirit will be improved by: \n§G+ 5% Division Attack§W\n§G+ 5% Breakthrough Factor§W"
@@ -262,7 +262,7 @@ l_english:
  LAV_advanced_metallurgy_equipment_tt:0 "The §YEconomy of Revenge§W Spirit will be improved by: \n§G+ 5% Local Resources§W\n§G- 5% Lack of Resources Penality§W"
  LAV_improved_mining_equipment_tt:0 "The §YEconomy of Revenge§W Spirit will be improved by: \n§G+ 10% Construction Speed§W"
  LAV_help_most_useful_tt:0 "The §YEconomy of Revenge§W Spirit will be improved by: \n§G+ 2.50% Local Resources§W\n§G- 2.50% Lack of Resources Penality§W"
-
+ LAV_harsh_crackdowns_tt:0 "§WThe compliance on §Yevery Nova Yanovan state§W will be set to §G35%§W"
 
 
 # -- COUNTRY FLAG FOR FOCUS HINT PROGRESSION LOC -- #

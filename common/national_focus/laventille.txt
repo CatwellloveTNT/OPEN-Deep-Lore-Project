@@ -680,7 +680,10 @@ focus_tree = {
 			}
 			build_railway = {
 				path = { 411 391 20394 370 20127  }
-			}			
+			}
+			build_railway = {
+				path = { 411 391 3969 421 383  }
+			}							
 
 			86 = {
 
@@ -691,6 +694,16 @@ focus_tree = {
 				}
 
 			}
+
+			82 = {
+
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 383
+				}
+
+			}			
 
 
 			91 = {
@@ -2372,6 +2385,196 @@ focus_tree = {
 						id = arc.49
 					}
 				}			
+			}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #foreign occupation office
+		id = LAV_establish_the_foo
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = LAV_subdue_nova_yanov
+		prerequisite = {
+			focus = LAV_subdue_nova_yanov		
+		}
+			
+		cost = 5
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+			has_country_flag = lav_wor_phase_3
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+						
+			add_ideas = lav_foreign_occupation_office_idea
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #foreign occupation office
+		id = LAV_harsh_crackdowns
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = LAV_subdue_nova_yanov
+		prerequisite = {
+			focus = LAV_subdue_nova_yanov		
+		}
+			
+		cost = 5
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = lav_wor_phase_3
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+								
+			
+		custom_override_tooltip = {
+			tooltip = LAV_harsh_crackdowns_tt
+
+			102 = {
+				set_compliance = 35
+			}
+			246 = {
+				set_compliance = 35
+			}
+			249 = {
+				set_compliance = 35
+			}
+			248 = {
+				set_compliance = 35
+			}
+			77 = {
+				set_compliance = 35
+			}	
+			76 = {
+				set_compliance = 35
+			}		
+			244 = {
+				set_compliance = 35
+			}	
+			359 = {
+				set_compliance = 35
+			}	
+			245 = {
+				set_compliance = 35
+			}
+			251 = {
+				set_compliance = 35
+			}
+			250 = {
+				set_compliance = 35
+			}
+			103 = {
+				set_compliance = 35
+			}
+			189 = {
+				set_compliance = 35
+			}	
+			273 = {
+				set_compliance = 35
+			}	
+			272 = {
+				set_compliance = 35
+			}	
+			360 = {
+				set_compliance = 35
+			}
+
+
+		}
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { 
+		id = LAV_crush_carenage
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_subdue_nova_yanov
+		prerequisite = {
+			focus = LAV_establish_the_foo		
+		}
+		prerequisite = {
+			focus = LAV_harsh_crackdowns		
+		}			
+		cost = 5
+
+		available = {
+		has_army_manpower = { size > 350000 }			
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+			LAV = {
+				declare_war_on = {
+					target = CRE
+					type = annex_everything
+				}
 			}
 
 		}
@@ -4452,11 +4655,9 @@ focus_tree = {
 		y = 7
 		relative_position_id = LAV_our_army_of_conquest
 		prerequisite = {
-			focus = LAV_expand_the_scope		
+			focus = LAV_expand_the_scope focus = LAV_trial_true_combined_arms_warfare		 	
 		}
-		prerequisite = {
-			focus = LAV_trial_true_combined_arms_warfare		
-		}		
+		
 
 			
 		cost = 4
@@ -4485,6 +4686,1240 @@ focus_tree = {
 			country_event = {
 				id = lav.28
 			}
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_follow_in_aviceyns_steps
+		icon = GFX_goal_generic_consumer_goods
+		x = 5
+		y = 1
+		relative_position_id = LAV_weve_got_bigger_fish_to_fry
+		prerequisite = {
+			focus = LAV_weve_got_bigger_fish_to_fry 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = lav_military_tree_second_phase
+		}
+
+		mutually_exclusive = {
+			focus = LAV_anti_arcadian_specialization
+		}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+	focus = { #
+		id = LAV_advanced_stealth_designs
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_follow_in_aviceyns_steps
+		prerequisite = {
+			focus = LAV_follow_in_aviceyns_steps 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+	focus = { #
+		id = LAV_magical_stealth_coating_spells
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_advanced_stealth_designs
+		prerequisite = {
+			focus = LAV_advanced_stealth_designs 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_indigenous_ai_wingmen
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_magical_stealth_coating_spells
+		prerequisite = {
+			focus = LAV_magical_stealth_coating_spells 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+	
+	focus = { #
+		id = LAV_purchase_talcyon_3_knock_down_kits #idiot its not called the talcyon 3 only the coalition states calls it that, its called the aryx
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_follow_in_aviceyns_steps
+		prerequisite = {
+			focus = LAV_follow_in_aviceyns_steps 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+			add_political_power = -300
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_cultivate_an_indigenous_aerospace_workforce
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_purchase_talcyon_3_knock_down_kits
+		prerequisite = {
+			focus = LAV_purchase_talcyon_3_knock_down_kits 	 	
+		}
+		
+		mutually_exclusive = {
+			focus = LAV_hire_the_best_and_brightest
+		}		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_hire_the_best_and_brightest
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_purchase_talcyon_3_knock_down_kits
+		prerequisite = {
+			focus = LAV_purchase_talcyon_3_knock_down_kits 	 	
+		}
+		
+
+		mutually_exclusive = {
+			focus = LAV_cultivate_an_indigenous_aerospace_workforce
+		}
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+
+	focus = { #
+		id = LAV_ensure_they_stay
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_hire_the_best_and_brightest
+		prerequisite = {
+			focus = LAV_hire_the_best_and_brightest 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_ensure_they_stay
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_hire_the_best_and_brightest
+		prerequisite = {
+			focus = LAV_hire_the_best_and_brightest 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_iterate_on_the_aryx_platform
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 2
+		relative_position_id = LAV_ensure_they_stay
+		prerequisite = {
+			focus = LAV_ensure_they_stay 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+	
+	focus = { #
+		id = LAV_embrace_the_culture
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_cultivate_an_indigenous_aerospace_workforce
+		prerequisite = {
+			focus = LAV_cultivate_an_indigenous_aerospace_workforce 	 	
+		}
+		
+
+		mutually_exclusive = {
+			focus = LAV_cultivate_an_indigenous_aerospace_workforce
+		}
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+
+	focus = { #
+		id = LAV_develop_new_aircraft_designs
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		relative_position_id = LAV_embrace_the_culture
+		prerequisite = {
+			focus = LAV_embrace_the_culture 	 	
+		}
+		
+
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_develop_the_altis_fighter
+		icon = GFX_goal_generic_consumer_goods
+		x = 5
+		y = 8
+		relative_position_id = LAV_weve_got_bigger_fish_to_fry
+		prerequisite = {
+			focus = LAV_develop_new_aircraft_designs 	 focus = LAV_iterate_on_the_aryx_platform 	
+		}
+		prerequisite = {
+			focus = LAV_indigenous_ai_wingmen 	 	
+		}		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	
+	
+	focus = { #
+		id = LAV_anti_arcadian_specialization
+		icon = GFX_goal_generic_consumer_goods
+		x = -5
+		y = 1
+		relative_position_id = LAV_weve_got_bigger_fish_to_fry
+		prerequisite = {
+			focus = LAV_weve_got_bigger_fish_to_fry 	 	
+		}
+		
+
+		mutually_exclusive = {
+			focus = LAV_follow_in_aviceyns_steps
+		}
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_country_flag = lav_military_tree_second_phase
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_know_our_enemy
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_anti_arcadian_specialization
+		prerequisite = {
+			focus = LAV_anti_arcadian_specialization 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_study_arcadian_air_doctrine
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_know_our_enemy
+		prerequisite = {
+			focus = LAV_know_our_enemy 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_learn_from_the_hud_tapes
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_know_our_enemy
+		prerequisite = {
+			focus = LAV_know_our_enemy 	 	
+		}
+		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_the_20_nauctial_mile_question
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_know_our_enemy
+		prerequisite = {
+			focus = LAV_study_arcadian_air_doctrine 	 	
+		}
+		prerequisite = {
+			focus = LAV_learn_from_the_hud_tapes 	 	
+		}		
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_the_kinetic_solution
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_the_20_nauctial_mile_question
+		prerequisite = {
+			focus = LAV_the_20_nauctial_mile_question 	 	
+		}
+	
+		mutually_exclusive = {
+			focus = LAV_the_technical_solution
+		}
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_reverse_engineer_the_eeaam #energitcally enhanced air attack missile
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_the_kinetic_solution
+		prerequisite = {
+			focus = LAV_the_kinetic_solution 	 	
+		}
+	
+
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_4_stage_booster_engines
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_the_kinetic_solution
+		prerequisite = {
+			focus = LAV_the_kinetic_solution 	 	
+		}
+	
+
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_the_rex_bvraam
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_the_kinetic_solution
+		prerequisite = {
+			focus = LAV_4_stage_booster_engines 	 	
+		}
+		prerequisite = {
+			focus = LAV_reverse_engineer_the_eeaam 	 	
+		}		
+	
+
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_the_technical_solution
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_the_20_nauctial_mile_question
+		prerequisite = {
+			focus = LAV_the_20_nauctial_mile_question 	 	
+		}
+	
+		mutually_exclusive = {
+			focus = LAV_the_kinetic_solution
+		}
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_develop_the_talcyon_225_engine
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_the_technical_solution
+		prerequisite = {
+			focus = LAV_the_technical_solution 	 	
+		}
+	
+		mutually_exclusive = {
+			focus = LAV_the_kinetic_solution
+		}
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}	
+
+	focus = { #
+		id = LAV_magically_enchanced_alluminum
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_the_technical_solution
+		prerequisite = {
+			focus = LAV_the_technical_solution 	 	
+		}
+	
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_rigorous_airfoil_testing
+		icon = GFX_goal_generic_consumer_goods
+		x = -4
+		y = 1
+		relative_position_id = LAV_the_technical_solution
+		prerequisite = {
+			focus = LAV_the_technical_solution 	 	
+		}
+	
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
+
+
+		}
+
+		ai_will_do = {
+		factor = 24
+
+		}
+	}
+	
+	focus = { #
+		id = LAV_the_mobius
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_develop_the_talcyon_225_engine
+		prerequisite = {
+			focus = LAV_develop_the_talcyon_225_engine 	 	
+		}
+		prerequisite = {
+			focus = LAV_rigorous_airfoil_testing 	 	
+		}
+		prerequisite = {
+			focus = LAV_magically_enchanced_alluminum 	 	
+		}				
+	
+
+			
+		cost = 4
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+						
+
 
 
 		}

@@ -488,7 +488,40 @@ ideas = {
 
 			modifier = {
 			}
-		}	
+		}
+		
+		lav_foreign_occupation_office_idea = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+
+
+			modifier = {
+
+				compliance_gain = 0.05
+				resistance_growth = -0.05
+				resistance_damage_to_garrison = -0.05
+
+			}
+		}		
 
 
 }

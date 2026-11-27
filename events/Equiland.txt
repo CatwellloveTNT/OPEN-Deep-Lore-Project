@@ -134,35 +134,7 @@ if = {
 }
 
 		load_oob = equiland_flash_oob
-
-	add_equipment_to_stockpile = {
-		type = apc_equipment_1
-		amount = 259
-	}
-	add_equipment_to_stockpile = {
-		type = ifv_equipment_1
-		amount = 259
-	}	
-	add_equipment_to_stockpile = {
-		type = infantry_equipment_1
-		amount = 3000
-	}	
-	add_equipment_to_stockpile = {
-		type = modern_tank_equipment_1
-		amount = 100
-	}
-	add_equipment_to_stockpile = {
-		type = artillery_equipment_1
-		amount = 500
-	}
-	add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 1000
-	}
-	add_equipment_to_stockpile = {
-		type = motorized_equipment_0
-		amount = 200
-	}		
+	
 
 
 	}

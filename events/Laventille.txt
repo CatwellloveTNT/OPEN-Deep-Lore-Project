@@ -486,6 +486,12 @@ country_event = { #the nation breaks out into civil war!
 
 			}
 
+			YAN = {
+				country_event = {
+					id = yan.1
+				}
+			}
+
 
 
 		}
@@ -708,6 +714,28 @@ country_event = { #arcadia totally cuts off laventille from the outside world, n
 				}
 
 			}
+			else_if = {
+				limit = { LAV = {
+					has_idea = limited_exports
+				} }
+
+				swap_ideas = {
+					remove_idea = limited_exports
+					add_idea = laventillian_closed_economy
+				}
+
+			}	
+			else_if = {
+				limit = { LAV = {
+					has_idea = closed_economy
+				} }
+
+				swap_ideas = {
+					remove_idea = closed_economy
+					add_idea = laventillian_closed_economy
+				}
+
+			}						
 
 		}
 
@@ -943,6 +971,7 @@ country_event = { #aviceyn begrudingly allows in invasion of Nova Yanov
 		ai_chance = {factor = 100}		
 
 		custom_effect_tooltip = lav_38_tt
+	
 
 	}
 
@@ -1015,6 +1044,23 @@ country_event = { #a news broadcaster talks about the fact that laventille's cit
 		ai_chance = {factor = 100}	
 		
 		
+
+	}
+
+}
+country_event = { #laventille wins in nova yanov, arad walks with her bodyguards in Juptier, the capital of nova yanov, she speaks with a high ranking minsister dude about how to proceed with occupying nova yanov
+	id = lav.43
+	title = lav.43.t
+	desc = lav.43.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #I guess you could say the laventillian ponies now have a taste for empire...
+		name = lav.43.a
+		ai_chance = {factor = 100}	
+		
+		custom_effect_tooltip = lav_35_tt
 
 	}
 

@@ -1,6 +1,9 @@
 TW_create_goons_and_equipment = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
 	allowed = {
+
 		is_third_world_country = yes
+
+
 	}
 	enable = {
 		always = yes
@@ -41,11 +44,6 @@ TW_create_goons_and_equipment = { #this shit was kicking my ass before i figured
 		value = -100
 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = anti_armor
-		value = 1
-	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
@@ -126,7 +124,7 @@ TW_create_goons_and_equipment = { #this shit was kicking my ass before i figured
 	ai_strategy = {
 		type = role_ratio
 		id = open_apcs_ai
-		value = 20 
+		value = 10
 	}
 
 
@@ -155,20 +153,63 @@ TW_create_goons_and_equipment = { #this shit was kicking my ass before i figured
 		always = no
 	}
 
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 100
+	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = open_ifvs_ai
-		value = 5
-	}
-
-
+		value = 100
+	}	
 
 
 	ai_strategy = {
 		type = role_ratio
-		id = open_tanks_ai
-		value = 2
-	}		
+		id = open_apcs_ai
+		value = -23
+	}	
+
+	
+
+
+		
 	}
+
+	yan_can_you_make_guys_please = {
+	allowed = {
+		tag = YAN
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 100
+	}	
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_apcs_ai
+		value = -23
+	}	
+
+
+		
+	}	
 

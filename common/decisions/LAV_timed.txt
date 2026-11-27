@@ -315,7 +315,7 @@ lav_wars_of_revenge = {
 			mark_focus_tree_layout_dirty = yes
 
 			country_event = {
-				id = lav.35
+				id = lav.43
 			}
 
 
@@ -332,6 +332,59 @@ lav_wars_of_revenge = {
 		}
 	}	
 
+	lav_defeat_carenage = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 730
+		is_good = no
+		days_re_enable = 5
+
+
+		activation = {
+			LAV = {
+				has_war_with = CRE
+			}
+		}
+
+		available = {
+			CRE = {
+				exists = no
+			}
+		
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			LAV = {
+				has_war_with = CRE
+			}
+		}
+
+
+		complete_effect = {
+
+			set_country_flag = lav_wor_phase_3
+
+			mark_focus_tree_layout_dirty = yes
+
+			country_event = {
+				id = lav.43
+			}
+
+
+		}
+
+		timeout_effect = {
+
+
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 
 
