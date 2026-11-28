@@ -990,87 +990,80 @@ country_event = { #the coalition manages to seize the wreckage
 	}
 }
 
-country_event = { #bunnygirl event
-	id = col.1018
-	title = col.1018.t
-	desc = col.1018.d
-	picture = GFX_placeholder_art
+#country_event = { #bunnygirl event
+#	id = col.1018 #CURRENTLY THERE IS A PC CRASHING ERROR THAT OCCURS WITH BUNNYGIRL DAY ON MAY 6TH (the day the event occurs) AT 0600, THIS EVENT WILL NEED TO BE REMOVED OR REVAMPED
+#	title = col.1018.t
+#	desc = col.1018.d
+#	picture = GFX_placeholder_art
 
-	is_triggered_only = yes
+#	is_triggered_only = yes
 
-	immediate = {
+#	immediate = {
+#
+#
+#		hidden_effect = {
 
+#		country_event = {
+#			id = col.1018
+#			days = 367
+#		}
 
-		hidden_effect = {
+#		PRO = {
+#			country_event = {
+#				id = col.1018
+#				days = 367
+#			}
+#		}
+#		RAV = {
+#			country_event = {
+#				id = col.1018
+#				days = 367
+#			}
+#		}
+#		ARC = {
+#			country_event = {
+#				id = col.1018
+#				days = 367
+#			}
+#		}
+#		TAM = {
+#			country_event = {
+#				id = col.1018
+#				days = 367
+#			}
+#		}
+#		SSK = {
+#			country_event = {
+#				id = col.1018
+#				days = 367
+#			}
+#		}
+#		CSF = {
+#			country_event = {
+#				id = col.1018
+#				days = 367
+#			}
+#		}	
+#		CAT = {
+#			country_event = {
+#				id = col.1018
+#				days = 367
+#			}
+#		}										
+#	}			
+#		}
+#
+#
+#
+#
+#	option = { # Everyone likes bunnygirls
+#		name = col.1018.a
+#		ai_chance = {factor = 100}
+#
+#		add_political_power = 200
 
-		country_event = {
-			id = col.1018
-			days = 365
-		}
-
-		PRO = {
-			country_event = {
-				id = col.1018
-				days = 365
-			}
-		}
-		RAV = {
-			country_event = {
-				id = col.1018
-				days = 365
-			}
-		}
-		ARC = {
-			country_event = {
-				id = col.1018
-				days = 365
-			}
-		}
-		TAM = {
-			country_event = {
-				id = col.1018
-				days = 365
-			}
-		}
-		SSK = {
-			country_event = {
-				id = col.1018
-				days = 365
-			}
-		}
-		CSF = {
-			country_event = {
-				id = col.1018
-				days = 365
-			}
-		}	
-		CAT = {
-			country_event = {
-				id = col.1018
-				days = 365
-			}
-		}										
-	}			
-		}
-
-
-
-
-	option = { # Everyone likes bunnygirls
-		name = col.1018.a
-		ai_chance = {factor = 100}
-
-
-
-		add_timed_idea = {
-			idea = first_world_bunnygirl_idea
-			days = 60
-		}
-
-		add_political_power = 200
-
-	}
-}
+#	}
+#}
 
 country_event = { #tristan engineers blow up the wreckage
 	id = col.1019

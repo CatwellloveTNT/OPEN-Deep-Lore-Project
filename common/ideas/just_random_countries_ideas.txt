@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+			demoralized_army = {
+			picture = warmed_up_pic
+
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.10
+			}
+	}
+}
+}

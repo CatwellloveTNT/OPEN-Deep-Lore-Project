@@ -1,0 +1,94 @@
+LAV_create_goons = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
+	allowed = {
+		tag = LAV
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 5
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ground_assault_infantry_ai
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 5
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ifvs_ai
+		value = 5
+	}
+
+
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = 2
+	}
+
+
+
+}
+
+make_alot_of_goons = {
+	
+	allowed = {
+		tag = LAV
+	}
+	enable = {
+		LAV = {
+			has_completed_focus = LAV_revenge_tenfold
+		}
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 30
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ground_assault_infantry_ai
+		value = 30
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 30
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ifvs_ai
+		value = 30
+	}
+
+
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_tanks_ai
+		value = 5
+	}
+
+}

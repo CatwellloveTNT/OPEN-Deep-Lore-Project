@@ -26,48 +26,48 @@ on_actions = {
 				}
 			country_event = {
 					id = col.1018
-					days = 125
+					days = 127
 				}	
 		PRO = { # ----------------------- THIS LONG LIST OF EVENTS IS FOR THE BUNNYGIRL CELEBRATION EVENT, WHICH LOOPS EVERY YEAR AND MOST FIRST WORLD NATIONS CELEBRATE IT
 			country_event = {
 				id = col.1018
-				days = 125
+				days = 127
 			}
 		}
 		RAV = {
 			country_event = {
 				id = col.1018
-				days = 125
+				days = 127
 			}
 		}
 		ARC = { 
 			country_event = {
 				id = col.1018
-				days = 125
+				days = 127
 			}
 		}
 		TAM = {
 			country_event = {
 				id = col.1018
-				days = 125
+				days = 127
 			}
 		}
 		SSK = {
 			country_event = {
 				id = col.1018
-				days = 125
+				days = 127
 			}
 		}
 		CSF = {
 			country_event = {
 				id = col.1018
-				days = 125
+				days = 127
 			}
 		}	
 		CAT = {
 			country_event = {
 				id = col.1018
-				days = 125
+				days = 127
 			}
 		}							
 

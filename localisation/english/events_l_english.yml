@@ -1115,9 +1115,9 @@ avi.9.a: "We'll give Triste the push they need to finish this"
 avi.10.t: "Triste Destroys the Downed Aryx"
 avi.10.d: "todo: The Aryx wreck is destroyed"
 avi.10.a: "Good"
-avi.11.t: "Humanity Gets Their Hands on the Aryx"
-avi.11.d: "todo: tfi manages to extract the aryx"
-avi.11.a: "We'll have to reconsider our view of the Tristans now..."
+avi.11.t: "The Creation of L.A.T.S"
+avi.11.d: "todo: l.a.t.s is like brics but REAL"
+avi.11.a: "Let's send invitations to our future members"
 avi.12.t: "Laventille Joins L.A.T.S"
 avi.12.d: ""
 avi.12.a: "Theres L"
@@ -1576,12 +1576,40 @@ lav.42.a: "How we have grown since those dark days"
 lav.43.t: "Our First Taste of True Empire"
 lav.43.d: "todo: laventille wins in nova yanov, arad walks with her bodyguards in Juptier, the capital of nova yanov, she speaks with a high ranking minsister dude about how to proceed with occupying nova yanov"
 lav.43.a: "One might proclaim our ponies have recieved but the slightest taste of true empire..."
+lav.44.t: "The Coronact Impasse"
+lav.44.d: "todo: coronact treaty forms in response to laventillian aggressive actions in the region"
+lav.44.a: "That won't stop us"
+lav.45.t: "Lowlands Annexed!"
+lav.45.d: "todo: laventille annexes the lowlands"
+lav.45.a: "But a few final hurdles stands before us"
+lav.46.t: "Mayaro Seeks Partnership..."
+lav.46.d: "todo: mayaro seeks to betray the coronact treaty and side with laventille in their war with halfiya"
+lav.46.a: "Partnership?!... Partnership?!?!"
+lav.47.t: "Mayaro Wants to be our Vassel"
+lav.47.d: "todo: mayaro gives another offer to be the vassel of laventille"
+lav.47.a: "Good offer"
+lav.48.t: "Mayaro Makes Good on their Offer"
+lav.48.d: "todo: mayaro swaps sides and becomes a laventillian puppet"
+lav.48.a: "Come, let us crush those before us"
+lav.49.t: "Halfiya Defeated!"
+lav.49.d: "todo: laventille defeats halfiya, arad walks along the border between arcadia and laventille with her goons"
+lav.49.a: "The time has come."
+lav.50.t: "The Battle of the Narva Stretch..."
+lav.50.d: "todo: laventille sends in the now elite 1st Armoured Division to take the Narva Stretch, it catches the unprepared 1-8th Armoured calvary battalion off guard and the battle for the Narva Gap ensues"
+lav.50.a: "This is it..."
 
 
 # -------------------- XPERIA --------------------
 xpr.1.t: "Xperia - The Fallen Empire"
 xpr.1.d: "todo: explains xperia's history on the tarmarizu sub continent, explain the heights of the empire and its gradual fall, explain that the nation is re nationalizing and that it seeks to reclaim the empire"
 xpr.1.a: "We must reclaim our birthright"
+
+# -------------------- MAYARO --------------------
+may.2.t: "L-lets g-give a-another offer..."
+may.2.d: "WHY ARE YOU PLAYING THIS COUNTRY READING THIS?!?!??!?!??!?!??!"
+# -------------------- HALFIYA --------------------
+hal.3.t: "Mayaro Betrays the Alliance!"
+
 
 # -------------------- HIGHCLIFF TRADE FEDERATION --------------------
  htf.1.t:0 "Laventille Demands our Western Terrirtories" 
@@ -1720,6 +1748,8 @@ xpr.1.a: "We must reclaim our birthright"
  col_1072_a_tt:0 "§YWe will be able to send additional divisions to support Nova Yanov§W"
  col_1072_b_tt:0 "Our bond with our §ALittle Siblings§W becomes evermore fragile"
  lav_41_tt:0 "§YWe have unlocked a new decision tab, in this tab we can request specalized advisors from nations willing to grant us aid§W"
+ lav_47_tt:0 "§YMayaro will betray the Coronact alliance when we declare war on Halfiya§W"
+ lav_50_tt:0 "The Narva Stretch is the final remaining hurdle we must cross before a proper invasion of Arcadia. 80 kilometers of heavily fortified and mined flatlands defended by the renown 8th Armoured Calvary Division stands before our elite 1st Armoured Division. The future of Laventille rests on their shoulders...\n\n§YThe Battle of the Narva Stretch minigame has activated, check your decision tab§W\n\n§RImmediately after this minigame, we will declare total war on Arcadia and Nightreign.§W"
 
 
  

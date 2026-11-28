@@ -178,7 +178,32 @@ on_actions = {
 		# FOR THE SHADOWLORD			
 		set_variable = { global.number_of_tristan_ships_sunk = 0}
 		set_variable = { global.number_of_coalition_ships_sunk = 0}	
-			# ---------------- THE CIRCUIT -------------------- #				
+			# ---------------- THE CIRCUIT -------------------- #	
+
+			# ---------------- THE BATTLE OF THE NARVA STRETCH -------------------- #	
+			# ARCADIAN VARS
+			set_variable = {  global.1_8_acr_strength = 100  }
+			set_variable = {  global.1_8_acr_cohesion = 4  }			
+			set_variable = {  global.2_8_acr_strength = 100  }
+			set_variable = {  global.2_8_acr_cohesion = 4  }					
+			set_variable = {  global.3_8_acr_strength = 100  }
+			set_variable = {  global.3_8_acr_cohesion = 4  }				
+			set_variable = {  global.4_8_acr_strength = 100  }
+			set_variable = {  global.4_8_acr_cohesion = 4  }	
+			# LAVENTILLIAN VARS
+			set_variable = {  global.1_1_armoured_strength = 100   }
+			set_variable = {  global.1_1_armoured_cohesion = 3   }	
+			set_variable = {  global.2_1_armoured_strength = 100   }
+			set_variable = {  global.2_1_armoured_cohesion = 3   }	
+			set_variable = {  global.3_1_armoured_strength = 100   }
+			set_variable = {  global.3_1_armoured_cohesion = 3   }				
+			# GLOBAL	
+			set_variable = { global.botns_days = 0 }		
+			set_variable = { global.amount_of_narva_taken = 0 }			
+			# FOR THE SHADOWLORD
+			set_variable = { global.number_of_arcadian_battalions_destroyed = 0 }
+			set_variable = { global.number_of_laventillian_battalions_destroyed = 0 }							
+			# ---------------- THE BATTLE OF THE NARVA GAP -------------------- #		
 
 		}
 

@@ -529,3 +529,12 @@ music = {
 		}				
 	}
 }
+music = { 
+	song = "lightgrid"
+	chance = {
+		modifier = {
+			tag = LAV
+			factor = 0.05
+		}				
+	}
+}

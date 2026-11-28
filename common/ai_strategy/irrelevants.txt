@@ -39,11 +39,6 @@ create_goons = { #this shit was kicking my ass before i figured it out, in order
 		value = -100
 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = anti_armor
-		value = 1
-	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
@@ -104,12 +99,6 @@ create_goons = { #this shit was kicking my ass before i figured it out, in order
 		value = 10
 	}
 
-
-	ai_strategy = {
-		type = role_ratio
-		id = open_apcs_ai
-		value = 15
-	}
 
 
 	ai_strategy = {

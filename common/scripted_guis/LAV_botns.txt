@@ -1,0 +1,41 @@
+scripted_gui = {
+  lav_botns_ui = {
+    context_type = player_context
+    window_name = "lav_botns_ui_window"
+
+
+
+   effects = {
+
+
+
+
+   }
+
+    ai_enabled = {
+      always = yes
+    }
+
+    ai_test_interval = 50
+    ai_test_variance = 0.1
+
+    ai_check = {
+      has_global_flag = global_the_circuit_is_ongoing
+    }
+
+   # ai_check_scope = {
+    #  
+    #}
+
+
+   ai_weights = {
+   
+ 
+    }
+
+
+  }
+
+
+
+}

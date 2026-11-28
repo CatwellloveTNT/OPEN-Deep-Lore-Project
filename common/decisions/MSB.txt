@@ -2605,6 +2605,133 @@ puppetmaster = {
 			factor = 5000
 		}		
 
+	}
+	
+	
+	msb_hal_attack_mayaro = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+		HAL = {
+			AND = {
+			has_country_flag = hal_landgrab_mode
+			BLG = {
+				exists = no
+			}
+			}
+
+		}							
+
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 20
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			HAL = {
+				declare_war_on = {
+					target = MAY
+					type = annex_everything
+				}
+			}
+
+		}
+
+		complete_effect = {
+
+			
+
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
+	}	
+
+	msb_hal_attack_belobog = { 
+		priority = 310
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = MSB
+		}
+
+		available = {
+
+			AND = {
+			HAL = {
+				has_country_flag = hal_landgrab_mode
+			}
+			}
+
+							
+
+
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_re_enable = 1
+
+		days_remove = 20
+
+		modifier = {
+		}
+
+		remove_effect = {
+
+			HAL = {
+				declare_war_on = {
+					target = BLG
+					type = annex_everything
+				}
+			}
+
+		}
+
+		complete_effect = {
+
+			
+
+		
+
+		}
+
+		ai_will_do = {
+			factor = 5000
+		}		
+
 	}	
 
 }

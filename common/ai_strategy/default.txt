@@ -4,10 +4,10 @@ default_unit_production = {
 		always = yes
 		NOT = {
 			OR = {
-				is_third_world_country = yes
-				is_second_world_country = yes		
-				is_first_world_country = yes
-				is_irrelevant_country = yes							
+	#			is_third_world_country = yes
+	#			is_second_world_country = yes		
+	##			is_first_world_country = yes
+	#			is_irrelevant_country = yes							
 			}
 		}
 	}
@@ -643,56 +643,7 @@ default_mountaineers_production = {
 #	#}
 #}
 
-default_mobile_production = {
-	enable = {
-		ai_wants_divisions > 11
-		has_tech = motorised_infantry
-	}
-	abort = {
-		ai_wants_divisions < 12
-	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = mobile
-		value = 2
-	}
-}
-
-default_armored_production = {
-	enable = {
-		NOT = {
-			OR = {
-			}
-		}
-		ai_wants_divisions > 49
-	}
-	abort = {
-		ai_wants_divisions < 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 2
-	}
-}
-
-highered_armored_production = {
-	enable = {
-
-		num_of_military_factories > 69
-	}
-	abort = {
-		num_of_military_factories < 70
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 5
-	}
-}
 
 slightly_naval_focused_nation = {
 	enable = {
@@ -760,81 +711,7 @@ more_naval_focused_nation = {
 }
 
 
-default_area_priority = {
-	enable = {
-	}
-	abort_when_not_enabled = yes
 
-	ai_strategy = {
-		type = area_priority
-		id = europe
-		value = 100
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = scandinavia
-		value = 0
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = north_america
-		value = 100
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = south_america
-		value = 40
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = asia
-		value = 75
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = middle_east
-		value = 50
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = africa
-		value = 10
-	}
-
-
-	ai_strategy = {
-		type = area_priority
-		id = pacific
-		value = 50
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = oceania
-		value = 75
-	}
-
-}
-
-default_area_priority_non_africa = {
-    enable = {
-        NOT = { capital_scope = { is_on_continent = africa } }
-    }
-    abort_when_not_enabled = yes
-
-    ai_strategy = {
-        type = area_priority
-        id = africa
-        value = -70
-    }
-
-}
 
 default_railway_gun_management = {
 	enable = {
@@ -1026,119 +903,7 @@ dont_build_capitals_if_on_treaty = {
 	}
 }
 
-DEFAULT_early_template_design = {
-	enable = {
-		NOT = {
-			OR = {
-			}
-		}
-		date < 1940.1.1
-	}
-	abort = {
-		date > 1940.1.1
-	}
 
-	ai_strategy = {
-		type = template_prio
-		id = motorized
-		value = 10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = -10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = -50
-	}
-
-#	ai_strategy = {
-#		type = template_prio
-#		id = paratroopers
-#		value = -50
-#	}
-
-	ai_strategy = {
-		type = template_prio
-		id = infantry
-		value = 60
-	}
-}
-
-DEFAULT_midlate_template_design = {
-	enable = {
-		NOT = {
-			OR = {
-			}
-		}
-		date > 1940.1.1
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = template_prio
-		id = mechanized
-		value = 10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 20
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = modern_armor
-		value = 50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = infantry
-		value = 10
-	}
-}
 
 save_admiral_pp_for_later = {
 	enable = {

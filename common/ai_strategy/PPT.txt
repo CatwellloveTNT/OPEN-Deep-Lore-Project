@@ -1,0 +1,25 @@
+ppt_create_goons = { #this shit was kicking my ass before i figured it out, in order for the ai to not decomm custom units, the id needs to be the same as the unit in the ai templates file
+	allowed = {
+		original_tag = PPT
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+
+	ai_strategy = {
+		type = build_army
+		id = open_ground_assault_infantry_ai
+		value = 100
+	}	
+	
+
+
+
+
+
+
+}

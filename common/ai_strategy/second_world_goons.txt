@@ -123,11 +123,11 @@ SW_create_goons_and_equipment = { #this shit was kicking my ass before i figured
 	}
 
 
-	ai_strategy = {
-		type = role_ratio
-		id = open_apcs_ai
-		value = 5 
-	}
+#	ai_strategy = {
+#		type = role_ratio
+#		id = open_apcs_ai
+#		value = 5 
+#	}
 
 
 	ai_strategy = {

@@ -106,12 +106,7 @@ FLA_buildup_goons_until_third_skirmish = { #if flaria has too many divs then pro
 		id = open_ifvs_ai
 		value = 100
 	}	
-
-	ai_strategy = { #during testing protea made less divisons than usual without apcs, just testing this for now
-		type = build_army
-		id = open_apcs_ai
-		value = -10
-	}		
+		
 
 	ai_strategy = {
 		type = build_army
@@ -146,7 +141,7 @@ FLA_support_your_sister = { #chaffia and flaria will give each other the TFR NAT
 
 	abort = {
 		CHF = {
-			has_war_with = FLA
+			has_completed_focus = CHF_demand_a_union_with_flaria
 		}
 
 	}

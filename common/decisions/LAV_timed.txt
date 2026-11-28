@@ -364,12 +364,77 @@ lav_wars_of_revenge = {
 
 		complete_effect = {
 
-			set_country_flag = lav_wor_phase_3
+
+
+
+		}
+
+		timeout_effect = {
+
+
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	lav_defeat_the_lowlands = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 730
+		is_good = no
+		days_re_enable = 5
+
+
+		activation = {
+			OR = {
+			LAV = {
+				has_war_with = PPT
+			}
+			LAV = {
+				has_war_with = KLD
+			}			
+			}
+
+		}
+
+		available = {
+			AND = {
+			PPT = {
+				exists = no
+			}	
+			KLD = {
+				exists = no
+			}						
+			}
+
+		
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			OR = {
+			LAV = {
+				has_war_with = PPT
+			}
+			LAV = {
+				has_war_with = KLD
+			}			
+			}
+		}
+
+
+		complete_effect = {
+
+			set_country_flag = lav_wor_phase_4
 
 			mark_focus_tree_layout_dirty = yes
 
 			country_event = {
-				id = lav.43
+				id = lav.45
 			}
 
 
@@ -386,7 +451,67 @@ lav_wars_of_revenge = {
 		}
 	}
 
+	lav_defeat_halfiya = {
+		priority = 320
+		icon = GFX_decision_eng_trade_unions_support
+		days_mission_timeout = 730
+		is_good = no
+		days_re_enable = 5
 
+
+		activation = {
+			OR = {
+			LAV = {
+				has_war_with = HAL
+			}		
+			}
+
+		}
+
+		available = {
+			AND = {
+			HAL = {
+				exists = no
+			}						
+			}
+
+		
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			OR = {
+			LAV = {
+				has_war_with = HAL
+			}			
+			}
+		}
+
+
+		complete_effect = {
+
+			set_country_flag = lav_wor_phase_5
+
+			mark_focus_tree_layout_dirty = yes
+
+			country_event = {
+				id = lav.49
+			}
+
+
+		}
+
+		timeout_effect = {
+
+
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
 
 
 }

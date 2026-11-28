@@ -646,5 +646,20 @@ news_event = { #L.A.T.S is formed
 	}
 
 }
+news_event = { #Coronact Treaty is formed to counteract laventillian aggression
+	id = news.40
+	title = news.40.t
+	desc = news.40.d
+	picture = GFX_news_haki_terror_attack_event_image
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.40.a
+	}
+
+}
 
 

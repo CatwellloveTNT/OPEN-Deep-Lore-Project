@@ -81,7 +81,7 @@ CHF_support_your_sister = { #chaffia and flaria will give each other the TFR NAT
 
 	abort = {
 		CHF = {
-			has_war_with = FLA
+			has_completed_focus = CHF_demand_a_union_with_flaria
 		}
 
 	}
@@ -152,17 +152,35 @@ CHF_buildup_goons_until_third_skirmish = { #For so long as the forces of Protea 
 		value = 5
 	}
 
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 15
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ground_assault_infantry_ai
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 15
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ifvs_ai
+		value = 15
+	}
+
 	ai_strategy = {
 		type = build_army
 		id = open_ifvs_ai
 		value = 10
 	}	
 
-	ai_strategy = {
-		type = build_army
-		id = open_apcs_ai
-		value = 15
-	}	
 
 	ai_strategy = {
 		type = build_army

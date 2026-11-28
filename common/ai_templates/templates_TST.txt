@@ -1,7 +1,7 @@
 PRO_go_for_ifvs = { #these files are just copied over from the PRO ai temps file (as they were the first one i made) with slightly/majorly altered values
 
 	available_for = {
-		LAV
+		TST
 	}
 	
 	role = open_ifvs_ai
@@ -104,116 +104,119 @@ PRO_go_for_ifvs = { #these files are just copied over from the PRO ai temps file
 
 }
 
-PRO_go_for_apcs = {
+# there is a nasty bug going on with apcs rn where the ai will spam 50-100 active apc division training lines at a time. if i make the ai weight value negative enough so that the ai wont make apcs, they wont make
+# any divisions at all. either that or they will only make 1-2 ifv/infantry divisions at a time. not sure what caused this but i believe it got introduced after
+# i updated to 1.20.0
+#PRO_go_for_apcs = { 
+#
+#	available_for = {
+#		CHF
+#	}
+#	
+#	role = open_apcs_ai
+#	
+#	upgrade_prio = {
+#		base = 2
+#
+#		modifier = {
+#			factor = 4
+#			AND = {
+#				has_tech = basic_heavy_tank_chassis
+#				num_of_military_factories > 10
+#			}
+#		}
+#	}
 
-	available_for = {
-		LAV
-	}
-	
-	role = open_apcs_ai
-	
-	upgrade_prio = {
-		base = 2
+#	PRO_apcs_endgame = {
+#		division_names_group = PRO_MEC_01
+#		upgrade_prio = {
+#			base = 1
+#
+#			modifier = {
+#				factor = 3
+#				date > "2038.1.1"
+#			}
+#		}
+#		
+#		target_template = {
+#			
+#			support = {
+#				engineer = 1
+#				manpads_unit = 1
+#				atgm_unit = 1
+#				artillery = 1
+#				attack_helicopter_support_company = 1
+#			}
+#			
+#			regiments = {
+#				open_apc_unit = 6
+#				mot_artillery_brigade = 2
+#			}
+#		}
+#	}
 
-		modifier = {
-			factor = 4
-			AND = {
-				has_tech = basic_heavy_tank_chassis
-				num_of_military_factories > 10
-			}
-		}
-	}
-
-	PRO_apcs_endgame = {
-		division_names_group = PRO_MEC_01
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 3
-				date > "2038.1.1"
-			}
-		}
+#	PRO_apcs_midgame = {
+#		division_names_group = PRO_MEC_01
+#		upgrade_prio = {
+#			base = 1
+#
+#			modifier = {
+#				factor = 3
+#				date > "2035.1.1"
+#			}
+#		}
 		
-		target_template = {
-			
-			support = {
-				engineer = 1
-				manpads_unit = 1
-				atgm_unit = 1
-				artillery = 1
-				attack_helicopter_support_company = 1
-			}
-			
-			regiments = {
-				open_apc_unit = 6
-				mot_artillery_brigade = 2
-			}
-		}
-	}
-
-	PRO_apcs_midgame = {
-		division_names_group = PRO_MEC_01
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 3
-				date > "2035.1.1"
-			}
-		}
-		
-		target_template = {
-			
-			support = {
-				engineer = 1
-				manpads_unit = 1
-				atgm_unit = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				open_apc_unit = 4
-				mot_artillery_brigade = 2
-			}
-		}
-	}
-
-	PRO_apcs_startgame = {
-		division_names_group = PRO_MEC_01
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 3
-				date > "2032.1.1"
-			}
-		}
-		
-		target_template = {
-			
-			support = {
-				engineer = 1
-				manpads_unit = 1
-				atgm_unit = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				open_apc_unit = 3
-				mot_artillery_brigade = 2
-			}
-		}
-	}	
-
-
-
-}
+#		target_template = {
+#			
+#			support = {
+#				engineer = 1
+#				manpads_unit = 1
+#				atgm_unit = 1
+#				artillery = 1
+#			}
+#			
+#			regiments = {
+#				open_apc_unit = 4
+#				mot_artillery_brigade = 2
+#			}
+#		}
+#	}
+#
+#	PRO_apcs_startgame = {
+#		division_names_group = PRO_MEC_01
+#		upgrade_prio = {
+#			base = 1
+#
+#			modifier = {
+#				factor = 3
+#				date > "2032.1.1"
+#			}
+#		}
+#		
+#		target_template = {
+#			
+#			support = {
+#				engineer = 1
+#				manpads_unit = 1
+#				atgm_unit = 1
+#				artillery = 1
+#			}
+#			
+#			regiments = {
+#				open_apc_unit = 3
+#				mot_artillery_brigade = 2
+#			}
+#		}
+#	}	
+#
+#
+#
+#}
 
 PRO_go_for_tanks = {
 
 	available_for = {
-		LAV
+		TST
 	}
 	
 	role = open_tanks_ai
@@ -320,7 +323,7 @@ PRO_go_for_tanks = {
 PRO_footies = {
 
 	available_for = {
-		LAV
+		TST
 	}
 	
 	role = open_ground_assault_infantry_ai
@@ -421,7 +424,7 @@ PRO_footies = {
 PRO_attack_helicopters = {
 
 	available_for = {
-		LAV
+		TST
 	}
 	
 	role = open_apaches_ai

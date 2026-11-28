@@ -18,3 +18,4 @@ GUYS_DEFEND_YOUR_CAPITAL = {
 
 
 }
+

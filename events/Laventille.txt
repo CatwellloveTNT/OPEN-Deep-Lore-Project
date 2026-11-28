@@ -491,7 +491,36 @@ country_event = { #the nation breaks out into civil war!
 					id = yan.1
 				}
 			}
-
+			CRE = {
+				country_event = {
+					id = cre.1
+				}
+			}
+			MAY = {
+				country_event = {
+					id = may.1
+				}
+			}	
+			BLG = {
+				country_event = {
+					id = blg.1
+				}
+			}
+			PPT = {
+				country_event = {
+					id = ppt.1
+				}
+			}
+			KLD = {
+				country_event = {
+					id = kld.1
+				}
+			}
+			HAL = {
+				country_event = {
+					id = hal.1
+				}
+			}															
 
 
 		}
@@ -765,6 +794,8 @@ country_event = { #event that pushes laventille onto the second phase of its mil
 		set_country_flag = lav_military_tree_second_phase
 
 		custom_effect_tooltip = lav_28_tt
+
+		mark_focus_tree_layout_dirty = yes
 
 	}
 
@@ -1065,6 +1096,139 @@ country_event = { #laventille wins in nova yanov, arad walks with her bodyguards
 	}
 
 }
+country_event = { #coronact treaty forms in response to laventillian aggressive actions in the region
+	id = lav.44
+	title = lav.44.t
+	desc = lav.44.d
+	#picture = GFX_haki_terror_attack_event_image
 
+	is_triggered_only = yes
+
+	option = { #That won't stop us
+		name = lav.44.a
+		ai_chance = {factor = 100}	
+		
+
+	}
+
+}
+
+country_event = { #laventille annexes the lowlands
+	id = lav.45
+	title = lav.45.t
+	desc = lav.45.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Only a few more steps to go
+		name = lav.45.a
+		ai_chance = {factor = 100}	
+		
+		custom_effect_tooltip = lav_35_tt
+
+	}
+
+}
+
+country_event = { #mayaro seeks to betray the coronact treaty and side with laventille in their war with halfiya
+	id = lav.46
+	title = lav.46.t
+	desc = lav.46.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #partnership?!... partnership?!?!?!?
+		name = lav.46.a
+		ai_chance = {factor = 100}	
+		
+		MAY = {
+			country_event = {
+				id = may.2
+				days = 2
+			}
+		}
+
+	}
+
+}
+country_event = { #mayaro gives another offer to be the vassel of laventille
+	id = lav.47
+	title = lav.47.t
+	desc = lav.47.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Good offer
+		name = lav.47.a
+		ai_chance = {factor = 100}	
+		
+		custom_effect_tooltip = lav_47_tt
+
+	}
+
+}
+country_event = { #mayaro swaps sides
+	id = lav.48
+	title = lav.48.t
+	desc = lav.48.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #Only a few more steps to go
+		name = lav.48.a
+		ai_chance = {factor = 100}	
+
+	}
+
+}
+country_event = { #laventille defeats halfiya, arad walks along the border between arcadia and laventille with her goons
+	id = lav.49
+	title = lav.49.t
+	desc = lav.49.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #The time has come.
+		name = lav.49.a
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = lav_35_tt
+
+	}
+
+}
+country_event = { #kickoff event for the battle of the narva stretch
+	id = lav.50
+	title = lav.50.t
+	desc = lav.50.d
+	#picture = GFX_haki_terror_attack_event_image
+
+	is_triggered_only = yes
+
+	option = { #The time has come.
+		name = lav.50.a
+		ai_chance = {factor = 100}	
+
+		custom_effect_tooltip = lav_50_tt
+
+		set_global_flag = battle_of_the_narva_stretch_active
+
+		hidden_effect = {
+			ARC = {
+				scoped_play_song = "lightgrid"
+			}
+			LAV = {
+				scoped_play_song = "lightgrid"
+			}			
+		}
+
+	}
+
+}
 
 

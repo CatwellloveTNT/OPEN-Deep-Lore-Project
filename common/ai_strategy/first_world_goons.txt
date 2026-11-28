@@ -128,11 +128,11 @@ FW_create_goons_and_equipment = { #this shit was kicking my ass before i figured
 	}
 
 
-	ai_strategy = {
-		type = role_ratio
-		id = open_apcs_ai
-		value = 20 
-	}
+	#ai_strategy = {
+	#	type = role_ratio
+	#	id = open_apcs_ai
+	#	value = 20 
+	#}
 
 
 	ai_strategy = {

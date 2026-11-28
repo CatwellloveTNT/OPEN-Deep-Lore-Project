@@ -1,0 +1,106 @@
+# ------------------ CLAMPERS ------------------ #
+botns_1_8_acr_strength_clamper = {
+clamp_variable = {
+	var = var:global.1_8_acr_strength
+	min = 0
+	max = 100
+}	
+}
+botns_2_8_acr_strength_clamper = {
+clamp_variable = {
+	var = var:global.2_8_acr_strength
+	min = 0
+	max = 100
+}	
+}
+botns_3_8_acr_strength_clamper = {
+clamp_variable = {
+	var = var:global.3_8_acr_strength
+	min = 0
+	max = 100
+}	
+}
+botns_4_8_acr_strength_clamper = {
+clamp_variable = {
+	var = var:global.4_8_acr_strength
+	min = 0
+	max = 100
+}	
+}
+botns_1_1_armoured_strength_clamper = {
+clamp_variable = {
+	var = var:global.1_1_armoured_strength
+	min = 0
+	max = 100
+}	
+}
+botns_2_1_armoured_strength_clamper = {
+clamp_variable = {
+	var = var:global.2_1_armoured_strength
+	min = 0
+	max = 100
+}	
+}
+botns_3_1_armoured_strength_clamper = {
+clamp_variable = {
+	var = var:global.3_1_armoured_strength
+	min = 0
+	max = 100
+}	
+}
+botns_1_8_acr_cohesion_clamper = {
+clamp_variable = {
+	var = var:global.1_8_acr_cohesion
+	min = 0
+	max = 4
+}	
+}
+botns_2_8_acr_cohesion_clamper = {
+clamp_variable = {
+	var = var:global.2_8_acr_cohesion
+	min = 0
+	max = 4
+}	
+}
+botns_3_8_acr_cohesion_clamper = {
+clamp_variable = {
+	var = var:global.3_8_acr_cohesion
+	min = 0
+	max = 4
+}	
+}
+botns_4_8_acr_cohesion_clamper = {
+clamp_variable = {
+	var = var:global.4_8_acr_cohesion
+	min = 0
+	max = 4
+}	
+}
+botns_1_1_armoured_cohesion_clamper = {
+clamp_variable = {
+	var = var:global.1_1_armoured_cohesion
+	min = 0
+	max = 3
+}	
+}
+botns_2_1_armoured_cohesion_clamper = {
+clamp_variable = {
+	var = var:global.2_1_armoured_cohesion
+	min = 0
+	max = 3
+}	
+}
+botns_3_1_armoured_cohesion_clamper = {
+clamp_variable = {
+	var = var:global.3_1_armoured_cohesion
+	min = 0
+	max = 3
+}	
+}
+botns_narva_capture_amount_clamper = {
+clamp_variable = {
+	var = var:global.amount_of_narva_taken
+	min = 0
+	max = 100
+}	
+}

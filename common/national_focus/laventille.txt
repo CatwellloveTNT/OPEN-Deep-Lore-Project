@@ -2275,8 +2275,10 @@ focus_tree = {
 
 		}
 
+		will_lead_to_war_with = EQL
+
 		ai_will_do = {
-		factor = 24
+		factor = 100
 
 		}
 	}
@@ -2320,7 +2322,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-		factor = 24
+		factor = 100
 
 		}
 	}	
@@ -2387,10 +2389,14 @@ focus_tree = {
 				}			
 			}
 
+
+
 		}
 
+	will_lead_to_war_with = YAN	
+
 		ai_will_do = {
-		factor = 24
+		factor = 100
 
 		}
 	}	
@@ -2433,7 +2439,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-		factor = 24
+		factor = 100
 
 		}
 	}	
@@ -2530,7 +2536,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-		factor = 24
+		factor = 100
 
 		}
 	}	
@@ -2577,10 +2583,360 @@ focus_tree = {
 				}
 			}
 
+			HAL = {
+			hidden_effect = {
+				country_event = {
+					id = hal.2
+				}
+			}
+			}
+
+
+
+
+
 		}
 
+
+		will_lead_to_war_with = CRE
+
 		ai_will_do = {
-		factor = 24
+		factor = 100
+
+		}
+	}	
+
+	focus = { 
+		id = LAV_eliminate_the_lowlands
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = LAV_crush_carenage
+		prerequisite = {
+			focus = LAV_crush_carenage		
+		}
+		
+		cost = 5
+
+		available = {
+			AND = {
+				CRE = {
+					exists = no
+				}
+			has_army_manpower = { size > 450000 }				
+			}			
+		}
+		
+		bypass = {
+
+		}
+
+		allow_branch = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+			LAV = {
+				declare_war_on = {
+					target = PPT
+					type = annex_everything
+				}
+			}
+			LAV = {
+				declare_war_on = {
+					target = KLD
+					type = annex_everything
+				}
+			}			
+
+
+		}
+
+			will_lead_to_war_with = KLD		
+			will_lead_to_war_with = PPT
+		ai_will_do = {
+		factor = 100
+
+		}
+	}	
+
+	focus = { 
+		id = LAV_are_we_interupting #localized are we interupting???
+		icon = GFX_goal_generic_consumer_goods
+		x = -2
+		y = 1
+		relative_position_id = LAV_eliminate_the_lowlands
+		prerequisite = {
+			focus = LAV_eliminate_the_lowlands		
+		}
+		
+		cost = 5
+
+		available = {
+
+			AND = {
+				HAL = {
+					has_war = yes
+				}
+			has_army_manpower = { size > 550000 }					
+			}
+
+		
+		}
+		
+		bypass = {
+
+		}
+
+		mutually_exclusive = {
+			focus = LAV_one_final_showdown
+		}		
+
+		allow_branch = {
+			has_country_flag = lav_wor_phase_4
+		}
+
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		
+
+		completion_reward = {
+
+			if = {
+				limit = { HAL = {
+					has_war_with = MAY
+				} }
+
+				LAV = {
+					declare_war_on = {
+						target = HAL
+						type = annex_everything
+					}
+				}
+				
+			}
+			else_if = {
+				limit = { HAL = {
+					has_war_with = BLG
+				} }
+
+				LAV = {
+				declare_war_on = {
+					target = BLG
+					type = annex_everything
+				}
+
+			}
+				LAV = {
+				declare_war_on = {
+					target = HAL
+					type = annex_everything
+				}
+
+			}			
+			}
+
+
+
+		}
+
+			will_lead_to_war_with = HAL		
+		ai_will_do = {
+		factor = 100
+
+		}
+	}
+	
+	focus = { 
+		id = LAV_one_final_showdown #
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		relative_position_id = LAV_eliminate_the_lowlands
+		prerequisite = {
+			focus = LAV_eliminate_the_lowlands		
+		}
+		
+		cost = 5
+
+		available = {
+
+			OR = {
+
+			AND = {
+		has_army_manpower = { size > 650000 }	
+		
+			HAL = {
+				is_in_faction_with = MAY
+			}
+
+			}
+
+			AND = {
+		has_army_manpower = { size > 650000 }	
+		HAL = {
+			has_country_flag = hal_landgrab_mode
+			has_war = no
+		}			
+			}
+			}
+
+	
+		
+
+		}
+		
+		bypass = {
+
+		}
+
+		mutually_exclusive = {
+			focus = LAV_are_we_interupting
+		}		
+
+		allow_branch = {
+			has_country_flag = lav_wor_phase_4
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		select_effect = {
+			country_event = {
+				id = lav.46
+				days = 3
+			}
+		}
+
+		completion_reward = {
+
+
+			if = {
+				limit = { HAL = {
+					NOT = {
+						has_country_flag = hal_landgrab_mode
+					}
+				} }
+
+			LAV = {
+				declare_war_on = {
+					target = HAL
+					type = annex_everything
+				}
+			}
+			LAV = {
+				declare_war_on = {
+					target = BLG
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+			country_event = {
+				id = lav.48
+			}				
+			}
+
+
+
+			}
+			else_if = {
+				limit = { HAL = {
+					has_country_flag = hal_landgrab_mode
+				} }
+
+				LAV = {
+				declare_war_on = {
+					target = HAL
+					type = annex_everything
+				}
+			}			
+			}
+			
+
+		}
+
+			
+		will_lead_to_war_with = HAL		
+
+		ai_will_do = {
+		factor = 100
+
+		}
+	}
+	
+	focus = { 
+		id = LAV_death_to_arcadia #
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = LAV_eliminate_the_lowlands
+		prerequisite = {
+			focus = LAV_are_we_interupting focus = LAV_one_final_showdown
+		}
+	
+		
+		cost = 5
+
+		available = {
+
+
+
+			AND = {
+				HAL = {
+					exists = no
+				}
+			has_army_manpower = { size > 800000 }				
+			}
+	
+		
+
+		}
+		
+		bypass = {
+
+		}
+	
+
+		allow_branch = {
+			has_country_flag = lav_wor_phase_5
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+
+
+			country_event = {
+				id = lav.50
+			}
+			
+
+		}
+
+			
+		will_lead_to_war_with = ARC		
+
+		ai_will_do = {
+		factor = 100
 
 		}
 	}	
@@ -5159,9 +5515,6 @@ focus_tree = {
 		}
 		
 
-		mutually_exclusive = {
-			focus = LAV_cultivate_an_indigenous_aerospace_workforce
-		}
 			
 		cost = 4
 		available = {

@@ -278,3 +278,8 @@ music = { #
 	file = "lets_go.ogg"
 	volume = 1
 }
+music = { #
+	name = "lightgrid"
+	file = "lightgrid.ogg"
+	volume = 1
+}

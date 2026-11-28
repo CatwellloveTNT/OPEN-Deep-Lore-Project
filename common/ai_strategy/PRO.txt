@@ -157,29 +157,7 @@ ai_strategy = {
 	
 }
 
-PRO_ignore_the_flarians = { #second skirmish
 
-	allowed = {
-		original_tag = PRO
-	}
-
- enable = {
-		CHF = {
-			controls_province = 9336
-		}
- }
-
- abort = {
-		date > 2033.1.1 
- }
- abort_when_not_enabled = yes
-
-  ai_strategy = {
-	type = ignore
-	id = FLA
-	value = 1000
- }
-}
 
 PRO_all_in = { #we will dedicate our entire army to fighting chaffia, no garrisons
 
@@ -252,6 +230,29 @@ PRO_buildup_goons_for_third_skirmish = { #its in the name, protea will make divi
 	}
 	abort_when_not_enabled = yes
 
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ground_assault_infantry_ai
+		value = 15
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ground_assault_infantry_ai
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = open_ifvs_ai
+		value = 15
+	}
+	ai_strategy = {
+		type = build_army
+		id = open_ifvs_ai
+		value = 15
+	}	
+
 	ai_strategy = { #ok icl bro i didnt realize i put build army instead of role ratio but its already in a nice place so its just gonna have to be like that
 		type = role_ratio
 		id = open_ground_assault_infantry_ai
@@ -263,12 +264,7 @@ PRO_buildup_goons_for_third_skirmish = { #its in the name, protea will make divi
 		id = open_ifvs_ai
 		value = 20
 	}	
-
-	ai_strategy = { #during testing protea made less divisons than usual without apcs, just testing this for now
-		type = role_ratio
-		id = open_apcs_ai
-		value = 10
-	}		
+		
 
 	ai_strategy = {
 		type = role_ratio

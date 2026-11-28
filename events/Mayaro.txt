@@ -1,0 +1,30 @@
+﻿#####################
+# MAYARO EVENTS
+###########################
+
+add_namespace = may
+
+
+# activation event
+country_event = {
+	id = may.2
+	title = may.2.t
+	desc = may.1.d
+
+	is_triggered_only = yes
+
+	option = { # oh shittings
+		name = may.1.a
+		ai_chance = {factor = 100}
+
+		LAV = {
+			country_event = {
+				id = lav.47
+				days = 3
+			}
+		}
+
+	}
+
+	
+}

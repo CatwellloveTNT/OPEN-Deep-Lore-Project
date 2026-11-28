@@ -27,7 +27,7 @@ state={
 
 		victory_points = {
 			4374
-			5
+			15
 		}
 		victory_points = {
 			3260
@@ -41,9 +41,6 @@ state={
 			radar_station = 0
 			dockyard = 0
 			air_base = 0
-			3305 = {
-				naval_base = 0
-			}
 			
 		}
 	}
